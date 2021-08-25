@@ -3,7 +3,7 @@ function about() {
   return (
     <div className="container mx-auto">
       <div className="text-center font-poppins">
-        <h6 className="font-black">About Us</h6>
+        <h6 className="font-black">About Us Branch</h6>
         <h1>Offshore custom software development in India</h1>
         <p>
           Hcode works with People teams across the globe to turn employees into
