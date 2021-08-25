@@ -1,25 +1,90 @@
+import Head from "next/head";
 import Image from "next/image";
+import Team from "../components/Team";
+import { TEAM } from "../constants/constants";
 function about() {
   return (
-    <div className="container mx-auto">
-      <div className="text-center font-poppins">
-        <h6 className="font-black">About Us Branch</h6>
-        <h1>Offshore custom software development in India</h1>
-        <p>
-          Hcode works with People teams across the globe to turn employees into
-          high performers, managers into leaders, and companies into the best
-          places to work.
-        </p>
-        <div className="relative h-[300px] sm:h-[300px] md:h-[400px] lg:h-[500px] xl:h-[600px] 2xl:h-[700px]">
-          <Image
-            src="/assets/img/hcode_about_us_hero.jpg"
-            layout="fill"
-            objectFit="cover"
-            objectPosition="center"
-          />
+    <>
+      <Head>
+        <title>About Us | Hcode Techonolgies </title>
+        {/* <link rel="icon" href="/favicon.ico" /> */}
+      </Head>
+      <div className="container px-2 sm:px-0 sm:mx-auto">
+        <div className="text-center font-poppins sm:w-10/12 md:w-10/12 xl:w-1/2  mx-auto py-4">
+          <h6 className="pt-4 pb-2">About Us</h6>
+          <h1 className="font-semibold text-3xl  md:text-5xl md:leading-tight">
+            Offshore custom software development in India
+          </h1>
+          <p className="font-normal text-gray-900 py-4 ">
+            Hcode works with People teams across the globe to turn employees
+            into high performers, managers into leaders, and companies into the
+            best places to work.
+          </p>
         </div>
+        <div className="max-w-screen-xl mx-auto pt-4">
+          <div className="relative h-[300px] sm:h-[300px] md:h-[400px] lg:h-[500px] xl:h-[600px] 2xl:h-[700px]">
+            <Image
+              src="/assets/img/hcode_about_us_hero.jpg"
+              layout="fill"
+              objectFit="cover"
+              objectPosition="center"
+            />
+          </div>
+        </div>
+        <div className="bg-gray-50 pt-4">
+          <div className="font-poppins sm:w-10/12 md:w-10/12 xl:w-1/2  mx-auto py-10  ">
+            <h1 className=" text-center font-semibold text-3xl  md:text-4xl md:leading-tight">
+              It all started in 2018.
+            </h1>
+            <p className="font-normal mt-7 mb-5 leading-relaxed">
+              We’re founded by engineers from IIT Delhi (Indian Ivy league
+              university) with diverse experience ranging from entrepreneurs
+              with successful exits to former executives of MNCs.
+            </p>
+            <p className="font-normal my-6 leading-relaxed  ">
+              We are powered by a team of young and dynamic engineers with a
+              strong proven record of building world class software for global
+              clients. We’ve shipped quality code to xx clients ranging from
+              Startups to Large Enterprises.
+            </p>
+          </div>
+        </div>
+        <div className="mx-auto md:px-10 grid grid-cols-12 gap-4 bg-gray-50 py-10">
+          <div className="hidden md:inline-block md:col-span-4">
+            <div className="relative h-[500px] w-full ">
+              <Image
+                src="/assets/img/hcode_about_us_vertical.jpg"
+                layout="fill"
+                objectFit="cover"
+                objectPosition="center"
+              />
+            </div>
+          </div>
+          <div className="col-span-full md:col-span-8">
+            <div className="relative h-[500px]">
+              <Image
+                src="/assets/img/hcode_about_us_horizontal.jpg"
+                layout="fill"
+                objectFit="cover"
+                objectPosition="center"
+              />
+            </div>
+          </div>
+        </div>
+        <section className="py-10">
+          <h1 className=" font-poppins text-center font-semibold text-3xl  md:text-4xl md:leading-tight">
+            Core Team
+          </h1>
+          <section>
+            {TEAM.map(({ name, image, bio }, index) => (
+              <Team key={index} name={name} image={image} bio={bio} />
+            ))}
+
+            <button className=" p-4 rounded border border-blue-400">Check Out Open Opportunities </button>
+          </section>
+        </section>
       </div>
-    </div>
+    </>
   );
 }
 
