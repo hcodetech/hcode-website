@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import ServicesCard from "../components/ServicesCard";
 import Team from "../components/Team";
 import { TEAM } from "../constants/constants";
 function about() {
@@ -75,13 +76,38 @@ function about() {
           <h1 className=" font-poppins text-center font-semibold text-3xl  md:text-4xl md:leading-tight">
             Core Team
           </h1>
-          <section>
+          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-7">
             {TEAM.map(({ name, image, bio }, index) => (
               <Team key={index} name={name} image={image} bio={bio} />
             ))}
-
-            <button className=" p-4 rounded border border-blue-400">Check Out Open Opportunities </button>
-          </section>
+          </div>
+          <button className="items-center px-4 py-2 rounded border border-blue-400 hover:bg-blue-600 transform transition duration-100 ease-out">
+            Check Out dOpen Opportunities
+          </button>
+        </section>
+        <section className="container mt-10 mx-auto">
+          <div className="grid grid-cols-2">
+            <div className="bg-blue-200 p-6  rounded-lg">
+                <div className="w-3/4">
+                <h2 className="text-3xl font-semibold">Inside Hcode</h2>
+              <p>
+                We provide work-life balance and sports facilities on a
+                beautiful campus to ensure overall well-being of our employees.
+                This leads to a happy and productive work environment for
+                everybody. We offer our people the opportunity to move ahead
+                more rapidly than is possible at most other places. Advancement
+                depends on merit and we have yet to find the limits to the
+                responsibility our best people are able to assume Located in a
+                small city, employees get to enjoy the countryside without
+                having to compromise on their career.
+              </p>
+                </div>
+            </div>
+           
+          </div>
+        </section>
+        <section className="mt-10">
+              <ServicesCard/>
         </section>
       </div>
     </>

@@ -1,21 +1,17 @@
-import Image from 'next/image'
+import Image from "next/image";
 function Team({ name, image, bio }) {
   return (
-    <div>
-      <div>
-        <div className="relative h-[100px]">
-           
-          <Image
-            src={image}
-            layout="fill"
-            objectFit="cover"
-            objectPosition="center"
-          />
-        </div>
-        <h1>{name}</h1>
-        <p>{bio}</p>
+    <div className="p-3 w-[200px] md:w-[300px]">
+      <div className="relative h-[200px] md:h-[300px]  mb-2">
+        <Image
+          src={image}
+          layout="fill"
+          objectFit="contain"
+          objectPosition="center"
+        />
       </div>
-      
+      <h4 className="text-xl font-semibold">{name}</h4>
+      <p className="font-light">{bio}</p>
     </div>
   );
 }
