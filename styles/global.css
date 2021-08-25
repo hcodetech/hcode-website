@@ -1,0 +1,6 @@
+@tailwind components;
+@layer components {
+  .button_new {
+    @apply mr-2 px-4 py-2 border rounded-full cursor-pointer bg-red-600 p-10;
+  }
+}
