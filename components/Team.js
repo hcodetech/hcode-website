@@ -1,7 +1,7 @@
 import Image from "next/image";
 function Team({ name, image, bio }) {
   return (
-    <div className="p-3 w-[200px] md:w-[300px]">
+    <div className="                 ">
       <div className="relative h-[200px] md:h-[300px]  mb-2">
         <Image
           src={image}
@@ -10,7 +10,7 @@ function Team({ name, image, bio }) {
           objectPosition="center"
         />
       </div>
-      <h4 className="text-xl font-semibold">{name}</h4>
+      <h4 className="text-xl font-semibold ">{name}</h4>
       <p className="font-light">{bio}</p>
     </div>
   );

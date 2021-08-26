@@ -13,8 +13,8 @@ function ServicesCard() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2">
-        <div className="relative h-[600px] 2xl:h-[700px] sm:w-11/12 hover:scale-95 active:scale-100  transform transition duration-100 ease-out">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="relative h-[600px] 2xl:h-[700px]  hover:scale-95 active:scale-100  transform transition duration-100 ease-out">
           <Image
             src={team_as_service}
             layout="fill"
@@ -29,7 +29,7 @@ function ServicesCard() {
             </p>
           </div>
         </div>
-        <div className="relative h-[600px] 2xl:h-[700px] sm:w-11/12 hover:scale-95 active:scale-100  transform transition duration-100 ease-out">
+        <div className="relative h-[600px] 2xl:h-[700px]  hover:scale-95 active:scale-100  transform transition duration-100 ease-out">
           <Image
             src={developer_as_service}
             layout="fill"

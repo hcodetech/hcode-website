@@ -1,5 +1,9 @@
 export const developer_as_service="/assets/img/developer_as_service.jpg"
 export const team_as_service="/assets/img/team_as_service.jpg"
+export const work_with_us_1="/assets/img/work_with_us_1.jpg"
+export const work_with_us_2="/assets/img/work_with_us_2.jpg"
+export const work_with_us_3="/assets/img/work_with_us_3.jpg"
+export const work_with_us_blue_circle="/assets/img/work_with_us_blue_circle.png"
 export const TEAM = [
   {
     image: "/assets/img/hcode_about_us_shashank.jpg",
