@@ -84,33 +84,27 @@ export default function Navbar() {
 
           <Disclosure.Panel className="md:hidden">
             <div className="pt-2 pb-3 space-y-1">
-              {/* Current: "bg-blue-50 border-blue-500 text-blue-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" */}
-              <a
-                href="/"
-                className="bg-blue-50 border-blue-500 text-blue-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium"
-              >
-                Home
-              </a>
-              <a
-                href="/our_services"
-                className="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium"
-              >
-                Our Services
-              </a>
-              <a
-                href="/work_with_us"
-                className="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium"
-              >
-                Work with Us
-              </a>
-              <a
-                href="/about"
-                className="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium"
-              >
-                About Us
-              </a>
+
+
+            {navbar_links.map(({ label, link }) => {
+                    return (
+                      <a
+                        href={link}
+                        className={` border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium
+                      ${pathname === link
+                            ? "bg-blue-50 border-blue-500 text-blue-700"
+                            : ""
+                          }   `}
+                      >
+                        {label}
+                      </a>
+                    )
+                  })
+                  }
+
+              
             </div>
-            <div className="pt-4 pb-3 border-t border-gray-200">
+            <div className="pt-5 pb-5 border-t border-gray-200">
               <div className="flex items-center px-4">
                 <div className="flex-shrink-0">
                   

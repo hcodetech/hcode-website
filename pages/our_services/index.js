@@ -36,7 +36,7 @@ function our_services() {
               {our_services_data.hero_paragraph}
             </p>
           </div>
-          <div className="relative h-[580px] w-full mt-8 ">
+          <div className="relative md:h-[580px] w-full mt-8 ">
             <img className="object-cover w-screen"
               src={our_services_hero}
               layout="fill"

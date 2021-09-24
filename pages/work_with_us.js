@@ -41,7 +41,7 @@ function work_with_us() {
               target="_blank"
               className="primary-outline ">See Open Positions</a>
           </div>
-          <div className="relative h-[322px] w-full lg:w-[558px] lg:mt-28 ">
+          <div className="relative sm:h-[322px] w-full lg:w-[558px] lg:mt-28 ">
             <img
               src={work_with_us_1}
               layout="fill"
@@ -50,14 +50,14 @@ function work_with_us() {
           </div>
         </div>
         <div className="hidden  lg:grid grid-cols-12 -mt-48">
-          <div className="col-start-5 col-end-10 relative h-[322px] w-[500px] mt-12 ">
+          <div className="col-start-5 col-end-10 relative sm:h-[322px] w-[500px] mt-12 ">
             <img
               src={work_with_us_2}
               layout="fill"
               className="rounded-lg  shadow-xl object-cover"
             />
           </div>
-          <div className="col-start-10 col-end-12 relative h-[322px] w-[256px] ">
+          <div className="col-start-10 col-end-12 relative sm:h-[322px] w-[256px] ">
             <img
               src={work_with_us_3}
               layout="fill"

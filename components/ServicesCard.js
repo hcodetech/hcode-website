@@ -16,7 +16,7 @@ function ServicesCard({ heading }) {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <Link href="/our_services">
-        <div className="relative h-[600px] 2xl:h-[700px]  hover:scale-95 active:scale-100  transform transition duration-100 ease-out">
+        <div className="relative sm:h-[600px] 2xl:h-[700px]  hover:scale-95 active:scale-100  transform transition duration-100 ease-out">
           <img
             src={our_service.developer_as_service_image}
             layout="fill"
@@ -31,7 +31,7 @@ function ServicesCard({ heading }) {
         </div>
           </Link>
           <Link href="/our_services">
-        <div className="relative h-[600px] 2xl:h-[700px]  hover:scale-95 active:scale-100  transform transition duration-100 ease-out">
+        <div className="relative sm:h-[600px] 2xl:h-[700px]  hover:scale-95 active:scale-100  transform transition duration-100 ease-out">
           <img
             src={our_service.team_as_service_image}
             layout="fill"
