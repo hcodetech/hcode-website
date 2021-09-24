@@ -19,7 +19,7 @@ export default function Home() {
 
 
       {/* Client Section */}
-      <div className="py-10 new-container pt-96">
+      <div className="py-10 new-container pt-10">
         <Client data={client} />
       </div>
 
@@ -60,7 +60,7 @@ export default function Home() {
       </section>
 
       {/* CTA */}
-      <CTA />
+      <CTA  />
 
       {/* Benefits */}
       <Benefits data={homepage.why_hcode} />

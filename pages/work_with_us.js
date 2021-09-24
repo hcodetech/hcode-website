@@ -184,7 +184,7 @@ function work_with_us() {
               please get in touch with us below.
             </p>
             <a
-              href="https://in.indeed.com/cmp/Hcode-Technologies/jobs"
+              href="/contact"
               target="_blank"
               className="primary-button text-ce"
             >
