@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+
+		<url>
+	  		<loc>http://hcode.tech/</loc>
+	  		<lastmod>2021-09-23T13:49:43.062564+00:00</lastmod>
+	  		<priority>1.00</priority>
+	 	</url>
+<url>
+			<loc>http://hcode.tech/about</loc>
+			<lastmod>2021-09-23T13:49:43.062564+00:00</lastmod>
+			<priority>.90</priority>
+		</url>
+<url>
+			<loc>http://hcode.tech/contact</loc>
+			<lastmod>2021-09-23T13:49:43.062564+00:00</lastmod>
+			<priority>.90</priority>
+		</url>
+<url>
+			<loc>http://hcode.tech/work_with_us</loc>
+			<lastmod>2021-09-23T13:49:43.062564+00:00</lastmod>
+			<priority>.80</priority>
+		</url>
+<url>
+			<loc>http://hcode.tech/our_services</loc>
+			<lastmod>2021-09-23T13:49:43.062564+00:00</lastmod>
+			<priority>.80</priority>
+		</url>
+<url>
+			<loc>http://hcode.tech/privacy_policy</loc>
+			<lastmod>2021-09-23T13:49:43.062564+00:00</lastmod>
+			<priority>.80</priority>
+		</url>
+	 	<url>
+			<loc>http://hcode.tech/privacy_policy</loc>
+			<lastmod>2021-09-23T13:49:43.062564+00:00</lastmod>
+			<priority>.80</priority>
+		</url>
+		<url>
+			<loc>http://hcode.tech/terms_and_conditions.html</loc>
+			<lastmod>2020-10-26T13:49:43.062564+00:00</lastmod>
+			<priority>.80</priority>
+		</url>
+		<url>
+			<loc>http://hcode.tech/mvp.html</loc>
+			<lastmod>2020-10-26T13:49:43.062564+00:00</lastmod>
+			<priority>.80</priority>
+		</url>
+		
+		<url>
+			<loc>http://hcode.tech/portfolio.html</loc>
+			<lastmod>2020-10-26T13:49:43.062564+00:00</lastmod>
+			<priority>.80</priority>
+		</url>
+		
+		<url>
+			<loc>http://hcode.tech/casestudy.html</loc>
+			<lastmod>2020-10-26T13:49:43.062564+00:00</lastmod>
+			<priority>.80</priority>
+		</url>
+		
+		<url>
+			<loc>http://hcode.tech/privacy-policy.html</loc>
+			<lastmod>2020-10-26T13:49:43.062564+00:00</lastmod>
+			<priority>.80</priority>
+		</url>
+		
+		<url>
+			<loc>http://hcode.tech/terms-of-service.html</loc>
+			<lastmod>2020-10-26T13:49:43.062564+00:00</lastmod>
+			<priority>.80</priority>
+		</url>
+		
+		<url>
+			<loc>http://hcode.tech/portfolio/pollinate.html</loc>
+			<lastmod>2020-10-26T13:49:43.062564+00:00</lastmod>
+			<priority>.80</priority>
+		</url>
+		
+		<url>
+			<loc>http://hcode.tech/portfolio/funday.html</loc>
+			<lastmod>2020-10-26T13:49:43.062564+00:00</lastmod>
+			<priority>.80</priority>
+		</url>
+		
+		<url>
+			<loc>http://hcode.tech/portfolio/cardekho.html</loc>
+			<lastmod>2020-10-26T13:49:43.062564+00:00</lastmod>
+			<priority>.80</priority>
+		</url>
+		
+		<url>
+			<loc>http://hcode.tech/portfolio/liftrocket.html</loc>
+			<lastmod>2020-10-26T13:49:43.062564+00:00</lastmod>
+			<priority>.80</priority>
+		</url>
+		
+		<url>
+			<loc>http://hcode.tech/portfolio/debie.html</loc>
+			<lastmod>2020-10-26T13:49:43.062564+00:00</lastmod>
+			<priority>.80</priority>
+		</url>
+		
+		<url>
+			<loc>http://hcode.tech/portfolio/springboard.html</loc>
+			<lastmod>2020-10-26T13:49:43.062564+00:00</lastmod>
+			<priority>.80</priority>
+		</url>
+		
+		<url>
+			<loc>http://hcode.tech/portfolio/dextro.html</loc>
+			<lastmod>2020-10-26T13:49:43.062564+00:00</lastmod>
+			<priority>.80</priority>
+		</url>
+		
+		<url>
+			<loc>http://hcode.tech/portfolio/chartbiopsy.html</loc>
+			<lastmod>2020-10-26T13:49:43.062564+00:00</lastmod>
+			<priority>.80</priority>
+		</url>
+		
+		<url>
+			<loc>http://hcode.tech/portfolio/zoyo.ai.html</loc>
+			<lastmod>2020-10-26T13:49:43.062564+00:00</lastmod>
+			<priority>.80</priority>
+		</url>
+		
+		<url>
+			<loc>http://hcode.tech/portfolio/indianrailways.html</loc>
+			<lastmod>2020-10-26T13:49:43.062564+00:00</lastmod>
+			<priority>.80</priority>
+		</url>
+		
+		<url>
+			<loc>http://hcode.tech/portfolio/indore24.html</loc>
+			<lastmod>2020-10-26T13:49:43.062564+00:00</lastmod>
+			<priority>.80</priority>
+		</url>
+		
+		<url>
+			<loc>http://hcode.tech/portfolio/pgram.html</loc>
+			<lastmod>2020-10-26T13:49:43.062564+00:00</lastmod>
+			<priority>.80</priority>
+		</url>
+		
+		<url>
+			<loc>http://hcode.tech/portfolio/cloudyexcel.html</loc>
+			<lastmod>2020-10-26T13:49:43.062564+00:00</lastmod>
+			<priority>.80</priority>
+		</url>
+		
+		<url>
+			<loc>http://hcode.tech/portfolio/verificient.html</loc>
+			<lastmod>2020-10-26T13:49:43.062564+00:00</lastmod>
+			<priority>.80</priority>
+		</url>
+		
+		<url>
+			<loc>http://hcode.tech/portfolio/kgc.html</loc>
+			<lastmod>2020-10-26T13:49:43.062564+00:00</lastmod>
+			<priority>.80</priority>
+		</url>
+		
+		<url>
+			<loc>http://hcode.tech/portfolio/prepay.html</loc>
+			<lastmod>2020-10-26T13:49:43.062564+00:00</lastmod>
+			<priority>.80</priority>
+		</url>
+		
+		<url>
+			<loc>http://hcode.tech/portfolio/riff.html</loc>
+			<lastmod>2020-10-26T13:49:43.062564+00:00</lastmod>
+			<priority>.80</priority>
+		</url>
+		</urlset>
