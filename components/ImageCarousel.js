@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { work_with_us_image_carousel } from "../constants/constants";
 function ImageCarousel() {
     return (
