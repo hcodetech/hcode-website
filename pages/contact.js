@@ -82,9 +82,9 @@ function contact() {
 
     return (
         <>
-            <div className="fixed top-1/2 inset-x-2/4">
+           { loading  &&<div className="fixed top-1/2 inset-x-2/4">
                 <DotLoader color={defaultColor} size={60} />
-            </div>
+            </div>}
             <section className="md:new-container grid grid-cols-12 pt-14" >
                 <div className="bg-primary max-w-[450px] max-h-screen text-white p-10  col-span-12 md:col-span-5 relative ">
                     <div>
