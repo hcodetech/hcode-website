@@ -120,7 +120,7 @@ function about() {
             layout="fill"
             className="rounded-lg"
           />
-          <div className=" absolute rounded-lg h-[400px] w-[300px] -bottom-3/4 xl:-bottom-5 z-20 -ml-24 border-none">
+          <div className="hidden xl:block absolute rounded-lg h-[400px] w-[300px] -bottom-3/4 xl:-bottom-5 z-20 -ml-24 border-none">
             <img
               src={about_page.office_2}
               layout="fill"

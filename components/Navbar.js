@@ -34,7 +34,7 @@ export default function Navbar() {
                     alt="Hcode Technologies"
                   />
                 </div>
-                <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
+                <div className="hidden sm:ml-6 md:flex sm:space-x-8">
                   {navbar_links.map(({ label, link }) => {
                     return (
                       <a
@@ -52,7 +52,7 @@ export default function Navbar() {
                   }
                 </div>
               </div>
-              <div className="hidden sm:ml-6 sm:flex sm:items-center">
+              <div className="hidden sm:ml-6 md:flex sm:items-center">
                 {/* Profile dropdown */}
                 <a
                   href="/contact"
@@ -63,7 +63,7 @@ export default function Navbar() {
 
                 
               </div>
-              <div className="-mr-2 flex items-center sm:hidden">
+              <div className="-mr-2 flex items-center md:hidden">
                 {/* Mobile menu button */}
                 <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500">
                   <span className="sr-only">Open main menu</span>
@@ -77,7 +77,7 @@ export default function Navbar() {
             </div>
           </div>
 
-          <Disclosure.Panel className="sm:hidden">
+          <Disclosure.Panel className="md:hidden">
             <div className="pt-2 pb-3 space-y-1">
               {/* Current: "bg-blue-50 border-blue-500 text-blue-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" */}
               <a
@@ -93,25 +93,25 @@ export default function Navbar() {
                 Our Services
               </a>
               <a
-                href="#"
+                href="/work_with_us"
                 className="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium"
               >
                 Work with Us
               </a>
               <a
-                href="#"
+                href="/about"
                 className="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium"
               >
-                Calendar
+                About Us
               </a>
             </div>
             <div className="pt-4 pb-3 border-t border-gray-200">
               <div className="flex items-center px-4">
                 <div className="flex-shrink-0">
                   
-                  <button className="primary-outline">
+                  <a href="/contact" className="primary-outline">
                     Contact Us
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>

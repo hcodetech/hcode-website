@@ -70,8 +70,8 @@ function contact() {
     }
 
     return (
-        <section className="new-container grid grid-cols-12 pt-14" >
-            <div className="bg-primary max-w-[450px] max-h-screen text-white p-10 col-span-5 relative ">
+        <section className="md:new-container grid grid-cols-12 pt-14" >
+            <div className="bg-primary max-w-[450px] max-h-screen text-white p-10  col-span-12 md:col-span-5 relative ">
                 <div>
                     <h1 className="text-4xl font-semibold">
                         Let’s scale your team together
@@ -92,12 +92,12 @@ function contact() {
                         hello@hcode.tech
                     </div>
                 </div>
-                <div className="absolute left-0 bottom-0">
+                <div className=" left-0 bottom-0 hidden md:block md:absolute ">
                     <img src={contact_us_circle} alt="" />
                 </div>
             </div>
             {/* Form Start Here */}
-            <div className="p-10 col-span-7">
+            <div className="px-4 py-8 md:p-10 col-span-12 md:col-span-7">
                 <h1 className="text-4xl font-semibold pb-3">Please enter the details</h1>
                 <form autoComplete='off' onSubmit={contactUser}>
                     <div className="grid grid-cols-6 gap-6">

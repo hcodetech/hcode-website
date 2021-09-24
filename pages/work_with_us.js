@@ -24,7 +24,7 @@ function work_with_us() {
         <title>Work With Us | Hcode Techonolgies</title>
       </Head>
       {/* Hero Section */}
-      <section className="relative  max-h-[800px] bg-no-repeat bg-contain ">
+      <section className="relative bg-no-repeat bg-contain ">
         <div className="new-container  grid grid-cols-1 lg:grid-cols-2  ">
           <div className="py-10 md:py-24 md:pr-32 mt-20">
             <h1 className="text-3xl lg:text-4xl font-semibold">
@@ -45,7 +45,7 @@ function work_with_us() {
             <img
               src={work_with_us_1}
               layout="fill"
-              className="rounded-lg  shadow-xl"
+              className="rounded-lg object-cover shadow-xl"
             />
           </div>
         </div>
@@ -54,23 +54,25 @@ function work_with_us() {
             <img
               src={work_with_us_2}
               layout="fill"
-              className="rounded-lg  shadow-xl"
+              className="rounded-lg  shadow-xl object-cover"
             />
           </div>
           <div className="col-start-10 col-end-12 relative h-[322px] w-[256px] ">
             <img
               src={work_with_us_3}
               layout="fill"
-              className="rounded-lg  shadow-xl"
+              className="rounded-lg  shadow-xl object-cover"
             />
           </div>
         </div>
       </section>
       {/* Campus Overview */}
-      <section className="new-container mt-20">
+      <section className="new-container mt-10">
+        <div className="sm:mt-10">
         <h1 className="text-4xl  font-semibold font-poppins">
           {work_with_us_content.campus_heading}
         </h1>
+        </div>
         <p
           className="mt-4 md:w-3/4 leading-snug font-light text-lg"
           dangerouslySetInnerHTML={{

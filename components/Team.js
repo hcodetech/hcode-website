@@ -4,7 +4,7 @@ function Team({ name, image, bio, link }) {
   return (
     <div className="                 ">
       <div className="relative h-[200px] md:h-[300px]  mb-2">
-        <img
+        <img className="object-cover"
           src={image}
           layout="fill"
         />
