@@ -9,6 +9,6 @@ zip -r out.zip out
 scp out.zip hcode:~/.
 
 ssh hcode
-unzip out
+unzip -o out
 
 <!-- https://github.com/github/gitignore/blob/master/Node.gitignore -->

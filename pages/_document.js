@@ -16,23 +16,28 @@ class MyDocument extends Document {
         <Head>
           {/*  */}
 
-          <meta name="keywords" content="Software, Development Studio, Development, startups, Mobile Apps, Web Apps"/>
-
-            <meta prefix="og: http://ogp.me/ns#" property="og:title" content={homepage.title}/>
-            <meta prefix="og: http://ogp.me/ns#" property="og:type" content="website"/>
-            <meta prefix="og: http://ogp.me/ns#" property="og:url" content="https://hcode.tech/"/>
-            <meta prefix="og: http://ogp.me/ns#" property="og:image" content={homepage.share_image}/>
-            <meta prefix="og: http://ogp.me/ns#" property="og:site_name" content="HCODE"/>
-            <meta prefix="og: http://ogp.me/ns#" property="og:description" content={homepage.description}/>
+          <meta name="keywords" content="Software, Development Studio, Development, Engineer, Mobile Apps, Web Apps"/>
+            
+            <meta name="description" content={homepage.description}/>
+            <meta name="image" content={homepage.share_image}/>
 
             <meta itemprop="name" content={homepage.title}/>
             <meta itemprop="description" content={homepage.description}/>
             <meta itemprop="image" content={homepage.share_image}/>
 
-            <meta name="twitter:card" content="summary_large_image"/>
-            <meta name="twitter:title" content={homepage.title}/>
-            <meta name="twitter:description" content={homepage.description}/>
-            <meta name="twitter:image" content={homepage.share_image}/>
+
+            <meta property="og:title" content={homepage.title}/>
+            <meta property="og:type" content="website"/>
+            <meta property="og:url" content="https://hcode.tech/"/>
+            <meta property="og:image" content={homepage.share_image}/>
+            <meta property="og:description" content={homepage.description}/>
+
+
+            <meta property="twitter:card" content="summary_large_image"/>
+            <meta property="twitter:url" content="https://hcode.tech/"/>
+            <meta property="twitter:title" content={homepage.title}/>
+            <meta property="twitter:description" content={homepage.description}/>
+            <meta property="twitter:image" content={homepage.share_image}/>
 
 
           <script
