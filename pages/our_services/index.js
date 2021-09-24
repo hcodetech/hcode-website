@@ -17,6 +17,7 @@ import Accordion from "../../components/Accordion";
 import Process from "../../components/Process";
 import EnterpriseCard from "../../components/EnterpriseCard";
 import FintechCard from "../../components/FintechCard";
+import { ArrowRightIcon } from "@heroicons/react/solid";
 function our_services() {
   return (
     <>
@@ -70,6 +71,18 @@ function our_services() {
         <EnterpriseCard  data={enterprise_card}/>
         <FintechCard  data={fintech_card}/>
         {/* <Consumer_Card/  data={enterprise_card}/> */}
+     
+    
+       
+
+<div className="new-container mx-auto -mt-16 pb-16">
+      <div className="text-center">
+      <a href="/portfolio" className="pt-10 pb-1  border-b border-primary inline-flex text-primary hover:scale-100  cursor-pointer hover:opacity-100">
+      See More of Our Work
+      <ArrowRightIcon className="w-6 ml-2 " />
+      </a>
+    </div>
+    </div>
       </section>
 
 

@@ -13,7 +13,7 @@ function EnterpriseCard({ data }) {
             target="_blank"
             className="pb-1 border-b-2 border-black inline-flex  hover:scale-100  cursor-pointer "
           >
-            Learn More
+            See Video Demo
             <ArrowRightIcon className="w-6 ml-2 " />
           </a>
         </div>
