@@ -30,7 +30,7 @@ function HeroSection() {
                 <div className="centered text-white  text-center ">
                   <h1 className="text-5xl leading-tight  font-bold  mx-auto text-white  ">
                     End-To-End
-                    <span className="hidden md:block"><br /> </span>
+                    <br /> 
                     Engineering Services
                   </h1>
                   <p className="text-xl font-normal opacity-90 ">
@@ -52,7 +52,7 @@ function HeroSection() {
                 <div className="centered text-white  text-center ">
                   <h1 className="text-3xl lg:text-5xl leading-tight  font-bold  mx-auto text-white  ">
                     Hire Top Talent As
-                    <span className="hidden md:block"><br /> </span> Your Offshore Team
+                 <br />  Your Offshore Team
                   </h1>
                   <p className="text-xl font-normal opacity-90 ">
                     You can rely on us for great quality code written by responsible and driven developers, trained for such engagements
@@ -76,7 +76,7 @@ function HeroSection() {
                 <div className="centered text-white  text-center ">
                   <h1 className="text-3xl lg:text-5xl leading-tight  font-bold  mx-auto text-white  ">
                     We Focus On Your Tech
-                    <span className="hidden md:block"><br /> </span>So You Can Focus On Business
+                <br /> So You Can Focus On Business
                   </h1>
                   <p className="text-xl font-normal opacity-90 ">
                     Maximise your ROI by hiring our team of young and passionate developers that deliver value to your business by improving quality and reducing cost
