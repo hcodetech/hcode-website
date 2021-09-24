@@ -83,7 +83,7 @@ function work_with_us() {
           <div className="">
             <img src={karnal} alt="" />
             <h4 className="text-xl font-semibold py-2">Karnal</h4>
-            <a className="pb-1 border-b inline-flex border-black hover:scale-100  cursor-pointer opacity-50 hover:opacity-100">
+            <a href="https://in.indeed.com/cmp/Hcode-Technologies/jobs" target="_blank" className="pb-1 border-b inline-flex border-black hover:scale-100  cursor-pointer opacity-50 hover:opacity-100">
               See positions in Karnal, India
               <ArrowRightIcon className="w-6 ml-2 " />
             </a>
@@ -91,7 +91,7 @@ function work_with_us() {
           <div className="mt-4 md:mt-0">
             <img src={remote} alt="" />
             <h4 className="text-xl font-semibold  py-2">Remote</h4>
-            <a className="pb-1 border-b inline-flex border-black hover:scale-100  cursor-pointer opacity-50 hover:opacity-100">
+            <a href="https://in.indeed.com/cmp/Hcode-Technologies/jobs" target="_blank" className="pb-1 border-b inline-flex border-black hover:scale-100  cursor-pointer opacity-50 hover:opacity-100">
               See positions in Remote
               <ArrowRightIcon className="w-6 ml-2 " />
             </a>
