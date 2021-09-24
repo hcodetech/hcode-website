@@ -38,6 +38,7 @@ module.exports = {
         linkedin: "url('/assets/icons/linkedin.svg')",
         enterprise_image: "url('/assets/img/enterprise.png')",
         consumer_image: "url('/assets/img/consumer.png')",
+        fintech: "url('/assets/img/fintech.png')",
 
       }),
     },

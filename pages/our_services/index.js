@@ -7,13 +7,16 @@ import {
   client,
   how_to_get_started,
   consumer_card,
-  enterprise_card
+  enterprise_card,
+  fintech_card
 } from "../../constants/constants";
 import Consumer_Card from "../../components/Consumer_Card";
 import Client from "../../components/Client";
 import TechStack from "../../components/TechStack";
 import Accordion from "../../components/Accordion";
 import Process from "../../components/Process";
+import EnterpriseCard from "../../components/EnterpriseCard";
+import FintechCard from "../../components/FintechCard";
 function our_services() {
   return (
     <>
@@ -33,7 +36,7 @@ function our_services() {
             </p>
           </div>
           <div className="relative h-[580px] w-full mt-8 ">
-            <img className="object-cover"
+            <img className="object-cover w-screen"
               src={our_services_hero}
               layout="fill"
             />
@@ -64,7 +67,9 @@ function our_services() {
       {/* Project Showcase */}
       <section className="new-container">
         <Consumer_Card  data={consumer_card}/>
-        {/* <Consumer_Card  data={enterprise_card}/> */}
+        <EnterpriseCard  data={enterprise_card}/>
+        <FintechCard  data={fintech_card}/>
+        {/* <Consumer_Card/  data={enterprise_card}/> */}
       </section>
 
 
