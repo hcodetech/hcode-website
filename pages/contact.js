@@ -366,7 +366,7 @@ function contact() {
                                 </div>
                             </div>
                             <div className="col-span-12 lg:col-span-4">
-                                <button className="bg-primary hover:bg-blue-600 text-white rounded-md px-7 py-3">
+                                <button disabled={loading} className="bg-primary hover:bg-blue-600 text-white rounded-md px-7 py-3 disabled:opacity-50">
                                     Submit
                                 </button>
                             </div>
