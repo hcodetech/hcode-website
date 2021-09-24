@@ -24,6 +24,9 @@ function Footer() {
               <li className="mb-2">
                 <a href="/our_services" className="border-b border-solid border-transparent hover:border-primary hover:text-primary">Our Services</a>
               </li>
+              <li className="mb-2">
+                <a href="/portfolio" className="border-b border-solid border-transparent hover:border-primary hover:text-primary">Our Work</a>
+              </li>
               {/* <li className="mb-2">
                 <a href="/technologies" className="border-b border-solid border-transparent hover:border-primary hover:text-primary">Technologies</a>
               </li> */}
@@ -60,8 +63,8 @@ function Footer() {
           </div>
           <div className="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6 mt-8 md:mt-0">
             <div className="flex mt-2">
-              <a href="https://www.linkedin.com/company/hcodetech/mycompany/" target="_blank" >
-                <img src={linkedin_icon} className="rounded-full w-10 h-10 p-2 hover:bg-blue-200  bg-gray-200 " alt="https://www.linkedin.com/company/hcodetech/mycompany/" />
+              <a href="https://www.linkedin.com/company/hcodetech/" target="_blank" >
+                <img src={linkedin_icon} className="rounded-full w-10 h-10 p-2 hover:bg-blue-200  bg-gray-200 " alt="https://www.linkedin.com/company/hcodetech/" />
               </a>
               <a href="https://twitter.com/HcodeTech" target="_blank">
                 <img src={twitter_icon} className="rounded-full w-10 h-10 p-2 hover:bg-blue-200  ml-4 bg-gray-200 " alt="https://twitter.com/HcodeTech" />
