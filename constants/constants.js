@@ -567,6 +567,9 @@ export const what_we_do = [
 
 
 export const linkedin_icon = "/assets/icons/linkedIn.svg";
+export const twitter_icon = "/assets/icons/twitter.svg";
+export const hcode_footer = "/assets/img/hcode-footer.png";
+
 
 
 
@@ -637,3 +640,31 @@ export const image_slider_1 = "/assets/img/hero_image_1.jpg";
 export const image_slider_2 = "/assets/img/hero_image_2.jpg";
 export const image_slider_3 = "/assets/img/hero_image_3.jpg";
 export const contact_us_circle = "/assets/img/contact_circle.svg";
+
+
+export const selected_technologies = [
+ {
+   tech_name:"Python",
+   tech:"Backend"
+ },
+ {
+  tech_name:"Java",
+  tech:"Backend"
+},
+{
+  tech_name:"Android/iOS",
+  tech:"Mobile"
+},
+{
+  tech_name:"React JS",
+  tech:"Backend"
+},
+{
+  tech_name:"Angular",
+  tech:"Web Frontend"
+},
+{
+  tech_name:"React Native",
+  tech:"Mobile"
+},
+]

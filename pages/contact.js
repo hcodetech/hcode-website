@@ -1,10 +1,10 @@
 import { LocationMarkerIcon, PhoneIcon, ChatAltIcon } from "@heroicons/react/solid";
-import { contact_us_circle } from '../constants/constants';
+import { contact_us_circle, selected_technologies } from '../constants/constants';
 
 function contact() {
     return (
         <section className="new-container grid grid-cols-12 pt-14" >
-            <div className="bg-primary max-w-[450px] max-h-screen text-white p-10 col-span-5 relative">
+            <div className="bg-primary max-w-[450px] max-h-screen text-white p-10 col-span-5 relative ">
                 <div>
                     <h1 className="text-4xl font-semibold">
                         Let’s scale your team together
@@ -150,7 +150,7 @@ function contact() {
                                     autoComplete="country"
                                     className="mt-1 block w-full py-2 px-3 input-form"
                                 >
-                                    <option selected>I don’t know</option>
+                                    <option defaultValue>I don’t know</option>
                                     <option>1 - 10</option>
                                     <option>10 - 20</option>
                                     <option>20 - 30</option>
@@ -168,20 +168,23 @@ function contact() {
                                         Choose your preferred tech stack
                                     </legend>
                                 </div>
-                                <div className="mt-4 grid grid-cols-12">
-                                    <div className="flex items-center min-w-[100px] col-span-6  md:col-span-4 lg:col-span-3">
-                                        <input
-                                            id="python"
-                                            name="python"
-                                            type="checkbox"
-                                            className="input-radio"
-                                        />
-                                        <label htmlFor="python" className=" block text-sm font-medium text-gray-700 border border-1 rounded-lg text-center px-5 py-3">
-                                            Python
-                                            <br />
-                                            <span className="text-gray-500 text-xs font-normal" > Backend</span>
-                                        </label>
-                                    </div>
+                                <div className=" grid grid-cols-12">
+                                    {selected_technologies.map((tech, index) => (
+                                        <div key={index} className="flex items-center  col-span-6  md:col-span-4 lg:col-span-3 input-select mt-4">
+                                            <input
+                                                id={tech.tech_name}
+                                                name={tech.tech_name}
+                                                type="checkbox"
+                                                className="input-radio hidden"
+                                            />
+                                            <label htmlFor={tech.tech_name} className=" block text-sm min-w-[140px] font-medium text-gray-700 border border-1 rounded-lg text-center px-5 py-3">
+                                                {tech.tech_name}
+                                                <br />
+                                                <span className="text-gray-500 text-xs font-normal" > {tech.tech}</span>
+                                            </label>
+                                        </div>
+                                    ))}
+
 
                                 </div>
                             </fieldset>
@@ -195,10 +198,15 @@ function contact() {
                                     name="time-commitment"
                                     className="mt-1 block w-full py-2 px-3 input-form"
                                 >
-                                    <option selected>I don’t know</option>
+                                    <option defaultValue>I don’t know</option>
                                     <option>Less than 6 Months</option>
                                 </select>
                             </div>
+                        </div>
+                        <div className="col-span-12 lg:col-span-4">
+                            <button className="bg-primary hover:bg-blue-600 text-white rounded-md px-7 py-3">
+                                Submit
+                            </button>
                         </div>
                     </div>
                 </form>

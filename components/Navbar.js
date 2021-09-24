@@ -58,7 +58,7 @@ export default function Example() {
 
 
                 {/* Profile dropdown */}
-                <a href="/contact" className="px-5 py-3 bg-primary text-white rounded hover:bg-blue-600 cursor-pointer">
+                <a href="/contact" className="px-5 py-3 bg-primary text-white rounded-lg hover:bg-blue-600 cursor-pointer">
                   Contact Us
                 </a>
 
