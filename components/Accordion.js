@@ -21,7 +21,7 @@ const Accordion = ({ data }) => {
       <div className="acc_container mt-8">
         {data.map((item, index) => {
           return (
-            <div className="border-b-2">
+            <div className="border-b-2" key={index}>
               <div className="wrap" onClick={() => toggle(index)} key={index}>
                 <h1 className="text-left">
                   {item.question}

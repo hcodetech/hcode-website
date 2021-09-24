@@ -124,7 +124,7 @@ function work_with_us() {
         </div>
       </section>
       {/* Benefits */}
-      <section className="my-20">
+      <section className="my-20 bg-gray-100">
         <Benefits data={work_with_us_benefits} />
       </section>
       {/* Hiring Process */}

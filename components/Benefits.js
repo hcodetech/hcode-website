@@ -1,6 +1,6 @@
 function Benefits(props) {
   return (
-    <div className={props.background ? "" : "bg-gray-100"}>
+    <div className={props.background ? "" : ""}>
       <div className="text-center">
         <h1 className="text-4xl font-semibold  pt-16">{props.data.heading}</h1>
         <p className="font-light pt-2 lg:w-1/2 mx-auto">{props.data.paragraph}</p>

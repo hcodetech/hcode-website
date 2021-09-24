@@ -1,24 +1,25 @@
 import { ArrowRightIcon } from "@heroicons/react/solid";
 import Image from "next/image";
-function ShowCaseCard(data) {
-
+function ShowCaseCard({ data }) {
   return (
-    <div className="bg-blue-200 grid grid-cols-2 p-16 bg-showcase_mobile h-[550px] pr-16">
+    <div className={` ${data.card_color} grid grid-cols-2 p-16 bg-showcase_mobile h-[550px] pr-16`}>
       <div>
         <h1 className="font-semibold text-4xl">{data.heading}</h1>
         <p className="mt-2">
-       {data.paragraph}
+          {data.paragraph}
         </p>
         <div className="mt-5">
           <a
             href="/about"
             className="pb-1 border-b inline-flex border-blue-600 hover:scale-100  cursor-pointer text-blue-600"
           >
-           Learn More 
+            Learn More
             <ArrowRightIcon className="w-6 ml-2 " />
           </a>
         </div>
-
+        <div className={''}>
+          <p>{data.highlight}</p>
+        </div>
 
 
       </div>

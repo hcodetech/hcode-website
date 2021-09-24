@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="340.094" height="81.057" viewBox="0 0 340.094 81.057">
+  <g id="Group_21" data-name="Group 21" transform="translate(-511.906 272)">
+    <g id="Group_10" data-name="Group 10" transform="translate(205.193 -330.714)">
+      <path id="Path_14" data-name="Path 14" d="M376.848,58.714h24l34.31,40.528-34.31,40.528h-24l34.31-40.528Z" transform="translate(-4.426 0)" fill="#276ef1"/>
+      <path id="Path_15" data-name="Path 15" d="M365.028,58.714h-24l-34.31,40.528,34.31,40.528h24l-34.31-40.528Z" transform="translate(0 0)" fill="#1c5fdb"/>
+      <path id="Path_16" data-name="Path 16" d="M341.024,58.714h24l-46.123,54.93-12.192-14.4Z" transform="translate(0 0)" fill="#276ef1"/>
+      <path id="Path_17" data-name="Path 17" d="M376.848,141.532,423,86.638,435.163,101l-34.31,40.528Z" transform="translate(-4.426 -1.762)" fill="#4083ff"/>
+      <path id="Path_18" data-name="Path 18" d="M398.759,58.714,367.535,139.77H343.548l31.224-81.057Z" transform="translate(-2.324 0)" fill="#fff"/>
+      <path id="Path_19" data-name="Path 19" d="M398.759,58.714,367.535,139.77H343.548l31.224-81.057Z" transform="translate(-2.324 0)" fill="#276ef1" opacity="0.5"/>
+    </g>
+    <text id="HCODE" transform="translate(646 -211)" fill="#276ef1" font-size="58" font-family="Poppins-Bold, Poppins" font-weight="700"><tspan x="0" y="0">HCODE</tspan></text>
+  </g>
+</svg>

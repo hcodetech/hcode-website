@@ -3,7 +3,7 @@ import { Disclosure } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import { useRouter } from "next/dist/client/router";
 import { useEffect } from "react";
-import { navbar_links } from "../constants/constants";
+import { hcode_footer, navbar_links } from "../constants/constants";
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
@@ -25,13 +25,13 @@ export default function Navbar() {
                 <div className="flex-shrink-0 flex items-center">
                   <img
                     className="block lg:hidden h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/workflow-mark-blue-600.svg"
-                    alt="Workflow"
+                    src={hcode_footer}
+                    alt="Hcode Technologies"
                   />
                   <img
                     className="hidden lg:block h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/workflow-logo-indigo-600-mark-gray-800-text.svg"
-                    alt="Workflow"
+                    src={hcode_footer}
+                    alt="Hcode Technologies"
                   />
                 </div>
                 <div className="hidden sm:ml-6 sm:flex sm:space-x-8">

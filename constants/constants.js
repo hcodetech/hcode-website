@@ -590,7 +590,7 @@ export const what_we_do = [
 
 export const linkedin_icon = "/assets/icons/linkedIn.svg";
 export const twitter_icon = "/assets/icons/twitter.svg";
-export const hcode_footer = "/assets/img/hcode-footer.png";
+export const hcode_footer = "/assets/icons/hcode_logo.svg";
 
 
 
@@ -697,18 +697,21 @@ export const selected_technologies = [
 
 export const consumer_card ={
   card_color:"bg-yellow-400",
+  link:"/our_services",
   heading:"Consumer <> Mobile",
   paragraph:"We have built end-to-end products and mobile applications for various consumer companies across food delivery apps, market places, health segments to name a few.",
   highlight:"We’ve built multiple products in this domain from ground up; many of whom have been able to sucessfully raise funds"
 }
 export const enterprise_card ={
   card_color:"bg-green-400",
+  link:"/our_services",
   heading:"Enterprise <> SAAS",
   paragraph:"We've ample experience of building and managing Large Enterprise Solutions across education, remote technologies, productivity tools, research etc. Our clients come to us as they are able to trust us with  confidentiality and expertise.",
   highlight:"We've been able to consistently deliver and build great relations with many enterprise clients."
 }
 export const fintech_card ={
   card_color:"bg-blue-400",
+  link:"/our_services",
   heading:"Fintech",
   paragraph:"Many of our clients have been from Fintech across New York and India. We have worked with enterprises with big data and analytics needs, as well as with startups to help make thier products come to life.",
   highlight:"Our founding team has deep experience in Fintech which drives our expertise"
