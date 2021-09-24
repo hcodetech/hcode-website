@@ -37,30 +37,31 @@ export default function Navbar() {
                 <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
                   {navbar_links.map(({ label, link }) => {
                     return (
-                    <a
-                      href={link}
-                      className={` text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium  border-transparent
-                      ${
-                        
-                         pathname===link 
-                          ? "border-blue-500 border-b-3"
-                          : ""
-                      }   `}
-                    >
-                      {label}
-                    </a>
-                    )})
-                    }
+                      <a
+                        href={link}
+                        className={` text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium  border-transparent
+                      ${pathname === link
+                            ? "border-blue-500 border-b-4"
+                            : ""
+                          }   `}
+                      >
+                        {label}
+                      </a>
+                    )
+                  })
+                  }
                 </div>
               </div>
               <div className="hidden sm:ml-6 sm:flex sm:items-center">
                 {/* Profile dropdown */}
                 <a
                   href="/contact"
-                  className="px-5 py-3 bg-primary text-white rounded-lg hover:bg-blue-600 cursor-pointer"
+                  className="px-5 py-3 bg-white text-primary border-2 rounded hover:shadow  cursor-pointer"
                 >
                   Contact Us
                 </a>
+
+                
               </div>
               <div className="-mr-2 flex items-center sm:hidden">
                 {/* Mobile menu button */}
@@ -80,13 +81,13 @@ export default function Navbar() {
             <div className="pt-2 pb-3 space-y-1">
               {/* Current: "bg-blue-50 border-blue-500 text-blue-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" */}
               <a
-                href="#"
+                href="/"
                 className="bg-blue-50 border-blue-500 text-blue-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium"
               >
                 Home
               </a>
               <a
-                href="#"
+                href="/our_services"
                 className="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium"
               >
                 Our Services
@@ -95,7 +96,7 @@ export default function Navbar() {
                 href="#"
                 className="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium"
               >
-                Career
+                Work with Us
               </a>
               <a
                 href="#"

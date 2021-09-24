@@ -14,7 +14,7 @@ function HeroSection() {
       naturalSlideHeight={500}
       isIntrinsicHeight
       infinite
-      interval={4000}
+      interval={10000}
       isPlaying
       lockOnWindowScroll
       playDirection
@@ -27,15 +27,37 @@ function HeroSection() {
           <Slide index={0}>
             <div className="relative">
               <div className="absolute h-screen w-screen">
-                <h1 className="font-4xl font-semibold w-1/2 text-white ">
-                  End-To-End Engineering Services
+                <div className="centered text-white  text-center ">
+                <h1 className="text-5xl leading-tight  font-bold  mx-auto text-white shadow ">
+                Hire Top Talent As
+                <br/> Your Offshore Team
                 </h1>
+                <p className="text-xl font-normal opacity-80 ">
+                You can rely on us for great quality code written by responsible and driven developers, trained for such engagements
+                </p>
+                <button className="primary-button mt-4">Get Started</button>
+                  </div>
+              
               </div>
-              <img src={image_slider_2} alt="" className="h-screen w-screen object-cover" />
+              <img src={image_slider_2} alt="" className="h-screen w-screen object-cover " />
             </div>
           </Slide>
           <Slide index={1}>
-            <img src={image_slider_3} alt="" className="h-screen w-screen object-cover" />
+          <div className="relative">
+              <div className="absolute h-screen w-screen">
+                <div className="centered text-white  text-center ">
+                <h1 className="text-5xl leading-tight  font-bold  mx-auto text-white shadow ">
+                We Focus On Your Tech As <br/> You Focus On Your Business
+                </h1>
+                <p className="text-xl font-normal opacity-80 ">
+                Maximise your ROI by hiring our team of young and passionate developers that deliver value to your business by improving quality and reducing cost
+                </p>
+                <button className="primary-button mt-4">Get Started</button>
+                  </div>
+              
+              </div>
+              <img src={image_slider_3} alt="" className="h-screen w-screen object-cover " />
+            </div>
           </Slide>
           <Slide index={2}>
             <img src={image_slider_1} alt="" className="h-screen w-screen object-cover" />
