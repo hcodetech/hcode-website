@@ -83,9 +83,10 @@ function contact() {
                                     name="no-of-employees"
                                     className="mt-1 block w-full py-2 px-3 input-form"
                                 >
-                                    <option>1 - 10</option>
-                                    <option>10 - 20</option>
-                                    <option>20 - 30</option>
+                                    <option>1 - 5</option>
+                                    <option>5 - 20</option>
+                                    <option>20 - 50</option>
+                                    <option>50+</option>
                                 </select>
                             </div>
                         </div>
@@ -105,8 +106,43 @@ function contact() {
                                     className="input-form"
                                     defaultValue={''}
                                 />
+                            
                             </div>
+
+                            <fieldset className="mt-6">
+                                <div>
+                                    <legend className="text-sm font-medium text-gray-700">
+                                        Is this requirement related to?
+                                    </legend>
+                                </div>
+                                <div className="mt-4 flex">
+                                    <div className="flex items-center">
+                                        <input
+                                            id="project-lead"
+                                            name="project-lead"
+                                            type="radio"
+                                            className="focus:ring-primary h-4 w-4 text-primary border-gray-300"
+                                        />
+                                        <label htmlFor="project-lead" className="ml-3 block text-sm font-medium text-gray-700">
+                                        New Project 
+                                        </label>
+                                    </div>
+                                    <div className="flex items-center ml-5">
+                                        <input
+                                            id="project-lead"
+                                            name="project-lead"
+                                            type="radio"
+                                            className="focus:ring-primary h-4 w-4 text-primary border-gray-300"
+                                        />
+                                        <label htmlFor="project-lead" className="ml-3 block text-sm font-medium text-gray-700">
+                                        Existing Codebase
+                                        </label>
+                                    </div>
+
+                                </div>
+                            </fieldset>
                             {/* Project manager/Engineering Manger/CTO */}
+                            
                             <fieldset className="mt-6">
                                 <div>
                                     <legend className="text-sm font-medium text-gray-700">
@@ -151,9 +187,10 @@ function contact() {
                                     className="mt-1 block w-full py-2 px-3 input-form"
                                 >
                                     <option defaultValue>I don’t know</option>
-                                    <option>1 - 10</option>
-                                    <option>10 - 20</option>
-                                    <option>20 - 30</option>
+                                    <option>1 - 2</option>
+                                    <option>3 - 5</option>
+                                    <option>6 - 10</option>
+                                    <option>10+</option>
                                 </select>
                             </div>
                         </div>
@@ -170,8 +207,9 @@ function contact() {
                                 </div>
                                 <div className=" grid grid-cols-12">
                                     {selected_technologies.map((tech, index) => (
-                                        <div key={index} className="flex items-center  col-span-6  md:col-span-4 lg:col-span-3 input-select mt-4">
+                                        <div key={index} style={{minHeight:48}} className="flex items-center  col-span-6  md:col-span-4 lg:col-span-3 input-select mt-4">
                                             <input
+
                                                 id={tech.tech_name}
                                                 name={tech.tech_name}
                                                 type="checkbox"
@@ -199,7 +237,10 @@ function contact() {
                                     className="mt-1 block w-full py-2 px-3 input-form"
                                 >
                                     <option defaultValue>I don’t know</option>
-                                    <option>Less than 6 Months</option>
+                                    <option>3 to 6 Months</option>
+                                    <option>6 to 12 Months</option>
+
+                                    <option>More than a year</option>
                                 </select>
                             </div>
                         </div>

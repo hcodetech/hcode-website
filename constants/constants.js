@@ -673,13 +673,13 @@ export const selected_technologies = [
   tech_name:"Java",
   tech:"Backend"
 },
-{
-  tech_name:"Android/iOS",
-  tech:"Mobile"
-},
+// {
+//   tech_name:"Android/iOS",
+//   tech:"Mobile"
+// },
 {
   tech_name:"React JS",
-  tech:"Backend"
+  tech:"Frontend"
 },
 {
   tech_name:"Angular",
@@ -688,6 +688,9 @@ export const selected_technologies = [
 {
   tech_name:"React Native",
   tech:"Mobile"
+},
+{
+  tech_name:"I Don't Know Yet",
 },
 ]
 
