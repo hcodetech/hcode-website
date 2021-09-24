@@ -1,7 +1,74 @@
 import { LocationMarkerIcon, PhoneIcon, ChatAltIcon } from "@heroicons/react/solid";
+import { useState } from "react";
 import { contact_us_circle, selected_technologies } from '../constants/constants';
 
 function contact() {
+
+    const [fullName, setFullName] = useState('')
+    const [companyName, setCompanyName] = useState('')
+    const [companyEmail, setCompanyEmail] = useState('')
+    const [projectType, setProjectType] = useState('')
+    const [projectLeadRequired, setProjectLeadRequired] = useState('')
+    const [projectDesc, setProjectDesc] = useState('')
+    const [numberOfDev, setNumberOfDevs] = useState('')
+    const [numberOfEmployees, setNumberOfEmployees] = useState('')
+    
+    const [expectedTimeCommitment, setExpectedTimeCommitment] = useState('')
+    const [preferredTechStack, setPreferredTechStack] = useState([])
+    const setSelectedTech = (e, tech) => {
+        if (e.target.checked) {
+            setPreferredTechStack(prev => [...prev, tech])
+        } else {
+            setPreferredTechStack(tstack => {                
+                return tstack.filter(item=> item !== tech)                    
+            })
+        }
+    }
+    const contactUser = async event => {
+        event.preventDefault();        
+        const conactUsFormData = {            
+            fullName,
+            companyName,
+            companyEmail,
+            projectType,
+            projectLeadRequired,
+            projectDesc,
+            numberOfDev,
+            numberOfEmployees,
+            expectedTimeCommitment,
+            preferredTechStack
+        }
+
+        const formData = new FormData();
+        Object.entries(conactUsFormData).forEach(
+            ([key, value]) => {
+                formData.append(key, value);
+            })
+
+        const url = 'https://script.google.com/a/hcode.tech/macros/s/AKfycbytrG1hsiIqFlkL4vMMNVRy0WXpEq2E26mU8JGuIA/exec';
+        const options = {
+            body: formData,
+            method: 'POST',
+            'Content-Type': 'application/x-www-form-urlencoded'
+        }
+        try {
+            const res = await fetch(url, options);
+            
+            setFullName('');
+            setCompanyName('');
+            setCompanyEmail('');
+            setProjectType('');
+            setProjectLeadRequired('');
+            setProjectDesc('');
+            setNumberOfDevs('');
+            setNumberOfEmployees('');
+            setSelectedTech([])
+            setExpectedTimeCommitment('')
+        } catch (e) {
+            alert('Something went wrong')
+        }
+    }
+
     return (
         <section className="new-container grid grid-cols-12 pt-14" >
             <div className="bg-primary max-w-[450px] max-h-screen text-white p-10 col-span-5 relative ">
@@ -32,7 +99,7 @@ function contact() {
             {/* Form Start Here */}
             <div className="p-10 col-span-7">
                 <h1 className="text-4xl font-semibold pb-3">Please enter the details</h1>
-                <form action="#" method="POST">
+                <form autoComplete='off' onSubmit={contactUser}>
                     <div className="grid grid-cols-6 gap-6">
                         {/* Full Name */}
                         <div className="col-span-12">
@@ -40,6 +107,9 @@ function contact() {
                                 Full Name
                             </label>
                             <input
+                                required
+                                value={fullName}
+                                onChange={e => setFullName(e.target.value)}
                                 type="text"
                                 name="full-name"
                                 id="full-name"
@@ -55,6 +125,9 @@ function contact() {
                                     Company Name
                                 </label>
                                 <input
+                                    required
+                                    value={companyName}
+                                    onChange={e => setCompanyName(e.target.value)}
                                     type="text"
                                     name="company-name"
                                     id="company-name"
@@ -67,7 +140,10 @@ function contact() {
                                     Company Email
                                 </label>
                                 <input
-                                    type="text"
+                                    required
+                                    value={companyEmail}
+                                    onChange={e => setCompanyEmail(e.target.value)}
+                                    type="email"
                                     name="company-email"
                                     id="company-email"
                                     className="input-form"
@@ -79,11 +155,16 @@ function contact() {
                                     Number of Employees
                                 </label>
                                 <select
+                                    value={numberOfEmployees}
+                                    onChange={e => {
+                                        setNumberOfEmployees(e.target.value)
+                                    }}
+                                    required
                                     id="no-of-employees"
                                     name="no-of-employees"
                                     className="mt-1 block w-full py-2 px-3 input-form"
                                 >
-                                    <option>1 - 5</option>
+                                    <option >1 - 5</option>
                                     <option>5 - 20</option>
                                     <option>20 - 50</option>
                                     <option>50+</option>
@@ -100,13 +181,16 @@ function contact() {
                                     Describe your project briefy
                                 </label>
                                 <textarea
+                                    required
+                                    value={projectDesc}
+                                    onChange={e => setProjectDesc(e.target.value)}
                                     id="project-briefy"
                                     name="project-briefy"
                                     rows={3}
                                     className="input-form"
                                     defaultValue={''}
                                 />
-                            
+
                             </div>
 
                             <fieldset className="mt-6">
@@ -118,31 +202,37 @@ function contact() {
                                 <div className="mt-4 flex">
                                     <div className="flex items-center">
                                         <input
-                                            id="project-lead"
-                                            name="project-lead"
+                                            required
+                                            onChange={e => setProjectType('New Project')}
+                                            checked={projectType === 'New Project'}
+                                            id="project-type1"
+                                            name="project-type"
                                             type="radio"
                                             className="focus:ring-primary h-4 w-4 text-primary border-gray-300"
                                         />
-                                        <label htmlFor="project-lead" className="ml-3 block text-sm font-medium text-gray-700">
-                                        New Project 
+                                        <label htmlFor="project-type1" className="ml-3 block text-sm font-medium text-gray-700">
+                                            New Project
                                         </label>
                                     </div>
                                     <div className="flex items-center ml-5">
                                         <input
-                                            id="project-lead"
-                                            name="project-lead"
+                                            required
+                                            onChange={e => setProjectType('Existing Code')}
+                                            checked={projectType === 'Existing Code'}
+                                            id="project-type"
+                                            name="project-type"
                                             type="radio"
                                             className="focus:ring-primary h-4 w-4 text-primary border-gray-300"
                                         />
-                                        <label htmlFor="project-lead" className="ml-3 block text-sm font-medium text-gray-700">
-                                        Existing Codebase
+                                        <label htmlFor="project-type" className="ml-3 block text-sm font-medium text-gray-700">
+                                            Existing Codebase
                                         </label>
                                     </div>
 
                                 </div>
                             </fieldset>
                             {/* Project manager/Engineering Manger/CTO */}
-                            
+
                             <fieldset className="mt-6">
                                 <div>
                                     <legend className="text-sm font-medium text-gray-700">
@@ -152,6 +242,9 @@ function contact() {
                                 <div className="mt-4 flex">
                                     <div className="flex items-center">
                                         <input
+                                            required
+                                            checked={projectLeadRequired === 'Yes'}
+                                            onChange={e => setProjectLeadRequired('Yes')}
                                             id="project-lead"
                                             name="project-lead"
                                             type="radio"
@@ -163,6 +256,9 @@ function contact() {
                                     </div>
                                     <div className="flex items-center ml-5">
                                         <input
+                                            required
+                                            checked={projectLeadRequired === 'No'}
+                                            onChange={e => setProjectLeadRequired('No')}
                                             id="project-lead"
                                             name="project-lead"
                                             type="radio"
@@ -181,16 +277,21 @@ function contact() {
                                     Number of Developers required
                                 </label>
                                 <select
+                                    required
+                                    value={numberOfDev}
+                                    onChange={e => {
+                                        setNumberOfDevs(e.target.value)
+                                    }}
                                     id="country"
                                     name="country"
                                     autoComplete="country"
                                     className="mt-1 block w-full py-2 px-3 input-form"
                                 >
                                     <option defaultValue>I don’t know</option>
-                                    <option>1 - 2</option>
-                                    <option>3 - 5</option>
-                                    <option>6 - 10</option>
-                                    <option>10+</option>
+                                    <option value='1 - 2'>1 - 2</option>
+                                    <option value='3 - 5'>3 - 5</option>
+                                    <option value='6 - 10'>6 - 10</option>
+                                    <option value='10+'>10+</option>
                                 </select>
                             </div>
                         </div>
@@ -207,15 +308,16 @@ function contact() {
                                 </div>
                                 <div className=" grid grid-cols-12">
                                     {selected_technologies.map((tech, index) => (
-                                        <div key={index} style={{minHeight:48}} className="flex items-center  col-span-6  md:col-span-4 lg:col-span-3 input-select mt-4">
+                                        <div key={index} style={{ minHeight: 48 }} className={`flex items-center  col-span-6  md:col-span-4 lg:col-span-3 input-select mt-4`}>
                                             <input
-
+                                                onChange={e => setSelectedTech(e, tech.tech_name)
+                                                }
                                                 id={tech.tech_name}
                                                 name={tech.tech_name}
                                                 type="checkbox"
                                                 className="input-radio hidden"
                                             />
-                                            <label htmlFor={tech.tech_name} className=" block text-sm min-w-[140px] font-medium text-gray-700 border border-1 rounded-lg text-center px-5 py-3">
+                                            <label htmlFor={tech.tech_name} className={`block text-sm min-w-[140px] font-medium text-gray-700 border border-1 rounded-lg text-center px-5 py-3 ${preferredTechStack.includes(tech.tech_name) && 'bg-blue-200'}`}>
                                                 {tech.tech_name}
                                                 <br />
                                                 <span className="text-gray-500 text-xs font-normal" > {tech.tech}</span>
@@ -232,15 +334,19 @@ function contact() {
                                     Expected Time Commitment
                                 </label>
                                 <select
+                                    required
+                                    onChange={e => {
+                                        setExpectedTimeCommitment(e.target.value)
+                                    }}
+                                    value={expectedTimeCommitment}
                                     id="time-commitment"
                                     name="time-commitment"
                                     className="mt-1 block w-full py-2 px-3 input-form"
                                 >
-                                    <option defaultValue>I don’t know</option>
-                                    <option>3 to 6 Months</option>
-                                    <option>6 to 12 Months</option>
-
-                                    <option>More than a year</option>
+                                    <option value='I don’t know' defaultValue>I don’t know</option>
+                                    <option value='3 to 6 Months'>3 to 6 Months</option>
+                                    <option value='6 to 12 Months'>6 to 12 Months</option>
+                                    <option value='6 to 12 Months'>More than a year</option>
                                 </select>
                             </div>
                         </div>
