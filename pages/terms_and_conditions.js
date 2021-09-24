@@ -3,17 +3,19 @@ import { terms_and_conditions_data } from "../constants/constants"
 function term_and_conditions() {
     return (
         <section >
-            <div className="bg-blue-100  pt-40 pb-32 new-container">
-                <div className="text-center">
-                    <h1 className="font-semibold text-4xl">
-                        {terms_and_conditions_data.main_heading}
-                    </h1>
-                    <h5 className="text-lg font-medium pt-3 w-5/12 mx-auto">
-                        {terms_and_conditions_data.main_paragraph}
-                    </h5>
-                    <h6 className="text-sm mt-3">
-                        {terms_and_conditions_data.updated_date}
-                    </h6>
+            <div className="bg-blue-300">
+                <div className="  pt-40 pb-32 new-container">
+                    <div className="text-center">
+                        <h1 className="font-semibold text-4xl">
+                            {terms_and_conditions_data.main_heading}
+                        </h1>
+                        <h5 className="text-lg font-medium pt-3 w-5/12 mx-auto">
+                            {terms_and_conditions_data.main_paragraph}
+                        </h5>
+                        <h6 className="text-sm mt-3">
+                            {terms_and_conditions_data.updated_date}
+                        </h6>
+                    </div>
                 </div>
             </div>
 

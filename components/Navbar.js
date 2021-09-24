@@ -1,12 +1,20 @@
 /* This example requires Tailwind CSS v2.0+ */
-import { Disclosure } from '@headlessui/react'
-import {MenuIcon, XIcon } from '@heroicons/react/outline'
-
+import { Disclosure } from "@headlessui/react";
+import { MenuIcon, XIcon } from "@heroicons/react/outline";
+import { useRouter } from "next/dist/client/router";
+import { useEffect } from "react";
+import { navbar_links } from "../constants/constants";
 function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
+  return classes.filter(Boolean).join(" ");
 }
 
-export default function Example() {
+export default function Navbar() {
+  const { pathname } = useRouter();
+
+  useEffect(() => {
+    console.log("xx", pathname);
+  }, [pathname]);
+
   return (
     <Disclosure as="nav" className="bg-white shadow fixed w-screen z-50">
       {({ open }) => (
@@ -27,42 +35,32 @@ export default function Example() {
                   />
                 </div>
                 <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
-                  {/* Current: "border-blue-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" */}
-                  <a
-                    href="/"
-                    className="border-blue-500 text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
-                  >
-                    Home
-                  </a>
-                  <a
-                    href="/our_services"
-                    className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
-                  >
-                    Our Services
-                  </a>
-                  <a
-                    href="/about"
-                    className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
-                  >
-                    About Us
-                  </a>
-                  <a
-                    href="/work_with_us"
-                    className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
-                  >
-                    Work With Us
-                  </a>
+                  {navbar_links.map(({ label, link }) => {
+                    return (
+                    <a
+                      href={link}
+                      className={` text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium  border-transparent
+                      ${
+                        
+                         pathname===link 
+                          ? "border-blue-500 border-b-3"
+                          : ""
+                      }   `}
+                    >
+                      {label}
+                    </a>
+                    )})
+                    }
                 </div>
               </div>
               <div className="hidden sm:ml-6 sm:flex sm:items-center">
-
-
                 {/* Profile dropdown */}
-                <a href="/contact" className="px-5 py-3 bg-primary text-white rounded-lg hover:bg-blue-600 cursor-pointer">
+                <a
+                  href="/contact"
+                  className="px-5 py-3 bg-primary text-white rounded-lg hover:bg-blue-600 cursor-pointer"
+                >
                   Contact Us
                 </a>
-
-
               </div>
               <div className="-mr-2 flex items-center sm:hidden">
                 {/* Mobile menu button */}
@@ -119,5 +117,5 @@ export default function Example() {
         </>
       )}
     </Disclosure>
-  )
+  );
 }

@@ -31,21 +31,21 @@ function Footer() {
                 <a href="/" className="border-b border-solid border-transparent hover:border-primary hover:text-primary">Home</a>
               </li>
               <li className="mb-2">
-                <a href="/our_services" className="border-b border-solid border-transparent hover:border-primary hover:text-primary">Services</a>
+                <a href="/our_services" className="border-b border-solid border-transparent hover:border-primary hover:text-primary">Our Services</a>
               </li>
-              <li className="mb-2">
+              {/* <li className="mb-2">
                 <a href="/technologies" className="border-b border-solid border-transparent hover:border-primary hover:text-primary">Technologies</a>
-              </li>
-              <li className="mb-2">
+              </li> */}
+              {/* <li className="mb-2">
                 <a href="/case_studies" className="border-b border-solid border-transparent hover:border-primary hover:text-primary">Case Studies</a>
-              </li>
+              </li> */}
             </ul>
           </div>
           <div className="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6 mt-8 md:mt-0">
             <h5 className="font-bold  text-md mb-3 ">Company</h5>
             <ul className="list-none footer-links">
               <li className="mb-2">
-                <a href="/about_us" className="border-b border-solid border-transparent hover:border-primary hover:text-primary">About Us</a>
+                <a href="/about" className="border-b border-solid border-transparent hover:border-primary hover:text-primary">About Us</a>
               </li>
               <li className="mb-2">
                 <a href="/work_with_us" className="border-b border-solid border-transparent hover:border-primary hover:text-primary">Work With Us</a>

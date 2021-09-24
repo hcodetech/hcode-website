@@ -2,7 +2,7 @@ function Benefits(props) {
   return (
     <div className={props.background ? "" : "bg-gray-100"}>
       <div className="text-center">
-        <h1 className="text-4xl font-semibold  pt-12">{props.data.heading}</h1>
+        <h1 className="text-4xl font-semibold  pt-16">{props.data.heading}</h1>
         <p className="font-light pt-2 lg:w-1/2 mx-auto">{props.data.paragraph}</p>
       </div>
       <div className="new-container pb-16 grid md:grid-cols-2 lg:grid-cols-3 gap-8">

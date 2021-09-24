@@ -40,7 +40,7 @@ function work_with_us() {
             <a
               href="https://in.indeed.com/cmp/Hcode-Technologies/jobs"
               target="_blank"
-              className="primary-outline ">See Open Position</a>
+              className="primary-outline ">See Open Positions</a>
           </div>
           <div className="relative h-[322px] w-full lg:w-[558px] lg:mt-28 ">
             <Image
@@ -139,7 +139,7 @@ function work_with_us() {
         <div className="mx-auto md:w-1/2 mb-10">
           {hiring_process.map(({ image, heading, descripition }, index) => (
             <div className="md:flex mb-10" key={index}>
-              <div className="min-w-[64px] max-w-[64px] min-h-[64px] max-h-[64px] bg-blue-100  rounded-full">
+              <div className="min-w-[64px] max-w-[64px] min-h-[64px] max-h-[64px] bg-blue-200  rounded-full">
                 <img
                   src={image}
                   layout="fill"

@@ -6,7 +6,8 @@ import {
   our_services_data,
   faq_services,
   client,
-  how_to_get_started
+  how_to_get_started,
+  consumer_card
 } from "../../constants/constants";
 import ShowCaseCard from "../../components/ShowCaseCard";
 import Client from "../../components/Client";
@@ -59,8 +60,8 @@ function our_services() {
       </section>
 
       {/* Project Showcase */}
-      <section className="new-container hidden">
-        <ShowCaseCard />
+      <section className="new-container">
+        <ShowCaseCard  data={consumer_card}/>
       </section>
 
       {/* Client Section */}

@@ -17,7 +17,7 @@ function HeroSection() {
       interval={4000}
       isPlaying
       lockOnWindowScroll
-      playDirection="backward"
+      playDirection
 
     >
       <h2 >With intrinsic axis dimension</h2>
@@ -42,14 +42,14 @@ function HeroSection() {
           </Slide>
         </Slider>
         <ButtonBack >
-          <div className="bg-black absolute left-0 bottom-1/2 opacity-20">
-            <ChevronLeftIcon className="w-6 h-6 p-6"  />
+          <div className="bg-black absolute left-0 bottom-1/2 opacity-20 hover:opacity-80">
+            <ChevronLeftIcon className="w-10 h-10  text-white"  />
           </div>
 
         </ButtonBack>
         <ButtonNext>
-          <div className="bg-black absolute right-0 bottom-1/2 opacity-20">
-            <ChevronRightIcon className="w-6 h-6 p-6"  />
+          <div className="bg-black absolute right-0 bottom-1/2 opacity-20 hover:opacity-80 ">
+            <ChevronRightIcon className="w-10 h-10 text-white "  />
           </div>
 
         </ButtonNext >
