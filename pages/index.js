@@ -90,7 +90,8 @@ export default function Home() {
         <Process data={how_to_get_started} />
       </div>
 
-      <section className="new-container pt-14 bg-gray-100 text-center">
+      <section className="py-14 bg-gray-100 text-center">
+      <div className="new-container">
         <h1 className="font-poppins text-center font-semibold text-3xl  md:text-4xl md:leading-tight">
           Our Core Team
         </h1>
@@ -101,6 +102,7 @@ export default function Home() {
         </div>
         <div>
 
+        </div>
         </div>
       </section>
 
