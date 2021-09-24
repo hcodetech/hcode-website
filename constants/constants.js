@@ -590,7 +590,8 @@ export const what_we_do = [
 
 export const linkedin_icon = "/assets/icons/linkedIn.svg";
 export const twitter_icon = "/assets/icons/twitter.svg";
-export const hcode_footer = "/assets/icons/hcode_logo.svg";
+export const hcode_footer = "/assets/icons/full-logo.png";
+export const fav_icon = "/assets/icons/icon.png";
 
 
 

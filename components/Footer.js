@@ -5,12 +5,12 @@ function Footer() {
     <footer className="footer-1 bg-gray-100 pt-6  pb-12">
       <div className="new-container mx-auto px-4">
         <div className="sm:flex sm:flex-wrap sm:-mx-4 md:py-4">
-          <div className="px-4 sm:w-1/2 md:w-1/4  ">
-            <div className="w-1/2">
-              <img src={hcode_footer} alt="Hcode Technologies" className="w-40 mb-3 "/>
+          <div className="px-4 w-full sm:w-1/2 md:w-1/3  ">
+            <div className="md:w-1/2">
+              <img src={hcode_footer} alt="Hcode Technologies" className="w-40 mb-3 " />
               <p>
                 Agile, Predictable, Outcome Oriented App Development
-              </p>            
+              </p>
             </div>
           </div>
 
@@ -59,19 +59,19 @@ function Footer() {
             </ul>
           </div>
           <div className="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6 mt-8 md:mt-0">
-          <div className="flex mt-2">
-                <a href="https://www.linkedin.com/company/hcodetech/mycompany/" target="_blank" >
-                  <img src={linkedin_icon} className="rounded-full w-10 h-10 p-2 hover:bg-blue-200  bg-gray-200 " alt="https://www.linkedin.com/company/hcodetech/mycompany/" />
-                </a>
-                <a href="https://twitter.com/HcodeTech" target="_blank">
-                  <img src={twitter_icon} className="rounded-full w-10 h-10 p-2 hover:bg-blue-200  ml-4 bg-gray-200 " alt="https://twitter.com/HcodeTech" />
-                </a>
-              </div>
-        </div>
+            <div className="flex mt-2">
+              <a href="https://www.linkedin.com/company/hcodetech/mycompany/" target="_blank" >
+                <img src={linkedin_icon} className="rounded-full w-10 h-10 p-2 hover:bg-blue-200  bg-gray-200 " alt="https://www.linkedin.com/company/hcodetech/mycompany/" />
+              </a>
+              <a href="https://twitter.com/HcodeTech" target="_blank">
+                <img src={twitter_icon} className="rounded-full w-10 h-10 p-2 hover:bg-blue-200  ml-4 bg-gray-200 " alt="https://twitter.com/HcodeTech" />
+              </a>
+            </div>
+          </div>
         </div>
 
         <div className="text-center  border-t pt-3">
-        Copyright @ 2021 <a href="/">hcode.tech</a> | All rights reserved by Hcode Techonologies
+          Copyright @ 2021 <a href="/">hcode.tech</a> | All rights reserved by Hcode Techonologies
         </div>
 
       </div>
