@@ -7,9 +7,10 @@ import {
   faq_services,
   client,
   how_to_get_started,
-  consumer_card
+  consumer_card,
+  enterprise_card
 } from "../../constants/constants";
-import ShowCaseCard from "../../components/ShowCaseCard";
+import Consumer_Card from "../../components/Consumer_Card";
 import Client from "../../components/Client";
 import TechStack from "../../components/TechStack";
 import Accordion from "../../components/Accordion";
@@ -61,7 +62,8 @@ function our_services() {
 
       {/* Project Showcase */}
       <section className="new-container">
-        <ShowCaseCard  data={consumer_card}/>
+        <Consumer_Card  data={consumer_card}/>
+        <Consumer_Card  data={enterprise_card}/>
       </section>
 
 
