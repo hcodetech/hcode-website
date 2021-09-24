@@ -3,7 +3,7 @@
 // we can utilise a custom _document.js and only add the Google Font into the Head in a single place.
 
 import Document, { Html, Head, Main, NextScript } from "next/document";
-import { fav_icon } from "../constants/constants";
+import { fav_icon, homepage } from "../constants/constants";
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
     const initialProps = await Document.getInitialProps(ctx);
@@ -15,6 +15,24 @@ class MyDocument extends Document {
       <Html lang="en">
         <Head>
           {/*  */}
+
+          <meta name="keywords" content="Software, Development Studio, Development, startups, Mobile Apps, Web Apps"/>
+
+            <meta prefix="og: http://ogp.me/ns#" property="og:title" content={homepage.title}/>
+            <meta prefix="og: http://ogp.me/ns#" property="og:type" content="website"/>
+            <meta prefix="og: http://ogp.me/ns#" property="og:url" content="https://hcode.tech/"/>
+            <meta prefix="og: http://ogp.me/ns#" property="og:image" content={homepage.share_image}/>
+            <meta prefix="og: http://ogp.me/ns#" property="og:site_name" content="HCODE"/>
+            <meta prefix="og: http://ogp.me/ns#" property="og:description" content={homepage.description}/>
+
+            <meta itemprop="name" content={homepage.title}/>
+            <meta itemprop="description" content={homepage.description}/>
+            <meta itemprop="image" content={homepage.share_image}/>
+
+            <meta name="twitter:card" content="summary_large_image"/>
+            <meta name="twitter:title" content={homepage.title}/>
+            <meta name="twitter:description" content={homepage.description}/>
+            <meta name="twitter:image" content={homepage.share_image}/>
 
 
           <script

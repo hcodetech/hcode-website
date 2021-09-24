@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { homepage, how_to_get_started, client, city, TEAM } from "../constants/constants";
+import { homepage, how_to_get_started, client, city, TEAM, desc } from "../constants/constants";
 import Client from '../components/Client'
 import ServicesCard from '../components/ServicesCard'
 import CTA from "../components/CTA";
@@ -13,8 +13,10 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Home | Hcode Techonolgies </title>
-        {/* <link rel="icon" href="/favicon.ico" /> */}
+        <title>{homepage.title} </title>
+
+        
+
       </Head>
       <HeroSection/>
 

@@ -23,17 +23,17 @@ export const navbar_links =
 export const about_page = {
   hero_heading: "We’re in the business of writing great code",
   hero_paragraph:
-    "We provide on time delivery along with transparent communication. But we also make sure that our people have great work life balance, meritocracy, and a healthy work environment",
+    "We provide on-time delivery along with transparent communication. But we also make sure that our people have great work-life balance, meritocracy, and a healthy work environment",
   hero_image: "/assets/img/hcode_about_us_hero.jpg",
   heading_2: "It all started in 2018",
   paragraph_2:
-    "Our Founder, Shashank who was working in New York, decided to move to India and do something meaningful. When he came back, he realised that all the great work opportunities were centered around a handful of metro cities only. While looking at his hometown, a small town around 100 Kms from the national capital, he saw that there are plenty of talented engineers who, if given right mentorship and guidance, can be turned into professional coders.<br/><br/>That was his eureka moment, where he saw there can be an impact and along with his wife Shweta, he started building a small company. Soon, a few of their friends decided to jump on the wagon and we became Hcode.",
+    "Our Founder, Shashank who was working in New York, decided to move to India and do something meaningful. When he came back, he realized that all the great work opportunities were centered around a handful of metro cities only. While looking at his hometown, a small town around 100 Kms from the national capital, he saw that there are plenty of talented engineers who, if given the right mentorship and guidance, can be turned into professional coders.<br/><br/>That was his eureka moment, where he saw there can be an impact and along with his wife Shweta, he started building a small company. Soon, a few of their friends decided to jump on the wagon and we became Hcode.",
   heading_3: "and today,",
   paragraph_3:
-    "We are a team of 30+ young, talented and dynamic engineers, selected through a rigorous process and shaped through a hands-on training programme. We’ve shipped quality code on time to over a dozen clients across startups and enterprises. We have built strong ethical relationships with our clients such that they stay with us, come back to us with more projects, and get us more clients through referrals.<br/><br/>Our leadership team has worked in MNCs and startups across New York, Bengaluru and New Delhi, and ensures the same level of professionalism and work culture while working from a small city in India, Karnal.",
+    "We are a team of 30+ young, talented and dynamic engineers, selected through a rigorous process and shaped through a hands-on training program. We’ve shipped quality code on time to over a dozen clients across startups and enterprises. We have built strong ethical relationships with our clients such that they stay with us, come back to us with more projects, and get us more clients through referrals.<br/><br/>Our leadership team has worked in MNCs and startups across New York, Bengaluru, and New Delhi, and ensures the same level of professionalism and work culture while working from a small city in India, Karnal.",
   office_heading: "Our corporate office is located in Karnal,<br/> India",
   office_paragraph:
-    "But why Karnal and not a metro city? This we get asked quite often. To answer, we thought <strong>instead of adding to the problem of migration</strong> to already overburdened cities, why not build a company in a small city and give people an option to do great work here itself.<br/> <br/>With that intent we built a <strong>beautiful and large office</strong> with nature feel and built professional work culture with meritocracy at the centre of it. We have been able to keep both <strong>our clients as well as employees happy</strong> and satisfied by our work policies, professional work ethics and transparent communication.<br/> <br/> We intend to give our employees <strong>an experience of working in a silicon valley tech company</strong> without having to migrate there.",
+    "But why Karnal and not a metro city? This we get asked quite often. To answer, we thought <strong>instead of adding to the problem of migration</strong> to already overburdened cities, why not build a company in a small city and give people an option to do great work here itself.<br/> <br/>With that intent we built a <strong>beautiful and large office</strong> with a natural feel and built professional work culture with meritocracy at the center of it. We have been able to keep both <strong>our clients as well as employees happy</strong> and satisfied by our work policies, professional work ethics and transparent communication.<br/> <br/> We intend to give our employees <strong>an experience of working in a silicon valley tech company</strong> without having to migrate there.",
   office_1: "/assets/img/office_1.jpg",
   office_2: "/assets/img/office_2.jpg",
 };
@@ -49,7 +49,7 @@ export const hiring_process = [
     heading: "First Touch Base",
     image: "/assets/img/phone_svg.svg",
     descripition:
-      "We’d connect over a quick phone call to understand more about you and what makes you interested in us.Please be genuine, we hate posers.",
+      "We’d connect over a quick phone call to understand more about you and what makes you interested in us. Please be genuine, we hate posers.",
   },
   {
     heading: "Skill Test",
@@ -143,7 +143,7 @@ export const TEAM = [
 export const our_service =
 {
   heading: "Our Services",
-  paragraph: "Are you a startup or an enterprise looking to set up/augment your tech team? If yes, we have the right solution tailored for you. We staff, manage and support your offshore development team and we can get your team up and ready at short notice.",
+  paragraph: "Are you a startup or an enterprise looking to set up/augment your tech team? If yes, we have the right solution tailored for you. We staff, manage, and support your offshore development team and we can get your team up and ready at short notice.",
 
   team_as_service_heading: "Team as a Service",
   team_as_service_image: "/assets/img/developer_as_service.jpg",
@@ -159,7 +159,7 @@ export const our_service =
 export const work_with_us_content = {
   hero_heading: "Let’s Build Together",
   hero_paragraph:
-    "We abide by our core value, <strong>‘Our people are our biggest asset’,</strong> in letter and spirit. We do everything to make sure that our people are personally happy, professionally satisfied and continue growing.<br/><br/>We do this by making sure that people work with global clients on interesting problems with <strong>latest tech stacks</strong> while maintaining good work-life balance. We keep our <strong>working hours sane</strong> so that you get time for whatever else is important in your life.",
+    "We abide by our core value, <strong>‘Our people are our biggest asset’,</strong> in letter and spirit. We do everything to make sure that our people are personally happy, professionally satisfied, and continue growing.<br/><br/>We do this by making sure that people work with global clients on interesting problems with <strong>latest tech stacks</strong> while maintaining a good work-life balance. We keep our <strong>working hours sane</strong> so that you get time for whatever else is important in your life.",
   campus_heading: "Our Campus",
   campus_paragarph: "We have built a great place to work for the best of minds in the small city of Karnal in Haryana.<br/><br/>Our large, natural feel office campus rivals some of the best offices you’d find anywhere else with huge open green area, sports options of Basketball, Badminton, Table Tennis and more. We invite brilliant minds to come, collaborate and build with us.<br/><br/>Further, we understand, at times it is hard for people to move to our city and we don’t want our location to be a roadblock in hiring anyone. If that’s the case for you, check out our remote job roles below:"
 }
@@ -188,9 +188,9 @@ export const work_with_us_image_carousel = [
 
 export const our_services_data = {
   hero_heading: "Hire top tech talent for your remote team",
-  hero_paragraph: "We help assemble and manage a team of world-class software developers dedicated to bring your vision to life",
+  hero_paragraph: "We help assemble and manage a team of world-class software developers dedicated to bringing your vision to life",
   partner_heading: "How to start partnering with us",
-  partner_paragraph: "We assign you full time developers or a team that are dedicated to work with you. They are your employees on our payroll so that we handle all the administration and you can focus on what is important for your business.",
+  partner_paragraph: "We assign you full-time developers or a team that is dedicated to working with you. They are your employees on our payroll so that we handle all the administration and you can focus on what is important for your business.",
 }
 export const service_partner = [
   {
@@ -271,23 +271,23 @@ export const city = [
 
 export const faq_hiring = [
   {
-    question: "Do you offer internship?",
+    question: "Do you offer an internship?",
     answer:
       "Yes. Please apply to us for a 3-6 month internship. We prefer if this is during your final semester so that, if given an offer, you can join us full-time right after.",
   },
   {
     question: "Do you have remote roles?",
     answer:
-      "For experienced hires that are unable to locate to Karnal for some reason, we do accommodate remote roles. But we expect freshers to join us in our office in Karnal.",
+      "For experienced hires that are unable to relocate to Karnal for some reason, we do accommodate remote roles. But we expect freshers to join us in our office in Karnal.",
   },
   {
     question: "What if I need to relocate?",
     answer: "We will help you in whatever way you need to relocate to Karnal.",
   },
   {
-    question: "How do I prepare for interview?",
+    question: "How do I prepare for the interview?",
     answer:
-      "We go over 3 things in the interview process: your experience, technical skills and soft skills.  Please go over your experience and make sure you are able to talk about it, revise and make sure you aren’t rusty on your coding and logical aptitude.",
+      "We go over 3 things in the interview process: your experience, technical skills, and soft skills.  Please go over your experience and make sure you can talk about it, revise and make sure you aren’t rusty on your coding and logical aptitude.",
   },
   {
     question: "How soon will I know if a hiring decision has been made?",
@@ -305,7 +305,7 @@ export const faq_about = [
   {
     question: "How did the company do during Corona?",
     answer:
-      "None of our employees got fired, no one had to take a paycut even for a single day. Instead, our work grew and hired more employees and everyone has gotten healthy hikes.",
+      "None of our employees got fired, no one had to take a pay cut even for a single day. Instead, our work grew and hired more employees and everyone has gotten healthy hikes.",
   },
 ];
 
@@ -318,22 +318,22 @@ export const faq_work_with_us = [
   {
     question: "Do you have remote roles?",
     answer:
-      "We would prefer people to be working from our office location, but we do open certain (full/part) remote roles for experienced candidates. For Freshers(and Interns), there is NO provision currently for remote role.",
+      "We would prefer people to be working from our office location, but we do open certain (full/part) remote roles for experienced candidates. For Freshers(and Interns), there is NO provision currently for a remote role.",
   },
   {
     question: "What if I get selected and need to relocate to Karnal?",
     answer:
-      "We will be happy to help you in assisting in the logistics in order to relocate here.",
+      "We will be happy to help you in assisting in the logistics to relocate here.",
   },
   {
-    question: "How do I prepare for interview?",
+    question: "How do I prepare for the interview?",
     answer:
-      "We go over 3 things in the interview process: your experience, technical skills and soft skills, and we hate badly formatted CVs. Please go over your experience and make sure you are able to talk about it, revise and make sure you aren’t rusty on your coding and logical aptitude.",
+      "We go over 3 things in the interview process: your experience, technical skills, and soft skills, and we hate badly formatted CVs. Please go over your experience and make sure you can talk about it, revise and make sure you aren’t rusty on your coding and logical aptitude.",
   },
   {
     question: "What are the standard components of the CTC?",
     answer:
-      "We don’t fluff our CTC with components which you won’t get. We have pretty standard Monthly Salary, Annual Fixed Bonus, Quartely Bonus, and retirals such as Gratuity and EPF along with lumpsum benefits of Insurance and perk benefits.",
+      "We don’t fluff our CTC with components which you won’t get. We have pretty standard Monthly Salary, Annual Retention Bonus, and retirals such as Gratuity and EPF along with lumpsum benefits of Insurance and perk benefits.",
   },
   {
     question: "Do you offer internships?",
@@ -346,7 +346,7 @@ export const faq_services = [
   {
     question: "What is your working model?",
     answer:
-      "We work on a resourcing model. We DO NOT work on fixed budget/price project. We can offer developer(s) or team as a service which are billed typically at their hourly rates.",
+      "We work on a resourcing model. We DO NOT work on a fixed budget/price project. We can offer developer(s) or team as a service which is billed typically at their hourly rates.",
   },
   {
     question: "What can you help me with?",
@@ -356,7 +356,7 @@ export const faq_services = [
   {
     question: "How soon can I start and what is the required notice period?",
     answer:
-      "It depends on the requirement, i.e no. of resources required. Typically for 1-2 developer requirements, we can start in 1-4 weeks.For larger team requirements we may need 1-3 months. A typical notice period of increase/decrease of resources in a project is 1-3 month depending on the size of the project as above.",
+      "It depends on the requirement, i.e no. of resources required. Typically for 1-2 developer requirements, we can start in 1-4 weeks. For larger team requirements we may need 1-3 months. A typical notice period of increase/decrease of resources in a project is 1-3 months depending on the size of the project as above.",
   },
   {
     question: "I have a product idea for my startup. Can you help me get it made?",
@@ -366,17 +366,17 @@ export const faq_services = [
   {
     question: "Do I need to have an app design for app development?",
     answer:
-      "It is not necessary, but we definitely recommend it as it will save a lot of time and back and forth in the development phase.",
+      "It is not necessary, but we recommend it as it will save a lot of time and back and forth in the development phase.",
   },
   {
     question: "Does your team have experience of working with US/Global teams?",
     answer:
-      "More than 80% of our clients have been from US and we’re very well experienced in working and collaborating with international teams working in different time zone than ours.",
+      "More than 80% of our clients have been from the US and we’re very well experienced in working and collaborating with international teams working in different time zone than ours.",
   },
   {
     question: "What are your working hours? Can the resource work in our time zone?",
     answer:
-      "Our employees typically work 9:30 am to 6:30 pm IST (12 am to 9 am EST) 5 days a week. This ensures that we 1 hour overlap in US mornings. Other than clients usually have once or twice a week scheduled meetings that could go outside this time window.      ",
+      "Our employees typically work 9:30 am to 6:30 pm IST (12 am to 9 am EST) 5 days a week. This ensures that we have 1-hour overlap in US mornings. Other than this, we do ad-hoc meetings on a need basis that could go outside this time window.      ",
   },
   {
     question: "How do you ensure privacy and confidentiality?",
@@ -388,9 +388,9 @@ export const faq_services = [
 
 export const tass = {
   hero_heading: "Team as a Service (TaaS)",
-  hero_paragraph: "You get a team of software developers headed by a tech-lead or a project manager. This team can either function as your standalone technology team or this could be augmenting your existing team.With a tech lead or PM in the mix, you don’t have to directly manage all your resources and can provide high level plan of what you want to acheive.",
+  hero_paragraph: "You get a team of software developers headed by a tech-lead or a project manager. This team can either function as your standalone technology team or this could be augmenting your existing team. With a tech lead or PM in the mix, you don’t have to directly manage all your resources and can provide a high-level plan of what you want to achieve.",
   who_is_it_for: "Who is it for ?",
-  who_is_it_for_paragraph: "This model suits well for clients who either don’t have technology experience or who requires more than 2 developers, so that someone can manage them on your behalf and act as a point of contact.(Looking to hire 1 or 2 developers? please checkout our Developer-as-a-Service model)",
+  who_is_it_for_paragraph: "This model suits well for clients who either don’t have technology experience or who require more than 2 developers so that someone can manage them on your behalf and act as a point of contact. (Looking to hire 1 or 2 developers? please check out our Developer-as-a-Service model)",
   startup: {
     tag: "Startup",
     main_heading: "Getting Started",
@@ -409,7 +409,7 @@ export const tass = {
     main_heading: "Starting a team",
     main_points: [{
       1: "You are a tech/non-tech enterprise, starting a tech project and looking for a team to get it executed",
-      2: "You would like to switch from an existing software service provider to better/cheaper one.",
+      2: "You would like to switch from an existing software service provider to a better/cheaper one.",
     }],
     secondary_heading: "Augmenting your team",
     points: [{
@@ -430,7 +430,7 @@ export const tass_benefits = {
   benefits: [
     {
       heading: "Top Talent",
-      paragraph: "Rigourously selected and professionally trained team, incentivised to be accountable, commercial and transparent in communication"
+      paragraph: "Rigorously selected and professionally trained team, incentivized to be accountable, commercial and transparent in communication"
     },
     {
       heading: "Managed Process",
@@ -438,19 +438,19 @@ export const tass_benefits = {
     },
     {
       heading: "Easy administration",
-      paragraph: "We cover all contract work, payroll operations, leave management, employee retention, team setup and logistics."
+      paragraph: "We cover all contract work, payroll operations, leave management, employee retention, team setup, and logistics."
     },
     {
       heading: "Trust & Assurance",
-      paragraph: "We believe in building relationships based on trust. Whether it is confidentiality of your data and IPR or delivering your project on time, we only make promises we can deliver on"
+      paragraph: "We believe in building relationships based on trust. Whether it is the confidentiality of your data and IPR or delivering your project on time, we only make promises we can deliver on"
     },
     {
-      heading: "Best Pratices and Help",
-      paragraph: "Over time, we have built best pratices for project management, code delivery, SDLC. Working together, each developer has help at their disposal"
+      heading: "Best Practices and Help",
+      paragraph: "Over time, we have built best practices for project management, code delivery, SDLC. Working together, each developer has helped at their disposal"
     },
     {
       heading: "High ROI",
-      paragraph: "We deliver value to your business by improving quality and reducing cost resulting in high ROI. We will help you operate business more efficiently through innovation."
+      paragraph: "We deliver value to your business by improving quality and reducing cost resulting in high ROI. We will help you operate the business more efficiently through innovation."
     },
 
   ]
@@ -459,25 +459,25 @@ export const tass_benefits = {
 
 export const how_to_get_started = {
   heading: "How to start partnering with us",
-  descripition: "We assign you full time developers which have gone through our rigrous hiring process. They act as your remote employees and have been trained and mentored to work in startup pace enviornment and on modern stacks.",
+  descripition: "We assign you full-time developers who have gone through our rigorous hiring process. They act as your remote employees and have been trained and mentored to work in startup pace environment and on modern stacks.",
   steps: [
     {
       color: "bg-green-100",
       width: "max-w-[50px] min-w-[50px] ",
       heading: "Share your Requirements",
-      descripition: "Start with either sharing your requirements on our website or as most of current clients do, by letting our existing clients refer you over an email.We ask this info to make sure there is a good fit."
+      descripition: "Start with either sharing your requirements on our website or as most of the current clients do, by letting our existing clients refer you over an email. We ask this info to make sure there is a good fit."
     },
     {
       color: "bg-yellow-100",
       width: "max-w-[100px] min-w-[100px]",
       heading: "Agree on Scope and Model",
-      descripition: "If there is a good fit we agree on the best engagement model and scope of the project. For example, timelines,  how many developers needed by tech stack or if  a project manager is required (typically for non-tech clients). "
+      descripition: "If there is a good fit we agree on the best engagement model and scope of the project. For example, timelines,  how many developers are needed by tech stack, or if a project manager is required (typically for non-tech clients). "
     },
     {
       color: "bg-blue-100",
       width: " min-w-[1000px] max-w-[1200px]",
       heading: "Onboard the Team!",
-      descripition: "We agree on a start date and make sure paperwork is in order to protect your IP. We will fill available positions from our existing pool of developers and when needed  by hiring externally."
+      descripition: "We agree on a start date and make sure paperwork is to protect your IP. We will fill available positions from our existing pool of developers and when needed  by hiring externally."
     },
   ]
 }
@@ -485,11 +485,14 @@ export const how_to_get_started = {
 
 
 export const homepage = {
+  descripition: "We’re in the business of writing great code. We provide on-time delivery along with transparent communication. But we also make sure that our people have great work-life balance, meritocracy, and a healthy work environment",
+  title : "Servicing End-To-End Engineering Needs | Hcode Technologies ",
+  share_image :"http://hcode.tech/images/portfolio/funday1.png",
   who_are_we: {
     image: "/assets/img/homepage_who_we_are.jpg",
     heading: "Who We Are?",
-    paragraph: "We are a team of young, talented and dynamic engineers based in a small city in India, Karnal.  Our leadership team has worked in MNCs and startups across New York, Bengaluru and New Delhi, and ensures the same level of professionalism and work culture.",
-    paragraph_2nd: "Our developers are selected through a rigorous hiring process and shaped through a hands-on training programme. We have built strong ethical relationships and shipped quality code on time to over a dozen clients across startups and enterprises.",
+    paragraph: "We are a team of young, talented, and dynamic engineers based in a small city in India, Karnal.  Our leadership team has worked in MNCs and startups across New York, Bengaluru, and New Delhi, and ensures the same level of professionalism and work culture.",
+    paragraph_2nd: "Our developers are selected through a rigorous hiring process and shaped through a hands-on training program. We have built strong ethical relationships and shipped quality code on time to over a dozen clients across startups and enterprises.",
     clients: {
       heading: "Our clients are based in:",
       location: [
@@ -526,7 +529,7 @@ export const homepage = {
       {
         image: "/assets/img/roi.svg",
         heading: "High ROI",
-        descripition: "We deliver value to your business by improving quality and reducing cost resulting in high ROI. We will help you operate business more efficiently through innovation."
+        descripition: "We deliver value to your business by improving quality and reducing cost resulting in high ROI. We will help you operate the business more efficiently through innovation."
       }, {
         image: "/assets/img/top_talent.svg",
         heading: "Top Talent",
@@ -535,12 +538,12 @@ export const homepage = {
       {
         image: "/assets/img/trust.svg",
         heading: "Trust",
-        descripition: "We believe in building relationships based on trust. We take confidentiality of your data and IPR very seriously and maintain formal agreements with each of our employees."
+        descripition: "We believe in building relationships based on trust. We take the confidentiality of your data and IPR very seriously and maintain formal agreements with each of our employees."
       },
       {
         image: "/assets/img/delivery.svg",
         heading: "On Time Delivery",
-        descripition: "At Hcode, we only make promises we can deliver on. We boast of meeting our deadlines on all projects. In case we are facing delays, we keep you in-the-loop as soon as possible."
+        descripition: "At Hcode, we only make promises we can deliver on. We boast of meeting our deadlines on all projects. In case we are facing delays, we keep you in the loop as soon as possible."
       },
       {
         image: "/assets/img/easy_admin.svg",
@@ -550,7 +553,7 @@ export const homepage = {
       {
         image: "/assets/img/best.svg",
         heading: "Best Practices",
-        descripition: "Over time, we have built best pratices for productivity tools, project management, code delivery, SDLC. Working together, each developer has help at their disposal"
+        descripition: "Over time, we have built best practices for productivity tools, project management, code delivery, SDLC. Working together, each developer has helped at their disposal"
       },
     ]
   }
@@ -600,9 +603,9 @@ export const terms_and_conditions_data = {
   main_heading: "Terms and Conditions",
   main_paragraph: "Please read these Terms carefully, and contact us if you have any questions.",
   updated_date: "This document was last updated on September 19, 2021",
-  updated_paragraph: "This Privacy Policy governs the manner in which HCODE collects, uses, maintains and discloses information collected from users (each, a \"User\") of the www.hcode.tech website (\"Site\"). This privacy policy applies to the Site and all products and services offered by HCODE.",
+  updated_paragraph: "This Privacy Policy governs how HCODE collects, uses, maintains and discloses information collected from users (each, a \"User\") of the www.hcode.tech website (\"Site\"). This privacy policy applies to the Site and all products and services offered by HCODE.",
   terms: "Terms",
-  terms_paragraph: "By accessing the website at https://hcode.tech (\"Site\"), you are agreeing to be bound by these terms of service, all applicable laws and regulations, and agree that you are responsible for compliance with any applicable local laws. If you do not agree with any of these terms, you are prohibited from using or accessing this site. The materials contained in this website are protected by applicable copyright and trademark law.",
+  terms_paragraph: "By accessing the website at https://hcode.tech (\"Site\"), you are agreeing to be bound by these terms of service, all applicable laws, and regulations, and agree that you are responsible for compliance with any applicable local laws. If you do not agree with any of these terms, you are prohibited from using or accessing this site. The materials contained in this website are protected by applicable copyright and trademark law.",
   general_use: "General Use",
   general_paragraph: [
     {
@@ -652,7 +655,7 @@ export const terms_and_conditions_data = {
     { point: "Any delays, interruptions, inaccuracies, errors, omissions or cessation of Services" },
     { point: "The removal or availability of any Submissions, Materials and any derivatives thereof from the Site." },
   ],
-  limitations_of_liability_second: " For the avoidance of doubt, you acknowledge that the Company is a provider of an interactive computer service and not a publisher under Section 230 of the Communications Decency Act of 1996, and therefore not responsible for any User’s or visitor’s content. If, notwithstanding the provisions of this clause, a court of competent jurisdiction holds the Company liable in respect of any matters arising under or incidental to these Terms, THE COMPANY’S TOTAL LIABILITY TO YOU FOR ALL DAMAGES, LOSSES, AND CAUSES OF ACTION ARISING OUT OF OR RELATING TO THESE TERMS OR YOUR USE OF THE SITE, SERVICES, SUBMISSIONS, MATERIALS OR DATA SETS (WHETHER IN CONTRACT, TORT INCLUDING NEGLIGENCE, WARRANTY, OR OTHERWISE) WILL IN NO EVENT EXCEED THE AMOUNT PAID BY YOU FOR USING THE WEBSITE DURING THE 12 MONTHS PRECEDING YOUR CLAIM, OR, IF NO AMOUNT WAS PAID, SUCH LIABILITY WILL BE LIMITED TO US$1,000. SOME JURISDICTIONS MAY NOT ALLOW THE EXCLUSION OR LIMITATION OF LIABILITY FOR CERTAIN DAMAGES, SO SOME OF THE ABOVE LIMITATIONS AND EXCLUSIONS MAY NOT APPLY TO YOU.",
+  limitations_of_liability_second: " For the avoidance of doubt, you acknowledge that the Company is a provider of interactive computer service and not a publisher under Section 230 of the Communications Decency Act of 1996, and therefore not responsible for any User’s or visitor’s content. If, notwithstanding the provisions of this clause, a court of competent jurisdiction holds the Company liable in respect of any matters arising under or incidental to these Terms, THE COMPANY’S TOTAL LIABILITY TO YOU FOR ALL DAMAGES, LOSSES, AND CAUSES OF ACTION ARISING OUT OF OR RELATING TO THESE TERMS OR YOUR USE OF THE SITE, SERVICES, SUBMISSIONS, MATERIALS OR DATA SETS (WHETHER IN CONTRACT, TORT INCLUDING NEGLIGENCE, WARRANTY, OR OTHERWISE) WILL IN NO EVENT EXCEED THE AMOUNT PAID BY YOU FOR USING THE WEBSITE DURING THE 12 MONTHS PRECEDING YOUR CLAIM, OR, IF NO AMOUNT WAS PAID, SUCH LIABILITY WILL BE LIMITED TO US$1,000. SOME JURISDICTIONS MAY NOT ALLOW THE EXCLUSION OR LIMITATION OF LIABILITY FOR CERTAIN DAMAGES, SO SOME OF THE ABOVE LIMITATIONS AND EXCLUSIONS MAY NOT APPLY TO YOU.",
   modifications: "Modifications",
   modifications_paragraph: "HCODE may revise these terms of service for its website at any time without notice. By using this website you are agreeing to be bound by the then current version of these terms of service.",
   govering_law: "Governing Law",
@@ -708,14 +711,14 @@ export const enterprise_card ={
   card_color:"bg-green-400",
   link:"/our_services",
   heading:"Enterprise <> SAAS",
-  paragraph:"We've ample experience of building and managing Large Enterprise Solutions across education, remote technologies, productivity tools, research etc. Our clients come to us as they are able to trust us with  confidentiality and expertise.",
+  paragraph:"We've ample experience of building and managing Large Enterprise Solutions across education, remote technologies, productivity tools, research, etc. Our clients come to us as they can trust us with  confidentiality and expertise.",
   highlight:"We've been able to consistently deliver and build great relations with many enterprise clients."
 }
 export const fintech_card ={
   card_color:"bg-blue-400",
   link:"/our_services",
   heading:"Fintech",
-  paragraph:"Many of our clients have been from Fintech across New York and India. We have worked with enterprises with big data and analytics needs, as well as with startups to help make thier products come to life.",
+  paragraph:"Many of our clients have been from Fintech across New York and India. We have worked with enterprises with big data and analytics needs, as well as with startups to help make their products come to life.",
   highlight:"Our founding team has deep experience in Fintech which drives our expertise"
 }
 
