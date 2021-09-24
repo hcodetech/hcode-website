@@ -8,8 +8,15 @@ function Client(props) {
                 <div className="slide-track">
                     {props.data.map(({ img, name, alt }, index) => (
                         <div className="slide" key={index}>
-                            <img src={img} alt={alt} className="" />
-                            
+                            <img src={img} height='110' alt={alt} className="" />
+                            <h6 className="font-medium text-primary float-left">
+                                {name && name}
+                            </h6>
+                        </div>
+                    ))}
+                    {props.data.map(({ img, name, alt }, index) => (
+                        <div className="slide" key={index}>
+                            <img src={img} height='113' alt={alt} className="" />
                             <h6 className="font-medium text-primary float-left">
                                 {name && name}
                             </h6>

@@ -12,7 +12,8 @@
     "next": "latest",
     "pure-react-carousel": "^1.27.6",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "sass": "^1.42.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.2.6",
