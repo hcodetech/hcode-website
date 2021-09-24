@@ -23,16 +23,21 @@ export default function Navbar() {
             <div className="flex justify-between h-16">
               <div className="flex">
                 <div className="flex-shrink-0 flex items-center">
-                  <img
-                    className="block lg:hidden h-8 w-auto"
-                    src={hcode_footer}
-                    alt="Hcode Technologies"
-                  />
-                  <img
-                    className="hidden lg:block h-8 w-auto"
-                    src={hcode_footer}
-                    alt="Hcode Technologies"
-                  />
+                  <a href="/">
+                    <img
+                      className="block lg:hidden h-8 w-auto"
+                      src={hcode_footer}
+                      alt="Hcode Technologies"
+                    />
+                  </a>
+                  <a href="/">
+                    <img
+                      className="hidden lg:block h-8 w-auto"
+                      src={hcode_footer}
+                      alt="Hcode Technologies"
+                    />
+                  </a>
+
                 </div>
                 <div className="hidden sm:ml-6 md:flex sm:space-x-8">
                   {navbar_links.map(({ label, link }) => {
@@ -61,7 +66,7 @@ export default function Navbar() {
                   <span className="px-5">Contact Us</span>
                 </a>
 
-                
+
               </div>
               <div className="-mr-2 flex items-center md:hidden">
                 {/* Mobile menu button */}

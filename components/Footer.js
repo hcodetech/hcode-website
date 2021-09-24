@@ -6,9 +6,9 @@ function Footer() {
       <div className="new-container mx-auto px-4">
         <div className="sm:flex sm:flex-wrap sm:-mx-4 md:py-4">
           <div className="px-4 w-full sm:w-1/2 md:w-1/3  ">
-            <div className="md:w-1/2">
+            <div className="md:w-3/4 ">
               <img src={hcode_footer} alt="Hcode Technologies" className="w-40 mb-3 " />
-              <p>
+              <p className="mt-3">
                 Agile, Predictable, Outcome Oriented App Development
               </p>
             </div>
