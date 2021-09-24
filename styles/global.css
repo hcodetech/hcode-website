@@ -1,6 +1,136 @@
 @tailwind components;
 @layer components {
-  .button_new {
-    @apply mr-2 px-4 py-2 border rounded-full cursor-pointer bg-red-600 p-10;
+  .new-container {
+    @apply max-w-7xl mx-auto px-6 sm:px-6 lg:px-8;
+  }
+  .primary-button {
+    @apply bg-primary px-12 py-5 text-center text-white rounded-md hover:bg-blue-800 hover:scale-x-105 active:scale-100 focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white;
+  }
+  .outline-button {
+    @apply bg-white border border-primary text-primary hover:bg-primary hover:text-white  transition-colors duration-100 ease-out rounded px-4 py-3 mt-3;
+  }
+  strong {
+    @apply font-bold;
+  }
+  .input-form{
+    @apply mt-1 focus:ring-primary focus:border-primary block w-full shadow-sm sm:text-sm border-gray-300 rounded-md;
+  }
+  .input-radio{
+    @apply focus:ring-primary h-4 w-4 text-primary border-gray-300;
+  }
+  .primary-outline{
+    @apply px-4 py-3 rounded border border-primary hover:bg-primary hover:text-white text-primary transform transition duration-100 ease-out;
   }
 }
+
+/* Start Accordion Css */
+.accordionSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #fff;
+}
+
+.acc_container {
+  top: 30%;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.wrap h1 {
+  font-size: 1rem;
+  padding: 1rem 0;
+}
+
+.wrap span {
+  margin-right: 1.5rem;
+}
+
+.dropdown {
+  background: #fbfbfb;
+  color: #000;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.dropdown p {
+  font-size: 1rem;
+}
+/* End Accordion Css */
+
+/* Start Clients Section CSS */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 10));
+  }
+}
+.slider {
+  /* height: 100px; */
+  margin: auto;
+  overflow: hidden;
+  /* position: relative; */
+}
+.slider::before,
+.slider::after {
+  /* background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  ); */
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+.slider::before {
+  left: 0;
+  top: 0;
+}
+.slider .slide-track {
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(350px * 14);
+}
+.slider .slide {
+  height: 100px;
+  width: 250px;
+}
+/* Start Clients Section CSS */
+
+
+.centered{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+/*  */

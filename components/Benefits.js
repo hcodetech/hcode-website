@@ -1,17 +1,19 @@
-import { work_with_us_benefits } from "../constants/constants";
-
 function Benefits(props) {
   return (
-    <div className={props.background ? "bg-gray-100" :""}>
-      <h1 className="text-4xl font-semibold text-center my-12">
-        Perks and benefits <br /> we love most
-      </h1>
-
-      <div className="grid grid-cols-3 gap-8 p-8">
-        {work_with_us_benefits.map(
+    <div className={props.background ? "" : "bg-gray-100"}>
+      <div className="text-center">
+        <h1 className="text-4xl font-semibold  pt-12">{props.data.heading}</h1>
+        <p className="font-light pt-2 lg:w-1/2 mx-auto">{props.data.paragraph}</p>
+      </div>
+      <div className="new-container pb-16 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {props.data.points.map(
           ({ image, heading, descripition }, index) => (
-            <div key={index}>
-              <div className="w-16 h-16 bg-blue-200 rounded-full" />
+            <div key={index} className="pt-16 ">
+              <img
+                src={image}
+                layout="fill"
+                className="max-h-[65px]"
+              />
               <h3 className="text-xl font-semibold py-2"> {heading}</h3>
               <p className="font-light">{descripition}</p>
             </div>

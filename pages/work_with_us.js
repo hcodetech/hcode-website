@@ -2,12 +2,21 @@ import Head from "next/head";
 import Image from "next/image";
 import { ArrowRightIcon } from "@heroicons/react/solid";
 import {
+  faq_hiring,
+  hiring_process,
+  karnal,
+  remote,
+  what_we_do,
   work_with_us_1,
   work_with_us_2,
   work_with_us_3,
+  work_with_us_benefits,
+  work_with_us_content,
+  work_with_us_recuriter_image,
 } from "../constants/constants";
 import ImageCarousel from "../components/ImageCarousel";
 import Benefits from "../components/Benefits";
+import Accordion from "../components/Accordion";
 
 function work_with_us() {
   return (
@@ -15,69 +24,74 @@ function work_with_us() {
       <Head>
         <title>Work With Us | Hcode Techonolgies</title>
       </Head>
-      <section className="relative bg-work_with_us_hero bg-no-repeat bg-contain">
-        <div className="container px-2  sm:px-0 sm:mx-auto  grid grid-cols-1 lg:grid-cols-2 ">
-          <div className="p-8 lg:p-16 xl:p-32 xl:pb-0">
-            <h1 className="text-2xl lg:text-4xl font-semibold">
-              Help build engaged, high-performing teams — including ours
+      {/* Hero Section */}
+      <section className="relative  max-h-[800px] bg-no-repeat bg-contain ">
+        <div className="new-container  grid grid-cols-1 lg:grid-cols-2  ">
+          <div className="py-10 md:py-24 md:pr-32 mt-20">
+            <h1 className="text-3xl lg:text-4xl font-semibold">
+              {work_with_us_content.hero_heading}
             </h1>
-            <p>
-              Hcode works with People teams across the globe to turn employees
-              into high performers, managers into leaders, and companies into
-              the best places to work.
-            </p>
-            <button className="bg-white mt-4 p-4 border border-blue-400">
-              See Open Position
-            </button>
+            <p
+              className="py-5 text-lg font-light"
+              dangerouslySetInnerHTML={{
+                __html: work_with_us_content.hero_paragraph,
+              }}
+            />
+            <a
+              href="https://in.indeed.com/cmp/Hcode-Technologies/jobs"
+              target="_blank"
+              className="primary-outline ">See Open Position</a>
           </div>
-          <div className="relative h-[322px] w-[558px] mt-16 rounded-lg ">
+          <div className="relative h-[322px] w-full lg:w-[558px] lg:mt-28 ">
             <Image
               src={work_with_us_1}
               layout="fill"
-              objectFit="cover"
-              objectPosition="center"
+              className="rounded-lg  shadow-xl"
             />
           </div>
         </div>
-        <div className="">
-          <div className="grid grid-cols-2 gap-8">
-            <div className="relative h-[322px] w-[424px]">
-              <Image
-                src={work_with_us_2}
-                layout="fill"
-                objectFit="cover"
-                objectPosition="center"
-              />
-            </div>
-            <div className="relative h-[322px] w-[256px]">
-              <Image
-                src={work_with_us_3}
-                layout="fill"
-                objectFit="cover"
-                objectPosition="center"
-              />
-            </div>
+        <div className="hidden  lg:grid grid-cols-12 -mt-48">
+          <div className="col-start-5 col-end-10 relative h-[322px] w-[500px] mt-12 ">
+            <Image
+              src={work_with_us_2}
+              layout="fill"
+              className="rounded-lg  shadow-xl"
+            />
+          </div>
+          <div className="col-start-10 col-end-12 relative h-[322px] w-[256px] ">
+            <Image
+              src={work_with_us_3}
+              layout="fill"
+              className="rounded-lg  shadow-xl"
+            />
           </div>
         </div>
       </section>
-      <section className="container mt-20 px-32 sm:mx-auto">
-        <h1 className="text-4xl  font-semibold">Life at Hcode </h1>
-        <p className="mt-4 w-1/2 leading-snug">
-          We invest in the personal and professional growth of every Hcode
-          (member of our team) because we believe growth leads to both business
-          impact and personal fulfillment.
-        </p>
-        <div className="grid grid-cols-2 md:w-3/4 py-10">
+      {/* Campus Overview */}
+      <section className="new-container mt-20">
+        <h1 className="text-4xl  font-semibold font-poppins">
+          {work_with_us_content.campus_heading}
+        </h1>
+        <p
+          className="mt-4 md:w-3/4 leading-snug font-light text-lg"
+          dangerouslySetInnerHTML={{
+            __html: work_with_us_content.campus_paragarph,
+          }}
+        />
+
+        <div className="grid md:grid-cols-2 md:w-3/4 pt-5">
           <div className="">
+            <img src={karnal} alt="" />
             <h4 className="text-xl font-semibold py-2">Karnal</h4>
-            <a className="pb-1 border-b inline-flex border-black hover:scale-100  cursor-pointer">
+            <a className="pb-1 border-b inline-flex border-black hover:scale-100  cursor-pointer opacity-50 hover:opacity-100">
               See positions in Karnal, India
               <ArrowRightIcon className="w-6 ml-2 " />
             </a>
           </div>
-          <div className="">
+          <div className="mt-4 md:mt-0">
+            <img src={remote} alt="" />
             <h4 className="text-xl font-semibold  py-2">Remote</h4>
-            <a className="pb-1 border-b inline-flex border-black hover:scale-100  cursor-pointer">
+            <a className="pb-1 border-b inline-flex border-black hover:scale-100  cursor-pointer opacity-50 hover:opacity-100">
               See positions in Remote
               <ArrowRightIcon className="w-6 ml-2 " />
             </a>
@@ -85,33 +99,99 @@ function work_with_us() {
         </div>
       </section>
       {/* Image Carousel TODO */}
-      <ImageCarousel />
-
-      <section className="mt-10 grid grid-cols-2">
-        <div className="bg-blue-200 p-32">
-          <h1 className="text-4xl">Why Karnal ? Why Not Karnal ?</h1>
-          <p className="leading-normal">
-            We invest in the personal and professional growth of every Hcode
-            (member of our team) because we believe growth leads to both
-            business impact and personal fulfillment.
-          </p>
-        </div>
-        <div className="relative h-full w-full">
-          <Image
-            src={work_with_us_2}
-            layout="fill"
-            objectFit="cover"
-            objectPosition="center"
-          />
+      <div className="py-10 md:py-36">
+        <ImageCarousel />
+      </div>
+      {/* What we offer */}
+      <section className="new-container bg">
+        <h1 className="font-semibold text-5xl mt-2 mb-4">
+          What we offer
+        </h1>
+        <div className="grid grid-cols-12">
+          {what_we_do.map((item, index) => (
+            <div className="col-span-12 md:col-span-6">
+              <img src={item.img} alt={item.heading}  />
+              <h2 className="font-semibold text-2xl mt-3">{item.heading}</h2>
+              <ul className="list-disc list-inside mt-2">
+                {item.points.map((li, index) => (
+                  <li>
+                    {li.point}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
       </section>
-      {/* Benefits Carousel TODO */}
-      <section className="">
-        <Benefits background={true} />
+      {/* Benefits */}
+      <section className="my-20">
+        <Benefits data={work_with_us_benefits} />
       </section>
       {/* Hiring Process */}
-      <section className="container mt-10 px-16 sm:mx-auto">
+      <section className="new-container">
+        <div className="text-center sm:w-1/2 mx-auto">
+          <h1 className="text-4xl font-semibold">Our hiring process</h1>
+          <p className="mt-2 mb-5 font-light">
+            We have a 5-step hiring process that generally takes about 2-4 weeks
+            from application to offer letter.
+          </p>
+        </div>
+        <div className="mx-auto md:w-1/2 mb-10">
+          {hiring_process.map(({ image, heading, descripition }, index) => (
+            <div className="md:flex mb-10" key={index}>
+              <div className="min-w-[64px] max-w-[64px] min-h-[64px] max-h-[64px] bg-blue-100  rounded-full">
+                <img
+                  src={image}
+                  layout="fill"
+                />
+              </div>
+              <div className="ml-4">
+                <h2 className="font-semibold text-xl">{heading}</h2>
+                <p className="font-light">{descripition}</p>
+              </div>
+            </div>
+          ))}
+          <div className="text-center">
+            <a
+              href="https://in.indeed.com/cmp/Hcode-Technologies/jobs"
+              target="_blank"
+              className="primary-button text-ce"
+            >
+              See all open positions
+            </a>
+          </div>
+        </div>
+      </section>
+      {/* FAQ */}
+      <div className="text-center bg-gray-100 pt-0 pb-20 md:my-20">
+        <Accordion data={faq_hiring} />
+      
+      </div>
 
+      {/* TODO Open Position */}
+      {/* Are your Recuriter */}
+      <section className="new-container py-10">
+        <div className="grid md:grid-cols-2">
+          <img
+            src={work_with_us_recuriter_image}
+            layout="fill"
+            className="rounded-lg"
+          />
+          <div className="my-4 md:my-auto md:w-4/5 ml-3">
+            <h1 className="text-4xl font-semibold">Are you a recruiter?</h1>
+            <p className="text-lg mt-2 mb-8">
+              If you are recruiter looking to help us with our hiring needs,
+              please get in touch with us below.
+            </p>
+            <a
+              href="https://in.indeed.com/cmp/Hcode-Technologies/jobs"
+              target="_blank"
+              className="primary-button text-ce"
+            >
+              See all open positions
+            </a>
+          </div>
+        </div>
       </section>
     </>
   );
