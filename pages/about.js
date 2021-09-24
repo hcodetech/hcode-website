@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
 import Link from "next/link";
 import Client from "../components/Client";
 import CTA from "../components/CTA";
@@ -122,10 +121,10 @@ function about() {
             className="rounded-lg"
           />
           <div className=" absolute rounded-lg h-[400px] w-[300px] -bottom-3/4 xl:-bottom-5 z-20 -ml-24 border-none">
-            <Image
+            <img
               src={about_page.office_2}
               layout="fill"
-              className="rounded-lg bg-"
+              className="rounded-lg"
             />
           </div>
         </div>

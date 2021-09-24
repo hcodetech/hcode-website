@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
 import ServicesCard from "../../components/ServicesCard";
 import {
   our_services_hero,
@@ -32,7 +31,7 @@ function our_services() {
             </p>
           </div>
           <div className="relative h-[580px] w-full mt-8">
-            <Image
+            <img
               src={our_services_hero}
               layout="fill"
             />

@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
 import { ArrowRightIcon } from "@heroicons/react/solid";
 import {
   faq_hiring,
@@ -43,7 +42,7 @@ function work_with_us() {
               className="primary-outline ">See Open Positions</a>
           </div>
           <div className="relative h-[322px] w-full lg:w-[558px] lg:mt-28 ">
-            <Image
+            <img
               src={work_with_us_1}
               layout="fill"
               className="rounded-lg  shadow-xl"
@@ -52,14 +51,14 @@ function work_with_us() {
         </div>
         <div className="hidden  lg:grid grid-cols-12 -mt-48">
           <div className="col-start-5 col-end-10 relative h-[322px] w-[500px] mt-12 ">
-            <Image
+            <img
               src={work_with_us_2}
               layout="fill"
               className="rounded-lg  shadow-xl"
             />
           </div>
           <div className="col-start-10 col-end-12 relative h-[322px] w-[256px] ">
-            <Image
+            <img
               src={work_with_us_3}
               layout="fill"
               className="rounded-lg  shadow-xl"
