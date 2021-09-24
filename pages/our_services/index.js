@@ -45,7 +45,7 @@ function our_services() {
         <Process data={how_to_get_started} />
         <div className="text-center my-10">
         <a href="/contact" className="primary-outline  text-center">
-          Let’s connect to start your project
+          Let’s Connect To Start Your Project
         </a>
         </div>
       </div>
@@ -64,13 +64,17 @@ function our_services() {
         <ShowCaseCard  data={consumer_card}/>
       </section>
 
+
+      {/* FAQ */}
+      <div className="bg-gray-100">
+      <Accordion data={faq_services} />
+      </div>
+
       {/* Client Section */}
-      <section className="new-container">
+      <section className="new-container py-10">
       <Client data={client}/>
       </section>
 
-      {/* FAQ */}
-      <Accordion data={faq_services} />
     </>
   );
 }

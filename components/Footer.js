@@ -71,7 +71,7 @@ function Footer() {
         </div>
 
         <div className="text-center  border-t pt-3">
-          All rights reserved by Hcode Techonologies
+        Copyright @ 2021 <a href="/">hcode.tech</a> | All rights reserved by Hcode Techonologies
         </div>
 
       </div>

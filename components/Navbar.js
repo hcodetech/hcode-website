@@ -56,9 +56,9 @@ export default function Navbar() {
                 {/* Profile dropdown */}
                 <a
                   href="/contact"
-                  className="px-5 py-3 bg-white text-primary border-2 rounded hover:shadow  cursor-pointer"
+                  className="primary-outline"
                 >
-                  Contact Us
+                  <span className="px-5">Contact Us</span>
                 </a>
 
                 
@@ -108,7 +108,8 @@ export default function Navbar() {
             <div className="pt-4 pb-3 border-t border-gray-200">
               <div className="flex items-center px-4">
                 <div className="flex-shrink-0">
-                  <button className="px-5 py-3 bg-primary text-white rounded hover:bg-blue-600 cursor-pointer ">
+                  
+                  <button className="primary-outline">
                     Contact Us
                   </button>
                 </div>

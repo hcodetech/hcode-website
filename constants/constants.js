@@ -231,7 +231,7 @@ export const client = [
   { img: "/assets/img/clients/fable.jpg", alt: "Fable" },
   { img: "/assets/img/clients/funday.jpg", alt: "Funday" },
   { img: "/assets/img/clients/hoi.jpg", alt: "Hoi Food" },
-  { img: "/assets/img/clients/kashi.jpg", alt: "Kashi Capital" },
+  // { img: "/assets/img/clients/kashi.jpg", alt: "Kashi Capital" },
   { img: "/assets/img/clients/lift_rocket.jpg", alt: "Lift Rocket" },
   { img: "/assets/img/clients/ohana.jpg", alt: "Ohana" },
   { img: "/assets/img/clients/pcg.jpg", alt: "Paramount Capital Group" },
@@ -598,7 +598,7 @@ export const hcode_footer = "/assets/img/hcode-footer.png";
 export const terms_and_conditions_data = {
   main_heading: "Terms and Conditions",
   main_paragraph: "Please read these Terms carefully, and contact us if you have any questions.",
-  updated_date: "This document was last updated on September 19, 2019",
+  updated_date: "This document was last updated on September 19, 2021",
   updated_paragraph: "This Privacy Policy governs the manner in which HCODE collects, uses, maintains and discloses information collected from users (each, a \"User\") of the www.hcode.tech website (\"Site\"). This privacy policy applies to the Site and all products and services offered by HCODE.",
   terms: "Terms",
   terms_paragraph: "By accessing the website at https://hcode.tech (\"Site\"), you are agreeing to be bound by these terms of service, all applicable laws and regulations, and agree that you are responsible for compliance with any applicable local laws. If you do not agree with any of these terms, you are prohibited from using or accessing this site. The materials contained in this website are protected by applicable copyright and trademark law.",
@@ -714,7 +714,7 @@ export const fintech_card ={
 export const privacy_policy_data = {
   main_heading: "PRIVACY POLICY",
   main_paragraph: "Please read these Terms carefully, and contact us if you have any questions.",
-  updated_date: "This document was last updated on September 19, 2019",
+  updated_date: "This document was last updated on September 19, 2021",
   updated_paragraph: "This Privacy Policy governs the manner in which HCODE collects, uses, maintains and discloses information collected from users (each, a \"User\") of the www.hcode.tech website (\"Site\"). This privacy policy applies to the Site and all products and services offered by HCODE.",
   personal: "Personal identification information",
   personal_paragraph: "We may collect personal identification information from Users in a variety of ways, including, but not limited to, when Users visit our site, subscribe to the newsletter, and in connection with other activities, services, features or resources we make available on our Site. Users may visit our Site anonymously. We will collect personal identification information from Users only if they voluntarily submit such information to us. Users can always refuse to supply personally identification information, except that it may prevent them from engaging in certain Site related activities.",

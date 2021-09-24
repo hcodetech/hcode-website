@@ -79,7 +79,7 @@ function work_with_us() {
           }}
         />
 
-        <div className="grid md:grid-cols-2 md:w-3/4 pt-5">
+        <div className="grid md:grid-cols-2 md:w-3/4 pt-10">
           <div className="">
             <img src={karnal} alt="" />
             <h4 className="text-xl font-semibold py-2">Karnal</h4>
@@ -99,7 +99,7 @@ function work_with_us() {
         </div>
       </section>
       {/* Image Carousel TODO */}
-      <div className="py-10 md:py-36">
+      <div className="py-10 md:py-4">
         <ImageCarousel />
       </div>
       {/* What we offer */}
@@ -157,7 +157,7 @@ function work_with_us() {
               target="_blank"
               className="primary-button text-ce"
             >
-              See all open positions
+              See All Open Positions
             </a>
           </div>
         </div>
@@ -184,11 +184,11 @@ function work_with_us() {
               please get in touch with us below.
             </p>
             <a
-              href="/contact"
+              href="mailto:hr@hcode.tech"
               target="_blank"
               className="primary-button text-ce"
             >
-              See all open positions
+              Get In Touch 
             </a>
           </div>
         </div>

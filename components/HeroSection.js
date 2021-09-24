@@ -60,7 +60,21 @@ function HeroSection() {
             </div>
           </Slide>
           <Slide index={2}>
-            <img src={image_slider_1} alt="" className="h-screen w-screen object-cover" />
+          <div className="relative">
+              <div className="absolute h-screen w-screen">
+                <div className="centered text-white  text-center ">
+                <h1 className="text-5xl leading-tight  font-bold  mx-auto text-white shadow ">
+                We Focus On Your Tech As <br/> You Focus On Your Business
+                </h1>
+                <p className="text-xl font-normal opacity-80 ">
+                Maximise your ROI by hiring our team of young and passionate developers that deliver value to your business by improving quality and reducing cost
+                </p>
+                <button className="primary-button mt-4">Get Started</button>
+                  </div>
+              
+              </div>
+              <img src={image_slider_1} alt="" className="h-screen w-screen object-cover " />
+            </div>
           </Slide>
         </Slider>
         <ButtonBack >

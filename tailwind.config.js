@@ -35,6 +35,7 @@ module.exports = {
         homepage_hero: "url('/assets/img/hcode_hero.jpg')",
         cta_circle: "url('/assets/img/cta-circle.png')",
         linkedin: "url('/assets/icons/linkedin.svg')",
+        linkedin: "url('/assets/icons/linkedin.svg')",
       }),
     },
   },
