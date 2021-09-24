@@ -71,9 +71,9 @@ function contact() {
             setNumberOfEmployees('1 - 5');
             setPreferredTechStack([])
             setExpectedTimeCommitment('I don’t know')
-            alert('Successful...')
+            alert('Thanks for your interest. We will contact you shortly.')
         } catch (e) {
-            alert('Something went wrong')
+            alert('We are unable to register your request at current time. Please send us an email at hello@hcode.tech')
         } finally {
             setLoading(false);
         }
