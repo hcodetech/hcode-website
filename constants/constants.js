@@ -701,7 +701,8 @@ export const consumer_card ={
   link:"/our_services",
   heading:"Consumer <> Mobile",
   paragraph:"We have built end-to-end products and mobile applications for various consumer companies across food delivery apps, market places, health segments to name a few.",
-  highlight:"We’ve built multiple products in this domain from ground up; many of whom have been able to sucessfully raise funds"
+  highlight:"We’ve built multiple products in this domain from ground up; many of whom have been able to sucessfully raise funds",
+  mockup_image:"/assets/img/enterprise.png"
 }
 export const enterprise_card ={
   card_color:"bg-green-400",

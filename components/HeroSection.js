@@ -27,7 +27,7 @@ function HeroSection() {
           <Slide index={0}>
             <div className="relative">
               <div className="absolute h-screen w-screen">
-                <div className="centered text-white  text-center">
+                <div className="centered text-white  text-center ">
                 <h1 className="text-5xl leading-tight  font-bold  mx-auto text-white  ">
                 End-To-End 
                 <br/> Engineering Services

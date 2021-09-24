@@ -62,7 +62,7 @@ function our_services() {
       {/* Project Showcase */}
       <section className="new-container">
         <Consumer_Card  data={consumer_card}/>
-        <Consumer_Card  data={enterprise_card}/>
+        {/* <Consumer_Card  data={enterprise_card}/> */}
       </section>
 
 

@@ -36,6 +36,9 @@ module.exports = {
         cta_circle: "url('/assets/img/cta-circle.png')",
         linkedin: "url('/assets/icons/linkedin.svg')",
         linkedin: "url('/assets/icons/linkedin.svg')",
+        enterprise_image: "url('/assets/img/enterprise.png')",
+        consumer_image: "url('/assets/img/consumer.png')",
+
       }),
     },
   },
