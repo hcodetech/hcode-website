@@ -1,7 +1,7 @@
 import Link from 'next/link'
 function TechStack() {
     return (
-        <div className="new-container text-white px-6  md:px-32 py-6 md:py-12 bg-tech_stack min-h-screen bg-no-repeat">
+        <div className="new-container text-white px-6  md:px-32 py-6 md:py-12 bg-tech_stack md:min-h-[700px] bg-no-repeat">
             <div className="text-center">
                 <h1 className="text-2xl lg:text-5xl font-semibold mt-10">Tech Stack</h1>
                 <p className="mt-4  font-light md:w-10/12 mx-auto leading-normal">

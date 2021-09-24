@@ -6,6 +6,8 @@ import CTA from "../components/CTA";
 import ServicesCard from "../components/ServicesCard";
 import Team from "../components/Team";
 import { about_page, client, TEAM } from "../constants/constants";
+import { ArrowRightIcon } from "@heroicons/react/solid";
+
 function about() {
   return (
     <>
@@ -76,8 +78,8 @@ function about() {
           Our Core Team
         </h1>
         <div className="grid grid-cols-2 gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-7">
-          {TEAM.map(({ name, image, bio }, index) => (
-            <Team key={index} name={name} image={image} bio={bio} />
+          {TEAM.map(({ name, image, bio, link }, index) => (
+            <Team key={index} name={name} image={image} bio={bio} link={link} />
           ))}
         </div>
         <div>
@@ -88,11 +90,8 @@ function about() {
             Check Out Open Opportunities
           </a>
         </div>
-
       </section>
 
-
-sp
       {/* Office  View */}
       <section className="md:new-container grid grid-cols-12 lg:mt-24">
         {/* TODO */}
@@ -109,10 +108,12 @@ sp
           />
           <div className="mt-3">
 
-          <Link href="/work_with_us">
-            <button className="mt-auto p-4 py-3 bg-white hover:bg-primary hover:text-white rounded-md  ">Want to work with us </button>
-          </Link>
-        </div>
+            <Link href="/work_with_us">
+              <div className="mt-auto py-3 border-b pb-2 border-black max-w-[180px]  opacity-80 hover:opacity-100 flex cursor-pointer   ">Want to work with us
+                <ArrowRightIcon className="w-4 h-4 ml-2 mt-1" />
+              </div>
+            </Link>
+          </div>
         </div>
         <div className=" hidden lg:block relative col-span-12 lg:col-span-6 ">
           <img

@@ -29,7 +29,7 @@ export default function Home() {
       </section>
 
       {/* Who we are */}
-      <section className="bg-blue-100 my-10">
+      <section className="bg-blue-100 my-14">
         <div className="new-container py-10">
           <div className="grid grid-cols-12">
             <div className="col-span-12 lg:col-span-6">

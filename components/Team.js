@@ -13,9 +13,9 @@ function Team({ name, image, bio, link }) {
       <h4 className="text-xl font-semibold ">{name}</h4>
       <p className="font-light">{bio}</p>
       <div className="p-4 cursor-pointer">
-        <Link href="">
+        <a  href={link} target="_blank" >
           <img src={linkedin_icon} alt="" />
-        </Link>
+        </a>
 
       </div>
     </div>

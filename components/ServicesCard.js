@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import {
   our_service,
 } from "../constants/constants";
@@ -15,6 +16,7 @@ function ServicesCard({ heading }) {
       )}
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <Link href="/our_services">
         <div className="relative h-[600px] 2xl:h-[700px]  hover:scale-95 active:scale-100  transform transition duration-100 ease-out">
           <Image
             src={our_service.developer_as_service_image}
@@ -28,6 +30,8 @@ function ServicesCard({ heading }) {
             </p>
           </div>
         </div>
+          </Link>
+          <Link href="/our_services">
         <div className="relative h-[600px] 2xl:h-[700px]  hover:scale-95 active:scale-100  transform transition duration-100 ease-out">
           <Image
             src={our_service.team_as_service_image}
@@ -47,6 +51,7 @@ function ServicesCard({ heading }) {
             </p>
           </div>
         </div>
+        </Link>
       </div>
     </div>
   );

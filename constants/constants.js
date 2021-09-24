@@ -636,3 +636,4 @@ export const terms_and_conditions_data = {
 export const image_slider_1 = "/assets/img/hero_image_1.jpg";
 export const image_slider_2 = "/assets/img/hero_image_2.jpg";
 export const image_slider_3 = "/assets/img/hero_image_3.jpg";
+export const contact_us_circle = "/assets/img/contact_circle.svg";

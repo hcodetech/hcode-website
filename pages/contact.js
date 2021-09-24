@@ -1,27 +1,32 @@
 import { LocationMarkerIcon, PhoneIcon, ChatAltIcon } from "@heroicons/react/solid";
-
+import { contact_us_circle } from '../constants/constants';
 
 function contact() {
     return (
         <section className="new-container grid grid-cols-12 pt-14" >
-            <div className="bg-primary max-w-[450px] max-h-screen text-white p-10 col-span-5">
-                <h1 className="text-4xl font-semibold">
-                    Let’s scale your team together
-                </h1>
-                <p className="text-normal opacity-80 mt-3">
-                    Fill out the form, including details about your next project (or business goals), and we'll be in touch shortly.
-                </p>
-                <div className="flex mt-4 border-t pt-4">
-                    <LocationMarkerIcon className="w-6 h-6 mr-2" />
-                    120/7th Milestone, NH-1, Karnal, Haryana 132001
+            <div className="bg-primary max-w-[450px] max-h-screen text-white p-10 col-span-5 relative">
+                <div>
+                    <h1 className="text-4xl font-semibold">
+                        Let’s scale your team together
+                    </h1>
+                    <p className="text-normal opacity-80 mt-3">
+                        Fill out the form, including details about your next project (or business goals), and we'll be in touch shortly.
+                    </p>
+                    <div className="flex mt-4 border-t pt-4">
+                        <LocationMarkerIcon className="w-6 h-6 mr-2" />
+                        120/7th Milestone, NH-1, Karnal, Haryana 132001
+                    </div>
+                    <div className="flex mt-4 ">
+                        <PhoneIcon className="w-6 h-6 mr-2" />
+                        +91-9416033324
+                    </div>
+                    <div className="flex mt-4 ">
+                        <ChatAltIcon className="w-6 h-6 mr-2" />
+                        hello@hcode.tech
+                    </div>
                 </div>
-                <div className="flex mt-4 ">
-                    <PhoneIcon className="w-6 h-6 mr-2" />
-                    +91-9416033324
-                </div>
-                <div className="flex mt-4 ">
-                    <ChatAltIcon className="w-6 h-6 mr-2" />
-                    hello@hcode.tech
+                <div className="absolute left-0 bottom-0">
+                    <img src={contact_us_circle} alt="" />
                 </div>
             </div>
             {/* Form Start Here */}
@@ -38,7 +43,6 @@ function contact() {
                                 type="text"
                                 name="full-name"
                                 id="full-name"
-                                autoComplete="given-name"
                                 className="input-form"
                             />
                         </div>
@@ -54,7 +58,6 @@ function contact() {
                                     type="text"
                                     name="company-name"
                                     id="company-name"
-                                    autoComplete="given-name"
                                     className="input-form"
                                 />
                             </div>
@@ -67,24 +70,22 @@ function contact() {
                                     type="text"
                                     name="company-email"
                                     id="company-email"
-                                    autoComplete="given-name"
                                     className="input-form"
                                 />
                             </div>
                             {/* Number of Employees */}
                             <div className="col-span-12 mt-4">
-                                <label htmlFor="country" className="block text-sm font-medium text-gray-700">
+                                <label htmlFor="no-of-employees" className="block text-sm font-medium text-gray-700">
                                     Number of Employees
                                 </label>
                                 <select
-                                    id="country"
-                                    name="country"
-                                    autoComplete="country"
+                                    id="no-of-employees"
+                                    name="no-of-employees"
                                     className="mt-1 block w-full py-2 px-3 input-form"
                                 >
-                                    <option>United States</option>
-                                    <option>Canada</option>
-                                    <option>Mexico</option>
+                                    <option>1 - 10</option>
+                                    <option>10 - 20</option>
+                                    <option>20 - 30</option>
                                 </select>
                             </div>
                         </div>
@@ -115,23 +116,23 @@ function contact() {
                                 <div className="mt-4 flex">
                                     <div className="flex items-center">
                                         <input
-                                            id="push-everything"
-                                            name="push-notifications"
+                                            id="project-lead"
+                                            name="project-lead"
                                             type="radio"
                                             className="focus:ring-primary h-4 w-4 text-primary border-gray-300"
                                         />
-                                        <label htmlFor="push-everything" className="ml-3 block text-sm font-medium text-gray-700">
+                                        <label htmlFor="project-lead" className="ml-3 block text-sm font-medium text-gray-700">
                                             Yes
                                         </label>
                                     </div>
                                     <div className="flex items-center ml-5">
                                         <input
-                                            id="push-email"
-                                            name="push-notifications"
+                                            id="project-lead"
+                                            name="project-lead"
                                             type="radio"
                                             className="focus:ring-primary h-4 w-4 text-primary border-gray-300"
                                         />
-                                        <label htmlFor="push-email" className="ml-3 block text-sm font-medium text-gray-700">
+                                        <label htmlFor="project-lead" className="ml-3 block text-sm font-medium text-gray-700">
                                             No
                                         </label>
                                     </div>
@@ -150,8 +151,9 @@ function contact() {
                                     className="mt-1 block w-full py-2 px-3 input-form"
                                 >
                                     <option selected>I don’t know</option>
-                                    <option>Canada</option>
-                                    <option>Mexico</option>
+                                    <option>1 - 10</option>
+                                    <option>10 - 20</option>
+                                    <option>20 - 30</option>
                                 </select>
                             </div>
                         </div>
@@ -185,18 +187,16 @@ function contact() {
                             </fieldset>
                             {/* Number of Developers required */}
                             <div className="col-span-12 mt-4">
-                                <label htmlFor="country" className="block text-sm font-medium text-gray-700">
+                                <label htmlFor="time-commitment" className="block text-sm font-medium text-gray-700">
                                     Expected Time Commitment
                                 </label>
                                 <select
-                                    id="country"
-                                    name="country"
-                                    autoComplete="country"
+                                    id="time-commitment"
+                                    name="time-commitment"
                                     className="mt-1 block w-full py-2 px-3 input-form"
                                 >
                                     <option selected>I don’t know</option>
-                                    <option>Canada</option>
-                                    <option>Mexico</option>
+                                    <option>Less than 6 Months</option>
                                 </select>
                             </div>
                         </div>
