@@ -9,7 +9,7 @@ function term_and_conditions() {
                         <h1 className="font-semibold text-4xl">
                             {terms_and_conditions_data.main_heading}
                         </h1>
-                        <h5 className="text-lg font-medium pt-3 w-5/12 mx-auto">
+                        <h5 className="text-lg font-medium pt-3 md:w-5/12 mx-auto">
                             {terms_and_conditions_data.main_paragraph}
                         </h5>
                         <h6 className="text-sm mt-3">

@@ -9,7 +9,7 @@ function privacy_policy() {
                     <h1 className="font-semibold text-4xl">
                         {privacy_policy_data.main_heading}
                     </h1>
-                    <h5 className="text-lg font-medium pt-3 w-5/12 mx-auto">
+                    <h5 className="text-lg font-medium pt-3 md:w-5/12 mx-auto">
                         {privacy_policy_data.main_paragraph}
                     </h5>
                     <h6 className="text-sm mt-3">
@@ -19,7 +19,7 @@ function privacy_policy() {
             </div>
               </div>
 
-            <div className="py-10 w-1/2 new-container">
+            <div className="py-10 md:w-1/2 new-container">
                 <div>
                     <p>
                         {privacy_policy_data.updated_paragraph}

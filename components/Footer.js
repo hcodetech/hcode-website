@@ -30,9 +30,7 @@ function Footer() {
               {/* <li className="mb-2">
                 <a href="/technologies" className="border-b border-solid border-transparent hover:border-primary hover:text-primary">Technologies</a>
               </li> */}
-              {/* <li className="mb-2">
-                <a href="/case_studies" className="border-b border-solid border-transparent hover:border-primary hover:text-primary">Case Studies</a>
-              </li> */}
+       
             </ul>
           </div>
           <div className="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6 mt-8 md:mt-0">
@@ -61,7 +59,7 @@ function Footer() {
               </li>
             </ul>
           </div>
-          <div className="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6 mt-8 md:mt-0">
+          <div className="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6 mt-8 md:mt-0 mb-4">
             <div className="flex mt-2">
               <a href="https://www.linkedin.com/company/hcodetech/" target="_blank" >
                 <img src={linkedin_icon} className="rounded-full w-10 h-10 p-2 hover:bg-blue-200  bg-gray-200 " alt="https://www.linkedin.com/company/hcodetech/" />
@@ -74,7 +72,7 @@ function Footer() {
         </div>
 
         <div className="text-center  border-t pt-3">
-          Copyright @ 2021 <a href="/">hcode.tech</a> | All rights reserved by Hcode Techonologies
+          Copyright @ 2021 <a href="/" className="text-primary font-semibold underline">Hcode.tech</a> | All rights reserved by Hcode Techonologies
         </div>
 
       </div>
