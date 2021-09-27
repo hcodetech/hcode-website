@@ -226,7 +226,7 @@ export const service_partner = [
 export const client = [
   { img: "/assets/img/clients/bts.jpg", alt: "Biltmore" },
   { img: "/assets/img/clients/carDekho.jpg", alt: "CarDekho Loans" },
-  { img: "/assets/img/clients/closed_rounds.jpg", alt: "Closed Round" },
+  // { img: "/assets/img/clients/closed_rounds.jpg", alt: "Closed Round" },
   { img: "/assets/img/clients/debie.jpg", alt: "Debie" },
   { img: "/assets/img/clients/fable.jpg", alt: "Fable" },
   { img: "/assets/img/clients/funday.jpg", alt: "Funday" },
@@ -238,6 +238,11 @@ export const client = [
   { img: "/assets/img/clients/pulselabs.jpg", alt: "Pulse Labs" },
   { img: "/assets/img/clients/r_logo.jpg", alt: "Roz" },
   { img: "/assets/img/clients/verificient.jpg", alt: "Verificient" },
+  // Prepay
+  // Riff
+  // Knowledge Graph
+  // BlueElephant
+
 ]
 
 export const city = [

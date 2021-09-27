@@ -15,7 +15,9 @@ function Benefits(props) {
                 className="max-h-[65px]"
               />
               <h3 className="text-xl font-semibold py-2"> {heading}</h3>
-              <p className="font-light">{descripition}</p>
+              <p className="font-light"
+              dangerouslySetInnerHTML={{__html:descripition}}
+              />
             </div>
           )
         )}

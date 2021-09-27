@@ -19,7 +19,7 @@ function term_and_conditions() {
                 </div>
             </div>
 
-            <div className="py-10 w-1/2 new-container">
+            <div className="py-10 md:w-1/2   new-container">
                 <div>
                     <p>
                         {terms_and_conditions_data.updated_paragraph}
