@@ -1,11 +1,9 @@
-import { client } from '../constants/constants'
-
 function Client(props) {
     return (
         <>
             <h2 className="text-center text-3xl font-semibold pb-10">{props.heading ? "" : "A few of our client partners"}</h2>
             <div className="slider">
-                <div className="slide-track">
+                <div className="slide-track ">
                     {props.data.map(({ img, name, alt }, index) => (
                         <div className="slide" key={index}>
                             <img src={img} height='110' alt={alt} className="" />

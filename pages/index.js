@@ -1,7 +1,13 @@
 import Head from "next/head";
-import { homepage, how_to_get_started, client, city, TEAM, desc } from "../constants/constants";
-import Client from '../components/Client'
-import ServicesCard from '../components/ServicesCard'
+import {
+  homepage,
+  how_to_get_started,
+  client,
+  city,
+  TEAM,
+} from "../constants/constants";
+import Client from "../components/Client";
+import ServicesCard from "../components/ServicesCard";
 import CTA from "../components/CTA";
 import Benefits from "../components/Benefits";
 import TechStack from "../components/TechStack";
@@ -14,19 +20,14 @@ export default function Home() {
     <>
       <Head>
         <title>{homepage.title} </title>
-
-
-
       </Head>
+
+      {/* Crasoual  */}
       <HeroSection />
-
-
-
       {/* Client Section */}
-      <div className="py-10 new-container pt-10">
+      <div className=" new-container pt-10">
         <Client data={client} />
       </div>
-
       {/* Our Services */}
       <section className="new-container">
         <ServicesCard heading={true} />
@@ -36,16 +37,19 @@ export default function Home() {
           </a>
         </div>
       </section>
-
       {/* Who we are */}
       <section className="bg-gray-100 mt-14">
         <div className="new-container py-10">
           <div className="grid grid-cols-12">
             <div className="col-span-12 lg:col-span-6">
-              <img src={homepage.who_are_we.image} alt={homepage.who_are_we.heading} className="rounded-lg" />
+              <img
+                src={homepage.who_are_we.image}
+                alt={homepage.who_are_we.heading}
+                className="rounded-lg"
+              />
             </div>
             <div className="lg:px-4 col-span-12 lg:col-span-6 ">
-              <h1 className="text-3xl lg:text-4xl font-semibold py-2">
+              <h1 className="text-3xl lg:text-4xl font-semibold py-2 mt-4 md:mt-0">
                 {homepage.who_are_we.heading}
               </h1>
               <div className="py-2 lg:py-5">
@@ -63,27 +67,32 @@ export default function Home() {
                 </h3>
                 <Client data={city} heading={true} />
               </div>
-              <a href="/about" className="pt-10 pb-1 border-b border-primary inline-flex text-primary hover:scale-100  cursor-pointer hover:opacity-100">
+              <a
+                href="/about"
+                className="pt-3 pb-1 border-b border-primary inline-flex text-primary hover:scale-100  cursor-pointer hover:opacity-100"
+              >
                 Read more about our story
                 <ArrowRightIcon className="w-6 ml-2 " />
               </a>
             </div>
-
           </div>
         </div>
       </section>
-
 
       {/* Benefits */}
       <Benefits data={homepage.why_hcode} />
       <div className="new-container mx-auto -mt-16 pb-16">
         <div className="text-center">
-          <a href="/contact" className="pt-10 pb-1  border-b border-primary inline-flex text-primary hover:scale-100  cursor-pointer hover:opacity-100">
+          <a
+            href="/contact"
+            className="pt-10 pb-1  border-b border-primary inline-flex text-primary hover:scale-100  cursor-pointer hover:opacity-100"
+          >
             Request Consultation
             <ArrowRightIcon className="w-6 ml-2 " />
           </a>
         </div>
       </div>
+
       {/* Tech Stack */}
       <TechStack />
 
@@ -91,7 +100,6 @@ export default function Home() {
       <div className="mt-10  py-16">
         <Process data={how_to_get_started} />
       </div>
-
       <section className="py-14 bg-gray-100 text-center">
         <div className="new-container">
           <h1 className="font-poppins text-center font-semibold text-3xl  md:text-4xl md:leading-tight">
@@ -99,15 +107,18 @@ export default function Home() {
           </h1>
           <div className="grid grid-cols-2 gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-7">
             {TEAM.map(({ name, image, bio, link }, index) => (
-              <Team key={index} name={name} image={image} bio={bio} link={link} />
+              <Team
+                key={index}
+                name={name}
+                image={image}
+                bio={bio}
+                link={link}
+              />
             ))}
           </div>
-          <div>
-
-          </div>
+          <div></div>
         </div>
       </section>
-
 
       {/* CTA */}
       <div className="my-20 ">
@@ -116,62 +127,3 @@ export default function Home() {
     </>
   );
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

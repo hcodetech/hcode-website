@@ -12,13 +12,13 @@
   strong {
     @apply font-bold;
   }
-  .input-form{
+  .input-form {
     @apply mt-1 focus:ring-primary focus:border-primary block w-full shadow-sm sm:text-sm border-gray-300 rounded-md;
   }
-  .input-radio{
+  .input-radio {
     @apply focus:ring-primary h-4 w-4 text-primary border-gray-300;
   }
-  .primary-outline{
+  .primary-outline {
     @apply px-4 py-3 rounded border border-primary hover:bg-primary hover:text-white text-primary transform transition duration-100 ease-out;
   }
 }
@@ -77,111 +77,113 @@
 
 /* Start Clients Section CSS */
 
-
-.centered{
+.centered {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-
-
 /*  */
-
 
 /*========*/
 @mixin white-gradient {
-	background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
 }
 
 $animationSpeed: 40s;
 
 // Animation
 @keyframes scroll {
-	0% { transform: translateX(0); }
-	100% { transform: translateX(calc(-250px * 7))}
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
 }
-
 
 // Styling
-.slider {		
-	height: 110px;
-	margin: auto;
-	overflow:hidden;
-	position: relative;
-	//width: 1216px;
-	
-	&::before,
-	&::after {
-		//@include white-gradient;
-		content: "";
-		height: 100px;
-		position: absolute;
-		width: 200px;
-		z-index: 2;
-	}
-	
-	&::after {
-		right: 0;
-		top: 0;
-		transform: rotateZ(180deg);
-	}
+.slider {
+  height: 140px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  //width: 1216px;
 
-	&::before {
-		left: 0;
-		top: 0;
-	}
-	
-	.slide-track {
-		animation: scroll $animationSpeed linear infinite;
-		display: flex;
-		width: calc(250px * 14);
-	}
-	
-	.slide {
-		height: 100px;
-		width: 250px;
-	}
+  &::before,
+  &::after {
+    //@include white-gradient;
+    content: "";
+    height: 100px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+  }
+
+  &::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+  }
+
+  &::before {
+    left: 0;
+    top: 0;
+  }
+
+  .slide-track {
+    animation: scroll $animationSpeed linear infinite;
+    display: flex;
+    width: calc(250px * 14);
+  }
+
+  .slide {
+    height: 100px;
+    width: 250px;
+  }
 }
 
-
 //image slider changes
-.image_slider {			
-	margin: auto;
-	overflow:hidden;
-	position: relative;	
-	
-	&::before,
-	&::after {		
-		content: "";		
-		position: absolute;
-		width: 300px;
-		z-index: 2;
-	}
-	
-	&::after {
-		right: 0;
-		top: 0;
-		transform: rotateZ(180deg);
-	}
+.image_slider {
+  margin: auto;
+  overflow: hidden;
+  position: relative;
 
-	&::before {
-		left: 0;
-		top: 0;
-	}
-	
-	.image_slide-track {
-		animation: scroll $animationSpeed linear infinite;
-		display: flex;
-		width: calc(300px * 14);
-	}
-	
-	.image_slide {
-		height: 308px;
-		width: 550px;    
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 300px;
+    z-index: 2;
+  }
+
+  &::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+  }
+
+  &::before {
+    left: 0;
+    top: 0;
+  }
+
+  .image_slide-track {
+    animation: scroll $animationSpeed linear infinite;
+    display: flex;
+    width: calc(300px * 14);
+  }
+
+  .image_slide {
+    height: 308px;
+    width: 550px;
     margin: 10px;
-	}
+  }
   .imgs {
     object-fit: cover;
     height: 100%;

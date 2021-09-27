@@ -22,7 +22,7 @@ function ServicesCard({ heading }) {
               layout="fill"
               className="object-cover"
             />
-            <div className="absolute top-0 text-white p-10">
+            <div className="absolute top-0 text-white p-5 md:p-10">
               <h1 className=" text-3xl md:text-4xl font-semibold md:font-bold lg:w-1/2">{our_service.team_as_service_heading}</h1>
               <p className="mt-3 font-light md:text-xl opacity-80">
                 {our_service.team_as_service_paragraph}
@@ -37,7 +37,7 @@ function ServicesCard({ heading }) {
               layout="fill"
               className="object-cover"
             />
-            <div className="absolute top-0 text-white p-10">
+            <div className="absolute top-0 text-white p-5 md:p-10">
               <h1
                 className="text-3xl md:text-4xl font-semibold md:font-bold lg:w-1/2"
               >
