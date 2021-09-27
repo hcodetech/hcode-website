@@ -15,10 +15,10 @@ export default function Home() {
       <Head>
         <title>{homepage.title} </title>
 
-        
+
 
       </Head>
-      <HeroSection/>
+      <HeroSection />
 
 
 
@@ -31,9 +31,9 @@ export default function Home() {
       <section className="new-container">
         <ServicesCard heading={true} />
         <div className="text-center my-10">
-        <a href="/our_services" className="primary-outline  text-center">
-          Know More About Our Services
-        </a>
+          <a href="/our_services" className="primary-outline  text-center">
+            Know More About Our Services
+          </a>
         </div>
       </section>
 
@@ -64,11 +64,11 @@ export default function Home() {
                 <Client data={city} heading={true} />
               </div>
               <a href="/about" className="pt-10 pb-1 border-b border-primary inline-flex text-primary hover:scale-100  cursor-pointer hover:opacity-100">
-              Read more about our story
-              <ArrowRightIcon className="w-6 ml-2 " />
-            </a>
+                Read more about our story
+                <ArrowRightIcon className="w-6 ml-2 " />
+              </a>
             </div>
-            
+
           </div>
         </div>
       </section>
@@ -77,38 +77,38 @@ export default function Home() {
       {/* Benefits */}
       <Benefits data={homepage.why_hcode} />
       <div className="new-container mx-auto -mt-16 pb-16">
-      <div className="text-center">
-      <a href="/contact" className="pt-10 pb-1  border-b border-primary inline-flex text-primary hover:scale-100  cursor-pointer hover:opacity-100">
-              Request Consultation
-      <ArrowRightIcon className="w-6 ml-2 " />
-      </a>
-    </div>
-    </div>
+        <div className="text-center">
+          <a href="/contact" className="pt-10 pb-1  border-b border-primary inline-flex text-primary hover:scale-100  cursor-pointer hover:opacity-100">
+            Request Consultation
+            <ArrowRightIcon className="w-6 ml-2 " />
+          </a>
+        </div>
+      </div>
       {/* Tech Stack */}
       <TechStack />
 
-           {/* Process */}
-           <div className="mt-10  py-16">
+      {/* Process */}
+      <div className="mt-10  py-16">
         <Process data={how_to_get_started} />
       </div>
 
       <section className="py-14 bg-gray-100 text-center">
-      <div className="new-container">
-        <h1 className="font-poppins text-center font-semibold text-3xl  md:text-4xl md:leading-tight">
-          Our Core Team
-        </h1>
-        <div className="grid grid-cols-2 gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-7">
-          {TEAM.map(({ name, image, bio, link }, index) => (
-            <Team key={index} name={name} image={image} bio={bio} link={link} />
-          ))}
-        </div>
-        <div>
+        <div className="new-container">
+          <h1 className="font-poppins text-center font-semibold text-3xl  md:text-4xl md:leading-tight">
+            Our Core Team
+          </h1>
+          <div className="grid grid-cols-2 gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-7">
+            {TEAM.map(({ name, image, bio, link }, index) => (
+              <Team key={index} name={name} image={image} bio={bio} link={link} />
+            ))}
+          </div>
+          <div>
 
-        </div>
+          </div>
         </div>
       </section>
 
- 
+
       {/* CTA */}
       <div className="my-20 ">
         <CTA />

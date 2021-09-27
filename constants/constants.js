@@ -119,7 +119,7 @@ export const TEAM = [
     name: "Shashank Singla",
     bio: "Entrepreneur by trade, Engineer at heart with 2 exits in AI in US & IN. Ex Goldman Sachs, IIT Delhi",
     link: "https://www.linkedin.com/in/shashanksingla/"
-  },
+  }, 
   {
     image: "/assets/img/hcode_about_us_shweta.jpg",
     name: "Shweta Goel",
@@ -695,6 +695,7 @@ export const selected_technologies = [
 },
 {
   tech_name:"I Don't Know Yet",
+  
 },
 ]
 

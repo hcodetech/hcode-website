@@ -21,9 +21,9 @@ class MyDocument extends Document {
             <meta name="description" content={homepage.description}/>
             <meta name="image" content={homepage.share_image}/>
 
-            <meta itemprop="name" content={homepage.title}/>
-            <meta itemprop="description" content={homepage.description}/>
-            <meta itemprop="image" content={homepage.share_image}/>
+            <meta itemProp="name" content={homepage.title}/>
+            <meta itemProp="description" content={homepage.description}/>
+            <meta itemProp="image" content={homepage.share_image}/>
 
 
             <meta property="og:title" content={homepage.title}/>
@@ -56,12 +56,6 @@ class MyDocument extends Document {
           `,
             }}
           />
-
-
-
-
-
-
           <link
             href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500&display=swap"
             rel="stylesheet"
