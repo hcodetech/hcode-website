@@ -118,7 +118,7 @@ export const TEAM = [
     image: "/assets/img/hcode_about_us_shashank.jpg",
     name: "Shashank Singla",
     bio: "Entrepreneur by trade, Engineer at heart with 2 exits in AI in US & IN. Ex Goldman Sachs, IIT Delhi",
-    link: "www.linkedin.com/shashank_singla"
+    link: "https://www.linkedin.com/in/shashanksingla/"
   },
   {
     image: "/assets/img/hcode_about_us_shweta.jpg",
