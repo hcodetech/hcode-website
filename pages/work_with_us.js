@@ -80,7 +80,7 @@ function work_with_us() {
           }}
         />
 
-        <div className="grid md:grid-cols-2 md:w-3/4 pt-10">
+        <div className="grid sm:grid-cols-2 md:w-3/4 pt-10">
           <div className="">
             <img src={karnal} alt="" />
             <h4 className="text-xl font-semibold py-2">Karnal</h4>
@@ -89,7 +89,7 @@ function work_with_us() {
               <ArrowRightIcon className="w-6 ml-2 " />
             </a>
           </div>
-          <div className="mt-4 md:mt-0">
+          <div className="mt-8 sm:mt-0">
             <img src={remote} alt="" />
             <h4 className="text-xl font-semibold  py-2">Remote</h4>
             <a href="https://in.indeed.com/cmp/Hcode-Technologies/jobs" target="_blank" className="pb-1 border-b inline-flex border-black hover:scale-100  cursor-pointer opacity-50 hover:opacity-100">
@@ -110,7 +110,7 @@ function work_with_us() {
         </h1>
         <div className="grid grid-cols-12">
           {what_we_do.map((item, index) => (
-            <div className="col-span-12 md:col-span-6">
+            <div className="col-span-12 mb-7 md:mb-0 md:col-span-6">
               <img src={item.img} alt={item.heading}  />
               <h2 className="font-semibold text-2xl mt-3">{item.heading}</h2>
               <ul className="list-disc list-inside mt-2">
@@ -146,7 +146,7 @@ function work_with_us() {
                   layout="fill"
                 />
               </div>
-              <div className="ml-4">
+              <div className="mt-3 md:mt-0 md:ml-4">
                 <h2 className="font-semibold text-xl">{heading}</h2>
                 <p className="font-light">{descripition}</p>
               </div>

@@ -17,7 +17,7 @@ function EnterpriseCard({ data }) {
             <ArrowRightIcon className="w-6 ml-2 " />
           </a>
         </div>
-        <div className={'bg-green-400 md:w-3/4  md:p-4  mt-44 bottom-2'}>
+        <div className={'bg-green-400 md:w-3/4 p-2 md:p-4  mt-44 bottom-2'}>
           <p>{data.highlight}</p>
         </div>
       </div>
