@@ -142,7 +142,7 @@ export const TEAM = [
 
 export const our_service =
 {
-  heading: "Our Services",
+  heading: "Engagement Model",
   paragraph: "Are you a startup or an enterprise looking to set up/augment your tech team? If yes, we have the right solution tailored for you. We staff, manage, and support your offshore development team and we can get your team up and ready at short notice.",
 
   team_as_service_heading: "Team as a Service",

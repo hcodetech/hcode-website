@@ -5,7 +5,7 @@ function Process() {
         <section className="md:new-container">
             <div className="px-5 text-center">
                 <h1 className="text-center text-3xl lg:text-5xl font-semibold ">{how_to_get_started.heading}</h1>
-                <p className="py-3 lg:w-7/12 mx-auto">{how_to_get_started.descripition}</p>
+                <p className="py-3 lg:w-7/12 mx-auto ">{how_to_get_started.descripition}</p>
             </div>
             <div className=" md:m-4 bg-gray-50 grid grid-cols-12">
                 <div className="bg-green-100 lg:max-w-[250px] min-w-[250px]   col-span-12 md:col-span-4 lg:col-span-3" >

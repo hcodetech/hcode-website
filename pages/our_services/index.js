@@ -25,19 +25,19 @@ function our_services() {
         <title>Our Services | Hcode Techonolgies</title>
       </Head>
       <section className="relative bg-no-repeat bg-contain">
-        <div className="new-container   ">
-          <div className="p-8 lg:p-16 xl:p-32 xl:pb-0 text-center mx-auto w-5/6">
-            <div className="mt-16">
-            <h1 className="text-2xl lg:text-5xl font-semibold">
+        <div className="   ">
+          <div className="new-container p-4 lg:p-16 xl:p-32 xl:pb-0 text-center mx-auto md:w-3/5 ">
+            <div className="mt-20 md:mt-4">
+            <h1 className=" font-semibold text-3xl  md:text-5xl md:leading-tight">
               {our_services_data.hero_heading}
             </h1>
             </div>
-            <p className="py-5 text-2xl font-light  mx-auto">
+            <p className="py-5  text-xl md:text-2xl font-light  mx-auto">
               {our_services_data.hero_paragraph}
             </p>
           </div>
-          <div className="relative md:h-[580px] w-full mt-8 ">
-            <img className="object-cover w-screen"
+          <div className="relative  md:mt-8 ">
+            <img className="object-cover w-screen md:h-[580px] h-[300px]"
               src={our_services_hero}
               layout="fill"
             />
