@@ -1,9 +1,7 @@
-
-
 import { Fragment,useState } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 import { CheckIcon } from '@heroicons/react/outline'
-import { UserAddIcon, XIcon } from '@heroicons/react/solid'
+import { XIcon } from '@heroicons/react/solid'
 function Modal(props) {
     const [open, setOpen] = useState(true)
     return (

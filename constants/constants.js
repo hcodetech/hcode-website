@@ -224,24 +224,25 @@ export const service_partner = [
   }
 ]
 export const client = [
+  // { img: "/assets/img/clients/kashi.jpg", alt: "Kashi Capital" },
+  // { img: "/assets/img/clients/closed_rounds.jpg", alt: "Closed Round" },
   { img: "/assets/img/clients/bts.jpg", alt: "Biltmore" },
   { img: "/assets/img/clients/carDekho.jpg", alt: "CarDekho Loans" },
-  // { img: "/assets/img/clients/closed_rounds.jpg", alt: "Closed Round" },
   { img: "/assets/img/clients/debie.jpg", alt: "Debie" },
+  { img: "/assets/img/clients/prepay.png", alt: "Prepay" },
   { img: "/assets/img/clients/fable.jpg", alt: "Fable" },
   { img: "/assets/img/clients/funday.jpg", alt: "Funday" },
-  { img: "/assets/img/clients/hoi.jpg", alt: "Hoi Food" },
-  // { img: "/assets/img/clients/kashi.jpg", alt: "Kashi Capital" },
   { img: "/assets/img/clients/lift_rocket.jpg", alt: "Lift Rocket" },
+  { img: "/assets/img/clients/absolute.png", alt: "Absolute" },
+  { img: "/assets/img/clients/hoi.jpg", alt: "Hoi Food" },
+  { img: "/assets/img/clients/verificient.jpg", alt: "Verificient" },
   { img: "/assets/img/clients/ohana.jpg", alt: "Ohana" },
+  { img: "/assets/img/clients/r_logo.jpg", alt: "Roz" },
   { img: "/assets/img/clients/pcg.jpg", alt: "Paramount Capital Group" },
   { img: "/assets/img/clients/pulselabs.jpg", alt: "Pulse Labs" },
-  { img: "/assets/img/clients/r_logo.jpg", alt: "Roz" },
-  { img: "/assets/img/clients/verificient.jpg", alt: "Verificient" },
-  // Prepay
-  // Riff
+  { img: "/assets/img/clients/riff.png", alt: "Riff" },
+  { img: "/assets/img/clients/blue_elephant.png", alt: "blue_elephant" },
   // Knowledge Graph
-  // BlueElephant
 
 ]
 
