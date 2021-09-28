@@ -3,13 +3,7 @@ import { useState } from "react";
 import { contact_us_circle, selected_technologies } from '../constants/constants';
 import DotLoader from 'react-spinners/DotLoader'
 const defaultColor = "#373536";
-
-
-
-
-
 function contact() {
-
     const [fullName, setFullName] = useState('')
     const [loading, setLoading] = useState(false);
     const [companyName, setCompanyName] = useState('')
@@ -82,7 +76,7 @@ function contact() {
 
     return (
         <>
-           { loading  &&<div className="fixed top-1/2 inset-x-2/4">
+            {loading && <div className="fixed top-1/2 inset-x-2/4">
                 <DotLoader color={defaultColor} size={60} />
             </div>}
             <section className="md:new-container grid grid-cols-12 pt-14" >
@@ -274,12 +268,12 @@ function contact() {
                                                 required
                                                 checked={projectLeadRequired === 'No'}
                                                 onChange={e => setProjectLeadRequired('No')}
-                                                id="project-lead"
+                                                id="project-lead-no"
                                                 name="project-lead"
                                                 type="radio"
                                                 className="focus:ring-primary h-4 w-4 text-primary border-gray-300"
                                             />
-                                            <label htmlFor="project-lead" className="ml-3 block text-sm font-medium text-gray-700">
+                                            <label htmlFor="project-lead-no" className="ml-3 block text-sm font-medium text-gray-700">
                                                 No
                                             </label>
                                         </div>
