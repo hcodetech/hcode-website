@@ -4,6 +4,7 @@ import { ArrowRightIcon } from "@heroicons/react/solid"
 import Head from "next/head";
 import Benefits from "../../components/Benefits";
 import Accordion from "../../components/Accordion";
+import CTA from "../../components/CTA";
 
 function team_as_a_service() {
     return (
@@ -18,6 +19,8 @@ function team_as_a_service() {
                 </h1>
                 <p className="new-container md:w-9/12  text-base mx-auto mt-3 font-light leading-normal">
                     {tass.hero_paragraph}
+                   
+
                 </p>
                 <img src={tass.hero_image} alt={tass.hero_heading} className="w-screen my-10" />
             </section>
@@ -34,11 +37,13 @@ function team_as_a_service() {
                 </h1>
                 <p className="md:w-4/6 mx-auto mt-3 font-light leading-normal text-center ">
                     {tass.who_is_it_for_paragraph}
+                    <br/>
+                    (Looking to hire 1 or 2 developers? please check out our <a href="/our_services/developer_as_a_service" className="text-primary">Developer-as-a-Service</a> model)
                 </p>
                 <div className="grid md:grid-cols-2 gap-4 mt-8">
                     {/* Startup */}
                     <div className="p-8 bg-gradient-to-br  from-purple-200 to-white ">
-                        <button className="px-4 py-2 rounded-full bg-purple-400 cursor-default mb-5 ">
+                        <button className="px-4 py-2 rounded-full bg-purple-800 text-white cursor-default mb-5 ">
                             {tass.startup.tag}
                         </button>
                         <h2 className="text-2xl font-semibold">
@@ -73,7 +78,7 @@ function team_as_a_service() {
                     </div>
                     {/* Enterprise */}
                     <div className="p-8 bg-gradient-to-br  from-blue-200 to-white ">
-                        <button className="px-4 py-2 rounded-full bg-blue-400 cursor-default mb-5 ">
+                        <button className="px-4 py-2 rounded-full bg-primary text-white cursor-default mb-5 ">
                             {tass.enterprise.tag}
                         </button>
                         <h2 className="text-2xl font-semibold">
@@ -132,6 +137,11 @@ function team_as_a_service() {
                 <Accordion data={faq_services} />
             </section>
 
+            {/* Cta */}
+            <section className="my-10">
+
+                <CTA />
+            </section>
         </>
     )
 }

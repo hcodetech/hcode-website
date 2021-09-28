@@ -15,10 +15,10 @@ function ServicesCard({ heading }) {
       )}
 
       <div className="grid grid-cols-1 md:grid-cols-2 md:gap-4 ">
-        <Link href="/our_services">
-          <div className="relative  2xl:h-[700px]  hover:scale-95 active:scale-100  transform transition duration-100 ease-out mb-5 md:mb-0">
+        <Link href="/our_services/team_as_a_service">
+          <div className="relative  2xl:h-[700px]  hover:scale-95 active:scale-100  transform transition duration-100 ease-out mb-5 md:mb-0 cursor-pointer">
             <img
-              src={our_service.developer_as_service_image}
+              src={our_service.team_as_service_image}
               layout="fill"
               className="object-cover"
             />
@@ -30,10 +30,10 @@ function ServicesCard({ heading }) {
             </div>
           </div>
         </Link>
-        <Link href="/our_services">
-          <div className="relative  2xl:h-[700px]  hover:scale-95 active:scale-100  transform transition duration-100 ease-out mb-5 md:mb-0">
+        <Link href="/our_services/developer_as_a_service">
+          <div className="relative  2xl:h-[700px]  hover:scale-95 active:scale-100  transform transition duration-100 ease-out mb-5 md:mb-0 cursor-pointer">
             <img
-              src={our_service.team_as_service_image}
+              src={our_service.developer_as_service_image}
               layout="fill"
               className="object-cover"
             />

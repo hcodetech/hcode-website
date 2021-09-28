@@ -144,20 +144,21 @@ export const our_service =
 {
   heading: "Engagement Model",
   paragraph: "Are you a startup or an enterprise looking to set up/augment your tech team? If yes, we have the right solution tailored for you. We staff, manage, and support your offshore development team and we can get your team up and ready at short notice.",
-
+  
   team_as_service_heading: "Team as a Service",
-  team_as_service_image: "/assets/img/developer_as_service.jpg",
+  team_as_service_image: "/assets/img/team_as_service.jpg ",
   team_as_service_paragraph:
-    "Get a team headed by a tech-lead or a project manager to get your development goals from plan to reality. Tech lead can help take the right architectural decisions while managing the direction.",
-  developer_as_service_image: "/assets/img/team_as_service.jpg",
+  "Get a team headed by a tech-lead or a project manager to get your development goals from plan to reality. Tech lead can help take the right architectural decisions while managing the direction.",
+  
   developer_as_service_heading: "Developer as a Service",
+  developer_as_service_image: "/assets/img/developer_as_service.jpg",
   developer_as_service_paragraph:
     "If you or your team has the necessary skills to drive the direction of development, then  you can get our trained and experienced developers directly working for  you.",
 
 }
 
 export const work_with_us_content = {
-  hero_heading: "Let’s Build Together",
+  hero_heading: "Let’s Build Together", 
   hero_paragraph:
     "We abide by our core value, <strong>‘Our people are our biggest asset’,</strong> in letter and spirit. We do everything to make sure that our people are personally happy, professionally satisfied, and continue growing.<br/><br/>We do this by making sure that people work with global clients on interesting problems with <strong>latest tech stacks</strong> while maintaining a good work-life balance. We keep our <strong>working hours sane</strong> so that you get time for whatever else is important in your life.",
   campus_heading: "Our Campus",
@@ -182,8 +183,22 @@ export const our_services_hero = "/assets/img/our_services_hero.jpg";
 export const work_with_us_image_carousel = [
   { image: "/assets/img/work_with_us_4.jpg" },
   { image: "/assets/img/work_with_us_5.jpg" },
-  { image: "/assets/img/work_with_us_6.jpg" },
-  { image: "/assets/img/work_with_us_5.jpg" },
+  { image: "/assets/img/work_with_us_6.jpg" },  
+  { image: "/assets/img/image_1.jpg" },
+  { image: "/assets/img/image_2.jpeg" },
+  { image: "/assets/img/image_3.jpeg" },
+  { image: "/assets/img/image_4.jpeg" },
+  { image: "/assets/img/image_5.jpeg" },
+  { image: "/assets/img/image_6.jpeg" },
+  { image: "/assets/img/image_7.jpg" },
+  { image: "/assets/img/image_8.jpg" },
+  { image: "/assets/img/image_9.jpg" },
+  { image: "/assets/img/image_10.jpg" },
+  { image: "/assets/img/image_11.jpg" },
+  { image: "/assets/img/image_12.jpg" },
+  { image: "/assets/img/image_13.jpeg" },
+  { image: "/assets/img/image_14.jpeg" },
+
 ];
 
 export const our_services_data = {
@@ -226,6 +241,7 @@ export const service_partner = [
 export const client = [
   // { img: "/assets/img/clients/kashi.jpg", alt: "Kashi Capital" },
   // { img: "/assets/img/clients/closed_rounds.jpg", alt: "Closed Round" },
+  { img: "/assets/img/clients/kgc.png", alt: "Knowledge Graph Conference" },
   { img: "/assets/img/clients/bts.jpg", alt: "Biltmore" },
   { img: "/assets/img/clients/carDekho.jpg", alt: "CarDekho Loans" },
   { img: "/assets/img/clients/debie.jpg", alt: "Debie" },
@@ -241,8 +257,7 @@ export const client = [
   { img: "/assets/img/clients/pcg.jpg", alt: "Paramount Capital Group" },
   { img: "/assets/img/clients/pulselabs.jpg", alt: "Pulse Labs" },
   { img: "/assets/img/clients/riff.png", alt: "Riff" },
-  { img: "/assets/img/clients/blue_elephant.png", alt: "blue_elephant" },
-  // Knowledge Graph
+  { img: "/assets/img/clients/blue_elephant.png", alt: "Blue Elephant" },
 
 ]
 
@@ -397,7 +412,7 @@ export const tass = {
   hero_paragraph: "You get a team of software developers headed by a tech-lead or a project manager. This team can either function as your standalone technology team or this could be augmenting your existing team. With a tech lead or PM in the mix, you don’t have to directly manage all your resources and can provide a high-level plan of what you want to achieve.",
   hero_image: "/assets/img/taas_hero.jpg",
   who_is_it_for: "Who is it for ?",
-  who_is_it_for_paragraph: "This model suits well for clients who either don’t have technology experience or who require more than 2 developers so that someone can manage them on your behalf and act as a point of contact. (Looking to hire 1 or 2 developers? please check out our Developer-as-a-Service model)",
+  who_is_it_for_paragraph: "This model suits well for clients who either don’t have technology experience or who require more than 2 developers so that someone can manage them on your behalf and act as a point of contact.",
   startup: {
     tag: "Startup",
     main_heading: "Getting Started",
@@ -469,6 +484,74 @@ export const tass_benefits = {
   ]
 }
 
+
+export const dass = {
+  hero_heading: "Developer as a Service (DaaS)",
+  hero_paragraph: "You get developer(s) experienced in the required skills that you can directly manage. They can work standalone on a project or work with your existing team. You should ideally have someone technical on your team who can manage these developers.",
+  hero_image: "/assets/img/daas_hero.jpg",
+  who_is_it_for: "Who is it for ?",
+  who_is_it_for_paragraph: "We recommend hiring our developers (in developer-as-a-service model) to startups or enterprises that already have a clear idea of exactly what they want to acheive and a technical leadership to manage the direction, decisions and take responsibility of the overall product.",
+  startup: {
+    tag: "Startups",
+    points: [
+      "You <strong>have tech leadership</strong> who can drive the tech-decisions, & you just need developer(s) with right skills",
+      "You <strong>have a dev team,</strong> but would like more hands for short to medium term to <strong>pace up development</strong>",
+      "You <strong>have an existing team</strong> but would like to hire someone with a <strong>tangential skill</strong> to augment your existing team"
+    ],
+  },
+  enterprise: {
+    tag: "Enterprise",
+    points: [
+      "You <strong>have a dev team,</strong> but would like more hands to <strong>meet growing needs</strong> of developing/maintaining your software",
+      "You have an <strong>existing team</strong> but would like to hire someone with a tangential skill to augment your existing team",
+      "You are <strong>starting a new project</strong> and would like someone to execute it under guidance of tech lead in your team"
+    ],
+  },
+  cta: {
+    heading : "Get in touch now to get your team",
+    main_paragraph: "Still not sure? We can guide you on your development needs and help you select the right service for you",
+
+  }
+}
+
+export const dass_benefits = {
+  heading: "What you get",
+  paragraph: "Experienced and trained professional software developers, coming with accountability of our organisation, and much more responsible than an average freelancer.",
+  points: [
+    {
+      image: "/assets/img/top_talent.svg",
+      heading: "Top Talent",
+      descripition: "Rigorously selected and professionally trained team, incentivized to be accountable, commercial and transparent in communication"
+    },
+    {
+      image: "/assets/img/managed_process.svg",
+      heading: "Employee Retention",
+      descripition: "You need to worry less about attrition as we stand with you as your partners thinking about the same. We offer various perks to aid retention."
+    },
+    {
+      image: "/assets/img/easy_admin.svg",
+      heading: "Easy administration",
+      descripition: "We cover all contract work, payroll operations, leave management, team setup and logistics."
+    },
+  
+    {
+      image: "/assets/img/best.svg",
+      heading: "Best Pratices and Help",
+      descripition: "Over time, we have built best practices for project management, code delivery, SDLC. Working together, each developer has helped at their disposal"
+    },
+    {
+      image: "/assets/img/roi.svg",
+      heading: "High ROI",
+      descripition: "We deliver value to your business by improving quality and reducing cost resulting in high ROI. We will help you operate business more efficiently through innovation."
+    },
+    {
+      image: "/assets/img/trust.svg",
+      heading: "Trust ",
+      descripition: "We believe in building relationships based on trust. Whether it is confidentiality of your data and IPR or delivering your project on time, we only make promises we can deliver on."
+    },
+
+  ]
+}
 
 export const how_to_get_started = {
   heading: "How to start partnering with us",
