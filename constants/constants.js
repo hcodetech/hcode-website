@@ -1,24 +1,24 @@
 export const navbar_links =
-[
-  {
-  label:"Home",
-  link:"/"
-},
-{
-  label:"Our Services",
-  link:"/our_services"
-},
-{
-  label:"About Us",
-  link:"/about"
-},
-{
-  label:"Work With Us",
-  link:"/work_with_us"
-},
+  [
+    {
+      label: "Home",
+      link: "/"
+    },
+    {
+      label: "Our Services",
+      link: "/our_services"
+    },
+    {
+      label: "About Us",
+      link: "/about"
+    },
+    {
+      label: "Work With Us",
+      link: "/work_with_us"
+    },
 
 
-]
+  ]
 
 export const about_page = {
   hero_heading: "We’re in the business of writing great code",
@@ -119,7 +119,7 @@ export const TEAM = [
     name: "Shashank Singla",
     bio: "Entrepreneur by trade, Engineer at heart with 2 exits in AI in US & IN. Ex Goldman Sachs, IIT Delhi",
     link: "https://www.linkedin.com/in/shashanksingla/"
-  }, 
+  },
   {
     image: "/assets/img/hcode_about_us_shweta.jpg",
     name: "Shweta Goel",
@@ -394,37 +394,38 @@ export const faq_services = [
 export const tass = {
   hero_heading: "Team as a Service (TaaS)",
   hero_paragraph: "You get a team of software developers headed by a tech-lead or a project manager. This team can either function as your standalone technology team or this could be augmenting your existing team. With a tech lead or PM in the mix, you don’t have to directly manage all your resources and can provide a high-level plan of what you want to achieve.",
+  hero_image: "/assets/img/taas_hero.jpg",
   who_is_it_for: "Who is it for ?",
   who_is_it_for_paragraph: "This model suits well for clients who either don’t have technology experience or who require more than 2 developers so that someone can manage them on your behalf and act as a point of contact. (Looking to hire 1 or 2 developers? please check out our Developer-as-a-Service model)",
   startup: {
     tag: "Startup",
     main_heading: "Getting Started",
-    main_points: [{
-      1: "You have a design for an MVP for your startup and are looking for a team to build it quickly, or",
-      2: "You are a tech founder/CTO and are looking to start development on your product",
-    }],
+    main_points: [
+      "You have a design for an MVP for your startup and are looking for a team to build it quickly, or",
+      "You are a tech founder/CTO and are looking to start development on your product",
+    ],
     secondary_heading: "Preparing to Scale",
-    points: [{
-      1: "You have a dev team working on your product, but would like more hands to meet your growing needs of developing/maintaining your product",
-      2: "You have an existing team but would like to hire someone with a tangential skill to augment your existing team or for a parallel project",
-    }],
+    points: [
+      "You have a dev team working on your product, but would like more hands to meet your growing needs of developing/maintaining your product",
+      "You have an existing team but would like to hire someone with a tangential skill to augment your existing team or for a parallel project",
+    ],
   },
   enterprise: {
     tag: "Enterprise",
     main_heading: "Starting a team",
-    main_points: [{
-      1: "You are a tech/non-tech enterprise, starting a tech project and looking for a team to get it executed",
-      2: "You would like to switch from an existing software service provider to a better/cheaper one.",
-    }],
+    main_points: [
+       "You are a tech/non-tech enterprise, starting a tech project and looking for a team to get it executed",
+       "You would like to switch from an existing software service provider to a better/cheaper one.",
+    ],
     secondary_heading: "Augmenting your team",
-    points: [{
-      1: "You have a team working on your product, but would like more hands to meet your growing needs",
-      2: "You have an existing team but would like to hire someone with a tangential skill to augment your team",
-    }],
+    points: [
+      "You have a team working on your product, but would like more hands to meet your growing needs",
+       "You have an existing team but would like to hire someone with a tangential skill to augment your team",
+    ],
   },
   cta: {
+    heading : "Get in touch now to get your team",
     main_paragraph: "Still not sure? We can guide you on your development needs and help you select the right service for you",
-    heading: "Get in touch now to get your team",
 
   }
 }
@@ -432,30 +433,36 @@ export const tass = {
 export const tass_benefits = {
   heading: "What makes it a great choice",
   paragraph: "We’ll provide you with a team of expert software developers, headed by a senior lead/PM for your development needs. Here’s what’s part of the deal.",
-  benefits: [
+  points: [
     {
+      image: "/assets/img/top_talent.svg",
       heading: "Top Talent",
-      paragraph: "Rigorously selected and professionally trained team, incentivized to be accountable, commercial and transparent in communication"
+      descripition: "Rigorously selected and professionally trained team, incentivized to be accountable, commercial and transparent in communication"
     },
     {
+      image: "/assets/img/managed_process.svg",
       heading: "Managed Process",
-      paragraph: "Your dedicated Tech Lead/Project Manager does all the heavy-lifting of managing the project team, so you can focus on what’s important."
+      descripition: "Your dedicated Tech Lead/Project Manager does all the heavy-lifting of managing the project team, so you can focus on what’s important."
     },
     {
+      image: "/assets/img/easy_admin.svg",
       heading: "Easy administration",
-      paragraph: "We cover all contract work, payroll operations, leave management, employee retention, team setup, and logistics."
+      descripition: "We cover all contract work, payroll operations, leave management, employee retention, team setup, and logistics."
     },
     {
+      image: "/assets/img/trust.svg",
       heading: "Trust & Assurance",
-      paragraph: "We believe in building relationships based on trust. Whether it is the confidentiality of your data and IPR or delivering your project on time, we only make promises we can deliver on"
+      descripition: "We believe in building relationships based on trust. Whether it is the confidentiality of your data and IPR or delivering your project on time, we only make promises we can deliver on"
     },
     {
+      image: "/assets/img/best.svg",
       heading: "Best Practices and Help",
-      paragraph: "Over time, we have built best practices for project management, code delivery, SDLC. Working together, each developer has helped at their disposal"
+      descripition: "Over time, we have built best practices for project management, code delivery, SDLC. Working together, each developer has helped at their disposal"
     },
     {
+      image: "/assets/img/roi.svg",
       heading: "High ROI",
-      paragraph: "We deliver value to your business by improving quality and reducing cost resulting in high ROI. We will help you operate the business more efficiently through innovation."
+      descripition: "We deliver value to your business by improving quality and reducing cost resulting in high ROI. We will help you operate the business more efficiently through innovation."
     },
 
   ]
@@ -491,8 +498,8 @@ export const how_to_get_started = {
 
 export const homepage = {
   description: "We’re in the business of writing great code. We provide on-time delivery along with transparent communication. But we also make sure that our people have great work-life balance, meritocracy, and a healthy work environment",
-  title : "Servicing End-To-End Engineering Needs | Hcode ",
-  share_image :"http://hcode.tech/images/portfolio/funday1.png",
+  title: "Servicing End-To-End Engineering Needs | Hcode ",
+  share_image: "http://hcode.tech/images/portfolio/funday1.png",
   who_are_we: {
     image: "/assets/img/homepage_who_we_are.jpg",
     heading: "Who We Are?",
@@ -674,58 +681,58 @@ export const contact_us_circle = "/assets/img/contact_circle.svg";
 
 
 export const selected_technologies = [
- {
-   tech_name:"Python",
-   tech:"Backend"
- },
- {
-  tech_name:"Java",
-  tech:"Backend"
-},
-// {
-//   tech_name:"Android/iOS",
-//   tech:"Mobile"
-// },
-{
-  tech_name:"React JS",
-  tech:"Frontend"
-},
-{
-  tech_name:"Angular",
-  tech:"Web Frontend"
-},
-{
-  tech_name:"React Native",
-  tech:"Mobile"
-},
-{
-  tech_name:"I Don't Know Yet",
-  
-},
+  {
+    tech_name: "Python",
+    tech: "Backend"
+  },
+  {
+    tech_name: "Java",
+    tech: "Backend"
+  },
+  // {
+  //   tech_name:"Android/iOS",
+  //   tech:"Mobile"
+  // },
+  {
+    tech_name: "React JS",
+    tech: "Frontend"
+  },
+  {
+    tech_name: "Angular",
+    tech: "Web Frontend"
+  },
+  {
+    tech_name: "React Native",
+    tech: "Mobile"
+  },
+  {
+    tech_name: "I Don't Know Yet",
+
+  },
 ]
 
 
-export const consumer_card ={
-  card_color:"bg-yellow-400",
-  link:"/our_services",
-  heading:"Consumer <> Mobile",
-  paragraph:"We have built end-to-end products and mobile applications for various consumer companies across food delivery apps, market places, health segments to name a few.",
-  highlight:"We’ve built multiple products in this domain from ground up; many of whom have been able to sucessfully raise funds",
-  mockup_image:"/assets/img/enterprise.png"
+export const consumer_card = {
+  card_color: "bg-yellow-400",
+  link: "/our_services",
+  heading: "Consumer <> Mobile",
+  paragraph: "We have built end-to-end products and mobile applications for various consumer companies across food delivery apps, market places, health segments to name a few.",
+  highlight: "We’ve built multiple products in this domain from ground up; many of whom have been able to sucessfully raise funds",
+  mockup_image: "/assets/img/enterprise.png"
 }
-export const enterprise_card ={
-  card_color:"bg-green-400",
-  link:"/our_services",
-  heading:"Enterprise <> SAAS",
-  paragraph:"We've ample experience of building and managing Large Enterprise Solutions across education, remote technologies, productivity tools, research, etc. Our clients come to us as they can trust us with  confidentiality and expertise.",
-  highlight:"We've been able to consistently deliver and build great relations with many enterprise clients."
+export const enterprise_card = {
+  card_color: "bg-green-400",
+  link: "/our_services",
+  heading: "Enterprise <> SAAS",
+  paragraph: "We've ample experience of building and managing Large Enterprise Solutions across education, remote technologies, productivity tools, research, etc. Our clients come to us as they can trust us with  confidentiality and expertise.",
+  highlight: "We've been able to consistently deliver and build great relations with many enterprise clients."
 }
-export const fintech_card ={
-  card_color:"bg-blue-400",
-  link:"/our_services",
-  heading:"Fintech",
-  paragraph:"Many of our clients have been from Fintech across New York and India. We have worked with enterprises with big data and analytics needs, as well as with startups to help make their products come to life.",
-  highlight:"Our founding team has deep experience in Fintech which drives our expertise"
+export const fintech_card = {
+  card_color: "bg-blue-400",
+  link: "/our_services",
+  heading: "Fintech",
+  paragraph: "Many of our clients have been from Fintech across New York and India. We have worked with enterprises with big data and analytics needs, as well as with startups to help make their products come to life.",
+  highlight: "Our founding team has deep experience in Fintech which drives our expertise"
 }
 
 export const privacy_policy_data = {
@@ -735,39 +742,39 @@ export const privacy_policy_data = {
   updated_paragraph: "This Privacy Policy governs the manner in which HCODE collects, uses, maintains and discloses information collected from users (each, a \"User\") of the www.hcode.tech website (\"Site\"). This privacy policy applies to the Site and all products and services offered by HCODE.",
   personal: "Personal identification information",
   personal_paragraph: "We may collect personal identification information from Users in a variety of ways, including, but not limited to, when Users visit our site, subscribe to the newsletter, and in connection with other activities, services, features or resources we make available on our Site. Users may visit our Site anonymously. We will collect personal identification information from Users only if they voluntarily submit such information to us. Users can always refuse to supply personally identification information, except that it may prevent them from engaging in certain Site related activities.",
-  
+
   non_personal: "Non-personal identification information",
   non_personal_paragraph: "We may collect non-personal identification information about Users whenever they interact with our Site. Non-personal identification information may include the browser name, the type of computer and technical information about Users means of connection to our Site, such as the operating system and the Internet service providers utilized and other similar information.",
-  
-  web_browser: "Web browser cookies",
-  web_browser_paragraph:"Our Site may use \"cookies\" to enhance User experience. User's web browser places cookies on their hard drive for record-keeping purposes and sometimes to track information about them. User may choose to set their web browser to refuse cookies, or to alert you when cookies are being sent. If they do so, note that some parts of the Site may not function properly. ",
 
-  collected_information:"How we use collected information",
-  collected_information_paragraph:"HCODE may collect and use Users personal information for the following purposes: ",
-  collected_information_points:[
+  web_browser: "Web browser cookies",
+  web_browser_paragraph: "Our Site may use \"cookies\" to enhance User experience. User's web browser places cookies on their hard drive for record-keeping purposes and sometimes to track information about them. User may choose to set their web browser to refuse cookies, or to alert you when cookies are being sent. If they do so, note that some parts of the Site may not function properly. ",
+
+  collected_information: "How we use collected information",
+  collected_information_paragraph: "HCODE may collect and use Users personal information for the following purposes: ",
+  collected_information_points: [
     "To run a promotion, contest, survey or other Site feature ",
     "To send Users information they agreed to receive about topics we think will be of interest to them.",
     "To send periodic emails ",
     "If User decides to opt-in to our mailing list, they will receive emails that may include company news, updates, related product or service information, etc. If at any time the User would like to unsubscribe from receiving future emails, we include detailed unsubscribe instructions at the bottom of each email."
   ],
 
-  protect_information:"How we protect your information",
-  protect_information_paragraph:"We adopt appropriate data collection, storage and processing practices and security measures to protect against unauthorized access, alteration, disclosure or destruction of your personal information, username, password, transaction information and data stored on our Site.",
+  protect_information: "How we protect your information",
+  protect_information_paragraph: "We adopt appropriate data collection, storage and processing practices and security measures to protect against unauthorized access, alteration, disclosure or destruction of your personal information, username, password, transaction information and data stored on our Site.",
 
-  personal_information:"Sharing your personal information",
-  personal_information_paragraph:"We do not sell, trade, or rent Users personal identification information to others. We may share generic aggregated demographic information not linked to any personal identification information regarding visitors and users with our business partners, trusted affiliates and advertisers for the purposes outlined above.We may use third party service providers to help us operate our business and the Site or administer activities on our behalf, such as sending out newsletters or surveys. We may share your information with these third parties for those limited purposes provided that you have given us your permission.",
+  personal_information: "Sharing your personal information",
+  personal_information_paragraph: "We do not sell, trade, or rent Users personal identification information to others. We may share generic aggregated demographic information not linked to any personal identification information regarding visitors and users with our business partners, trusted affiliates and advertisers for the purposes outlined above.We may use third party service providers to help us operate our business and the Site or administer activities on our behalf, such as sending out newsletters or surveys. We may share your information with these third parties for those limited purposes provided that you have given us your permission.",
 
-  third_websites:"Third party websites",
-  third_websites_paragarph:"Users may find advertising or other content on our Site that link to the sites and services of our partners, suppliers, advertisers, sponsors, licensors and other third parties. We do not control the content or links that appear on these sites and are not responsible for the practices employed by websites linked to or from our Site. In addition, these sites or services, including their content and links, may be constantly changing. These sites and services may have their own privacy policies and customer service policies. Browsing and interaction on any other website, including websites which have a link to our Site, is subject to that website's own terms and policies.",
+  third_websites: "Third party websites",
+  third_websites_paragarph: "Users may find advertising or other content on our Site that link to the sites and services of our partners, suppliers, advertisers, sponsors, licensors and other third parties. We do not control the content or links that appear on these sites and are not responsible for the practices employed by websites linked to or from our Site. In addition, these sites or services, including their content and links, may be constantly changing. These sites and services may have their own privacy policies and customer service policies. Browsing and interaction on any other website, including websites which have a link to our Site, is subject to that website's own terms and policies.",
 
-  change_privacy_policy:"Changes to this privacy policy",
-  change_privacy_policy_paragraph:"HCODE has the discretion to update this privacy policy at any time. When we do, we will revise the updated date at the top of this page. We encourage Users to frequently check this page for any changes to stay informed about how we are helping to protect the personal information we collect. You acknowledge and agree that it is your responsibility to review this privacy policy periodically and become aware of modifications.",
+  change_privacy_policy: "Changes to this privacy policy",
+  change_privacy_policy_paragraph: "HCODE has the discretion to update this privacy policy at any time. When we do, we will revise the updated date at the top of this page. We encourage Users to frequently check this page for any changes to stay informed about how we are helping to protect the personal information we collect. You acknowledge and agree that it is your responsibility to review this privacy policy periodically and become aware of modifications.",
 
-  acceptance_terms:"Your acceptance of these terms",
-  acceptance_terms_paragarph:"By using this Site, you signify your acceptance of this policy. If you do not agree to this policy, please do not use our Site. Your continued use of the Site following the posting of changes to this policy will be deemed your acceptance of those changes.",
+  acceptance_terms: "Your acceptance of these terms",
+  acceptance_terms_paragarph: "By using this Site, you signify your acceptance of this policy. If you do not agree to this policy, please do not use our Site. Your continued use of the Site following the posting of changes to this policy will be deemed your acceptance of those changes.",
 
-  contacting_us:"Contacting us",
-  contacting_us_paragraph:"If you have any questions about this Privacy Policy, the practices of this site, or your dealings with this site, please contact us at hello@hcode.tech."
+  contacting_us: "Contacting us",
+  contacting_us_paragraph: "If you have any questions about this Privacy Policy, the practices of this site, or your dealings with this site, please contact us at hello@hcode.tech."
 
 
 
