@@ -2,8 +2,13 @@ import { LocationMarkerIcon, PhoneIcon, ChatAltIcon } from "@heroicons/react/sol
 import { useState } from "react";
 import { contact_us_circle, selected_technologies } from '../constants/constants';
 import DotLoader from 'react-spinners/DotLoader'
+import Modal from "../components/Modal";
 const defaultColor = "#373536";
 function contact() {
+
+    const [success, setSuccess] = useState(false)
+    const [failure, setFailure] = useState(false)
+
     const [fullName, setFullName] = useState('')
     const [loading, setLoading] = useState(false);
     const [companyName, setCompanyName] = useState('')
@@ -26,6 +31,8 @@ function contact() {
         }
     }
     const contactUser = async event => {
+        setSuccess(false);
+        setFailure(false);
         event.preventDefault();
         const conactUsFormData = {
             fullName,
@@ -65,9 +72,12 @@ function contact() {
             setNumberOfEmployees('1 - 5');
             setPreferredTechStack([])
             setExpectedTimeCommitment('I don’t know')
-            alert('Thanks for your interest. We will contact you shortly.')
+            // alert('Thanks for your interest. We will contact you shortly.')
+            // console.log("Success")
+            setSuccess(true)
         } catch (e) {
-            alert('We are unable to register your request at current time. Please send us an email at hello@hcode.tech')
+            setFailure(true)
+            // alert('We are unable to register your request at current time. Please send us an email at hello@hcode.tech')
         } finally {
             setLoading(false);
         }
@@ -76,11 +86,14 @@ function contact() {
 
     return (
         <>
+
             {loading && <div className="fixed top-1/2 inset-x-2/4">
                 <DotLoader color={defaultColor} size={60} />
             </div>}
+            {success && <Modal color={"bg-blue-100"} iconColor={'text-blue-600'} success={true} heading={"Success"} paragraph={'Thanks for your interest. We will contact you shortly.'} />}
+            {failure && <Modal color={"bg-red-100"} iconColor={'text-red-600'}  heading={"Sorry !"} paragraph={'We are unable to register your request at current time. Please send us an email at hello@hcode.tech'} />}
             <section className="md:new-container grid grid-cols-12 pt-14" >
-                <div className="bg-primary max-w-[450px] max-h-screen text-white p-10  col-span-12 md:col-span-5 relative ">
+                <div className="bg-primary md:max-w-[450px] max-h-screen text-white p-10  col-span-12 md:col-span-5 relative ">
                     <div>
                         <h1 className="text-4xl font-semibold">
                             Let’s scale your team together
