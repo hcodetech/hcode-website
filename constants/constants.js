@@ -412,7 +412,7 @@ export const tass = {
   hero_paragraph: "You get a team of software developers headed by a tech-lead or a project manager. This team can either function as your standalone technology team or this could be augmenting your existing team. With a tech lead or PM in the mix, you don’t have to directly manage all your resources and can provide a high-level plan of what you want to achieve.",
   hero_image: "/assets/img/taas_hero.jpg",
   who_is_it_for: "Who is it for ?",
-  who_is_it_for_paragraph: "This model suits well for clients who either don’t have technology experience or who require more than 2 developers so that someone can manage them on your behalf and act as a point of contact.",
+  who_is_it_for_paragraph: "This model suits well for clients who either don’t have technology experience or who require more than 2 developers, so that someone can manage them on your behalf and act as a point of contact.",
   startup: {
     tag: "Startup",
     main_heading: "Getting Started",
@@ -448,7 +448,7 @@ export const tass = {
 
 export const tass_benefits = {
   heading: "What makes it a great choice",
-  paragraph: "We’ll provide you with a team of expert software developers, headed by a senior lead/PM for your development needs. Here’s what’s part of the deal.",
+  paragraph: "We’ll provide you with a team of expert software developers, headed by a senior lead/PM for your development needs. Here’s what is part of the deal.",
   points: [
     {
       image: "/assets/img/top_talent.svg",

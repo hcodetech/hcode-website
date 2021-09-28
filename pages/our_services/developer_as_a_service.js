@@ -56,7 +56,7 @@ function developer_as_a_service() {
                             href="/contact"
                             className="pt-3 pb-1 border-b border-purple-600 inline-flex text-purple-600 hover:scale-100  cursor-pointer "
                         >
-                            Try a 2 week demo
+                            Get Started
                             <ArrowRightIcon className="w-6 ml-2 " />
                         </a>
 
@@ -78,7 +78,7 @@ function developer_as_a_service() {
                             href="/contact"
                             className="pt-3 pb-1 border-b border-blue-600 inline-flex text-blue-600 hover:scale-100  cursor-pointer "
                         >
-                            Try a 2 week demo
+                           Get Started
                             <ArrowRightIcon className="w-6 ml-2 " />
                         </a>
                     </div>

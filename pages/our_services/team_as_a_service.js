@@ -49,7 +49,7 @@ function team_as_a_service() {
                         <h2 className="text-2xl font-semibold">
                             {tass.startup.main_heading}
                         </h2>
-                        <ul className="list-inside list-disc text-sm px-4 py-2">
+                        <ul className="list-outside list-disc text-sm px-4 py-2">
                             {tass.startup.points.map((point, index) => (
                                 <li key={index}>
                                     {point}
@@ -60,7 +60,7 @@ function team_as_a_service() {
                         <h2 className="text-2xl font-semibold mt-5">
                             {tass.startup.secondary_heading}
                         </h2>
-                        <ul className="list-inside list-disc text-sm px-4 py-2">
+                        <ul className="list-outside list-disc text-sm px-4 py-2">
                             {tass.startup.points.map((point, index) => (
                                 <li key={index}>
                                     {point}
@@ -84,7 +84,7 @@ function team_as_a_service() {
                         <h2 className="text-2xl font-semibold">
                             {tass.enterprise.main_heading}
                         </h2>
-                        <ul className="list-inside list-disc text-sm px-4 py-2">
+                        <ul className="list-outside list-disc text-sm px-4 py-2">
                             {tass.enterprise.points.map((point, index) => (
                                 <li key={index}>
                                     {point}
@@ -95,7 +95,7 @@ function team_as_a_service() {
                         <h2 className="text-2xl font-semibold mt-5">
                             {tass.enterprise.secondary_heading}
                         </h2>
-                        <ul className="list-inside list-disc text-sm px-4 py-2">
+                        <ul className="list-outside list-disc text-sm px-4 py-2">
                             {tass.enterprise.points.map((point, index) => (
                                 <li key={index}>
                                     {point}
