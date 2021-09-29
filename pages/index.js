@@ -29,7 +29,7 @@ export default function Home() {
         <Client data={client} />
       </div>
       {/* Our Services */}
-      <section className="new-container">
+      <section className="new-container mt-4">
         <ServicesCard heading={true} />
         <div className="text-center my-10">
           <a href="/our_services" className="primary-outline  text-center">

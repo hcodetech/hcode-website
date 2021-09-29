@@ -473,7 +473,7 @@ export const tass_benefits = {
     {
       image: "/assets/img/best.svg",
       heading: "Best Practices and Help",
-      descripition: "Over time, we have built best practices for project management, code delivery, SDLC. Working together, each developer has helped at their disposal"
+      descripition: "Over time, we have built best practices for project management, code delivery, SDLC. Working together, each developer has help at their disposal"
     },
     {
       image: "/assets/img/roi.svg",
@@ -537,7 +537,7 @@ export const dass_benefits = {
     {
       image: "/assets/img/best.svg",
       heading: "Best Pratices and Help",
-      descripition: "Over time, we have built best practices for project management, code delivery, SDLC. Working together, each developer has helped at their disposal"
+      descripition: "Over time, we have built best practices for project management, code delivery, SDLC. Working together, each developer has help at their disposal"
     },
     {
       image: "/assets/img/roi.svg",
@@ -649,7 +649,7 @@ export const homepage = {
       {
         image: "/assets/img/best.svg",
         heading: "Best Practices",
-        descripition: "Over time, we have built best practices for productivity tools, project management, code delivery, SDLC. Working together, each developer has helped at their disposal"
+        descripition: "Over time, we have built best practices for productivity tools, project management, code delivery, SDLC. Working together, each developer has help at their disposal"
       },
     ]
   }
