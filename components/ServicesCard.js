@@ -1,3 +1,4 @@
+import { ArrowRightIcon } from "@heroicons/react/solid";
 import Link from "next/link";
 import {
   our_service,
@@ -16,7 +17,7 @@ function ServicesCard({ heading }) {
 
       <div className="grid grid-cols-1 md:grid-cols-2 md:gap-4 ">
         <Link href="/our_services/team_as_a_service">
-          <div className="relative  2xl:h-[700px]  hover:scale-95 active:scale-100  transform transition duration-100 ease-out mb-5 md:mb-0 cursor-pointer">
+          <div className="relative  2xl:h-[700px]    transform transition duration-100 ease-out mb-5 md:mb-0 cursor-pointer hover:opacity-95">
             <img
               src={our_service.team_as_service_image}
               layout="fill"
@@ -27,11 +28,20 @@ function ServicesCard({ heading }) {
               <p className="mt-3 font-light md:text-xl opacity-80">
                 {our_service.team_as_service_paragraph}
               </p>
+              <div className=" mt-10">
+                <a
+                  href="/our_services/team_as_a_service"
+                  className=" pb-1  border-b border-white inline-flex  cursor-pointer"
+                >
+                  Know More
+                  <ArrowRightIcon className="w-6 ml-2 " />
+                </a>
+              </div>
             </div>
           </div>
         </Link>
         <Link href="/our_services/developer_as_a_service">
-          <div className="relative  2xl:h-[700px]  hover:scale-95 active:scale-100  transform transition duration-100 ease-out mb-5 md:mb-0 cursor-pointer">
+          <div className="relative  2xl:h-[700px]    transform transition duration-100 ease-out mb-5 md:mb-0 cursor-pointer hover:opacity-95">
             <img
               src={our_service.developer_as_service_image}
               layout="fill"
@@ -48,6 +58,15 @@ function ServicesCard({ heading }) {
               >
                 {our_service.developer_as_service_paragraph}
               </p>
+              <div className=" mt-10">
+                <a
+                  href="/our_services/team_as_a_service"
+                  className=" pb-1  border-b border-white inline-flex  cursor-pointer"
+                >
+                  Know More
+                  <ArrowRightIcon className="w-6 ml-2 " />
+                </a>
+              </div>
             </div>
           </div>
         </Link>

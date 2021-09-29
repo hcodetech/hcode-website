@@ -5,6 +5,7 @@ import Head from "next/head";
 import Benefits from "../../components/Benefits";
 import Accordion from "../../components/Accordion";
 import CTA from "../../components/CTA";
+import TechStack from "../../components/TechStack";
 
 function team_as_a_service() {
     return (
@@ -19,7 +20,7 @@ function team_as_a_service() {
                 </h1>
                 <p className="new-container md:w-9/12  text-base mx-auto mt-3 font-light leading-normal">
                     {tass.hero_paragraph}
-                   
+
 
                 </p>
                 <img src={tass.hero_image} alt={tass.hero_heading} className="w-screen my-10" />
@@ -37,7 +38,7 @@ function team_as_a_service() {
                 </h1>
                 <p className="md:w-4/6 mx-auto mt-3 font-light leading-normal text-center ">
                     {tass.who_is_it_for_paragraph}
-                    <br/>
+                    <br />
                     (Looking to hire 1 or 2 developers? please check out our <a href="/our_services/developer_as_a_service" className="text-primary">Developer-as-a-Service</a> model)
                 </p>
                 <div className="grid md:grid-cols-2 gap-4 mt-8">
@@ -130,8 +131,18 @@ function team_as_a_service() {
             {/* What makes it a great choice */}
             <section className="new-container mt-10">
                 <Benefits data={tass_benefits} />
+                <div className="text-center mb-10">
+                    <a
+                        href="/contact"
+                        className=" pb-1  border-b border-primary inline-flex text-primary hover:scale-100  cursor-pointer hover:opacity-100"
+                    >
+                        Request Consultation
+                        <ArrowRightIcon className="w-6 ml-2 " />
+                    </a>
+                </div>
             </section>
 
+            <TechStack />
             {/* FAQ */}
             <section >
                 <Accordion data={faq_services} />

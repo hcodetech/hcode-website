@@ -5,6 +5,7 @@ import Head from "next/head";
 import Benefits from "../../components/Benefits";
 import Accordion from "../../components/Accordion";
 import CTA from "../../components/CTA";
+import TechStack from "../../components/TechStack";
 
 function developer_as_a_service() {
     return (
@@ -102,7 +103,17 @@ function developer_as_a_service() {
             {/* What makes it a great choice */}
             <section className="new-container mt-10">
                 <Benefits data={dass_benefits} />
+                <div className="text-center mb-10">
+                    <a
+                        href="/contact"
+                        className=" pb-1  border-b border-primary inline-flex text-primary hover:scale-100  cursor-pointer hover:opacity-100"
+                    >
+                        Request Consultation
+                        <ArrowRightIcon className="w-6 ml-2 " />
+                    </a>
+                </div>
             </section>
+            <TechStack />
 
             {/* FAQ */}
             <section >
