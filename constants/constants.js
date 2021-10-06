@@ -144,12 +144,12 @@ export const our_service =
 {
   heading: "Engagement Model",
   paragraph: "Are you a startup or an enterprise looking to set up/augment your tech team? If yes, we have the right solution tailored for you. We staff, manage, and support your offshore development team and we can get your team up and ready at short notice.",
-  
+
   team_as_service_heading: "Team as a Service",
   team_as_service_image: "/assets/img/team_as_service.jpg ",
   team_as_service_paragraph:
-  "Get a team headed by a tech-lead or a project manager to get your development goals from plan to reality. Tech lead can help take the right architectural decisions while managing the direction.",
-  
+    "Get a team headed by a tech-lead or a project manager to get your development goals from plan to reality. Tech lead can help take the right architectural decisions while managing the direction.",
+
   developer_as_service_heading: "Developer as a Service",
   developer_as_service_image: "/assets/img/developer_as_service.jpg",
   developer_as_service_paragraph:
@@ -158,7 +158,7 @@ export const our_service =
 }
 
 export const work_with_us_content = {
-  hero_heading: "Let’s Build Together", 
+  hero_heading: "Let’s Build Together",
   hero_paragraph:
     "We abide by our core value, <strong>‘Our people are our biggest asset’,</strong> in letter and spirit. We do everything to make sure that our people are personally happy, professionally satisfied, and continue growing.<br/><br/>We do this by making sure that people work with global clients on interesting problems with <strong>latest tech stacks</strong> while maintaining a good work-life balance. We keep our <strong>working hours sane</strong> so that you get time for whatever else is important in your life.",
   campus_heading: "Our Campus",
@@ -183,7 +183,7 @@ export const our_services_hero = "/assets/img/our_services_hero.jpg";
 export const work_with_us_image_carousel = [
   { image: "/assets/img/work_with_us_4.jpg" },
   { image: "/assets/img/work_with_us_5.jpg" },
-  { image: "/assets/img/work_with_us_6.jpg" },  
+  { image: "/assets/img/work_with_us_6.jpg" },
   { image: "/assets/img/image_1.jpg" },
   { image: "/assets/img/image_2.jpg" },
   { image: "/assets/img/image_3.jpg" },
@@ -430,17 +430,17 @@ export const tass = {
     tag: "Enterprise",
     main_heading: "Starting a team",
     main_points: [
-       "You are a tech/non-tech enterprise, starting a tech project and looking for a team to get it executed",
-       "You would like to switch from an existing software service provider to a better/cheaper one.",
+      "You are a tech/non-tech enterprise, starting a tech project and looking for a team to get it executed",
+      "You would like to switch from an existing software service provider to a better/cheaper one.",
     ],
     secondary_heading: "Augmenting your team",
     points: [
       "You have a team working on your product, but would like more hands to meet your growing needs",
-       "You have an existing team but would like to hire someone with a tangential skill to augment your team",
+      "You have an existing team but would like to hire someone with a tangential skill to augment your team",
     ],
   },
   cta: {
-    heading : "Get in touch now to get your team",
+    heading: "Get in touch now to get your team",
     main_paragraph: "Still not sure? We can guide you on your development needs and help you select the right service for you",
 
   }
@@ -508,7 +508,7 @@ export const dass = {
     ],
   },
   cta: {
-    heading : "Get in touch now to get your team",
+    heading: "Get in touch now to get your team",
     main_paragraph: "Still not sure? We can guide you on your development needs and help you select the right service for you",
 
   }
@@ -533,7 +533,7 @@ export const dass_benefits = {
       heading: "Easy administration",
       descripition: "We cover all contract work, payroll operations, leave management, team setup and logistics."
     },
-  
+
     {
       image: "/assets/img/best.svg",
       heading: "Best Pratices and Help",
@@ -862,4 +862,78 @@ export const privacy_policy_data = {
 
 
 
+}
+
+
+
+export const technologies_page =
+{
+  hero_image:"assets/img/tech_stack/tech_stack_hero.png",
+  hero_heading: "High quality work with world top technologies",
+  hero_paragraph: "Extend your tech team with top talent. We oversee the execution and management of your software projects with our proven processes and tech mentorship",
+  tech_stack: [
+    {
+      heading: "Backend Technologies",
+      paragraph: "We are on a mission to help successful companies extend their tech capabilities.",
+      stacks: [
+        {
+          image: "assets/img/tech_stack/tech_stack_python.jpg",
+          tech_name: "Python",
+          descripition: "Python is commonly used for developing websites and software, task automation, data analysis, and data visualization. Since it's relatively easy to learn, Python has been adopted by many non-programmers such as accountants and scientists, for a variety of everyday tasks, like organizing finances"
+        },
+        {
+          image: "assets/img/tech_stack/tech_stack_java.jpg",
+          tech_name: "Java",
+          descripition: "Java is an object-oriented programming language that produces software for multiple platforms. When a programmer writes a Java application, the compiled code (known as bytecode) runs on most operating systems (OS), including Windows, Linux and Mac OS."
+        },
+        {
+          image: "assets/img/tech_stack/tech_stack_node.jpg",
+          tech_name: "Node.js",
+          descripition: "It is used for server-side programming, and primarily deployed for non-blocking, event-driven servers, such as traditional web sites and back-end API services, but was originally designed with real-time, push-based architectures in mind. Every browser has its own version of a JS engine, and node."
+        }
+      ]
+    },
+    {
+      heading: "Frontend Technologies",
+      paragraph: "We are on a mission to help successful companies extend their tech capabilities.",
+      stacks: [
+        {
+          image: "assets/img/tech_stack/tech_stack_react.jpg",
+          tech_name: "React",
+          descripition: "React. js is an open-source JavaScript library that is used for building user interfaces specifically for single-page applications. It's used for handling the view layer for web and mobile apps. React also allows us to create reusable UI components."
+        },
+        {
+          image: "assets/img/tech_stack/tech_stack_angular.jpg",
+          tech_name: "Angular",
+          descripition: "Angular is a platform and framework for building single-page client applications using HTML and TypeScript. ... It implements core and optional functionality as a set of TypeScript libraries that you import into your applications. The architecture of an Angular application relies on certain fundamental concepts."
+        },
+        {
+          image: "assets/img/tech_stack/tech_stack_android.jpg",
+          tech_name: "Android",
+          descripition: "Basically, Android is thought of as a mobile operating system. ... It is currently used in various devices such as mobiles, tablets, televisions etc. Android provides a rich application framework that allows us to build innovative apps and games for mobile devices in a Java language environment."
+        }
+      ]
+    },
+    {
+      heading: "Deployment",
+      paragraph: "We are on a mission to help successful companies extend their tech capabilities.",
+      stacks: [
+        {
+          image: "assets/img/tech_stack/tech_stack_aws.jpg",
+          tech_name: "AWS",
+          descripition: "As the lead cloud computing platform, Amazon Web Services (AWS) is the primary profit driver for Amazon. AWS provides servers, storage, networking, remote computing, email, mobile development, and security. AWS accounts for about 13% of Amazon's total revenue as of Q2 2021."
+        },
+        {
+          image: "assets/img/tech_stack/tech_stack_docker.jpg",
+          tech_name: "Docker",
+          descripition: "Docker is an open source containerization platform. It enables developers to package applications into containers—standardized executable components combining application source code with the operating system (OS) libraries and dependencies required to run that code in any environment."
+        },
+        {
+          image: "assets/img/tech_stack/tech_stack_sql.jpg",
+          tech_name: "PostgreSQL",
+          descripition: "It is a highly stable database management system, backed by more than 20 years of community development which has contributed to its high levels of resilience, integrity, and correctness. PostgreSQL is used as the primary data store or data warehouse for many web, mobile, geospatial, and analytics applications."
+        }
+      ]
+    },
+  ]
 }

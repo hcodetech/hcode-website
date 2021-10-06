@@ -1,9 +1,52 @@
+import Accordion from "../components/Accordion"
+import { faq_services, technologies_page } from "../constants/constants"
+
 function technologies() {
     return (
-        <div>
-            technologies
-            
-        </div>
+        <>
+            {/* Hero Section */}
+            <section className="bg-blue-100 " >
+                <div className="new-container grid grid-cols-1 md:grid-cols-12   min-h-[80vh] ">
+                    <div className="md:col-span-5">
+                        <h2 className="pt-40 text-4xl font-semibold">{technologies_page.hero_heading}</h2>
+                        <p className="mt-2 mb-10">{technologies_page.hero_paragraph}</p>
+                        <a href="/contact" className="bg-primary px-4 lg:px-12 py-5 text-center text-white rounded-md hover:bg-blue-800 hover:scale-x-105 active:scale-100 focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white ">Contact Us For More Information</a>
+                    </div>
+                    <div className="md:col-span-7 mt-10 md:mt-20 lg:mt-10 scale-90  lg:absolute lg:-right-8">
+                        <img src={technologies_page.hero_image} alt="Image of technologies in rounded circle" />
+                    </div>
+                </div>
+            </section>
+
+            {/* Tech Stack Section */}
+            <section className="new-container my-10">
+                {technologies_page.tech_stack.map((tech, index) => (
+                    <div className="grid grid-cols-12 gap-4 mt-10" key={index}>
+                        <div className="col-span-12">
+                            <h4 className="text-2xl font-semibold">
+                                {tech.heading}
+                            </h4>
+                            <h6 className="text-base font-normal">
+                                {tech.paragraph}
+                            </h6>
+                        </div>
+                        {tech.stacks.map((language, index) => (
+                            <div className="col-span-6 lg:col-span-4 my-5">
+                                <img src={language.image} alt={language.tech_name} />
+                                <h4 className="font-semibold text-lg mt-2">{language.tech_name}</h4>
+                                <p className=" text-sm font-light md:text-base opacity-90">{language.descripition}</p>
+                            </div>
+                        ))}
+                    </div>
+                ))}
+            </section>
+
+            {/* FAQs */}
+            <section>
+                <Accordion data={faq_services}/>
+            </section>
+
+        </>
     )
 }
 
