@@ -5,6 +5,7 @@ import {
   client,
   city,
   TEAM,
+  portfolioCard,
 } from "../constants/constants";
 import Client from "../components/Client";
 import ServicesCard from "../components/ServicesCard";
@@ -15,6 +16,8 @@ import Process from "../components/Process";
 import HeroSection from "../components/HeroSection";
 import Team from "../components/Team";
 import { ArrowRightIcon } from "@heroicons/react/solid";
+import Testimonial from "../components/Testimonial";
+import CaseStudiesCard from "../components/CaseStudiesCard";
 export default function Home() {
   return (
     <>
@@ -100,6 +103,20 @@ export default function Home() {
       <div className="mt-10  py-16">
         <Process data={how_to_get_started} />
       </div>
+
+      {/* Testimonial */}
+      <div className="hidden">
+
+        <Testimonial />
+      </div>
+
+      {/* Case Studies */}
+      <div className="new-container hidden">
+      {portfolioCard.map((data, index) => (
+        <CaseStudiesCard data={data} key={index}/>
+      ))}
+      </div>
+      {/* Core Team  */}
       <section className="py-14 bg-gray-100 text-center">
         <div className="new-container">
           <h1 className="font-poppins text-center font-semibold text-3xl  md:text-4xl md:leading-tight">

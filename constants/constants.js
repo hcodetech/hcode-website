@@ -937,3 +937,64 @@ export const technologies_page =
     },
   ]
 }
+
+
+
+export const testimonial = [
+  {
+    id:"1",
+    profile_image:"https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=40&h=40&q=40",
+    person_name:"Nam Lee",
+    company_name:"Pollinate",
+    testimonial_paragraph:" A great interview testimonial example will draw the reader/listener/watcher into the conversation and story. It will detail how the client came across your service, what problem you solved for them, and what happened when they bought from you (how it improved their situation)."
+  },
+  {
+    id:"2",
+    profile_image:"https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=40&h=40&q=40",
+    person_name:"Steve Rogers",
+    company_name:"Pollinate",
+    testimonial_paragraph:" A great interview testimonial example will draw the reader/listener/watcher into the conversation and story. It will detail how the client came across your service, what problem you solved for them, and what happened when they bought from you (how it improved their situation)."
+  },
+  {
+    id:"3",
+    profile_image:"https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=40&h=40&q=40",
+    person_name:"Tony Stark",
+    company_name:"Pollinate",
+    testimonial_paragraph:" A great interview testimonial example will draw the reader/listener/watcher into the conversation and story. It will detail how the client came across your service, what problem you solved for them, and what happened when they bought from you (how it improved their situation)."
+  },
+  {
+    id:"4",
+    profile_image:"https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=40&h=40&q=40",
+    person_name:"Tony Stark 4",
+    company_name:"Pollinate",
+    testimonial_paragraph:" A great interview testimonial example will draw the reader/listener/watcher into the conversation and story. It will detail how the client came across your service, what problem you solved for them, and what happened when they bought from you (how it improved their situation)."
+  },
+  {
+    id:"5",
+    profile_image:"https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=40&h=40&q=40",
+    person_name:"Tony Stark 5",
+    company_name:"Pollinate",
+    testimonial_paragraph:" A great interview testimonial example will draw the reader/listener/watcher into the conversation and story. It will detail how the client came across your service, what problem you solved for them, and what happened when they bought from you (how it improved their situation)."
+  },
+
+]
+
+
+export const portfolioCard = [
+  {
+    client_logo:"/assets/img/clients/lift_rocket.jpg",
+    client_name:"Pollinate",
+    mockup_image:"", 
+    descripition:"Extend your tech team with top talent. We oversee the execution and management of your software projects with our proven processes and tech mentorship",
+    link:"/caseStudies/pollinate",
+    color:"bg-blue-400"
+  },
+  {
+    client_logo:"/assets/img/clients/lift_rocket.jpg",
+    client_name:"Ohana Acadmey",
+    mockup_image:"", 
+    descripition:"Extend your tech team with top talent. We oversee the execution and management of your software projects with our proven processes and tech mentorship",
+    link:"/caseStudies/pollinate",
+    color:"bg-red-400"
+  },
+]
