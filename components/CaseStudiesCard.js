@@ -7,6 +7,7 @@ function CaseStudiesCard(props) {
                     {props.data.descripition}
                 </p>
             </div>
+            
             <div>
                 <img src={props.data.mockup_image} alt={props.data.client_name} />
             </div>
