@@ -69,9 +69,9 @@ function work_with_us() {
       {/* Campus Overview */}
       <section className="new-container mt-10">
         <div className="sm:mt-10">
-        <h1 className="text-4xl  font-semibold font-poppins">
-          {work_with_us_content.campus_heading}
-        </h1>
+          <h1 className="text-4xl  font-semibold font-poppins">
+            {work_with_us_content.campus_heading}
+          </h1>
         </div>
         <p
           className="mt-4 md:w-3/4 leading-snug font-light text-lg"
@@ -111,7 +111,7 @@ function work_with_us() {
         <div className="grid grid-cols-12">
           {what_we_do.map((item, index) => (
             <div className="col-span-12 mb-7 md:mb-0 md:col-span-6">
-              <img src={item.img} alt={item.heading}  />
+              <img src={item.img} alt={item.heading} />
               <h2 className="font-semibold text-2xl mt-3">{item.heading}</h2>
               <ul className="list-disc list-inside mt-2">
                 {item.points.map((li, index) => (
@@ -166,7 +166,7 @@ function work_with_us() {
       {/* FAQ */}
       <div className="text-center bg-gray-100 pt-0 pb-20 md:my-20">
         <Accordion data={faq_hiring} />
-      
+
       </div>
 
       {/* TODO Open Position */}
@@ -189,7 +189,7 @@ function work_with_us() {
               target="_blank"
               className="primary-button text-ce"
             >
-              Get In Touch 
+              Get In Touch
             </a>
           </div>
         </div>

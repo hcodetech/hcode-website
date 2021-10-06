@@ -58,7 +58,6 @@ export default function Navbar() {
                 </div>
               </div>
               <div className="hidden sm:ml-6 md:flex sm:items-center">
-                {/* Profile dropdown */}
                 <a
                   href="/contact"
                   className="primary-outline"
