@@ -4,6 +4,10 @@ import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import { useRouter } from "next/dist/client/router";
 import { useEffect } from "react";
 import { hcode_footer, navbar_links } from "../constants/constants";
+import { Menu, Popover, Transition } from '@headlessui/react'
+import { Fragment } from 'react'
+
+
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
@@ -37,24 +41,71 @@ export default function Navbar() {
                       alt="Hcode Technologies"
                     />
                   </a>
-
                 </div>
                 <div className="hidden sm:ml-6 md:flex sm:space-x-8">
-                  {navbar_links.map(({ label, link }) => {
-                    return (
+                  <a
+                    href="/"
+                    className={` text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium  border-transparent
+                      ${pathname === '/'
+                        ? "border-blue-500 border-b-4"
+                        : ""
+                      }   `}
+                  >
+                    Home
+                  </a>
+                  {/* Our Services dropdown */}
+                  <Menu as="div" className={` text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium  border-transparent relative 
+                      ${pathname === '/our_services' || pathname === "/our_services/team_as_a_service" || pathname === "/our_services/developer_as_a_service"
+                      ? "border-blue-500 border-b-4"
+                      : ""
+                    }   `}>
+                    <Menu.Button>
                       <a
-                        href={link}
-                        className={` text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium  border-transparent
-                      ${pathname === link
-                            ? "border-blue-500 border-b-4"
-                            : ""
-                          }   `}
+                        href="/our_services"
                       >
-                        {label}
+                        Our Services
                       </a>
-                    )
-                  })
-                  }
+                    </Menu.Button>
+                    <Transition
+                      as={Fragment}
+                      enter="transition ease-out duration-100"
+                      enterFrom="transform opacity-0 scale-95"
+                      enterTo="transform opacity-100 scale-100"
+                      leave="transition ease-in duration-75"
+                      leaveFrom="transform opacity-100 scale-100"
+                      leaveTo="transform opacity-0 scale-95"
+                    >
+                      <Menu.Items className=" top-14 border-2 absolute z-10  left-0 right-0  w-28 text-center rounded-md shadow-lg bg-white    focus:outline-none ">
+                        <Menu.Item key="TAAS">
+                          <a href="/our_services/team_as_a_service" className='block py-2  text-sm text-gray-700 hover:bg-gray-100 border-b'>TAAS</a>
+                        </Menu.Item>
+                        <Menu.Item key="DAAS">
+                          <a href="/our_services/developer_as_a_service" className='block py-2  text-sm text-gray-700 hover:bg-gray-100'>DAAS</a>
+                        </Menu.Item>
+                      </Menu.Items>
+                    </Transition>
+                  </Menu>
+                  <a
+                    href="/about"
+                    className={` text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium  border-transparent
+                      ${pathname === '/about'
+                        ? "border-blue-500 border-b-4"
+                        : ""
+                      }   `}
+                  >
+                    About Us
+                  </a>
+                  <a
+                    href="/work_with_us"
+                    className={` text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium  border-transparent
+                      ${pathname === '/work_with_us'
+                        ? "border-blue-500 border-b-4"
+                        : ""
+                      }   `}
+                  >
+                    Work With Us
+                  </a>
+
                 </div>
               </div>
               <div className="hidden sm:ml-6 md:flex sm:items-center">
@@ -64,8 +115,6 @@ export default function Navbar() {
                 >
                   <span className="px-5">Contact Us</span>
                 </a>
-
-
               </div>
               <div className="-mr-2 flex items-center md:hidden">
                 {/* Mobile menu button */}
@@ -80,33 +129,98 @@ export default function Navbar() {
               </div>
             </div>
           </div>
-
+          {/* Mobile View List */}
           <Disclosure.Panel className="md:hidden">
             <div className="pt-2 pb-3 space-y-1">
+              <a
+                href="/"
+                className={` border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium
+                      ${pathname === "/"
+                    ? "bg-blue-50 border-blue-500 text-blue-700"
+                    : ""
+                  }   `}
+              >
+                Home
+              </a>
+
+              <a
+                href="/our_services"
+                className={` border-transparent  text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium
+                    ${pathname === "/our_services"
+                    ? "bg-blue-50 border-blue-500 text-blue-700"
+                    : ""
+                  }   `}
+              >
+                Our Services
+              </a>
+                  <div className="border-t border-grey-200">
+
+                  <a
+                    href="/our_services/team_as_a_service"
+                    className={` border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block  px-6 py-2  border-l-4 text-sm font-medium
+                    ${pathname === "/our_services/team_as_a_service"
+                        ? "bg-blue-50 border-blue-500 text-blue-700"
+                        : ""
+                      }   `}
+                  >
+                    TAAS
+                  </a>
+                  <a
+                    href="/our_services/developer_as_a_service"
+                    className={` border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block px-6 py-2  border-l-4 text-sm font-medium
+                    ${pathname === "/our_services/developer_as_a_service"
+                        ? "bg-blue-50 border-blue-500 text-blue-700"
+                        : ""
+                      }   `}
+                  >
+                    DAAS
+                  </a>
+                    </div>
 
 
-            {navbar_links.map(({ label, link }) => {
-                    return (
-                      <a
-                        href={link}
-                        className={` border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium
+
+              <a
+                href="/about"
+                className={` border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium
+                    ${pathname === "/about"
+                    ? "bg-blue-50 border-blue-500 text-blue-700"
+                    : ""
+                  }   `}
+              >
+                About Us
+              </a>
+              <a
+                href="/work_with_us"
+                className={` border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium
+                    ${pathname === "/work_with_us"
+                    ? "bg-blue-50 border-blue-500 text-blue-700"
+                    : ""
+                  }   `}
+              >
+                Work With Us
+              </a>
+
+
+
+              {/* {navbar_links.map(({ label, link }) => {
+                return (
+                  <a
+                    href={link}
+                    className={` border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium
                       ${pathname === link
-                            ? "bg-blue-50 border-blue-500 text-blue-700"
-                            : ""
-                          }   `}
-                      >
-                        {label}
-                      </a>
-                    )
-                  })
-                  }
-
-              
+                        ? "bg-blue-50 border-blue-500 text-blue-700"
+                        : ""
+                      }   `}
+                  >
+                    {label}
+                  </a>
+                )
+              })
+              } */}
             </div>
             <div className="pt-5 pb-5 border-t border-gray-200">
               <div className="flex items-center px-4">
                 <div className="flex-shrink-0">
-                  
                   <a href="/contact" className="primary-outline">
                     Contact Us
                   </a>
