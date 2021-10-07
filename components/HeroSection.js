@@ -22,7 +22,7 @@ function HeroSection() {
     >
       <h2 >With intrinsic axis dimension</h2>
 
-      <div class="relative">
+      <div className="relative">
         <Slider >
           <Slide index={0}>
             <div className="relative">

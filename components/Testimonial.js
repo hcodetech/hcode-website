@@ -20,7 +20,7 @@ function Testimonial() {
             lockOnWindowScroll
             playDirection
         >
-            <div class="relative">
+            <div className="relative">
                 <section className="new-container bg-blue-100 py-12">
                     <Slider >
                         {testimonial.map((message, index) => (
