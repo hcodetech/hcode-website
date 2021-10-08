@@ -28,54 +28,54 @@ export default function Home() {
       {/* Crasoual  */}
       <HeroSection />
       {/* Client Section */}
-      <div className=" new-container pt-10">
+      <div className=' new-container pt-10'>
         <Client data={client} />
       </div>
       {/* Our Services */}
-      <section className="new-container mt-4">
+      <section className='new-container mt-4'>
         <ServicesCard heading={true} />
-        <div className="text-center my-10">
-          <a href="/our_services" className="primary-outline  text-center">
+        <div className='text-center my-10'>
+          <a href='/our_services' className='primary-outline  text-center'>
             Know More About Our Services
           </a>
         </div>
       </section>
       {/* Who we are */}
-      <section className="bg-gray-100 mt-14">
-        <div className="new-container py-10">
-          <div className="grid grid-cols-12">
-            <div className="col-span-12 lg:col-span-6">
+      <section className='bg-gray-100 mt-14'>
+        <div className='new-container py-10'>
+          <div className='grid grid-cols-12'>
+            <div className='col-span-12 lg:col-span-6'>
               <img
                 src={homepage.who_are_we.image}
                 alt={homepage.who_are_we.heading}
-                className="rounded-lg"
+                className='rounded-lg'
               />
             </div>
-            <div className="lg:px-4 col-span-12 lg:col-span-6 ">
-              <h1 className="text-3xl lg:text-4xl font-semibold py-2 mt-4 md:mt-0">
+            <div className='lg:px-4 col-span-12 lg:col-span-6 '>
+              <h1 className='text-3xl lg:text-4xl font-semibold py-2 mt-4 md:mt-0'>
                 {homepage.who_are_we.heading}
               </h1>
-              <div className="py-2 lg:py-5">
-                <p className="lg:text-lg break-words">
+              <div className='py-2 lg:py-5'>
+                <p className='lg:text-lg break-words'>
                   {homepage.who_are_we.paragraph}
                 </p>
                 <br />
-                <p className="lg:text-lg">
+                <p className='lg:text-lg'>
                   {homepage.who_are_we.paragraph_2nd}
                 </p>
               </div>
-              <div className="">
-                <h3 className="text-xl font-semibold">
+              <div className=''>
+                <h3 className='text-xl font-semibold'>
                   {homepage.who_are_we.clients.heading}
                 </h3>
                 <Client data={city} heading={true} />
               </div>
               <a
-                href="/about"
-                className="pt-3 pb-1 border-b border-primary inline-flex text-primary hover:scale-100  cursor-pointer hover:opacity-100"
+                href='/about'
+                className='pt-3 pb-1 border-b border-primary inline-flex text-primary hover:scale-100  cursor-pointer hover:opacity-100'
               >
                 Read more about our story
-                <ArrowRightIcon className="w-6 ml-2 " />
+                <ArrowRightIcon className='w-6 ml-2 ' />
               </a>
             </div>
           </div>
@@ -84,45 +84,54 @@ export default function Home() {
 
       {/* Benefits */}
       <Benefits data={homepage.why_hcode} />
-      <div className="new-container mx-auto -mt-16 pb-16">
-        <div className="text-center">
+      <div className='new-container mx-auto -mt-16 pb-16'>
+        <div className='text-center'>
           <a
-            href="/contact"
-            className="pt-10 pb-1  border-b border-primary inline-flex text-primary hover:scale-100  cursor-pointer hover:opacity-100"
+            href='/contact'
+            className='pt-10 pb-1  border-b border-primary inline-flex text-primary hover:scale-100  cursor-pointer hover:opacity-100'
           >
             Request Consultation
-            <ArrowRightIcon className="w-6 ml-2 " />
+            <ArrowRightIcon className='w-6 ml-2 ' />
           </a>
         </div>
       </div>
 
-      {/* Tech Stack */}
-      <TechStack />
+      {/* Case Studies */}
+      <div className='new-container '>
+        <h2 className='text-4xl font-semibold text-center py-5 mb-4'>
+          {" "}
+          Our Work
+        </h2>
+        <div className='grid grid-cols-12 gap-4'>
+          {portfolioCard.map((data, index) => (
+            <div className='col-span-4'>
+              <CaseStudiesCard data={data} key={index} />
+            </div>
+          ))}
+        </div>
+      </div>
 
-      {/* Process */}
-      <div className="mt-10  py-16">
-        <Process data={how_to_get_started} />
+      {/* Tech Stack */}
+      <div className='mt-20'>
+        <TechStack />
       </div>
 
       {/* Testimonial */}
-      <div className="hidden">
-
+      <div className='py-10'>
         <Testimonial />
       </div>
-
-      {/* Case Studies */}
-      <div className="new-container hidden">
-      {portfolioCard.map((data, index) => (
-        <CaseStudiesCard data={data} key={index}/>
-      ))}
+      {/* Process */}
+      <div className='  py-16'>
+        <Process data={how_to_get_started} />
       </div>
+
       {/* Core Team  */}
-      <section className="py-14 bg-gray-100 text-center">
-        <div className="new-container">
-          <h1 className="font-poppins text-center font-semibold text-3xl  md:text-4xl md:leading-tight">
+      <section className='py-14 bg-gray-100 text-center'>
+        <div className='new-container'>
+          <h1 className='font-poppins text-center font-semibold text-3xl  md:text-4xl md:leading-tight'>
             Our Core Team
           </h1>
-          <div className="grid grid-cols-2 gap-8 md:grid-cols-3  xl:grid-cols-4 mt-7">
+          <div className='grid grid-cols-2 gap-8 md:grid-cols-3  xl:grid-cols-4 mt-7'>
             {TEAM.map(({ name, image, bio, link }, index) => (
               <Team
                 key={index}
@@ -138,7 +147,7 @@ export default function Home() {
       </section>
 
       {/* CTA */}
-      <div className="my-20 ">
+      <div className='my-20 '>
         <CTA />
       </div>
     </>
