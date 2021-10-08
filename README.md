@@ -10,4 +10,8 @@ scp out.zip hcode:~/.
 ssh hcode
 unzip -o out
 
+cd out
+
+<!-- aws s3 cp . s3://hcode.tech --recursive --exclude ".git/" --exclude ".py" --exclude "_next/" --exclude "__pycache__/" --exclude "php/*" -->
+
 <!-- https://github.com/github/gitignore/blob/master/Node.gitignore -->
