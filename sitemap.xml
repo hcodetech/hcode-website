@@ -8,12 +8,17 @@
 
 		<url>
 	  		<loc>http://hcode.tech/</loc>
-	  		<lastmod>2021-09-23T13:49:43.062564+00:00</lastmod>
+	  		<lastmod>2021-10-08T13:49:43.062564+00:00</lastmod>
 	  		<priority>1.00</priority>
 	 	</url>
 <url>
 			<loc>http://hcode.tech/about</loc>
 			<lastmod>2021-09-23T13:49:43.062564+00:00</lastmod>
+			<priority>.90</priority>
+		</url>
+<url>
+			<loc>http://hcode.tech/technologies</loc>
+			<lastmod>2021-10-08T13:49:43.062564+00:00</lastmod>
 			<priority>.90</priority>
 		</url>
 <url>

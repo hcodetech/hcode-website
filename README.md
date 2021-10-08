@@ -1,8 +1,7 @@
 # Next.js + Tailwind CSS Example
 
 npm run-script build
-cp -r img/* out/assets/img/.
-mv out/our_services.html out/our_services/index.html
+cp -r img/\* out/assets/img/.
 cp sitemap.xml out/.
 
 zip -r out.zip out
