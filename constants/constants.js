@@ -1021,49 +1021,28 @@ export const technologies_page = {
 export const testimonial = [
   {
     id: "1",
-    profile_image:
-      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=40&h=40&q=40",
+    profile_image: "assets/img/client_image/naam_lee.png",
     person_name: "Nam Lee",
-    company_name: "Pollinate",
+    company_name: "CEO, Pollinate Inc.",
     testimonial_paragraph:
-      " A great interview testimonial example will draw the reader/listener/watcher into the conversation and story. It will detail how the client came across your service, what problem you solved for them, and what happened when they bought from you (how it improved their situation).",
+      " The quality of the Hcode's work and communication is superb, and they feel like our internal engineering team. When it comes to hitting our development and company milestones, their team is there to deliver from day 1. They have been fantastic partners for us and we look forward to growing with the Hcode team.",
   },
   {
     id: "2",
-    profile_image:
-      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=40&h=40&q=40",
-    person_name: "Steve Rogers",
-    company_name: "Pollinate",
+    profile_image: "assets/img/client_image/Suyash_Kothari.png",
+    person_name: "Suyash Kothari",
+    company_name: "Co-Founder, Ohana",
     testimonial_paragraph:
-      " A great interview testimonial example will draw the reader/listener/watcher into the conversation and story. It will detail how the client came across your service, what problem you solved for them, and what happened when they bought from you (how it improved their situation).",
+      "As a purely digital edtech platform, high-quality engineering is a foundational part of our business. HCode has not only helped us go live, but has helped consistently improve the product with fast iterations. On multiple occasions, they have put our platform first, and made recommendations to help us reduce costs on engineering (even if it may not necessarily be beneficial for HCode).",
   },
-  {
-    id: "3",
-    profile_image:
-      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=40&h=40&q=40",
-    person_name: "Tony Stark",
-    company_name: "Pollinate",
-    testimonial_paragraph:
-      " A great interview testimonial example will draw the reader/listener/watcher into the conversation and story. It will detail how the client came across your service, what problem you solved for them, and what happened when they bought from you (how it improved their situation).",
-  },
-  {
-    id: "4",
-    profile_image:
-      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=40&h=40&q=40",
-    person_name: "Tony Stark 4",
-    company_name: "Pollinate",
-    testimonial_paragraph:
-      " A great interview testimonial example will draw the reader/listener/watcher into the conversation and story. It will detail how the client came across your service, what problem you solved for them, and what happened when they bought from you (how it improved their situation).",
-  },
-  {
-    id: "5",
-    profile_image:
-      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=40&h=40&q=40",
-    person_name: "Tony Stark 5",
-    company_name: "Pollinate",
-    testimonial_paragraph:
-      " A great interview testimonial example will draw the reader/listener/watcher into the conversation and story. It will detail how the client came across your service, what problem you solved for them, and what happened when they bought from you (how it improved their situation).",
-  },
+  // {
+  //   id: "3",
+  //   profile_image: "assets/img/client_image/Gregory_Correll.png",
+  //   person_name: "Gregory Correll",
+  //   company_name: "Technical Project Manager, Parmount Capital Group",
+  //   testimonial_paragraph:
+  //     "As a purely digital edtech platform, high-quality engineering is a foundational part of our business. HCode has not only helped us go live, but has helped consistently improve the product with fast iterations. On multiple occasions, they have put our platform first, and made recommendations to help us reduce costs on engineering (even if it may not necessarily be beneficial for HCode).",
+  // },
 ];
 
 export const portfolioCard = [

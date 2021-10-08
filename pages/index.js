@@ -117,7 +117,7 @@ export default function Home() {
       </div>
 
       {/* Testimonial */}
-      <div className='py-10'>
+      <div className='pt-10 pb-5 bg-blue-100'>
         <Testimonial />
       </div>
       {/* Process */}

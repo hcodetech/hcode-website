@@ -53,7 +53,8 @@ export default function Navbar() {
                   </a>
                   {/* Our Services dropdown */}
 
-                  <li
+                  <a
+                    href='/our_services'
                     className={` text-gray-900 group  inline-flex items-center  pt-1 border-b-2 text-sm font-medium  border-transparent relative 
                       ${
                         pathname === "/our_services" ||
@@ -63,8 +64,7 @@ export default function Navbar() {
                           : ""
                       }   `}
                   >
-                    <a> Our Services</a>
-
+                    Our Services
                     <div class='group-hover:block dropdown-menu absolute hidden top-16 -left-3'>
                       <ul class='top-0 w-28 bg-white shadow text-center    rounded'>
                         <li class=''>
@@ -85,7 +85,7 @@ export default function Navbar() {
                         </li>
                       </ul>
                     </div>
-                  </li>
+                  </a>
 
                   <a
                     href='/about'

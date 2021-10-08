@@ -17,7 +17,7 @@ import {
 function Testimonial() {
   return (
     <>
-      <h2 className='text-3xl font-semibold text-center pb-5'>
+      <h2 className='text-3xl font-semibold text-center pb-2'>
         What Client's say about us
       </h2>
       <CarouselProvider
@@ -28,13 +28,13 @@ function Testimonial() {
         naturalSlideHeight={500}
         isIntrinsicHeight
         infinite
-        interval={10000}
+        interval={5000}
         isPlaying
         lockOnWindowScroll
         playDirection
       >
         <div className='relative'>
-          <section className='new-container bg-blue-100 py-12'>
+          <section className='new-container  py-6'>
             <Slider>
               {testimonial.map((message, index) => (
                 <Slide index={message.id} key={index}>
@@ -43,7 +43,7 @@ function Testimonial() {
                       <img
                         src={message.profile_image}
                         alt={message.person_name}
-                        className='rounded-full w-12 h-12'
+                        className='rounded-full w-12 h-12 object-cover'
                       />
                       <div className='ml-3'>
                         <h5 className='font-semibold'>{message.person_name}</h5>
