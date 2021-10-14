@@ -2,22 +2,19 @@ import Link from "next/link";
 import { linkedin_icon } from "../constants/constants";
 function Team({ name, image, bio, link }) {
   return (
-    <div className="                 ">
-      <div className="relative h-[200px] md:h-[300px]  mb-2">
-        <img className="object-cover"
-          src={image}
-          layout="fill"
-        />
-        <div className="p-4 absolute bottom-8 left-2 cursor-pointer bg-gray-100 rounded-full hover:bg-white" >
-        <a  href={link} target="_blank" >
-          <img src={linkedin_icon} alt="" />
-        </a>
-
+    <div className='                 '>
+      <div className='relative h-[200px] md:h-[300px]  mb-2'>
+        <img className='object-cover' src={image} layout='fill' />
+        <div className='p-4 absolute bottom-8 left-2 cursor-pointer bg-gray-100 rounded-full hover:bg-white'>
+          <a href={link} target='_blank'>
+            <img src={linkedin_icon} alt='' />
+          </a>
+        </div>
       </div>
-      </div>
-      <h4 className="text-xl font-semibold ">{name}</h4>
-      <p className="font-light">{bio}</p>
-      
+      <h4 className='text-xl font-semibold pt-5 sm:pt-20 md:pt-0 md:-mt-10 lg:mt-0 '>
+        {name}
+      </h4>
+      <p className='font-light'>{bio}</p>
     </div>
   );
 }

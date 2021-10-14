@@ -113,17 +113,16 @@ export default function Home() {
       {/* Case Studies */}
       <div className='new-container '>
         <h2 className='text-4xl font-semibold text-center py-5 mb-4'>
-          {" "}
           Our Work
         </h2>
         <div className='grid grid-cols-12 gap-4'>
           {portfolioCard.map((data, index) => (
-            <div className='col-span-4'>
+            <div className='col-span-6 md:col-span-4'>
               <CaseStudiesCard data={data} key={index} />
             </div>
           ))}
         </div>
-        <div className='text-center mt-10'>
+        <div className='text-center mt-10 mb-14'>
           <a href='/portfolio' className='outline-button px-10  text-center'>
             See Our Portfolio
           </a>
