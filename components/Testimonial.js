@@ -22,7 +22,7 @@ function Testimonial() {
   return (
     <>
       <h2 className='text-3xl font-semibold text-center pb-2'>
-        What Client's say about us
+        What Clients say about us
       </h2>
       <CarouselProvider
         visibleSlides={1}
@@ -32,7 +32,7 @@ function Testimonial() {
         naturalSlideHeight={500}
         isIntrinsicHeight
         infinite
-        interval={5000}
+        interval={10000}
         isPlaying
         lockOnWindowScroll
         playDirection='forward'

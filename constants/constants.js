@@ -1033,7 +1033,7 @@ export const testimonial = [
     person_name: "Gregory Correll",
     company_name: "Technical Project Manager, Parmount Capital Group",
     testimonial_paragraph:
-      "As a technology manager with over 25 years of experience, I cannot think of a better partnership that I’ve had over the years.  Not only are Shashank and his teams are immensely qualified across a wide range of disciplines as well as attentive and disciplined in their approach to solutions, but they have also proven they can rapidly adjust to a constantly changing set of directives with ease.  They were ready to work on day 1, and by day 2 had already surpassed my initial expectations.  In only a few months’ time, they carefully crafted a complete internal self-service portal for both our employees and clients which will eventually be a backbone of our entire firm.  I’m looking forward to a long and healthy relationship!!",
+      "As a technology manager with over 25 years of experience, I cannot think of a better partnership that I’ve had over the years.  Not only are Shashank and his teams are immensely qualified across a wide range of disciplines as well as attentive and disciplined in their approach to solutions, but they have also proven they can rapidly adjust to a constantly changing set of directives with ease.<br/><br/>They were ready to work on day 1, and by day 2 had already surpassed my initial expectations.  In only a few months’ time, they carefully crafted a complete internal self-service portal for both our employees and clients which will eventually be a backbone of our entire firm.  I’m looking forward to a long and healthy relationship!!",
   },
   {
     id: "3",
