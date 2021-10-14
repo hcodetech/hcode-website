@@ -96,6 +96,20 @@ export default function Home() {
         </div>
       </div>
 
+      {/* Testimonial */}
+      <div className='pt-10 pb-0 bg-gray-100'>
+        <Testimonial />
+      </div>
+
+      {/* Tech Stack */}
+      <div className='mt-20'>
+        <TechStack />
+      </div>
+
+      {/* Process */}
+      <div className='  py-16'>
+        <Process data={how_to_get_started} />
+      </div>
       {/* Case Studies */}
       <div className='new-container '>
         <h2 className='text-4xl font-semibold text-center py-5 mb-4'>
@@ -114,20 +128,6 @@ export default function Home() {
             See Our Portfolio
           </a>
         </div>
-      </div>
-
-      {/* Tech Stack */}
-      <div className='mt-20'>
-        <TechStack />
-      </div>
-
-      {/* Testimonial */}
-      <div className='pt-10 pb-5 bg-blue-100'>
-        <Testimonial />
-      </div>
-      {/* Process */}
-      <div className='  py-16'>
-        <Process data={how_to_get_started} />
       </div>
 
       {/* Core Team  */}

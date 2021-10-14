@@ -13,6 +13,10 @@ import {
   ChevronLeftIcon,
   ChevronRightIcon,
 } from "@heroicons/react/solid";
+import {
+  ArrowNarrowLeftIcon,
+  ArrowNarrowRightIcon,
+} from "@heroicons/react/outline";
 
 function Testimonial() {
   return (
@@ -31,43 +35,50 @@ function Testimonial() {
         interval={5000}
         isPlaying
         lockOnWindowScroll
-        playDirection
+        playDirection='forward'
       >
         <div className='relative'>
-          <section className='new-container  py-6'>
+          <section className='new-container  pt-6 pb-2'>
             <Slider>
               {testimonial.map((message, index) => (
                 <Slide index={message.id} key={index}>
-                  <div className='bg-blue-600 rounded-md p-10 text-white'>
-                    <div className='flex'>
+                  <div className=' p-10'>
+                    <div className='md:flex'>
                       <img
                         src={message.profile_image}
                         alt={message.person_name}
-                        className='rounded-full w-12 h-12 object-cover'
+                        className='rounded w-[280px] h-[320px] lg:w-[320px] lg:h-[400px] object-cover'
                       />
-                      <div className='ml-3'>
-                        <h5 className='font-semibold'>{message.person_name}</h5>
-                        <p className='font-light text-sm opacity-70'>
-                          {message.company_name}
-                        </p>
+                      <div>
+                        <div className='md:ml-10 mt-4 md:mt-0'>
+                          <h4 className='font-semibold text-2xl'>
+                            {message.person_name}
+                          </h4>
+                          <p className='font-regular text-sm opacity-50 pt-1'>
+                            {message.company_name}
+                          </p>
+                          <p
+                            className=' text-lg mt-4 border-t border-black pt-3 lg:leading-loose tracking-tight'
+                            dangerouslySetInnerHTML={{
+                              __html: message.testimonial_paragraph,
+                            }}
+                          />
+                        </div>
                       </div>
                     </div>
-                    <h1 className='font-light text-2xl mt-4'>
-                      {message.testimonial_paragraph}
-                    </h1>
                   </div>
                 </Slide>
               ))}
             </Slider>
           </section>
           <ButtonBack>
-            <div className='bg-black absolute left-0 bottom-1/2 opacity-20 hover:opacity-80'>
-              <ChevronLeftIcon className='w-8 h-10  text-white' />
+            <div className='bg-black absolute left-0 bottom-1/2 opacity-20 hover:opacity-80 px-2 md:px-5'>
+              <ArrowNarrowLeftIcon className='w-8 h-10  text-white' />
             </div>
           </ButtonBack>
           <ButtonNext>
-            <div className='bg-black absolute right-0 bottom-1/2 opacity-20 hover:opacity-80 '>
-              <ChevronRightIcon className='w-8 h-10 text-white ' />
+            <div className='bg-black absolute right-0 bottom-1/2 opacity-20 hover:opacity-80 px-2 md:px-5 '>
+              <ArrowNarrowRightIcon className='w-8 h-10 text-white ' />
             </div>
           </ButtonNext>
         </div>
