@@ -12,7 +12,8 @@ unzip -o out
 
 cd out
 
-<!-- aws s3 cp . s3://hcode.tech --recursive --exclude ".git/" --exclude ".py" --exclude "_next/" --exclude "__pycache__/" --exclude "php/* --exclude "*.html"" -->
+// aws s3 cp . s3://hcode.tech --recursive --exclude ".git/*" --exclude "*.py"  --exclude "__pycache__/*" --exclude "php/*" --exclude "*.html"
+
 
 <!-- aws s3 cp . s3://hcode.tech --recursive  --content-type 'text/html' --exclude "*"  --include "*.html" -->
 
