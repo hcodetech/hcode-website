@@ -1,0 +1,16 @@
+*.pyc
+
+.idea
+archive
+/portfolio
+index.html
+portfolio.html
+terms-of-service.html
+team.html
+privacy-policy.html
+casestudy.html
+sitemap.xml
+mvp.html
+css/style.min.css
+*.gz
+.DS_Store

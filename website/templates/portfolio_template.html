@@ -1,0 +1,33 @@
+## -*- coding: utf-8 -*-
+<%inherit file="simple_page.html"/>
+<%block name="simple_page_breadcrumb_list">
+  <li class="breadcrumb-item"><a href="/portfolio.html">Portfolio</a></li>
+  <li class="breadcrumb-item active" aria-current="page">${simple_page_breadcrumb}</li>
+                            </%block>
+
+<%block name="simple_page_content">
+   <!-- 
+      <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html"> <i class="ion-home"></i>Home</a></li>
+                            <li class="breadcrumb-item"><a href="index.html#portfolio">Portfolio</a></li>
+                            <li class="breadcrumb-item active" aria-current="page" id="client_name"></li>
+                        </ol>
+                      </nav> -->
+                      <section id="blog" class="iq-page-blog overview-block-ptb">
+                        <div class="container" id="includedContent">
+                          <%include file="${portfolio_content_file_path}"/>
+                        </div>
+                        <div class="container" >
+                          <div class="row pt-3">
+                            <div class="col-6">
+                              <a href="${left_href}" id= "prev_btn" class="btn btn-sm  btn-outline-primary"> << Previous</a>
+                            </div>
+                            <div class="col-6">
+                              <a href="${right_href}" id="next_btn" class="btn btn-sm  btn-outline-primary float-right">Next >></a>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+
+                      </%block>

@@ -1,0 +1,37 @@
+## -*- coding: utf-8 -*-
+<%inherit file="base.html"/>
+
+  <%block name="content">
+    <!-- Breadcrumb -->
+    <section class="iq-breadcrumb overview-block-pt text-center iq-parallax iq-over-blue-90" data-jarallax='{"speed": 0.6}' style="background: url(images/bg/01.jpg);">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-10">
+                    <div class="heading-title white iq-breadcrumb-title iq-mtb-100">
+                        <h1 class="title iq-tw-7">${simple_page_title}</h1>
+                        <p class="iq-font-white bigp">${simple_page_desc}</p>
+                    </div>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html"> <i class="ion-home"></i>Home</a></li>
+                            <%block name="simple_page_breadcrumb_list">
+                            <li class="breadcrumb-item active" aria-current="page">${simple_page_breadcrumb}</li>
+                            </%block>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Breadcrumb End -->
+    <!-- Main Content -->
+    <div class="main-content">
+    	 <%block name="simple_page_content">
+    	 	<%include file="${simple_page_content_file_path}"/>
+    	 </%block>
+
+   	</div>
+    
+
+<!-- Main Content END -->
+  </%block>

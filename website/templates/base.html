@@ -1,0 +1,103 @@
+## -*- coding: utf-8 -*-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- HTML Meta Tags -->
+     <title> ${title}</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="description" content="${simple_page_desc}"/>
+    <meta name="keywords" content="Software, Development Studio, Development, startups, Mobile Apps, Web Apps"/>
+
+    <!-- Facebook Meta Tags -->
+    <meta prefix="og: http://ogp.me/ns#" property="og:title" content="${title}"/>
+    <meta prefix="og: http://ogp.me/ns#" property="og:type" content="website"/>
+    <meta prefix="og: http://ogp.me/ns#" property="og:url" content="https://hcode.tech/"/>
+    <meta prefix="og: http://ogp.me/ns#" property="og:image" content="https://hcode.tech/images/portfolio/funday1.png"/>
+    <meta prefix="og: http://ogp.me/ns#" property="og:site_name" content="HCODE"/>
+    <meta prefix="og: http://ogp.me/ns#" property="og:description" content="${simple_page_desc}"/>
+
+    <!-- Google / Search Engine Tags -->
+    <meta itemprop="name" content="${title}"/>
+    <meta itemprop="description" content="${simple_page_desc}"/>
+    <meta itemprop="image" content="http://hcode.tech/images/portfolio/funday1.png"/>
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:title" content="${title}"/>
+    <meta name="twitter:description" content="${simple_page_desc}"/>
+    <meta name="twitter:image" content="http://hcode.tech/images/portfolio/funday1.png"/>
+
+
+
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/images/favicon.ico"/>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&amp;Raleway:300,400,500,600,700,800,900"
+          rel="stylesheet" media="none" onload="if(media!='all')media='all'"/>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+    <!-- owl-carousel -->
+    <link rel="stylesheet" href="/css/owl-carousel/owl.carousel.css" media="none" onload="if(media!='all')media='all'"/>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="/css/font-awesome.min.css" media="none" onload="if(media!='all')media='all'"/>
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="/css/magnific-popup/magnific-popup.css" media="none"
+          onload="if(media!='all')media='all'"/>
+    <!-- media element player -->
+    <link href="/css/mediaelementplayer.min.css" rel="stylesheet" type="text/css" media="none"
+          onload="if(media!='all')media='all'"/>
+    <!-- Animate -->
+    <link rel="stylesheet" href="/css/animate.min.css" media="none" onload="if(media!='all')media='all'"/>
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="/css/ionicons.min.css"/>
+    <!-- Style -->
+    <link rel="stylesheet" href="/css/style.min.css"/>
+    <!-- Responsive -->
+    <link rel="stylesheet" href="/css/responsive.min.css"/>
+    <!-- Style customizer (Remove these two lines please) -->
+    <link rel="stylesheet" href="javascript:void(0)" data-style="styles"/>
+    <script src="/js/jquery-3.3.1.min.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148478855-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-148478855-1');
+
+
+
+    </script>
+</head>
+<body data-spy="scroll" data-offset="80">
+
+<%block name="header">
+<header id="main-header">
+    <%include file="navigation.html"/>
+</header>
+</%block>
+
+
+<%block name="content"/>
+
+<%block name="footer">
+<div id="footer">
+    <%include file="footer.html" />
+</div>
+</%block>
+
+<script src="/js/jquery-3.3.1.min.js"></script>
+<script src="/js/popper.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<!-- Main js -->
+<script src="/js/main.min.js"></script>
+<!-- Google captcha code Js -->
+<!-- <script src='https://www.google.com/recaptcha/api.js'></script> -->
+<!-- Custom -->
+<script src="/js/custom.min.js"></script>
+
+</body>
+
+</html>

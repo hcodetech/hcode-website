@@ -1,0 +1,17 @@
+## -*- coding: utf-8 -*-
+<%inherit file="base.html"/>
+
+<%block name="header">
+ <header id="main-header" class="dark" style="position: inherit !important;" >
+  <%include file="navigation.html" args="logo_img_src_append='-footer'"/>
+</header>
+</%block>
+
+
+<%block name="content">
+ <%include file="${content_file_path}"/>
+</%block>
+
+<%block name="footer">
+
+</%block>
