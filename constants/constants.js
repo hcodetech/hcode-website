@@ -1082,3 +1082,121 @@ export const portfolioCard = [
     color: "bg-red-400",
   },
 ];
+  
+export const portfolioIndustry = [
+  'Fintech', 'Education', 'E-Learning', 'Ecommerce', 'Blockchain', 'Food & Agri Tech', 'NFT', 'Productivity', 'Medical Tech', 
+]
+
+export const portfolioData = [
+  {
+    id:1,
+    additionalClass:'text-white bg-black',
+    name: null,
+    logo: 'assets/img/portfolio/pollinate_logo.png',
+    bio: 'We are building this fun app for the Florida based Funday, Inc. Our stack is django and react-native.',
+    website: 'www.pollinate.co',
+    detailsPortfolio: null,
+    mockupImage:'assets/img/portfolio/pollinate_mockup.png',
+    tags:  ['Fintech', 'NFT']
+  },
+  {
+    id:2,
+    additionalClass:'text-white bg-yellow-600 ',
+    name: 'Ohana Acadmey',
+    logo: 'assets/img/portfolio/ohana_logo.png',
+    bio: 'We are building this fun app for the Florida based Funday, Inc. Our stack is django and react-native.',
+    website: 'www.pollinate.co',
+    detailsPortfolio: null,
+    mockupImage:'assets/img/portfolio/ohana_mockup.png',
+    tags:  ['Education', 'E-learning']
+  },
+  {
+    id:3,
+    additionalClass:'text-black bg-purple-300',
+    name: null,
+    logo: 'assets/img/portfolio/resource_logo.png',
+    bio: 'We are building this fun app for the Florida based Funday, Inc. Our stack is django and react-native.',
+    website: 'www.pollinate.co',
+    detailsPortfolio: null,
+    mockupImage:'assets/img/portfolio/resource_mockup.png',
+    tags:  ['Ecommerce']
+  },
+  {
+    id:4,
+    additionalClass:'text-black bg-blue-300',
+    name: null,
+    logo: 'assets/img/portfolio/fable_logo.png',
+    bio: 'We are building this fun app for the Florida based Funday, Inc. Our stack is django and react-native.',
+    website: 'www.pollinate.co',
+    detailsPortfolio: null,
+    mockupImage:'assets/img/portfolio/fable.png',
+    tags:  ['Ecommerce']
+  },
+  {
+    id:5,
+    additionalClass:'text-black bg-purple-300',
+    name: null,
+    logo: 'assets/img/portfolio/PrepayLogo_white.png',
+    bio: 'We are building this fun app for the Florida based Funday, Inc. Our stack is django and react-native.',
+    website: 'www.pollinate.co',
+    detailsPortfolio: null,
+    mockupImage:'assets/img/portfolio/prepay_mockup.png',
+    tags:  ['Ecommerce']
+  },
+  {
+    id:6,
+    additionalClass:'text-black bg-purple-900',
+    name: null,
+    logo: 'assets/img/portfolio/blue_elephant_logo.png',
+    bio: 'We are building this fun app for the Florida based Funday, Inc. Our stack is django and react-native.',
+    website: 'www.pollinate.co',
+    detailsPortfolio: null,
+    mockupImage:'assets/img/portfolio/blue_elephant_mockup.png',
+    tags:  ['Ecommerce']
+  },
+  {
+    id:7,
+    additionalClass:'text-black bg-green-500',
+    name: null,
+    logo: 'assets/img/portfolio/bultmore_logo.png',
+    bio: 'We are building this fun app for the Florida based Funday, Inc. Our stack is django and react-native.',
+    website: 'www.pollinate.co',
+    detailsPortfolio: null,
+    mockupImage:'assets/img/portfolio/biltmore_mockup.png',
+    tags:  ['Ecommerce']
+  },
+  {
+    id:8,
+    additionalClass:'text-black bg-purple-300',
+    name: null,
+    logo: 'assets/img/portfolio/remote_logo.png',
+    bio: 'We are building this fun app for the Florida based Funday, Inc. Our stack is django and react-native.',
+    website: 'www.pollinate.co',
+    detailsPortfolio: null,
+    mockupImage:'assets/img/portfolio/remote_desk_mockup.png',
+    tags:  ['Ecommerce']
+  },
+  {
+    id:9,
+    additionalClass:'text-black bg-purple-300',
+    name: null,
+    logo: 'assets/img/portfolio/pcg_logo.png',
+    bio: 'We are building this fun app for the Florida based Funday, Inc. Our stack is django and react-native.',
+    website: 'www.pollinate.co',
+    detailsPortfolio: null,
+    mockupImage:'assets/img/portfolio/paramount_mockup.png',
+    tags:  ['Ecommerce']
+  },
+  {
+    id:10,
+    additionalClass:'text-black bg-purple-300',
+    name: null,
+    logo: 'assets/img/portfolio/pulse_logo.png',
+    bio: 'We are building this fun app for the Florida based Funday, Inc. Our stack is django and react-native.',
+    website: 'www.pollinate.co',
+    detailsPortfolio: null,
+    mockupImage:'assets/img/portfolio/pulse_labs_mockup.png',
+    tags:  ['Ecommerce']
+  },
+
+]

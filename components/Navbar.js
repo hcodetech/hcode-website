@@ -65,9 +65,9 @@ export default function Navbar() {
                       }   `}
                   >
                     Our Services
-                    <div class='group-hover:block dropdown-menu absolute hidden top-16 -left-3'>
-                      <ul class='top-0 w-28 bg-white shadow text-center    rounded'>
-                        <li class=''>
+                    <div className='group-hover:block dropdown-menu absolute hidden top-16 -left-3'>
+                      <ul className='top-0 w-28 bg-white shadow text-center    rounded'>
+                        <li >
                           <a
                             href='/our_services/team_as_a_service'
                             className='block py-3  text-sm text-gray-700 hover:bg-gray-100 border-b'
@@ -75,7 +75,7 @@ export default function Navbar() {
                             TAAS
                           </a>
                         </li>
-                        <li class=''>
+                        <li >
                           <a
                             href='/our_services/developer_as_a_service'
                             className='block py-3   text-sm text-gray-700 hover:bg-gray-100'
