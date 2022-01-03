@@ -1093,33 +1093,37 @@ export const portfolioData = [
     additionalClass:'text-white bg-black',
     name: null,
     logo: 'assets/img/portfolio/pollinate_logo.png',
-    bio: 'We are building this fun app for the Florida based Funday, Inc. Our stack is django and react-native.',
-    website: 'www.pollinate.co',
+    bio: ' Pollinate is a community platform to make art discovery simple and fun. Pollinate empowers artists, curators, and art lovers with new tools to promote events, activate their communities, and connect in real life. ',
+    website: 'https://www.pollinate.co/',
     detailsPortfolio: null,
     mockupImage:'assets/img/portfolio/pollinate_mockup.png',
-    tags:  ['Fintech', 'NFT']
+    tags:  ['Fintech', 'NFT'],
+    technology: ['Django','Python','React Js', 'Social','Blockchain','NFT']
   },
   {
     id:2,
     additionalClass:'text-white bg-yellow-600 ',
     name: 'Ohana Acadmey',
     logo: 'assets/img/portfolio/ohana_logo.png',
-    bio: 'We are building this fun app for the Florida based Funday, Inc. Our stack is django and react-native.',
-    website: 'www.pollinate.co',
+    bio: 'Ohana Acadmey is fun E-learning platform for young kids which wants to develop their extracurricular activities with their ease at home. ',
+    website: 'https://explore.ohana.academy/',
     detailsPortfolio: null,
     mockupImage:'assets/img/portfolio/ohana_mockup.png',
-    tags:  ['Education', 'E-learning']
+    tags:  ['Education', 'E-learning'],
+    technology: ['Django','Python','React Js', 'Social','Payment']
   },
   {
     id:3,
     additionalClass:'text-black bg-purple-300',
     name: null,
     logo: 'assets/img/portfolio/resource_logo.png',
-    bio: 'We are building this fun app for the Florida based Funday, Inc. Our stack is django and react-native.',
-    website: 'www.pollinate.co',
+    bio: 'We built a comprehensive eCommerce responsive product for a NY based client with deep integrations with Alibaba and Google Vision. The product was capable of bulk importing xx from alibaba with deep integrations, and oogle vision too.',
+    website: 'https://www.resourcefashion.co/#/home',
     detailsPortfolio: null,
     mockupImage:'assets/img/portfolio/resource_mockup.png',
-    tags:  ['Ecommerce']
+    tags:  ['Ecommerce'],
+    technology: ['Django','Python','React Js', 'Social','Payment']
+
   },
   {
     id:4,
@@ -1127,76 +1131,88 @@ export const portfolioData = [
     name: null,
     logo: 'assets/img/portfolio/fable_logo.png',
     bio: 'We are building this fun app for the Florida based Funday, Inc. Our stack is django and react-native.',
-    website: 'www.pollinate.co',
+    website: 'https://www.tryfable.com/',
     detailsPortfolio: null,
     mockupImage:'assets/img/portfolio/fable.png',
-    tags:  ['Ecommerce']
+    tags:  ['Ecommerce'],
+    technology: ['Django','Python','React Js', 'Social','Payment']
+
   },
   {
     id:5,
     additionalClass:'text-black bg-purple-300',
     name: null,
     logo: 'assets/img/portfolio/PrepayLogo_white.png',
-    bio: 'We are building this fun app for the Florida based Funday, Inc. Our stack is django and react-native.',
-    website: 'www.pollinate.co',
+    bio: 'We created the pre-payments web-app platform for startup Prepay. This platform intends to provide a service for customers to prepay securely to their vendors for services later.',
+    website: null,
     detailsPortfolio: null,
     mockupImage:'assets/img/portfolio/prepay_mockup.png',
-    tags:  ['Ecommerce']
+    tags:  ['Ecommerce'],
+    technology: ['Django','Python','React Js', 'Stripe','Payment']
+
   },
   {
     id:6,
-    additionalClass:'text-black bg-purple-900',
+    additionalClass:'text-white bg-purple-900',
     name: null,
     logo: 'assets/img/portfolio/blue_elephant_logo.png',
-    bio: 'We are building this fun app for the Florida based Funday, Inc. Our stack is django and react-native.',
-    website: 'www.pollinate.co',
+    bio: 'Blue Elephant launched in 2013 and focused its early efforts on smaller balance loan purchases from direct lending platforms where pre-securitization yields were high and volumes were growing.',
+    website: 'https://www.bluelep.com/',
     detailsPortfolio: null,
     mockupImage:'assets/img/portfolio/blue_elephant_mockup.png',
-    tags:  ['Ecommerce']
+    tags:  ['Fintech'],
+    technology: ['Django','Python','React Js', 'Social','Payment']
+
   },
   {
     id:7,
     additionalClass:'text-black bg-green-500',
     name: null,
     logo: 'assets/img/portfolio/bultmore_logo.png',
-    bio: 'We are building this fun app for the Florida based Funday, Inc. Our stack is django and react-native.',
-    website: 'www.pollinate.co',
+    bio: `Automated end-to-end framework for processing futures exchange fees, collateral fees. It is developed in Java & Angular.
+    Markets include:  Global Futures Exchanges(like NYMEX, CME)`,
+    website: 'https://www.bilttechsolutions.com/',
     detailsPortfolio: null,
     mockupImage:'assets/img/portfolio/biltmore_mockup.png',
-    tags:  ['Ecommerce']
+    tags:  ['Fintech', 'Equity Market'],
+    technology: ['Java','Angular','Fintech']
+
   },
   {
     id:8,
     additionalClass:'text-black bg-purple-300',
     name: null,
     logo: 'assets/img/portfolio/remote_logo.png',
-    bio: 'We are building this fun app for the Florida based Funday, Inc. Our stack is django and react-native.',
-    website: 'www.pollinate.co',
+    bio: 'Remote Desk is a New York City-based Software as a Service (SaaS) firm specializing in scalable continuous identity verification solutions through machine learning and biometrics ',
+    website: 'https://www.remotedesk.com/',
     detailsPortfolio: null,
     mockupImage:'assets/img/portfolio/remote_desk_mockup.png',
-    tags:  ['Ecommerce']
+    tags:  ['Ecommerce'],
+    technology: ['Django','Python','React Js', 'Social','Payment']
   },
   {
     id:9,
     additionalClass:'text-black bg-purple-300',
     name: null,
     logo: 'assets/img/portfolio/pcg_logo.png',
-    bio: 'We are building this fun app for the Florida based Funday, Inc. Our stack is django and react-native.',
-    website: 'www.pollinate.co',
+    bio: 'Expanding access to consumer credit with tuition financing and loan servicing.',
+    website: 'https://www.paracap.com/',
     detailsPortfolio: null,
     mockupImage:'assets/img/portfolio/paramount_mockup.png',
-    tags:  ['Ecommerce']
+    tags:  ['Fintech'],
+    technology: ['Django','Python','React Js', 'Social','Payment']
   },
   {
     id:10,
     additionalClass:'text-black bg-purple-300',
     name: null,
     logo: 'assets/img/portfolio/pulse_logo.png',
-    bio: 'We are building this fun app for the Florida based Funday, Inc. Our stack is django and react-native.',
-    website: 'www.pollinate.co',
+    bio: 'With Pulse Labs one can easily measure and benchmark relevant interactions, sentiments, and end-to-end experiences from his authentic consumers.',
+    website: 'https://pulselabs.ai/',
     detailsPortfolio: null,
     mockupImage:'assets/img/portfolio/pulse_labs_mockup.png',
-    tags:  ['Ecommerce']
+    tags:  ['Fintech'],
+    technology: ['Django','Python','React Js','Payment']
   },
 
 ]
