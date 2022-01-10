@@ -11,11 +11,11 @@ function TechStack() {
                     <strong> PostgreSQL,  MSSQL etc</strong> and non relational - <strong>Firebase,  DyanmoDB etc.</strong> The team is well wersed with Devops on 
                     <strong> AWS, GoogleCloud</strong> using <strong>Docker, Nginx etc.</strong>
                 </p>
-                {/* <Link href="/technologies" >
+                <Link href="/technologies" >
                     <div className="border border-white p-2 mt-12 max-w-[150px] mx-auto cursor-pointer rounded-sm hover:bg-white hover:text-primary transform transition duration-75 ease-out">
                         Know More
                     </div>
-                </Link> */}
+                </Link>
             </div>
         </div>
     );

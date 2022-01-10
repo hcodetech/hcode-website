@@ -941,6 +941,32 @@ export const technologies_page = {
     "Extend your tech team with top talent. We oversee the execution and management of your software projects with our proven processes and tech mentorship",
   tech_stack: [
     {
+      heading: "Blockchain Technologies",
+      paragraph:
+        "We are on a mission to help successful companies extend their tech capabilities.",
+      stacks: [
+        {
+          image: "assets/img/tech_stack/tech_stack_python.jpg",
+          tech_name: "DApps",
+          descripition:
+            "Python is commonly used for developing websites and software, task automation, data analysis, and data visualization. Since it's relatively easy to learn, Python has been adopted by many non-programmers such as accountants and scientists, for a variety of everyday tasks, like organizing finances",
+        },
+
+        {
+          image: "assets/img/tech_stack/tech_stack_python.jpg",
+          tech_name: "NFT Trading & Marketplace",
+          descripition:
+            "Python is commonly used for developing websites and software, task automation, data analysis, and data visualization. Since it's relatively easy to learn, Python has been adopted by many non-programmers such as accountants and scientists, for a variety of everyday tasks, like organizing finances",
+        },
+        {
+          image: "assets/img/tech_stack/tech_stack_python.jpg",
+          tech_name: "Ethereum Smart Contract",
+          descripition:
+            "Python is commonly used for developing websites and software, task automation, data analysis, and data visualization. Since it's relatively easy to learn, Python has been adopted by many non-programmers such as accountants and scientists, for a variety of everyday tasks, like organizing finances",
+        },
+      ],
+    },
+    {
       heading: "Backend Technologies",
       paragraph:
         "We are on a mission to help successful companies extend their tech capabilities.",
