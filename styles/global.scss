@@ -191,8 +191,38 @@ $animationSpeed: 40s;
   }
 }
 
+
 .custom-navbar {
   .dropdown:hover .dropdown-menu {
     display: block;
   }
+
+}
+
+
+.dotted {
+  position: relative;
+}
+
+.dot-circle {
+  width: 20px;
+  height: 20px;
+  background-color: #0b1aeb;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.dot-line {
+  height: 100%;
+  position: absolute;
+  border-left: 1px solid #322546;
+  left: 0.8%;
+}
+
+.dot-line-hide {
+  display: none;
+}
+
+.approch-design-text{
+  font-size: 1.5rem;
+  line-height: 1.2rem;
 }

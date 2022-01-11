@@ -157,17 +157,109 @@ const react = () => {
       <section className="new-container py-10">
         <div className="lg:w-1/2">
 
-        <h2 className="text-4xl font-semibold ">
-          We partner with ambitious clients to execute their digital initiatives
-        </h2>
-        <p className="font-light mt-3">
-          Extend your tech team with top talent. We oversee the execution and
-          management of your software projects with our proven processes and
-          tech mentorship
-        </p>
+          <h2 className="text-4xl font-semibold ">
+            We partner with ambitious clients to execute their digital initiatives
+          </h2>
+          <p className="font-light mt-3">
+            Extend your tech team with top talent. We oversee the execution and
+            management of your software projects with our proven processes and
+            tech mentorship
+          </p>
         </div>
-       
+
       </section>
+
+      <section className="new-container py-10 bg-blue-100">
+        <div className="lg:w-1/2">
+          <p className="font-light my-1">Our Approach </p>
+          <h2 className="text-4xl font-semibold ">
+            Your Product Idea Needs a Result Oriented Execution
+          </h2>
+          <p className="font-light mt-3">
+            Our React Native app development process carries innovation & user experience
+            at the center of it. Making us a revered and reliable React native mobile
+            app development company in the USA, South Asia, and European Regions.
+          </p>
+        </div>
+
+        <div className="mt-5">
+          <div className="dotted pb-7">
+            <div className="flex flex-row">
+              <div className={"dot-circle"}>
+
+              </div>
+              <h2 className="text-black font-medium approch-design-text">Planning</h2>
+            </div>
+            <div className={"dot-line"}>
+
+            </div>
+          </div>
+
+          <div className="dotted pb-7">
+            <div className="flex flex-row">
+              <div className={"dot-circle"}>
+
+              </div>
+              <h2 className="text-black font-medium approch-design-text">Design</h2>
+            </div>
+            <div className={"dot-line"}>
+
+            </div>
+          </div>
+
+          <div className="dotted pb-7">
+            <div className="flex flex-row">
+              <div className={"dot-circle"}>
+
+              </div>
+              <h2 className="text-black font-medium approch-design-text">Single Codebase Development</h2>
+            </div>
+            <div className={"dot-line"}>
+
+            </div>
+          </div>
+
+          <div className="dotted pb-7">
+            <div className="flex flex-row">
+              <div className={"dot-circle"}>
+
+              </div>
+              <h2 className="text-black font-medium approch-design-text">Quality Assurance</h2>
+            </div>
+            <div className={"dot-line"}>
+
+            </div>
+          </div>
+
+          <div className="dotted pb-7">
+            <div className="flex flex-row">
+              <div className={"dot-circle"}>
+
+              </div>
+              <h2 className="text-black font-medium approch-design-text">Deployment</h2>
+            </div>
+            <div className={"dot-line"}>
+
+            </div>
+          </div>
+
+          <div className="dotted pb-7">
+            <div className="flex flex-row">
+              <div className={"dot-circle"}>
+
+              </div>
+              <h2 className="text-black font-medium approch-design-text">Support & Maintenance</h2>
+            </div>
+            <div className={"dot-line-hide dot-line"}>
+
+            </div>
+          </div>
+
+        </div>
+
+
+      </section>
+
     </>
   );
 };
