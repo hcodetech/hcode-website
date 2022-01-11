@@ -169,9 +169,10 @@ const react = () => {
 
       </section>
 
-      <section className="new-container py-10 bg-blue-100">
-        <div className="lg:w-1/2">
-          <p className="font-light my-1">Our Approach </p>
+      <section className=" py-10 bg-blue-100">
+        <div className="new-container grid grid-cols-12 gap-8">
+       <div className="col-span-7">
+       <p className="font-light my-1">Our Approach </p>
           <h2 className="text-4xl font-semibold ">
             Your Product Idea Needs a Result Oriented Execution
           </h2>
@@ -180,9 +181,14 @@ const react = () => {
             at the center of it. Making us a revered and reliable React native mobile
             app development company in the USA, South Asia, and European Regions.
           </p>
+         </div>
+          
+
+
         </div>
 
-        <div className="mt-5">
+        <div className="new-container grid grid-cols-12 gap-8">
+        <div className="mt-5 col-span-5">
           <div className="dotted pb-7">
             <div className="flex flex-row">
               <div className={"dot-circle"}>
@@ -256,8 +262,9 @@ const react = () => {
           </div>
 
         </div>
+        </div>
 
-
+       
       </section>
 
     </>

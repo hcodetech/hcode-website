@@ -207,15 +207,15 @@ $animationSpeed: 40s;
 .dot-circle {
   width: 20px;
   height: 20px;
-  background-color: #0b1aeb;
+  background-color: #276EF1;
   border-radius: 50%;
   margin-right: 20px;
 }
 .dot-line {
   height: 100%;
   position: absolute;
-  border-left: 1px solid #322546;
-  left: 0.8%;
+  border-left: 1px solid #276EF1;
+  left: 1.8%;
 }
 
 .dot-line-hide {
@@ -223,6 +223,5 @@ $animationSpeed: 40s;
 }
 
 .approch-design-text{
-  font-size: 1.5rem;
   line-height: 1.2rem;
 }
