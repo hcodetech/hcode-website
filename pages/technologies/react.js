@@ -36,14 +36,15 @@ const react = () => {
       </section>
 
       {/* Tech Services */}
-      <section className="bg-primary py-10 ">
+      <section className="bg-primary pb-14 pt-24 bg-groupedCircle bg-no-repeat bg-right-top">
         <div className="new-container text-white">
           <div className=" grid grid-cols-12 gap-8">
             <div className="col-span-12 md:col-span-5">
               <h1 className="text-4xl font-medium">
-                React App Development Service
+                React App<br />
+                Development Services
               </h1>
-              <p className="opacity-80 mt-4 leading-relaxed">
+              <p className="opacity-80 mt-4 leading-relaxed tracking-wider">
                 Our react app developer team develop react apps from scratch or
                 add the framework to your existing application with a
                 single-point agenda to expedite your app delivery without adding
@@ -52,34 +53,34 @@ const react = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-12 gap-8 text-3xl font-medium mt-10">
-            <div className="col-span-4">
+          <div className="grid grid-cols-12 gap-8 text-3xl font-medium mt-16">
+            <div className="col-span-4 my-10">
               <div className="w-3/12 bg-cyan py-1 mb-2 "></div>
-              <h2>App Ideation & Consulting</h2>
+              <h2 className="w-3/5">App Ideation & Consulting</h2>
             </div>
 
-            <div className="col-span-4">
+            <div className="col-span-4 my-10">
               <div className="w-3/12 bg-cyan py-1 mb-2 "></div>
 
-              <h2>App Ideation & Consulting</h2>
+              <h2 className="w-2/3">App Development with React</h2>
             </div>
 
-            <div className="col-span-4">
+            <div className="col-span-4 my-10">
               <div className="w-3/12 bg-cyan py-1 mb-2"></div>
 
-              <h2>App Ideation & Consulting</h2>
+              <h2 className="w-2/5">React Migration</h2>
             </div>
 
-            <div className="col-span-4">
+            <div className="col-span-4 my-10">
               <div className="w-3/12 bg-cyan py-1 mb-2 "></div>
 
-              <h2>App Ideation & Consulting</h2>
+              <h2 className="w-3/5">React Support & Maintenance</h2>
             </div>
 
-            <div className="col-span-4">
+            <div className="col-span-4 my-10">
               <div className="w-3/12 bg-cyan py-1 mb-2"></div>
 
-              <h2>App Ideation & Consulting</h2>
+              <h2 className="w-3/5">Publishing on the App & Play Store</h2>
             </div>
           </div>
         </div>
@@ -169,7 +170,7 @@ const react = () => {
 
       </section>
 
-      <section className=" py-10 bg-blue-100">
+      <section className=" py-10 bg-blue-100 bg-blendCircle bg-no-repeat bg-right-bottom">
         <div className="new-container grid grid-cols-12 gap-8">
        <div className="col-span-7">
        <p className="font-light my-1">Our Approach </p>

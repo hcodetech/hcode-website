@@ -37,6 +37,8 @@ module.exports = {
         consumer_image: "url('/assets/img/consumer.png')",
         fintech: "url('/assets/img/fintech.png')",
         serviceIllustration: "url('/assets/img/service_illustration.svg')",
+        blendCircle: "url('/assets/img/blend_circle.svg')",
+        groupedCircle: "url('/assets/img/grouped_circle.svg')",
         
 
       }),
