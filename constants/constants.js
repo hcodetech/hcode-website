@@ -136,6 +136,7 @@ export const TEAM = [
   },
 ];
 
+
 export const our_service = {
   heading: "Engagement Model",
   paragraph:
@@ -1242,3 +1243,5 @@ export const portfolioData = [
   },
 
 ]
+
+export const TechSideImage = '/assets/img/tech_side_image.jpg';

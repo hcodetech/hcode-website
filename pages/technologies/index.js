@@ -1,5 +1,5 @@
-import Accordion from "../components/Accordion";
-import { faq_services, technologies_page } from "../constants/constants";
+import Accordion from "../../components/Accordion";
+import { faq_services, technologies_page } from "../../constants/constants";
 
 function technologies() {
   return (

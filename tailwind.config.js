@@ -17,6 +17,7 @@ module.exports = {
     colors: {
       primary: "#276EF1",
       secondary: "#FFC043",
+      cyan:"#61DAFB",
       transparent: "transparent",
       ...defaultTheme.colors,
     },

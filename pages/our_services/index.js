@@ -8,7 +8,7 @@ import {
   how_to_get_started,
   consumer_card,
   enterprise_card,
-  fintech_card
+  fintech_card,
 } from "../../constants/constants";
 import Consumer_Card from "../../components/Consumer_Card";
 import Client from "../../components/Client";
@@ -37,14 +37,14 @@ function our_services() {
             </p>
           </div>
           <div className="relative  md:mt-8 ">
-            <img className="object-cover w-screen md:h-[580px] h-[300px]"
+            <img
+              className="object-cover w-screen md:h-[580px] h-[300px]"
               src={our_services_hero}
               layout="fill"
             />
           </div>
         </div>
       </section>
-
 
       {/* Process */}
       <div className="my-20">
@@ -57,8 +57,61 @@ function our_services() {
       </div>
       {/* Our Services card */}
       <section className="new-container my-10">
-
-        <ServicesCard heading={true} />
+        <div className="new-container">
+          <ServicesCard heading={true} />
+        </div>
+        {/* <div>
+          <div className="bg-primary ">
+            <div className="text-white bg-serviceIllustration bg-left-bottom bg-no-repeat w-full bg-contain ">
+              <div className="new-container text-center pt-32 -mt-20 pb-24 md:pb-24 md:pt-52 md:-mt-32">
+                <h1 className="text-4xl font-semibold w-4/5 md:mx-auto text-left md:text-center md:w-full">
+                  What can we do for you ?
+                </h1>
+                <p className="text-left md:text-center md:w-4/5 md:mx-auto font-light mt-3 opacity-80">
+                  Are you a startup or an enterprise looking to set up/augment
+                  your tech team? If yes, we have the right solution tailored
+                  for you. We staff, manage and support your offshore
+                  development team and we can get your team up and ready at
+                  short notice.
+                </p>
+                <div className="grid grid-cols-12 gap-8 mt-10 md:w-4/5 md:mx-auto">
+                  <div className="col-span-12 md:col-span-6 lg:col-span-4">
+                    <div className="bg-blue-50 px-8 py-6 shadow hover:shadow-2xl hover:bg-white hover:cursor-pointer text-black font-medium text-xl text-left">
+                      <h2 className="text-2xl">Mobile / Webapp</h2>
+                      <img src={MobileSVG} className="mx-auto my-10 max-h-32" />
+                    </div>
+                  </div>
+                  <div className="col-span-12 md:col-span-6 lg:col-span-4">
+                    <div className="bg-blue-50 px-8 py-6 shadow hover:shadow-2xl hover:bg-white hover:cursor-pointer text-black font-medium text-xl text-left">
+                      <h2 className="text-2xl">Backend</h2>
+                      <img
+                        src={BackendSVG}
+                        className="mx-auto my-10 max-h-32"
+                      />
+                    </div>
+                  </div>
+                  <div className="col-span-12 md:col-span-6 lg:col-span-4">
+                    <div className="bg-blue-50 px-8 py-6 shadow hover:shadow-2xl hover:bg-white hover:cursor-pointer text-black font-medium text-xl text-left">
+                      <h2 className="text-2xl">Blockchain</h2>
+                      <img
+                        src={BlockchainSVG}
+                        className="mx-auto my-10 max-h-32"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div className="text-center mt-16 md:mt-20">
+                  <a
+                    href="/our_services"
+                    className="border border-white rounded px-16 py-4 hover:bg-white hover:text-primary  text-center transition transform duration-200 ease-out"
+                  >
+                    Know More About Our Services
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> */}
       </section>
       {/* Tech Stack */}
       <section className="mt-14 mb-10 ">
@@ -73,14 +126,16 @@ function our_services() {
         {/* <Consumer_Card/  data={enterprise_card}/> */}
         <div className="new-container mx-auto -mt-16 pb-16">
           <div className="text-center">
-            <a href="/portfolio" className="pt-10 pb-1  border-b border-primary inline-flex text-primary hover:scale-100  cursor-pointer hover:opacity-100">
+            <a
+              href="/portfolio"
+              className="pt-10 pb-1  border-b border-primary inline-flex text-primary hover:scale-100  cursor-pointer hover:opacity-100"
+            >
               See More of Our Work
               <ArrowRightIcon className="w-6 ml-2 " />
             </a>
           </div>
         </div>
       </section>
-
 
       {/* FAQ */}
       <div className="bg-gray-100">
@@ -91,7 +146,6 @@ function our_services() {
       <section className="new-container py-10">
         <Client data={client} />
       </section>
-
     </>
   );
 }

@@ -18,9 +18,12 @@ import Team from "../components/Team";
 import { ArrowRightIcon } from "@heroicons/react/solid";
 import Testimonial from "../components/Testimonial";
 import CaseStudiesCard from "../components/CaseStudiesCard";
-import MobileSVG from "../img/mobile-illu.svg";
-import BackendSVG from "../img/backend-illu.svg";
-import BlockchainSVG from "../img/blockchain-illu.svg";
+
+import MobileSVG from '../public/assets/img/mobile-illu.svg';
+import BackendSVG from "../public/assets/img/backend-illu.svg";
+import BlockchainSVG from "../public/assets/img/blockchain-illu.svg";
+
+
 
 export default function Home() {
   return (
