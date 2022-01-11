@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import CardPortfolio from "../../components/CardPortfolio";
 import Client from "../../components/Client";
 import { client, portfolioData, TechSideImage } from "../../constants/constants";
+// import { ReactIcon } from "../../public/assets/img/react-icon.png";
+// import { ReactIconBackground } from "../../public/assets/img/React-icon-background.png";
 
 const react = () => {
   const [selectedCategory, setSelectedCategory] = useState([]);
@@ -172,100 +174,99 @@ const react = () => {
 
       <section className=" py-10 bg-blue-100 bg-blendCircle bg-no-repeat bg-right-bottom">
         <div className="new-container grid grid-cols-12 gap-8">
-       <div className="col-span-7">
-       <p className="font-light my-1">Our Approach </p>
-          <h2 className="text-4xl font-semibold ">
-            Your Product Idea Needs a Result Oriented Execution
-          </h2>
-          <p className="font-light mt-3">
-            Our React Native app development process carries innovation & user experience
-            at the center of it. Making us a revered and reliable React native mobile
-            app development company in the USA, South Asia, and European Regions.
-          </p>
-         </div>
-          
+          <div className="col-span-7">
+            <p className="font-light my-1">Our Approach </p>
+            <h2 className="text-4xl font-semibold ">
+              Your Product Idea Needs a Result Oriented Execution
+            </h2>
+            <p className="font-light mt-3">
+              Our React Native app development process carries innovation & user experience
+              at the center of it. Making us a revered and reliable React native mobile
+              app development company in the USA, South Asia, and European Regions.
+            </p>
+          </div>
 
 
         </div>
 
         <div className="new-container grid grid-cols-12 gap-8">
-        <div className="mt-5 col-span-5">
-          <div className="dotted pb-7">
-            <div className="flex flex-row">
-              <div className={"dot-circle"}>
+          <div className="mt-5 col-span-5">
+            <div className="dotted pb-7">
+              <div className="flex flex-row">
+                <div className={"dot-circle"}>
+
+                </div>
+                <h2 className="text-black font-medium approch-design-text">Planning</h2>
+              </div>
+              <div className={"dot-line"}>
 
               </div>
-              <h2 className="text-black font-medium approch-design-text">Planning</h2>
             </div>
-            <div className={"dot-line"}>
 
-            </div>
-          </div>
+            <div className="dotted pb-7">
+              <div className="flex flex-row">
+                <div className={"dot-circle"}>
 
-          <div className="dotted pb-7">
-            <div className="flex flex-row">
-              <div className={"dot-circle"}>
+                </div>
+                <h2 className="text-black font-medium approch-design-text">Design</h2>
+              </div>
+              <div className={"dot-line"}>
 
               </div>
-              <h2 className="text-black font-medium approch-design-text">Design</h2>
             </div>
-            <div className={"dot-line"}>
 
-            </div>
-          </div>
+            <div className="dotted pb-7">
+              <div className="flex flex-row">
+                <div className={"dot-circle"}>
 
-          <div className="dotted pb-7">
-            <div className="flex flex-row">
-              <div className={"dot-circle"}>
+                </div>
+                <h2 className="text-black font-medium approch-design-text">Single Codebase Development</h2>
+              </div>
+              <div className={"dot-line"}>
 
               </div>
-              <h2 className="text-black font-medium approch-design-text">Single Codebase Development</h2>
             </div>
-            <div className={"dot-line"}>
 
-            </div>
-          </div>
+            <div className="dotted pb-7">
+              <div className="flex flex-row">
+                <div className={"dot-circle"}>
 
-          <div className="dotted pb-7">
-            <div className="flex flex-row">
-              <div className={"dot-circle"}>
+                </div>
+                <h2 className="text-black font-medium approch-design-text">Quality Assurance</h2>
+              </div>
+              <div className={"dot-line"}>
 
               </div>
-              <h2 className="text-black font-medium approch-design-text">Quality Assurance</h2>
             </div>
-            <div className={"dot-line"}>
 
-            </div>
-          </div>
+            <div className="dotted pb-7">
+              <div className="flex flex-row">
+                <div className={"dot-circle"}>
 
-          <div className="dotted pb-7">
-            <div className="flex flex-row">
-              <div className={"dot-circle"}>
+                </div>
+                <h2 className="text-black font-medium approch-design-text">Deployment</h2>
+              </div>
+              <div className={"dot-line"}>
 
               </div>
-              <h2 className="text-black font-medium approch-design-text">Deployment</h2>
             </div>
-            <div className={"dot-line"}>
 
-            </div>
-          </div>
+            <div className="dotted pb-7">
+              <div className="flex flex-row">
+                <div className={"dot-circle"}>
 
-          <div className="dotted pb-7">
-            <div className="flex flex-row">
-              <div className={"dot-circle"}>
+                </div>
+                <h2 className="text-black font-medium approch-design-text">Support & Maintenance</h2>
+              </div>
+              <div className={"dot-line-hide dot-line"}>
 
               </div>
-              <h2 className="text-black font-medium approch-design-text">Support & Maintenance</h2>
             </div>
-            <div className={"dot-line-hide dot-line"}>
 
-            </div>
           </div>
-
         </div>
-        </div>
 
-       
+
       </section>
 
     </>
