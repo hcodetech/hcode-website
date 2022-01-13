@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import CardPortfolio from "../../components/CardPortfolio";
 import Client from "../../components/Client";
-import { client, portfolioData, TechSideImage } from "../../constants/constants";
-// import { ReactIcon } from "../../public/assets/img/react-icon.png";
-// import { ReactIconBackground } from "../../public/assets/img/React-icon-background.png";
+import { client, portfolioData, TechSideImage, ReactIcon } from "../../constants/constants";
 
 const react = () => {
   const [selectedCategory, setSelectedCategory] = useState([]);
@@ -11,7 +9,7 @@ const react = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-blue-100 ">
+      <section className="bg-ReactIconBackground bg-no-repeat">
         <div className="new-container grid grid-cols-1 md:grid-cols-12   min-h-[80vh] ">
           <div className="md:col-span-5">
             <h2 className="pt-40 text-4xl font-semibold">
@@ -28,7 +26,11 @@ const react = () => {
               Contact Us For More Information
             </a>
           </div>
-          <div className="md:col-span-7 mt-10 md:mt-20 lg:mt-10 scale-90  lg:absolute lg:-right-8"></div>
+          <div className="md:col-span-7 mt-10 md:mt-20 lg:mt-10 scale-90  lg:absolute lg:-right-8">
+            {/* <img
+              src={ReactIcon}
+            /> */}
+          </div>
         </div>
       </section>
 

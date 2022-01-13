@@ -39,7 +39,7 @@ module.exports = {
         serviceIllustration: "url('/assets/img/service_illustration.svg')",
         blendCircle: "url('/assets/img/blend_circle.svg')",
         groupedCircle: "url('/assets/img/grouped_circle.svg')",
-        
+        ReactIconBackground: "url('/assets/img/React-icon-background.png')",
 
       }),
     },

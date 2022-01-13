@@ -1245,3 +1245,4 @@ export const portfolioData = [
 ]
 
 export const TechSideImage = '/assets/img/tech_side_image.jpg';
+export const ReactIcon = '/assets/img/react-icon.png';
