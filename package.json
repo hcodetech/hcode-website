@@ -11,6 +11,7 @@
     "@tailwindcss/forms": "^0.3.3",
     "imagemin-mozjpeg": "^9.0.0",
     "imagemin-optipng": "^8.0.0",
+    "lodash-next": "^2.0.1",
     "next": "^11.1.2",
     "next-compose-plugins": "^2.2.1",
     "next-optimized-images": "^2.6.2",
