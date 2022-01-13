@@ -6,7 +6,7 @@ const CardPortfolio = (props) => {
   const { selectedCategory, cardData } = props;
 
   if (
-    selectedCategory.some((category) => cardData.tags.includes(category)) ||
+    selectedCategory.some((category) => cardData.category.includes(category)) ||
     !selectedCategory.length
   ) {
     return (
