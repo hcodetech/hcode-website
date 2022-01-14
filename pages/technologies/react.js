@@ -13,23 +13,27 @@ const react = () => {
         <div className="new-container grid grid-cols-1 md:grid-cols-12   min-h-[80vh] ">
           <div className="md:col-span-5">
             <h2 className="pt-40 text-4xl font-semibold">
-              React App Development
+              React Web<br />
+              Development Services
             </h2>
             <p className="mt-2 mb-10">
-              Offer native-like experiences to your users in half the
-              development time and cost with our react app development services.
+              Delivering flawless web applications is our forte, so if you choose to work with us,
+              you can be certain that you’ve left your product in good hands.
+              From e-commerce stores to blockchain apps, we’ll leave you with a product that’s functional,
+              effective and engaging to your end-users.
             </p>
             <a
               href="/contact"
-              className="bg-primary px-4 lg:px-12 py-5 text-center text-white rounded-md hover:bg-blue-800 hover:scale-x-105 active:scale-100 focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white "
+              className="bg-primary px-4 lg:px-24 py-5 text-center text-white rounded-md hover:bg-blue-800 hover:scale-x-105 active:scale-100 focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white "
             >
-              Contact Us For More Information
+              Get Started
             </a>
           </div>
-          <div className="md:col-span-7 mt-10 md:mt-20 lg:mt-10 scale-90  lg:absolute lg:-right-8">
-            {/* <img
+          <div className="md:col-span-7 mt-10 md:mt-20 min-h-[80vh] lg:mt-10 scale-90  lg:absolute lg:-right-8 flex justify-center items-center">
+            <img
               src={ReactIcon}
-            /> */}
+              className="w-1/2"
+            />
           </div>
         </div>
       </section>
@@ -92,26 +96,26 @@ const react = () => {
       {/* Big Paragraph */}
       <section className="grid grid-cols-12 new-container">
         <div className="col-span-7 py-16 w-4/5">
-          <h1 className="text-4xl font-semibold">
-            Establishing Multi-Platform Presence in Minimal Investment
+          <h1 className="text-4xl font-semibold tracking-wider">
+            We understand the need for bespoke web solutions
           </h1>
           <p className="opacity-80 font-light mt-4">
-            Contrary to popular belief, Lorem Ipsum is not simply random text.
-            It has roots in a piece of classical Latin literature from 45 BC,
-            making it over 2000 years old. Richard McClintock, a Latin professor
-            at Hampden-Sydney College in Virginia, looked up one of the more
-            obscure Latin words, consectetur, from a Lorem Ipsum passage, and
-            going through the cites of the word in classical literature,
-            discovered the undoubtable source. Lorem Ipsum comes from sections
-            1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum"
+            Developing a web product is a complex process and in an increasingly competitive world,
+            it might be challenging to make yourself stand out. Here’s where we can help.
             <br />
             <br />
-            The standard chunk of Lorem Ipsum used since the 1500s is reproduced
-            below for those interested. Sections 1.10.32 and 1.10.33 from "de
-            Finibus Bonorum et Malorum" by Cicero are also reproduced in their
-            exact original form, accompanied by English versions from the 1914
-            translation by H. Rackham
+            We have a wealth of experience in web development and design,
+            having worked with clients of all sizes across the globe,
+            and we understand that every journey is different.
+            However, there are some important common things that you need to get right:
           </p>
+          <ul className="mt-8 ml-8 list-disc">
+            <li className="mt-4">Answering the market’s and users’ needs</li>
+            <li className="mt-4">Applying the right tech solutions</li>
+            <li className="mt-4">Creating a secure and stable product</li>
+            <li className="mt-4">Providing an exceptional user experience</li>
+            <li className="mt-4">Following reliable processes.</li>
+          </ul>
         </div>
 
         <div className="col-span-4 min-h-screen object-cover w-full">
@@ -141,13 +145,13 @@ const react = () => {
             <h2>Blazing Fast Performance and Speed</h2>
           </div>
           <div className="col-span-12 md:col-span-4 bg-white px-8 py-6 shadow hover:shadow-2xl text-black font-medium text-xl text-left ">
-            <h2>Reusable Code</h2>
+            <h2>Capacity to scale</h2>
           </div>
           <div className="col-span-12 md:col-span-4 bg-white px-8 py-6 shadow hover:shadow-2xl text-black font-medium text-xl text-left ">
             <h2>Rapid Multi-platform Development </h2>
           </div>
           <div className="col-span-12 md:col-span-4 bg-white px-8 py-6 shadow hover:shadow-2xl text-black font-medium text-xl text-left ">
-            <h2>Live Reload</h2>
+            <h2>Security and stability</h2>
           </div>
           <div className="col-span-12 md:col-span-4 bg-white px-8 py-6 shadow hover:shadow-2xl text-black font-medium text-xl text-left ">
             <h2>Open Source</h2>
@@ -155,6 +159,14 @@ const react = () => {
           <div className="col-span-12 md:col-span-4 bg-white px-8 py-6 shadow hover:shadow-2xl text-black font-medium text-xl text-left ">
             <h2>Great Developer Tools</h2>
           </div>
+        </div>
+        <div className="text-center pt-2 pb-12">
+          <a
+            href="/contact"
+            className="bg-primary px-4 lg:px-24 py-5 text-center text-white rounded-md hover:bg-blue-800 hover:scale-x-105 active:scale-100 focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white "
+          >
+            Get Started
+          </a>
         </div>
       </section>
 
