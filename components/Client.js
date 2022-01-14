@@ -1,7 +1,7 @@
 function Client(props) {
     return (
         <>
-            <h2 className="text-center text-3xl font-semibold pb-10">{props.heading ? "" : "A few of our client partners"}</h2>
+            <h2 className="text-center text-3xl font-semibold pb-10">{props.heading ? "" : "Trusted by our fast growing list of companies"}</h2>
             <div className="slider">
                 <div className="slide-track ">
                     {props.data.map(({ img, name, alt }, index) => (
