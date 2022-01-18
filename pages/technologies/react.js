@@ -74,13 +74,13 @@ const react = () => {
           <div className="grid grid-cols-12 gap-8 text-2xl lg:text-3xl font-medium mt-8 lg:mt-16">
             <div className="col-span-12 lg:col-span-4 my-2 lg:my-10">
               <div className="w-3/12 bg-cyan py-1 mb-2 "></div>
-              <h2 className="w-3/4 lg:w-3/5">App Ideation & Consulting</h2>
+              <h2 className="w-3/4 lg:w-3/5">Custom React JS development</h2>
             </div>
 
             <div className="col-span-12 lg:col-span-4 my-2 lg:my-10">
               <div className="w-3/12 bg-cyan py-1 mb-2 "></div>
 
-              <h2 className="w-3/4 lg:w-2/3">App Development with React</h2>
+              <h2 className="w-3/4 lg:w-2/3">Dynamic Web Apps</h2>
             </div>
 
             <div className="col-span-12 lg:col-span-4 my-2 lg:my-10">

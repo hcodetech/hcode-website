@@ -19,7 +19,7 @@ const portfolio = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="new-container mx-auto text-center w-1/2 ">
+      <section className="new-container mx-auto text-center lg:w-1/2 ">
         <h2 className="pt-40 text-4xl font-semibold pb-3">
           Recent case studies on how we have helped companies
         </h2>

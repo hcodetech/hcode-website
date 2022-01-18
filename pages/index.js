@@ -44,7 +44,7 @@ export default function Home() {
         <div className="new-container ">
           <ServicesCard heading={true} />
         </div>
-        <div>
+        <div className='hidden'>
           <div className="bg-primary ">
             <div className="text-white bg-serviceIllustration bg-left-bottom bg-no-repeat w-full bg-contain ">
               <div className="new-container text-center pt-32 -mt-20 pb-24 md:pb-24 md:pt-52 md:-mt-32">

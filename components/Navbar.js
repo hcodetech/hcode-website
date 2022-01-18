@@ -66,13 +66,13 @@ export default function Navbar() {
                   >
                     Our Services
                     <div className='group-hover:block dropdown-menu absolute hidden top-16 -left-3'>
-                      <ul className='top-0 w-28 bg-white shadow text-center    rounded'>
+                      <ul className='top-0 w-44 bg-white shadow text-center    rounded'>
                         <li >
                           <a
                             href='/our_services/team_as_a_service'
                             className='block py-3  text-sm text-gray-700 hover:bg-gray-100 border-b'
                           >
-                            TAAS
+                            Team as a service
                           </a>
                         </li>
                         <li >
@@ -80,7 +80,7 @@ export default function Navbar() {
                             href='/our_services/developer_as_a_service'
                             className='block py-3   text-sm text-gray-700 hover:bg-gray-100'
                           >
-                            DAAS
+                            Developer as a service
                           </a>
                         </li>
                       </ul>
@@ -109,6 +109,17 @@ export default function Navbar() {
                   >
                     Work With Us
                   </a>
+                  <a
+                    href='/portfolio'
+                    className={` text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium  border-transparent
+                      ${
+                        pathname === "/portfolio"
+                          ? "border-blue-500 border-b-4"
+                          : ""
+                      }   `}
+                  >
+                    Our Work
+                  </a>
                 </div>
               </div>
               <div className='hidden sm:ml-6 md:flex sm:items-center'>
@@ -130,7 +141,7 @@ export default function Navbar() {
             </div>
           </div>
           {/* Mobile View List */}
-          <Disclosure.Panel className='md:hidden'>
+          <Disclosure.Panel className='lg:hidden'>
             <div className='pt-2 pb-3 space-y-1'>
               <a
                 href='/'
@@ -165,7 +176,7 @@ export default function Navbar() {
                         : ""
                     }   `}
                 >
-                  TAAS
+                  Team as a Service
                 </a>
                 <a
                   href='/our_services/developer_as_a_service'
@@ -176,7 +187,7 @@ export default function Navbar() {
                         : ""
                     }   `}
                 >
-                  DAAS
+                  Developer as a Service
                 </a>
               </div>
 
@@ -201,6 +212,17 @@ export default function Navbar() {
                     }   `}
               >
                 Work With Us
+              </a>
+              <a
+                href='/portfolio'
+                className={` border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium
+                    ${
+                      pathname === "/portfolio"
+                        ? "bg-blue-50 border-blue-500 text-blue-700"
+                        : ""
+                    }   `}
+              >
+                Portfolio
               </a>
 
               {/* {navbar_links.map(({ label, link }) => {

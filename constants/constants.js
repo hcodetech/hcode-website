@@ -937,38 +937,14 @@ export const privacy_policy_data = {
 
 export const technologies_page = {
   hero_image: "assets/img/tech_stack/tech_stack_hero.png",
-  hero_heading: "High quality work with world top technologies",
+  hero_heading: "High quality work with world top tech stack",
   hero_paragraph:
     "Extend your tech team with top talent. We oversee the execution and management of your software projects with our proven processes and tech mentorship",
   tech_stack: [
-    {
-      heading: "Blockchain Technologies",
-      paragraph:
-        "We are on a mission to help successful companies extend their tech capabilities.",
-      stacks: [
-        {
-          image: "assets/img/tech_stack/tech_stack_python.jpg",
-          tech_name: "DApps",
-          descripition:
-            "Python is commonly used for developing websites and software, task automation, data analysis, and data visualization. Since it's relatively easy to learn, Python has been adopted by many non-programmers such as accountants and scientists, for a variety of everyday tasks, like organizing finances",
-        },
-
-        {
-          image: "assets/img/tech_stack/tech_stack_python.jpg",
-          tech_name: "NFT Trading & Marketplace",
-          descripition:
-            "Python is commonly used for developing websites and software, task automation, data analysis, and data visualization. Since it's relatively easy to learn, Python has been adopted by many non-programmers such as accountants and scientists, for a variety of everyday tasks, like organizing finances",
-        },
-        {
-          image: "assets/img/tech_stack/tech_stack_python.jpg",
-          tech_name: "Ethereum Smart Contract",
-          descripition:
-            "Python is commonly used for developing websites and software, task automation, data analysis, and data visualization. Since it's relatively easy to learn, Python has been adopted by many non-programmers such as accountants and scientists, for a variety of everyday tasks, like organizing finances",
-        },
-      ],
-    },
+   
     {
       heading: "Backend Technologies",
+      bookmark: "Backend",
       paragraph:
         "We are on a mission to help successful companies extend their tech capabilities.",
       stacks: [
@@ -994,6 +970,8 @@ export const technologies_page = {
     },
     {
       heading: "Frontend Technologies",
+      bookmark: "Frontend",
+
       paragraph:
         "We are on a mission to help successful companies extend their tech capabilities.",
       stacks: [
@@ -1011,20 +989,104 @@ export const technologies_page = {
         },
         {
           image: "assets/img/tech_stack/tech_stack_android.jpg",
-          tech_name: "Android",
+          tech_name: "React Native",
           descripition:
             "Basically, Android is thought of as a mobile operating system. ... It is currently used in various devices such as mobiles, tablets, televisions etc. Android provides a rich application framework that allows us to build innovative apps and games for mobile devices in a Java language environment.",
         },
       ],
     },
     {
-      heading: "Deployment",
+      heading: "Blockchain Technologies",
+      bookmark: "Blockchain",
+
+      paragraph:
+        "We are on a mission to help successful companies extend their tech capabilities.",
+      stacks: [
+        {
+          image: "assets/img/tech_stack/tech_stack_dapps.jpg",
+          tech_name: "DApps",
+          descripition:
+            "A decentralised application is an application that can operate autonomously, typically through the use of smart contracts, that runs on a decentralized computing, blockchain system. Like traditional applications, DApps provide some function or utility to its users.",
+        },
+        {
+          image: "assets/img/tech_stack/tech_stack_eth.jpg",
+          tech_name: "Smart Contract",
+          descripition:
+            "A \"smart contract\" is simply a program that runs on the Ethereum blockchain. ... Smart contracts are a type of Ethereum account. This means they have a balance and they can send transactions over the network. However they're not controlled by a user, instead they are deployed to the network and run as programmed.",
+        },
+        {
+          image: "assets/img/tech_stack/tech_stack_nft.jpg",
+          tech_name: "NFT Trading & Marketplace",
+          descripition:
+            "NFT marketplace platform is a decentralized platform that allows users to create, buy, sell and store non-fungible tokens. NFT marketplaces are focused on selling specific assets. For example, the Valuables NFT marketplace allows users to buy and sell tweets.",
+        },
+       
+      ],
+    },
+    {
+      heading: "Database",
+      bookmark: "Database",
+
       paragraph:
         "We are on a mission to help successful companies extend their tech capabilities.",
       stacks: [
         {
           image: "assets/img/tech_stack/tech_stack_aws.jpg",
-          tech_name: "AWS",
+          tech_name: "Relation",
+          descripition:
+            "As the lead cloud computing platform, Amazon Web Services (AWS) is the primary profit driver for Amazon. AWS provides servers, storage, networking, remote computing, email, mobile development, and security. AWS accounts for about 13% of Amazon's total revenue as of Q2 2021.",
+        },
+        {
+          image: "assets/img/tech_stack/tech_stack_docker.jpg",
+          tech_name: "Docker",
+          descripition:
+            "Docker is an open source containerization platform. It enables developers to package applications into containers—standardized executable components combining application source code with the operating system (OS) libraries and dependencies required to run that code in any environment.",
+        },
+        {
+          image: "assets/img/tech_stack/tech_stack_sql.jpg",
+          tech_name: "PostgreSQL",
+          descripition:
+            "It is a highly stable database management system, backed by more than 20 years of community development which has contributed to its high levels of resilience, integrity, and correctness. PostgreSQL is used as the primary data store or data warehouse for many web, mobile, geospatial, and analytics applications.",
+        },
+      ],
+    },
+    {
+      heading: "CI-CD",
+      bookmark: "Pipeline",
+
+      paragraph:
+        "We are on a mission to help successful companies extend their tech capabilities.",
+      stacks: [
+        {
+          image: "assets/img/tech_stack/tech_stack_aws.jpg",
+          tech_name: "Docker",
+          descripition:
+            "As the lead cloud computing platform, Amazon Web Services (AWS) is the primary profit driver for Amazon. AWS provides servers, storage, networking, remote computing, email, mobile development, and security. AWS accounts for about 13% of Amazon's total revenue as of Q2 2021.",
+        },
+        {
+          image: "assets/img/tech_stack/tech_stack_docker.jpg",
+          tech_name: "Github",
+          descripition:
+            "Docker is an open source containerization platform. It enables developers to package applications into containers—standardized executable components combining application source code with the operating system (OS) libraries and dependencies required to run that code in any environment.",
+        },
+        {
+          image: "assets/img/tech_stack/tech_stack_sql.jpg",
+          tech_name: "Jenkins",
+          descripition:
+            "It is a highly stable database management system, backed by more than 20 years of community development which has contributed to its high levels of resilience, integrity, and correctness. PostgreSQL is used as the primary data store or data warehouse for many web, mobile, geospatial, and analytics applications.",
+        },
+      ],
+    },
+    {
+      heading: "Other",
+      bookmark: "Other",
+      
+      paragraph:
+        "We are on a mission to help successful companies extend their tech capabilities.",
+      stacks: [
+        {
+          image: "assets/img/tech_stack/tech_stack_aws.jpg",
+          tech_name: "Jenkins",
           descripition:
             "As the lead cloud computing platform, Amazon Web Services (AWS) is the primary profit driver for Amazon. AWS provides servers, storage, networking, remote computing, email, mobile development, and security. AWS accounts for about 13% of Amazon's total revenue as of Q2 2021.",
         },
@@ -1111,8 +1173,9 @@ export const portfolioCard = [
 ];
   
 export const portfolioIndustry = [
-  'Fintech', 'Education', 'E-Learning', 'Ecommerce', 'Blockchain', 'Food & Agri Tech', 'NFT', 'Productivity', 'Medical Tech', 
+  'Fintech', 'Ed-Tech', 'eCommerce', 'Blockchain', 'Food & Agri Tech', 'Productivity', 'Medical Tech', 'Consumer Tech'
 ]
+
 
 export const portfolioData = [
   {

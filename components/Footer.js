@@ -2,7 +2,7 @@ import { hcode_footer, linkedin_icon, twitter_icon } from "../constants/constant
 
 function Footer() {
   return (
-    <footer className="footer-1 bg-gray-100 pt-6  pb-12">
+    <footer className="footer-1 bg-gray-100 pt-6  pb-12 z-30 relative">
       <div className="new-container mx-auto px-4">
         <div className="sm:flex sm:flex-wrap sm:-mx-4 md:py-4">
           <div className="px-4 w-full sm:w-1/2 md:w-1/3  ">
