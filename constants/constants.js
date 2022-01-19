@@ -1028,13 +1028,13 @@ export const technologies_page = {
       bookmark: "Cloud",
 
       paragraph:
-        " We offer custom cloud computing services to make things easy to handle all The activities and to free up precious human resources for ventures and core business functions. With the aid of our innovative approach, we are helping organizations enhance operating performance and flexibility. ",
+      "We are well versed with all popular cloud services.",
       stacks: [
         {
           image: "assets/img/tech_stack/tech_stack_aws.jpg",
           tech_name: "AWS",
           descripition:
-          "We are well experienced working with both AWS and Google Cloud. For early stage startups AWS is generally more suited and is the dominant player in Public cloud offering; but for specific use cases we have ample capability to work with GCP too."
+          "We are well experienced working with AWS. For early stage startups AWS is generally more suited and is the dominant player in Public cloud offering."
         },
         {
           image: "assets/img/tech_stack/tech_stack_google.jpg",
@@ -1046,7 +1046,7 @@ export const technologies_page = {
           image: "assets/img/tech_stack/tech_stack_digital.jpg",
           tech_name: "Others",
           descripition:
-          "Heroku, Digital Ocean and onpremise etc"
+          "We also worked with many other cloud platform like Digital Ocean, Heroku and onpremise etc according to clients requirements to provide best solution for their problem"
         },
        
       ],

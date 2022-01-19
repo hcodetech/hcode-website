@@ -18,3 +18,6 @@ cd out
 <!-- aws s3 cp . s3://hcode.tech --recursive  --content-type 'text/html' --exclude "*"  --include "*.html" -->
 
 <!-- https://github.com/github/gitignore/blob/master/Node.gitignore -->
+
+for old in *.html; do mv $old `basename $old .html`''; done 
+

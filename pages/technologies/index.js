@@ -4,18 +4,14 @@ import Scroll from "react-scroll";
 
 function technologies() {
   var Link = Scroll.Link;
-  var DirectLink = Scroll.DirectLink;
   var Element = Scroll.Element;
-  var Events = Scroll.Events;
-  var scroll = Scroll.animateScroll;
-  var scrollSpy = Scroll.scrollSpy;
 
   return (
     <div className="">
       {/* Hero Section */}
       <section className="bg-blue-100 max-h-[1000px] z-30 relative overflow-hidden">
-        <div className="new-container grid grid-cols-1 md:grid-cols-12   min-h-[80vh]  ">
-          <div className="md:col-span-5">
+        <div className=" grid grid-cols-1 md:grid-cols-12 lg:new-container  min-h-[80vh]  ">
+          <div className="md:col-span-5 new-container">
             <h2 className="pt-40 text-4xl font-semibold">
               {technologies_page.hero_heading}
             </h2>
@@ -27,7 +23,7 @@ function technologies() {
               Contact Us For More Information
             </a>
           </div>
-          <div className="md:col-span-7 mt-10 md:mt-20 lg:mt-10 scale-90  lg:absolute lg:-right-8">
+          <div className="md:col-span-7 mt-10 md:mt-20 lg:mt-10 lg:scale-90  lg:absolute lg:-right-8">
             <img
               src={technologies_page.hero_image}
               alt="Image of technologies in rounded circle"
@@ -134,11 +130,10 @@ function technologies() {
         <div className="new-container lg:pl-32 2xl:pl-0 ">
           <Element
             name="test7"
-            className="element"
+            className="element lg:h-screen"
             id="containerElement"
             style={{
               position: "relative",
-              height: '100vh',
               overflow: "scroll",
               marginBottom: "100px",
             }}
