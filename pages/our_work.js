@@ -3,7 +3,7 @@ import CardPortfolio from "../components/CardPortfolio";
 import { portfolioIndustry } from "../constants/constants";
 import useGetFetch from './hooks/useGetFetch';
 
-const portfolio = () => {
+const our_work = () => {
   const [selectedCategory, setSelectedCategory] = useState([]);
   const [portfolioData, isLoading] = useGetFetch("http://dev-portal.hcode.tech:8000/api/v1/project/");
   // Select Industry Card
@@ -21,18 +21,16 @@ const portfolio = () => {
       {/* Hero Section */}
       <section className="new-container mx-auto text-center lg:w-1/2 ">
         <h2 className="pt-40 text-4xl font-semibold pb-3">
-          Recent case studies on how we have helped companies
+          Some of the products we've made for our client partners
         </h2>
         <h6>
-          Extend your tech team with top talent. We oversee the execution and
-          management of your software projects with our proven processes and
-          tech mentorship
+        We have worked on a broad range of projects, from algorithm-heavy backend projects to beautiful and interactive responsive web products. Listed below are some of our creations.
         </h6>
       </section>
 
       {/* Selected Industry */}
       <section className="new-container mt-10 ">
-        <h2 className="font-semibold text-xl pb-2">Popular Industry</h2>
+        <h2 className="font-semibold text-xl pb-2">Popular Categories</h2>
         <div className="flex overflow-scroll">
           {portfolioIndustry.map((industryName, index) => (
             <div
@@ -74,4 +72,4 @@ const portfolio = () => {
   );
 };
 
-export default portfolio;
+export default our_work;

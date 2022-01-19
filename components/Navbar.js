@@ -65,7 +65,7 @@ export default function Navbar() {
                       }   `}
                   >
                     Our Services
-                    <div className='group-hover:block dropdown-menu absolute hidden top-16 -left-3'>
+                    <div className='group-hover:block dropdown-menu absolute hidden top-16 -left-10'>
                       <ul className='top-0 w-44 bg-white shadow text-center    rounded'>
                         <li >
                           <a
@@ -110,10 +110,10 @@ export default function Navbar() {
                     Work With Us
                   </a>
                   <a
-                    href='/portfolio'
+                    href='/our_work'
                     className={` text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium  border-transparent
                       ${
-                        pathname === "/portfolio"
+                        pathname === "/our_work"
                           ? "border-blue-500 border-b-4"
                           : ""
                       }   `}
@@ -214,15 +214,15 @@ export default function Navbar() {
                 Work With Us
               </a>
               <a
-                href='/portfolio'
+                href='/our_work'
                 className={` border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium
                     ${
-                      pathname === "/portfolio"
+                      pathname === "/our_work"
                         ? "bg-blue-50 border-blue-500 text-blue-700"
                         : ""
                     }   `}
               >
-                Portfolio
+                Our Work
               </a>
 
               {/* {navbar_links.map(({ label, link }) => {

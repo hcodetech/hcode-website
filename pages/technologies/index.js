@@ -13,7 +13,7 @@ function technologies() {
   return (
     <div className="">
       {/* Hero Section */}
-      <section className="bg-blue-100 max-h-[1000px] z-30 relative">
+      <section className="bg-blue-100 max-h-[1000px] z-30 relative overflow-hidden">
         <div className="new-container grid grid-cols-1 md:grid-cols-12   min-h-[80vh]  ">
           <div className="md:col-span-5">
             <h2 className="pt-40 text-4xl font-semibold">
@@ -81,6 +81,19 @@ function technologies() {
 
             <Link
               activeClass="text-primary font-semibold underline"
+              to="Cloud"
+              spy={true}
+              smooth={true}
+              duration={250}
+              containerId="containerElement"
+              offset={-200}
+
+            >
+              Cloud
+            </Link>
+
+            <Link
+              activeClass="text-primary font-semibold underline"
               to="Database"
               spy={true}
               smooth={true}
@@ -93,7 +106,7 @@ function technologies() {
             </Link>
             <Link
               activeClass="text-primary font-semibold underline"
-              to="Pipeline"
+              to="CI/CD"
               spy={true}
               smooth={true}
               duration={250}
@@ -101,7 +114,7 @@ function technologies() {
               offset={-200}
 
             >
-              Pipeline
+              CI/CD
             </Link>
             {/* <Link
               activeClass="text-primary font-semibold underline"

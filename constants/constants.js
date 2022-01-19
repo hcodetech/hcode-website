@@ -946,7 +946,7 @@ export const technologies_page = {
       heading: "Backend Technologies",
       bookmark: "Backend",
       paragraph:
-        "We are on a mission to help successful companies extend their tech capabilities.",
+        "We’re capable of building Algo heavy backend applications with deep integrations.",
       stacks: [
         {
           image: "assets/img/tech_stack/tech_stack_python.jpg",
@@ -973,11 +973,11 @@ export const technologies_page = {
       bookmark: "Frontend",
 
       paragraph:
-        "We are on a mission to help successful companies extend their tech capabilities.",
+        "We can help create responsive, scalable and beautiful looking UIs for your Applications.",
       stacks: [
         {
           image: "assets/img/tech_stack/tech_stack_react.jpg",
-          tech_name: "React",
+          tech_name: "React JS",
           descripition:
             "React. js is an open-source JavaScript library that is used for building user interfaces specifically for single-page applications. It's used for handling the view layer for web and mobile apps. React also allows us to create reusable UI components.",
         },
@@ -988,10 +988,10 @@ export const technologies_page = {
             "Angular is a platform and framework for building single-page client applications using HTML and TypeScript. ... It implements core and optional functionality as a set of TypeScript libraries that you import into your applications. The architecture of an Angular application relies on certain fundamental concepts.",
         },
         {
-          image: "assets/img/tech_stack/tech_stack_android.jpg",
+          image: "assets/img/tech_stack/tech_stack_react_native.jpg",
           tech_name: "React Native",
           descripition:
-            "Basically, Android is thought of as a mobile operating system. ... It is currently used in various devices such as mobiles, tablets, televisions etc. Android provides a rich application framework that allows us to build innovative apps and games for mobile devices in a Java language environment.",
+          "React Native is an open-source UI software framework which can help create cross platform (Android and iOS) native apps. It means we code once to generate apps for  both the platforms. It is very extensive, with rich features and is well suited for products for early stage companies."
         },
       ],
     },
@@ -1000,25 +1000,53 @@ export const technologies_page = {
       bookmark: "Blockchain",
 
       paragraph:
-        "We are on a mission to help successful companies extend their tech capabilities.",
+        "Get help in getting your Blockchain idea to ground ",
       stacks: [
         {
           image: "assets/img/tech_stack/tech_stack_dapps.jpg",
           tech_name: "DApps",
           descripition:
-            "A decentralised application is an application that can operate autonomously, typically through the use of smart contracts, that runs on a decentralized computing, blockchain system. Like traditional applications, DApps provide some function or utility to its users.",
+          "A decentralized application(dapp) is an application built on a decentralized network that combines a smart contract and a UI. We can develop these dapps for our clients with all necessary integrations."
         },
         {
           image: "assets/img/tech_stack/tech_stack_eth.jpg",
           tech_name: "Smart Contract",
           descripition:
-            "A \"smart contract\" is simply a program that runs on the Ethereum blockchain. ... Smart contracts are a type of Ethereum account. This means they have a balance and they can send transactions over the network. However they're not controlled by a user, instead they are deployed to the network and run as programmed.",
+          "A smart contract efficiently automates the execution of business contracts involving frequent manual transactions among multiple parties. We can help to implement smart contracts using Solidity on Ethereum Blockchain. "
         },
         {
           image: "assets/img/tech_stack/tech_stack_nft.jpg",
-          tech_name: "NFT Trading & Marketplace",
+          tech_name: "NFT Marketplace",
           descripition:
-            "NFT marketplace platform is a decentralized platform that allows users to create, buy, sell and store non-fungible tokens. NFT marketplaces are focused on selling specific assets. For example, the Valuables NFT marketplace allows users to buy and sell tweets.",
+          "NFT marketplace platform is a decentralized platform that allows users to create/mint, buy, sell and store non-fungible tokens. We can help you create your NFT marketplace with all integrations with Smart Contracts, Wallets etc."
+        },
+       
+      ],
+    },
+    {
+      heading: "Cloud Service",
+      bookmark: "Cloud",
+
+      paragraph:
+        " We offer custom cloud computing services to make things easy to handle all The activities and to free up precious human resources for ventures and core business functions. With the aid of our innovative approach, we are helping organizations enhance operating performance and flexibility. ",
+      stacks: [
+        {
+          image: "assets/img/tech_stack/tech_stack_aws.jpg",
+          tech_name: "AWS",
+          descripition:
+          "We are well experienced working with both AWS and Google Cloud. For early stage startups AWS is generally more suited and is the dominant player in Public cloud offering; but for specific use cases we have ample capability to work with GCP too."
+        },
+        {
+          image: "assets/img/tech_stack/tech_stack_google.jpg",
+          tech_name: "Google Cloud",
+          descripition:
+          "We are well experienced working with both AWS and Google Cloud. For early stage startups AWS is generally more suited and is the dominant player in Public cloud offering; but for specific use cases we have ample capability to work with GCP too."
+        },
+        {
+          image: "assets/img/tech_stack/tech_stack_digital.jpg",
+          tech_name: "Others",
+          descripition:
+          "Heroku, Digital Ocean and onpremise etc"
         },
        
       ],
@@ -1028,67 +1056,40 @@ export const technologies_page = {
       bookmark: "Database",
 
       paragraph:
-        "We are on a mission to help successful companies extend their tech capabilities.",
+        "We can help you choose the right database for your application and have worked with most of industry leading Databases",
       stacks: [
         {
-          image: "assets/img/tech_stack/tech_stack_aws.jpg",
-          tech_name: "Relation",
+          image: "assets/img/tech_stack/tech_stack_relational.jpg",
+          tech_name: "Relational Database",
           descripition:
-            "As the lead cloud computing platform, Amazon Web Services (AWS) is the primary profit driver for Amazon. AWS provides servers, storage, networking, remote computing, email, mobile development, and security. AWS accounts for about 13% of Amazon's total revenue as of Q2 2021.",
+          "Standard relational databases enable users to manage predefined data relationships across multiple databases. Popular examples of standard relational databases include Microsoft SQL Server, Oracle Database, MySQL and IBM DB2."
         },
         {
-          image: "assets/img/tech_stack/tech_stack_docker.jpg",
-          tech_name: "Docker",
+          image: "assets/img/tech_stack/tech_stack_no_relational.jpg",
+          tech_name: "Non-relational (NoSQL) ",
           descripition:
-            "Docker is an open source containerization platform. It enables developers to package applications into containers—standardized executable components combining application source code with the operating system (OS) libraries and dependencies required to run that code in any environment.",
+          "A non-relational database is a database that does not use the tabular schema of rows and columns found in most traditional database systems. Instead, non-relational databases use a storage model that is optimized for the specific requirements of the type of data being stored."
         },
         {
-          image: "assets/img/tech_stack/tech_stack_sql.jpg",
-          tech_name: "PostgreSQL",
+          image: "assets/img/tech_stack/tech_stack_elastic.jpg",
+          tech_name: "Elastic database",
           descripition:
-            "It is a highly stable database management system, backed by more than 20 years of community development which has contributed to its high levels of resilience, integrity, and correctness. PostgreSQL is used as the primary data store or data warehouse for many web, mobile, geospatial, and analytics applications.",
+          "The elastic database is a new feature offered for SQL Azure Databases. Elastic databases are useful when you have several databases and you want to monitor and manage all the databases at the same time. ... With elastic databases, you can have a specific price for all the databases at the same time."
         },
       ],
     },
     {
-      heading: "CI-CD",
-      bookmark: "Pipeline",
+      heading: "Continuos Integration/Continuos Deployment",
+      bookmark: "CI/CD",
 
       paragraph:
-        "We are on a mission to help successful companies extend their tech capabilities.",
+        "With  CI/CD, we can keep the develop-deploy cycles really short.",
       stacks: [
         {
-          image: "assets/img/tech_stack/tech_stack_aws.jpg",
-          tech_name: "Docker",
+          image: "assets/img/tech_stack/tech_stack_git.jpg",
+          tech_name: "Git",
           descripition:
-            "As the lead cloud computing platform, Amazon Web Services (AWS) is the primary profit driver for Amazon. AWS provides servers, storage, networking, remote computing, email, mobile development, and security. AWS accounts for about 13% of Amazon's total revenue as of Q2 2021.",
-        },
-        {
-          image: "assets/img/tech_stack/tech_stack_docker.jpg",
-          tech_name: "Github",
-          descripition:
-            "Docker is an open source containerization platform. It enables developers to package applications into containers—standardized executable components combining application source code with the operating system (OS) libraries and dependencies required to run that code in any environment.",
-        },
-        {
-          image: "assets/img/tech_stack/tech_stack_sql.jpg",
-          tech_name: "Jenkins",
-          descripition:
-            "It is a highly stable database management system, backed by more than 20 years of community development which has contributed to its high levels of resilience, integrity, and correctness. PostgreSQL is used as the primary data store or data warehouse for many web, mobile, geospatial, and analytics applications.",
-        },
-      ],
-    },
-    {
-      heading: "Other",
-      bookmark: "Other",
-      
-      paragraph:
-        "We are on a mission to help successful companies extend their tech capabilities.",
-      stacks: [
-        {
-          image: "assets/img/tech_stack/tech_stack_aws.jpg",
-          tech_name: "Jenkins",
-          descripition:
-            "As the lead cloud computing platform, Amazon Web Services (AWS) is the primary profit driver for Amazon. AWS provides servers, storage, networking, remote computing, email, mobile development, and security. AWS accounts for about 13% of Amazon's total revenue as of Q2 2021.",
+            "Git is used to tracking changes in the source code, enabling multiple developers to work together on non-linear development.",
         },
         {
           image: "assets/img/tech_stack/tech_stack_docker.jpg",
@@ -1097,13 +1098,14 @@ export const technologies_page = {
             "Docker is an open source containerization platform. It enables developers to package applications into containers—standardized executable components combining application source code with the operating system (OS) libraries and dependencies required to run that code in any environment.",
         },
         {
-          image: "assets/img/tech_stack/tech_stack_sql.jpg",
-          tech_name: "PostgreSQL",
+          image: "assets/img/tech_stack/tech_stack_jenkins.jpg",
+          tech_name: "Jenkins",
           descripition:
-            "It is a highly stable database management system, backed by more than 20 years of community development which has contributed to its high levels of resilience, integrity, and correctness. PostgreSQL is used as the primary data store or data warehouse for many web, mobile, geospatial, and analytics applications.",
+            "Jenkins is an open-source automation tool written in Java with plugins built for Continuous Integration purposes. Jenkins is used to build and test your software projects continuously making it easier for developers to integrate changes to the project, and making it easier for users to obtain a fresh build.",
         },
       ],
     },
+    
   ],
 };
 
