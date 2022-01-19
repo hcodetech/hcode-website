@@ -12,8 +12,8 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html lang="en">
-        <Head>
+      <Html lang="en " className="scroll-smooth">
+        <Head >
           {/*  */}
 
           <meta name="keywords" content="Software, Development Studio, Development, Engineer, Mobile Apps, Web Apps"/>
