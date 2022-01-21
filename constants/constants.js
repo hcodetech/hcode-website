@@ -985,7 +985,7 @@ export const technologies_page = {
           image: "assets/img/tech_stack/tech_stack_angular.jpg",
           tech_name: "Angular",
           descripition:
-            "Angular is a platform and framework for building single-page client applications using HTML and TypeScript. ... It implements core and optional functionality as a set of TypeScript libraries that you import into your applications. The architecture of an Angular application relies on certain fundamental concepts.",
+            "Angular is a platform and framework for building single-page client applications using HTML and TypeScript.  It implements core and optional functionality as a set of TypeScript libraries that you import into your applications. The architecture of an Angular application relies on certain fundamental concepts.",
         },
         {
           image: "assets/img/tech_stack/tech_stack_react_native.jpg",
@@ -1072,9 +1072,9 @@ export const technologies_page = {
         },
         {
           image: "assets/img/tech_stack/tech_stack_elastic.jpg",
-          tech_name: "Elastic database",
+          tech_name: "Others",
           descripition:
-          "The elastic database is a new feature offered for SQL Azure Databases. Elastic databases are useful when you have several databases and you want to monitor and manage all the databases at the same time. ... With elastic databases, you can have a specific price for all the databases at the same time."
+          "We worked on many databases for different types of use cases like we use Redis for providing the built-in operations that process data optimally at the database level rather than the application level and we also use elastic for It allows you to store, search, and analyze big volumes of data quickly and in near real time"
         },
       ],
     },

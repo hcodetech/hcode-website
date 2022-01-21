@@ -9,6 +9,7 @@ const stylesheet = () => {
             <div className="bg-[#EBECFF] text-[#000000]"></div>
             <div className="bg-[#333333] text-[#fff]"></div>
             <div className="bg-[#190830] text-[#ffffff]"></div>
+            <div className="bg-[#343D52] text-[#485063]"></div>
             <div className="bg-[#6BA564]"></div>
             <div className="bg-[#878E92]"></div>
             <div className="bg-[#82AACD]"></div>

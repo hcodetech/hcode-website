@@ -5,7 +5,7 @@ import useGetFetch from './hooks/useGetFetch';
 
 const our_work = () => {
   const [selectedCategory, setSelectedCategory] = useState([]);
-  const [portfolioData, isLoading] = useGetFetch("http://dev-portal.hcode.tech:8000/api/v1/project/");
+  const [portfolioData, isLoading] = useGetFetch("https://portal.hcode.tech/api/v1/project/");
   // Select Industry Card
   const setSelectedTech = (e, industryName) => {
     if (e.target.checked) {

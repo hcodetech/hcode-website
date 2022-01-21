@@ -248,7 +248,7 @@ function contact() {
                     htmlFor="project-briefy"
                     className="block text-sm font-medium text-gray-700"
                   >
-                    Describe your project briefy<sup>*</sup>
+                    Describe your project briefly<sup>*</sup>
                   </label>
                   <textarea
                     required
@@ -311,7 +311,7 @@ function contact() {
                     </option>
                     <option value="3 to 6 Months">3 to 6 Months</option>
                     <option value="6 to 12 Months">6 to 12 Months</option>
-                    <option value="6 to 12 Months">More than a year</option>
+                    <option value="More than a year">More than a year</option>
                   </select>
                 </div>
 

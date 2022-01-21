@@ -65,12 +65,12 @@ export default function Navbar() {
                       }   `}
                   >
                     Our Services
-                    <div className='group-hover:block dropdown-menu absolute hidden top-16 -left-10'>
-                      <ul className='top-0 w-44 bg-white shadow text-center    rounded'>
+                    <div className='group-hover:block dropdown-menu absolute hidden top-16 -left-2'>
+                      <ul className='top-0 w-52 bg-white shadow text-left    rounded'>
                         <li >
                           <a
                             href='/our_services/team_as_a_service'
-                            className='block py-3  text-sm text-gray-700 hover:bg-gray-100 border-b'
+                            className='block py-3 pl-4  text-sm text-gray-700 hover:bg-gray-100 border-b'
                           >
                             Team as a service
                           </a>
@@ -78,9 +78,25 @@ export default function Navbar() {
                         <li >
                           <a
                             href='/our_services/developer_as_a_service'
-                            className='block py-3   text-sm text-gray-700 hover:bg-gray-100'
+                            className='block py-3 pl-4  text-sm text-gray-700 hover:bg-gray-100 border-b'
                           >
                             Developer as a service
+                          </a>
+                        </li>
+                        <li >
+                          <a
+                            href='/our_services/blockchain'
+                            className='block py-3 pl-4  text-sm text-gray-700 hover:bg-gray-100 border-b'
+                          >
+                            Blockchain
+                          </a>
+                        </li>
+                        <li >
+                          <a
+                            href='/our_services/mvp'
+                            className='block py-3 pl-4  text-sm text-gray-700 hover:bg-gray-100'
+                          >
+                            Rapid Prototyping (MVP)
                           </a>
                         </li>
                       </ul>
