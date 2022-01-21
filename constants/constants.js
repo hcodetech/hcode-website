@@ -1074,7 +1074,7 @@ export const technologies_page = {
           image: "assets/img/tech_stack/tech_stack_elastic.jpg",
           tech_name: "Others",
           descripition:
-          "We worked on many databases for different types of use cases like we use Redis for providing the built-in operations that process data optimally at the database level rather than the application level and we also use elastic for It allows you to store, search, and analyze big volumes of data quickly and in near real time"
+          "We worked on many databases for different types of use cases like we use Redis for providing the built-in operations that process data optimally at the database level rather than the application level and we also use elastic to store, search, and analyze big volumes of data quickly and in near real time"
         },
       ],
     },
