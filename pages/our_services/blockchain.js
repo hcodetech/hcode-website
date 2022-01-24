@@ -1,18 +1,24 @@
 import Head from "next/head";
 import React, { useState } from "react";
+import Benefits from "../../components/Benefits";
 import CardPortfolio from "../../components/CardPortfolio";
 import Client from "../../components/Client";
+import CTA from "../../components/CTA";
+import Testimonial from "../../components/Testimonial";
+
 import {
   client,
   portfolioData,
   TechSideImage,
   ReactIcon,
+  tass_benefits,
+  blockchain_benefits,
 } from "../../constants/constants";
 import useGetFetch from "../hooks/useGetFetch";
 
 const blockchain = () => {
   const [selectedCategory, setSelectedCategory] = useState([]);
-  const [portfolioData, isLoading] = useGetFetch("project/");
+  const [portfolioData, isLoading] = useGetFetch("https://portal.hcode.tech/api/v1/project/");
   // Select Industry Card
   const setSelectedTech = (e, industryName) => {
     if (e.target.checked) {
@@ -151,6 +157,14 @@ const blockchain = () => {
           </h2>
         </div>
         {/* TODO: tabs to be added */}
+        <div className="text-center pt-2 pb-12">
+          <a
+            href="/contact"
+            className="bg-primary px-4 lg:px-24 py-5 text-center text-white rounded-md hover:bg-blue-800 hover:scale-x-105 active:scale-100 focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white "
+          >
+            Get Started
+          </a>
+        </div>
       </section>
 
       {/* Portfolio */}
@@ -178,20 +192,31 @@ const blockchain = () => {
           </div>
         </div>
 
-        <div className="text-center pt-2 pb-12">
-          <a
-            href="/contact"
-            className="bg-primary px-4 lg:px-24 py-5 text-center text-white rounded-md hover:bg-blue-800 hover:scale-x-105 active:scale-100 focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white "
-          >
-            Get Started
-          </a>
-        </div>
+     
       </section>
 
          {/* Testimonial */}
       <div className="pt-10 pb-0 bg-gray-100">
-        {/* <Testimonial /> */}
+        <Testimonial />
       </div>        
+
+
+      {/* Benefits */}
+      <section className=" pt-12 ">
+        <div className="new-container ">
+     
+
+          <Benefits data={blockchain_benefits} />
+              {/*  */}
+         
+        </div>
+      </section>
+      
+
+      {/* CTA */}
+      <div className="my-10 ">
+        <CTA />
+      </div>
       {/* Process */}
       <section className=" py-10 bg-blue-100 bg-none lg:bg-blendCircle bg-no-repeat bg-right-bottom">
         <div className="new-container grid grid-cols-12 gap-8">

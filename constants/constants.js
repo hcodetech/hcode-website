@@ -1312,3 +1312,46 @@ export const portfolioData = [
 export const TechSideImage = '/assets/img/tech_side_image.jpg';
 export const ReactIcon = '/assets/img/react-icon.png';
 export const Eclipses_Group = "/assets/img/eclipses-group.png";
+
+
+
+
+export const blockchain_benefits = {
+  heading: "Benefits Of Hiring from us",
+  paragraph:
+  "We are working with Global client for many years and from that we have gained many different experince which can help you grow your product",
+  points: [
+    {
+      image: "/assets/img/top_talent.svg",
+      heading: "High-Quality Final Product",
+      descripition:
+      "Our developers work extremely hard to deliver high-quality software to all of our clients. Full testing includes all the important stages of the project lifecycle to ensure the excellent quality of the final product. "
+    },
+    {
+      image: "/assets/img/managed_process.svg",
+      heading: "Reduce Overhead costs",
+      descripition:
+      "When you need to hire employees from a set location, you limit your talent pool. In contrast, remote work lets you access the very best talent across the globe."
+    },
+    {
+      image: "/assets/img/trust.svg",
+      heading: "Breadth of Experience",
+      descripition:
+      "Working on different products over the course of many years. We have good years of experince which give us edge to solve highly complex problem for our client."
+    },
+    {
+      image: "/assets/img/easy_admin.svg",
+      heading: "Easy Communication Channel",
+      descripition:
+      "The company can start by introducing the project, its modules, prime, and the tools & platforms that will be used by the developer. Finally, they should be able to provide an estimate of the project’s length. The developer can also be expected to work as per the shift timings suitable to the client. This enables flexibility for them to work without any disruption."
+    },
+    {
+      image: "/assets/img/easy_admin.svg",
+      heading: "Reduce Hiring Time & Access Wider Talent Pool",
+      descripition:
+      "When you need to hire employees from a set location, you limit your talent pool. In contrast, remote work lets you access the very best talent across the globe."
+    },
+   
+    
+  ],
+};

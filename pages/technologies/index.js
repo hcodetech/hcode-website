@@ -108,9 +108,9 @@ function technologies(props) {
       </section>
 
       {/* FAQs */}
-      <section className="z-30 relative bg-white">
+      {/* <section className="z-30 relative bg-white">
         <Accordion data={faq_services} />
-      </section>
+      </section> */}
     </div>
   );
 }
