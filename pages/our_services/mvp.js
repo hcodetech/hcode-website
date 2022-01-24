@@ -5,7 +5,10 @@ import CardPortfolio from "../../components/CardPortfolio";
 import Client from "../../components/Client";
 import CTA from "../../components/CTA";
 import Testimonial from "../../components/Testimonial";
-import { client, blockchain_benefits } from "../../constants/constants";
+import {
+  client,
+  mvp_benefits,
+} from "../../constants/constants";
 import { getAPIUrl } from "../api/APIHelpers";
 import { apiRoutes } from "../api/APIRoutes";
 import useGetFetch from "../hooks/useGetFetch";
@@ -116,63 +119,56 @@ const mvp = () => {
           </p>
         </div>
 
-         <div class="step-indicator">
-         <div class="dot-container">
+        <div class="step-indicator">
+          <div class="dot-container">
+            <div class="step step1">
+              <div class="step-icon"></div>
+              <p className="text-black font-medium ">Planning</p>
+            </div>
 
-<div class="step step1">
-  <div class="step-icon"></div>
-  <p className="text-black font-medium ">
-    Planning
-  </p>
-</div>
+            <div class="indicator-line"></div>
+            <div class="step step2">
+              <div class="step-icon"></div>
+              <p className="text-black font-medium">Design</p>
+            </div>
 
-<div class="indicator-line"></div>
-<div class="step step2">
-  <div class="step-icon"></div>
-  <p className="text-black font-medium">
-    Design
-  </p>
-</div>
+            <div class="indicator-line"></div>
+            <div class="step step1">
+              <div class="step-icon"></div>
+              <p>Tech Partner</p>
+            </div>
 
-<div class="indicator-line"></div>
-<div class="step step1">
-  <div class="step-icon"></div>
-  <p>Tech Partner</p>
-</div>
+            <div class="indicator-line"></div>
+            <div class="step step2">
+              <div class="step-icon"></div>
+              <p>Development</p>
+            </div>
 
-<div class="indicator-line"></div>
-<div class="step step2">
-  <div class="step-icon"></div>
-  <p>Development</p>
-</div>
+            <div class="indicator-line"></div>
+            <div class="step step1">
+              <div class="step-icon"></div>
+              <p>Testing</p>
+            </div>
 
-<div class="indicator-line"></div>
-<div class="step step1">
-  <div class="step-icon"></div>
-  <p>Testing</p>
-</div>
-
-  <div class="indicator-line"></div>
-<div class="step step3">
-  <div class="step-icon"></div>
-  <p>Release and support</p>
-</div>
-</div>  
-         </div>
-        </section>
+            <div class="indicator-line"></div>
+            <div class="step step3">
+              <div class="step-icon"></div>
+              <p>Release and support</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Portfolio */}
       <section className="py-10">
         <div className=" new-container py-10 grid grid-cols-12">
           <div className="col-span-12 md:col-span-7 ">
             <h2 className="text-4xl font-semibold pb-2">
-              We partner with ambitious clients to execute their digital
-              initiatives
+              Some of our recent MVP deliveries
             </h2>
             <p className="font-light">
-              Extend your tech team with top talent. We oversee the execution
-              and management of your software projects with our proven processes
-              and tech mentorship
+              We deliver high quality MVP projects in the very comptetitve
+              market for our clients which is loved by their users
             </p>
           </div>
           <div className="col-span-12 py-10">
@@ -195,7 +191,7 @@ const mvp = () => {
       {/* Benefits */}
       <section className=" pt-12 ">
         <div className="new-container ">
-          <Benefits data={blockchain_benefits} />
+          <Benefits data={mvp_benefits} />
           {/*  */}
         </div>
       </section>

@@ -1396,3 +1396,45 @@ export const blockchain_services = {
     
   ],
 };
+
+
+
+export const mvp_benefits = {
+  heading: "Benefits of Choosing us",
+  paragraph:
+  "We are working with Global client for many years and from that we have gained many different experince which can help you grow your product",
+  points: [
+    {
+      image: "/assets/img/top_talent.svg",
+      heading: "Careful research",
+      descripition:
+      "MVP development should reflect the concept of your product and cover main user needs. To respond to these expectations, we research the audience, market, test competitive products, and provide detailed estimates for the entire project.      ."
+    },
+    {
+      image: "/assets/img/managed_process.svg",
+      heading: "Fast shipment:",
+      descripition:
+      "Release timing is a crucial success factor in software development. With MVP development, we take the bird-eye view and determine the most essential functionality. We focus our production efforts on building main features and interface blocks. By eliminating unnecessary details from MVP, we are able to shorten production duration by 3-4 times."
+    },
+    {
+      image: "/assets/img/trust.svg",
+      heading: "Skilled experts",
+      descripition:
+      "MVP development is one of Syndicode’s main specialties. Our developers know how to build the infrastructure for the minimum valuable product, implement the right tech stack, and test the final product."
+    },
+    {
+      image: "/assets/img/easy_admin.svg",
+      heading: "Agile development, detailed estimates",
+      descripition:
+      "We combine the Agile, quality-first approach to software development with detailed documentation. We believe that a product’s value derives from the transparency of the process. So, while we keep the process agile, we also give estimates and reports each step of the way."
+    },
+    {
+      image: "/assets/img/easy_admin.svg",
+      heading: "Strategy-driven approach",
+      descripition:
+      "Syndicode developers always consider the next steps that come after minimum viable product development. It’s important for us to know how the product will be expanded and improved after its release. We provide MVP product development with scaling in mind, making it easy to insert additional features."
+    },
+   
+    
+  ],
+};

@@ -59,6 +59,8 @@ export default function Navbar() {
                       ${
                         pathname === "/our_services" ||
                         pathname === "/our_services/team_as_a_service" ||
+                        pathname === "/our_services/blockchain" ||
+                        pathname === "/our_services/mvp" ||
                         pathname === "/our_services/developer_as_a_service"
                           ? "border-blue-500 border-b-4"
                           : ""
