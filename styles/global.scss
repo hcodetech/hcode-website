@@ -191,15 +191,169 @@ $animationSpeed: 40s;
   }
 }
 
-
 .custom-navbar {
   .dropdown:hover .dropdown-menu {
     display: block;
   }
-
 }
 
+// Horizontal Dotted Process Bar
+.step-indicator {
+  .dot-container {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
 
+    .step {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      position: relative;
+      z-index: 1;
+    }
+
+    .step-icon {
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      background: #276ef1;
+      font-size: 10px;
+      text-align: center;
+      color: #ffffff;
+      position: relative;
+      line-height: 50px;
+      font-size: 20px;
+    }
+
+    .step.active .step-icon {
+      background: crimson;
+    }
+
+    .step p {
+      text-align: center;
+      position: absolute;
+      bottom: -50px;
+      color: #000;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .step.active p {
+      color: crimson;
+    }
+
+    .step.step2 p {
+      left: 50%;
+      transform: translateX(-50%);
+      top: -70%;
+    }
+
+    .step.step3 p {
+      left: 50%;
+      transform: translateX(-50%);
+      top: -100%;
+      width: 120px;
+    }
+
+    .indicator-line {
+      width: 100%;
+      height: 2px;
+      background: #000;
+      flex: 1;
+      margin: 12px;
+    }
+
+    .indicator-line.active {
+      background: crimson;
+    }
+
+    @media screen and (max-width: 500px) {
+      .step p {
+        font-size: 11px;
+        bottom: -20px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .dot-container {
+      margin-top: 20px;
+      display: block;
+      align-items: center;
+      padding: 0;
+
+    .step {
+      display: block;
+      align-items: center;
+      flex-direction: column;
+      position: relative;
+      z-index: 1;
+    }
+
+    .step-icon {
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      background: #276ef1;
+      font-size: 10px;
+      text-align: center;
+      color: #ffffff;
+      position: relative;
+      line-height: 50px;
+      font-size: 20px;
+    }
+
+    .step.active .step-icon {
+      background: crimson;
+    }
+
+    .step p {
+      text-align: center;
+      position: absolute;
+      bottom: 15px;
+      left: 20%;
+      color: #000;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .step.active p {
+      color: crimson;
+    }
+
+    .step.step2 p {
+      top: 13px;
+      bottom: 0;
+      left: 20%;
+      transform: unset;
+
+    }
+
+    .step.step3 p {
+      top: 5px;
+      bottom: 0;
+      left: 15%;
+      transform: unset;
+    }
+
+    .indicator-line {
+      height: 50px;
+      width : 2px;
+      background: #000;
+      flex: 1;
+      margin: 12px 24px;
+    }
+
+    .indicator-line.active {
+      background: crimson;
+    }
+
+    }
+  }
+}
+
+// Vertical Blue Dotted Process Bar
 .dotted {
   position: relative;
 }
@@ -207,21 +361,17 @@ $animationSpeed: 40s;
 .dot-circle {
   width: 20px;
   height: 20px;
-  background-color: #276EF1;
+  background-color: #276ef1;
   border-radius: 50%;
   margin-right: 20px;
 }
 .dot-line {
   height: 100%;
   position: absolute;
-  border-left: 1px solid #276EF1;
+  border-left: 1px solid #276ef1;
   left: 1.8%;
 }
 
 .dot-line-hide {
   display: none;
-}
-
-.approch-design-text{
-  line-height: 1.2rem;
 }

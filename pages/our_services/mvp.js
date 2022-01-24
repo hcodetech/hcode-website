@@ -5,24 +5,15 @@ import CardPortfolio from "../../components/CardPortfolio";
 import Client from "../../components/Client";
 import CTA from "../../components/CTA";
 import Testimonial from "../../components/Testimonial";
-
-import {
-  client,
-  portfolioData,
-  TechSideImage,
-  ReactIcon,
-  tass_benefits,
-  blockchain_benefits,
-  blockchain_services,
-} from "../../constants/constants";
+import { client, blockchain_benefits } from "../../constants/constants";
 import { getAPIUrl } from "../api/APIHelpers";
 import { apiRoutes } from "../api/APIRoutes";
 import useGetFetch from "../hooks/useGetFetch";
 
-const blockchain = () => {
+const mvp = () => {
   const [selectedCategory, setSelectedCategory] = useState([]);
-  const [portfolioData, isLoading] = useGetFetch((getAPIUrl(apiRoutes.PROJECT)));
-  
+  const [portfolioData, isLoading] = useGetFetch(getAPIUrl(apiRoutes.PROJECT));
+
   // Select Industry Card
   const setSelectedTech = (e, industryName) => {
     if (e.target.checked) {
@@ -37,20 +28,17 @@ const blockchain = () => {
   return (
     <>
       <Head>
-        <title>Blockchain Services | Hcode </title>
+        <title>Rapid Prototyping (MVP) | Hcode </title>
       </Head>
       {/* Hero Section */}
       <section className="bg-[#060501] text-white">
         <div className="new-container grid grid-cols-12 min-h-[90vh] ">
           <div className="col-span-12 md:col-span-5 order-2 md:order-1">
             <h2 className="md:pt-40 text-3xl md:text-5xl font-semibold leading-loose ">
-              Blockchain Development Company
+              MVP Development Services
             </h2>
             <p className="mt-2 md:mt-4 mb-6 md:mb-10 text-white tracking-tight md:text-lg opacity-70">
-              Hcode Technologies is the best blockchain development company to
-              help you fulfill all your blockchain needs in no-time! Our experts
-              have years of experience in delivering top-notch blockchain
-              solutions to countless clients across the globe!
+              Build a minimal valuable product that delivers value
             </p>
             {/* <a
               href="/contact"
@@ -76,32 +64,102 @@ const blockchain = () => {
         <Client data={client} />
       </section>
 
-      {/* Tech Services */}
-      <section className=" pb-14 ">
+      {/* Why MVP */}
+      <section className="lg:py-10 bg-gray-200">
         <div className="new-container ">
-        <Benefits data={blockchain_services} />
-        <div className="text-center pt-2 pb-12">
-          <a
-            href="/contact"
-            className="bg-primary px-4 lg:px-24 py-5 text-center text-white rounded-md hover:bg-blue-800 hover:scale-x-105 active:scale-100 focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white "
-          >
-            Get Started
-          </a>
-        </div>
+          <h1 className="text-5xl font-semibold lg:w-3/4">
+            People who plan to build an MVP
+          </h1>
+
+          <div className="grid grid-cols-12 gap-8 py-8">
+            <div className="col-span-12 md:col-span-6 lg:col-span-4">
+              <div className="bg-white shadow p-10">
+                <h6 className="font-light italic">Want</h6>
+                <h2 className="font-semibold text-2xl">
+                  To validate their business idea
+                </h2>
+              </div>
+            </div>
+            <div className="col-span-12 md:col-span-6 lg:col-span-4">
+              <div className="bg-white shadow p-10">
+                <h6 className="font-light italic">Need</h6>
+                <h2 className="font-semibold text-2xl">
+                  To present their concept to users
+                </h2>
+              </div>
+            </div>
+            <div className="col-span-12 md:col-span-6 lg:col-span-4">
+              <div className="bg-white shadow p-10">
+                <h6 className="font-light italic">Look for</h6>
+                <h2 className="font-semibold text-2xl">
+                  An experienced team for custom MVP development
+                </h2>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* Tech Stack */}
-      <section className="lg:py-10 bg-gray-200">
-        <div className="new-container ">
-          <h6 className="font-light">Capabilities</h6>
-          <h2 className="text-3xl font-semibold lg:w-3/4">
-            Our Expert Developers Possess Unmatchable Skill And Experience In A
-            Number Of Technologies
-          </h2>
+      {/* MVP Life cycle */}
+      <section className="new-container py-10">
+        <div className="lg:w-1/2">
+          <h6 className="font-light ">Our Approach</h6>
+          <h1 className="text-4xl font-semibold pt-1 pb-3">
+            Your Product Idea Needs a Result Oriented Execution
+          </h1>
+          <p className="text-lg font-light ">
+            All our clients need to start working on a new product is an idea.
+            We will help you to develop a business case during discovery. Our
+            product development strategy experts will then analyze the business
+            case and create product requirements that correspond to business
+            goals.
+          </p>
         </div>
-        {/* TODO: tabs to be added */}
-      </section>
+
+         <div class="step-indicator">
+         <div class="dot-container">
+
+<div class="step step1">
+  <div class="step-icon"></div>
+  <p className="text-black font-medium ">
+    Planning
+  </p>
+</div>
+
+<div class="indicator-line"></div>
+<div class="step step2">
+  <div class="step-icon"></div>
+  <p className="text-black font-medium">
+    Design
+  </p>
+</div>
+
+<div class="indicator-line"></div>
+<div class="step step1">
+  <div class="step-icon"></div>
+  <p>Tech Partner</p>
+</div>
+
+<div class="indicator-line"></div>
+<div class="step step2">
+  <div class="step-icon"></div>
+  <p>Development</p>
+</div>
+
+<div class="indicator-line"></div>
+<div class="step step1">
+  <div class="step-icon"></div>
+  <p>Testing</p>
+</div>
+
+  <div class="indicator-line"></div>
+<div class="step step3">
+  <div class="step-icon"></div>
+  <p>Release and support</p>
+</div>
+</div>  
+         </div>
+        </section>
 
       {/* Portfolio */}
       <section className="py-10">
@@ -132,24 +190,22 @@ const blockchain = () => {
       {/* Testimonial */}
       <div className="pt-10 pb-0 bg-gray-100">
         <Testimonial />
-      </div>        
-
+      </div>
 
       {/* Benefits */}
       <section className=" pt-12 ">
         <div className="new-container ">
           <Benefits data={blockchain_benefits} />
+          {/*  */}
         </div>
       </section>
-      
 
       {/* CTA */}
       <div className="my-10 ">
         <CTA />
       </div>
-     
     </>
   );
 };
 
-export default blockchain;
+export default mvp;

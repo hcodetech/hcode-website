@@ -205,6 +205,31 @@ export default function Navbar() {
                 >
                   Developer as a Service
                 </a>
+
+                          <a
+                            href='/our_services/blockchain'
+                            className={` border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block px-6 py-2  border-l-4 text-sm font-medium
+                            ${
+                              pathname === "/our_services/blockchain"
+                                ? "bg-blue-50 border-blue-500 text-blue-700"
+                                : ""
+                            }   `}
+                          >
+                            Blockchain
+                          </a>
+                          <a
+                            href='/our_services/mvp'
+                            className={` border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block px-6 py-2  border-l-4 text-sm font-medium
+                            ${
+                              pathname === "/our_services/mvp"
+                                ? "bg-blue-50 border-blue-500 text-blue-700"
+                                : ""
+                            }   `}
+                          >
+                            Rapid Prototyping (MVP)
+                          </a>
+
+
               </div>
 
               <a

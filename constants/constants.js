@@ -1112,7 +1112,7 @@ export const technologies_page = {
 export const testimonial = [
   {
     id: "2",
-    profile_image: "assets/img/client_image/Suyash_Kothari.png",
+    profile_image: "../assets/img/client_image/Suyash_Kothari.png",
     person_name: "Suyash Kothari",
     company_name: "Co-Founder, Ohana",
     testimonial_paragraph:
@@ -1120,7 +1120,7 @@ export const testimonial = [
   },
   {
     id: "3",
-    profile_image: "assets/img/client_image/Gregory_Correll.png",
+    profile_image: "../assets/img/client_image/Gregory_Correll.png",
     person_name: "Gregory Correll",
     company_name: "Technical Project Manager, Parmount Capital Group",
     testimonial_paragraph:
@@ -1128,7 +1128,7 @@ export const testimonial = [
   },
   {
     id: "3",
-    profile_image: "assets/img/client_image/mohit_metha.png",
+    profile_image: "../assets/img/client_image/mohit_metha.png",
     person_name: "Mohit Mehta",
     company_name: "Co-Founder, Indira New York",
     testimonial_paragraph:
@@ -1136,7 +1136,7 @@ export const testimonial = [
   },
   {
     id: "1",
-    profile_image: "assets/img/client_image/naam_lee.png",
+    profile_image: "../assets/img/client_image/naam_lee.png",
     person_name: "Nam Lee",
     company_name: "CEO, Pollinate Inc.",
     testimonial_paragraph:
@@ -1350,6 +1350,47 @@ export const blockchain_benefits = {
       heading: "Reduce Hiring Time & Access Wider Talent Pool",
       descripition:
       "When you need to hire employees from a set location, you limit your talent pool. In contrast, remote work lets you access the very best talent across the globe."
+    },
+   
+    
+  ],
+};
+
+
+export const blockchain_services = {
+  heading: " Blockchain Services",
+  paragraph:
+  "  Whether your project is big or small, easy or complex, urgent or with a lengthy timeline, our blockchain developers are skilled at providing smart solutions that fit your unique needs.",
+  points: [
+    {
+      image: "/assets/img/top_talent.svg",
+      heading: "Smart Contract",
+      descripition:
+      " Our blockchain developers understand your needs and accordingly come up with smart contract management platforms and eWallet apps."
+    },
+    {
+      image: "/assets/img/managed_process.svg",
+      heading: "NFT Marketplace",
+      descripition:
+      "Our NFT marketplace is very similar to innumerable existing online marketplace to ease out your trading and transactions through facilitate familiarity."
+    },
+    {
+      image: "/assets/img/trust.svg",
+      heading: "Tokenization",
+      descripition:
+      "Our vendors and developers support a number of tokens such as Security Tokens, Asset Tokens and Utility Tokens among others to allow transactions between several parties with ease."
+    },
+    {
+      image: "/assets/img/easy_admin.svg",
+      heading: "Coin Trading",
+      descripition:
+      "A coin trading platform is a platform for exchanging crypto currencies. To facilitate this, our platform has Polygon, Binance, coinGecko APIs among several others."
+    },
+    {
+      image: "/assets/img/easy_admin.svg",
+      heading: "Dedicated Blockchain Developer",
+      descripition:
+      "Our team includes 200+ expert developers who are skilled at working private and public blockchain projects with utmost efficiency and result-oriented approach."
     },
    
     

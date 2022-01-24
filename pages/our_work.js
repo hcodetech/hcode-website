@@ -1,11 +1,13 @@
 import { useState } from "react";
 import CardPortfolio from "../components/CardPortfolio";
 import { portfolioIndustry } from "../constants/constants";
+import { getAPIUrl } from "./api/APIHelpers";
+import { apiRoutes } from "./api/APIRoutes";
 import useGetFetch from './hooks/useGetFetch';
 
 const our_work = () => {
   const [selectedCategory, setSelectedCategory] = useState([]);
-  const [portfolioData, isLoading] = useGetFetch("https://portal.hcode.tech/api/v1/project/");
+  const [portfolioData, isLoading] = useGetFetch((getAPIUrl(apiRoutes.PROJECT)));
   // Select Industry Card
   const setSelectedTech = (e, industryName) => {
     if (e.target.checked) {
