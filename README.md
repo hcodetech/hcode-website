@@ -21,7 +21,11 @@ final step*
 cd out
 aws s3 cp . s3://hcode.tech --recursive
 for old in *.html; do aws s3 mv s3://hcode.tech/$old s3://hcode.tech/`basename $old .html`; done
+cd our_services
+aws s3 cp . s3://hcode.tech --recursive
+for old in *.html; do aws s3 mv s3://hcode.tech/$old s3://hcode.tech/our_services/`basename $old .html`; done
 ```
+for old in *.html; do echo $old; done
 
 ```
 *  need to install awscli first and run aws configure command with the correct key and secret params

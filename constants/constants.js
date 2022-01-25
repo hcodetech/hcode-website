@@ -1175,7 +1175,8 @@ export const portfolioCard = [
 ];
   
 export const portfolioIndustry = [
-  'Fintech', 'Ed-Tech', 'eCommerce', 'Blockchain', 'Food & Agri Tech', 'Productivity', 'Medical Tech', 'Consumer Tech'
+  // 'Fintech', 'Ed-Tech', 'eCommerce', 'Blockchain', 'Food & Agri Tech', 'Productivity', 'Medical Tech', 'Consumer Tech'
+  'Fintech', 'Ed-Tech', 'eCommerce', 'Food & Agri Tech', 'Productivity', 'Consumer Tech'
 ]
 
 
@@ -1364,40 +1365,39 @@ export const blockchain_services = {
   points: [
     {
       image: "/assets/img/top_talent.svg",
+      heading: "DApps",
+      descripition:
+      "A decentralized application(dapp) is an application built on a decentralized network that combines a smart contract and a UI. We can develop these dapps for our clients with all necessary integrations."
+    },
+    {
+      image: "/assets/img/managed_process.svg",
       heading: "Smart Contract",
       descripition:
       " Our blockchain developers understand your needs and accordingly come up with smart contract management platforms and eWallet apps."
     },
     {
-      image: "/assets/img/managed_process.svg",
+      image: "/assets/img/trust.svg",
       heading: "NFT Marketplace",
       descripition:
       "Our NFT marketplace is very similar to innumerable existing online marketplace to ease out your trading and transactions through facilitate familiarity."
-    },
-    {
-      image: "/assets/img/trust.svg",
-      heading: "Tokenization",
-      descripition:
-      "Our vendors and developers support a number of tokens such as Security Tokens, Asset Tokens and Utility Tokens among others to allow transactions between several parties with ease."
-    },
-    {
-      image: "/assets/img/easy_admin.svg",
-      heading: "Coin Trading",
-      descripition:
-      "A coin trading platform is a platform for exchanging crypto currencies. To facilitate this, our platform has Polygon, Binance, coinGecko APIs among several others."
-    },
-    {
-      image: "/assets/img/easy_admin.svg",
-      heading: "Dedicated Blockchain Developer",
-      descripition:
-      "Our team includes 200+ expert developers who are skilled at working private and public blockchain projects with utmost efficiency and result-oriented approach."
-    },
-   
-    
+    }, 
   ],
 };
 
-
+export const blockchain_techStack = [
+  {
+    name:'Cryptocurrency',
+    tech_id:0
+  },
+  {
+    name:'API Integration',
+    tech_id:1
+  },
+  {
+    name:'Languages',
+    tech_id:2
+  },
+]
 
 export const mvp_benefits = {
   heading: "Benefits of Choosing us",
@@ -1438,3 +1438,31 @@ export const mvp_benefits = {
     
   ],
 };
+
+export const blockchain_techStack_icon = [
+  {
+    category_name:'Cryptocurrencies',
+  icons:[
+    {image:'../assets/img/blockchain/eth_logo.jpg', name:'ethereum'},
+    {image:'../assets/img/blockchain/solona_logo.jpg', name:'Solona'},
+    {image:'../assets/img/blockchain/matic_logo.jpg', name:'Polygon (MATIC)'},
+    {image:'../assets/img/blockchain/nft_logo.jpg', name:'A non-fungible token(NFT)'},
+  ]
+  },
+  {
+    category_name:'API Integration',
+  icons:[
+    {image:'../assets/img/blockchain/opensea_logo.jpg', name:'Open Sea',},
+    {image:'../assets/img/blockchain/metamask_logo.jpg', name:'Metamask'},
+    {image:'../assets/img/blockchain/phantom_logo.jpg', name:'Phantom'},
+  ]
+  },
+  {
+    category_name:'Languages',
+  icons:[
+    {image:'../assets/img/blockchain/solidity_logo.jpg', name:'Solidity',},
+    {image:'../assets/img/blockchain/python_logo.jpg', name:'Python'},
+    {image:'../assets/img/blockchain/node_logo.jpg', name:'Node Js'},
+  ]
+  },
+]

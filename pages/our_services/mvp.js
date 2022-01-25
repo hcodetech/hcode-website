@@ -14,19 +14,9 @@ import { apiRoutes } from "../api/APIRoutes";
 import useGetFetch from "../hooks/useGetFetch";
 
 const mvp = () => {
-  const [selectedCategory, setSelectedCategory] = useState([]);
+  const [selectedCategory, setSelectedCategory] = useState(['MVP']);
   const [portfolioData, isLoading] = useGetFetch(getAPIUrl(apiRoutes.PROJECT));
 
-  // Select Industry Card
-  const setSelectedTech = (e, industryName) => {
-    if (e.target.checked) {
-      setSelectedCategory((prev) => [...prev, industryName]);
-    } else {
-      setSelectedCategory((industry) => {
-        return industry.filter((item) => item !== industryName);
-      });
-    }
-  };
 
   return (
     <>
@@ -41,7 +31,7 @@ const mvp = () => {
               MVP Development Services
             </h2>
             <p className="mt-2 md:mt-4 mb-6 md:mb-10 text-white tracking-tight md:text-lg opacity-70">
-              Build a minimal valuable product that delivers value
+            Get your Minimal Viable Product built by a team of experienced product builders
             </p>
             {/* <a
               href="/contact"
@@ -53,7 +43,7 @@ const mvp = () => {
               href="/contact"
               className="bg-white block md:inline px-4 lg:px-16 py-5 text-lg text-center text-primary rounded-md font-medium hover:scale-x-105 active:scale-100 focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white "
             >
-              Let's Talk
+              Contact us
             </a>
           </div>
           <div className="col-span-12 md:col-span-7 order-1 md:order-2 mt-24 md:mt-20 scale-90  lg:absolute lg:-right-8 flex justify-center items-center">
@@ -71,7 +61,7 @@ const mvp = () => {
       <section className="lg:py-10 bg-gray-200">
         <div className="new-container ">
           <h1 className="text-5xl font-semibold lg:w-3/4">
-            People who plan to build an MVP
+          Startups which need MVP,
           </h1>
 
           <div className="grid grid-cols-12 gap-8 py-8">
@@ -79,7 +69,7 @@ const mvp = () => {
               <div className="bg-white shadow p-10">
                 <h6 className="font-light italic">Want</h6>
                 <h2 className="font-semibold text-2xl">
-                  To validate their business idea
+                High RoI on their time and money
                 </h2>
               </div>
             </div>
@@ -87,7 +77,7 @@ const mvp = () => {
               <div className="bg-white shadow p-10">
                 <h6 className="font-light italic">Need</h6>
                 <h2 className="font-semibold text-2xl">
-                  To present their concept to users
+                  Clear understanding of timelines
                 </h2>
               </div>
             </div>
@@ -95,65 +85,66 @@ const mvp = () => {
               <div className="bg-white shadow p-10">
                 <h6 className="font-light italic">Look for</h6>
                 <h2 className="font-semibold text-2xl">
-                  An experienced team for custom MVP development
+                  An experienced team for building their MVP
                 </h2>
               </div>
             </div>
           </div>
+
+          <h5 className="text-center text-lg">
+          We’re proud to say, that we tick all the above boxes for our client partners
+          </h5>
         </div>
       </section>
 
       {/* MVP Life cycle */}
       <section className="new-container py-10">
-        <div className="lg:w-1/2">
+        <div className="">
           <h6 className="font-light ">Our Approach</h6>
-          <h1 className="text-4xl font-semibold pt-1 pb-3">
-            Your Product Idea Needs a Result Oriented Execution
+          <h1 className="text-4xl font-semibold pt-1 pb-3 lg:w-5/12">
+          You just need a Product Idea,
+          We will do the Rest
           </h1>
-          <p className="text-lg font-light ">
-            All our clients need to start working on a new product is an idea.
-            We will help you to develop a business case during discovery. Our
-            product development strategy experts will then analyze the business
-            case and create product requirements that correspond to business
-            goals.
+          <p className="text-lg font-light lg:w-9/12 ">
+          Yes you read it right. Our offering is not just for tech-founders who can drive the technology decisions, but equally well tailored for even non-tech founders who have Zero experience in development. We not only develop for you, but can help you with <strong>Design,</strong> choosing the <strong>right technology</strong> stacks for your product, and build the right foundation for scale and security through industry standard <strong>Testing & Deployment</strong> practices.
           </p>
         </div>
 
         <div class="step-indicator">
           <div class="dot-container">
-            <div class="step step1">
+            <div class="step step2">
               <div class="step-icon"></div>
               <p className="text-black font-medium ">Planning</p>
             </div>
 
             <div class="indicator-line"></div>
-            <div class="step step2">
+            <div class="step step1">
               <div class="step-icon"></div>
               <p className="text-black font-medium">Design</p>
             </div>
 
             <div class="indicator-line"></div>
-            <div class="step step1">
+            <div class="step step3">
               <div class="step-icon"></div>
-              <p>Tech Partner</p>
+              <p>Choosing right Tech</p>
             </div>
 
             <div class="indicator-line"></div>
-            <div class="step step2">
+            <div class="step step1">
               <div class="step-icon"></div>
               <p>Development</p>
             </div>
 
             <div class="indicator-line"></div>
-            <div class="step step1">
+            <div class="step step2">
               <div class="step-icon"></div>
               <p>Testing</p>
             </div>
 
             <div class="indicator-line"></div>
-            <div class="step step3">
+            <div class="step step1">
               <div class="step-icon"></div>
-              <p>Release and support</p>
+              <p>Release & support</p>
             </div>
           </div>
         </div>
@@ -164,7 +155,7 @@ const mvp = () => {
         <div className=" new-container py-10 grid grid-cols-12">
           <div className="col-span-12 md:col-span-7 ">
             <h2 className="text-4xl font-semibold pb-2">
-              Some of our recent MVP deliveries
+            MVPs built by HCode
             </h2>
             <p className="font-light">
               We deliver high quality MVP projects in the very comptetitve

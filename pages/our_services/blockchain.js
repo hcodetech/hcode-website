@@ -1,28 +1,43 @@
 import Head from "next/head";
 import React, { useState } from "react";
+import Tab from "../../components/atoms/Tab";
 import Benefits from "../../components/Benefits";
 import CardPortfolio from "../../components/CardPortfolio";
 import Client from "../../components/Client";
 import CTA from "../../components/CTA";
 import Testimonial from "../../components/Testimonial";
-
 import {
   client,
-  portfolioData,
-  TechSideImage,
-  ReactIcon,
-  tass_benefits,
   blockchain_benefits,
   blockchain_services,
+  blockchain_techStack,
+  blockchain_techStack_icon,
 } from "../../constants/constants";
 import { getAPIUrl } from "../api/APIHelpers";
 import { apiRoutes } from "../api/APIRoutes";
 import useGetFetch from "../hooks/useGetFetch";
 
 const blockchain = () => {
-  const [selectedCategory, setSelectedCategory] = useState([]);
-  const [portfolioData, isLoading] = useGetFetch((getAPIUrl(apiRoutes.PROJECT)));
-  
+  const [selectedCategory, setSelectedCategory] = useState(["Blockchain"]);
+  const [id, setId] = useState(1);
+  const [activeTab, setActiveTab] = useState(0);
+
+  const [portfolioData, isLoading] = useGetFetch(getAPIUrl(apiRoutes.PROJECT));
+
+  const selectedTabsFn = (condition) =>
+    condition
+      ? "border-b-4 border-primary pt-2.5 px-2"
+      : " pt-3 pb-2.5 opacity-60";
+  const onTabClick = (tab) => {
+    setActiveTab(tab);
+  };
+  // Highlight the selected Tab Function
+
+  // Change the ID of Product List Data Shown
+  const filterProductData = (id) => {
+    setId(id);
+  };
+
   // Select Industry Card
   const setSelectedTech = (e, industryName) => {
     if (e.target.checked) {
@@ -79,28 +94,56 @@ const blockchain = () => {
       {/* Tech Services */}
       <section className=" pb-14 ">
         <div className="new-container ">
-        <Benefits data={blockchain_services} />
-        <div className="text-center pt-2 pb-12">
-          <a
-            href="/contact"
-            className="bg-primary px-4 lg:px-24 py-5 text-center text-white rounded-md hover:bg-blue-800 hover:scale-x-105 active:scale-100 focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white "
-          >
-            Get Started
-          </a>
-        </div>
+          <Benefits data={blockchain_services} />
+          <div className="text-center pt-2 pb-12">
+            <a
+              href="/contact"
+              className="bg-primary px-4 lg:px-24 py-5 text-center text-white rounded-md hover:bg-blue-800 hover:scale-x-105 active:scale-100 focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white "
+            >
+              Get Started
+            </a>
+          </div>
         </div>
       </section>
 
       {/* Tech Stack */}
-      <section className="lg:py-10 bg-gray-200">
+      <section className="py-10 bg-gray-200">
         <div className="new-container ">
           <h6 className="font-light">Capabilities</h6>
           <h2 className="text-3xl font-semibold lg:w-3/4">
             Our Expert Developers Possess Unmatchable Skill And Experience In A
             Number Of Technologies
           </h2>
+
+          <div>
+            <ul className="flex flex-row pt-3 border-b border-black items-center text-black  ">
+              {blockchain_techStack.map((tab, index) => (
+                <div onClick={() => filterProductData(tab.id)} key={tab.id}>
+                  <Tab
+                    style={`${selectedTabsFn(activeTab === index)} lg:mr-8`}
+                    onTabClick={onTabClick}
+                    currentTab={index}
+                  >
+                    <div className="flex flex-row cursor-pointer">
+                      <div className="text-md font-semibold whitespace-nowrap ">
+                        {tab.name}
+                      </div>
+                    </div>
+                  </Tab>
+                </div>
+              ))}
+            </ul>
+
+            <div className="grid grid-cols-12 gap-8 py-8">
+              {blockchain_techStack_icon[activeTab].icons.map((tech) => (
+                <div className="col-span-6 lg:col-span-2">
+                  <img src={tech.image} alt={tech.name} />
+                  <h4 className="text-center font-semibold text-lg">{tech.name}</h4>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
-        {/* TODO: tabs to be added */}
       </section>
 
       {/* Portfolio */}
@@ -132,8 +175,7 @@ const blockchain = () => {
       {/* Testimonial */}
       <div className="pt-10 pb-0 bg-gray-100">
         <Testimonial />
-      </div>        
-
+      </div>
 
       {/* Benefits */}
       <section className=" pt-12 ">
@@ -141,13 +183,11 @@ const blockchain = () => {
           <Benefits data={blockchain_benefits} />
         </div>
       </section>
-      
 
       {/* CTA */}
       <div className="my-10 ">
         <CTA />
       </div>
-     
     </>
   );
 };
