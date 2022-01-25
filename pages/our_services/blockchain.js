@@ -12,10 +12,12 @@ import {
   blockchain_services,
   blockchain_techStack,
   blockchain_techStack_icon,
+  Blockchain_Hero
 } from "../../constants/constants";
 import { getAPIUrl } from "../api/APIHelpers";
 import { apiRoutes } from "../api/APIRoutes";
 import useGetFetch from "../hooks/useGetFetch";
+
 
 const blockchain = () => {
   const [selectedCategory, setSelectedCategory] = useState(["Blockchain"]);
@@ -55,10 +57,10 @@ const blockchain = () => {
         <title>Blockchain Services | Hcode </title>
       </Head>
       {/* Hero Section */}
-      <section className="bg-[#060501] text-white">
+      <section className="bg-BlockchainBackground bg-no-repeat bg-cover text-white">
         <div className="new-container grid grid-cols-12 min-h-[90vh] ">
-          <div className="col-span-12 md:col-span-5 order-2 md:order-1">
-            <h2 className="md:pt-40 text-3xl md:text-5xl font-semibold leading-loose ">
+          <div className="col-span-12 md:col-span-5 order-2 md:order-1 pb-5">
+            <h2 className="md:pt-40 text-3xl md:text-5xl font-semibold ">
               Blockchain Development Company
             </h2>
             <p className="mt-2 md:mt-4 mb-6 md:mb-10 text-white tracking-tight md:text-lg opacity-70">
@@ -67,21 +69,16 @@ const blockchain = () => {
               have years of experience in delivering top-notch blockchain
               solutions to countless clients across the globe!
             </p>
-            {/* <a
-              href="/contact"
-              className=" block md:inline px-4 lg:px-24 py-5 text-center text-white border-2 border-white font-medium rounded-md  hover:scale-x-105 hover:bg-white hover:text-black hover:transform hover:transition hover:ease-out hover:duration-200 active:scale-100 focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-white "
-            >
-              Let's Talk
-            </a> */}
+           
             <a
               href="/contact"
-              className="bg-white block md:inline px-4 lg:px-16 py-5 text-lg text-center text-primary rounded-md font-medium hover:scale-x-105 active:scale-100 focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white "
+              className="bg-white block md:inline px-4 lg:px-16 py-5 text-lg text-center text-purple-800 rounded-md font-medium hover:scale-x-105 active:scale-100 focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white "
             >
               Let's Talk
             </a>
           </div>
-          <div className="col-span-12 md:col-span-7 order-1 md:order-2 mt-24 md:mt-20 scale-90  lg:absolute lg:-right-8 flex justify-center items-center">
-            {/* <img src={ReactIcon} className="w-3/4 md:w-1/2" /> */}
+          <div className="col-span-12 md:col-span-7 order-1 md:order-2 mt-24 md:mt-20 scale-90  lg:absolute lg:-right-8 ">
+            <img src={Blockchain_Hero} className="" />
           </div>
         </div>
       </section>
@@ -93,7 +90,7 @@ const blockchain = () => {
 
       {/* Tech Services */}
       <section className=" pb-14 ">
-        <div className="new-container ">
+        <div className=" ">
           <Benefits data={blockchain_services} />
           <div className="text-center pt-2 pb-12">
             <a
@@ -107,16 +104,16 @@ const blockchain = () => {
       </section>
 
       {/* Tech Stack */}
-      <section className="py-10 bg-gray-200">
+      <section className="py-10 lg:py-16 bg-gray-200">
         <div className="new-container ">
           <h6 className="font-light">Capabilities</h6>
-          <h2 className="text-3xl font-semibold lg:w-3/4">
+          <h2 className="text-lg lg:text-3xl font-semibold lg:w-8/12 lg:leading-snug">
             Our Expert Developers Possess Unmatchable Skill And Experience In A
             Number Of Technologies
           </h2>
 
           <div>
-            <ul className="flex flex-row pt-3 border-b border-black items-center text-black  ">
+            <ul className="flex flex-row pt-3 border-b border-black items-center text-black overflow-scroll  ">
               {blockchain_techStack.map((tab, index) => (
                 <div onClick={() => filterProductData(tab.id)} key={tab.id}>
                   <Tab
@@ -136,7 +133,7 @@ const blockchain = () => {
 
             <div className="grid grid-cols-12 gap-8 py-8">
               {blockchain_techStack_icon[activeTab].icons.map((tech) => (
-                <div className="col-span-6 lg:col-span-2">
+                <div className="col-span-4 lg:col-span-2">
                   <img src={tech.image} alt={tech.name} />
                   <h4 className="text-center font-semibold text-lg">{tech.name}</h4>
                 </div>

@@ -198,6 +198,17 @@ export const work_with_us_image_carousel = [
   { image: "/assets/img/image_14.jpg" },
 ];
 
+export const TechSideImage = '/assets/img/tech_side_image.jpg';
+export const ReactIcon = '/assets/img/react-icon.png';
+export const Eclipses_Group = "/assets/img/eclipses-group.png";
+export const Blockchain_Hero = '/assets/img/blockchain_hero.svg';
+export const MVP_Hero = '/assets/img/mvp_hero.svg';
+export const MVP_need_icon = '/assets/img/mvp_need_icon.svg';
+export const MVP_want_icon = '/assets/img/mvp_want_icon.svg';
+export const MVP_look_icon = '/assets/img/mvp_look_icon.svg';
+
+
+
 export const our_services_data = {
   hero_heading: "Hire top tech talent for your remote team",
   hero_paragraph:
@@ -1310,10 +1321,6 @@ export const portfolioData = [
 
 ]
 
-export const TechSideImage = '/assets/img/tech_side_image.jpg';
-export const ReactIcon = '/assets/img/react-icon.png';
-export const Eclipses_Group = "/assets/img/eclipses-group.png";
-
 
 
 
@@ -1381,6 +1388,12 @@ export const blockchain_services = {
       descripition:
       "Our NFT marketplace is very similar to innumerable existing online marketplace to ease out your trading and transactions through facilitate familiarity."
     }, 
+    {
+      image: "/assets/img/trust.svg",
+      heading: "Blockchain Security Audit",
+      descripition:
+      "We will help you with making sure that your Blockchain application is secure so that no one can hack your contracts and cause you financial & credibility loss."
+    }, 
   ],
 };
 
@@ -1400,39 +1413,38 @@ export const blockchain_techStack = [
 ]
 
 export const mvp_benefits = {
-  heading: "Benefits of Choosing us",
+  heading: "What makes us the right team for your MVP",
   paragraph:
-  "We are working with Global client for many years and from that we have gained many different experince which can help you grow your product",
-  points: [
+  "We don’t just work as a developer team, but more as a partner with you for your Product as well as Business. We also loose sleep, just like you do, if something isn’t going right." ,
+   points: [
     {
-      image: "/assets/img/top_talent.svg",
-      heading: "Careful research",
+      image: "/assets/img/delivery.svg",
+      heading: "We care for your timelines",
       descripition:
-      "MVP development should reflect the concept of your product and cover main user needs. To respond to these expectations, we research the audience, market, test competitive products, and provide detailed estimates for the entire project.      ."
-    },
+      "We only promise on what we can deliver, and most often we’re on time. We understand that startups operate on really thin boundaries, and we make sure that we’re not pushing those. If something’s not going right, you’ll get to know in advance."    },
     {
-      image: "/assets/img/managed_process.svg",
-      heading: "Fast shipment:",
+      image: "/assets/img/long_benefits.svg", 
+      heading: "We help with right tech decisions",
       descripition:
-      "Release timing is a crucial success factor in software development. With MVP development, we take the bird-eye view and determine the most essential functionality. We focus our production efforts on building main features and interface blocks. By eliminating unnecessary details from MVP, we are able to shorten production duration by 3-4 times."
+      "We’re comfortable working with both tech as well as non-tech teams. If you don’t know about the choices you should make, we’re here to help make financially wise, and technologically sound decisions to set right foundation for scale. "
     },
     {
       image: "/assets/img/trust.svg",
-      heading: "Skilled experts",
+      heading: "We very well understand MVPs",
       descripition:
-      "MVP development is one of Syndicode’s main specialties. Our developers know how to build the infrastructure for the minimum valuable product, implement the right tech stack, and test the final product."
+      "With experience of building our own products, our founding team has complete appreciation for Lean methodology. We include this in all our decision making, to make sure we’re making the right choices for your product. "
     },
     {
-      image: "/assets/img/easy_admin.svg",
-      heading: "Agile development, detailed estimates",
+      image: "/assets/img/best.svg",
+      heading: "Partners, Not Vendors",
       descripition:
-      "We combine the Agile, quality-first approach to software development with detailed documentation. We believe that a product’s value derives from the transparency of the process. So, while we keep the process agile, we also give estimates and reports each step of the way."
+      "We tend to work like partners and not just vendors to build your product. We understand that products need iteration wrt market response, new learnings or even just for pivoting to new ideas; and we would give you that flexibility to be agile in your approach."
     },
     {
-      image: "/assets/img/easy_admin.svg",
-      heading: "Strategy-driven approach",
+      image: "/assets/img/managed_process.svg",
+      heading: "You get End to End Service",
       descripition:
-      "Syndicode developers always consider the next steps that come after minimum viable product development. It’s important for us to know how the product will be expanded and improved after its release. We provide MVP product development with scaling in mind, making it easy to insert additional features."
+      "Right from Design to Support, and everything in between. When you’re working with us, we will be there with you, to get you through the complete product lifecycle. You will have us for even handholding to your in-house tech-teams as well if you plan to have one later."
     },
    
     
@@ -1443,7 +1455,7 @@ export const blockchain_techStack_icon = [
   {
     category_name:'Cryptocurrencies',
   icons:[
-    {image:'../assets/img/blockchain/eth_logo.jpg', name:'ethereum'},
+    {image:'../assets/img/blockchain/eth_logo.jpg', name:'Ethereum'},
     {image:'../assets/img/blockchain/solona_logo.jpg', name:'Solona'},
     {image:'../assets/img/blockchain/matic_logo.jpg', name:'Polygon (MATIC)'},
     {image:'../assets/img/blockchain/nft_logo.jpg', name:'A non-fungible token(NFT)'},

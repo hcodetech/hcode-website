@@ -40,6 +40,7 @@ module.exports = {
         blendCircle: "url('/assets/img/blend_circle.svg')",
         groupedCircle: "url('/assets/img/grouped_circle.svg')",
         ReactIconBackground: "url('/assets/img/React-icon-background.png')",
+        BlockchainBackground: "url('/assets/img/blockchain_background.jpg')",
 
       }),
     },
