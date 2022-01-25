@@ -127,7 +127,7 @@ function our_services() {
         <div className="new-container mx-auto -mt-16 pb-16">
           <div className="text-center">
             <a
-              href="/portfolio"
+              href="/our_work"
               className="pt-10 pb-1  border-b border-primary inline-flex text-primary hover:scale-100  cursor-pointer hover:opacity-100"
             >
               See More of Our Work

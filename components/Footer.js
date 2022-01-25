@@ -25,7 +25,7 @@ function Footer() {
                 <a href="/our_services" className="border-b border-solid border-transparent hover:border-primary hover:text-primary">Our Services</a>
               </li>
               <li className="mb-2">
-                <a href="/portfolio" className="border-b border-solid border-transparent hover:border-primary hover:text-primary">Our Work</a>
+                <a href="/our_work" className="border-b border-solid border-transparent hover:border-primary hover:text-primary">Our Work</a>
               </li>
               <li className="mb-2">
                 <a href="/technologies" className="border-b border-solid border-transparent hover:border-primary hover:text-primary">Technologies</a>

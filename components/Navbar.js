@@ -90,7 +90,7 @@ export default function Navbar() {
                             href='/our_services/blockchain'
                             className='block py-3 pl-4  text-sm text-gray-700 hover:bg-gray-100 border-b'
                           >
-                            Blockchain
+                            Blockchain Services
                           </a>
                         </li>
                         <li >
@@ -217,7 +217,7 @@ export default function Navbar() {
                                 : ""
                             }   `}
                           >
-                            Blockchain
+                            Blockchain Services
                           </a>
                           <a
                             href='/our_services/mvp'

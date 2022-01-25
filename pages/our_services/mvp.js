@@ -7,6 +7,8 @@ import CTA from "../../components/CTA";
 import Testimonial from "../../components/Testimonial";
 import {
   client,
+  faq_mvp,
+  faq_services,
   mvp_benefits,
   MVP_Hero,
   MVP_look_icon,
@@ -16,6 +18,7 @@ import {
 import { getAPIUrl } from "../api/APIHelpers";
 import { apiRoutes } from "../api/APIRoutes";
 import useGetFetch from "../hooks/useGetFetch";
+import Accordion from "../../components/Accordion";
 
 const mvp = () => {
   const [selectedCategory, setSelectedCategory] = useState(["MVP"]);
@@ -30,7 +33,7 @@ const mvp = () => {
       <section className="bg-[#060501] text-white">
         <div className="new-container grid grid-cols-12 min-h-screen md:min-h-[90vh] ">
           <div className="col-span-12 md:col-span-5 order-2 md:order-1">
-            <h2 className=" md:pt-48 text-3xl md:text-5xl font-semibold leading-loose ">
+            <h2 className=" md:pt-48 lg:mt-10 text-3xl md:text-5xl font-semibold leading-loose ">
               MVP Development Services
             </h2>
             <p className=" md:mt-4 mb-6 md:mb-10 text-white tracking-tight md:text-lg opacity-70 md:w-3/4">
@@ -163,10 +166,10 @@ const mvp = () => {
             </div>
           </div>
         </div>
-        <div className="text-center mt-16 md:mt-24">
+        <div className="text-center mt-16 md:mt-28">
           <a
             href="/our_services"
-            className="bg-black text-white rounded px-16 py-4 hover:bg-gray-800   text-center transition transform duration-200 ease-out"
+            className="bg-primary text-white rounded px-16 py-4    text-center transition transform duration-200 ease-out"
           >
             Contact Us
           </a>
@@ -207,11 +210,14 @@ const mvp = () => {
           {/*  */}
         </div>
       </section>
-
+      {/* FAQ */}
+      <section className="bg-gray-100">
+        <Accordion data={faq_mvp} />
+      </section>
       {/* CTA */}
       <div className="my-10 ">
         <CTA
-        widthClass='w-full'
+          widthClass="w-full"
           heading="Get your MVP built by Us"
           paragraph="Hire experienced MVP development team for your Startup Idea"
           buttonText="Get in Touch"

@@ -41,6 +41,12 @@ module.exports = {
         groupedCircle: "url('/assets/img/grouped_circle.svg')",
         ReactIconBackground: "url('/assets/img/React-icon-background.png')",
         BlockchainBackground: "url('/assets/img/blockchain_background.jpg')",
+        taas: "url('/assets/img/team_as_service.jpg')",
+        daas: "url('/assets/img/developer_as_service.jpg')",
+        mvp: "url('/assets/img/mvp_service.jpg')",
+        blockchain: "url('/assets/img/blockchain_service.jpg')",
+        blockchain_small: "url('/assets/img/blockchain_service_small.jpg')",
+        
 
       }),
     },

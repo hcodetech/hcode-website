@@ -12,7 +12,7 @@ import {
   blockchain_services,
   blockchain_techStack,
   blockchain_techStack_icon,
-  Blockchain_Hero
+  Blockchain_Hero,
 } from "../../constants/constants";
 import { getAPIUrl } from "../api/APIHelpers";
 import { apiRoutes } from "../api/APIRoutes";
@@ -60,21 +60,21 @@ const blockchain = () => {
       <section className="bg-BlockchainBackground bg-no-repeat bg-cover text-white">
         <div className="new-container grid grid-cols-12 min-h-[90vh] ">
           <div className="col-span-12 md:col-span-5 order-2 md:order-1 pb-5">
-            <h2 className="md:pt-40 text-3xl md:text-5xl font-semibold ">
-              Blockchain Development Company
+            <h2 className="md:pt-44 lg:mt-10 text-3xl md:text-5xl font-semibold ">
+            Blockchain Development
+Services
             </h2>
             <p className="mt-2 md:mt-4 mb-6 md:mb-10 text-white tracking-tight md:text-lg opacity-70">
-              Hcode Technologies is the best blockchain development company to
-              help you fulfill all your blockchain needs in no-time! Our experts
-              have years of experience in delivering top-notch blockchain
-              solutions to countless clients across the globe!
+
+            We’re proficient in various Blockchain services, including but not limited to <strong>Dapps, Smart Contracts, NFT</strong> marketplace and <strong>Blockchain Security Audit.</strong>
+
             </p>
            
             <a
               href="/contact"
               className="bg-white block md:inline px-4 lg:px-16 py-5 text-lg text-center text-purple-800 rounded-md font-medium hover:scale-x-105 active:scale-100 focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white "
             >
-              Let's Talk
+              Get in Touch
             </a>
           </div>
           <div className="col-span-12 md:col-span-7 order-1 md:order-2 mt-24 md:mt-20 scale-90  lg:absolute lg:-right-8 ">
@@ -107,9 +107,9 @@ const blockchain = () => {
       <section className="py-10 lg:py-16 bg-gray-200">
         <div className="new-container ">
           <h6 className="font-light">Capabilities</h6>
-          <h2 className="text-lg lg:text-3xl font-semibold lg:w-8/12 lg:leading-snug">
-            Our Expert Developers Possess Unmatchable Skill And Experience In A
-            Number Of Technologies
+          <h2 className="text-lg lg:text-3xl font-semibold  lg:leading-snug">
+          We have experience in following  <br/>
+Blockchain Technologies and Integrations
           </h2>
 
           <div>
@@ -148,13 +148,10 @@ const blockchain = () => {
         <div className=" new-container py-10 grid grid-cols-12">
           <div className="col-span-12 md:col-span-7 ">
             <h2 className="text-4xl font-semibold pb-2">
-              We partner with ambitious clients to execute their digital
-              initiatives
+            Blockchain products built by HCode
             </h2>
             <p className="font-light">
-              Extend your tech team with top talent. We oversee the execution
-              and management of your software projects with our proven processes
-              and tech mentorship
+            We’ve built the following Blockchain products for our clients
             </p>
           </div>
           <div className="col-span-12 py-10">
@@ -181,9 +178,12 @@ const blockchain = () => {
         </div>
       </section>
 
+   
       {/* CTA */}
       <div className="my-10 ">
-        <CTA />
+        <CTA heading="Hire Blockchain Developers"
+        paragraph="Get our top talent working for you right away" 
+        widthClass="w-full"/>
       </div>
     </>
   );

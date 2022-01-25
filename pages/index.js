@@ -180,7 +180,7 @@ export default function Home() {
           ))}
         </div>
         <div className="text-center mt-10 mb-14">
-          <a href="/portfolio" className="outline-button px-10  text-center">
+          <a href="/our_work" className="outline-button px-10  text-center">
             See Our Portfolio
           </a>
         </div>

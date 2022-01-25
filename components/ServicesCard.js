@@ -1,8 +1,6 @@
 import { ArrowRightIcon } from "@heroicons/react/solid";
 import Link from "next/link";
-import {
-  our_service,
-} from "../constants/constants";
+import { our_service } from "../constants/constants";
 function ServicesCard({ heading }) {
   return (
     <div className="">
@@ -15,61 +13,105 @@ function ServicesCard({ heading }) {
         </div>
       )}
 
-      <div className="grid grid-cols-1 md:grid-cols-2 md:gap-4 ">
-        <Link href="/our_services/team_as_a_service">
-          <div className="relative  2xl:h-[700px]    transform transition duration-100 ease-out mb-5 md:mb-0 cursor-pointer hover:opacity-95">
-            <img
-              src={our_service.team_as_service_image}
-              layout="fill"
-              className="object-cover"
-            />
-            <div className="absolute top-0 text-white p-5 md:p-10">
-              <h1 className=" text-3xl md:text-4xl font-semibold md:font-bold lg:w-1/2">{our_service.team_as_service_heading}</h1>
-              <p className="mt-3 font-light md:text-xl opacity-80">
-                {our_service.team_as_service_paragraph}
-              </p>
-              <div className=" mt-10">
-                <a
-                  href="/our_services/team_as_a_service"
-                  className=" pb-1  border-b border-white inline-flex  cursor-pointer"
-                >
-                  Know More
-                  <ArrowRightIcon className="w-6 ml-2 " />
-                </a>
+      <div className="grid grid-cols-12 gap-4 ">
+        {/* Taas */}
+        <div className="col-span-12 md:col-span-4">
+          <Link href="/our_services/developer_as_a_service">
+            <div className="bg-daas bg-no-repeat bg-cover  min-h-[300px] 2xl:h-[400px]    transform transition duration-100 ease-out mb-5 md:mb-0 cursor-pointer hover:opacity-95">
+              <div className=" text-white p-8 md:p-10">
+                <h1 className="text-3xl md:text-4xl font-semibold md:font-bold">
+                  {our_service.developer_as_service_heading}
+                </h1>
+                <p className="mt-3 font-light md:text-xl opacity-80">
+                  {our_service.developer_as_service_paragraph}
+                </p>
+                <div className=" mt-10">
+                  <a
+                    href="/our_services/team_as_a_service"
+                    className=" pb-1  border-b border-white inline-flex  cursor-pointer"
+                  >
+                    Know More
+                    <ArrowRightIcon className="w-6 ml-2 " />
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-        </Link>
-        <Link href="/our_services/developer_as_a_service">
-          <div className="relative  2xl:h-[700px]    transform transition duration-100 ease-out mb-5 md:mb-0 cursor-pointer hover:opacity-95">
-            <img
-              src={our_service.developer_as_service_image}
-              layout="fill"
-              className="object-cover"
-            />
-            <div className="absolute top-0 text-white p-5 md:p-10">
-              <h1
-                className="text-3xl md:text-4xl font-semibold md:font-bold lg:w-1/2"
-              >
-                {our_service.developer_as_service_heading}
-              </h1>
-              <p
-                className="mt-3 font-light md:text-xl opacity-80"
-              >
-                {our_service.developer_as_service_paragraph}
-              </p>
-              <div className=" mt-10">
-                <a
-                  href="/our_services/team_as_a_service"
-                  className=" pb-1  border-b border-white inline-flex  cursor-pointer"
-                >
-                  Know More
-                  <ArrowRightIcon className="w-6 ml-2 " />
-                </a>
+          </Link>
+        </div>
+
+        {/* Daas */}
+        <div className="col-span-12 md:col-span-8">
+          <Link href="/our_services/team_as_a_service">
+            <div className="bg-taas bg-no-repeat bg-cover bg-center  min-h-[300px] 2xl:h-[400px] h-full    transform transition duration-100 ease-out mb-5 md:mb-0 cursor-pointer hover:opacity-95">
+              <div className=" text-white p-8 md:p-10">
+                <h1 className=" text-3xl md:text-4xl font-semibold md:font-bold lg:w-1/2">
+                  {our_service.team_as_service_heading}
+                </h1>
+                <p className="mt-3 font-light md:text-xl opacity-80">
+                  {our_service.team_as_service_paragraph}
+                </p>
+                <div className=" mt-10">
+                  <a
+                    href="/our_services/team_as_a_service"
+                    className=" pb-1  border-b border-white inline-flex  cursor-pointer"
+                  >
+                    Know More
+                    <ArrowRightIcon className="w-6 ml-2 " />
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-        </Link>
+          </Link>
+        </div>
+        {/* MVP */}
+        <div className="col-span-12 md:col-span-8">
+          <Link href="/our_services/mvp">
+            <div className="bg-mvp bg-no-repeat bg-right md:bg-left bg-cover  min-h-[300px] 2xl:h-[400px] h-full   transform transition duration-100 ease-out mb-5 md:mb-0 cursor-pointer hover:opacity-95">
+              <div className=" text-black p-8 md:p-10">
+                <h1 className=" text-3xl md:text-4xl font-semibold md:font-bold lg:w-1/2">
+                  {our_service.mvp_heading}
+                </h1>
+                <p className="mt-3 font-light md:text-xl opacity-80 w-3/4">
+                  {our_service.mvp_paragraph}
+                </p>
+                <div className=" mt-10">
+                  <a
+                    href="/our_services/mvp"
+                    className=" pb-1  border-b border-black inline-flex  cursor-pointer"
+                  >
+                    Know More
+                    <ArrowRightIcon className="w-6 ml-2 " />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </Link>
+        </div>
+          {/* Blockchain */}
+          <div className="col-span-12 md:col-span-4">
+          <Link href="/our_services/blockchain">
+            <div className="bg-blockchain_small md:bg-blockchain bg-[#323941] bg-no-repeat bg-right lg:bg-cover  min-h-[300px] 2xl:h-[400px] h-full   transform transition duration-100 ease-out mb-5 md:mb-0 cursor-pointer hover:opacity-95">
+              <div className=" text-white p-8 md:p-10">
+                <h1 className="text-3xl md:text-4xl font-semibold md:font-bold">
+                  {our_service.blockchain_heading}
+                </h1>
+                <p className="mt-3 font-light md:text-xl opacity-80">
+                  {our_service.blockchain_paragraph}
+                </p>
+                <div className=" mt-10">
+                  <a
+                    href="/our_services/blockchain"
+                    className=" pb-1  border-b border-white inline-flex  cursor-pointer"
+                  >
+                    Know More
+                    <ArrowRightIcon className="w-6 ml-2 " />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </Link>
+        </div>
+
       </div>
     </div>
   );

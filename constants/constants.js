@@ -142,16 +142,22 @@ export const our_service = {
   paragraph:
     "Are you a startup or an enterprise looking to set up/augment your tech team? If yes, we have the right solution tailored for you. We staff, manage, and support your offshore development team and we can get your team up and ready at short notice.",
 
-  team_as_service_heading: "Team as a Service",
-  team_as_service_image: "/assets/img/team_as_service.jpg ",
-  team_as_service_paragraph:
-    "Get a team headed by a tech-lead or a project manager to get your development goals from plan to reality. Tech lead can help take the right architectural decisions while managing the direction.",
+    team_as_service_heading: "Team as a Service",
+    team_as_service_paragraph:
+      "Get a team headed by a tech-lead or a project manager to get your development goals from plan to reality. Tech lead can help take the right architectural decisions while managing the direction.",
 
-  developer_as_service_heading: "Developer as a Service",
-  developer_as_service_image: "/assets/img/developer_as_service.jpg",
-  developer_as_service_paragraph:
-    "If you or your team has the necessary skills to drive the direction of development, then  you can get our trained and experienced developers directly working for  you.",
-};
+    developer_as_service_heading: "Developer as a Service",
+    developer_as_service_paragraph:
+      "If you or your team has the necessary skills to drive the direction of development, then  you can get our trained and experienced developers directly working for  you.",
+
+    mvp_heading: "Rapid Prototyping (MVP)",
+    mvp_paragraph:
+    "Make your idea into reality as soon as possible without worrying about the technical aspects of that. ",
+  
+    blockchain_heading: "Blockchain",
+    blockchain_paragraph:
+    "Hire us to develop your ground breaking idea"
+  };
 
 export const work_with_us_content = {
   hero_heading: "Let’s Build Together",
@@ -579,6 +585,53 @@ export const dass_benefits = {
     },
   ],
 };
+
+
+
+export const blockchain_benefits = {
+  heading: "Benefits Of Hiring from us",
+  paragraph:
+  "We are working with Global client for many years and from that we have gained many different experince which can help you grow your product",  points: [
+    {
+      image: "/assets/img/top_talent.svg",
+      heading: "Top Talent",
+      descripition:
+        "Rigorously selected and professionally trained team, incentivized to be accountable, commercial and transparent in communication",
+    },
+    {
+      image: "/assets/img/managed_process.svg",
+      heading: "Employee Retention",
+      descripition:
+        "You need to worry less about attrition as we stand with you as your partners thinking about the same. We offer various perks to aid retention.",
+    },
+    {
+      image: "/assets/img/easy_admin.svg",
+      heading: "Easy administration",
+      descripition:
+        "We cover all contract work, payroll operations, leave management, team setup and logistics.",
+    },
+
+    {
+      image: "/assets/img/best.svg",
+      heading: "Best Pratices and Help",
+      descripition:
+        "Over time, we have built best practices for project management, code delivery, SDLC. Working together, each developer has help at their disposal",
+    },
+    {
+      image: "/assets/img/roi.svg",
+      heading: "High ROI",
+      descripition:
+        "We deliver value to your business by improving quality and reducing cost resulting in high ROI. We will help you operate business more efficiently through innovation.",
+    },
+    {
+      image: "/assets/img/trust.svg",
+      heading: "Trust ",
+      descripition:
+        "We believe in building relationships based on trust. Whether it is confidentiality of your data and IPR or delivering your project on time, we only make promises we can deliver on.",
+    },
+  ],
+};
+
 
 export const how_to_get_started = {
   heading: "How to start partnering with us",
@@ -1324,51 +1377,11 @@ export const portfolioData = [
 
 
 
-export const blockchain_benefits = {
-  heading: "Benefits Of Hiring from us",
-  paragraph:
-  "We are working with Global client for many years and from that we have gained many different experince which can help you grow your product",
-  points: [
-    {
-      image: "/assets/img/top_talent.svg",
-      heading: "High-Quality Final Product",
-      descripition:
-      "Our developers work extremely hard to deliver high-quality software to all of our clients. Full testing includes all the important stages of the project lifecycle to ensure the excellent quality of the final product. "
-    },
-    {
-      image: "/assets/img/managed_process.svg",
-      heading: "Reduce Overhead costs",
-      descripition:
-      "When you need to hire employees from a set location, you limit your talent pool. In contrast, remote work lets you access the very best talent across the globe."
-    },
-    {
-      image: "/assets/img/trust.svg",
-      heading: "Breadth of Experience",
-      descripition:
-      "Working on different products over the course of many years. We have good years of experince which give us edge to solve highly complex problem for our client."
-    },
-    {
-      image: "/assets/img/easy_admin.svg",
-      heading: "Easy Communication Channel",
-      descripition:
-      "The company can start by introducing the project, its modules, prime, and the tools & platforms that will be used by the developer. Finally, they should be able to provide an estimate of the project’s length. The developer can also be expected to work as per the shift timings suitable to the client. This enables flexibility for them to work without any disruption."
-    },
-    {
-      image: "/assets/img/easy_admin.svg",
-      heading: "Reduce Hiring Time & Access Wider Talent Pool",
-      descripition:
-      "When you need to hire employees from a set location, you limit your talent pool. In contrast, remote work lets you access the very best talent across the globe."
-    },
-   
-    
-  ],
-};
-
 
 export const blockchain_services = {
-  heading: " Blockchain Services",
+  heading: " Our Blockchain Services",
   paragraph:
-  "  Whether your project is big or small, easy or complex, urgent or with a lengthy timeline, our blockchain developers are skilled at providing smart solutions that fit your unique needs.",
+  "Whether you are looking for a Blockchain Wallet, Smart Contract, NFT, or Custom Blockchain Solution, we can help you with our Blockchain expertise",
   points: [
     {
       image: "/assets/img/mobile-illu.svg",
@@ -1481,3 +1494,28 @@ export const blockchain_techStack_icon = [
   ]
   },
 ]
+
+
+export const faq_mvp = [
+  {
+    question: "How much time you take for developing an MVP?",
+    answer:
+    "This totally depends on what all is needed in the product, how well your product requirements are thought through, and what is your budget plan. We’ve built products in as short as 10 weeks, when the founders were very precise and clear in what the product does and looks like as well as had done some ground work as well. Every additional thing would add to time."
+  },
+  {
+    question: "I have no knowledge of technology. How should I start?",
+    answer:
+    "You need to know what the product should do, and we will take care to think through how it does that. It is always good to start with a brief of the Product, a single pager that explains what the product does and is it’s USP, whom is it built for, type of users, similar products, differentiators, and anything else that we should know. The next step is to plan the requirements in the MVP and chalk out the user journey through designs. You can get this service from us as well. Once these are fairly finalised, we can help with an estimate and post mutual agreement can get started."
+  },
+  {
+    question: "What are the decision points I have to make before getting started?",
+    answer:
+    "If the product is client facing, you need to decide which devices the product should be built for. Is it a Mobile application, or a Web Application for Desktop and/or Mobile. The more the devices, the more time it will take for development and optimisation. Second, you need to tell us what all external integrations, if anything in particular is needed for the project, are important as any external dependency need to be evaluated. Third, you need to plan for the phase wise development plan with respect to features which would help us plan the development."
+  },
+  {
+    question: "What technologies you typically use for frontend and backend. If I have some specific preference, would you comply?",
+    answer:
+    "Our standard technology stacks are React and Typescript for Frontend, and Python for Backend. We’ve chosen these in interest of being open source and fairly comprehensive and fast to implement, along with our decent expertise in these. If for any reason you have any specific preference in technology stack, please feel free to discuss with us."
+  },
+ 
+];
