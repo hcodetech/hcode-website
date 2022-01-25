@@ -1371,25 +1371,25 @@ export const blockchain_services = {
   "  Whether your project is big or small, easy or complex, urgent or with a lengthy timeline, our blockchain developers are skilled at providing smart solutions that fit your unique needs.",
   points: [
     {
-      image: "/assets/img/top_talent.svg",
+      image: "/assets/img/mobile-illu.svg",
       heading: "DApps",
       descripition:
       "A decentralized application(dapp) is an application built on a decentralized network that combines a smart contract and a UI. We can develop these dapps for our clients with all necessary integrations."
     },
     {
-      image: "/assets/img/managed_process.svg",
+      image: "/assets/img/smartContract_svg.svg",
       heading: "Smart Contract",
       descripition:
       " Our blockchain developers understand your needs and accordingly come up with smart contract management platforms and eWallet apps."
     },
     {
-      image: "/assets/img/trust.svg",
+      image: "/assets/img/nftMarketplace_svg.svg",
       heading: "NFT Marketplace",
       descripition:
       "Our NFT marketplace is very similar to innumerable existing online marketplace to ease out your trading and transactions through facilitate familiarity."
     }, 
     {
-      image: "/assets/img/trust.svg",
+      image: "/assets/img/audit_svg.svg",
       heading: "Blockchain Security Audit",
       descripition:
       "We will help you with making sure that your Blockchain application is secure so that no one can hack your contracts and cause you financial & credibility loss."
@@ -1399,7 +1399,7 @@ export const blockchain_services = {
 
 export const blockchain_techStack = [
   {
-    name:'Cryptocurrency',
+    name:'Blockchain',
     tech_id:0
   },
   {
@@ -1475,6 +1475,9 @@ export const blockchain_techStack_icon = [
     {image:'../assets/img/blockchain/solidity_logo.jpg', name:'Solidity',},
     {image:'../assets/img/blockchain/python_logo.jpg', name:'Python'},
     {image:'../assets/img/blockchain/node_logo.jpg', name:'Node Js'},
+    {image:'../assets/img/blockchain/go_logo.jpg', name:'Golang'},
+    {image:'../assets/img/blockchain/rust_logo.jpg', name:'Rust'},
+    {image:'../assets/img/blockchain/cplus_logo.jpg', name:'C++'},
   ]
   },
 ]
