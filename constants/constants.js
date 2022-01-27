@@ -895,6 +895,7 @@ export const selected_technologies = [
     tech_name: "Java",
     tech: "Backend",
   },
+  
   // {
   //   tech_name:"Android/iOS",
   //   tech:"Mobile"
@@ -902,6 +903,10 @@ export const selected_technologies = [
   {
     tech_name: "React JS",
     tech: "Frontend",
+  },
+  {
+    tech_name: "Blockchain",
+    tech: "Backend",
   },
   {
     tech_name: "Angular",
@@ -1240,7 +1245,7 @@ export const portfolioCard = [
   
 export const portfolioIndustry = [
   // 'Fintech', 'Ed-Tech', 'eCommerce', 'Blockchain', 'Food & Agri Tech', 'Productivity', 'Medical Tech', 'Consumer Tech'
-  'Fintech', 'Ed-Tech', 'eCommerce', 'Food & Agri Tech', 'Productivity', 'Consumer Tech'
+  'Fintech', 'Ed-Tech', 'eCommerce', 'Productivity', 'Blockchain', 'Food & Agri Tech', 'Consumer Tech' ,
 ]
 
 
@@ -1471,7 +1476,7 @@ export const blockchain_techStack_icon = [
     {image:'../assets/img/blockchain/eth_logo.jpg', name:'Ethereum'},
     {image:'../assets/img/blockchain/solona_logo.jpg', name:'Solona'},
     {image:'../assets/img/blockchain/matic_logo.jpg', name:'Polygon (MATIC)'},
-    {image:'../assets/img/blockchain/nft_logo.jpg', name:'A non-fungible token(NFT)'},
+    {image:'../assets/img/blockchain/NFT_logo.jpg', name:'A non-fungible token(NFT)'},
   ]
   },
   {

@@ -3,11 +3,11 @@ import CardPortfolio from "../components/CardPortfolio";
 import { portfolioIndustry } from "../constants/constants";
 import { getAPIUrl } from "./api/APIHelpers";
 import { apiRoutes } from "./api/APIRoutes";
-import useGetFetch from './hooks/useGetFetch';
+import useGetFetch from "./hooks/useGetFetch";
 
 const our_work = () => {
   const [selectedCategory, setSelectedCategory] = useState([]);
-  const [portfolioData, isLoading] = useGetFetch((getAPIUrl(apiRoutes.PROJECT)));
+  const [portfolioData, isLoading] = useGetFetch(getAPIUrl(apiRoutes.PROJECT));
   // Select Industry Card
   const setSelectedTech = (e, industryName) => {
     if (e.target.checked) {
@@ -26,7 +26,9 @@ const our_work = () => {
           Some of the products we've made for our client partners
         </h2>
         <h6>
-        We have worked on a broad range of projects, from algorithm-heavy backend projects to beautiful and interactive responsive web products. Listed below are some of our creations.
+          We have worked on a broad range of projects, from algorithm-heavy
+          backend projects to beautiful and interactive responsive web products.
+          Listed below are some of our creations.
         </h6>
       </section>
 
@@ -40,7 +42,6 @@ const our_work = () => {
               style={{ minHeight: 48 }}
               className={`items-center input-select mt-4`}
             >
-
               <input
                 onChange={(e) => setSelectedTech(e, industryName)}
                 id={industryName}
@@ -62,14 +63,41 @@ const our_work = () => {
       </section>
 
       {/* Card Section */}
-      <section className="new-container mx-auto mt-10 ">
-        {portfolioData.map((data) => (
-          <CardPortfolio
-            key={data.id}
-            cardData={data}
-            selectedCategory={selectedCategory}/>
-        ))}
-      </section>
+      {isLoading ? (
+        <div className="new-container">
+          <div class="w-full h-[400px] border  rounded-md mx-auto mt-10">
+            <div class="flex animate-pulse flex-row h-full justify-between">
+              <div class="flex flex-col space-y-3 m-10">
+                <div class="w-96 bg-gray-300 h-10 rounded-md "></div>
+                <div class="w-full bg-gray-300 h-20 rounded-md "></div>
+                <div class="w-24 bg-gray-300 h-4 rounded-md "></div>
+
+              </div>
+              <div class="w-1/2 bg-gray-300 h-full "></div>
+            </div>
+          </div>
+          <div class="w-full h-[400px] border  rounded-md mx-auto my-10">
+            <div class="flex animate-pulse flex-row h-full justify-between">
+              <div class="flex flex-col space-y-3 m-10">
+                <div class="w-96 bg-gray-300 h-10 rounded-md "></div>
+                <div class="w-full bg-gray-300 h-20 rounded-md "></div>
+                <div class="w-24 bg-gray-300 h-4 rounded-md "></div>
+              </div>
+              <div class="w-1/2 bg-gray-300 h-full "></div>
+            </div>
+          </div>
+        </div>
+      ) : (
+        <section className="new-container mx-auto mt-10 ">
+          {portfolioData.map((data) => (
+            <CardPortfolio
+              key={data.id}
+              cardData={data}
+              selectedCategory={selectedCategory}
+            />
+          ))}
+        </section>
+      )}
     </>
   );
 };
