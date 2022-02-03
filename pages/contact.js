@@ -17,7 +17,8 @@ function contact() {
   const [success, setSuccess] = useState(false);
   const [failure, setFailure] = useState(false);
 
-  const [fullName, setFullName] = useState("");
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
   const [loading, setLoading] = useState(false);
   const [companyName, setCompanyName] = useState("");
   const [companyEmail, setCompanyEmail] = useState("");
@@ -44,8 +45,8 @@ function contact() {
     setFailure(false);
     event.preventDefault();
     const contactUsFormData = {
-      first_name:fullName,
-      last_name:'',
+      first_name:firstName,
+      last_name:lastName,
       mobile_number:'',
       company_name:companyName,
       email:companyEmail,
@@ -66,7 +67,7 @@ function contact() {
     });
 
     const url = getAPIUrl(apiRoutes.CONTACT)
-      // "https://script.google.com/a/hcode.tech/macros/s/AKfycbytrG1hsiIqFlkL4vMMNVRy0WXpEq2E26mU8JGuIA/exec";
+    const url2 = "https://script.google.com/a/hcode.tech/macros/s/AKfycbytrG1hsiIqFlkL4vMMNVRy0WXpEq2E26mU8JGuIA/exec";
     const options = {
       body: formData,
       method: "POST",
@@ -75,7 +76,9 @@ function contact() {
     try {
       setLoading(true);
       const res = await fetch(url, options);
-      setFullName("");
+      const res2 = await fetch(url2, options);
+      setFirstName("");
+      setLastName("");
       setCompanyName("");
       setCompanyEmail("");
       setProjectType("");
@@ -123,7 +126,7 @@ function contact() {
         />
       )}
       <section className="md:new-container grid grid-cols-12 pt-14">
-        <div className="bg-primary md:max-w-[450px] max-h-screen text-white p-10  col-span-12 md:col-span-5 relative ">
+        <div className="bg-primary md:max-w-[450px] max-h-screen text-white p-10  col-span-12 md:col-span-4 relative ">
           <div>
             <h1 className="text-4xl font-semibold">
               Let’s scale your team together
@@ -150,15 +153,14 @@ function contact() {
           </div>
         </div>
         {/* Form Start Here */}
-        <div className="px-4 py-8 md:p-10 col-span-12 md:col-span-7">
-          {/* TODO - Show error message and require message in the form */}
+        <div className="px-4 py-8 md:p-10 col-span-12 md:col-span-8">
           <h1 className="text-4xl font-semibold pb-3">
             Please enter the details{" "}
           </h1>
           <form autoComplete="off" onSubmit={contactUser}>
-            <div className="grid grid-cols-6 gap-6">
+            <div className="grid grid-cols-12 gap-6">
               {/* Full Name */}
-              <div className="col-span-12">
+              <div className="col-span-6">
                 <label
                   htmlFor="full-name"
                   className="block text-sm font-medium text-gray-700"
@@ -167,8 +169,26 @@ function contact() {
                 </label>
                 <input
                   required
-                  value={fullName}
-                  onChange={(e) => setFullName(e.target.value)}
+                  value={firstName}
+                  onChange={(e) => setFirstName(e.target.value)}
+                  type="text"
+                  name="full-name"
+                  id="full-name"
+                  className="input-form"
+                />
+              </div>
+              {/* Last Name */}
+              <div className="col-span-6">
+                <label
+                  htmlFor="full-name"
+                  className="block text-sm font-medium text-gray-700"
+                >
+                  Last Name<sup>*</sup>
+                </label>
+                <input
+                  required
+                  value={lastName}
+                  onChange={(e) => setLastName(e.target.value)}
                   type="text"
                   name="full-name"
                   id="full-name"
