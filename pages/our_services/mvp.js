@@ -128,40 +128,40 @@ const mvp = () => {
           </p>
         </div>
 
-        <div class="step-indicator lg:my-5">
-          <div class="dot-container">
-            <div class="step step2">
-              <div class="step-icon"></div>
+        <div className="step-indicator lg:my-5">
+          <div className="dot-container">
+            <div className="step step2">
+              <div className="step-icon"></div>
               <p className="text-black font-medium ">Planning</p>
             </div>
 
-            <div class="indicator-line"></div>
-            <div class="step step1">
-              <div class="step-icon"></div>
+            <div className="indicator-line"></div>
+            <div className="step step1">
+              <div className="step-icon"></div>
               <p className="text-black font-medium">Design</p>
             </div>
 
-            <div class="indicator-line"></div>
-            <div class="step step3">
-              <div class="step-icon"></div>
+            <div className="indicator-line"></div>
+            <div className="step step3">
+              <div className="step-icon"></div>
               <p>Choosing right Tech</p>
             </div>
 
-            <div class="indicator-line"></div>
-            <div class="step step1">
-              <div class="step-icon"></div>
+            <div className="indicator-line"></div>
+            <div className="step step1">
+              <div className="step-icon"></div>
               <p>Development</p>
             </div>
 
-            <div class="indicator-line"></div>
-            <div class="step step2">
-              <div class="step-icon"></div>
+            <div className="indicator-line"></div>
+            <div className="step step2">
+              <div className="step-icon"></div>
               <p>Testing</p>
             </div>
 
-            <div class="indicator-line"></div>
-            <div class="step step1">
-              <div class="step-icon"></div>
+            <div className="indicator-line"></div>
+            <div className="step step1">
+              <div className="step-icon"></div>
               <p>Release & support</p>
             </div>
           </div>

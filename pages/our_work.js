@@ -1,3 +1,4 @@
+import Head from "next/head";
 import { useState } from "react";
 import CardPortfolio from "../components/CardPortfolio";
 import { portfolioIndustry } from "../constants/constants";
@@ -20,6 +21,9 @@ const our_work = () => {
   };
   return (
     <>
+    <Head>
+        <title>Our Work | Hcode Technologies   </title>
+      </Head>
       {/* Hero Section */}
       <section className="new-container mx-auto text-center lg:w-1/2 ">
         <h2 className="pt-40 text-4xl font-semibold pb-3">
@@ -65,25 +69,25 @@ const our_work = () => {
       {/* Card Section */}
       {isLoading ? (
         <div className="new-container">
-          <div class="w-full h-[400px] border  rounded-md mx-auto mt-10">
-            <div class="flex animate-pulse flex-row h-full justify-between">
-              <div class="flex flex-col space-y-3 m-10">
-                <div class="w-96 bg-gray-300 h-10 rounded-md "></div>
-                <div class="w-full bg-gray-300 h-20 rounded-md "></div>
-                <div class="w-24 bg-gray-300 h-4 rounded-md "></div>
+          <div className="w-full h-[400px] border  rounded-md mx-auto mt-10">
+            <div className="flex animate-pulse flex-row h-full justify-between">
+              <div className="flex flex-col space-y-3 m-10">
+                <div className="w-96 bg-gray-300 h-10 rounded-md "></div>
+                <div className="w-full bg-gray-300 h-20 rounded-md "></div>
+                <div className="w-24 bg-gray-300 h-4 rounded-md "></div>
 
               </div>
-              <div class="w-1/2 bg-gray-300 h-full "></div>
+              <div className="w-1/2 bg-gray-300 h-full "></div>
             </div>
           </div>
-          <div class="w-full h-[400px] border  rounded-md mx-auto my-10">
-            <div class="flex animate-pulse flex-row h-full justify-between">
-              <div class="flex flex-col space-y-3 m-10">
-                <div class="w-96 bg-gray-300 h-10 rounded-md "></div>
-                <div class="w-full bg-gray-300 h-20 rounded-md "></div>
-                <div class="w-24 bg-gray-300 h-4 rounded-md "></div>
+          <div className="w-full h-[400px] border  rounded-md mx-auto my-10">
+            <div className="flex animate-pulse flex-row h-full justify-between">
+              <div className="flex flex-col space-y-3 m-10">
+                <div className="w-96 bg-gray-300 h-10 rounded-md "></div>
+                <div className="w-full bg-gray-300 h-20 rounded-md "></div>
+                <div className="w-24 bg-gray-300 h-4 rounded-md "></div>
               </div>
-              <div class="w-1/2 bg-gray-300 h-full "></div>
+              <div className="w-1/2 bg-gray-300 h-full "></div>
             </div>
           </div>
         </div>

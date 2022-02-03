@@ -3,6 +3,8 @@ import {
   PhoneIcon,
   ChatAltIcon,
 } from "@heroicons/react/solid";
+import Head from "next/head";
+
 import { useState } from "react";
 import {
   contact_us_circle,
@@ -101,6 +103,9 @@ function contact() {
 
   return (
     <>
+      <Head>
+        <title>Contact | Hcode Technologies   </title>
+      </Head>
       {loading && (
         <div className="fixed top-1/2 inset-x-2/4">
           <DotLoader color={defaultColor} size={60} />
