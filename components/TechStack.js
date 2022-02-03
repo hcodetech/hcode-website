@@ -5,10 +5,10 @@ function TechStack() {
             <div className="text-center">
                 <h1 className="text-2xl lg:text-5xl font-semibold mt-10">Tech Stack</h1>
                 <p className="mt-4  font-light md:w-10/12 mx-auto leading-normal">
-                    Our deveopers have successfully executed many projects and have deep expertise in 
+                    Our developers have successfully executed many projects and have deep expertise in 
                     <strong> Python (Django), Java & Node JS</strong> for backend; <strong>HTML5, JS Frameworks (React JS, Angular) </strong> 
-                     for frontend. We primarily code in <strong>React Native</strong> for mobile development. We work with most relational databses - 
-                    <strong> PostgreSQL,  MSSQL etc</strong> and non relational - <strong>Firebase,  DyanmoDB etc.</strong> The team is well wersed with Devops on 
+                     for frontend. We primarily code in <strong>React Native</strong> for cross platform mobile-app development. We work with most relational databases - 
+                    <strong> PostgreSQL,  MSSQL etc</strong> as well as non-relational ones - <strong>Firebase, DynamoDB etc.</strong> Our team is well versed with Devops on 
                     <strong> AWS, GoogleCloud</strong> using <strong>Docker, Nginx etc.</strong>
                 </p>
                 <Link href="/technologies" >

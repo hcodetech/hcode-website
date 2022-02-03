@@ -167,6 +167,8 @@ export default function Home() {
       <div className="  py-16">
         <Process data={how_to_get_started} />
       </div>
+
+
       {/* Case Studies */}
       <div className="new-container ">
         <h2 className="text-4xl font-semibold text-center py-5 mb-4">
@@ -185,6 +187,7 @@ export default function Home() {
           </a>
         </div>
       </div>
+      
 
       {/* Core Team  */}
       <section className="py-14 bg-gray-100 text-center">

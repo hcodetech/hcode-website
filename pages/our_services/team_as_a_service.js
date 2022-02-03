@@ -11,7 +11,7 @@ function team_as_a_service() {
     return (
         <>
             <Head>
-                <title>Team as a Service </title>
+                <title>Team as a Service | Hcode Technologies </title>
             </Head>
             {/* Hero Section */}
             <section className="text-center ">

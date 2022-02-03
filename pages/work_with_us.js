@@ -88,7 +88,7 @@ function work_with_us() {
             <img src={karnal} alt='' />
             <h4 className='text-xl font-semibold py-2'>Karnal</h4>
             <a
-              href='https://in.indeed.com/cmp/Hcode-Technologies/jobs'
+              href='https://in.indeed.com/cmp/Hcode-Technologies/jobs?q=&l=Karnal%2C+Haryana#cmp-skip-header-desktop'
               target='_blank'
               className='pb-1 border-b inline-flex border-black hover:scale-100  cursor-pointer opacity-50 hover:opacity-100'
             >
@@ -100,7 +100,7 @@ function work_with_us() {
             <img src={remote} alt='' />
             <h4 className='text-xl font-semibold  py-2'>Remote</h4>
             <a
-              href='https://in.indeed.com/cmp/Hcode-Technologies/jobs'
+              href='https://in.indeed.com/cmp/Hcode-Technologies/jobs?q=&l=Remote#cmp-skip-header-desktop'
               target='_blank'
               className='pb-1 border-b inline-flex border-black hover:scale-100  cursor-pointer opacity-50 hover:opacity-100'
             >

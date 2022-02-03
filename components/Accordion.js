@@ -16,7 +16,7 @@ const Accordion = ({ data }) => {
     <div className="new-container py-12">
       <div className="text-center my-4">
         <p className="opacity-50">FAQs</p>
-        <h2 className="text-4xl font-semibold">Got Question ?</h2>
+        <h2 className="text-4xl font-semibold">Got any Questions?</h2>
       </div>
       <div className="acc_container mt-8">
         {data.map((item, index) => {

@@ -30,8 +30,7 @@ function contact() {
   const [numberOfDev, setNumberOfDevs] = useState("0");
   const [numberOfEmployees, setNumberOfEmployees] = useState("0");
 
-  const [expectedTimeCommitment, setExpectedTimeCommitment] =
-    useState("0");
+  const [expectedTimeCommitment, setExpectedTimeCommitment] = useState("0");
   const [preferredTechStack, setPreferredTechStack] = useState([]);
   const setSelectedTech = (e, tech) => {
     if (e.target.checked) {
@@ -47,29 +46,30 @@ function contact() {
     setFailure(false);
     event.preventDefault();
     const contactUsFormData = {
-      first_name:firstName,
-      last_name:lastName,
-      mobile_number:'',
-      company_name:companyName,
-      email:companyEmail,
-      project_type:projectType,
-      is_proj_run_by_tech_person:projectLeadRequired,
-      project_description:projectDesc,
-      number_of_dev:numberOfDev,
-      employee_number:numberOfEmployees,
-      time_commitment:expectedTimeCommitment,
-      tech_preference:preferredTechStack.join(','),
+      first_name: firstName,
+      last_name: lastName,
+      mobile_number: "",
+      company_name: companyName,
+      email: companyEmail,
+      project_type: projectType,
+      is_proj_run_by_tech_person: projectLeadRequired,
+      project_description: projectDesc,
+      number_of_dev: numberOfDev,
+      employee_number: numberOfEmployees,
+      time_commitment: expectedTimeCommitment,
+      tech_preference: preferredTechStack.join(","),
     };
 
-    console.log(contactUsFormData)
+    console.log(contactUsFormData);
 
     const formData = new FormData();
     Object.entries(contactUsFormData).forEach(([key, value]) => {
       formData.append(key, value);
     });
 
-    const url = getAPIUrl(apiRoutes.CONTACT)
-    const url2 = "https://script.google.com/a/hcode.tech/macros/s/AKfycbytrG1hsiIqFlkL4vMMNVRy0WXpEq2E26mU8JGuIA/exec";
+    const url = getAPIUrl(apiRoutes.CONTACT);
+    const url2 =
+      "https://script.google.com/a/hcode.tech/macros/s/AKfycbytrG1hsiIqFlkL4vMMNVRy0WXpEq2E26mU8JGuIA/exec";
     const options = {
       body: formData,
       method: "POST",
@@ -104,7 +104,7 @@ function contact() {
   return (
     <>
       <Head>
-        <title>Contact | Hcode Technologies   </title>
+        <title>Contact | Hcode Technologies </title>
       </Head>
       {loading && (
         <div className="fixed top-1/2 inset-x-2/4">
@@ -167,25 +167,25 @@ function contact() {
               {/* Full Name */}
               <div className="col-span-6">
                 <label
-                  htmlFor="full-name"
+                  htmlFor="first-name"
                   className="block text-sm font-medium text-gray-700"
                 >
-                  Full Name<sup>*</sup>
+                  First Name<sup>*</sup>
                 </label>
                 <input
                   required
                   value={firstName}
                   onChange={(e) => setFirstName(e.target.value)}
                   type="text"
-                  name="full-name"
-                  id="full-name"
+                  name="first-name"
+                  id="first-name"
                   className="input-form"
                 />
               </div>
               {/* Last Name */}
               <div className="col-span-6">
                 <label
-                  htmlFor="full-name"
+                  htmlFor="last-name"
                   className="block text-sm font-medium text-gray-700"
                 >
                   Last Name<sup>*</sup>
@@ -195,8 +195,8 @@ function contact() {
                   value={lastName}
                   onChange={(e) => setLastName(e.target.value)}
                   type="text"
-                  name="full-name"
-                  id="full-name"
+                  name="last-name"
+                  id="last-name"
                   className="input-form"
                 />
               </div>
@@ -260,10 +260,10 @@ function contact() {
                     name="no-of-employees"
                     className="mt-1 block w-full py-2 px-3 input-form"
                   >
-                    <option value='0' >1 - 5</option>
-                    <option value='1'>5 - 20</option>
-                    <option value='2'>20 - 50</option>
-                    <option value='3'>50+</option>
+                    <option value="0">1 - 5</option>
+                    <option value="1">5 - 20</option>
+                    <option value="2">20 - 50</option>
+                    <option value="3">50+</option>
                   </select>
                 </div>
               </div>
@@ -311,7 +311,9 @@ function contact() {
                     autoComplete="country"
                     className="mt-1 block w-full py-2 px-3 input-form"
                   >
-                    <option value='0' defaultValue>I don’t know</option>
+                    <option value="0" defaultValue>
+                      I don’t know
+                    </option>
                     <option value="1">1 - 2</option>
                     <option value="2">3 - 5</option>
                     <option value="3">6 - 10</option>
@@ -463,12 +465,7 @@ function contact() {
                         />
                         <label
                           htmlFor={tech.tech_name}
-                          className={`block text-sm min-w-[140px] font-medium text-gray-700 border border-1 rounded-lg text-center px-5 py-3 
-                                                ${
-                                                  preferredTechStack.includes(
-                                                    tech.tech_name
-                                                  ) && "bg-blue-200"
-                                                }`}
+                          className={`block text-sm min-w-[140px] font-medium text-gray-700 border border-1 rounded-lg text-center px-5 py-3 ${ preferredTechStack.includes(tech.tech_name) && "bg-blue-200"}`}
                         >
                           {tech.tech_name}
                           <br />

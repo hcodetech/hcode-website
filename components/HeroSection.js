@@ -41,21 +41,21 @@ function HeroSection() {
             <div className='relative'>
               <div className='absolute h-screen w-screen'>
                 <div className='centered text-white  text-center '>
-                  <h1 className='text-3xl md:text-5xl leading-tight  font-bold  mx-auto text-white  '>
+                  <h1 className='text-3xl md:text-5xl lg:leading-tight  font-bold  mx-auto text-white  '>
                     End-To-End
                     <br />
                     Engineering Services
                   </h1>
-                  <p className='text-xl font-normal opacity-90 '>
+                  <p className='text-xl font-normal opacity-90 mt-4 '>
                     When you partner with us, you get our team of developers
                     acting as your engineering team. They take care of your
-                    end-to-end engineering needs including development,
-                    deployment, testing and maintenance
+                    end-to-end engineering needs, including development,
+                    deployment, testing, and maintenance
                   </p>
                   {/* <button className="bg-white px-16 py-4 text-primary rounded hover:bg-gray-100  mt-4">Get In Touch</button> */}
                   <a
                     href='/contact'
-                    className='pt-5 pb-1  flex-nowrap border-b border-white inline-flex text-white hover:scale-100  cursor-pointer hover:opacity-100'
+                    className='pt-5 pb-1  mt-2 flex-nowrap border-b border-white inline-flex text-white hover:scale-100  cursor-pointer hover:opacity-100'
                   >
                     Get In Touch
                     <ArrowRightIcon className='w-6 md:ml-2 ' />
@@ -73,18 +73,18 @@ function HeroSection() {
             <div className='relative'>
               <div className='absolute h-screen w-screen'>
                 <div className='centered text-white  text-center '>
-                  <h1 className='text-3xl lg:text-5xl leading-tight  font-bold  mx-auto text-white  '>
-                    Hire Top Talent As
+                  <h1 className='text-3xl lg:text-5xl lg:leading-tight  font-bold  mx-auto text-white   '>
+                    Hire Top Talent as
                     <br /> Your Offshore Team
                   </h1>
-                  <p className='text-xl font-normal opacity-90 '>
-                    You can rely on us for great quality code written by
+                  <p className='text-xl font-normal opacity-90 mt-3 '>
+                    You can rely on us for great quality of code written by
                     responsible and driven developers, trained for such
                     engagements
                   </p>
                   <a
                     href='/contact'
-                    className='pt-5 pb-1  flex-nowrap border-b border-white inline-flex text-white hover:scale-100  cursor-pointer hover:opacity-100'
+                    className='pt-5 pb-1  mt-2 flex-nowrap border-b border-white inline-flex text-white hover:scale-100  cursor-pointer hover:opacity-100'
                   >
                     <span className='flex'>
                       Get In Touch
@@ -104,13 +104,13 @@ function HeroSection() {
             <div className='relative'>
               <div className='absolute h-screen w-screen'>
                 <div className='centered text-white  text-center '>
-                  <h1 className='text-3xl lg:text-5xl leading-tight  font-bold  mx-auto text-white  '>
-                    We Focus On Your Tech
-                    <br /> So You Can Focus On Business
+                  <h1 className='text-3xl lg:text-5xl lg:leading-tight  font-bold  mx-auto text-white  '>
+                    We Focus on your Tech
+                    <br /> So you can Focus on Business
                   </h1>
-                  <p className='text-xl font-normal opacity-90 '>
-                    Maximise your ROI by hiring our team of young and passionate
-                    developers that deliver value to your business by improving
+                  <p className='text-xl font-normal opacity-90 mt-3 '>
+                    Maximize your RoI by hiring our team of young and passionate
+                    developers who deliver value to your business by improving
                     quality and reducing cost
                   </p>
                   <a

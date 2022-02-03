@@ -74,7 +74,7 @@ export default function Navbar() {
                             href='/our_services/team_as_a_service'
                             className='block py-3 pl-4  text-sm text-gray-700 hover:bg-gray-100 border-b'
                           >
-                            Team as a service
+                            Team as a Service
                           </a>
                         </li>
                         <li >
@@ -82,7 +82,7 @@ export default function Navbar() {
                             href='/our_services/developer_as_a_service'
                             className='block py-3 pl-4  text-sm text-gray-700 hover:bg-gray-100 border-b'
                           >
-                            Developer as a service
+                            Developer as a Service
                           </a>
                         </li>
                         <li >

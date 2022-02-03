@@ -11,7 +11,7 @@ function developer_as_a_service() {
     return (
         <>
             <Head>
-                <title>Developer as a Service </title>
+                <title>Developer as a Service | Hcode Technologies</title>
             </Head>
             {/* Hero Section */}
             <section className="text-center ">

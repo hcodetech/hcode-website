@@ -66,7 +66,7 @@ Services
             </h2>
             <p className="mt-2 md:mt-4 mb-6 md:mb-10 text-white tracking-tight md:text-lg opacity-70">
 
-            We’re proficient in various Blockchain services, including but not limited to <strong>Dapps, Smart Contracts, NFT</strong> marketplace and <strong>Blockchain Security Audit.</strong>
+            We’re proficient in various Blockchain services including, but not limited to, <strong>Dapps, Smart Contracts, NFT</strong> marketplace and <strong>Blockchain Security Audit.</strong>
 
             </p>
            
