@@ -10,6 +10,8 @@ import {
 } from "../constants/constants";
 import DotLoader from "react-spinners/DotLoader";
 import Modal from "../components/Modal";
+import { apiRoutes } from "./api/APIRoutes";
+import { getAPIUrl } from "./api/APIHelpers";
 const defaultColor = "#373536";
 function contact() {
   const [success, setSuccess] = useState(false);
@@ -20,13 +22,13 @@ function contact() {
   const [companyName, setCompanyName] = useState("");
   const [companyEmail, setCompanyEmail] = useState("");
   const [projectType, setProjectType] = useState("");
-  const [projectLeadRequired, setProjectLeadRequired] = useState("");
+  const [projectLeadRequired, setProjectLeadRequired] = useState();
   const [projectDesc, setProjectDesc] = useState("");
-  const [numberOfDev, setNumberOfDevs] = useState("I don’t know");
-  const [numberOfEmployees, setNumberOfEmployees] = useState("1 - 5");
+  const [numberOfDev, setNumberOfDevs] = useState("0");
+  const [numberOfEmployees, setNumberOfEmployees] = useState("0");
 
   const [expectedTimeCommitment, setExpectedTimeCommitment] =
-    useState("I don’t know");
+    useState("0");
   const [preferredTechStack, setPreferredTechStack] = useState([]);
   const setSelectedTech = (e, tech) => {
     if (e.target.checked) {
@@ -41,26 +43,30 @@ function contact() {
     setSuccess(false);
     setFailure(false);
     event.preventDefault();
-    const conactUsFormData = {
-      fullName,
-      companyName,
-      companyEmail,
-      projectType,
-      projectLeadRequired,
-      projectDesc,
-      numberOfDev,
-      numberOfEmployees,
-      expectedTimeCommitment,
-      preferredTechStack,
+    const contactUsFormData = {
+      first_name:fullName,
+      last_name:'',
+      mobile_number:'',
+      company_name:companyName,
+      email:companyEmail,
+      project_type:projectType,
+      is_proj_run_by_tech_person:projectLeadRequired,
+      project_description:projectDesc,
+      number_of_dev:numberOfDev,
+      employee_number:numberOfEmployees,
+      time_commitment:expectedTimeCommitment,
+      tech_preference:preferredTechStack.join(','),
     };
 
+    console.log(contactUsFormData)
+
     const formData = new FormData();
-    Object.entries(conactUsFormData).forEach(([key, value]) => {
+    Object.entries(contactUsFormData).forEach(([key, value]) => {
       formData.append(key, value);
     });
 
-    const url =
-      "https://script.google.com/a/hcode.tech/macros/s/AKfycbytrG1hsiIqFlkL4vMMNVRy0WXpEq2E26mU8JGuIA/exec";
+    const url = getAPIUrl(apiRoutes.CONTACT)
+      // "https://script.google.com/a/hcode.tech/macros/s/AKfycbytrG1hsiIqFlkL4vMMNVRy0WXpEq2E26mU8JGuIA/exec";
     const options = {
       body: formData,
       method: "POST",
@@ -73,12 +79,12 @@ function contact() {
       setCompanyName("");
       setCompanyEmail("");
       setProjectType("");
-      setProjectLeadRequired("");
+      setProjectLeadRequired();
       setProjectDesc("");
-      setNumberOfDevs("I don’t know");
-      setNumberOfEmployees("1 - 5");
+      setNumberOfDevs("0");
+      setNumberOfEmployees("0");
       setPreferredTechStack([]);
-      setExpectedTimeCommitment("I don’t know");
+      setExpectedTimeCommitment("0");
       // alert('Thanks for your interest. We will contact you shortly.')
       // console.log("Success")
       setSuccess(true);
@@ -229,10 +235,10 @@ function contact() {
                     name="no-of-employees"
                     className="mt-1 block w-full py-2 px-3 input-form"
                   >
-                    <option>1 - 5</option>
-                    <option>5 - 20</option>
-                    <option>20 - 50</option>
-                    <option>50+</option>
+                    <option value='0' >1 - 5</option>
+                    <option value='1'>5 - 20</option>
+                    <option value='2'>20 - 50</option>
+                    <option value='3'>50+</option>
                   </select>
                 </div>
               </div>
@@ -280,11 +286,11 @@ function contact() {
                     autoComplete="country"
                     className="mt-1 block w-full py-2 px-3 input-form"
                   >
-                    <option defaultValue>I don’t know</option>
-                    <option value="1 - 2">1 - 2</option>
-                    <option value="3 - 5">3 - 5</option>
-                    <option value="6 - 10">6 - 10</option>
-                    <option value="10+">10+</option>
+                    <option value='0' defaultValue>I don’t know</option>
+                    <option value="1">1 - 2</option>
+                    <option value="2">3 - 5</option>
+                    <option value="3">6 - 10</option>
+                    <option value="4">10+</option>
                   </select>
                 </div>
 
@@ -306,12 +312,12 @@ function contact() {
                     name="time-commitment"
                     className="mt-1 block w-full py-2 px-3 input-form"
                   >
-                    <option value="I don’t know" defaultValue>
+                    <option value="0" defaultValue>
                       I don’t know
                     </option>
-                    <option value="3 to 6 Months">3 to 6 Months</option>
-                    <option value="6 to 12 Months">6 to 12 Months</option>
-                    <option value="More than a year">More than a year</option>
+                    <option value="1">3 to 6 Months</option>
+                    <option value="2">6 to 12 Months</option>
+                    <option value="3">More than a year</option>
                   </select>
                 </div>
 
@@ -328,8 +334,8 @@ function contact() {
                     <div className="flex items-center">
                       <input
                         required
-                        checked={projectLeadRequired === "Yes"}
-                        onChange={(e) => setProjectLeadRequired("Yes")}
+                        checked={projectLeadRequired === true}
+                        onChange={(e) => setProjectLeadRequired(true)}
                         id="project-lead"
                         name="project-lead"
                         type="radio"
@@ -345,8 +351,8 @@ function contact() {
                     <div className="flex items-center ml-5">
                       <input
                         required
-                        checked={projectLeadRequired === "No"}
-                        onChange={(e) => setProjectLeadRequired("No")}
+                        checked={projectLeadRequired === false}
+                        onChange={(e) => setProjectLeadRequired(false)}
                         id="project-lead-no"
                         name="project-lead"
                         type="radio"
@@ -377,8 +383,8 @@ function contact() {
                   <div className="mt-4 flex">
                     <div className="flex items-center">
                       <input
-                        onChange={(e) => setProjectType("New Project")}
-                        checked={projectType === "New Project"}
+                        onChange={(e) => setProjectType("0")}
+                        checked={projectType === "0"}
                         id="project-type1"
                         name="project-type"
                         type="radio"
@@ -393,8 +399,8 @@ function contact() {
                     </div>
                     <div className="flex items-center ml-5">
                       <input
-                        onChange={(e) => setProjectType("Existing Code")}
-                        checked={projectType === "Existing Code"}
+                        onChange={(e) => setProjectType("1")}
+                        checked={projectType === "1"}
                         id="project-type"
                         name="project-type"
                         type="radio"
