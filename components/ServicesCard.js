@@ -66,7 +66,7 @@ function ServicesCard({ heading }) {
         {/* MVP */}
         <div className="col-span-12 md:col-span-8">
           <Link href="/our_services/mvp">
-            <div className="bg-mvp bg-no-repeat bg-right md:bg-left bg-cover  min-h-[300px] 2xl:h-[400px] h-full   transform transition duration-100 ease-out mb-5 md:mb-0 cursor-pointer hover:opacity-95">
+            <div className="bg-mvp bg-no-repeat bg-left bg-cover  min-h-[300px] 2xl:h-[400px] h-full   transform transition duration-100 ease-out mb-5 md:mb-0 cursor-pointer hover:opacity-95">
               <div className=" text-black p-8 md:p-10">
                 <h1 className=" text-3xl md:text-4xl font-semibold md:font-bold lg:w-1/2">
                   {our_service.mvp_heading}

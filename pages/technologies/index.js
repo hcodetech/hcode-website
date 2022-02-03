@@ -1,4 +1,4 @@
-import {useEffect, useRef} from 'react'
+import {useEffect, useRef, useState} from 'react'
 import Accordion from "../../components/Accordion";
 import { faq_services, technologies_page } from "../../constants/constants";
 import { useRouter } from "next/dist/client/router";
@@ -6,20 +6,17 @@ import Link from "next/link";
 function technologies(props) {
   const {asPath} = useRouter()
 
-  const firstRef = useRef()
-
-  useEffect(() => {
-    const logger = () => {
-      console.log('focuus')
-    }
-    firstRef.current.addEventListener('focus',logger)
-    console.log('firstRef', firstRef)
-    return firstRef.current.removeEventListener('focus',logger)
-  },[firstRef])
-  
-  
-
+  // To check if the any category is included in the URL
   const isTechnologiesStack = (pathname) => asPath.includes(pathname)
+
+  const refs = useRef([]) // create empty array for creating multiple refs
+  
+  const [isVisible, setIsVisible] = useState(false)
+
+  // const observer = new IntersectionObserver(entries => {
+  //   console.log(entries)
+  // })
+  // observer.observe(firstRef[0])
   return (
     <div className="scroll-smooth">
       {/* Hero Section */}
@@ -55,27 +52,25 @@ function technologies(props) {
             ['Backend','Frontend','Blockchain','Cloud','Database','CI/CD'].map(stack=>(
               <Link
                 href={`#${stack}`}
+              key={stack}
               ><a 
-              className={ isTechnologiesStack(stack)  ? "text-blue-600 font-semibold underline" : ""}
+              className={ isTechnologiesStack(stack) ? "text-blue-600 font-semibold underline" : ""}
               >{stack}</a>
               </Link>
             ))
           }
-         
-
-
           </div>
         </div>
 
         <div className="new-container lg:pl-32 2xl:pl-0 ">
           <div>
-         
             {technologies_page.tech_stack.map((tech, index) => (
               <div
                 id={tech.bookmark}
                 name={tech.bookmark}
-                ref={!index ? firstRef : null}
-                // offset={100}
+                key={index}     
+                // settings the refs current index
+                ref={(e)=> {refs.current[index] = e}}          
               >
                 <div className="grid grid-cols-12 gap-4 mt-10" key={index}>
                   <div className="col-span-12 grid grid-cols-12 pt-20">
@@ -106,7 +101,7 @@ function technologies(props) {
           </div>
         </div>
       </section>
-
+{console.log(refs)}
       {/* FAQs */}
       {/* <section className="z-30 relative bg-white">
         <Accordion data={faq_services} />
