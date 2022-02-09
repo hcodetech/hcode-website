@@ -17,10 +17,10 @@ const CardPortfolio = (props) => {
         className={` ${cardData.additionalClass} grid grid-cols-12 rounded mb-10 
         bg-[${cardData.background_color_code}] text-[${cardData.font_color_code}]`}
       >
-        <div className="col-span-12 order-2 lg:order-1 lg:col-span-6 p-10 ">
+        <div className="col-span-12 order-2 lg:order-1 lg:col-span-6 p-8 md:p-10 ">
           {/* <img src={cardData.logo_image} alt={cardData.name} className="mb-7" /> */}
           <h1 className="text-4xl mt-2 font-bold mb-3">{cardData.name}</h1>
-          <p className="text-xl font-light leading-normal opacity-80">
+          <p className="text-base md:text-xl font-light leading-normal opacity-80">
             {cardData.short_description}
           </p>
           {cardData.product_url && (

@@ -40,7 +40,7 @@ function HeroSection() {
           <Slide index={0}>
             <div className='relative'>
               <div className='absolute h-screen w-screen'>
-                <div className='centered text-white  text-center '>
+                <div className='centered text-white  text-center w-80 md:w-1/2 '>
                   <h1 className='text-3xl md:text-5xl lg:leading-tight  font-bold  mx-auto text-white  '>
                     End-To-End
                     <br />
@@ -72,7 +72,7 @@ function HeroSection() {
           <Slide index={1}>
             <div className='relative'>
               <div className='absolute h-screen w-screen'>
-                <div className='centered text-white  text-center '>
+                <div className='centered text-white  text-center w-80 md:w-1/2'>
                   <h1 className='text-3xl lg:text-5xl lg:leading-tight  font-bold  mx-auto text-white   '>
                     Hire Top Talent as
                     <br /> Your Offshore Team
@@ -103,7 +103,7 @@ function HeroSection() {
           <Slide index={2}>
             <div className='relative'>
               <div className='absolute h-screen w-screen'>
-                <div className='centered text-white  text-center '>
+                <div className='centered text-white  text-center  w-80 md:w-1/2'>
                   <h1 className='text-3xl lg:text-5xl lg:leading-tight  font-bold  mx-auto text-white  '>
                     We Focus on your Tech
                     <br /> So you can Focus on Business
