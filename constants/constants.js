@@ -650,8 +650,7 @@ export const how_to_get_started = {
       width: " min-w-[1000px] max-w-[1200px]",
       heading: "Onboard the Team!",
       descripition:
-      "We agree on a start date and make sure relevant paperwork is done to protect your IP. We will fill available positions from our existing pool of developers, or when needed, by hiring new developers."
-      
+        "We agree on a start date and make sure relevant paperwork is done to protect your IP. We will fill available positions from our existing pool of developers, or when needed, by hiring new developers.",
     },
   ],
 };
@@ -1163,15 +1162,7 @@ export const technologies_page = {
 
 export const testimonial = [
   {
-    id: "2",
-    profile_image: "../assets/img/client_image/Suyash_Kothari.png",
-    person_name: "Suyash Kothari",
-    company_name: "Co-Founder, Ohana",
-    testimonial_paragraph:
-      "As a purely digital Edtech platform, high-quality engineering is a foundational part of our business. HCode has not only helped us go live but has helped consistently improve the product with fast iterations. On multiple occasions, they have put our platform first, and made recommendations to help us reduce costs on engineering (even if it may not necessarily be beneficial for HCode).<br/> <br/>In the current scenario of the tremendous demand-supply gap in engineering talent, HCode has been indispensable support! They are not an outsourcing partner, they are truly an extended team for us - Wholeheartedly recommended",
-  },
-  {
-    id: "3",
+    id: "1",
     profile_image: "../assets/img/client_image/Gregory_Correll.png",
     person_name: "Gregory Correll",
     company_name: "Technical Project Manager, Parmount Capital Group",
@@ -1179,15 +1170,7 @@ export const testimonial = [
       "As a technology manager with over 25 years of experience, I cannot think of a better partnership that I’ve had over the years.  Not only are Shashank and his teams are immensely qualified across a wide range of disciplines as well as attentive and disciplined in their approach to solutions, but they have also proven they can rapidly adjust to a constantly changing set of directives with ease.<br/><br/>They were ready to work on day 1, and by day 2 had already surpassed my initial expectations.  In only a few months’ time, they carefully crafted a complete internal self-service portal for both our employees and clients which will eventually be the backbone of our entire firm.  I’m looking forward to a long and healthy relationship!!",
   },
   {
-    id: "4",
-    profile_image: "../assets/img/client_image/mohit_metha.png",
-    person_name: "Mohit Mehta",
-    company_name: "Co-Founder, Indira New York",
-    testimonial_paragraph:
-      "Hcode has been a pleasure to work with, they’re efficient, always communicative and available, and flexible. Couldn’t hope for a better team for all our dev needs. I highly recommend working with them and have recommended them to many friends/colleagues looking to build for the future.",
-  },
-  {
-    id: "1",
+    id: "2",
     profile_image: "../assets/img/client_image/naam_lee.png",
     person_name: "Nam Lee",
     company_name: "CEO, Pollinate Inc.",
@@ -1195,12 +1178,29 @@ export const testimonial = [
       " The quality of the Hcode's work and communication is superb, and they feel like our internal engineering team. When it comes to hitting our development and company milestones, their team is there to deliver from day 1. They have been fantastic partners for us and we look forward to growing with the Hcode team.",
   },
   {
-    id: "5",
+    id: "3",
     profile_image: "../assets/img/client_image/tatina.jpg",
     person_name: "Tatiana Tian",
     company_name: " Co-founder & CEO at RE(SOURCE) ",
     testimonial_paragraph:
       "What I value the most about HCode is their startup mindset on agile testing. As a pre-seed startup that’s still looking for product market fit, it’s critical to have a technical partner who understands that speed is everything. HCode understood our use case which required quick iterations and quickly put together multiple versions of the product for us to test in the market. Their honesty and flexibility to deliver with our tight guidelines were greatly appreciated. We compared more than 30 teams across India, Europe and South America, and decided to proceed with HCode at the end.",
+  },
+  {
+    id: "4",
+    profile_image: "../assets/img/client_image/Suyash_Kothari.png",
+    person_name: "Suyash Kothari",
+    company_name: "Co-Founder, Ohana",
+    testimonial_paragraph:
+      "As a purely digital Edtech platform, high-quality engineering is a foundational part of our business. HCode has not only helped us go live but has helped consistently improve the product with fast iterations. On multiple occasions, they have put our platform first, and made recommendations to help us reduce costs on engineering (even if it may not necessarily be beneficial for HCode).<br/> <br/>In the current scenario of the tremendous demand-supply gap in engineering talent, HCode has been indispensable support! They are not an outsourcing partner, they are truly an extended team for us - Wholeheartedly recommended",
+  },
+
+  {
+    id: "5",
+    profile_image: "../assets/img/client_image/mohit_metha.png",
+    person_name: "Mohit Mehta",
+    company_name: "Co-Founder, Indira New York",
+    testimonial_paragraph:
+      "Hcode has been a pleasure to work with, they’re efficient, always communicative and available, and flexible. Couldn’t hope for a better team for all our dev needs. I highly recommend working with them and have recommended them to many friends/colleagues looking to build for the future.",
   },
 ];
 

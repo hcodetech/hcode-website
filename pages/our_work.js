@@ -8,7 +8,7 @@ import useGetFetch from "./hooks/useGetFetch";
 
 const our_work = () => {
   const [selectedCategory, setSelectedCategory] = useState([]);
-  const [portfolioData, isLoading] = useGetFetch(getAPIUrl(apiRoutes.PROJECT));
+  const [portfolioData, isLoading] = useGetFetch(getAPIUrl(apiRoutes.OUR_WORK));
   // Select Industry Card
   const setSelectedTech = (e, industryName) => {
     if (e.target.checked) {

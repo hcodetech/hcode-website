@@ -22,10 +22,16 @@ import CaseStudiesCard from "../components/CaseStudiesCard";
 import MobileSVG from '../public/assets/img/mobile-illu.svg';
 import BackendSVG from "../public/assets/img/backend-illu.svg";
 import BlockchainSVG from "../public/assets/img/blockchain-illu.svg";
+import { apiRoutes } from "./api/APIRoutes";
+import { getAPIUrl } from "./api/APIHelpers";
+import useGetFetch from "./hooks/useGetFetch";
 
 
 
 export default function Home() {
+  const [portfolioData, isPortfolioDataLoading] = useGetFetch(getAPIUrl(apiRoutes.OUR_WORK));
+  const [clientLogos, isClientLogosLoading] = useGetFetch(getAPIUrl(apiRoutes.CLIENT_LOGO));
+  console.log(clientLogos)
   return (
     <>
       <Head>

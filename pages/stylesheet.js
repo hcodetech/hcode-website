@@ -10,11 +10,17 @@ const stylesheet = () => {
             <div className="bg-[#333333] text-[#fff]"></div>
             <div className="bg-[#190830] text-[#ffffff]"></div>
             <div className="bg-[#343D52] text-[#485063]"></div>
+            <div className="bg-[#343D52] text-[#111111]"></div>
             <div className="bg-[#6BA564]"></div>
             <div className="bg-[#111625]"></div>
             <div className="bg-[#878E92]"></div>
             <div className="bg-[#82AACD]"></div>
             <div className="bg-[#87A9A6]"></div>
+            <div className="bg-[#F9F0EC]"></div>
+            <div className="bg-[#F2F2ED]"></div>
+            <div className="bg-[#FBFBFB]"></div>
+            <div className="bg-[#fff]"></div>
+            <div className="bg-[#fff]"></div>
             <div className="bg-[#fff]"></div>
         </div>
     )

@@ -14,16 +14,20 @@ import DotLoader from "react-spinners/DotLoader";
 import Modal from "../components/Modal";
 import { apiRoutes } from "./api/APIRoutes";
 import { getAPIUrl } from "./api/APIHelpers";
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/plain.css";
 const defaultColor = "#373536";
 function contact() {
   const [success, setSuccess] = useState(false);
   const [failure, setFailure] = useState(false);
-
+  const [responseMessage, setResponseMessage] = useState("");
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [loading, setLoading] = useState(false);
   const [companyName, setCompanyName] = useState("");
   const [companyEmail, setCompanyEmail] = useState("");
+  const [mobileNumber, setMobileNumber] = useState("+91");
+
   const [projectType, setProjectType] = useState("");
   const [projectLeadRequired, setProjectLeadRequired] = useState();
   const [projectDesc, setProjectDesc] = useState("");
@@ -48,7 +52,7 @@ function contact() {
     const contactUsFormData = {
       first_name: firstName,
       last_name: lastName,
-      mobile_number: "",
+      mobile_number: mobileNumber.length > 4 ? `{+${mobileNumber}}` : "",
       company_name: companyName,
       email: companyEmail,
       project_type: projectType,
@@ -59,9 +63,8 @@ function contact() {
       time_commitment: expectedTimeCommitment,
       tech_preference: preferredTechStack.join(","),
     };
-
     console.log(contactUsFormData);
-
+    console.log(mobileNumber.length > 3);
     const formData = new FormData();
     Object.entries(contactUsFormData).forEach(([key, value]) => {
       formData.append(key, value);
@@ -78,11 +81,22 @@ function contact() {
     try {
       setLoading(true);
       const res = await fetch(url, options);
+      if (!res.ok) {
+        if (res.status >= 400 && res.body) {
+          const json = await res.json();
+          window.scrollTo(0, 0);
+          setResponseMessage(json?.mobile_number);
+          setFailure(true);
+          return;
+        }
+        throw new Error(res);
+      }
       const res2 = await fetch(url2, options);
       setFirstName("");
       setLastName("");
       setCompanyName("");
       setCompanyEmail("");
+      setMobileNumber("");
       setProjectType("");
       setProjectLeadRequired();
       setProjectDesc("");
@@ -90,15 +104,16 @@ function contact() {
       setNumberOfEmployees("0");
       setPreferredTechStack([]);
       setExpectedTimeCommitment("0");
-      // alert('Thanks for your interest. We will contact you shortly.')
-      // console.log("Success")
+      // Show the Success Message
       setSuccess(true);
     } catch (e) {
+      // Show the failure Message
       setFailure(true);
-      // alert('We are unable to register your request at current time. Please send us an email at hello@hcode.tech')
     } finally {
       setLoading(false);
     }
+
+    window.scrollTo(0, 0);
   };
 
   return (
@@ -126,6 +141,7 @@ function contact() {
           iconColor={"text-red-600"}
           heading={"Oops !"}
           paragraph={
+            responseMessage ??
             "We are unable to register your request at current time. Please send us an email at hello@hcode.tech"
           }
         />
@@ -159,7 +175,7 @@ function contact() {
         </div>
         {/* Form Start Here */}
         <div className="px-4 py-8 md:p-10 col-span-12 md:col-span-8">
-          <h1 className="text-4xl font-semibold pb-3">
+          <h1 className="text-4xl font-semibold pb-5">
             Please enter the details{" "}
           </h1>
           <form autoComplete="off" onSubmit={contactUser}>
@@ -207,7 +223,6 @@ function contact() {
                 </h2>
                 {/* Company Name */}
                 <div className="col-span-12 mt-4">
-                  {/* TODO - remove this field by making company email field don't accept gmail using regex */}
                   <label
                     htmlFor="company-name"
                     className="block text-sm font-medium text-gray-700"
@@ -242,6 +257,35 @@ function contact() {
                     className="input-form"
                   />
                 </div>
+                {/* Mobile Number */}
+                <div className="col-span-12 mt-4 ">
+                  <label
+                    htmlFor="mobile-number"
+                    className="block text-sm  font-medium text-gray-700"
+                  >
+                    Mobile Number{" "}
+                    <span className="text-gray-400 font-medium">
+                      (optional)
+                    </span>
+                  </label>
+
+                  <PhoneInput
+                    value={mobileNumber}
+                    onChange={setMobileNumber}
+                    autoFormat
+                    inputStyle={{
+                      width: "100%",
+                      marginTop: "2px",
+                      borderRadius: "4px",
+                    }}
+                    containerClass="mt-1 focus:ring-primary focus:border-primary block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                    buttonStyle={{ borderRadius: "4px 0 0 4px" }}
+                  />
+                  <small className="italic text-xs">
+                    Please enter the mobile number with your country code.
+                  </small>
+                </div>
+
                 {/* Number of Employees */}
                 <div className="col-span-12 mt-4">
                   <label
@@ -267,7 +311,6 @@ function contact() {
                   </select>
                 </div>
               </div>
-
               {/* Your Project Details */}
               <div className="col-span-12 mt-4">
                 <h2 className="font-semibold text-xl pb-2 border-b-2">
@@ -465,7 +508,10 @@ function contact() {
                         />
                         <label
                           htmlFor={tech.tech_name}
-                          className={`block text-sm min-w-[140px] font-medium text-gray-700 border border-1 rounded-lg text-center px-5 py-3 ${ preferredTechStack.includes(tech.tech_name) && "bg-blue-200"}`}
+                          className={`block text-sm min-w-[140px] font-medium text-gray-700 border border-1 rounded-lg text-center px-5 py-3 ${
+                            preferredTechStack.includes(tech.tech_name) &&
+                            "bg-blue-200"
+                          }`}
                         >
                           {tech.tech_name}
                           <br />
