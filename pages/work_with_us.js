@@ -119,12 +119,12 @@ function work_with_us() {
         <h1 className='font-semibold text-5xl mt-2 mb-4'>What we offer</h1>
         <div className='grid grid-cols-12'>
           {what_we_do.map((item, index) => (
-            <div className='col-span-12 mb-7 md:mb-0 md:col-span-6'>
+            <div className='col-span-12 mb-7 md:mb-0 md:col-span-6' key={index}>
               <img src={item.img} alt={item.heading} />
               <h2 className='font-semibold text-2xl mt-3'>{item.heading}</h2>
               <ul className='list-disc list-inside mt-2'>
                 {item.points.map((li, index) => (
-                  <li>{li.point}</li>
+                  <li key={index}>{li.point}</li>
                 ))}
               </ul>
             </div>

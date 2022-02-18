@@ -258,7 +258,7 @@ function contact() {
                   />
                 </div>
                 {/* Mobile Number */}
-                <div className="col-span-12 mt-4 ">
+                <div className="col-span-12 mt-4 hidden ">
                   <label
                     htmlFor="mobile-number"
                     className="block text-sm  font-medium text-gray-700"

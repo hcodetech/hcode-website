@@ -8,11 +8,7 @@ import {
 } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
 import { testimonial } from "../constants/constants";
-import {
-  ArrowRightIcon,
-  ChevronLeftIcon,
-  ChevronRightIcon,
-} from "@heroicons/react/solid";
+
 import {
   ArrowNarrowLeftIcon,
   ArrowNarrowRightIcon,

@@ -4,8 +4,8 @@
     "dev": "next dev",
     "build": "next build && next export",
     "start": "next start",
-    "postbuild": "next-sitemap",
-    "deploy":"npm run build && aws s3 cp out/ s3://hcode.tech --recursive"
+    "deploy":"npm run build && aws s3 cp build/ s3://hcode.tech --recursive",
+    "postbuild": "next-sitemap"
   },
   "dependencies": {
     "@headlessui/react": "^1.4.1",
