@@ -18,17 +18,14 @@ import { ArrowRightIcon } from "@heroicons/react/solid";
 import Testimonial from "../components/Testimonial";
 import CaseStudiesCard from "../components/CaseStudiesCard";
 
-import MobileSVG from '../public/assets/img/mobile-illu.svg';
+import MobileSVG from "../public/assets/img/mobile-illu.svg";
 import BackendSVG from "../public/assets/img/backend-illu.svg";
 import BlockchainSVG from "../public/assets/img/blockchain-illu.svg";
 import { apiRoutes } from "./api/APIRoutes";
 import { getAPIUrl } from "./api/APIHelpers";
 import useGetFetch from "./hooks/useGetFetch";
 
-
-
 export default function Home() {
- 
   // const [clientLogos, isClientLogosLoading] = useGetFetch(getAPIUrl(apiRoutes.CLIENT_LOGO));
   return (
     <>
@@ -48,7 +45,7 @@ export default function Home() {
         <div className="new-container ">
           <ServicesCard heading={true} />
         </div>
-        <div className='hidden'>
+        <div className="hidden">
           <div className="bg-primary ">
             <div className="text-white bg-serviceIllustration bg-left-bottom bg-no-repeat w-full bg-contain ">
               <div className="new-container text-center pt-32 -mt-20 pb-24 md:pb-24 md:pt-52 md:-mt-32">
@@ -172,20 +169,18 @@ export default function Home() {
         <Process data={how_to_get_started} />
       </div>
 
-
       {/* Case Studies */}
       <div className=" ">
         <h2 className="text-4xl font-semibold text-center py-5 mb-4">
           Our Work
         </h2>
-          <CaseStudiesCard  />
+        <CaseStudiesCard />
         <div className="text-center mt-10 mb-14">
           <a href="/our_work" className="outline-button px-10  text-center">
             See Our Portfolio
           </a>
         </div>
       </div>
-      
 
       {/* Core Team  */}
       <section className="py-14 bg-gray-100 text-center">
