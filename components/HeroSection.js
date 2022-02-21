@@ -53,14 +53,18 @@ function HeroSection() {
                     deployment, testing, and maintenance
                   </p>
                   {/* <button className="bg-white px-16 py-4 text-primary rounded hover:bg-gray-100  mt-4">Get In Touch</button> */}
+                  <div className="flex items-center justify-center">
+                    
                   <a
                     href='/contact'
-                    className='pt-5 pb-1  mt-2 flex-nowrap border-b border-white inline-flex text-white hover:scale-100  cursor-pointer hover:opacity-100'
+                    className='pt-5 pb-1  mt-2 w-50 whitespace-nowrap flex-nowrap border-b border-white inline-flex text-white hover:scale-100  cursor-pointer hover:opacity-100 '
                   >
                     Get In Touch
-                    <ArrowRightIcon className='w-6 md:ml-2 ' />
+                    <ArrowRightIcon className='w-6 md:ml-2  h-full' />
                   </a>
                 </div>
+                </div>
+
               </div>
               <img
                 src={image_slider_1}
@@ -84,11 +88,11 @@ function HeroSection() {
                   </p>
                   <a
                     href='/contact'
-                    className='pt-5 pb-1  mt-2 flex-nowrap border-b border-white inline-flex text-white hover:scale-100  cursor-pointer hover:opacity-100'
+                    className='pt-5 pb-1  mt-2 whitespace-nowrap flex-nowrap border-b border-white inline-flex text-white hover:scale-100  cursor-pointer hover:opacity-100'
                   >
                     <span className='flex'>
                       Get In Touch
-                      <ArrowRightIcon className='w-6 ml-2 ' />
+                      <ArrowRightIcon className='w-6 ml-2 h-full' />
                     </span>
                   </a>
                 </div>
@@ -115,10 +119,10 @@ function HeroSection() {
                   </p>
                   <a
                     href='/contact'
-                    className='pt-5 pb-1 flex-nowrap  border-b border-white inline-flex text-white hover:scale-100  cursor-pointer hover:opacity-100'
+                    className='pt-5 pb-1 whitespace-nowrap flex-nowrap  border-b border-white inline-flex text-white hover:scale-100  cursor-pointer hover:opacity-100'
                   >
                     Get In Touch
-                    <ArrowRightIcon className='w-6 ml-2 ' />
+                    <ArrowRightIcon className='w-6 ml-2 h-full' />
                   </a>
                 </div>
               </div>

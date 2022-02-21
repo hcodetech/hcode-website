@@ -18,6 +18,7 @@ cp sitemap.xml out/.
 
 final step*
 ```
+npm run build
 cd out
 aws s3 cp . s3://hcode.tech --recursive
 for old in *.html; do aws s3 mv s3://hcode.tech/$old s3://hcode.tech/`basename $old .html`; done
