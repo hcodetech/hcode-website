@@ -24,7 +24,7 @@ const blockchain = () => {
   const [id, setId] = useState(1);
   const [activeTab, setActiveTab] = useState(0);
 
-  const [portfolioData, isLoading] = useGetFetch(getAPIUrl(apiRoutes.PROJECT));
+  const [portfolioData, isLoading] = useGetFetch(getAPIUrl(apiRoutes.OUR_WORK));
 
   const selectedTabsFn = (condition) =>
     condition

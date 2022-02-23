@@ -22,7 +22,7 @@ import Accordion from "../../components/Accordion";
 
 const mvp = () => {
   const [selectedCategory, setSelectedCategory] = useState(["MVP"]);
-  const [portfolioData, isLoading] = useGetFetch(getAPIUrl(apiRoutes.PROJECT));
+  const [portfolioData, isLoading] = useGetFetch(getAPIUrl(apiRoutes.OUR_WORK));
 
   return (
     <>
