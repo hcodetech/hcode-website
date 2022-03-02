@@ -162,11 +162,15 @@ function contact() {
             </div>
             <div className="flex mt-4 ">
               <PhoneIcon className="w-6 h-6 mr-2" />
-              +91-9416033324
+              <a href="tel:+919350674450">                
+              +91-9350674450
+              </a>
             </div>
             <div className="flex mt-4 ">
               <ChatAltIcon className="w-6 h-6 mr-2" />
+              <a href="mailto:hello@hcode.tech">
               hello@hcode.tech
+              </a>
             </div>
           </div>
           <div className=" left-0 bottom-0 hidden md:block md:absolute ">
