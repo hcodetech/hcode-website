@@ -43,6 +43,13 @@ function work_with_us() {
             >
               See Open Positions
             </a>
+
+            <p className="mt-8 ">
+            Connect with the HR: <a  className="text-primary underline" 
+              href='mailto:hr@hcode.tech'
+              target='_blank'
+            >hr@hcode.tech</a>
+            </p>
           </div>
           <div className='relative sm:h-[322px] w-full lg:w-[558px] lg:mt-28 '>
             <img
@@ -181,17 +188,16 @@ function work_with_us() {
             className='rounded-lg'
           />
           <div className='my-4 md:my-auto md:w-4/5 ml-3'>
-            <h1 className='text-4xl font-semibold'>Are you a recruiter?</h1>
-            <p className='text-lg mt-2 mb-8'>
-              If you are recruiter looking to help us with our hiring needs,
-              please get in touch with us below.
+            <h1 className='text-3xl md:text-4xl font-semibold'>Connect with the HR</h1>
+            <p className='text-base md:text-lg mt-2 mb-8'>
+            Are you a Candidate exploring working options with us or a Recruiter who can help us with our hiring needs.
             </p>
             <a
               href='mailto:hr@hcode.tech'
               target='_blank'
               className='primary-button text-ce'
             >
-              Get In Touch
+              Write to HR
             </a>
           </div>
         </div>
