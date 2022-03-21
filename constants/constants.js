@@ -128,6 +128,12 @@ export const TEAM = [
     bio: "PM with exp. of building products with multiple startups. Ex Goldman Sachs, HackerRank, IIT Bombay",
     link: "https://www.linkedin.com/in/maheshwariarpit/",
   },
+  {
+    image: "/assets/img/hcode_about_us_rishabh.jpg",
+    name: "Rishabh Garg",
+    bio: "EM with experience of building Enterprise Applications.Ex-Siemens, NIT Durgapur",
+    link: "https://www.linkedin.com/in/rishabh-garg-77023ab6/",
+  },
 ];
 
 export const our_service = {

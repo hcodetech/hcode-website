@@ -188,7 +188,7 @@ export default function Home() {
           <h1 className="font-poppins text-center font-semibold text-3xl  md:text-4xl md:leading-tight">
             Our Core Team
           </h1>
-          <div className="grid grid-cols-2 gap-8 md:grid-cols-3  xl:grid-cols-4 mt-7">
+          <div className="grid grid-cols-2 gap-8 md:grid-cols-3  xl:grid-cols-5 mt-7">
             {TEAM.map(({ name, image, bio, link }, index) => (
               <Team
                 key={index}
