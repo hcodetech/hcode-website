@@ -76,17 +76,17 @@ function about() {
         <h1 className='font-poppins text-center font-semibold text-3xl  md:text-4xl md:leading-tight'>
           Our Core Team
         </h1>
-        <div className='grid grid-cols-2 gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-7'>
+        <div className="grid grid-cols-2 gap-8 md:grid-cols-3  xl:grid-cols-5 mt-7">
           {TEAM.map(({ name, image, bio, link }, index) => (
             <Team key={index} name={name} image={image} bio={bio} link={link} />
           ))}
         </div>
         <div>
-          <h6 className='font-semibold py-5 text-lg'>
+          <h6 className='font-semibold pt-16 pb-5 text-lg'>
             Interested in joining the Hcode family?
           </h6>
           <a
-            className=' mt-20  primary-outline'
+            className=' mt-20   primary-outline'
             href='https://in.indeed.com/cmp/Hcode-Technologies/jobs'
             target='_blank'
           >
