@@ -1178,6 +1178,14 @@ export const testimonial = [
   },
   {
     id: "2",
+    profile_image: "../assets/img/client_image/alex_chumbley.jpg",
+    person_name: "Alex Chumbley",
+    company_name: " Co-founder at Fable (YC W21)",
+    testimonial_paragraph:
+      "HCode has a been a fantastic partner through the product development journey. The management team is quick and responsive, and always looking for feedback on how to improve. The team itself brings deep engineering experience to bear, and a willingness to pivot and change with priorities. We definitely recommend this team if you're looking to build quality product, quickly.",
+  },
+  {
+    id: "3",
     profile_image: "../assets/img/client_image/naam_lee.png",
     person_name: "Nam Lee",
     company_name: "CEO, Pollinate Inc.",
@@ -1185,7 +1193,7 @@ export const testimonial = [
       " The quality of the Hcode's work and communication is superb, and they feel like our internal engineering team. When it comes to hitting our development and company milestones, their team is there to deliver from day 1. They have been fantastic partners for us and we look forward to growing with the Hcode team.",
   },
   {
-    id: "3",
+    id: "4",
     profile_image: "../assets/img/client_image/tatina.jpg",
     person_name: "Tatiana Tian",
     company_name: " Co-founder & CEO at RE(SOURCE) ",
@@ -1193,7 +1201,7 @@ export const testimonial = [
       "What I value the most about HCode is their startup mindset on agile testing. As a pre-seed startup that’s still looking for product market fit, it’s critical to have a technical partner who understands that speed is everything. HCode understood our use case which required quick iterations and quickly put together multiple versions of the product for us to test in the market. Their honesty and flexibility to deliver with our tight guidelines were greatly appreciated. We compared more than 30 teams across India, Europe and South America, and decided to proceed with HCode at the end.",
   },
   {
-    id: "4",
+    id: "5",
     profile_image: "../assets/img/client_image/Suyash_Kothari.png",
     person_name: "Suyash Kothari",
     company_name: "Co-Founder, Ohana",
@@ -1202,7 +1210,7 @@ export const testimonial = [
   },
 
   {
-    id: "5",
+    id: "6",
     profile_image: "../assets/img/client_image/mohit_metha.png",
     person_name: "Mohit Mehta",
     company_name: "Co-Founder, Indira New York",
