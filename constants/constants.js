@@ -313,6 +313,14 @@ export const city = [
     img: "/assets/icons/new-delhi.png",
     name: "New Delhi",
   },
+  {
+    img: "/assets/icons/Berlin.svg",
+    name: "Berlin",
+  },
+  {
+    img: "/assets/icons/chicago.svg",
+    name: "Chicago",
+  },
 ];
 
 export const faq_hiring = [
@@ -1193,7 +1201,7 @@ export const testimonial = [
   {
     id: "3",
     profile_image: "../assets/img/client_image/naam_lee.png",
-    person_name: "Nam Lee",
+    person_name: "Nam Le",
     company_name: "CEO, Pollinate Inc.",
     testimonial_paragraph:
       " The quality of the Hcode's work and communication is superb, and they feel like our internal engineering team. When it comes to hitting our development and company milestones, their team is there to deliver from day 1. They have been fantastic partners for us and we look forward to growing with the Hcode team.",

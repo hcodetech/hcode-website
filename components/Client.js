@@ -13,9 +13,9 @@ function Client(props) {
                         </div>
                     ))}
                     {props.data.map(({ img, name, alt }, index) => (
-                        <div className="slide" key={index}>
-                            <img src={img}   alt={alt} className="" />
-                            <h6 className="font-medium text-primary float-left">
+                        <div className="slide text-center" key={index}>
+                            <img src={img}   alt={alt} className="max-h-20" />
+                            <h6 className="font-medium text-primary float-left text-center">
                                 {name && name}
                             </h6>
                         </div>
