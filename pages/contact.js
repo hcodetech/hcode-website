@@ -71,8 +71,8 @@ function contact() {
     });
 
     const url = getAPIUrl(apiRoutes.CONTACT);
-    const url2 =
-      "https://script.google.com/a/hcode.tech/macros/s/AKfycbytrG1hsiIqFlkL4vMMNVRy0WXpEq2E26mU8JGuIA/exec";
+    // const url2 =
+    //   "https://script.google.com/a/hcode.tech/macros/s/AKfycbytrG1hsiIqFlkL4vMMNVRy0WXpEq2E26mU8JGuIA/exec";
     const options = {
       body: formData,
       method: "POST",
@@ -91,7 +91,7 @@ function contact() {
         }
         throw new Error(res);
       }
-      const res2 = await fetch(url2, options);
+      // const res2 = await fetch(url2, options);
       setFirstName("");
       setLastName("");
       setCompanyName("");
@@ -162,15 +162,11 @@ function contact() {
             </div>
             <div className="flex mt-4 ">
               <PhoneIcon className="w-6 h-6 mr-2" />
-              <a href="tel:+919350674450">                
-              +91-9350674450
-              </a>
+              <a href="tel:+919350674450">+91-9350674450</a>
             </div>
             <div className="flex mt-4 ">
               <ChatAltIcon className="w-6 h-6 mr-2" />
-              <a href="mailto:hello@hcode.tech">
-              hello@hcode.tech
-              </a>
+              <a href="mailto:hello@hcode.tech">hello@hcode.tech</a>
             </div>
           </div>
           <div className=" left-0 bottom-0 hidden md:block md:absolute ">
