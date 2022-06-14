@@ -70,7 +70,11 @@ const CardPortfolio = (props) => {
           )}
         </div>
         <div className="col-span-12 order-1 lg:order-2 lg:col-span-6 ml-auto">
-          <img src={cardData.thumbnail_image} alt={cardData.name} />
+          <img
+            src={cardData.thumbnail_image}
+            alt={cardData.name}
+            className="lg:w-[870px] h-auto"
+          />
         </div>
       </div>
     );
