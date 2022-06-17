@@ -111,28 +111,40 @@ export const TEAM = [
     link: "https://www.linkedin.com/in/shashanksingla/",
   },
   {
-    image: "/assets/img/hcode_about_us_shweta.jpg",
-    name: "Shweta Goel",
-    bio: "Started, grown & led multiple quant teams as VP in Goldman Sachs, New York, IIT Delhi",
-    link: "https://www.linkedin.com/in/shweta-singla/",
-  },
-  {
     image: "/assets/img/hcode_about_us_rakesh.jpg",
     name: "Rakesh Sehgal",
     bio: "Co-founded an ad-tech platform Paytunes. Experienced in MVP building. Ex- PwC, IIT Delhi",
     link: "https://www.linkedin.com/in/sehgalrakesh/",
   },
   {
-    image: "/assets/img/hcode_about_us_arpit.jpg",
-    name: "Arpit Maheshwari",
-    bio: "PM with exp. of building products with multiple startups. Ex Goldman Sachs, HackerRank, IIT Bombay",
-    link: "https://www.linkedin.com/in/maheshwariarpit/",
-  },
-  {
     image: "/assets/img/hcode_about_us_rishabh.jpg",
     name: "Rishabh Garg",
     bio: "EM with experience of building Enterprise Applications.Ex-Siemens, NIT Durgapur",
     link: "https://www.linkedin.com/in/rishabh-garg-77023ab6/",
+  },
+];
+
+export const OUR_MENTORS = [
+  {
+    image: "/assets/img/hcode_about_us_shweta.jpg",
+    name: "Shweta Goel",
+    title: "Communication Coach",
+    bio: "Started, grown & led multiple quant teams as VP in Goldman Sachs, New York, IIT Delhi",
+    link: "https://www.linkedin.com/in/shweta-singla/",
+  },
+  {
+    image: "/assets/img/hcode_about_us_arpit.jpg",
+    name: "Arpit Maheshwari",
+    title: "Leadership Coach",
+    bio: "PM with exp. of building products with multiple startups. Ex Goldman Sachs, HackerRank, IIT Bombay",
+    link: "https://www.linkedin.com/in/maheshwariarpit/",
+  },
+  {
+    image: "/assets/img/hcode_about_us_sakshi.jpg",
+    name: "Sakshi Bhatia",
+    title: "Wellness Coach",
+    bio: "Head of Data Science (Kristal.AI), Yoga Teacher, Ex-American Express, IIT Delhi",
+    link: "https://www.linkedin.com/in/sakshibhatia22/",
   },
 ];
 

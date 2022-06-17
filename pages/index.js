@@ -184,18 +184,19 @@ export default function Home() {
 
       {/* Core Team  */}
       <section className="py-14 bg-gray-100 text-center">
-        <div className="new-container">
+        <div className="lg:new-container">
           <h1 className="font-poppins text-center font-semibold text-3xl  md:text-4xl md:leading-tight">
             Our Core Team
           </h1>
-          <div className="grid grid-cols-2 gap-8 md:grid-cols-3  xl:grid-cols-5 mt-7">
-            {TEAM.map(({ name, image, bio, link }, index) => (
+          <div className="flex-wrap flex justify-between mt-7 w-3/4 mx-auto">
+            {TEAM.map(({ name, image, bio, link, title }, index) => (
               <Team
                 key={index}
                 name={name}
                 image={image}
                 bio={bio}
                 link={link}
+                title={title}
               />
             ))}
           </div>
