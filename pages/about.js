@@ -10,6 +10,7 @@ import { ArrowRightIcon } from "@heroicons/react/solid";
 function about() {
   return (
     <>
+    
       <Head>
         <title>About Us | Hcode Techonolgies </title>
         {/* <link rel="icon" href="/favicon.ico" /> */}
