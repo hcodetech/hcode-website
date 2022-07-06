@@ -21,23 +21,23 @@ function submit_your_application() {
   const [alternatePostalCode, setAlternatePostalCode] = useState("");
   const [email, setEmail] = useState("");
   const [mobileNumber, setMobileNumber] = useState("+91");
-  const [position, setPosition] = useState("0");
+  const [position, setPosition] = useState("");
   const [startDate, setStartDate] = useState("");
   const [desiredPay, setDesiredPay] = useState("");
-  const [employeeStatus, setEmployeeStatus] = useState("");
-  const [checked, setChecked] = useState("");
+  const [employeeStatus, setEmployeeStatus] = useState(false);
+  const [checkedCurrentAddress, setCheckedCurrentAddress] = useState(false);
 
 
-  const check =(event) =>{
-    if(event.target.checked == true){
-      setChecked(true)
+  const SameAsCurrentAddress = (event) => {
+    if (event.target.checked === true) {
+      setCheckedCurrentAddress(true)
       setAlternateStreetName(streetName);
       setAlternateCityName(cityName);
       setAlternateStateName(stateName);
       setAlternatePostalCode(postalCode);
     }
-    else{
-      setChecked(false)
+    else {
+      setCheckedCurrentAddress(false)
       setAlternateStreetName("");
       setAlternateCityName("");
       setAlternateStateName("");
@@ -79,11 +79,11 @@ function submit_your_application() {
         <title>submit-your-application | Hcode Technologies </title>
       </Head>
       {loading && (
-      <div className="fixed top-1/2 inset-x-2/4">
-        <DotLoader color={defaultColor} size={60} />
-      </div>
-    )}
-     {success && (
+        <div className="fixed top-1/2 inset-x-2/4">
+          <DotLoader color={defaultColor} size={60} />
+        </div>
+      )}
+      {success && (
         <Modal
           color={"bg-blue-100"}
           iconColor={"text-blue-600"}
@@ -164,7 +164,7 @@ function submit_your_application() {
                   {/* City */}
                   <div>
                     <label
-                      htmlFor="company-email"
+                      htmlFor="city-name"
                       className="block text-sm font-medium text-gray-700"
                     >
                       City<sup>*</sup>
@@ -182,7 +182,7 @@ function submit_your_application() {
                   {/* State */}
                   <div>
                     <label
-                      htmlFor="company-email"
+                      htmlFor="state-name"
                       className="block text-sm font-medium text-gray-700"
                     >
                       State<sup>*</sup>
@@ -200,7 +200,7 @@ function submit_your_application() {
                   {/* Postal code */}
                   <div>
                     <label
-                      htmlFor="no-of-employees"
+                      htmlFor="postal-code"
                       className="block text-sm font-medium text-gray-700"
                     >
                       Postal code<sup>*</sup>
@@ -216,17 +216,17 @@ function submit_your_application() {
                     />
                   </div>
                 </div>
-                <div className="mt-4">
-                <label>
-                <input
-                type="checkbox"
-                onClick={(e)=>check(e)}
-                />
-                Same as current address
-                </label>
+                <div className="mt-4 flex items-center gap-2">
+                    <input
+                      type="checkbox"
+                      onClick={(e) => SameAsCurrentAddress(e)}
+                    />
+                    <label>
+                    Same as current address
+                  </label>
                 </div>
-                
-                
+
+
               </div>
               <div className="col-span-12">
                 <h2 className="font-semibold text-xl pb-2 border-b-2">
@@ -242,7 +242,7 @@ function submit_your_application() {
                   </label>
                   <input
                     required
-                    value={checked ? streetName :alternateStreetName}
+                    value={checkedCurrentAddress ? streetName : alternateStreetName}
                     onChange={(e) => setAlternateStreetName(e.target.value)}
                     type="text"
                     name="street-name"
@@ -254,15 +254,15 @@ function submit_your_application() {
                   {/* City */}
                   <div>
                     <label
-                      htmlFor="company-email"
+                      htmlFor="alternate-city-name"
                       className="block text-sm font-medium text-gray-700"
                     >
                       City<sup>*</sup>
                     </label>
                     <input
                       required
-                      value={checked ? cityName : alternateCityName}
-                    onChange={(e) => setAlternateCityName(e.target.value)}
+                      value={checkedCurrentAddress ? cityName : alternateCityName}
+                      onChange={(e) => setAlternateCityName(e.target.value)}
                       type="text"
                       name="city"
                       id="city"
@@ -272,15 +272,15 @@ function submit_your_application() {
                   {/* State */}
                   <div>
                     <label
-                      htmlFor="company-email"
+                      htmlFor="alternate-state-name"
                       className="block text-sm font-medium text-gray-700"
                     >
                       State<sup>*</sup>
                     </label>
                     <input
                       required
-                      value={checked ? stateName : alternateStateName}
-                    onChange={(e) => setAlternateStateName(e.target.value)}
+                      value={checkedCurrentAddress ? stateName : alternateStateName}
+                      onChange={(e) => setAlternateStateName(e.target.value)}
                       type="text"
                       name="state"
                       id="state"
@@ -290,14 +290,14 @@ function submit_your_application() {
                   {/* Postal code */}
                   <div>
                     <label
-                      htmlFor="no-of-employees"
+                      htmlFor="alternate-postal-code"
                       className="block text-sm font-medium text-gray-700"
                     >
                       Postal code<sup>*</sup>
                     </label>
                     <input
                       required
-                      value={checked ? postalCode : alternatePostalCode}
+                      value={checkedCurrentAddress ? postalCode : alternatePostalCode}
                       onChange={(e) => setAlternatePostalCode(e.target.value)}
                       type="number"
                       name="postal-code"
@@ -368,24 +368,24 @@ function submit_your_application() {
                 </h2>
                 <div className="col-span-12 mt-4">
                   <label>
-                    Position sought
+                    Applied for position
                   </label>
                   <select
-                  value={position}
-                  onChange={(e) => {
-                    setPosition(e.target.value);
-                  }}
-                  required
-                  id="position"
-                  name="position"
-                  className="mt-1 block w-full py-2 px-3 input-form"
-                >
-                  <option value="0">Choose-one</option>
-                  <option value="1">Frontend</option>
-                  <option value="2">Backend</option>
-                  <option value="3">MERN Stack</option>
-                  <option value="4">Python</option>
-                </select>
+                    value={position}
+                    onChange={(e) => {
+                      setPosition(e.target.value);
+                    }}
+                    required
+                    id="position"
+                    name="position"
+                    className="mt-1 block w-full py-2 px-3 input-form"
+                  >
+                    <option value="" disabled>Choose-one</option>
+                    <option value="Frontend">Frontend</option>
+                    <option value="Backend">Backend</option>
+                    <option value="Mern-Stack">MERN Stack</option>
+                    <option value="Python">Python</option>
+                  </select>
                 </div>
                 <div className="col-span-12 mt-4">
                   <label>
@@ -395,8 +395,8 @@ function submit_your_application() {
                     required
                     value={startDate}
                     onChange={(e) => {
-                    setStartDate(e.target.value);
-                  }}
+                      setStartDate(e.target.value);
+                    }}
                     type="date"
                     name="position-sought"
                     id="position-sought"
@@ -411,20 +411,52 @@ function submit_your_application() {
                     required
                     value={desiredPay}
                     onChange={(e) => {
-                    setDesiredPay(e.target.value);
-                  }}
+                      setDesiredPay(e.target.value);
+                    }}
                     type="text"
                     name="position-sought"
                     id="position-sought"
                     className="input-form"
                   />
                 </div>
-                <div className="col-span-12 mt-4">
+                <div className="mt-4 flex">
                   <label className="mr-4">
                     Are you currently employed?
                   </label>
-                 <input type="radio" value="Yes" name="employeeStatus" /> Yes
-                <input className="ml-4" type="radio" value="No" name="employeeStatus" /> No
+                  <div className="flex items-center">
+                    <input
+                      required
+                      checked={employeeStatus === true}
+                      onChange={(e) => setEmployeeStatus(true)}
+                      id="employee-status"
+                      name="employee-status"
+                      type="radio"
+                      className="focus:ring-primary h-4 w-4 text-primary border-gray-300"
+                    />
+                    <label
+                      htmlFor="employee-status"
+                      className="ml-3 block text-sm font-medium text-gray-700"
+                    >
+                      Yes
+                    </label>
+                  </div>
+                  <div className="flex items-center ml-5">
+                    <input
+                      required
+                      checked={employeeStatus === false}
+                      onChange={(e) => setEmployeeStatus(false)}
+                      id="employee-status-no"
+                      name="employee-status"
+                      type="radio"
+                      className="focus:ring-primary h-4 w-4 text-primary border-gray-300"
+                    />
+                    <label
+                      htmlFor="employee-status-no"
+                      className="ml-3 block text-sm font-medium text-gray-700"
+                    >
+                      No
+                    </label>
+                  </div>
                 </div>
               </div>
               <div className="col-span-12 lg:col-span-4">
