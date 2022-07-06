@@ -45,10 +45,10 @@ function submit_your_application() {
     }
   }
 
-  const contactUser = async (event) => {
+  const submitApplication = async (event) => {
     setSuccess(false);
     event.preventDefault();
-    const contactUsFormData = {
+    const submitApplicationFormData = {
       first_name: firstName,
       last_name: lastName,
       mobile_number: mobileNumber.length > 4 ? `{+${mobileNumber}}` : "",
@@ -66,7 +66,7 @@ function submit_your_application() {
       start_date: startDate,
       desired_pay: desiredPay
     };
-    console.log(contactUsFormData);
+    console.log(submitApplicationFormData);
     // setLoading(true)
     setSuccess(true)
     // console.log(mobileNumber.length > 3);
@@ -99,7 +99,7 @@ function submit_your_application() {
           <h1 className="text-4xl font-semibold pb-5">
             Please enter the details{" "}
           </h1>
-          <form autoComplete="off" onSubmit={contactUser}>
+          <form autoComplete="off" onSubmit={submitApplication}>
             <div className="grid grid-cols-12 gap-6">
               {/* Full Name */}
               <div className="col-span-6">
