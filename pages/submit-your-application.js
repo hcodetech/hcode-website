@@ -4,23 +4,26 @@ import DotLoader from "react-spinners/DotLoader";
 import Modal from "../components/Modal";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/plain.css";
+import { FileUploader } from "react-drag-drop-files";
+
 const defaultColor = "#373536";
+const fileTypes = ["JPG", "PNG", "PDF","DOC"];
 
 function submit_your_application() {
   const [success, setSuccess] = useState(false);
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [loading, setLoading] = useState(false);
-  const [streetName, setStreetName] = useState("");
   const [cityName, setCityName] = useState("");
   const [stateName, setStateName] = useState("");
   const [postalCode, setPostalCode] = useState("");
-  const [alternateStreetName, setAlternateStreetName] = useState("");
   const [alternateCityName, setAlternateCityName] = useState("");
   const [alternateStateName, setAlternateStateName] = useState("");
   const [alternatePostalCode, setAlternatePostalCode] = useState("");
   const [email, setEmail] = useState("");
   const [mobileNumber, setMobileNumber] = useState("+91");
+  const [resume, setResume] = useState("");
+  const [textAboutYourself, setTextAboutYourself] = useState("");
   const [position, setPosition] = useState("");
   const [startDate, setStartDate] = useState("");
   const [desiredPay, setDesiredPay] = useState("");
@@ -31,19 +34,21 @@ function submit_your_application() {
   const SameAsCurrentAddress = (event) => {
     if (event.target.checked === true) {
       setCheckedCurrentAddress(true)
-      setAlternateStreetName(streetName);
+      // setAlternateStreetName(streetName);
       setAlternateCityName(cityName);
       setAlternateStateName(stateName);
       setAlternatePostalCode(postalCode);
     }
     else {
       setCheckedCurrentAddress(false)
-      setAlternateStreetName("");
+      // setAlternateStreetName("");
       setAlternateCityName("");
       setAlternateStateName("");
       setAlternatePostalCode("");
     }
   }
+
+  
 
   const submitApplication = async (event) => {
     setSuccess(false);
@@ -52,15 +57,15 @@ function submit_your_application() {
       first_name: firstName,
       last_name: lastName,
       mobile_number: mobileNumber.length > 4 ? `{+${mobileNumber}}` : "",
-      street_name: streetName,
       city_name: cityName,
       state_name: stateName,
       postal_code: postalCode,
-      alternate_street_name: alternateStreetName,
       alternate_city_name: alternateCityName,
       alternate_state_name: alternateStateName,
       alternate_postal_code: alternatePostalCode,
       email: email,
+      resume: resume,
+      text_about_Yourself: textAboutYourself,
       position: position,
       employe_status: employeeStatus,
       start_date: startDate,
@@ -69,7 +74,6 @@ function submit_your_application() {
     console.log(submitApplicationFormData);
     // setLoading(true)
     setSuccess(true)
-    // console.log(mobileNumber.length > 3);
     window.scrollTo(0, 0);
   };
 
@@ -142,25 +146,7 @@ function submit_your_application() {
                 <h2 className="font-semibold text-xl pb-2 border-b-2">
                   Address
                 </h2>
-                {/* Street */}
-                <div className="col-span-12 mt-4">
-                  <label
-                    htmlFor="street-name"
-                    className="block text-sm font-medium text-gray-700"
-                  >
-                    Street<sup>*</sup>
-                  </label>
-                  <input
-                    required
-                    value={streetName}
-                    onChange={(e) => setStreetName(e.target.value)}
-                    type="text"
-                    name="street-name"
-                    id="street-name"
-                    className="input-form"
-                  />
-                </div>
-                <div className="flex flex-col-3 gap-2 mt-4">
+                <div className="md:flex flex-col-3 gap-2 mt-4">
                   {/* City */}
                   <div>
                     <label
@@ -217,11 +203,11 @@ function submit_your_application() {
                   </div>
                 </div>
                 <div className="mt-4 flex items-center gap-2">
-                    <input
-                      type="checkbox"
-                      onClick={(e) => SameAsCurrentAddress(e)}
-                    />
-                    <label>
+                  <input
+                    type="checkbox"
+                    onClick={(e) => SameAsCurrentAddress(e)}
+                  />
+                  <label>
                     Same as current address
                   </label>
                 </div>
@@ -232,35 +218,16 @@ function submit_your_application() {
                 <h2 className="font-semibold text-xl pb-2 border-b-2">
                   Alternate Address
                 </h2>
-                {/* Street */}
-                <div className="col-span-12 mt-4">
-                  <label
-                    htmlFor="street-name"
-                    className="block text-sm font-medium text-gray-700"
-                  >
-                    Street<sup>*</sup>
-                  </label>
-                  <input
-                    required
-                    value={checkedCurrentAddress ? streetName : alternateStreetName}
-                    onChange={(e) => setAlternateStreetName(e.target.value)}
-                    type="text"
-                    name="street-name"
-                    id="street-name"
-                    className="input-form"
-                  />
-                </div>
-                <div className="flex flex-col-3 gap-2 mt-4">
+                <div className="md:flex flex-col-3 gap-2 mt-4">
                   {/* City */}
                   <div>
                     <label
                       htmlFor="alternate-city-name"
                       className="block text-sm font-medium text-gray-700"
                     >
-                      City<sup>*</sup>
+                      City
                     </label>
                     <input
-                      required
                       value={checkedCurrentAddress ? cityName : alternateCityName}
                       onChange={(e) => setAlternateCityName(e.target.value)}
                       type="text"
@@ -275,10 +242,9 @@ function submit_your_application() {
                       htmlFor="alternate-state-name"
                       className="block text-sm font-medium text-gray-700"
                     >
-                      State<sup>*</sup>
+                      State
                     </label>
                     <input
-                      required
                       value={checkedCurrentAddress ? stateName : alternateStateName}
                       onChange={(e) => setAlternateStateName(e.target.value)}
                       type="text"
@@ -293,10 +259,9 @@ function submit_your_application() {
                       htmlFor="alternate-postal-code"
                       className="block text-sm font-medium text-gray-700"
                     >
-                      Postal code<sup>*</sup>
+                      Postal code
                     </label>
                     <input
-                      required
                       value={checkedCurrentAddress ? postalCode : alternatePostalCode}
                       onChange={(e) => setAlternatePostalCode(e.target.value)}
                       type="number"
@@ -312,54 +277,92 @@ function submit_your_application() {
                 <h2 className="font-semibold text-xl pb-2 border-b-2">
                   Contact Information
                 </h2>
-                {/* Mobile Number */}
-                <div className="col-span-12 mt-4 ">
-                  <label
-                    htmlFor="mobile-number"
-                    className="block text-sm  font-medium text-gray-700"
-                  >
-                    Mobile Number{" "}
-                    <span className="text-gray-400 font-medium">
-                      (optional)
-                    </span>
-                  </label>
+                <div className="md:grid grid-cols-12 gap-6">
+                  {/* Mobile Number */}
+                  <div className="col-span-6 mt-4 ">
+                    <label
+                      htmlFor="mobile-number"
+                      className="block text-sm  font-medium text-gray-700"
+                    >
+                      Mobile Number{" "}
+                      <span className="text-gray-400 font-medium">
+                        (optional)
+                      </span>
+                    </label>
 
-                  <PhoneInput
-                    value={mobileNumber}
-                    onChange={setMobileNumber}
-                    autoFormat
-                    inputStyle={{
-                      width: "100%",
-                      marginTop: "2px",
-                      borderRadius: "4px",
-                    }}
-                    containerClass="mt-1 focus:ring-primary focus:border-primary block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
-                    buttonStyle={{ borderRadius: "4px 0 0 4px" }}
-                  />
-                  <small className="italic text-xs">
-                    Please enter the mobile number with your country code.
-                  </small>
+                    <PhoneInput
+                      value={mobileNumber}
+                      onChange={setMobileNumber}
+                      autoFormat
+                      inputStyle={{
+                        width: "100%",
+                        marginTop: "2px",
+                        borderRadius: "4px",
+                      }}
+                      containerClass="mt-1 focus:ring-primary focus:border-primary block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                      buttonStyle={{ borderRadius: "4px 0 0 4px" }}
+                    />
+                    <small className="italic text-xs">
+                      Please enter the mobile number with your country code.
+                    </small>
+                  </div>
+
+                  {/*  Email */}
+                  <div className="col-span-6 mt-4">
+                    <label
+                      htmlFor="email"
+                      className="block text-sm font-medium text-gray-700"
+                    >
+                      Email<sup>*</sup>
+                    </label>
+                    <input
+                      required
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                      type="email"
+                      name="email"
+                      id="email"
+                      className="input-form"
+                    />
+                  </div>
                 </div>
-
-                {/*  Email */}
-                <div className="col-span-12 mt-4">
+              </div>
+              {/* Upload Resume */}
+              <div className="col-span-12 mt-4">
+                <h2 className="font-semibold text-xl pb-2 border-b-2">
+                  Personal Details
+                </h2>
+                <div className="flex flex-col mt-4">
                   <label
-                    htmlFor="company-email"
-                    className="block text-sm font-medium text-gray-700"
-                  >
-                    Email<sup>*</sup>
+                    htmlFor="file">
+                    Upload your Resume<sup>*</sup>
                   </label>
-                  <input
-                    required
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    type="email"
-                    name="email"
-                    id="email"
+                  <FileUploader 
+                  handleChange={(file)=>setResume(file)}
+                  name="file" 
+                  types={fileTypes}
+                  hoverTitle={"DROP HERE"}
+                  label="Upload your Resume"
+                  classes="py-2 mt-1"
+                  />
+                  <h3 className="text-sm mt-2">
+                    {`${resume && resume.name + " " + "file uploaded successfully"}`}
+                  </h3>
+                </div>
+              {/* Tell us about yourself */}
+              <div className="col-span-12 mt-4">
+                <label>
+                  Tell us about yourself
+                </label>
+                <div className="col-span-12 mt-4">
+                  <textarea
+                    placeholder="Write something (Optional)"
+                    rows={5}
+                    onChange={(e) => setTextAboutYourself(e.target.value)}
                     className="input-form"
                   />
                 </div>
-
+              </div>
               </div>
               {/* How did you learn about our company */}
               <div className="col-span-12 mt-4">
@@ -368,7 +371,7 @@ function submit_your_application() {
                 </h2>
                 <div className="col-span-12 mt-4">
                   <label>
-                    Applied for position
+                    Applied for position<sup>*</sup>
                   </label>
                   <select
                     value={position}
@@ -389,7 +392,7 @@ function submit_your_application() {
                 </div>
                 <div className="col-span-12 mt-4">
                   <label>
-                    Available start date
+                    Available start date<sup>*</sup>
                   </label>
                   <input
                     required
@@ -405,7 +408,7 @@ function submit_your_application() {
                 </div>
                 <div className="col-span-12 mt-4">
                   <label>
-                    Desired pay range
+                    Desired pay range<sup>*</sup>
                   </label>
                   <input
                     required
