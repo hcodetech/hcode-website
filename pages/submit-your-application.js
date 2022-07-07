@@ -346,7 +346,7 @@ function submit_your_application() {
                   classes="py-2 mt-1"
                   />
                   <h3 className="text-sm mt-2">
-                    {`${resume && resume.name + " " + "file uploaded successfully"}`}
+                    {resume && resume.name + " " + "file uploaded successfully"}
                   </h3>
                 </div>
               {/* Tell us about yourself */}
