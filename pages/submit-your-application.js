@@ -1,13 +1,15 @@
 import Head from "next/head";
+import {
+  ArrowRightIcon
+} from "@heroicons/react/solid";
 import { useState } from "react";
 import DotLoader from "react-spinners/DotLoader";
 import Modal from "../components/Modal";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/plain.css";
 import { FileUploader } from "react-drag-drop-files";
-
 const defaultColor = "#373536";
-const fileTypes = ["JPG", "PNG", "PDF","DOC"];
+const fileTypes = ["JPG", "PNG", "PDF", "DOC"];
 
 function submit_your_application() {
   const [success, setSuccess] = useState(false);
@@ -48,7 +50,7 @@ function submit_your_application() {
     }
   }
 
-  
+
 
   const submitApplication = async (event) => {
     setSuccess(false);
@@ -96,13 +98,31 @@ function submit_your_application() {
           paragraph={"Thanks for your interest. We will contact you shortly."}
         />
       )}
-      <section className="md:flex justify-center pt-14">
 
+      <section className="md:new-container grid grid-cols-12 pt-14">
+        <div className="bg-blue-900  max-h-screen md:max-h-0  text-white p-10 md:p-0 col-span-12 md:col-span-4 md:sticky md:top-14">
+          <div className="bg-gradient-to-b from-blue-900 to-transparent absolute  h-[70vh] w-full z-40 hidden md:block">
+          </div>
+            <img src="/assets/img/job.jpg" className=" hidden md:block" />
+          
+          <div className="z-50 md:absolute top-9 left-7 right-4" >
+            <h1 className="text-4xl font-semibold">
+              Looking for job?
+            </h1>
+            <p className="text-normal   mt-3">
+              Please fill out the form with your correct information, so we can reach you as soon as possible
+              whenever we have a opening for you !!!
+            </p>
+            <a href="https://in.indeed.com/cmp/Hcode-Technologies">
+              <div className="flex items-center gap-2 text-normal font-semibold mt-4">
+                <u><p>Checkout the current opening</p></u>
+                <ArrowRightIcon className="w-6 h-6" />
+              </div>
+            </a>
+          </div>
+        </div>
         {/* Form Start Here */}
         <div className="px-4 py-8 md:p-10 col-span-12 md:col-span-8">
-          <h1 className="text-4xl font-semibold pb-5">
-            Please enter the details{" "}
-          </h1>
           <form autoComplete="off" onSubmit={submitApplication}>
             <div className="grid grid-cols-12 gap-6">
               {/* Full Name */}
@@ -151,7 +171,7 @@ function submit_your_application() {
                   <div>
                     <label
                       htmlFor="city-name"
-                      className="block text-sm font-medium text-gray-700"
+                      className="block text-sm font-medium text-gray-700 "
                     >
                       City<sup>*</sup>
                     </label>
@@ -169,7 +189,7 @@ function submit_your_application() {
                   <div>
                     <label
                       htmlFor="state-name"
-                      className="block text-sm font-medium text-gray-700"
+                      className="block text-sm font-medium text-gray-700 mt-2 md:mt-0"
                     >
                       State<sup>*</sup>
                     </label>
@@ -187,7 +207,7 @@ function submit_your_application() {
                   <div>
                     <label
                       htmlFor="postal-code"
-                      className="block text-sm font-medium text-gray-700"
+                      className="block text-sm font-medium text-gray-700 mt-2 md:mt-0"
                     >
                       Postal code<sup>*</sup>
                     </label>
@@ -207,7 +227,7 @@ function submit_your_application() {
                     type="checkbox"
                     onClick={(e) => SameAsCurrentAddress(e)}
                   />
-                  <label>
+                  <label className="text-lg">
                     Same as current address
                   </label>
                 </div>
@@ -240,7 +260,7 @@ function submit_your_application() {
                   <div>
                     <label
                       htmlFor="alternate-state-name"
-                      className="block text-sm font-medium text-gray-700"
+                      className="block text-sm font-medium text-gray-700 mt-2 md:mt-0"
                     >
                       State
                     </label>
@@ -257,7 +277,7 @@ function submit_your_application() {
                   <div>
                     <label
                       htmlFor="alternate-postal-code"
-                      className="block text-sm font-medium text-gray-700"
+                      className="block text-sm font-medium text-gray-700 mt-2 md:mt-0"
                     >
                       Postal code
                     </label>
@@ -335,34 +355,34 @@ function submit_your_application() {
                 <div className="flex flex-col mt-4">
                   <label
                     htmlFor="file">
-                    Upload your Resume<sup>*</sup>
+                    Upload your Resume
                   </label>
-                  <FileUploader 
-                  handleChange={(file)=>setResume(file)}
-                  name="file" 
-                  types={fileTypes}
-                  hoverTitle={"DROP HERE"}
-                  label="Upload your Resume"
-                  classes="py-2 mt-1"
+                  <FileUploader
+                    handleChange={(file) => setResume(file)}
+                    name="file"
+                    types={fileTypes}
+                    hoverTitle={"DROP HERE"}
+                    label="Upload your Resume"
+                    classes="py-2 mt-1"
                   />
                   <h3 className="text-sm mt-2">
                     {resume && resume.name + " " + "file uploaded successfully"}
                   </h3>
                 </div>
-              {/* Tell us about yourself */}
-              <div className="col-span-12 mt-4">
-                <label>
-                  Tell us about yourself
-                </label>
+                {/* Tell us about yourself */}
                 <div className="col-span-12 mt-4">
+                  <label>
+                    Tell us about yourself
+                  </label>
+                  {/* <div className="col-span-12 mt-4"> */}
                   <textarea
                     placeholder="Write something (Optional)"
                     rows={5}
                     onChange={(e) => setTextAboutYourself(e.target.value)}
                     className="input-form"
                   />
+                  {/* </div> */}
                 </div>
-              </div>
               </div>
               {/* How did you learn about our company */}
               <div className="col-span-12 mt-4">
@@ -429,8 +449,8 @@ function submit_your_application() {
                   <div className="flex items-center">
                     <input
                       required
-                      checked={employeeStatus === true}
-                      onChange={(e) => setEmployeeStatus(true)}
+                      // checked
+                      onChange={() => setEmployeeStatus(true)}
                       id="employee-status"
                       name="employee-status"
                       type="radio"
@@ -446,7 +466,7 @@ function submit_your_application() {
                   <div className="flex items-center ml-5">
                     <input
                       required
-                      checked={employeeStatus === false}
+                      // checked
                       onChange={(e) => setEmployeeStatus(false)}
                       id="employee-status-no"
                       name="employee-status"
@@ -464,8 +484,8 @@ function submit_your_application() {
               </div>
               <div className="col-span-12 lg:col-span-4">
                 <button
-                  // disabled={loading}
-                  className="bg-primary hover:bg-blue-600 text-white rounded-md px-7 py-3 disabled:opacity-50"
+                  disabled={loading}
+                  className="bg-primary hover:bg-blue-600 text-white w-full md:w-min rounded-md px-7 py-3 disabled:opacity-50"
                 >
                   Submit
                 </button>
@@ -473,6 +493,7 @@ function submit_your_application() {
             </div>
           </form>
         </div>
+        {/* </div> */}
       </section >
     </>
   )
