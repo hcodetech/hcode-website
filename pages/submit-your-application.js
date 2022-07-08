@@ -103,21 +103,18 @@ function submit_your_application() {
         <div className="bg-blue-900  max-h-screen md:max-h-0  text-white p-10 md:p-0 col-span-12 md:col-span-4 md:sticky md:top-14">
           <div className="bg-gradient-to-b from-blue-900 to-transparent absolute  h-[70vh] w-full z-40 hidden md:block">
           </div>
-            <img src="/assets/img/job.jpg" className=" hidden md:block" />
-          
+          <img src="/assets/img/job.jpg" alt="hcode_employees" className="hidden md:block" />
           <div className="z-50 md:absolute top-9 left-7 right-4" >
             <h1 className="text-4xl font-semibold">
               Looking for job?
             </h1>
-            <p className="text-normal   mt-3">
+            <p className="text-normal mt-3">
               Please fill out the form with your correct information, so we can reach you as soon as possible
               whenever we have a opening for you !!!
             </p>
-            <a href="https://in.indeed.com/cmp/Hcode-Technologies">
-              <div className="flex items-center gap-2 text-normal font-semibold mt-4">
-                <u><p>Checkout the current opening</p></u>
-                <ArrowRightIcon className="w-6 h-6" />
-              </div>
+            <a href="https://in.indeed.com/cmp/Hcode-Technologies" className="flex items-center gap-2 text-normal font-semibold mt-4">
+              <u>Checkout the current opening</u>
+              <ArrowRightIcon className="w-6 h-6" />
             </a>
           </div>
         </div>
