@@ -16,14 +16,6 @@ function Client(props) {
         <h2 className="text-center text-3xl font-semibold pb-10">{props.heading ? "" : "We're trusted by many fast growing companies for their tech needs"}</h2>
         <Slider {...SliderData}>
             {props.data.map(({ img, name, alt }, index) => (
-                <div key={index}>
-                    <img src={img} alt={alt} />
-                    <h6 className="font-medium text-primary float-left">
-                        {name && name}
-                    </h6>
-                </div>
-            ))}
-            {props.data.map(({ img, name, alt }, index) => (
                 <div className="text-center" key={index}>
                     <img src={img} alt={alt} className="max-h-20" />
                     <h6 className="font-medium text-primary float-left text-center">

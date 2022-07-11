@@ -1,5 +1,5 @@
 import Head from "next/head";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Benefits from "../../components/Benefits";
 import CardPortfolio from "../../components/CardPortfolio";
 import Client from "../../components/Client";
@@ -23,7 +23,10 @@ import Accordion from "../../components/Accordion";
 const mvp = () => {
   const [selectedCategory, setSelectedCategory] = useState(["MVP"]);
   const [portfolioData, isLoading] = useGetFetch(getAPIUrl(apiRoutes.OUR_WORK));
-
+  const [isDesktop, setIsDesktop] = useState("")
+  useEffect(() => {
+      window.innerWidth<=750 ? setIsDesktop(false) : setIsDesktop(true) 
+       })
   return (
     <>
       <Head>
@@ -56,7 +59,7 @@ const mvp = () => {
 
       {/* Client Section */}
       <section className="new-container py-10">
-        <Client data={client} slides={true}/>
+        <Client data={client} slides={isDesktop}/>
       </section>
 
       {/* Why MVP */}

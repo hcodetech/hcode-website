@@ -1,8 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Client from "../../components/Client";
 import { client, our_services_hero, Eclipses_Group } from "../../constants/constants";
 
 const MVP = () => {
+    const [isDesktop, setIsDesktop] = useState("")
+    useEffect(() => {
+        window.innerWidth<=750 ? setIsDesktop(false) : setIsDesktop(true) 
+         })
     return (
         <>
             <section className="bg-blue-100">
@@ -25,7 +29,7 @@ const MVP = () => {
             </section>
 
             <section className="new-container py-10">
-                <Client data={client} slides={true}/>
+                <Client data={client} slides={isDesktop}/>
             </section>
 
             <section>
