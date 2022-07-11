@@ -144,7 +144,7 @@ function our_services() {
 
       {/* Client Section */}
       <section className="new-container py-10">
-        <Client data={client} />
+        <Client data={client} slides={true}/>
       </section>
     </>
   );

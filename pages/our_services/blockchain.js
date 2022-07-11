@@ -85,7 +85,7 @@ Services
 
       {/* Client Section */}
       <section className="new-container py-10">
-        <Client data={client} />
+        <Client data={client} slides={true}/>
       </section>
 
       {/* Tech Services */}

@@ -26,7 +26,7 @@ function developer_as_a_service() {
 
             {/* Clients */}
             <section className="new-container">
-                <Client data={client} />
+                <Client data={client} slides={true}/>
             </section>
 
             {/* Who is it for ? */}

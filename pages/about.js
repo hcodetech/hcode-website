@@ -8,6 +8,7 @@ import { about_page, client, TEAM } from "../constants/constants";
 import { ArrowRightIcon } from "@heroicons/react/solid";
 
 function about() {
+
   return (
     <>
       <Head>
@@ -144,9 +145,10 @@ function about() {
       </section>
 
       {/* Client Section */}
-      <div className="my-14 new-container">
-        <Client data={client} />
+      <div className="my-10 new-container">
+        <Client data={client} slides={true}/>
       </div>
+     
       {/* CTA */}
       <div className="new-container mb-10">
         <CTA />

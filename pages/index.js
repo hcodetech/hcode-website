@@ -37,7 +37,7 @@ export default function Home() {
       <HeroSection />
       {/* Client Section */}
       <div className=" new-container pt-10">
-        <Client data={client} />
+        <Client data={client} slides={true}/>
       </div>
 
       {/* Our Services */}
@@ -126,7 +126,7 @@ export default function Home() {
                 <h3 className="text-xl font-semibold">
                   {homepage.who_are_we.clients.heading}
                 </h3>
-                <Client data={city} heading={true} />
+                <Client data={city} heading={true}/>
               </div>
               <a
                 href="/about"
