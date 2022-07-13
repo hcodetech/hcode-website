@@ -14,7 +14,7 @@ function Footer() {
             </div>
           </div>
 
-          <div className="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6 mt-8 sm:mt-0">
+          <div className="px-4 sm:w-1/2 md:w-[22%] xl:w-1/6 mt-8 sm:mt-0">
             <h5 className="font-bold  text-md mb-3  ">Quick Links</h5>
             <ul className="list-none footer-links">
 
@@ -32,7 +32,7 @@ function Footer() {
               </li>
             </ul>
           </div>
-          <div className="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6 mt-8 md:mt-0">
+          <div className="px-4 sm:w-1/2 md:w-[22%] xl:w-1/6 mt-8 md:mt-0">
             <h5 className="font-bold  text-md mb-3 ">Company</h5>
             <ul className="list-none footer-links">
               <li className="mb-2">
@@ -47,7 +47,7 @@ function Footer() {
 
             </ul>
           </div>
-          <div className="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6 mt-8 md:mt-0">
+          <div className="px-4 sm:w-1/2 md:w-[22%] xl:w-1/6 mt-8 md:mt-0">
             <h5 className="font-bold  text-md mb-3 ">Further Information</h5>
             <ul className="list-none footer-links">
               <li className="mb-2">

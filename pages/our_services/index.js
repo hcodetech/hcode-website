@@ -1,4 +1,5 @@
 import Head from "next/head";
+import React, { useState, useEffect } from "react";
 import ServicesCard from "../../components/ServicesCard";
 import {
   our_services_hero,
@@ -19,6 +20,10 @@ import EnterpriseCard from "../../components/EnterpriseCard";
 import FintechCard from "../../components/FintechCard";
 import { ArrowRightIcon } from "@heroicons/react/solid";
 function our_services() {
+  const [isDesktop, setIsDesktop] = useState("")
+    useEffect(() => {
+        window.innerWidth<=750 ? setIsDesktop(false) : setIsDesktop(true) 
+         })
   return (
     <>
       <Head>
@@ -144,7 +149,7 @@ function our_services() {
 
       {/* Client Section */}
       <section className="new-container py-10">
-        <Client data={client} />
+        <Client data={client} slides={isDesktop}/>
       </section>
     </>
   );

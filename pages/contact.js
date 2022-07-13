@@ -147,8 +147,8 @@ function contact() {
         />
       )}
       <section className="md:new-container grid grid-cols-12 pt-14">
-        <div className="bg-primary md:max-w-[450px] max-h-screen text-white p-10  col-span-12 md:col-span-4 relative ">
-          <div>
+        <div className="bg-primary md:max-w-[450px] max-h-screen text-white p-10 col-span-12 md:col-span-4 md:sticky top-14">
+          <div className="z-50 sticky">
             <h1 className="text-4xl font-semibold">
               Let’s scale your team together
             </h1>

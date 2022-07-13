@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from "react";
 import { client, faq_services, tass, tass_benefits } from "../../constants/constants"
 import Client from '../../components/Client'
 import { ArrowRightIcon } from "@heroicons/react/solid"
@@ -8,6 +9,10 @@ import CTA from "../../components/CTA";
 import TechStack from "../../components/TechStack";
 
 function team_as_a_service() {
+    const [isDesktop, setIsDesktop] = useState("")
+    useEffect(() => {
+        window.innerWidth<=750 ? setIsDesktop(false) : setIsDesktop(true) 
+         })
     return (
         <>
             <Head>
@@ -28,7 +33,7 @@ function team_as_a_service() {
 
             {/* Clients */}
             <section className="new-container">
-                <Client data={client} />
+                <Client data={client} slides={isDesktop}/>
             </section>
 
             {/* Who is it for ? */}

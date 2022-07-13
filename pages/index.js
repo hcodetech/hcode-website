@@ -24,9 +24,22 @@ import BlockchainSVG from "../public/assets/img/blockchain-illu.svg";
 import { apiRoutes } from "./api/APIRoutes";
 import { getAPIUrl } from "./api/APIHelpers";
 import useGetFetch from "./hooks/useGetFetch";
+import { useRouter } from "next/dist/client/router";
+import { useEffect, useState } from "react";
 
 export default function Home() {
+  const [isDesktop, setIsDesktop] = useState("")
+  const { pathname } = useRouter();
   // const [clientLogos, isClientLogosLoading] = useGetFetch(getAPIUrl(apiRoutes.CLIENT_LOGO));
+  useEffect(() => {
+     window.innerWidth<=750 ? setIsDesktop(false) : setIsDesktop(true) 
+  
+  },[])
+
+
+  // if (typeof window === "undefined") { ;/* we're on the server */ }
+
+
   return (
     <>
       <Head>
@@ -36,12 +49,15 @@ export default function Home() {
       {/* Crasoual  */}
       <HeroSection />
       {/* Client Section */}
+      
       <div className=" new-container pt-10">
-        <Client data={client} />
+        <Client data={client} slides={isDesktop}
+         
+         />
       </div>
 
       {/* Our Services */}
-      <section className="mt-4 ">
+      <section id="services" className="mt-4 ">
         <div className="new-container ">
           <ServicesCard heading={true} />
         </div>
@@ -99,7 +115,7 @@ export default function Home() {
         </div>
       </section>
       {/* Who we are */}
-      <section className="bg-gray-100 mt-14">
+      <section id="homepage" className="bg-gray-100 mt-14">
         <div className="new-container py-10">
           <div className="grid grid-cols-12">
             <div className="col-span-12 lg:col-span-6">
@@ -183,7 +199,7 @@ export default function Home() {
       </div>
 
       {/* Core Team  */}
-      <section className="py-14 bg-gray-100 text-center">
+      <section id="core" className="py-14 bg-gray-100 text-center" >
         <div className="lg:new-container">
           <h1 className="font-poppins text-center font-semibold text-3xl  md:text-4xl md:leading-tight">
             Our Core Team

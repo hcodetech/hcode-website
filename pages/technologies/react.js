@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import CardPortfolio from "../../components/CardPortfolio";
 import Client from "../../components/Client";
 import { client, portfolioData, TechSideImage, ReactIcon } from "../../constants/constants";
@@ -7,10 +7,13 @@ import { apiRoutes } from "../api/APIRoutes";
 import useGetFetch from "../hooks/useGetFetch";
 
 const react = () => {
-
+  const [isDesktop, setIsDesktop] = useState("")
+  
   const [selectedCategory, setSelectedCategory] = useState([]);
   const [portfolioData, isLoading] = useGetFetch((getAPIUrl(apiRoutes.OUR_WORK)));
-
+  useEffect(() => {
+    window.innerWidth<=750 ? setIsDesktop(false) : setIsDesktop(true) 
+     })
   // Select Industry Card
   const setSelectedTech = (e, industryName) => {
     if (e.target.checked) {
@@ -56,7 +59,7 @@ const react = () => {
 
       {/* Client Section */}
       <section className="new-container py-10">
-        <Client data={client} />
+        <Client data={client} slides={isDesktop}/>
       </section>
 
       {/* Tech Services */}

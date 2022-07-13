@@ -6,8 +6,12 @@ import ServicesCard from "../components/ServicesCard";
 import Team from "../components/Team";
 import { about_page, client, TEAM } from "../constants/constants";
 import { ArrowRightIcon } from "@heroicons/react/solid";
-
+import React, { useState, useEffect } from "react";
 function about() {
+  const [isDesktop, setIsDesktop] = useState("")
+  useEffect(() => {
+     window.innerWidth<=750 ? setIsDesktop(false) : setIsDesktop(true) 
+      })
   return (
     <>
       <Head>
@@ -144,9 +148,10 @@ function about() {
       </section>
 
       {/* Client Section */}
-      <div className="my-14 new-container">
-        <Client data={client} />
+      <div className="my-10 new-container">
+        <Client data={client} slides={isDesktop} />
       </div>
+     
       {/* CTA */}
       <div className="new-container mb-10">
         <CTA />

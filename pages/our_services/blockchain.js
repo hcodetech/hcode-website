@@ -1,5 +1,5 @@
 import Head from "next/head";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Tab from "../../components/atoms/Tab";
 import Benefits from "../../components/Benefits";
 import CardPortfolio from "../../components/CardPortfolio";
@@ -23,7 +23,10 @@ const blockchain = () => {
   const [selectedCategory, setSelectedCategory] = useState(["Blockchain"]);
   const [id, setId] = useState(1);
   const [activeTab, setActiveTab] = useState(0);
-
+  const [isDesktop, setIsDesktop] = useState("")
+  useEffect(() => {
+    window.innerWidth<=750 ? setIsDesktop(false) : setIsDesktop(true) 
+     })
   const [portfolioData, isLoading] = useGetFetch(getAPIUrl(apiRoutes.OUR_WORK));
 
   const selectedTabsFn = (condition) =>
@@ -85,7 +88,7 @@ Services
 
       {/* Client Section */}
       <section className="new-container py-10">
-        <Client data={client} />
+        <Client data={client} slides={isDesktop}/>
       </section>
 
       {/* Tech Services */}
