@@ -36,24 +36,30 @@ export default function Home() {
   useEffect(() => {
     window.innerWidth <= 750 ? setIsDesktop(false) : setIsDesktop(true);
     const sections = document.querySelectorAll("section");
-    window.onscroll = () => {
-      sections.forEach((section) => {
-        const sectionTop = section.offsetTop;
-        if (window.pageYOffset >= sectionTop) {
-          let myCurrentHash = section.getAttribute("id");
-          if (prevHash !== myCurrentHash && myCurrentHash !== null) {
-            if (history.pushState) {
-              history.pushState(null, null, "#" + myCurrentHash);
-            }
-            // else {
-            //   window.location.hash = '#' + myCurrentHash;
-            // }
-            // console.log("myCurrentHash", myCurrentHash, "prevHash", prevHash)
-            setPrevHash(myCurrentHash);
-          }
+    let timer = null;
+    window.addEventListener(
+      "scroll",
+      () => {
+        if (timer !== null) {
+          clearTimeout(timer);
         }
-      });
-    };
+        timer = setTimeout(() => {
+          sections.forEach((section) => {
+            const sectionTop = section.offsetTop;
+            if (window.pageYOffset >= sectionTop) {
+              let myCurrentHash = section.getAttribute("id");
+              if (prevHash !== myCurrentHash && myCurrentHash !== null) {
+                if (history.pushState) {
+                  history.pushState(null, null, "#" + myCurrentHash);
+                }
+                setPrevHash(myCurrentHash);
+              }
+            }
+          });
+        }, 150);
+      },
+      false
+    );
   }, []);
 
   return (
