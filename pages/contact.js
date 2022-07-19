@@ -63,8 +63,7 @@ function contact() {
       time_commitment: expectedTimeCommitment,
       tech_preference: preferredTechStack.join(","),
     };
-    console.log(contactUsFormData);
-    console.log(mobileNumber.length > 3);
+
     const formData = new FormData();
     Object.entries(contactUsFormData).forEach(([key, value]) => {
       formData.append(key, value);

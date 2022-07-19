@@ -1,4 +1,9 @@
-import { hcode_footer, linkedin_icon, twitter_icon } from "../constants/constants"
+import {
+  hcode_footer,
+  linkedin_icon,
+  twitter_icon,
+} from "../constants/constants";
+import NewsletterComponent from "./NewsletterComponent";
 
 function Footer() {
   return (
@@ -7,28 +12,49 @@ function Footer() {
         <div className="sm:flex sm:flex-wrap sm:-mx-4 md:py-4">
           <div className="px-4 w-full sm:w-1/2 md:w-1/3  ">
             <div className="md:w-3/4 ">
-              <img src={hcode_footer} alt="Hcode Technologies" className="w-40 mb-3 " />
-              <p className="mt-3">
-                Agile, Predictable, Outcome Oriented App Development
-              </p>
+              <img
+                src={hcode_footer}
+                alt="Hcode Technologies"
+                className="w-40 mb-3 "
+              />
+              {/* <p className="mt-3">Agile, Predictable, Outcome</p> */}
+              <NewsletterComponent />
             </div>
           </div>
-
           <div className="px-4 sm:w-1/2 md:w-[22%] xl:w-1/6 mt-8 sm:mt-0">
             <h5 className="font-bold  text-md mb-3  ">Quick Links</h5>
             <ul className="list-none footer-links">
-
               <li className="mb-2">
-                <a href="/" className="border-b border-solid border-transparent hover:border-primary hover:text-primary">Home</a>
+                <a
+                  href="/"
+                  className="border-b border-solid border-transparent hover:border-primary hover:text-primary"
+                >
+                  Home
+                </a>
               </li>
               <li className="mb-2">
-                <a href="/our_services" className="border-b border-solid border-transparent hover:border-primary hover:text-primary">Our Services</a>
+                <a
+                  href="/our_services"
+                  className="border-b border-solid border-transparent hover:border-primary hover:text-primary"
+                >
+                  Our Services
+                </a>
               </li>
               <li className="mb-2">
-                <a href="/our_work" className="border-b border-solid border-transparent hover:border-primary hover:text-primary">Our Work</a>
+                <a
+                  href="/our_work"
+                  className="border-b border-solid border-transparent hover:border-primary hover:text-primary"
+                >
+                  Our Work
+                </a>
               </li>
               <li className="mb-2">
-                <a href="/technologies" className="border-b border-solid border-transparent hover:border-primary hover:text-primary">Technologies</a>
+                <a
+                  href="/technologies"
+                  className="border-b border-solid border-transparent hover:border-primary hover:text-primary"
+                >
+                  Technologies
+                </a>
               </li>
             </ul>
           </div>
@@ -36,47 +62,85 @@ function Footer() {
             <h5 className="font-bold  text-md mb-3 ">Company</h5>
             <ul className="list-none footer-links">
               <li className="mb-2">
-                <a href="/about" className="border-b border-solid border-transparent hover:border-primary hover:text-primary">About Us</a>
+                <a
+                  href="/about"
+                  className="border-b border-solid border-transparent hover:border-primary hover:text-primary"
+                >
+                  About Us
+                </a>
               </li>
               <li className="mb-2">
-                <a href="/work_with_us" className="border-b border-solid border-transparent hover:border-primary hover:text-primary">Work With Us</a>
+                <a
+                  href="/work_with_us"
+                  className="border-b border-solid border-transparent hover:border-primary hover:text-primary"
+                >
+                  Work With Us
+                </a>
               </li>
               <li className="mb-2">
-                <a href="/contact" className="border-b border-solid border-transparent hover:border-primary hover:text-primary">Contact Us</a>
+                <a
+                  href="/contact"
+                  className="border-b border-solid border-transparent hover:border-primary hover:text-primary"
+                >
+                  Contact Us
+                </a>
               </li>
-
             </ul>
           </div>
           <div className="px-4 sm:w-1/2 md:w-[22%] xl:w-1/6 mt-8 md:mt-0">
             <h5 className="font-bold  text-md mb-3 ">Further Information</h5>
             <ul className="list-none footer-links">
               <li className="mb-2">
-                <a href="/terms_and_conditions" className="border-b border-solid border-transparent hover:border-primary hover:text-primary">Terms & Conditions</a>
+                <a
+                  href="/terms_and_conditions"
+                  className="border-b border-solid border-transparent hover:border-primary hover:text-primary"
+                >
+                  Terms & Conditions
+                </a>
               </li>
               <li className="mb-2">
-                <a href="/privacy_policy" className="border-b border-solid border-transparent hover:border-primary hover:text-primary">Privacy Policy</a>
+                <a
+                  href="/privacy_policy"
+                  className="border-b border-solid border-transparent hover:border-primary hover:text-primary"
+                >
+                  Privacy Policy
+                </a>
               </li>
             </ul>
           </div>
           <div className="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6 mt-8 md:mt-0 mb-4">
             <div className="flex mt-2">
-              <a href="https://www.linkedin.com/company/hcodetech/" target="_blank" >
-                <img src={linkedin_icon} className="rounded-full w-10 h-10 p-2 hover:bg-blue-200  bg-gray-200 " alt="https://www.linkedin.com/company/hcodetech/" />
+              <a
+                href="https://www.linkedin.com/company/hcodetech/"
+                target="_blank"
+              >
+                <img
+                  src={linkedin_icon}
+                  className="rounded-full w-10 h-10 p-2 hover:bg-blue-200  bg-gray-200 "
+                  alt="https://www.linkedin.com/company/hcodetech/"
+                />
               </a>
               <a href="https://twitter.com/HcodeTech" target="_blank">
-                <img src={twitter_icon} className="rounded-full w-10 h-10 p-2 hover:bg-blue-200  ml-4 bg-gray-200 " alt="https://twitter.com/HcodeTech" />
+                <img
+                  src={twitter_icon}
+                  className="rounded-full w-10 h-10 p-2 hover:bg-blue-200  ml-4 bg-gray-200 "
+                  alt="https://twitter.com/HcodeTech"
+                />
               </a>
             </div>
           </div>
         </div>
 
         <div className="text-center  border-t pt-5">
-          Copyright @ 2021 <a href="/" className="text-primary font-semibold underline">Hcode.tech</a> | All rights reserved by Hcode Techonologies
+          Copyright @ 2021{" "}
+          <a href="/" className="text-primary font-semibold underline">
+            Hcode.tech
+          </a>{" "}
+          | All rights reserved by Hcode Techonologies
         </div>
-
       </div>
     </footer>
-  )
+  );
 }
 
-export default Footer
+export default Footer;

@@ -26,19 +26,18 @@ import { getAPIUrl } from "./api/APIHelpers";
 import useGetFetch from "./hooks/useGetFetch";
 import { useRouter } from "next/dist/client/router";
 import { useEffect, useState } from "react";
+import NewsletterComponent from "../components/NewsletterComponent";
+import NewsletterCTA from "../components/NewsletterCTA";
 
 export default function Home() {
-  const [isDesktop, setIsDesktop] = useState("")
+  const [isDesktop, setIsDesktop] = useState("");
   const { pathname } = useRouter();
   // const [clientLogos, isClientLogosLoading] = useGetFetch(getAPIUrl(apiRoutes.CLIENT_LOGO));
   useEffect(() => {
-     window.innerWidth<=750 ? setIsDesktop(false) : setIsDesktop(true) 
-  
-  },[])
-
+    window.innerWidth <= 750 ? setIsDesktop(false) : setIsDesktop(true);
+  }, []);
 
   // if (typeof window === "undefined") { ;/* we're on the server */ }
-
 
   return (
     <>
@@ -49,11 +48,9 @@ export default function Home() {
       {/* Crasoual  */}
       <HeroSection />
       {/* Client Section */}
-      
+
       <div className=" new-container pt-10">
-        <Client data={client} slides={isDesktop}
-         
-         />
+        <Client data={client} slides={isDesktop} />
       </div>
 
       {/* Our Services */}
@@ -198,8 +195,9 @@ export default function Home() {
         </div>
       </div>
 
+      <NewsletterCTA />
       {/* Core Team  */}
-      <section id="core" className="py-14 bg-gray-100 text-center" >
+      <section id="core" className="py-14 bg-gray-100 text-center">
         <div className="lg:new-container">
           <h1 className="font-poppins text-center font-semibold text-3xl  md:text-4xl md:leading-tight">
             Our Core Team

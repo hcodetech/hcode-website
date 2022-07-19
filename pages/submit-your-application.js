@@ -1,7 +1,5 @@
 import Head from "next/head";
-import {
-  ArrowRightIcon
-} from "@heroicons/react/solid";
+import { ArrowRightIcon } from "@heroicons/react/solid";
 import { useState } from "react";
 import DotLoader from "react-spinners/DotLoader";
 import Modal from "../components/Modal";
@@ -32,25 +30,21 @@ function submit_your_application() {
   const [employeeStatus, setEmployeeStatus] = useState(false);
   const [checkedCurrentAddress, setCheckedCurrentAddress] = useState(false);
 
-
   const SameAsCurrentAddress = (event) => {
     if (event.target.checked === true) {
-      setCheckedCurrentAddress(true)
+      setCheckedCurrentAddress(true);
       // setAlternateStreetName(streetName);
       setAlternateCityName(cityName);
       setAlternateStateName(stateName);
       setAlternatePostalCode(postalCode);
-    }
-    else {
-      setCheckedCurrentAddress(false)
+    } else {
+      setCheckedCurrentAddress(false);
       // setAlternateStreetName("");
       setAlternateCityName("");
       setAlternateStateName("");
       setAlternatePostalCode("");
     }
-  }
-
-
+  };
 
   const submitApplication = async (event) => {
     setSuccess(false);
@@ -71,11 +65,11 @@ function submit_your_application() {
       position: position,
       employe_status: employeeStatus,
       start_date: startDate,
-      desired_pay: desiredPay
+      desired_pay: desiredPay,
     };
-    console.log(submitApplicationFormData);
+
     // setLoading(true)
-    setSuccess(true)
+    setSuccess(true);
     window.scrollTo(0, 0);
   };
 
@@ -101,18 +95,23 @@ function submit_your_application() {
 
       <section className="md:new-container grid grid-cols-12 pt-14">
         <div className="bg-blue-900  max-h-screen md:max-h-0  text-white p-10 md:p-0 col-span-12 md:col-span-4 md:sticky md:top-14">
-          <div className="bg-gradient-to-b from-blue-900 to-transparent absolute  h-[70vh] w-full z-40 hidden md:block">
-          </div>
-          <img src="/assets/img/job.jpg" alt="hcode_employees" className="hidden md:block" />
-          <div className="z-50 md:absolute top-9 left-7 right-4" >
-            <h1 className="text-4xl font-semibold">
-              Looking for job?
-            </h1>
+          <div className="bg-gradient-to-b from-blue-900 to-transparent absolute  h-[70vh] w-full z-40 hidden md:block"></div>
+          <img
+            src="/assets/img/job.jpg"
+            alt="hcode_employees"
+            className="hidden md:block"
+          />
+          <div className="z-50 md:absolute top-9 left-7 right-4">
+            <h1 className="text-4xl font-semibold">Looking for job?</h1>
             <p className="text-normal mt-3">
-              Please fill out the form with your correct information, so we can reach you as soon as possible
-              whenever we have a opening for you !!!
+              Please fill out the form with your correct information, so we can
+              reach you as soon as possible whenever we have a opening for you
+              !!!
             </p>
-            <a href="https://in.indeed.com/cmp/Hcode-Technologies" className="flex items-center gap-2 text-normal font-semibold mt-4">
+            <a
+              href="https://in.indeed.com/cmp/Hcode-Technologies"
+              className="flex items-center gap-2 text-normal font-semibold mt-4"
+            >
               <u>Checkout the current opening</u>
               <ArrowRightIcon className="w-6 h-6" />
             </a>
@@ -224,12 +223,8 @@ function submit_your_application() {
                     type="checkbox"
                     onClick={(e) => SameAsCurrentAddress(e)}
                   />
-                  <label className="text-lg">
-                    Same as current address
-                  </label>
+                  <label className="text-lg">Same as current address</label>
                 </div>
-
-
               </div>
               <div className="col-span-12">
                 <h2 className="font-semibold text-xl pb-2 border-b-2">
@@ -245,7 +240,9 @@ function submit_your_application() {
                       City
                     </label>
                     <input
-                      value={checkedCurrentAddress ? cityName : alternateCityName}
+                      value={
+                        checkedCurrentAddress ? cityName : alternateCityName
+                      }
                       onChange={(e) => setAlternateCityName(e.target.value)}
                       type="text"
                       name="city"
@@ -262,7 +259,9 @@ function submit_your_application() {
                       State
                     </label>
                     <input
-                      value={checkedCurrentAddress ? stateName : alternateStateName}
+                      value={
+                        checkedCurrentAddress ? stateName : alternateStateName
+                      }
                       onChange={(e) => setAlternateStateName(e.target.value)}
                       type="text"
                       name="state"
@@ -279,7 +278,9 @@ function submit_your_application() {
                       Postal code
                     </label>
                     <input
-                      value={checkedCurrentAddress ? postalCode : alternatePostalCode}
+                      value={
+                        checkedCurrentAddress ? postalCode : alternatePostalCode
+                      }
                       onChange={(e) => setAlternatePostalCode(e.target.value)}
                       type="number"
                       name="postal-code"
@@ -350,10 +351,7 @@ function submit_your_application() {
                   Personal Details
                 </h2>
                 <div className="flex flex-col mt-4">
-                  <label
-                    htmlFor="file">
-                    Upload your Resume
-                  </label>
+                  <label htmlFor="file">Upload your Resume</label>
                   <FileUploader
                     handleChange={(file) => setResume(file)}
                     name="file"
@@ -368,9 +366,7 @@ function submit_your_application() {
                 </div>
                 {/* Tell us about yourself */}
                 <div className="col-span-12 mt-4">
-                  <label>
-                    Tell us about yourself
-                  </label>
+                  <label>Tell us about yourself</label>
                   {/* <div className="col-span-12 mt-4"> */}
                   <textarea
                     placeholder="Write something (Optional)"
@@ -400,7 +396,9 @@ function submit_your_application() {
                     name="position"
                     className="mt-1 block w-full py-2 px-3 input-form"
                   >
-                    <option value="" disabled>Choose-one</option>
+                    <option value="" disabled>
+                      Choose-one
+                    </option>
                     <option value="Frontend">Frontend</option>
                     <option value="Backend">Backend</option>
                     <option value="Mern-Stack">MERN Stack</option>
@@ -440,9 +438,7 @@ function submit_your_application() {
                   />
                 </div>
                 <div className="mt-4 flex">
-                  <label className="mr-4">
-                    Are you currently employed?
-                  </label>
+                  <label className="mr-4">Are you currently employed?</label>
                   <div className="flex items-center">
                     <input
                       required
@@ -491,9 +487,9 @@ function submit_your_application() {
           </form>
         </div>
         {/* </div> */}
-      </section >
+      </section>
     </>
-  )
+  );
 }
 
-export default submit_your_application
+export default submit_your_application;

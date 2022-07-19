@@ -13,37 +13,45 @@ class MyDocument extends Document {
   render() {
     return (
       <Html lang="en " className="scroll-smooth">
-        <Head >
+        <Head>
           {/*  */}
 
-          <meta name="keywords" content="Software, Development Studio, Development, Engineer, Mobile Apps, Web Apps"/>
-            
-            <meta name="description" content={homepage.description}/>
-            <meta name="image" content={homepage.share_image}/>
+          <meta
+            name="keywords"
+            content="Software, Development Studio, Development, Engineer, Mobile Apps, Web Apps"
+          />
 
-            <meta itemProp="name" content={homepage.title}/>
-            <meta itemProp="description" content={homepage.description}/>
-            <meta itemProp="image" content={homepage.share_image}/>
+          <meta name="description" content={homepage.description} />
+          <meta name="image" content={homepage.share_image} />
 
+          <meta itemProp="name" content={homepage.title} />
+          <meta itemProp="description" content={homepage.description} />
+          <meta itemProp="image" content={homepage.share_image} />
 
-            <meta property="og:title" content={homepage.title}/>
-            <meta property="og:type" content="website"/>
-            <meta property="og:url" content="https://hcode.tech/"/>
-            <meta property="og:image" content={homepage.share_image}/>
-            <meta property="og:description" content={homepage.description}/>
+          <meta property="og:title" content={homepage.title} />
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="https://hcode.tech/" />
+          <meta property="og:image" content={homepage.share_image} />
+          <meta property="og:description" content={homepage.description} />
 
-
-            <meta property="twitter:card" content="summary_large_image"/>
-            <meta property="twitter:url" content="https://hcode.tech/"/>
-            <meta property="twitter:title" content={homepage.title}/>
-            <meta property="twitter:description" content={homepage.description}/>
-            <meta property="twitter:image" content={homepage.share_image}/>
-
+          <meta property="twitter:card" content="summary_large_image" />
+          <meta property="twitter:url" content="https://hcode.tech/" />
+          <meta property="twitter:title" content={homepage.title} />
+          <meta property="twitter:description" content={homepage.description} />
+          <meta property="twitter:image" content={homepage.share_image} />
 
           <script
             async
             src={`https://www.googletagmanager.com/gtag/js?id=UA-148478855-1`}
           />
+
+          <script
+            id="mcjs"
+            dangerouslySetInnerHTML={{
+              __html: `!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/f5258b0c0d2b6c7561d024d3c/3da1e5017282a765c7865d2a3.js")`,
+            }}
+          />
+
           <script
             dangerouslySetInnerHTML={{
               __html: `
@@ -56,12 +64,17 @@ class MyDocument extends Document {
           `,
             }}
           />
+
           <link
             href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500&display=swap"
             rel="stylesheet"
           />
-          <link rel="icon" type="image/png" sizes="16x16" href={fav_icon}></link>
-
+          <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href={fav_icon}
+          ></link>
         </Head>
         <body>
           <Main />
