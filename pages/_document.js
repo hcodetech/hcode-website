@@ -40,18 +40,15 @@ class MyDocument extends Document {
           <meta property="twitter:description" content={homepage.description} />
           <meta property="twitter:image" content={homepage.share_image} />
 
-          <script
-            async
-            src={`https://www.googletagmanager.com/gtag/js?id=UA-148478855-1`}
-          />
-
-          <script
+          {/* MailChimp */}
+          {/* <script
             id="mcjs"
             dangerouslySetInnerHTML={{
               __html: `!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/f5258b0c0d2b6c7561d024d3c/3da1e5017282a765c7865d2a3.js")`,
             }}
-          />
+          /> */}
 
+          {/* Google Analytics */}
           <script
             dangerouslySetInnerHTML={{
               __html: `
@@ -65,6 +62,12 @@ class MyDocument extends Document {
             }}
           />
 
+          <script
+            async
+            src={`https://www.googletagmanager.com/gtag/js?id=UA-148478855-1`}
+          />
+
+          {/* Google Fonts - Poppins */}
           <link
             href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500&display=swap"
             rel="stylesheet"
