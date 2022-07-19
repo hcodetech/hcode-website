@@ -34,7 +34,7 @@ function Testimonial() {
         playDirection='forward'
       >
         <div className='relative'>
-          <section className='new-container  pt-6 pb-2'>
+          <div className='new-container  pt-6 pb-2'>
             <Slider>
               {testimonial.map((message, index) => (
                 <Slide index={message.id} key={index}>
@@ -66,7 +66,7 @@ function Testimonial() {
                 </Slide>
               ))}
             </Slider>
-          </section>
+          </div>
           <ButtonBack>
             <div className='bg-black absolute left-0 bottom-1/2 opacity-20 hover:opacity-80 px-2 md:px-5'>
               <ArrowNarrowLeftIcon className='w-8 h-10  text-white' />
