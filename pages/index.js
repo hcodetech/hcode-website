@@ -30,36 +30,29 @@ import NewsletterCTA from "../components/NewsletterCTA";
 
 export default function Home() {
   const [isDesktop, setIsDesktop] = useState("");
-  const [prevHash, setPrevHash] = useState("#");
   // const [clientLogos, isClientLogosLoading] = useGetFetch(getAPIUrl(apiRoutes.CLIENT_LOGO));
 
   useEffect(() => {
     window.innerWidth <= 750 ? setIsDesktop(false) : setIsDesktop(true);
-    const sections = document.querySelectorAll("section");
-    let timer = null;
-    window.addEventListener(
-      "scroll",
-      () => {
-        if (timer !== null) {
-          clearTimeout(timer);
-        }
-        timer = setTimeout(() => {
-          sections.forEach((section) => {
-            const sectionTop = section.offsetTop;
-            if (window.pageYOffset >= sectionTop) {
-              let myCurrentHash = section.getAttribute("id");
-              if (prevHash !== myCurrentHash && myCurrentHash !== null) {
-                if (history.pushState) {
-                  history.pushState(null, null, "#" + myCurrentHash);
-                }
-                setPrevHash(myCurrentHash);
-              }
-            }
-          });
-        }, 150);
-      },
-      false
-    );
+
+    // on scroll, url is changing with section ids with the help of intersectionObserver API
+    // intersectionObserver API contain two arguements i.e, callback function and options
+    let observerOptions = {
+      rootMargin: "10px",
+      threshold: 0.8,
+    };
+
+    let observer = new IntersectionObserver(observerCallback, observerOptions);
+
+    function observerCallback(sections) {
+      sections.forEach((section) => {
+        section.isIntersecting &&
+          history.pushState(null, null, "#" + section.target.id);
+      });
+    }
+    document.querySelectorAll("section").forEach((i) => {
+      i && observer.observe(i);
+    });
   }, []);
 
   return (
@@ -69,7 +62,7 @@ export default function Home() {
       </Head>
 
       {/* Crasoual  */}
-      <section id="main">
+      <section id="home">
         <HeroSection />
         {/* Client Section */}
         <div className=" new-container pt-10">
@@ -182,7 +175,7 @@ export default function Home() {
       <section id="why_hcode">
         <Benefits data={homepage.why_hcode} />
       </section>
-      <section className="new-container mx-auto -mt-16 pb-16">
+      <div className="new-container mx-auto -mt-16 pb-16">
         <div className="text-center">
           <a
             href="/contact"
@@ -192,7 +185,7 @@ export default function Home() {
             <ArrowRightIcon className="w-6 ml-2 " />
           </a>
         </div>
-      </section>
+      </div>
 
       {/* Testimonial */}
       <section id="testimonial" className="pt-10 pb-0 bg-gray-100">
@@ -224,7 +217,7 @@ export default function Home() {
 
       <NewsletterCTA />
       {/* Core Team  */}
-      <section id="core" className="py-14 bg-gray-100 text-center">
+      <section id="our_core_team" className="py-14 bg-gray-100 text-center">
         <div className="lg:new-container">
           <h1 className="font-poppins text-center font-semibold text-3xl  md:text-4xl md:leading-tight">
             Our Core Team
@@ -246,9 +239,9 @@ export default function Home() {
       </section>
 
       {/* CTA */}
-      <div className="my-20 ">
+      <section id="cta" className="my-20 ">
         <CTA />
-      </div>
+      </section>
     </>
   );
 }

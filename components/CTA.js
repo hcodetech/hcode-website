@@ -1,7 +1,7 @@
 import Link from 'next/link'
 function CTA({heading, paragraph, buttonText,widthClass}) {
     return (
-        <section className="new-container ">
+        <div className="new-container ">
             <div className="grid grid-cols-12 bg-primary text-white rounded-lg bg-cta_circle bg-left bg-cover md:bg-contain bg-repeat-x py-10 ">
                 <div className={`col-span-12 md:col-span-7  px-10 ${widthClass ?? 'lg:w-1/2'}`}>
                     <h1 className="text-2xl font-semibold">
@@ -20,7 +20,7 @@ function CTA({heading, paragraph, buttonText,widthClass}) {
                     </Link>
                 </div>
             </div>
-        </section>
+        </div>
     )
 }
 
