@@ -45,13 +45,13 @@ export default function Home() {
     let observer = new IntersectionObserver(observerCallback, observerOptions);
 
     function observerCallback(sections) {
-      sections.forEach((section) => {
-        section.isIntersecting &&
-          history.pushState(null, null, "#" + section.target.id);
-      });
+
+      if(sections[0].isIntersecting){
+        history.pushState(null, null, "#" + sections[0].target.id);
+      }
     }
     document.querySelectorAll("section").forEach((i) => {
-      i && observer.observe(i);
+       observer.observe(i);
     });
   }, []);
 
