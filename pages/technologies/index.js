@@ -1,24 +1,55 @@
 import { useEffect, useRef, useState } from "react";
 import Accordion from "../../components/Accordion";
 import { faq_services, technologies_page } from "../../constants/constants";
-import { useRouter } from "next/dist/client/router";
+// import { useRouter } from "next/dist/client/router";
 import Link from "next/link";
 import Head from "next/head";
 
 function technologies(props) {
-  const { asPath } = useRouter();
+  // const { asPath } = useRouter();
 
   // To check if the any category is included in the URL
-  const isTechnologiesStack = (pathname) => asPath.includes(pathname);
-
+  // const isTechnologiesStack = (pathname) => asPath.includes(pathname);
+  const [hash, setHash] = useState("#");
+  const [path, setPath] = useState("");
   const refs = useRef([]); // create empty array for creating multiple refs
 
-  const [isVisible, setIsVisible] = useState(false);
+  useEffect(() => {
+    if (window.location.hash.substring(1) ===
+      "Backend" ||
+      "Frontend" ||
+      "Blockchain" ||
+      "Cloud" ||
+      "Database" ||
+      "CI/CD"
+    ) {
+      setPath(window.location.hash.substring(1))
+    }
+  }, [])
 
-  // const observer = new IntersectionObserver(entries => {
-  //   console.log(entries)
-  // })
-  // observer.observe(firstRef[0])
+  useEffect(() => {
+    let observerOptions = {
+      rootMargin: "10px",
+      threshold: window.innerWidth <= 750 ? 0.3 : 1,
+    };
+
+    let observer = new IntersectionObserver(observerCallback, observerOptions);
+
+    function observerCallback(sections) {
+
+      if (sections[0].isIntersecting) {
+        window.location.hash = sections[0].target.id
+        setHash(sections[0].target.id)
+        setPath("")
+      }
+    }
+    document.querySelectorAll("section").forEach((i) => {
+      // refs.current.forEach((i) => {
+      observer.observe(i);
+    });
+  }, [])
+
+
   return (
     <>
       <Head>
@@ -26,7 +57,7 @@ function technologies(props) {
       </Head>
       <div className="scroll-smooth">
         {/* Hero Section */}
-        <section className="bg-blue-100 max-h-[1000px] z-30 relative overflow-hidden">
+        <section id="" className="bg-blue-100 max-h-[1000px] z-30 relative overflow-hidden">
           <div className=" grid grid-cols-1 md:grid-cols-12 lg:new-container  min-h-[80vh]  ">
             <div className="md:col-span-5 new-container">
               <h2 className="pt-40 text-4xl font-semibold">
@@ -55,7 +86,7 @@ function technologies(props) {
         </section>
 
         {/* Tech Stack Section */}
-        <section className=" my-10 relative z-20">
+        <div className=" my-10 relative z-20">
           <div className="top-1/3 float-left fixed pl-10 h-screen hidden lg:block">
             <div className="flex flex-col cursor-pointer">
               <h2 className="font-bold">Technologies</h2>
@@ -70,10 +101,14 @@ function technologies(props) {
                 <Link href={`#${stack}`} key={stack}>
                   <a
                     className={
-                      isTechnologiesStack(stack)
+                      (hash === stack) || (path === stack)
                         ? "text-blue-600 font-semibold underline"
                         : ""
                     }
+                    onClick={(e) => {
+                      setHash("");
+                      setPath(e.target.text);
+                    }}
                   >
                     {stack}
                   </a>
@@ -85,7 +120,7 @@ function technologies(props) {
           <div className="new-container lg:pl-32 2xl:pl-0 ">
             <div>
               {technologies_page.tech_stack.map((tech, index) => (
-                <div
+                <section
                   id={tech.bookmark}
                   name={tech.bookmark}
                   key={index}
@@ -120,14 +155,14 @@ function technologies(props) {
                       ))}
                     </div>
                   </div>
-                </div>
+                </section>
               ))}
             </div>
           </div>
-        </section>
-        {console.log(refs)}
+        </div>
+        {/* {console.log(refs)} */}
         {/* FAQs */}
-        {/* <section className="z-30 relative bg-white">
+        {/* <section id="faq" className="z-30 relative bg-white">
         <Accordion data={faq_services} />
       </section> */}
       </div>
