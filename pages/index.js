@@ -39,7 +39,7 @@ export default function Home() {
     // intersectionObserver API contain two arguements i.e, callback function and options
     let observerOptions = {
       rootMargin: "10px",
-      threshold: 0.8,
+      threshold: window.innerWidth <= 750 ? 0.1 : 0.8,
     };
 
     let observer = new IntersectionObserver(observerCallback, observerOptions);
@@ -50,6 +50,7 @@ export default function Home() {
         history.pushState(null, null, "#" + sections[0].target.id);
       }
     }
+    console.log("document.querySelectorAll",document.querySelectorAll("section"))
     document.querySelectorAll("section").forEach((i) => {
        observer.observe(i);
     });
