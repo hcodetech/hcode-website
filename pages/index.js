@@ -45,10 +45,10 @@ export default function Home() {
         <title>{homepage.title} </title>
       </Head>
 
-      {/* Crasoual  */}
+      {/* Hero  */}
       <HeroSection />
-      {/* Client Section */}
 
+      {/* Client Section */}
       <div className=" new-container pt-10">
         <Client data={client} slides={isDesktop} />
       </div>

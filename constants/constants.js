@@ -693,7 +693,7 @@ export const homepage = {
     "We’re in the business of writing great code. We provide on-time delivery along with transparent communication. But we also make sure that our people have great work-life balance, meritocracy, and a healthy work environment",
   title: "Servicing End-To-End Engineering Needs | Hcode ",
   share_image:
-    "https://s3.amazonaws.com/hcode.tech/assets/img/hero_image_1.jpg",
+    "https://s3.amazonaws.com/hcode.tech/assets/img/hcode-logo-vertical.jpg",
   who_are_we: {
     image: "/assets/img/homepage_who_we_are.jpg",
     heading: "Who We Are?",
