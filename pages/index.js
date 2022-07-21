@@ -50,7 +50,6 @@ export default function Home() {
         history.pushState(null, null, "#" + sections[0].target.id);
       }
     }
-    console.log("document.querySelectorAll",document.querySelectorAll("section"))
     document.querySelectorAll("section").forEach((i) => {
        observer.observe(i);
     });

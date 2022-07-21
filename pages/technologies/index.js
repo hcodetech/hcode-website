@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import Accordion from "../../components/Accordion";
+// import Accordion from "../../components/Accordion";
 import { faq_services, technologies_page } from "../../constants/constants";
 // import { useRouter } from "next/dist/client/router";
 import Link from "next/link";
@@ -10,22 +10,32 @@ function technologies(props) {
 
   // To check if the any category is included in the URL
   // const isTechnologiesStack = (pathname) => asPath.includes(pathname);
-  const [hash, setHash] = useState("#");
-  const [path, setPath] = useState("");
+  
+  const [hashOnScroll, setHashOnScroll] = useState("#");
+  const [hashOnClick, setHashOnClick] = useState("");
+  // const [hashOnUrlChange, setHashOnUrlChange] = useState("");
   const refs = useRef([]); // create empty array for creating multiple refs
 
+  let Technologies = ["Backend",
+    "Frontend",
+    "Blockchain",
+    "Cloud",
+    "Database",
+    "CI/CD"
+  ]
+
+  useEffect(()=>{
+    window.addEventListener('hashchange', function() { 
+      // setHashOnUrlChange(window.location.hash)
+      setHashOnScroll("")
+      setHashOnClick("")
+    });
+  },[])
+
   useEffect(() => {
-    if (window.location.hash.substring(1) ===
-      "Backend" ||
-      "Frontend" ||
-      "Blockchain" ||
-      "Cloud" ||
-      "Database" ||
-      "CI/CD"
-    ) {
-      setPath(window.location.hash.substring(1))
-    }
-  }, [])
+    let myHash = window.location.hash.substring(1);
+    Technologies.includes(myHash) && setHashOnClick(myHash)
+  })
 
   useEffect(() => {
     let observerOptions = {
@@ -36,11 +46,11 @@ function technologies(props) {
     let observer = new IntersectionObserver(observerCallback, observerOptions);
 
     function observerCallback(sections) {
-
       if (sections[0].isIntersecting) {
         window.location.hash = sections[0].target.id
-        setHash(sections[0].target.id)
-        setPath("")
+        setHashOnScroll(sections[0].target.id)
+        setHashOnClick("")
+        // setHashOnUrlChange("")
       }
     }
     document.querySelectorAll("section").forEach((i) => {
@@ -90,24 +100,18 @@ function technologies(props) {
           <div className="top-1/3 float-left fixed pl-10 h-screen hidden lg:block">
             <div className="flex flex-col cursor-pointer">
               <h2 className="font-bold">Technologies</h2>
-              {[
-                "Backend",
-                "Frontend",
-                "Blockchain",
-                "Cloud",
-                "Database",
-                "CI/CD",
-              ].map((stack) => (
+              {Technologies.map((stack) => (
                 <Link href={`#${stack}`} key={stack}>
-                  <a
+                  <a href={`#${stack}`} key={stack}
                     className={
-                      (hash === stack) || (path === stack)
+                      (hashOnScroll === stack) || (hashOnClick === stack)
                         ? "text-blue-600 font-semibold underline"
                         : ""
                     }
                     onClick={(e) => {
-                      setHash("");
-                      setPath(e.target.text);
+                      setHashOnClick(e.target.text);
+                      setHashOnScroll("");
+                      // setHashOnUrlChange("")
                     }}
                   >
                     {stack}
