@@ -16,7 +16,7 @@ function technologies(props) {
   // const [hashOnUrlChange, setHashOnUrlChange] = useState("");
   const refs = useRef([]); // create empty array for creating multiple refs
 
-  let Technologies = ["Backend",
+  let technologies = ["Backend",
     "Frontend",
     "Blockchain",
     "Cloud",
@@ -34,7 +34,7 @@ function technologies(props) {
 
   useEffect(() => {
     let myHash = window.location.hash.substring(1);
-    Technologies.includes(myHash) && setHashOnClick(myHash)
+    technologies.includes(myHash) && setHashOnClick(myHash)
   })
 
   useEffect(() => {
@@ -100,7 +100,7 @@ function technologies(props) {
           <div className="top-1/3 float-left fixed pl-10 h-screen hidden lg:block">
             <div className="flex flex-col cursor-pointer">
               <h2 className="font-bold">Technologies</h2>
-              {Technologies.map((stack) => (
+              {technologies.map((stack) => (
                 <Link href={`#${stack}`} key={stack}>
                   <a href={`#${stack}`} key={stack}
                     className={
