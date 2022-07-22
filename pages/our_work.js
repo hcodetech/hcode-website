@@ -1,27 +1,45 @@
 import Head from "next/head";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import CardPortfolio from "../components/CardPortfolio";
 import { portfolioIndustry } from "../constants/constants";
 import { getAPIUrl } from "./api/APIHelpers";
 import { apiRoutes } from "./api/APIRoutes";
 import useGetFetch from "./hooks/useGetFetch";
+import Router from "next/router";
 
 const our_work = () => {
   const [selectedCategory, setSelectedCategory] = useState([]);
   const [portfolioData, isLoading] = useGetFetch(getAPIUrl(apiRoutes.OUR_WORK));
+  // const [select, setSelect] = useState(false);
+
+  useEffect(() => {
+    console.log("Router.AsPath",Router.asPath)
+    let myPath = Router.asPath.split("=")[1];
+    // console.log("myPath",myPath.split("=")[1])
+    portfolioIndustry.includes(myPath) && console.log("myPath")
+  }, [])
+
   // Select Industry Card
   const setSelectedTech = (e, industryName) => {
     if (e.target.checked) {
       setSelectedCategory((prev) => [...prev, industryName]);
+      Router.push({
+        pathname: Router.pathname,
+        query: { categories: [...selectedCategory, industryName] },
+      });
     } else {
       setSelectedCategory((industry) => {
         return industry.filter((item) => item !== industryName);
+      });
+      Router.push({
+        pathname: Router.pathname,
+        query: { categories: selectedCategory.filter((item) => item !== industryName) },
       });
     }
   };
   return (
     <>
-    <Head>
+      <Head>
         <title>Our Work | Hcode Technologies   </title>
       </Head>
       {/* Hero Section */}
