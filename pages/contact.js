@@ -8,6 +8,7 @@ import Head from "next/head";
 import { useState } from "react";
 import {
   contact_us_circle,
+  metaData,
   selected_technologies,
 } from "../constants/constants";
 import DotLoader from "react-spinners/DotLoader";
@@ -16,6 +17,7 @@ import { apiRoutes } from "./api/APIRoutes";
 import { getAPIUrl } from "./api/APIHelpers";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/plain.css";
+import MetaTags from "../components/MetaTags";
 const defaultColor = "#373536";
 function contact() {
   const [success, setSuccess] = useState(false);
@@ -119,6 +121,7 @@ function contact() {
     <>
       <Head>
         <title>Contact | Hcode Technologies </title>
+        <MetaTags page={metaData.contact} />
       </Head>
       {loading && (
         <div className="fixed top-1/2 inset-x-2/4">

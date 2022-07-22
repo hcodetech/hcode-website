@@ -1,7 +1,8 @@
 import Head from "next/head";
 import { useState, useEffect } from "react";
 import CardPortfolio from "../components/CardPortfolio";
-import { portfolioIndustry } from "../constants/constants";
+import MetaTags from "../components/MetaTags";
+import { metaData, portfolioIndustry } from "../constants/constants";
 import { getAPIUrl } from "./api/APIHelpers";
 import { apiRoutes } from "./api/APIRoutes";
 import useGetFetch from "./hooks/useGetFetch";
@@ -42,6 +43,7 @@ const our_work = (props) => {
     <>
       <Head>
         <title>Our Work | Hcode Technologies </title>
+        <MetaTags page={metaData.our_work} />
       </Head>
       {/* Hero Section */}
       <section className="new-container mx-auto text-center lg:w-1/2 ">

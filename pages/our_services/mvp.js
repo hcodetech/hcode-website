@@ -9,6 +9,7 @@ import {
   client,
   faq_mvp,
   faq_services,
+  metaData,
   mvp_benefits,
   MVP_Hero,
   MVP_look_icon,
@@ -19,18 +20,20 @@ import { getAPIUrl } from "../api/APIHelpers";
 import { apiRoutes } from "../api/APIRoutes";
 import useGetFetch from "../hooks/useGetFetch";
 import Accordion from "../../components/Accordion";
+import MetaTags from "../../components/MetaTags";
 
 const mvp = () => {
   const [selectedCategory, setSelectedCategory] = useState(["MVP"]);
   const [portfolioData, isLoading] = useGetFetch(getAPIUrl(apiRoutes.OUR_WORK));
-  const [isDesktop, setIsDesktop] = useState("")
+  const [isDesktop, setIsDesktop] = useState("");
   useEffect(() => {
-      window.innerWidth<=750 ? setIsDesktop(false) : setIsDesktop(true) 
-       })
+    window.innerWidth <= 750 ? setIsDesktop(false) : setIsDesktop(true);
+  });
   return (
     <>
       <Head>
         <title>Rapid Prototyping (MVP) | Hcode </title>
+        <MetaTags page={metaData.mvp} />
       </Head>
       {/* Hero Section */}
       <section className="bg-[#060501] text-white">
@@ -59,7 +62,7 @@ const mvp = () => {
 
       {/* Client Section */}
       <section className="new-container py-10">
-        <Client data={client} slides={isDesktop}/>
+        <Client data={client} slides={isDesktop} />
       </section>
 
       {/* Why MVP */}

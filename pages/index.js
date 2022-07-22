@@ -5,6 +5,7 @@ import {
   client,
   city,
   TEAM,
+  metaData,
 } from "../constants/constants";
 import Client from "../components/Client";
 import ServicesCard from "../components/ServicesCard";
@@ -27,6 +28,7 @@ import useGetFetch from "./hooks/useGetFetch";
 import { useEffect, useState } from "react";
 import NewsletterComponent from "../components/NewsletterComponent";
 import NewsletterCTA from "../components/NewsletterCTA";
+import MetaTags from "../components/MetaTags";
 
 export default function Home() {
   const [isDesktop, setIsDesktop] = useState("");
@@ -59,6 +61,7 @@ export default function Home() {
     <>
       <Head>
         <title>{homepage.title} </title>
+        <MetaTags page={metaData.homepage} />
       </Head>
 
       {/* Crasoual  */}

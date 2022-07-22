@@ -688,12 +688,119 @@ export const how_to_get_started = {
   ],
 };
 
+export const metaData = {
+  homepage: {
+    description:
+      "We’re in the business of writing great code. We provide on-time delivery along with transparent communication. But we also make sure that our people have great work-life balance, meritocracy, and a healthy work environment",
+    title: "Servicing End-To-End Engineering Needs | Hcode ",
+    share_image: "https://hcode.tech/assets/img/Meta-Image.jpg",
+    url: "https://hcode.tech",
+  },
+  our_services: {
+    title: "Hire Top Tech talent for your Remote Team",
+    description:
+      "We help assemble and manage a team of world-class software developers dedicated to bringing your vision to life",
+    share_image: "https://hcode.tech/assets/img/Meta-Image.jpg",
+    url: "https://hcode.tech/our_services",
+  },
+  developer_as_a_service: {
+    title: "Developer as a Service (DaaS) ",
+    description:
+      "You get developer(s) experienced in the required skills that you can directly manage. They can work standalone on a project or work with your existing team. You should ideally have someone technical in your team who can manage these developers.",
+    share_image: "https://hcode.tech/assets/img/Meta-Image.jpg",
+    url: "https://hcode.tech/our_services/developer_as_a_service",
+  },
+
+  team_as_a_service: {
+    title: "Team as a Service (TaaS)",
+    description:
+      "You get a team of software developers headed by a Tech-Lead or a Project Manager. This team can either function as your standalone technology team or this could be augmenting your existing team. With a Tech Lead or Project Manager in the mix, you don’t have to directly manage all your resources and can provide a high-level plan of what you want to achieve.",
+    share_image: "https://hcode.tech/assets/img/Meta-Image.jpg",
+    url: "https://hcode.tech/our_services/team_as_a_service",
+  },
+
+  blockchain: {
+    title: "Blockchain Development Services",
+    description:
+      "We’re proficient in various Blockchain services including, but not limited to, Dapps, Smart Contracts, NFT marketplace and Blockchain Security Audit.",
+    share_image: "https://hcode.tech/assets/img/Meta-Image.jpg",
+    url: "https://hcode.tech/our_services/blockchain",
+  },
+
+  mvp: {
+    title: "MVP Development Services",
+    description:
+      "Get your Minimal Viable Product built by a team of experienced product builders",
+    share_image: "https://hcode.tech/assets/img/Meta-Image.jpg",
+    url: "https://hcode.tech/our_services/mvp",
+  },
+
+  about: {
+    title: "We’re in the business of Writing Great Code",
+    description:
+      "We provide on-time delivery along with transparent communication. But we also make sure that our people have great work-life balance, meritocracy, and a healthy work environment",
+    share_image: "https://hcode.tech/assets/img/Meta-Image.jpg",
+    url: "https://hcode.tech/about",
+  },
+
+  work_with_us: {
+    title: "Let’s Work Together at HCode",
+    description:
+      "We abide by our core value, ‘Our people are our biggest asset’, in letter and spirit. We do everything to make sure that our people are personally happy, professionally satisfied, and continue growing.",
+    share_image: "https://hcode.tech/assets/img/Meta-Image.jpg",
+    url: "https://hcode.tech/work_with_us",
+  },
+
+  our_work: {
+    title: "Products we've made for our client partners",
+    description:
+      "We have worked on a broad range of projects, from algorithm-heavy backend projects to beautiful and interactive responsive web products. Listed below are some of our creations.",
+    share_image: "https://hcode.tech/assets/img/Meta-Image.jpg",
+    url: "https://hcode.tech/our_work",
+  },
+
+  technologies: {
+    title: "We work with the latest and most popular tech stacks",
+    description:
+      "Extend your tech team with top talent from us. We oversee the execution and management of your software projects with our proven processes and tech mentorship",
+    share_image: "https://hcode.tech/assets/img/Meta-Image.jpg",
+    url: "https://hcode.tech/technologies",
+  },
+
+  terms_and_conditions: {
+    title: "Terms and Conditions | Hcode",
+    description: `This Privacy Policy governs how HCODE collects, uses, maintains, and discloses information collected from users (each, a "User") of the www.hcode.tech website ("Site"). This privacy policy applies to the Site and all products and services offered by HCODE.`,
+    share_image: "https://hcode.tech/assets/img/Meta-Image.jpg",
+    url: "https://hcode.tech/terms_and_conditions",
+  },
+
+  privacy_policy: {
+    title: "PRIVACY POLICY | Hcode",
+    description: `This Privacy Policy governs how HCODE collects, uses, maintains, and discloses information collected from users (each, a "User") of the www.hcode.tech website ("Site"). This privacy policy applies to the Site and all products and services offered by HCODE.`,
+    share_image: "https://hcode.tech/assets/img/Meta-Image.jpg",
+    url: "https://hcode.tech/privacy_policy",
+  },
+
+  contact: {
+    title: "Contact Us | Hcode",
+    description: "Let’s scale your team together",
+    share_image: "https://hcode.tech/assets/img/Meta-Image.jpg",
+    url: "https://hcode.tech/contact",
+  },
+
+  newsletter: {
+    title: "HCode | Monthly Newsletter by HCode Technologies",
+    description: "Hear about the cool tech the world is building",
+    share_image: "https://hcode.tech/assets/img/Meta-Image.jpg",
+    url: "https://hcode.tech/newsletter",
+  },
+};
+
 export const homepage = {
   description:
     "We’re in the business of writing great code. We provide on-time delivery along with transparent communication. But we also make sure that our people have great work-life balance, meritocracy, and a healthy work environment",
   title: "Servicing End-To-End Engineering Needs | Hcode ",
-  share_image:
-    "https://s3.amazonaws.com/hcode.tech/assets/img/hcode-logo-vertical.jpg",
+  share_image: "https://hcode.tech/assets/img/Meta-Image.jpg",
   who_are_we: {
     image: "/assets/img/homepage_who_we_are.jpg",
     heading: "Who We Are?",

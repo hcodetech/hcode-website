@@ -4,18 +4,20 @@ import Client from "../components/Client";
 import CTA from "../components/CTA";
 import ServicesCard from "../components/ServicesCard";
 import Team from "../components/Team";
-import { about_page, client, TEAM } from "../constants/constants";
+import { about_page, client, metaData, TEAM } from "../constants/constants";
 import { ArrowRightIcon } from "@heroicons/react/solid";
 import React, { useState, useEffect } from "react";
+import MetaTags from "../components/MetaTags";
 function about() {
-  const [isDesktop, setIsDesktop] = useState("")
+  const [isDesktop, setIsDesktop] = useState("");
   useEffect(() => {
-     window.innerWidth<=750 ? setIsDesktop(false) : setIsDesktop(true) 
-      })
+    window.innerWidth <= 750 ? setIsDesktop(false) : setIsDesktop(true);
+  });
   return (
     <>
       <Head>
-        <title>About Us | Hcode Techonolgies </title>
+        <title>About Us | Hcode Technologies </title>
+        <MetaTags page={metaData.about} />
         {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
       <section className="new-container ">
@@ -151,7 +153,7 @@ function about() {
       <div className="my-10 new-container">
         <Client data={client} slides={isDesktop} />
       </div>
-     
+
       {/* CTA */}
       <div className="new-container mb-10">
         <CTA />

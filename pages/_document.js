@@ -3,7 +3,7 @@
 // we can utilise a custom _document.js and only add the Google Font into the Head in a single place.
 
 import Document, { Html, Head, Main, NextScript } from "next/document";
-import { fav_icon, homepage } from "../constants/constants";
+import { fav_icon } from "../constants/constants";
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
     const initialProps = await Document.getInitialProps(ctx);
@@ -14,32 +14,6 @@ class MyDocument extends Document {
     return (
       <Html lang="en " className="scroll-smooth">
         <Head>
-          {/*  */}
-
-          <meta
-            name="keywords"
-            content="Software, Development Studio, Development, Engineer, Mobile Apps, Web Apps"
-          />
-
-          <meta name="description" content={homepage.description} />
-          <meta name="image" content={homepage.share_image} />
-
-          <meta itemProp="name" content={homepage.title} />
-          <meta itemProp="description" content={homepage.description} />
-          <meta itemProp="image" content={homepage.share_image} />
-
-          <meta property="og:title" content={homepage.title} />
-          <meta property="og:type" content="website" />
-          <meta property="og:url" content="https://hcode.tech/" />
-          <meta property="og:image" content={homepage.share_image} />
-          <meta property="og:description" content={homepage.description} />
-
-          <meta property="twitter:card" content="summary_large_image" />
-          <meta property="twitter:url" content="https://hcode.tech/" />
-          <meta property="twitter:title" content={homepage.title} />
-          <meta property="twitter:description" content={homepage.description} />
-          <meta property="twitter:image" content={homepage.share_image} />
-
           {/* MailChimp */}
           <script
             id="mcjs"
@@ -60,12 +34,10 @@ class MyDocument extends Document {
           `,
             }}
           />
-
           <script
             async
             src={`https://www.googletagmanager.com/gtag/js?id=UA-148478855-1`}
           />
-
           {/* Google Fonts - Poppins */}
           <link
             href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500&display=swap"

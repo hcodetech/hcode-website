@@ -4,6 +4,7 @@ import {
   faq_hiring,
   hiring_process,
   karnal,
+  metaData,
   OUR_MENTORS,
   remote,
   TEAM,
@@ -19,12 +20,14 @@ import ImageCarousel from "../components/ImageCarousel";
 import Benefits from "../components/Benefits";
 import Accordion from "../components/Accordion";
 import Team from "../components/Team";
+import MetaTags from "../components/MetaTags";
 
 function work_with_us() {
   return (
     <>
       <Head>
-        <title>Work With Us | Hcode Techonolgies</title>
+        <title>Work With Us | Hcode Technologies</title>
+        <MetaTags page={metaData.work_with_us} />
       </Head>
       {/* Hero Section */}
       <section className="relative bg-no-repeat bg-contain ">
