@@ -5,35 +5,40 @@ import { portfolioIndustry } from "../constants/constants";
 import { getAPIUrl } from "./api/APIHelpers";
 import { apiRoutes } from "./api/APIRoutes";
 import useGetFetch from "./hooks/useGetFetch";
-import Router from "next/router";
+import { useRouter } from "next/router";
 
-const our_work = () => {
+const our_work = (props) => {
   const [selectedCategory, setSelectedCategory] = useState([]);
+  // const [queryParams, setQueryParams] = useState([]);
   const [portfolioData, isLoading] = useGetFetch(getAPIUrl(apiRoutes.OUR_WORK));
-  // const [select, setSelect] = useState(false);
+  const router = useRouter();
 
   useEffect(() => {
-    console.log("Router.AsPath",Router.asPath)
-    let myPath = Router.asPath.split("=")[1];
-    // console.log("myPath",myPath.split("=")[1])
-    portfolioIndustry.includes(myPath) && console.log("myPath")
+    console.log("portfolioIndustry",portfolioIndustry)
+    console.log("props.query.q",props.query.q)
+    if(props?.query?.q){
+      (Array.isArray(props.query.q) ? 
+      portfolioIndustry.includes(props.query.q[0]) : 
+      portfolioIndustry.includes(props.query.q)) && 
+      setSelectedCategory(props.query.q)
+    }
   }, [])
 
   // Select Industry Card
   const setSelectedTech = (e, industryName) => {
     if (e.target.checked) {
       setSelectedCategory((prev) => [...prev, industryName]);
-      Router.push({
-        pathname: Router.pathname,
-        query: { categories: [...selectedCategory, industryName] },
+      router.push({
+        pathname: router.pathname,
+        query: { q: [...selectedCategory, industryName] },
       });
     } else {
       setSelectedCategory((industry) => {
         return industry.filter((item) => item !== industryName);
       });
-      Router.push({
-        pathname: Router.pathname,
-        query: { categories: selectedCategory.filter((item) => item !== industryName) },
+      router.push({
+        pathname: router.pathname,
+        query: { q: selectedCategory.filter((item) => item !== industryName) },
       });
     }
   };
@@ -123,5 +128,11 @@ const our_work = () => {
     </>
   );
 };
+
+export async function getServerSideProps(router) {
+  return {
+    props: {query: router?.query}, // will be passed to the page component as props
+  }
+}
 
 export default our_work;
