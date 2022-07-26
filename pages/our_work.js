@@ -9,18 +9,14 @@ import { useRouter } from "next/router";
 
 const our_work = (props) => {
   const [selectedCategory, setSelectedCategory] = useState([]);
-  // const [queryParams, setQueryParams] = useState([]);
   const [portfolioData, isLoading] = useGetFetch(getAPIUrl(apiRoutes.OUR_WORK));
   const router = useRouter();
 
   useEffect(() => {
-    console.log("portfolioIndustry",portfolioIndustry)
-    console.log("props.query.q",props.query.q)
     if(props?.query?.q){
       (Array.isArray(props.query.q) ? 
-      portfolioIndustry.includes(props.query.q[0]) : 
-      portfolioIndustry.includes(props.query.q)) && 
-      setSelectedCategory(props.query.q)
+      portfolioIndustry.includes(props.query.q[0]) && setSelectedCategory(props.query.q): 
+      portfolioIndustry.includes(props.query.q)) && setSelectedCategory([props.query.q])
     }
   }, [])
 
@@ -75,6 +71,7 @@ const our_work = (props) => {
                 name={industryName}
                 type="checkbox"
                 className="input-radio hidden"
+                checked={selectedCategory.includes(industryName)}
               />
               <label
                 htmlFor={industryName}
