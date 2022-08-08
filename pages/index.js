@@ -24,20 +24,36 @@ import BlockchainSVG from "../public/assets/img/blockchain-illu.svg";
 import { apiRoutes } from "./api/APIRoutes";
 import { getAPIUrl } from "./api/APIHelpers";
 import useGetFetch from "./hooks/useGetFetch";
-import { useRouter } from "next/dist/client/router";
 import { useEffect, useState } from "react";
 import NewsletterComponent from "../components/NewsletterComponent";
 import NewsletterCTA from "../components/NewsletterCTA";
 
 export default function Home() {
   const [isDesktop, setIsDesktop] = useState("");
-  const { pathname } = useRouter();
   // const [clientLogos, isClientLogosLoading] = useGetFetch(getAPIUrl(apiRoutes.CLIENT_LOGO));
+
   useEffect(() => {
     window.innerWidth <= 750 ? setIsDesktop(false) : setIsDesktop(true);
-  }, []);
 
-  // if (typeof window === "undefined") { ;/* we're on the server */ }
+    // on scroll, url is changing with section ids with the help of intersectionObserver API
+    // intersectionObserver API contain two arguements i.e, callback function and options
+    let observerOptions = {
+      rootMargin: "10px",
+      threshold: window.innerWidth <= 750 ? 0.1 : 0.8,
+    };
+
+    let observer = new IntersectionObserver(observerCallback, observerOptions);
+
+    function observerCallback(sections) {
+
+      if(sections[0].isIntersecting){
+        history.pushState(null, null, "#" + sections[0].target.id);
+      }
+    }
+    document.querySelectorAll("section").forEach((i) => {
+       observer.observe(i);
+    });
+  }, []);
 
   return (
     <>
@@ -45,15 +61,17 @@ export default function Home() {
         <title>{homepage.title} </title>
       </Head>
 
-      {/* Hero  */}
-      <HeroSection />
-
-      {/* Client Section */}
-      <div className=" new-container pt-10">
-        <Client data={client} slides={isDesktop} />
-      </div>
+      {/* Crasoual  */}
+      <section id="home">
+        <HeroSection />
+        {/* Client Section */}
+        <div className=" new-container pt-10">
+          <Client data={client} slides={isDesktop} />
+        </div>
+      </section>
 
       {/* Our Services */}
+
       <section id="services" className="mt-4 ">
         <div className="new-container ">
           <ServicesCard heading={true} />
@@ -112,7 +130,7 @@ export default function Home() {
         </div>
       </section>
       {/* Who we are */}
-      <section id="homepage" className="bg-gray-100 mt-14">
+      <section id="who_we_are" className="bg-gray-100 mt-14">
         <div className="new-container py-10">
           <div className="grid grid-cols-12">
             <div className="col-span-12 lg:col-span-6">
@@ -154,7 +172,9 @@ export default function Home() {
       </section>
 
       {/* Benefits */}
-      <Benefits data={homepage.why_hcode} />
+      <section id="why_hcode">
+        <Benefits data={homepage.why_hcode} />
+      </section>
       <div className="new-container mx-auto -mt-16 pb-16">
         <div className="text-center">
           <a
@@ -168,22 +188,22 @@ export default function Home() {
       </div>
 
       {/* Testimonial */}
-      <div className="pt-10 pb-0 bg-gray-100">
+      <section id="testimonial" className="pt-10 pb-0 bg-gray-100">
         <Testimonial />
-      </div>
+      </section>
 
       {/* Tech Stack */}
-      <div className="mt-20">
+      <section id="tech_stack" className="mt-20">
         <TechStack />
-      </div>
+      </section>
 
       {/* Process */}
-      <div className="  py-16">
+      <section id="process" className="  py-16">
         <Process data={how_to_get_started} />
-      </div>
+      </section>
 
       {/* Case Studies */}
-      <div className=" ">
+      <section id="case_studies" className=" ">
         <h2 className="text-4xl font-semibold text-center py-5 mb-4">
           Our Work
         </h2>
@@ -193,11 +213,11 @@ export default function Home() {
             See Our Portfolio
           </a>
         </div>
-      </div>
+      </section>
 
       <NewsletterCTA />
       {/* Core Team  */}
-      <section id="core" className="py-14 bg-gray-100 text-center">
+      <section id="our_core_team" className="py-14 bg-gray-100 text-center">
         <div className="lg:new-container">
           <h1 className="font-poppins text-center font-semibold text-3xl  md:text-4xl md:leading-tight">
             Our Core Team
@@ -219,9 +239,9 @@ export default function Home() {
       </section>
 
       {/* CTA */}
-      <div className="my-20 ">
+      <section id="cta" className="my-20 ">
         <CTA />
-      </div>
+      </section>
     </>
   );
 }

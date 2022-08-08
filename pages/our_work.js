@@ -1,27 +1,46 @@
 import Head from "next/head";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import CardPortfolio from "../components/CardPortfolio";
 import { portfolioIndustry } from "../constants/constants";
 import { getAPIUrl } from "./api/APIHelpers";
 import { apiRoutes } from "./api/APIRoutes";
 import useGetFetch from "./hooks/useGetFetch";
+import { useRouter } from "next/router";
 
-const our_work = () => {
+const our_work = (props) => {
   const [selectedCategory, setSelectedCategory] = useState([]);
   const [portfolioData, isLoading] = useGetFetch(getAPIUrl(apiRoutes.OUR_WORK));
+  const router = useRouter();
+
+  useEffect(() => {
+    if(props?.query?.q){
+      (Array.isArray(props.query.q) ? 
+      portfolioIndustry.includes(props.query.q[0]) && setSelectedCategory(props.query.q): 
+      portfolioIndustry.includes(props.query.q)) && setSelectedCategory([props.query.q])
+    }
+  }, [])
+
   // Select Industry Card
   const setSelectedTech = (e, industryName) => {
     if (e.target.checked) {
       setSelectedCategory((prev) => [...prev, industryName]);
+      router.push({
+        pathname: router.pathname,
+        query: { q: [...selectedCategory, industryName] },
+      });
     } else {
       setSelectedCategory((industry) => {
         return industry.filter((item) => item !== industryName);
+      });
+      router.push({
+        pathname: router.pathname,
+        query: { q: selectedCategory.filter((item) => item !== industryName) },
       });
     }
   };
   return (
     <>
-    <Head>
+      <Head>
         <title>Our Work | Hcode Technologies   </title>
       </Head>
       {/* Hero Section */}
@@ -52,6 +71,7 @@ const our_work = () => {
                 name={industryName}
                 type="checkbox"
                 className="input-radio hidden"
+                checked={selectedCategory.includes(industryName)}
               />
               <label
                 htmlFor={industryName}
@@ -105,5 +125,11 @@ const our_work = () => {
     </>
   );
 };
+
+export async function getServerSideProps(router) {
+  return {
+    props: {query: router?.query}, // will be passed to the page component as props
+  }
+}
 
 export default our_work;

@@ -2,7 +2,7 @@ import { how_to_get_started } from "../constants/constants"
 
 function Process() {
     return (
-        <section className="md:new-container">
+        <div className="md:new-container">
             <div className="px-5 text-center">
                 <h1 className="text-center text-3xl lg:text-4xl font-semibold ">{how_to_get_started.heading}</h1>
                 <p className="py-3 lg:w-7/12 mx-auto ">{how_to_get_started.descripition}</p>
@@ -34,7 +34,7 @@ function Process() {
                     {how_to_get_started.steps[2].descripition}
                 </p>
             </div>
-        </section>
+        </div>
     )
 }
 
