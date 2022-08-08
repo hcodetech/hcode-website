@@ -3,6 +3,8 @@ import DotLoader from "react-spinners/DotLoader";
 import Head from "next/head";
 
 import MailchimpSubscribe from "react-mailchimp-subscribe";
+import { metaData } from "../constants/constants";
+import MetaTags from "../components/MetaTags";
 
 const newsletter = () => {
   const MAILCHIMP_URL = process.env.NEXT_PUBLIC_MAILCHIMP_URL;

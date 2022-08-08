@@ -41,13 +41,12 @@ class MyDocument extends Document {
           <meta property="twitter:image" content={homepage.share_image} />
 
           {/* MailChimp */}
-          {/* <script
+          <script
             id="mcjs"
             dangerouslySetInnerHTML={{
               __html: `!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/f5258b0c0d2b6c7561d024d3c/3da1e5017282a765c7865d2a3.js")`,
             }}
-          /> */}
-
+          />
           {/* Google Analytics */}
           <script
             dangerouslySetInnerHTML={{
