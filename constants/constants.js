@@ -1671,3 +1671,21 @@ export const faq_mvp = [
       "Our standard technology stacks are React and Typescript for Frontend and Python for Backend. We’ve chosen these in the interest of being open source and fairly comprehensive and fast to implement, along with our decent expertise in these. If for any reason you have any specific preference in the technology stack, please feel free to discuss with us.",
   },
 ];
+
+export const hcode_provide = [
+  {
+    icon: "",
+    title: "High ROI",
+    info: "Hire the top 1% of 1.5 million+ developers from 150+ countries who have applied to Turing.",
+  },
+  {
+    icon: "",
+    title: "Trust",
+    info: "Hire the top 1% of 1.5 million+ developers from 150+ countries who have applied to Turing.",
+  },
+  {
+    icon: "",
+    title: "Employee Rentention",
+    info: "Hire the top 1% of 1.5 million+ developers from 150+ countries who have applied to Turing.",
+  },
+];
