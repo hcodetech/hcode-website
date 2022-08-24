@@ -12,36 +12,36 @@ const our_work = (props) => {
   const [portfolioData, isLoading] = useGetFetch(getAPIUrl(apiRoutes.OUR_WORK));
   const router = useRouter();
 
-  useEffect(() => {
-    if(props?.query?.q){
-      (Array.isArray(props.query.q) ? 
-      portfolioIndustry.includes(props.query.q[0]) && setSelectedCategory(props.query.q): 
-      portfolioIndustry.includes(props.query.q)) && setSelectedCategory([props.query.q])
-    }
-  }, [])
+  // useEffect(() => {
+  //   if(props?.query?.q){
+  //     (Array.isArray(props.query.q) ?
+  //     portfolioIndustry.includes(props.query.q[0]) && setSelectedCategory(props.query.q):
+  //     portfolioIndustry.includes(props.query.q)) && setSelectedCategory([props.query.q])
+  //   }
+  // }, [])
 
   // Select Industry Card
   const setSelectedTech = (e, industryName) => {
     if (e.target.checked) {
       setSelectedCategory((prev) => [...prev, industryName]);
-      router.push({
-        pathname: router.pathname,
-        query: { q: [...selectedCategory, industryName] },
-      });
+      // router.push({
+      //   pathname: router.pathname,
+      //   query: { q: [...selectedCategory, industryName] },
+      // });
     } else {
       setSelectedCategory((industry) => {
         return industry.filter((item) => item !== industryName);
       });
-      router.push({
-        pathname: router.pathname,
-        query: { q: selectedCategory.filter((item) => item !== industryName) },
-      });
+      // router.push({
+      //   pathname: router.pathname,
+      //   query: { q: selectedCategory.filter((item) => item !== industryName) },
+      // });
     }
   };
   return (
     <>
       <Head>
-        <title>Our Work | Hcode Technologies   </title>
+        <title>Our Work | Hcode Technologies </title>
       </Head>
       {/* Hero Section */}
       <section className="new-container mx-auto text-center lg:w-1/2 ">
@@ -95,7 +95,6 @@ const our_work = (props) => {
                 <div className="w-96 bg-gray-300 h-10 rounded-md "></div>
                 <div className="w-full bg-gray-300 h-20 rounded-md "></div>
                 <div className="w-24 bg-gray-300 h-4 rounded-md "></div>
-
               </div>
               <div className="w-1/2 bg-gray-300 h-full "></div>
             </div>
@@ -126,10 +125,10 @@ const our_work = (props) => {
   );
 };
 
-export async function getServerSideProps(router) {
-  return {
-    props: {query: router?.query}, // will be passed to the page component as props
-  }
-}
+// export async function getServerSideProps(router) {
+//   return {
+//     props: {query: router?.query}, // will be passed to the page component as props
+//   }
+// }
 
 export default our_work;
