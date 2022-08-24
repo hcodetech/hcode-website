@@ -64,7 +64,7 @@ export default function Home() {
       </Head>
 
       {/* Crasoual  */}
-      <section id="home">
+      <section>
         <HeroSection />
         {/* Client Section */}
         <div className=" new-container pt-10">

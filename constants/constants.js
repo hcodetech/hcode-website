@@ -1055,6 +1055,7 @@ export const selected_technologies = [
   },
   {
     tech_name: "I Don't Know Yet",
+    tech: "Other",
   },
 ];
 
@@ -1689,3 +1690,17 @@ export const hcode_provide = [
     info: "Hire the top 1% of 1.5 million+ developers from 150+ countries who have applied to Turing.",
   },
 ];
+
+export const bestOthers = "/assets/img/best-others.jpg";
+export const rigorousVetting = "/assets/img/rigorous-vetting.jpg";
+export const effectiveCollaboration = "/assets/img/effective-collaboration.jpg";
+
+export const dollarIcons = "/assets/img/daas-icons/dollar-icon.svg";
+export const skills = "/assets/img/daas-icons/skills.svg";
+export const zero_risk = "/assets/img/daas-icons/zero_risk.svg";
+export const testIcon = "/assets/img/daas-icons/test.svg";
+export const seniority = "/assets/img/daas-icons/Seniority.svg";
+export const daily_updates = "/assets/img/daas-icons/Daily_updates.svg";
+export const easy_to_manage = "/assets/img/daas-icons/Easy_to_manage.svg";
+export const match_your_timezone =
+  "/assets/img/daas-icons/Match_your_timezone.svg";

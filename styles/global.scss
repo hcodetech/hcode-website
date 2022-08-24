@@ -21,7 +21,17 @@
   .primary-outline {
     @apply px-4 py-3 rounded border border-primary hover:bg-primary hover:text-white text-primary transform transition duration-100 ease-out;
   }
+
+  .pointer-heading{
+    @apply font-bold leading-4
+  }
+
+  .pointer-paragraph{
+    @apply font-light mt-1
+  }
 }
+
+
 
 /* Start Accordion Css */
 .accordionSection {
