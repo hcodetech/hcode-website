@@ -1,6 +1,10 @@
 import { useEffect, useRef, useState } from "react";
 // import Accordion from "../../components/Accordion";
-import { faq_services, technologies_page } from "../../constants/constants";
+import {
+  faq_services,
+  metaData,
+  technologies_page,
+} from "../../constants/constants";
 // import { useRouter } from "next/dist/client/router";
 import Link from "next/link";
 import Head from "next/head";
