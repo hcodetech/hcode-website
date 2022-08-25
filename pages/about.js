@@ -84,7 +84,7 @@ function about() {
         <h1 className="font-poppins text-center font-semibold text-3xl  md:text-4xl md:leading-tight">
           Our Core Team
         </h1>
-        <div className="flex-wrap flex justify-between mt-7 w-3/4 mx-auto">
+        <div className="flex-wrap flex justify-between mt-7  mx-auto">
           {TEAM.map(({ name, image, bio, link, title }, index) => (
             <Team
               key={index}
@@ -133,7 +133,11 @@ function about() {
           </div>
         </div>
         <div className=" hidden lg:block relative col-span-12 lg:col-span-6 ">
-          <img src={about_page.office_1} layout="fill" className="rounded-lg" />
+          <img
+            src={about_page.office_1}
+            layout="fill"
+            className="rounded-lg h-full object-cover"
+          />
           <div className="hidden xl:block absolute rounded-lg h-[400px] w-[300px] -bottom-3/4 xl:-bottom-5 z-20 -ml-24 border-none">
             <img
               src={about_page.office_2}

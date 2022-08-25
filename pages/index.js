@@ -47,13 +47,12 @@ export default function Home() {
     let observer = new IntersectionObserver(observerCallback, observerOptions);
 
     function observerCallback(sections) {
-
-      if(sections[0].isIntersecting){
+      if (sections[0].isIntersecting) {
         history.pushState(null, null, "#" + sections[0].target.id);
       }
     }
     document.querySelectorAll("section").forEach((i) => {
-       observer.observe(i);
+      observer.observe(i);
     });
   }, []);
 
@@ -225,7 +224,7 @@ export default function Home() {
           <h1 className="font-poppins text-center font-semibold text-3xl  md:text-4xl md:leading-tight">
             Our Core Team
           </h1>
-          <div className="flex-wrap flex justify-between mt-7 w-3/4 mx-auto">
+          <div className="flex-wrap flex justify-between mt-7  mx-auto">
             {TEAM.map(({ name, image, bio, link, title }, index) => (
               <Team
                 key={index}

@@ -27,11 +27,11 @@ export const about_page = {
     "Our Founder, Shashank who was working in New York, decided to move to India and do something meaningful. When he came back, he realized that all the great work opportunities were centered around a handful of metro cities only. While looking at his hometown, a small town around 100 Kms from the national capital, he saw that there are plenty of talented engineers who, if given the right mentorship and guidance, can be turned into professional coders.<br/><br/>That was his eureka moment, where he saw there can be an impact and along with his wife Shweta, he started building a small company. Soon, a few of their friends decided to jump on the wagon and we became Hcode.",
   heading_3: "and today,",
   paragraph_3:
-    "We are a team of 30+ young, talented and dynamic engineers, selected through a rigorous process and shaped through a hands-on training program. We’ve shipped quality code on-time to over a dozen clients across startups and enterprises. We have built strong ethical relationships with our clients such that they stay with us, come back to us with more projects, and get us more clients through referrals.<br/><br/>Our leadership team has worked in MNCs and startups across New York, Bengaluru, and New Delhi, and ensures the same level of professionalism and work culture while working from a small city in India, Karnal.",
+    "We are a team of 40+ young, talented and dynamic engineers, selected through a rigorous process and shaped through a hands-on training program. We’ve shipped quality code on-time to over three dozen clients across startups and enterprises. We have built such strong ethical relationships with our clients that they stay with us for long, come back to us with more projects, and get us more clients through referrals.<br/><br/>Our leadership team has worked in MNCs and startups across New York, Bengaluru, and New Delhi, and ensures the same level of professionalism and work culture while working from a small city in India, Karnal.",
   office_heading: "Our corporate office is located in Karnal,<br/> India",
   office_paragraph:
     "But why Karnal and not a metro city? This we get asked quite often. To answer, we thought <strong>instead of adding to the problem of migration</strong> to already overburdened cities, why not build a company in a small city and give people an option to do great work here itself.<br/> <br/>With that intent we built a <strong>beautiful and large office</strong> with a natural feel and built professional work culture with meritocracy at the center of it. We have been able to keep both <strong>our clients as well as employees happy</strong> and satisfied by our work policies, professional work ethics and transparent communication.<br/> <br/> We intend to give our employees <strong>an experience of working in a silicon valley tech company</strong> without having to migrate there.",
-  office_1: "/assets/img/office_1.jpg",
+  office_1: "/assets/img/office_view.jpg",
   office_2: "/assets/img/office_2.jpg",
 };
 
@@ -122,16 +122,16 @@ export const TEAM = [
     bio: "EM with experience of building Enterprise Applications.Ex-Siemens, NIT Durgapur",
     link: "https://www.linkedin.com/in/rishabh-garg-77023ab6/",
   },
-];
-
-export const OUR_MENTORS = [
   {
     image: "/assets/img/hcode_about_us_shweta.jpg",
     name: "Shweta Goel",
-    title: "Communication Coach",
+    // title: "Communication Coach",
     bio: "Started, grown & led multiple quant teams as VP in Goldman Sachs, New York, IIT Delhi",
     link: "https://www.linkedin.com/in/shweta-singla/",
   },
+];
+
+export const OUR_MENTORS = [
   {
     image: "/assets/img/hcode_about_us_arpit.jpg",
     name: "Arpit Maheshwari",
