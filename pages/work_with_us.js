@@ -5,9 +5,11 @@ import {
   hiring_process,
   karnal,
   metaData,
+  office_v3,
   OUR_MENTORS,
   remote,
   TEAM,
+  thailand_trip,
   what_we_do,
   work_with_us_1,
   work_with_us_2,
@@ -32,7 +34,7 @@ function work_with_us() {
       {/* Hero Section */}
       <section className="relative bg-no-repeat bg-contain ">
         <div className="new-container  grid grid-cols-1 lg:grid-cols-2  ">
-          <div className="py-10 md:py-24 md:pr-32 mt-20">
+          <div className="py-5 md:py-24 md:pr-32 mt-20">
             <h1 className="text-3xl lg:text-4xl font-semibold">
               {work_with_us_content.hero_heading}
             </h1>
@@ -61,28 +63,28 @@ function work_with_us() {
               </a>
             </p>
           </div>
-          <div className="relative sm:h-[322px] w-full lg:w-[558px] lg:mt-28 ">
-            <img
-              src={work_with_us_1}
-              layout="fill"
-              className="rounded-lg object-cover shadow-xl"
-            />
-          </div>
-        </div>
-        <div className="hidden  lg:grid grid-cols-12 -mt-48">
-          <div className="col-start-5 col-end-10 relative sm:h-[322px] w-[500px] mt-12 ">
-            <img
-              src={work_with_us_2}
-              layout="fill"
-              className="rounded-lg  shadow-xl object-cover"
-            />
-          </div>
-          <div className="col-start-10 col-end-12 relative sm:h-[322px] w-[256px] ">
-            <img
-              src={work_with_us_3}
-              layout="fill"
-              className="rounded-lg  shadow-xl object-cover"
-            />
+          <div className=" grid grid-cols-12 gap-8 overflow-hidden">
+            <div className="col-span-12 w-full md:mt-28">
+              <img
+                src={office_v3}
+                layout="fill"
+                className="md:rounded-lg object-cover shadow-md md:hover:scale-105 transition-all duration-100 ease-out "
+              />
+            </div>
+            <div className="col-span-6 w-full -mt-24 hidden md:block">
+              <img
+                src={work_with_us_1}
+                layout="fill"
+                className="rounded-lg object-cover shadow-md md:hover:scale-105 transition-all duration-100 ease-out"
+              />
+            </div>{" "}
+            <div className="col-span-6 w-full -mt-24 hidden md:block">
+              <img
+                src={thailand_trip}
+                layout="fill"
+                className="rounded-lg object-cover shadow-md md:hover:scale-105 transition-all duration-100 ease-out"
+              />
+            </div>
           </div>
         </div>
       </section>

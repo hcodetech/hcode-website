@@ -191,10 +191,18 @@ export const remote = "/assets/icons/remote.svg";
 export const work_with_us_1 = "/assets/img/work_with_us_1.jpg";
 export const work_with_us_2 = "/assets/img/work_with_us_2.jpg";
 export const work_with_us_3 = "/assets/img/work_with_us_3.jpg";
+export const thailand_trip = "/assets/img/thailand_trip.jpg";
+export const office_v3 = "/assets/img/office_v3.jpg";
 export const work_with_us_recuriter_image =
   "/assets/img/work_with_us_recruiter.jpg";
 export const our_services_hero = "/assets/img/our_services_hero.jpg";
 export const work_with_us_image_carousel = [
+  { image: "/assets/img/thailand_trip.jpg" },
+  { image: "/assets/img/office_v3.jpg" },
+  { image: "/assets/img/cake_1.jpg" },
+  { image: "/assets/img/swim_2.jpg" },
+  { image: "/assets/img/swim_3.jpg" },
+  { image: "/assets/img/trip_1.jpg" },
   { image: "/assets/img/work_with_us_4.jpg" },
   { image: "/assets/img/work_with_us_5.jpg" },
   { image: "/assets/img/work_with_us_6.jpg" },
