@@ -13,7 +13,7 @@ function Client(props) {
   };
   return (
     <>
-      <h2 className="text-center text-3xl font-semibold pb-10">
+      <h2 className="text-center text-xl md:text-3xl font-semibold pb-5 md:pb-10">
         {props.heading
           ? ""
           : "We're trusted by many fast growing companies for their tech needs"}

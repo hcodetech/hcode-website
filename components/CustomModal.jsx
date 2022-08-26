@@ -18,6 +18,7 @@ function CustomModal({ open, setOpen }) {
   const [companyEmail, setCompanyEmail] = useState("");
   const [mobileNumber, setMobileNumber] = useState("+91");
   const [numberOfDev, setNumberOfDevs] = useState("0");
+  const [numberOfMonths, setNumberOfMonths] = useState("0");
   const [currentNumberOfEmployees, setCurrentNumberOfEmployees] = useState("0");
   const [preferredTechStack, setPreferredTechStack] = useState([]);
   const [hiringNeed, setHiringNeed] = useState();
@@ -43,6 +44,7 @@ function CustomModal({ open, setOpen }) {
       employee_number: currentNumberOfEmployees,
       hiring_need: hiringNeed,
       number_of_dev: numberOfDev,
+      // number_of_months: numberOfMonths,
       tech_preference: preferredTechStack.join(","),
       is_daas: true,
       //   mobile_number: mobileNumber.length > 4 ? `{+${mobileNumber}}` : "",
@@ -78,6 +80,7 @@ function CustomModal({ open, setOpen }) {
       setCompanyEmail("");
       setMobileNumber("");
       setNumberOfDevs("0");
+      setNumberOfMonths("0");
       setCurrentNumberOfEmployees("0");
       setPreferredTechStack([]);
       // Show the Success Message
@@ -169,26 +172,25 @@ function CustomModal({ open, setOpen }) {
                             className="input-form"
                           />
                         </div>
-                        <div className="col-span-12 grid grid-cols-12 gap-6">
-                          {/* Company Email */}
-                          <div className="col-span-6">
-                            <label
-                              htmlFor="company-email"
-                              className="block text-sm font-medium text-gray-700"
-                            >
-                              Company Email<sup>*</sup>
-                            </label>
-                            <input
-                              required
-                              value={companyEmail}
-                              onChange={(e) => setCompanyEmail(e.target.value)}
-                              type="email"
-                              name="company-email"
-                              id="company-email"
-                              className="input-form"
-                            />
-                          </div>
-                          {/* Number of Employees */}
+                        {/* Company Email */}
+                        <div className="col-span-6">
+                          <label
+                            htmlFor="company-email"
+                            className="block text-sm font-medium text-gray-700"
+                          >
+                            Company Email<sup>*</sup>
+                          </label>
+                          <input
+                            required
+                            value={companyEmail}
+                            onChange={(e) => setCompanyEmail(e.target.value)}
+                            type="email"
+                            name="company-email"
+                            id="company-email"
+                            className="input-form"
+                          />
+                        </div>
+                        {/* <div className="col-span-12 grid grid-cols-12 gap-6">
                           <div className="col-span-6 ">
                             <label
                               htmlFor="no-of-employees"
@@ -212,7 +214,7 @@ function CustomModal({ open, setOpen }) {
                               <option value="3">50+</option>
                             </select>
                           </div>
-                        </div>
+                        </div> */}
 
                         <div className="col-span-12 ">
                           <h2 className="font-semibold text-xl pb-2 border-b-2">
@@ -221,7 +223,7 @@ function CustomModal({ open, setOpen }) {
                         </div>
                         {/* === */}
 
-                        <fieldset className="col-span-12">
+                        {/* <fieldset className="col-span-12">
                           <div>
                             <legend className="text-sm font-medium text-gray-700">
                               Your hiring needs
@@ -264,10 +266,10 @@ function CustomModal({ open, setOpen }) {
                               </label>
                             </div>
                           </div>
-                        </fieldset>
+                        </fieldset> */}
 
                         {/* Number of Developers required */}
-                        <div className="col-span-12">
+                        <div className="col-span-6">
                           <label
                             htmlFor="country"
                             className="block text-sm font-medium text-gray-700"
@@ -292,6 +294,33 @@ function CustomModal({ open, setOpen }) {
                             <option value="2">3 - 5</option>
                             <option value="3">6 - 10</option>
                             <option value="4">10+</option>
+                          </select>
+                        </div>
+                        <div className="col-span-6">
+                          <label
+                            htmlFor="country"
+                            className="block text-sm font-medium text-gray-700"
+                          >
+                            Time<sup>*</sup>
+                          </label>
+                          <select
+                            required
+                            value={numberOfMonths}
+                            onChange={(e) => {
+                              setNumberOfMonths(e.target.value);
+                            }}
+                            id="country"
+                            name="country"
+                            autoComplete="country"
+                            className="mt-1 block w-full py-2 px-3 input-form"
+                          >
+                            <option value="0" defaultValue>
+                              I don’t know
+                            </option>
+                            <option value="1">6 - 12 Months</option>
+                            <option value="2">12 - 24 Months</option>
+                            <option value="3">24 - 36 Months</option>
+                            <option value="4">36+ Months</option>
                           </select>
                         </div>
 

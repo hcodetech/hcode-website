@@ -1675,14 +1675,14 @@ export const faq_mvp = [
 
 export const hcode_provide = [
   {
-    icon: "",
+    id: "1",
     title: "Hassle-free onboarding and offboarding",
     info: `-We cover all contract work, payroll operations, leave management, employee retention, and logistics. <br/>
     -Short time to hire and termination <br/>
     -Full time employment`,
   },
   {
-    icon: "",
+    id: "2",
     title: "Trust",
     info: `
     -We believe in building relationships based on trust.  <br/>
@@ -1690,7 +1690,7 @@ export const hcode_provide = [
     `,
   },
   {
-    icon: "",
+    id: "3",
     title: "Accountability",
     info: `
     -We hire developers who can proactively take ownership of their work, business, and product objectives without micromanagement <br/>

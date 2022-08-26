@@ -18,6 +18,7 @@ import {
   hcode_provide,
   hire_dev_hcode,
   match_your_timezone,
+  metaData,
   our_services_hero,
   rigorousVetting,
   seniority,
@@ -38,6 +39,7 @@ import {
 } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/outline";
+import MetaTags from "../../components/MetaTags";
 const daas = () => {
   const [isDesktop, setIsDesktop] = useState("");
   const [isModalVisible, setIsModalVisible] = useState(false);
@@ -73,6 +75,7 @@ const daas = () => {
     <>
       <Head>
         <title>Daas | Hcode Techonolgies</title>
+        <MetaTags page={metaData.developer_as_a_service} />
       </Head>
       {/* Hero Image */}
       {isModalVisible && (
@@ -111,12 +114,12 @@ const daas = () => {
       </section>
 
       {/* 1 Best offers */}
-      <section id="best-offers" className=" grid grid-cols-12 md:mt-28">
-        <div className="col-span-12 md:col-span-6 space-y-3 flex flex-col justify-center max-w-3xl mx-auto w-3/4 ">
-          <h2 className="text-4xl font-semibold capitalize ">
+      <section id="best-offers" className=" grid grid-cols-12 mt-10 md:mt-28">
+        <div className="col-span-12 md:col-span-6 space-y-3 order-2 md:order-1 flex flex-col justify-center max-w-3xl mx-auto md:w-3/4 px-10 my-10 md:my-0">
+          <h2 className="text-2xl md:text-4xl font-semibold capitalize ">
             Why you should hire from us ?
           </h2>
-          <p className="text-xl font-light pb-5">
+          <p className="text-lg md:text-xl font-light pb-5">
             It is the same as hiring in India directly but with us doing the
             most difficult parts so that you can focus on your business.
           </p>
@@ -176,9 +179,9 @@ const daas = () => {
           </div>
         </div>
 
-        <div className="col-span-12 md:col-span-6">
+        <div className="col-span-12 md:col-span-6 order-1 md:order-2">
           <img
-            className="h-[80vh] object-cover w-full "
+            className="h-[50vh] md:h-[80vh] object-cover w-full "
             src={bestOthers}
             alt="What makes us the best from others"
           />
@@ -186,16 +189,18 @@ const daas = () => {
       </section>
       {/* 2 Rigorous Vetting */}
       <section id="rigorous-vetting" className=" grid grid-cols-12 bg-gray-100">
-        <div className="col-span-12 md:col-span-6">
+        <div className="col-span-12 md:col-span-6 ">
           <img
-            className="h-[80vh] object-cover w-full "
+            className="h-[50vh] md:h-[80vh] object-cover w-full "
             src={rigorousVetting}
             alt="Rigorous Vetting"
           />
         </div>
 
-        <div className="col-span-12 md:col-span-6 space-y-3 flex flex-col justify-center max-w-3xl mx-auto w-3/4">
-          <h2 className="text-4xl font-semibold pb-5 ">Diligent Vetting</h2>
+        <div className="col-span-12 md:col-span-6 space-y-3 flex flex-col justify-center max-w-3xl mx-auto md:w-3/4 px-10 my-10 md:my-0">
+          <h2 className="text-2xl md:text-4xl font-semibold pb-5 ">
+            Diligent Vetting
+          </h2>
           <div className="text-lg space-y-5">
             <div className="flex">
               <div className="bg-blue-100 flex justify-center items-center min-w-[40px] h-10 rounded ">
@@ -235,8 +240,8 @@ const daas = () => {
       {/* 3 Best Others */}
       <section id="best_offers" className="  grid grid-cols-12">
         {/*  */}
-        <div className="col-span-12 md:col-span-6 space-y-3 flex flex-col justify-center max-w-3xl mx-auto w-3/4">
-          <h2 className="text-4xl font-semibold pb-6">
+        <div className="col-span-12 md:col-span-6 space-y-3  order-2 md:order-1 flex flex-col justify-center max-w-3xl mx-auto md:w-3/4 px-10 my-10 md:my-0">
+          <h2 className="text-2xl md:text-4xl font-semibold pb-6">
             Effective Team Collaboration
           </h2>
           {/*  */}
@@ -293,50 +298,42 @@ const daas = () => {
           </div>
         </div>
         {/*  */}
-        <div className="col-span-12 md:col-span-6">
+        <div className="col-span-12 md:col-span-6 order-1 md:order-2">
           <img
-            className="h-[80vh] object-cover w-full "
+            className="h-[50vh] md:h-[80vh] object-cover w-full "
             src={effectiveCollaboration}
           />
         </div>
       </section>
 
       {/* What Does Hcode Provide */}
-      <section className="new-container my-10 grid grid-cols-12 gap-8">
-        <h2 className="col-span-12 text-3xl font-semibold my-10 text-center">
-          What does Hcode provide
-        </h2>
-        {hcode_provide.map((item) => (
-          <div className="lg:col-span-4 md:col-span-6 col-span-12 bg-gray-100 mt-10 lg:mt-0 px-10 pb-10 text-center rounded-md border-b-8 border-blue-600">
-            <div className="w-20 h-20 rounded-full bg-blue-600 mx-auto -mt-10 "></div>
-            <h5 className="text-xl pb-2 font-bold pt-5">{item.title}</h5>
-            <p dangerouslySetInnerHTML={{ __html: item.info }} />
-          </div>
-        ))}
+      <section className="new-container my-10">
+        <div className=" grid grid-cols-12 md:gap-8">
+          <h2 className="col-span-12 text-3xl font-semibold my-10 text-center w-full mb-20">
+            What does Hcode provide
+          </h2>
+          {hcode_provide.map((item) => (
+            <div className="lg:col-span-4 md:col-span-6 col-span-12 bg-gray-100 mb-20 lg:mt-0 px-10 pb-10 text-center rounded-md border-b-8 border-blue-600 ">
+              <div className="w-20 h-20 rounded-full bg-blue-600 mx-auto -mt-10 "></div>
+              <h5 className="text-xl pb-2 font-bold pt-5">{item.title}</h5>
+              <p dangerouslySetInnerHTML={{ __html: item.info }} />
+            </div>
+          ))}
+        </div>
       </section>
 
       {/* Testimonial */}
-      <section id="testimonial" className="pt-10 pb-0 ">
+      <section id="testimonial" className="pt-10 pb-0 bg-gray-50 my-20">
         <Testimonial />
       </section>
 
       {/* CTA */}
-      <section id="cta" className="new-container text-center text-white">
-        <div className="bg-gradient-to-r from-primary to-blue-900 p-10">
-          <h2 className="col-span-12 text-4xl font-semibold  ">
-            Hire Dedicated Developers
-          </h2>
-          <p className="">Get our top talent working for you right away</p>
-          <button onClick={showModal} className="outline-button px-5">
-            Hire MERN Developer
-          </button>
-        </div>
-      </section>
+      <CTA showModal={showModal} />
 
       {/* Our Work */}
-      <section id="our-work" className="new-container py-16">
+      <section id="our-work" className=" pt-16 relative">
         <h2 className="text-4xl font-semibold text-center">Our Work</h2>
-        <div className=" new-container py-10 grid grid-cols-12 relative">
+        <div className=" new-container py-10 grid grid-cols-12 ">
           <div className="col-span-12 ">
             <CarouselProvider
               visibleSlides={1}
@@ -365,10 +362,10 @@ const daas = () => {
               </div>
 
               <ButtonBack>
-                <ChevronLeftIcon className="bg-white   text-primary  shadow-md absolute left-0 md:left-4 bottom-2/3 rounded-full w-8 h-8   hover:shadow-lg " />
+                <ChevronLeftIcon className="bg-white   text-primary  shadow-md absolute left-0 md:left-4 bottom-1/2 rounded-full w-8 h-8   hover:shadow-lg " />
               </ButtonBack>
               <ButtonNext>
-                <ChevronRightIcon className="  text-primary bg-white shadow-md absolute right-0 md:right-4 bottom-2/3 rounded-full w-8 h-8   hover:shadow-lg " />
+                <ChevronRightIcon className="  text-primary bg-white shadow-md absolute right-0 md:right-4 bottom-1/2 rounded-full w-8 h-8   hover:shadow-lg " />
               </ButtonNext>
             </CarouselProvider>
           </div>
@@ -376,13 +373,14 @@ const daas = () => {
       </section>
 
       {/* What Does Hcode Provide */}
-      <section className="new-container  grid grid-cols-12 gap-8">
-        <h2 className="col-span-12 text-3xl font-semibold my-10 text-center">
-          How to hire the best MERN developer <br /> for your team through
-          HCode?
+      <section className="new-container  grid grid-cols-12 md:gap-8">
+        <h2 className="col-span-12 text-2xl md:text-3xl font-semibold my-5 md:my-10 text-center">
+          How to hire the best MERN developer for your team through HCode?
         </h2>
         {hire_dev_hcode.map((item) => (
-          <div className="lg:col-span-4 md:col-span-6 col-span-12  mt-10 lg:mt-0 px-10 pb-10 ">
+          <div
+            className={`lg:col-span-4 md:col-span-6 col-span-12  mt-10 lg:mt-0 px-10 py-10 bg-gray-${item.id}00`}
+          >
             <div className="bg-black rounded-full p-5 w-10 h-10 text-white flex justify-center items-center">
               {item.id}
             </div>
@@ -398,19 +396,23 @@ const daas = () => {
       </section>
 
       {/* CTA */}
-      <section id="cta" className="new-container text-center text-white mb-10">
-        <div className="bg-gradient-to-r from-primary to-blue-900 p-10">
-          <h2 className="col-span-12 text-4xl font-semibold  ">
-            Hire Dedicated Developers
-          </h2>
-          <p className="">Get our top talent working for you right away</p>
-          <button onClick={showModal} className="outline-button px-5">
-            Hire MERN Developer
-          </button>
-        </div>
-      </section>
+      <CTA showModal={showModal} />
     </>
   );
 };
 
 export default daas;
+
+const CTA = ({ showModal }) => (
+  <section id="cta" className="new-container text-center text-white mb-10">
+    <div className="bg-gradient-to-r from-primary to-blue-900 p-10">
+      <h2 className="col-span-12 text-4xl font-semibold  ">
+        Hire Dedicated Developers
+      </h2>
+      <p className="">Get our top talent working for you right away</p>
+      <button onClick={showModal} className="outline-button px-5">
+        Hire MERN Developer
+      </button>
+    </div>
+  </section>
+);
