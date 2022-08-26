@@ -1676,18 +1676,93 @@ export const faq_mvp = [
 export const hcode_provide = [
   {
     icon: "",
-    title: "High ROI",
-    info: "Hire the top 1% of 1.5 million+ developers from 150+ countries who have applied to Turing.",
+    title: "Hassle-free onboarding and offboarding",
+    info: `-We cover all contract work, payroll operations, leave management, employee retention, and logistics. <br/>
+    -Short time to hire and termination <br/>
+    -Full time employment`,
   },
   {
     icon: "",
     title: "Trust",
-    info: "Hire the top 1% of 1.5 million+ developers from 150+ countries who have applied to Turing.",
+    info: `
+    -We believe in building relationships based on trust.  <br/>
+-We take the confidentiality of your data and IPR very seriously and maintain formal agreements with each of our employees.
+    `,
   },
   {
     icon: "",
-    title: "Employee Rentention",
-    info: "Hire the top 1% of 1.5 million+ developers from 150+ countries who have applied to Turing.",
+    title: "Accountability",
+    info: `
+    -We hire developers who can proactively take ownership of their work, business, and product objectives without micromanagement <br/>
+-Our coders incorporate the highest levels of integrity, and professionalism
+
+    `,
+  },
+];
+
+export const hire_dev_hcode = [
+  {
+    icon: "",
+    id: "1",
+    title: "Tell us your requirements",
+    info: `We'll schedule a call and understand your requirements`,
+  },
+  {
+    icon: "",
+    id: "2",
+    title: "We find the best talent for you",
+    info: `
+    Within days, we'll introduce you to the right developer for your project.
+    `,
+  },
+  {
+    icon: "",
+    id: "3",
+    title: "Start the recruiting process",
+    info: `
+    You can start at the on-boarding process and working with your selected developer
+
+    `,
+  },
+];
+
+export const daas_faq_services = [
+  {
+    question: "Who should hire MERN developers?",
+    answer: "",
+  },
+  {
+    question: "Who should hire React Native developers?",
+    answer: "",
+  },
+  {
+    question: "Who should hire Node developers?",
+    answer: "",
+  },
+  {
+    question: "How are HCode Developers Different?",
+    answer: "",
+  },
+  {
+    question: "Does your team have experience of working with US/Global teams?",
+    answer: "",
+  },
+  {
+    question: "How do you ensure privacy and confidentiality?",
+    answer: "",
+  },
+  {
+    question:
+      "What are your working hours? Can the resource work in our time zone?",
+    answer: "",
+  },
+  {
+    question: "What is the hiring time?",
+    answer: "",
+  },
+  {
+    question: "What is your working model?",
+    answer: "",
   },
 ];
 

@@ -9,12 +9,14 @@ import Testimonial from "../../components/Testimonial";
 import {
   bestOthers,
   client,
+  daas_faq_services,
   daily_updates,
   dollarIcons,
   easy_to_manage,
   effectiveCollaboration,
   faq_services,
   hcode_provide,
+  hire_dev_hcode,
   match_your_timezone,
   our_services_hero,
   rigorousVetting,
@@ -27,10 +29,19 @@ import { getAPIUrl } from "../api/APIHelpers";
 import { apiRoutes } from "../api/APIRoutes";
 import useGetFetch from "../hooks/useGetFetch";
 
+import {
+  ButtonBack,
+  ButtonNext,
+  CarouselProvider,
+  Slide,
+  Slider,
+} from "pure-react-carousel";
+import "pure-react-carousel/dist/react-carousel.es.css";
+import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/outline";
 const daas = () => {
   const [isDesktop, setIsDesktop] = useState("");
   const [isModalVisible, setIsModalVisible] = useState(false);
-  const [selectedCategory, setSelectedCategory] = useState(["Blockchain"]);
+  const [selectedCategory, setSelectedCategory] = useState([]);
   const [portfolioData, isLoading] = useGetFetch(getAPIUrl(apiRoutes.OUR_WORK));
 
   const showModal = () => {
@@ -77,12 +88,12 @@ const daas = () => {
 
           <div className="absolute flex flex-col  justify-center h-full new-container  top-4 z-10 text-white md:w-5/12 space-y-3 md:left-16">
             <h1 className="text-3xl md:text-4xl font-semibold ">
-              Hire Full-Stack developers Remotely
+              Augment your teach team with a MERN developer
             </h1>
-            <p className=" font-light text-md md:text-lg">
-              Hire senior pre-vetted remote developers with strong technical and
-              communication skills at unbeatable prices, ready to work in your
-              timezone.
+            <p className=" font-light text-md md:text-lg text-gray-300">
+              Augment your engineering team with MERN developer(s) who will give
+              you a full stack development solution - front-end, backend,
+              testing, and mobile application solutions.
             </p>
             <button
               className="primary-button rounded-none max-w-xs"
@@ -102,13 +113,12 @@ const daas = () => {
       {/* 1 Best offers */}
       <section id="best-offers" className=" grid grid-cols-12 md:mt-28">
         <div className="col-span-12 md:col-span-6 space-y-3 flex flex-col justify-center max-w-3xl mx-auto w-3/4 ">
-          <h2 className="text-4xl font-semibold ">
-            What Makes Us The Best From Others?
+          <h2 className="text-4xl font-semibold capitalize ">
+            Why you should hire from us ?
           </h2>
           <p className="text-xl font-light pb-5">
-            Hire senior pre-vetted remote developers with strong technical and
-            communication skills at unbeatable prices, ready to work in your
-            timezone.
+            It is the same as hiring in India directly but with us doing the
+            most difficult parts so that you can focus on your business.
           </p>
           {/*  */}
           <div className="space-y-7 text-lg">
@@ -122,11 +132,11 @@ const daas = () => {
               </div>
               <div className="ml-3">
                 <h5 className=" pointer-heading ">
-                  Hire Silicon Valley caliber at half the cost
+                  Hire the top talent at half the cost
                 </h5>
                 <p className=" pointer-paragraph">
-                  Hire the top 1% of 1.5 million+ developers from 150+ countries
-                  who have applied to Turing.
+                  Hire top talent from India at half the cost as per industry
+                  standards
                 </p>
               </div>
             </div>
@@ -139,9 +149,12 @@ const daas = () => {
                 />
               </div>
               <div className="ml-3">
-                <h5 className="pointer-heading ">100+ skills available</h5>
+                <h5 className="pointer-heading ">
+                  Complete development solution
+                </h5>
                 <p className="pointer-paragraph">
-                  Hire React, Node, Python, Angular and more.
+                  Hire a full stack developer who is equally skilled in
+                  front-end and back-end coding
                 </p>
               </div>
             </div>{" "}
@@ -154,9 +167,9 @@ const daas = () => {
                 />
               </div>
               <div className="ml-3">
-                <h5 className="pointer-heading ">Zero risk</h5>
+                <h5 className="pointer-heading ">No risk</h5>
                 <p className="pointer-paragraph">
-                  If you decide to stop within two weeks, you pay nothing.
+                  You can hire the developer at a trial of 2 weeks
                 </p>
               </div>
             </div>
@@ -182,7 +195,7 @@ const daas = () => {
         </div>
 
         <div className="col-span-12 md:col-span-6 space-y-3 flex flex-col justify-center max-w-3xl mx-auto w-3/4">
-          <h2 className="text-4xl font-semibold pb-5 ">Rigorous Vetting</h2>
+          <h2 className="text-4xl font-semibold pb-5 ">Diligent Vetting</h2>
           <div className="text-lg space-y-5">
             <div className="flex">
               <div className="bg-blue-100 flex justify-center items-center min-w-[40px] h-10 rounded ">
@@ -193,13 +206,9 @@ const daas = () => {
                 />
               </div>
               <div className="ml-3">
-                <h5 className="pointer-heading ">
-                  5+ hours of tests and interviews
-                </h5>
+                <h5 className="pointer-heading ">4 Step Vetting</h5>
                 <p className=" pointer-paragraph">
-                  More rigorous than Silicon Valley job interviews. We test for
-                  100+ skills, data structures, algorithms, systems design,
-                  software specializations & frameworks.
+                  All our developers go through rigorous testing and vetting
                 </p>
               </div>
             </div>
@@ -213,11 +222,10 @@ const daas = () => {
                 />
               </div>
               <div className="ml-3">
-                <h5 className=" font-bold ">Seniority tests</h5>
+                <h5 className=" font-bold ">Promising Success Rate</h5>
                 <p className=" font-light">
-                  We select excellent communicators who can proactively take
-                  ownership of business and product objectives without
-                  micromanagement.
+                  Our thorough selective process leads to a ?? trial-to-hire
+                  success rate
                 </p>
               </div>
             </div>
@@ -229,7 +237,7 @@ const daas = () => {
         {/*  */}
         <div className="col-span-12 md:col-span-6 space-y-3 flex flex-col justify-center max-w-3xl mx-auto w-3/4">
           <h2 className="text-4xl font-semibold pb-6">
-            Effective collaboration
+            Effective Team Collaboration
           </h2>
           {/*  */}
           <div className="space-y-5 text-lg">
@@ -242,11 +250,11 @@ const daas = () => {
                 />
               </div>
               <div className="ml-3">
-                <h5 className=" font-bold ">Daily updates</h5>
+                <h5 className=" font-bold ">Regular Updates</h5>
                 <p className=" font-light">
-                  Turing’s Workspace gives you even more visibility into your
-                  remote developer’s work with automatic time tracking & virtual
-                  daily stand-ups.
+                  HCode's tools gives you even more visibility into your remote
+                  developer’s work with automatic time tracking & virtual daily
+                  stand-ups
                 </p>
               </div>
             </div>
@@ -259,11 +267,10 @@ const daas = () => {
                 />
               </div>
               <div className="ml-3">
-                <h5 className=" font-bold ">Easy to manage</h5>
+                <h5 className=" font-bold ">Effective Management</h5>
                 <p className=" font-light">
-                  High visibility makes Turing developers easy to manage and
-                  ensures that they constantly work on what’s most valuable to
-                  you.
+                  Our developers are easy to manage and are trained to ensure
+                  that they constantly work on what’s most valuable to you.
                 </p>
               </div>
             </div>{" "}
@@ -276,10 +283,10 @@ const daas = () => {
                 />
               </div>
               <div className="ml-3">
-                <h5 className=" font-bold ">Match your timezone</h5>
+                <h5 className=" font-bold ">Timezone Match-up</h5>
                 <p className=" font-light">
-                  Our developers match your time zone and overlap a minimum of 4
-                  hours with your workday.
+                  Our developers match your time zone and overlap a minimum of 1
+                  hour with your workday
                 </p>
               </div>
             </div>
@@ -302,11 +309,8 @@ const daas = () => {
         {hcode_provide.map((item) => (
           <div className="lg:col-span-4 md:col-span-6 col-span-12 bg-gray-100 mt-10 lg:mt-0 px-10 pb-10 text-center rounded-md border-b-8 border-blue-600">
             <div className="w-20 h-20 rounded-full bg-blue-600 mx-auto -mt-10 "></div>
-            <h5 className="text-xl pb-2 font-bold pt-5">High ROI</h5>
-            <p className="">
-              Hire the top 1% of 1.5 million+ developers from 150+ countries who
-              have applied to Turing.
-            </p>
+            <h5 className="text-xl pb-2 font-bold pt-5">{item.title}</h5>
+            <p dangerouslySetInnerHTML={{ __html: item.info }} />
           </div>
         ))}
       </section>
@@ -332,22 +336,67 @@ const daas = () => {
       {/* Our Work */}
       <section id="our-work" className="new-container py-16">
         <h2 className="text-4xl font-semibold text-center">Our Work</h2>
-        <div className=" new-container py-10 grid grid-cols-12">
+        <div className=" new-container py-10 grid grid-cols-12 relative">
           <div className="col-span-12 ">
-            {portfolioData.map((data) => (
-              <CardPortfolio
-                key={data.id}
-                cardData={data}
-                selectedCategory={selectedCategory}
-              />
-            ))}
+            <CarouselProvider
+              visibleSlides={1}
+              totalSlides={portfolioData.length}
+              step={1}
+              isIntrinsicHeight
+              infinite
+              interval={4000}
+              isPlaying
+              lockOnWindowScroll
+              playDirection="forward"
+            >
+              <div className="relative">
+                {/* <div className="new-container"> */}
+                <Slider>
+                  {portfolioData.map((data) => (
+                    <Slide>
+                      <CardPortfolio
+                        key={data.id}
+                        cardData={data}
+                        selectedCategory={selectedCategory}
+                      />
+                    </Slide>
+                  ))}
+                </Slider>
+              </div>
+
+              <ButtonBack>
+                <ChevronLeftIcon className="bg-white   text-primary  shadow-md absolute left-0 md:left-4 bottom-2/3 rounded-full w-8 h-8   hover:shadow-lg " />
+              </ButtonBack>
+              <ButtonNext>
+                <ChevronRightIcon className="  text-primary bg-white shadow-md absolute right-0 md:right-4 bottom-2/3 rounded-full w-8 h-8   hover:shadow-lg " />
+              </ButtonNext>
+            </CarouselProvider>
           </div>
         </div>
       </section>
+
+      {/* What Does Hcode Provide */}
+      <section className="new-container  grid grid-cols-12 gap-8">
+        <h2 className="col-span-12 text-3xl font-semibold my-10 text-center">
+          How to hire the best MERN developer <br /> for your team through
+          HCode?
+        </h2>
+        {hire_dev_hcode.map((item) => (
+          <div className="lg:col-span-4 md:col-span-6 col-span-12  mt-10 lg:mt-0 px-10 pb-10 ">
+            <div className="bg-black rounded-full p-5 w-10 h-10 text-white flex justify-center items-center">
+              {item.id}
+            </div>
+            <h5 className="text-xl pb-2 font-bold pt-2">{item.title}</h5>
+            <p dangerouslySetInnerHTML={{ __html: item.info }} />
+          </div>
+        ))}
+      </section>
+
       {/* FAQ */}
       <section className="faqs">
-        <Accordion data={faq_services} />
+        <Accordion data={daas_faq_services} />
       </section>
+
       {/* CTA */}
       <section id="cta" className="new-container text-center text-white mb-10">
         <div className="bg-gradient-to-r from-primary to-blue-900 p-10">

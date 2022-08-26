@@ -12,8 +12,6 @@ import {
   thailand_trip,
   what_we_do,
   work_with_us_1,
-  work_with_us_2,
-  work_with_us_3,
   work_with_us_benefits,
   work_with_us_content,
   work_with_us_recuriter_image,
