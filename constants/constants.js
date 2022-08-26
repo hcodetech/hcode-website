@@ -1677,24 +1677,25 @@ export const hcode_provide = [
   {
     id: "1",
     title: "Hassle-free onboarding and offboarding",
-    info: `-We cover all contract work, payroll operations, leave management, employee retention, and logistics. <br/>
-    -Short time to hire and termination <br/>
-    -Full time employment`,
+    info: `<li>
+    We cover all contract work, payroll operations, leave management, employee retention, and logistics. </li>
+    <li>Short time to hire and termination </li>
+    <li>Full time employment</li>`,
   },
   {
     id: "2",
     title: "Trust",
     info: `
-    -We believe in building relationships based on trust.  <br/>
--We take the confidentiality of your data and IPR very seriously and maintain formal agreements with each of our employees.
+    <li>We believe in building relationships based on trust.</li>
+    <li>We take the confidentiality of your data and IPR very seriously and maintain formal agreements with each of our employees.</li>
     `,
   },
   {
     id: "3",
     title: "Accountability",
     info: `
-    -We hire developers who can proactively take ownership of their work, business, and product objectives without micromanagement <br/>
--Our coders incorporate the highest levels of integrity, and professionalism
+    <li>We hire developers who can proactively take ownership of their work, business, and product objectives without micromanagement </li>
+<li>Our coders incorporate the highest levels of integrity, and professionalism</li>
 
     `,
   },

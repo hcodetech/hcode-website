@@ -40,7 +40,7 @@ import {
 import "pure-react-carousel/dist/react-carousel.es.css";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/outline";
 import MetaTags from "../../components/MetaTags";
-const daas = () => {
+const mern_Developer = () => {
   const [isDesktop, setIsDesktop] = useState("");
   const [isModalVisible, setIsModalVisible] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState([]);
@@ -74,7 +74,7 @@ const daas = () => {
   return (
     <>
       <Head>
-        <title>Daas | Hcode Techonolgies</title>
+        <title>Hire Mern Developer | Hcode Techonolgies</title>
         <MetaTags page={metaData.developer_as_a_service} />
       </Head>
       {/* Hero Image */}
@@ -84,7 +84,7 @@ const daas = () => {
       <section>
         <div className=" relative cursor-pointer">
           <img
-            className="w-full object-cover h-[70vh] md:h-full relative z-0 object-left"
+            className="w-full object-cover h-[70vh] md:h-full max-h-[75vh] relative z-0 object-left"
             src={our_services_hero}
           />
           <div className="absolute bg-gradient-to-r from-black z-10 w-full h-full top-0 left-0"></div>
@@ -116,7 +116,7 @@ const daas = () => {
       {/* 1 Best offers */}
       <section id="best-offers" className=" grid grid-cols-12 mt-10 md:mt-28">
         <div className="col-span-12 md:col-span-6 space-y-3 order-2 md:order-1 flex flex-col justify-center max-w-3xl mx-auto md:w-3/4 px-10 my-10 md:my-0">
-          <h2 className="text-2xl md:text-4xl font-semibold capitalize ">
+          <h2 className="text-2xl md:text-4xl font-semibold capitalize md:-mt-10">
             Why you should hire from us ?
           </h2>
           <p className="text-lg md:text-xl font-light pb-5">
@@ -309,14 +309,17 @@ const daas = () => {
       {/* What Does Hcode Provide */}
       <section className="new-container my-10">
         <div className=" grid grid-cols-12 md:gap-8">
-          <h2 className="col-span-12 text-3xl font-semibold my-10 text-center w-full mb-20">
+          <h2 className="col-span-12 text-3xl font-semibold my-10 text-center w-full ">
             What does Hcode provide
           </h2>
           {hcode_provide.map((item) => (
-            <div className="lg:col-span-4 md:col-span-6 col-span-12 bg-gray-100 mb-20 lg:mt-0 px-10 pb-10 text-center rounded-md border-b-8 border-blue-600 ">
-              <div className="w-20 h-20 rounded-full bg-blue-600 mx-auto -mt-10 "></div>
+            <div className="lg:col-span-4 md:col-span-6 col-span-12 bg-gray-100 mb-20 lg:mt-0 px-10 pb-10  rounded-md border-t-8 border-blue-600 ">
+              {/* <div className="w-20 h-20 rounded-full bg-blue-600 mx-auto -mt-10 "></div> */}
               <h5 className="text-xl pb-2 font-bold pt-5">{item.title}</h5>
-              <p dangerouslySetInnerHTML={{ __html: item.info }} />
+              <ul
+                className="list-disc list-inside"
+                dangerouslySetInnerHTML={{ __html: item.info }}
+              />
             </div>
           ))}
         </div>
@@ -401,7 +404,7 @@ const daas = () => {
   );
 };
 
-export default daas;
+export default mern_Developer;
 
 const CTA = ({ showModal }) => (
   <section id="cta" className="new-container text-center text-white mb-10">
