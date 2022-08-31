@@ -1676,27 +1676,21 @@ export const faq_mvp = [
 export const hcode_provide = [
   {
     id: "1",
-    title: "Hassle-free onboarding and offboarding",
-    info: `<li>
-    We cover all contract work, payroll operations, leave management, employee retention, and logistics. </li>
-    <li>Short time to hire and termination </li>
-    <li>Full time employment</li>`,
+    title: "Scale as per need",
+    info: `We can support the agility in demand by startups to scale up or down their engineering team, with simple process and short notice periods`,
   },
   {
     id: "2",
-    title: "Trust",
+    title: "Trust & Confidentiality",
     info: `
-    <li>We believe in building relationships based on trust.</li>
-    <li>We take the confidentiality of your data and IPR very seriously and maintain formal agreements with each of our employees.</li>
+    We take the confidentiality of your data and IPR very seriously and maintain formal agreements on Confidentiality with all our employees. 
     `,
   },
   {
     id: "3",
     title: "Accountability",
     info: `
-    <li>We hire developers who can proactively take ownership of their work, business, and product objectives without micromanagement </li>
-<li>Our coders incorporate the highest levels of integrity, and professionalism</li>
-
+    We act as partners to our clients, and are there to ensure resolution of any issues they face in anything with the developers 
     `,
   },
 ];

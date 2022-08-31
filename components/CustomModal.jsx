@@ -2,26 +2,27 @@ import { Fragment, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { CheckIcon } from "@heroicons/react/outline";
 import { XIcon } from "@heroicons/react/solid";
-import { hcode_footer, selected_technologies } from "../constants/constants";
-
-import PhoneInput from "react-phone-input-2";
-import "react-phone-input-2/lib/plain.css";
+import { selected_technologies } from "../constants/constants";
 import { apiRoutes } from "../pages/api/APIRoutes";
 import { getAPIUrl } from "../pages/api/APIHelpers";
+import { DotLoader } from "react-spinners";
+
 function CustomModal({ open, setOpen }) {
   const [success, setSuccess] = useState(false);
   const [failure, setFailure] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [formSubmitted, setFormSubmitted] = useState(false);
+
   const [responseMessage, setResponseMessage] = useState("");
   const [firstName, setFirstName] = useState("");
-  const [loading, setLoading] = useState(false);
-  const [companyName, setCompanyName] = useState("");
   const [companyEmail, setCompanyEmail] = useState("");
-  const [mobileNumber, setMobileNumber] = useState("+91");
+
   const [numberOfDev, setNumberOfDevs] = useState("0");
   const [numberOfMonths, setNumberOfMonths] = useState("0");
   const [currentNumberOfEmployees, setCurrentNumberOfEmployees] = useState("0");
   const [preferredTechStack, setPreferredTechStack] = useState([]);
-  const [hiringNeed, setHiringNeed] = useState();
+  const [hiringNeed, setHiringNeed] = useState(1);
+  const defaultColor = "#373536";
 
   const setSelectedTech = (e, tech) => {
     if (e.target.checked) {
@@ -34,7 +35,7 @@ function CustomModal({ open, setOpen }) {
   };
 
   const contactUser = async (event) => {
-    console.log("2  3");
+    setFormSubmitted(true);
     setSuccess(false);
     setFailure(false);
     event.preventDefault();
@@ -44,10 +45,8 @@ function CustomModal({ open, setOpen }) {
       employee_number: currentNumberOfEmployees,
       hiring_need: hiringNeed,
       number_of_dev: numberOfDev,
-      // number_of_months: numberOfMonths,
       tech_preference: preferredTechStack.join(","),
       is_daas: true,
-      //   mobile_number: mobileNumber.length > 4 ? `{+${mobileNumber}}` : "",
     };
 
     try {
@@ -76,9 +75,7 @@ function CustomModal({ open, setOpen }) {
       }
 
       setFirstName("");
-      setCompanyName("");
       setCompanyEmail("");
-      setMobileNumber("");
       setNumberOfDevs("0");
       setNumberOfMonths("0");
       setCurrentNumberOfEmployees("0");
@@ -90,10 +87,10 @@ function CustomModal({ open, setOpen }) {
       console.log("Error", e);
       setFailure(true);
     } finally {
-      console.log("2134");
       setLoading(false);
     }
   };
+
   return (
     <div>
       <Transition.Root show={open} as={Fragment}>
@@ -133,255 +130,216 @@ function CustomModal({ open, setOpen }) {
             >
               {/* Modal CSS */}
               <div
-                className="inline-block  bg-white  
-                          rounded-lg py-5 px-5  text-left overflow-scroll shadow-xl transform transition-all align-middle h-screen md:h-[80vh] top-0"
+                className={
+                  !formSubmitted
+                    ? "inline-block bg-white rounded-lg py-5 px-5 text-left overflow-scroll shadow-xl transform transition-all align-middle h-screen md:h-[80vh] top-0 max-h-[600px]"
+                    : "inline-block bg-white transform transition-all align-middle  rounded-md "
+                }
               >
-                <div className="max-w-2xl mx-auto">
-                  {/* Start Here */}
-                  <div className="flex justify-between border-b pb-3">
-                    <div>
-                      <h2 className="font-semibold text-2xl">
-                        Find developers to hire
-                      </h2>
-                    </div>
-                    <XIcon
-                      className="w-6 h-6 cursor-pointer"
-                      onClick={() => setOpen(false)}
-                    />
+                {loading && (
+                  <div className="fixed top-1/2 inset-x-2/4">
+                    <DotLoader color={defaultColor} size={60} />
                   </div>
+                )}
+                {success && (
+                  <SuccessModal
+                    color={"bg-blue-100"}
+                    iconColor={"text-blue-600"}
+                    success={true}
+                    heading={"Thank You !"}
+                    paragraph={
+                      "Thanks for your interest. We will contact you shortly."
+                    }
+                  />
+                )}
+                {failure && (
+                  <SuccessModal
+                    color={"bg-red-100"}
+                    iconColor={"text-red-600"}
+                    heading={"Oops !"}
+                    paragraph={
+                      responseMessage ??
+                      "We are unable to register your request at current time. Please send us an email at hello@hcode.tech"
+                    }
+                  />
+                )}
+                {!formSubmitted && (
+                  <div className="max-w-2xl mx-auto">
+                    {/* Start Here */}
+                    <div className="flex justify-between border-b pb-3">
+                      <div>
+                        <h2 className="font-semibold text-2xl">
+                          Find developers to hire
+                        </h2>
+                      </div>
+                      <XIcon
+                        className="w-6 h-6 cursor-pointer"
+                        onClick={() => setOpen(false)}
+                      />
+                    </div>
 
-                  {/* Form Start Here */}
-                  <div className=" mt-4 col-span-12 md:col-span-8">
-                    <form autoComplete="off" onSubmit={contactUser}>
-                      <div className="grid grid-cols-12 gap-6">
-                        {/* Full Name */}
-                        <div className="col-span-6">
-                          <label
-                            htmlFor="first-name"
-                            className="block text-sm font-medium text-gray-700"
-                          >
-                            Full Name<sup>*</sup>
-                          </label>
-                          <input
-                            required
-                            value={firstName}
-                            onChange={(e) => setFirstName(e.target.value)}
-                            type="text"
-                            name="first-name"
-                            id="first-name"
-                            className="input-form"
-                          />
-                        </div>
-                        {/* Company Email */}
-                        <div className="col-span-6">
-                          <label
-                            htmlFor="company-email"
-                            className="block text-sm font-medium text-gray-700"
-                          >
-                            Company Email<sup>*</sup>
-                          </label>
-                          <input
-                            required
-                            value={companyEmail}
-                            onChange={(e) => setCompanyEmail(e.target.value)}
-                            type="email"
-                            name="company-email"
-                            id="company-email"
-                            className="input-form"
-                          />
-                        </div>
-                        {/* <div className="col-span-12 grid grid-cols-12 gap-6">
-                          <div className="col-span-6 ">
+                    {/* Form Start Here */}
+                    <div className=" mt-4 col-span-12 md:col-span-8">
+                      <form autoComplete="off" onSubmit={contactUser}>
+                        <div className="grid grid-cols-12 gap-6">
+                          {/* Full Name */}
+                          <div className="col-span-6">
                             <label
-                              htmlFor="no-of-employees"
+                              htmlFor="first-name"
                               className="block text-sm font-medium text-gray-700"
                             >
-                              Current employees in your company<sup>*</sup>
+                              Full Name<sup>*</sup>
+                            </label>
+                            <input
+                              required
+                              value={firstName}
+                              onChange={(e) => setFirstName(e.target.value)}
+                              type="text"
+                              name="first-name"
+                              id="first-name"
+                              className="input-form"
+                            />
+                          </div>
+                          {/* Company Email */}
+                          <div className="col-span-6">
+                            <label
+                              htmlFor="company-email"
+                              className="block text-sm font-medium text-gray-700"
+                            >
+                              Company Email<sup>*</sup>
+                            </label>
+                            <input
+                              required
+                              value={companyEmail}
+                              onChange={(e) => setCompanyEmail(e.target.value)}
+                              type="email"
+                              name="company-email"
+                              id="company-email"
+                              className="input-form"
+                            />
+                          </div>
+
+                          <div className="col-span-12 ">
+                            <h2 className="font-semibold text-xl pb-2 border-b-2">
+                              Hiring Needs
+                            </h2>
+                          </div>
+
+                          {/* Number of Developers required */}
+                          <div className="col-span-6">
+                            <label
+                              htmlFor="country"
+                              className="block text-sm font-medium text-gray-700"
+                            >
+                              Number of Developers required<sup>*</sup>
                             </label>
                             <select
-                              value={currentNumberOfEmployees}
-                              onChange={(e) => {
-                                setCurrentNumberOfEmployees(e.target.value);
-                              }}
                               required
-                              id="no-of-employees"
-                              name="no-of-employees"
+                              value={numberOfDev}
+                              onChange={(e) => {
+                                setNumberOfDevs(e.target.value);
+                              }}
+                              id="country"
+                              name="country"
+                              autoComplete="country"
                               className="mt-1 block w-full py-2 px-3 input-form"
                             >
-                              <option value="0">1 - 5</option>
-                              <option value="1">5 - 20</option>
-                              <option value="2">20 - 50</option>
-                              <option value="3">50+</option>
+                              <option value="0" defaultValue>
+                                I don’t know
+                              </option>
+                              <option value="1">1 - 2</option>
+                              <option value="2">3 - 5</option>
+                              <option value="3">6 - 10</option>
+                              <option value="4">10+</option>
                             </select>
                           </div>
-                        </div> */}
-
-                        <div className="col-span-12 ">
-                          <h2 className="font-semibold text-xl pb-2 border-b-2">
-                            Hiring Needs
-                          </h2>
-                        </div>
-                        {/* === */}
-
-                        {/* <fieldset className="col-span-12">
-                          <div>
-                            <legend className="text-sm font-medium text-gray-700">
-                              Your hiring needs
-                              <sup>*</sup>
-                            </legend>
+                          <div className="col-span-6">
+                            <label
+                              htmlFor="country"
+                              className="block text-sm font-medium text-gray-700"
+                            >
+                              Time<sup>*</sup>
+                            </label>
+                            <select
+                              required
+                              value={numberOfMonths}
+                              onChange={(e) => {
+                                setNumberOfMonths(e.target.value);
+                              }}
+                              id="country"
+                              name="country"
+                              autoComplete="country"
+                              className="mt-1 block w-full py-2 px-3 input-form"
+                            >
+                              <option value="0" defaultValue>
+                                I don’t know
+                              </option>
+                              <option value="1">6 - 12 Months</option>
+                              <option value="2">12 - 24 Months</option>
+                              <option value="3">24 - 36 Months</option>
+                              <option value="4">36+ Months</option>
+                            </select>
                           </div>
-                          <div className="mt-4 flex">
-                            <div className="flex items-center">
-                              <input
-                                required
-                                checked={hiringNeed === 0}
-                                onChange={(e) => setHiringNeed(0)}
-                                id="project-lead"
-                                name="project-lead"
-                                type="radio"
-                                className="focus:ring-primary h-4 w-4 text-primary border-gray-300"
-                              />
-                              <label
-                                htmlFor="project-lead"
-                                className="ml-3 block text-sm font-medium text-gray-700 whitespace-nowrap"
-                              >
-                                Part-time
-                              </label>
+
+                          {/* Technical Details */}
+
+                          {/* Tech Stack */}
+                          <fieldset className="col-span-12 ">
+                            <div>
+                              <legend className="text-sm font-medium text-gray-700">
+                                Choose your preferred tech stack
+                              </legend>
                             </div>
-                            <div className="flex items-center ml-5">
-                              <input
-                                required
-                                checked={hiringNeed === 1}
-                                onChange={(e) => setHiringNeed(1)}
-                                id="project-lead-no"
-                                name="project-lead"
-                                type="radio"
-                                className="focus:ring-primary h-4 w-4 text-primary border-gray-300"
-                              />
-                              <label
-                                htmlFor="project-lead-no"
-                                className="ml-3 block text-sm font-medium text-gray-700 whitespace-nowrap"
-                              >
-                                Full time
-                              </label>
-                            </div>
-                          </div>
-                        </fieldset> */}
-
-                        {/* Number of Developers required */}
-                        <div className="col-span-6">
-                          <label
-                            htmlFor="country"
-                            className="block text-sm font-medium text-gray-700"
-                          >
-                            Number of Developers required<sup>*</sup>
-                          </label>
-                          <select
-                            required
-                            value={numberOfDev}
-                            onChange={(e) => {
-                              setNumberOfDevs(e.target.value);
-                            }}
-                            id="country"
-                            name="country"
-                            autoComplete="country"
-                            className="mt-1 block w-full py-2 px-3 input-form"
-                          >
-                            <option value="0" defaultValue>
-                              I don’t know
-                            </option>
-                            <option value="1">1 - 2</option>
-                            <option value="2">3 - 5</option>
-                            <option value="3">6 - 10</option>
-                            <option value="4">10+</option>
-                          </select>
-                        </div>
-                        <div className="col-span-6">
-                          <label
-                            htmlFor="country"
-                            className="block text-sm font-medium text-gray-700"
-                          >
-                            Time<sup>*</sup>
-                          </label>
-                          <select
-                            required
-                            value={numberOfMonths}
-                            onChange={(e) => {
-                              setNumberOfMonths(e.target.value);
-                            }}
-                            id="country"
-                            name="country"
-                            autoComplete="country"
-                            className="mt-1 block w-full py-2 px-3 input-form"
-                          >
-                            <option value="0" defaultValue>
-                              I don’t know
-                            </option>
-                            <option value="1">6 - 12 Months</option>
-                            <option value="2">12 - 24 Months</option>
-                            <option value="3">24 - 36 Months</option>
-                            <option value="4">36+ Months</option>
-                          </select>
-                        </div>
-
-                        {/* Technical Details */}
-
-                        {/* Tech Stack */}
-                        <fieldset className="col-span-12 ">
-                          <div>
-                            <legend className="text-sm font-medium text-gray-700">
-                              Choose your preferred tech stack
-                            </legend>
-                          </div>
-                          <div className=" grid grid-cols-12">
-                            {selected_technologies.map((tech, index) => (
-                              <div
-                                key={index}
-                                style={{ minHeight: 48 }}
-                                className={`flex items-center  col-span-6  md:col-span-4 lg:col-span-3 input-select mt-4`}
-                              >
-                                <input
-                                  onChange={(e) =>
-                                    setSelectedTech(e, tech.tech_name)
-                                  }
-                                  id={tech.tech_name}
-                                  name={tech.tech_name}
-                                  type="checkbox"
-                                  className="input-radio hidden"
-                                />
-                                <label
-                                  htmlFor={tech.tech_name}
-                                  className={`block text-sm min-w-[140px] font-medium text-gray-700 border border-1 rounded-lg text-center px-5 py-3 ${
-                                    preferredTechStack.includes(
-                                      tech.tech_name
-                                    ) && "bg-blue-200"
-                                  }`}
+                            <div className=" grid grid-cols-12">
+                              {selected_technologies.map((tech, index) => (
+                                <div
+                                  key={index}
+                                  style={{ minHeight: 48 }}
+                                  className={`flex items-center  col-span-6  md:col-span-4 lg:col-span-3 input-select mt-4`}
                                 >
-                                  {tech.tech_name}
-                                  <br />
-                                  <span className="text-gray-500 text-xs font-normal">
-                                    {" "}
-                                    {tech.tech}
-                                  </span>
-                                </label>
-                              </div>
-                            ))}
-                          </div>
-                        </fieldset>
-                      </div>
-                      <div className="col-span-12 lg:col-span-4 mt-4 ">
-                        <button
-                          disabled={loading}
-                          className="bg-primary hover:bg-blue-600 text-white rounded-md px-7 py-3 disabled:opacity-50"
-                        >
-                          Submit
-                        </button>
-                      </div>
-                    </form>
-                  </div>
+                                  <input
+                                    onChange={(e) =>
+                                      setSelectedTech(e, tech.tech_name)
+                                    }
+                                    id={tech.tech_name}
+                                    name={tech.tech_name}
+                                    type="checkbox"
+                                    className="input-radio hidden"
+                                  />
+                                  <label
+                                    htmlFor={tech.tech_name}
+                                    className={`block text-sm min-w-[140px] font-medium text-gray-700 border border-1 rounded-lg text-center px-5 py-3 ${
+                                      preferredTechStack.includes(
+                                        tech.tech_name
+                                      ) && "bg-blue-200"
+                                    }`}
+                                  >
+                                    {tech.tech_name}
+                                    <br />
+                                    <span className="text-gray-500 text-xs font-normal">
+                                      {" "}
+                                      {tech.tech}
+                                    </span>
+                                  </label>
+                                </div>
+                              ))}
+                            </div>
+                          </fieldset>
+                        </div>
+                        <div className="col-span-12 lg:col-span-4 mt-4 ">
+                          <button
+                            disabled={loading}
+                            className="bg-primary hover:bg-blue-600 text-white rounded-md px-7 py-3 disabled:opacity-50"
+                          >
+                            Submit
+                          </button>
+                        </div>
+                      </form>
+                    </div>
 
-                  {/* End  */}
-                </div>
+                    {/* End  */}
+                  </div>
+                )}
               </div>
             </Transition.Child>
           </div>
@@ -392,3 +350,33 @@ function CustomModal({ open, setOpen }) {
 }
 
 export default CustomModal;
+
+export const SuccessModal = (props) => (
+  <div className="inline-block align-bottom bg-white rounded-lg px-4 pt-5 pb-4 text-left overflow-hidden  transform transition-all sm:my-8 sm:align-middle sm:max-w-sm sm:w-full sm:p-6">
+    <div>
+      <div
+        className={`mx-auto flex items-center justify-center h-12 w-12 rounded-full ${props.color}`}
+      >
+        {props.success ? (
+          <CheckIcon
+            className={`h-6 w-6 ${props.iconColor}`}
+            aria-hidden="true"
+          />
+        ) : (
+          <XIcon className={`h-6 w-6 ${props.iconColor}`} aria-hidden="true" />
+        )}
+      </div>
+      <div className="mt-3 text-center sm:mt-5">
+        <Dialog.Title
+          as="h3"
+          className="text-lg leading-6 font-medium text-gray-900"
+        >
+          {props.heading}
+        </Dialog.Title>
+        <div className="mt-2">
+          <p className="text-sm text-gray-500">{props.paragraph}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+);

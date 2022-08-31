@@ -74,7 +74,7 @@ const mern_Developer = () => {
   return (
     <>
       <Head>
-        <title>Hire Mern Developer | Hcode Techonolgies</title>
+        <title>Hire Mern Developer | Hcode Technologies</title>
         <MetaTags page={metaData.developer_as_a_service} />
       </Head>
       {/* Hero Image */}
@@ -91,18 +91,18 @@ const mern_Developer = () => {
 
           <div className="absolute flex flex-col  justify-center h-full new-container  top-4 z-10 text-white md:w-5/12 space-y-3 md:left-16">
             <h1 className="text-3xl md:text-4xl font-semibold ">
-              Augment your teach team with a MERN developer
+              Hire Vetted MERN Developers
             </h1>
             <p className=" font-light text-md md:text-lg text-gray-300">
-              Augment your engineering team with MERN developer(s) who will give
-              you a full stack development solution - front-end, backend,
-              testing, and mobile application solutions.
+              Hire experienced remote developers trained to write{" "}
+              <span className="font-bold">good quality of code</span> and
+              comfortable working with international tech-clients
             </p>
             <button
               className="primary-button rounded-none max-w-xs"
               onClick={showModal}
             >
-              Hire MERN Developer
+              Hire Now
             </button>
           </div>
         </div>
@@ -110,21 +110,28 @@ const mern_Developer = () => {
 
       {/* Clients */}
       <section id="clients" className=" new-container pt-10">
-        <Client data={client} slides={isDesktop} />
+        <h2 className="text-center text-xl md:text-3xl font-semibold ">
+          Our Developers are trusted by Startups like
+        </h2>
+        <Client data={client} slides={isDesktop} heading />
       </section>
 
       {/* 1 Best offers */}
       <section id="best-offers" className=" grid grid-cols-12 mt-10 md:mt-28">
-        <div className="col-span-12 md:col-span-6 space-y-3 order-2 md:order-1 flex flex-col justify-center max-w-3xl mx-auto md:w-3/4 px-10 my-10 md:my-0">
+        <div className="col-span-12 md:col-span-6 space-y-3 order-2 md:order-1 flex flex-col justify-center max-w-3xl mx-auto md:w-4/5 px-10 my-10 md:my-0">
           <h2 className="text-2xl md:text-4xl font-semibold capitalize md:-mt-10">
-            Why you should hire from us ?
+            Why Hiring from us is a good choice ?
           </h2>
           <p className="text-lg md:text-xl font-light pb-5">
             It is the same as hiring in India directly but with us doing the
             most difficult parts so that you can focus on your business.
           </p>
+
           {/*  */}
           <div className="space-y-7 text-lg">
+            {/* <h3 className="text-3xl font-semibold">
+              High Quality / Cost ratio
+            </h3> */}
             <div className="flex">
               <div className="bg-blue-100 flex justify-center items-center  min-w-[40px] h-10 rounded ">
                 <img
@@ -135,11 +142,11 @@ const mern_Developer = () => {
               </div>
               <div className="ml-3">
                 <h5 className=" pointer-heading ">
-                  Hire the top talent at half the cost
+                  Hire the top talent at competitive rates
                 </h5>
                 <p className=" pointer-paragraph">
-                  Hire top talent from India at half the cost as per industry
-                  standards
+                  You get the best RoI on your investment through our high
+                  quality pre-vetter engineers
                 </p>
               </div>
             </div>
@@ -153,26 +160,29 @@ const mern_Developer = () => {
               </div>
               <div className="ml-3">
                 <h5 className="pointer-heading ">
-                  Complete development solution
+                  Developers backed by an strong ecosystem
                 </h5>
                 <p className="pointer-paragraph">
-                  Hire a full stack developer who is equally skilled in
-                  front-end and back-end coding
+                  Our Developers work from in-office environment, where any help
+                  they need is handy from a team of experienced developers
                 </p>
               </div>
             </div>{" "}
             <div className="flex">
               <div className="bg-blue-100 flex justify-center items-center min-w-[40px] h-10 rounded ">
                 <img
-                  src={zero_risk}
+                  src={easy_to_manage}
                   alt="Hire Silicon Valley caliber at half the cost"
                   className="h-6 w-10"
                 />
               </div>
               <div className="ml-3">
-                <h5 className="pointer-heading ">No risk</h5>
+                <h5 className="pointer-heading ">
+                  Experience of working with CTOs/Tech Clients
+                </h5>
                 <p className="pointer-paragraph">
-                  You can hire the developer at a trial of 2 weeks
+                  Our Developers have experience of working with global teams
+                  and CTOs/Founders
                 </p>
               </div>
             </div>
@@ -197,9 +207,9 @@ const mern_Developer = () => {
           />
         </div>
 
-        <div className="col-span-12 md:col-span-6 space-y-3 flex flex-col justify-center max-w-3xl mx-auto md:w-3/4 px-10 my-10 md:my-0">
+        <div className="col-span-12 md:col-span-6 space-y-3 flex flex-col justify-center max-w-3xl mx-auto md:w-4/5 px-10 my-10 md:my-0">
           <h2 className="text-2xl md:text-4xl font-semibold pb-5 ">
-            Diligent Vetting
+            Professionalism Guaranteed
           </h2>
           <div className="text-lg space-y-5">
             <div className="flex">
@@ -211,9 +221,30 @@ const mern_Developer = () => {
                 />
               </div>
               <div className="ml-3">
-                <h5 className="pointer-heading ">4 Step Vetting</h5>
+                <h5 className="pointer-heading ">
+                  Respect Commitments & Timelines
+                </h5>
                 <p className=" pointer-paragraph">
-                  All our developers go through rigorous testing and vetting
+                  Our developers are trained through systematic procedures to
+                  make commitments which are practical and adhere to them
+                </p>
+              </div>
+            </div>
+            {/*  */}
+            <div className="flex">
+              <div className="bg-blue-100 flex justify-center items-center min-w-[40px] h-10 rounded ">
+                <img
+                  src={zero_risk}
+                  alt="Delivery Managers"
+                  className="h-6 w-10"
+                />
+              </div>
+              <div className="ml-3">
+                <h5 className=" font-bold ">Delivery Managers</h5>
+                <p className=" font-light">
+                  We align delivery managers for each engagement who work
+                  closely, especially at beginning to ensure smooth start and
+                  continued satisfaction
                 </p>
               </div>
             </div>
@@ -222,15 +253,16 @@ const mern_Developer = () => {
               <div className="bg-blue-100 flex justify-center items-center min-w-[40px] h-10 rounded ">
                 <img
                   src={seniority}
-                  alt="Hire Silicon Valley caliber at half the cost"
+                  alt="Quality of efforts and delivery"
                   className="h-6 w-10"
                 />
               </div>
               <div className="ml-3">
-                <h5 className=" font-bold ">Promising Success Rate</h5>
+                <h5 className=" font-bold ">Quality of efforts and delivery</h5>
                 <p className=" font-light">
-                  Our thorough selective process leads to a ?? trial-to-hire
-                  success rate
+                  We ensure strong adherence to delivery standards and have
+                  systems in place to ensure that our engineers put in effective
+                  40hrs weekly
                 </p>
               </div>
             </div>
@@ -240,7 +272,7 @@ const mern_Developer = () => {
       {/* 3 Best Others */}
       <section id="best_offers" className="  grid grid-cols-12">
         {/*  */}
-        <div className="col-span-12 md:col-span-6 space-y-3  order-2 md:order-1 flex flex-col justify-center max-w-3xl mx-auto md:w-3/4 px-10 my-10 md:my-0">
+        <div className="col-span-12 md:col-span-6 space-y-3  order-2 md:order-1 flex flex-col justify-center max-w-3xl mx-auto md:w-4/5 px-10 my-10 md:my-0">
           <h2 className="text-2xl md:text-4xl font-semibold pb-6">
             Effective Team Collaboration
           </h2>
@@ -257,9 +289,9 @@ const mern_Developer = () => {
               <div className="ml-3">
                 <h5 className=" font-bold ">Regular Updates</h5>
                 <p className=" font-light">
-                  HCode's tools gives you even more visibility into your remote
-                  developer’s work with automatic time tracking & virtual daily
-                  stand-ups
+                  We get onboard on your Slack, Chats etc to stay in touch with
+                  you. You get regular updates and hustle over virtual standups
+                  per your convenience
                 </p>
               </div>
             </div>
@@ -267,7 +299,7 @@ const mern_Developer = () => {
               <div className="bg-blue-100 flex justify-center items-center min-w-[40px] h-10 rounded ">
                 <img
                   src={easy_to_manage}
-                  alt="Hire Silicon Valley caliber at half the cost"
+                  alt="Effective Management"
                   className="h-6 w-10"
                 />
               </div>
@@ -283,15 +315,18 @@ const mern_Developer = () => {
               <div className="bg-blue-100 flex justify-center items-center min-w-[40px] h-10 rounded ">
                 <img
                   src={match_your_timezone}
-                  alt="Hire Silicon Valley caliber at half the cost"
+                  alt="Overlap with international time zones"
                   className="h-6 w-10"
                 />
               </div>
               <div className="ml-3">
-                <h5 className=" font-bold ">Timezone Match-up</h5>
+                <h5 className=" font-bold ">
+                  Overlap with international time zones
+                </h5>
                 <p className=" font-light">
-                  Our developers match your time zone and overlap a minimum of 1
-                  hour with your workday
+                  Our typical operating hours are 0930 to 1830 IST, which gives
+                  us some day-time overlap with US East to Australian East time
+                  zones to work effectively
                 </p>
               </div>
             </div>
@@ -309,7 +344,7 @@ const mern_Developer = () => {
       {/* What Does Hcode Provide */}
       <section className="new-container my-10">
         <div className=" grid grid-cols-12 md:gap-8">
-          <h2 className="col-span-12 text-3xl font-semibold my-10 text-center w-full ">
+          <h2 className="col-span-12 text-3xl font-semibold mt-10 text-center w-full ">
             What does Hcode provide
           </h2>
           {hcode_provide.map((item) => (
@@ -326,7 +361,7 @@ const mern_Developer = () => {
       </section>
 
       {/* Testimonial */}
-      <section id="testimonial" className="pt-10 pb-0 bg-gray-50 my-20">
+      <section id="testimonial" className="pt-10 pb-0 bg-gray-50 mb-20">
         <Testimonial />
       </section>
 
@@ -336,7 +371,7 @@ const mern_Developer = () => {
       {/* Our Work */}
       <section id="our-work" className=" pt-16 relative">
         <h2 className="text-4xl font-semibold text-center">Our Work</h2>
-        <div className=" new-container py-10 grid grid-cols-12 ">
+        <div className=" new-container pt-10 grid grid-cols-12 ">
           <div className="col-span-12 ">
             <CarouselProvider
               visibleSlides={1}
@@ -376,9 +411,9 @@ const mern_Developer = () => {
       </section>
 
       {/* What Does Hcode Provide */}
-      <section className="new-container  grid grid-cols-12 md:gap-8">
-        <h2 className="col-span-12 text-2xl md:text-3xl font-semibold my-5 md:my-10 text-center">
-          How to hire the best MERN developer for your team through HCode?
+      <section className="new-container  grid grid-cols-12 md:gap-8 ">
+        <h2 className="col-span-12 text-2xl md:text-3xl font-semibold my-5 md:mt-10 text-center">
+          Hire MERN Developer for your team
         </h2>
         {hire_dev_hcode.map((item) => (
           <div
@@ -394,7 +429,7 @@ const mern_Developer = () => {
       </section>
 
       {/* FAQ */}
-      <section className="faqs">
+      <section className="faqs bg-gray-50 my-10">
         <Accordion data={daas_faq_services} />
       </section>
 
@@ -406,15 +441,18 @@ const mern_Developer = () => {
 
 export default mern_Developer;
 
-const CTA = ({ showModal }) => (
+const CTA = ({ showModal, heading, paragraph, buttonText }) => (
   <section id="cta" className="new-container text-center text-white mb-10">
     <div className="bg-gradient-to-r from-primary to-blue-900 p-10">
       <h2 className="col-span-12 text-4xl font-semibold  ">
-        Hire Dedicated Developers
+        {heading ?? "Hire Dedicated Developers"}
       </h2>
-      <p className="">Get our top talent working for you right away</p>
+      <p className="">
+        {paragraph ??
+          "Get our experienced developers working for you right away"}
+      </p>
       <button onClick={showModal} className="outline-button px-5">
-        Hire MERN Developer
+        {buttonText ?? `Let’s Get Started`}
       </button>
     </div>
   </section>
