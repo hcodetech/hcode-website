@@ -1055,6 +1055,7 @@ export const selected_technologies = [
   },
   {
     tech_name: "I Don't Know Yet",
+    tech: "Other",
   },
 ];
 
@@ -1671,3 +1672,130 @@ export const faq_mvp = [
       "Our standard technology stacks are React and Typescript for Frontend and Python for Backend. We’ve chosen these in the interest of being open source and fairly comprehensive and fast to implement, along with our decent expertise in these. If for any reason you have any specific preference in the technology stack, please feel free to discuss with us.",
   },
 ];
+
+export const hcode_provide = [
+  {
+    id: "1",
+    title: "Scale as per need",
+    info: `We can support the agility in demand by startups to scale up or down their engineering team, with simple process and short notice periods`,
+  },
+  {
+    id: "2",
+    title: "Trust & Confidentiality",
+    info: `
+    We take the confidentiality of your data and IPR very seriously and maintain formal agreements on Confidentiality with all our employees. 
+    `,
+  },
+  {
+    id: "3",
+    title: "Accountability",
+    info: `
+    We act as partners to our clients, and are there to ensure resolution of any issues they face in anything with the developers 
+    `,
+  },
+];
+
+export const hire_dev_hcode = [
+  {
+    icon: "",
+    id: "1",
+    title: "Tell us your requirements",
+    info: `We'll schedule a call and understand your requirements`,
+  },
+  {
+    icon: "",
+    id: "2",
+    title: "We find the best talent for you",
+    info: `
+    Within days, we'll introduce you to the right developer for your project.
+    `,
+  },
+  {
+    icon: "",
+    id: "3",
+    title: "Start the recruiting process",
+    info: `
+    You can start at the on-boarding process and working with your selected developer
+
+    `,
+  },
+];
+
+// export const daas_faq_services = [
+//   {
+//     question: "Who should hire MERN developers?",
+//     answer: "",
+//   },
+//   {
+//     question: "Who should hire React Native developers?",
+//     answer: "",
+//   },
+//   {
+//     question: "Who should hire Node developers?",
+//     answer: "",
+//   },
+//   {
+//     question: "How are HCode Developers Different?",
+//     answer: "",
+//   },
+//   {
+//     question: "Does your team have experience of working with US/Global teams?",
+//     answer: "",
+//   },
+//   {
+//     question: "How do you ensure privacy and confidentiality?",
+//     answer: "",
+//   },
+//   {
+//     question:
+//       "What are your working hours? Can the resource work in our time zone?",
+//     answer: "",
+//   },
+//   {
+//     question: "What is the hiring time?",
+//     answer: "",
+//   },
+//   {
+//     question: "What is your working model?",
+//     answer: "",
+//   },
+// ];
+
+export const daas_faq_services = [
+  {
+    question: "How soon can I start and what is the required notice period?",
+    answer:
+      "It depends on the requirement, i.e no. of resources required. Typically for 1-2 developer requirements, we can start in 1-4 weeks. For larger team requirements we may need 1-3 months. A typical notice period of increase/decrease of resources in a project is 1-3 months depending on the size of the project as above.",
+  },
+
+  {
+    question: "Does your team have experience of working with US/Global teams?",
+    answer:
+      "More than 80% of our clients have been from the US and we’re very well experienced in working and collaborating with international teams working in different time zone than ours.",
+  },
+  {
+    question:
+      "What are your working hours? Can the resource work in our time zone?",
+    answer:
+      "Our employees typically work 9:30 am to 6:30 pm IST (12 am to 9 am EST) 5 days a week. This ensures that we have 1-hour overlap in US mornings. Other than this, we do ad-hoc meetings on a need basis that could go outside this time window.      ",
+  },
+  {
+    question: "How do you ensure privacy and confidentiality?",
+    answer:
+      "We sign NDA and confidentiality agreements provided by clients and our employees are bound by company NDA and confidentiality agreement.",
+  },
+];
+
+export const bestOthers = "/assets/img/best-others.jpg";
+export const rigorousVetting = "/assets/img/rigorous-vetting.jpg";
+export const effectiveCollaboration = "/assets/img/effective-collaboration.jpg";
+
+export const dollarIcons = "/assets/img/daas-icons/dollar-icon.svg";
+export const skills = "/assets/img/daas-icons/skills.svg";
+export const zero_risk = "/assets/img/daas-icons/zero_risk.svg";
+export const testIcon = "/assets/img/daas-icons/test.svg";
+export const seniority = "/assets/img/daas-icons/Seniority.svg";
+export const daily_updates = "/assets/img/daas-icons/Daily_updates.svg";
+export const easy_to_manage = "/assets/img/daas-icons/Easy_to_manage.svg";
+export const match_your_timezone =
+  "/assets/img/daas-icons/Match_your_timezone.svg";

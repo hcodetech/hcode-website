@@ -6,4 +6,5 @@ export const apiRoutes = {
   OUR_WORK: "project/?to_show_on_portfolio=true",
   SHOW_HOMEPAGE_PROJECT: "project/?to_show_on_homepage=true",
   CONTACT: "lead_contact/",
+  LEAD_CONTACT: "lead_contact/",
 };

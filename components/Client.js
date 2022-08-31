@@ -13,7 +13,7 @@ function Client(props) {
   };
   return (
     <>
-      <h2 className="text-center text-3xl font-semibold pb-10">
+      <h2 className="text-center text-xl md:text-3xl font-semibold pb-5 md:pb-10">
         {props.heading
           ? ""
           : "We're trusted by many fast growing companies for their tech needs"}
@@ -21,7 +21,7 @@ function Client(props) {
       <Slider {...SliderData}>
         {props.data.map(({ img, name, alt }, index) => (
           <div className="text-center" key={index}>
-            <img src={img} alt={alt} className="max-h-20" />
+            <img src={img} alt={alt} className="max-h-20 " />
             <h6 className="font-medium text-primary float-left text-center">
               {name && name}
             </h6>
