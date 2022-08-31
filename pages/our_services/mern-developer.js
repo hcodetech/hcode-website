@@ -342,7 +342,7 @@ const mern_Developer = () => {
       </section>
 
       {/* What Does Hcode Provide */}
-      <section className="new-container my-10">
+      <section id="hcode_provide" className="new-container my-10">
         <div className=" grid grid-cols-12 md:gap-8">
           <h2 className="col-span-12 text-3xl font-semibold mt-10 text-center w-full ">
             What does Hcode provide
@@ -429,7 +429,7 @@ const mern_Developer = () => {
       </section>
 
       {/* FAQ */}
-      <section className="faqs bg-gray-50 my-10">
+      <section id="faq" className="faqs bg-gray-50 my-10">
         <Accordion data={daas_faq_services} />
       </section>
 

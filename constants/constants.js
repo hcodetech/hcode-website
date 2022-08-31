@@ -1721,43 +1721,68 @@ export const hire_dev_hcode = [
   },
 ];
 
+// export const daas_faq_services = [
+//   {
+//     question: "Who should hire MERN developers?",
+//     answer: "",
+//   },
+//   {
+//     question: "Who should hire React Native developers?",
+//     answer: "",
+//   },
+//   {
+//     question: "Who should hire Node developers?",
+//     answer: "",
+//   },
+//   {
+//     question: "How are HCode Developers Different?",
+//     answer: "",
+//   },
+//   {
+//     question: "Does your team have experience of working with US/Global teams?",
+//     answer: "",
+//   },
+//   {
+//     question: "How do you ensure privacy and confidentiality?",
+//     answer: "",
+//   },
+//   {
+//     question:
+//       "What are your working hours? Can the resource work in our time zone?",
+//     answer: "",
+//   },
+//   {
+//     question: "What is the hiring time?",
+//     answer: "",
+//   },
+//   {
+//     question: "What is your working model?",
+//     answer: "",
+//   },
+// ];
+
 export const daas_faq_services = [
   {
-    question: "Who should hire MERN developers?",
-    answer: "",
+    question: "How soon can I start and what is the required notice period?",
+    answer:
+      "It depends on the requirement, i.e no. of resources required. Typically for 1-2 developer requirements, we can start in 1-4 weeks. For larger team requirements we may need 1-3 months. A typical notice period of increase/decrease of resources in a project is 1-3 months depending on the size of the project as above.",
   },
-  {
-    question: "Who should hire React Native developers?",
-    answer: "",
-  },
-  {
-    question: "Who should hire Node developers?",
-    answer: "",
-  },
-  {
-    question: "How are HCode Developers Different?",
-    answer: "",
-  },
+
   {
     question: "Does your team have experience of working with US/Global teams?",
-    answer: "",
-  },
-  {
-    question: "How do you ensure privacy and confidentiality?",
-    answer: "",
+    answer:
+      "More than 80% of our clients have been from the US and we’re very well experienced in working and collaborating with international teams working in different time zone than ours.",
   },
   {
     question:
       "What are your working hours? Can the resource work in our time zone?",
-    answer: "",
+    answer:
+      "Our employees typically work 9:30 am to 6:30 pm IST (12 am to 9 am EST) 5 days a week. This ensures that we have 1-hour overlap in US mornings. Other than this, we do ad-hoc meetings on a need basis that could go outside this time window.      ",
   },
   {
-    question: "What is the hiring time?",
-    answer: "",
-  },
-  {
-    question: "What is your working model?",
-    answer: "",
+    question: "How do you ensure privacy and confidentiality?",
+    answer:
+      "We sign NDA and confidentiality agreements provided by clients and our employees are bound by company NDA and confidentiality agreement.",
   },
 ];
 
