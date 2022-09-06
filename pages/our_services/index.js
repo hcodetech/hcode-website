@@ -10,6 +10,7 @@ import {
   consumer_card,
   enterprise_card,
   fintech_card,
+  metaData,
 } from "../../constants/constants";
 import Consumer_Card from "../../components/Consumer_Card";
 import Client from "../../components/Client";
@@ -19,15 +20,17 @@ import Process from "../../components/Process";
 import EnterpriseCard from "../../components/EnterpriseCard";
 import FintechCard from "../../components/FintechCard";
 import { ArrowRightIcon } from "@heroicons/react/solid";
+import MetaTags from "../../components/MetaTags";
 function our_services() {
-  const [isDesktop, setIsDesktop] = useState("")
-    useEffect(() => {
-        window.innerWidth<=750 ? setIsDesktop(false) : setIsDesktop(true) 
-         })
+  const [isDesktop, setIsDesktop] = useState("");
+  useEffect(() => {
+    window.innerWidth <= 750 ? setIsDesktop(false) : setIsDesktop(true);
+  });
   return (
     <>
       <Head>
-        <title>Our Services | Hcode Techonolgies</title>
+        <title>Our Services | Hcode Technologies</title>
+        <MetaTags page={metaData.our_services} />
       </Head>
       <section className="relative bg-no-repeat bg-contain">
         <div className="   ">
@@ -149,7 +152,7 @@ function our_services() {
 
       {/* Client Section */}
       <section className="new-container py-10">
-        <Client data={client} slides={isDesktop}/>
+        <Client data={client} slides={isDesktop} />
       </section>
     </>
   );

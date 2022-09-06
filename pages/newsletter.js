@@ -9,19 +9,25 @@ import MetaTags from "../components/MetaTags";
 const newsletter = () => {
   const MAILCHIMP_URL = process.env.NEXT_PUBLIC_MAILCHIMP_URL;
   return (
-    <MailchimpSubscribe
-      url={MAILCHIMP_URL}
-      render={(props) => {
-        const { subscribe, status, message } = props || {};
-        return (
-          <NewsLetterPage
-            status={status}
-            message={message}
-            onValidated={(formData) => subscribe(formData)}
-          />
-        );
-      }}
-    />
+    <>
+      <Head>
+        <title>HCode | Monthly Newsletter by HCode Technologies</title>
+        <MetaTags page={metaData.newsletter} />
+      </Head>
+      <MailchimpSubscribe
+        url={MAILCHIMP_URL}
+        render={(props) => {
+          const { subscribe, status, message } = props || {};
+          return (
+            <NewsLetterPage
+              status={status}
+              message={message}
+              onValidated={(formData) => subscribe(formData)}
+            />
+          );
+        }}
+      />
+    </>
   );
 };
 
@@ -95,9 +101,6 @@ function NewsLetterPage({ status, message, onValidated }) {
   };
   return (
     <div className="bg-white h-screen flex items-center new-container">
-      <Head>
-        <title>Newsletter | Hcode Technologies </title>
-      </Head>
       <div className="mx-auto text-center">
         <h2 className="inline text-3xl font-extrabold tracking-tight text-gray-900 sm:block sm:text-4xl">
           Want To Hear About The Cool Tech HCode

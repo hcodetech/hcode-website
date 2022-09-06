@@ -16,16 +16,16 @@ const Accordion = ({ data }) => {
     <div className="new-container py-12">
       <div className="text-center my-4">
         <p className="opacity-50">FAQs</p>
-        <h2 className="text-4xl font-semibold">Got any Questions?</h2>
+        <h2 className="text-2xl md:text-4xl font-semibold">
+          Got any Questions?
+        </h2>
       </div>
       <div className="acc_container mt-8">
         {data.map((item, index) => {
           return (
             <div className="border-b-2" key={index}>
               <div className="wrap" onClick={() => toggle(index)} key={index}>
-                <h1 className="text-left">
-                  {item.question}
-                </h1>
+                <h1 className="text-left">{item.question}</h1>
                 <span>
                   {clicked === index ? (
                     <MinusIcon className="h-6 w-6" />
@@ -36,8 +36,10 @@ const Accordion = ({ data }) => {
               </div>
               {clicked === index ? (
                 <div className="dropdown">
-                  <p className="leading-normal" dangerouslySetInnerHTML={{ __html: item.answer }}>
-                  </p>
+                  <p
+                    className="leading-normal"
+                    dangerouslySetInnerHTML={{ __html: item.answer }}
+                  ></p>
                 </div>
               ) : null}
             </div>

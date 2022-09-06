@@ -27,11 +27,11 @@ export const about_page = {
     "Our Founder, Shashank who was working in New York, decided to move to India and do something meaningful. When he came back, he realized that all the great work opportunities were centered around a handful of metro cities only. While looking at his hometown, a small town around 100 Kms from the national capital, he saw that there are plenty of talented engineers who, if given the right mentorship and guidance, can be turned into professional coders.<br/><br/>That was his eureka moment, where he saw there can be an impact and along with his wife Shweta, he started building a small company. Soon, a few of their friends decided to jump on the wagon and we became Hcode.",
   heading_3: "and today,",
   paragraph_3:
-    "We are a team of 30+ young, talented and dynamic engineers, selected through a rigorous process and shaped through a hands-on training program. We’ve shipped quality code on-time to over a dozen clients across startups and enterprises. We have built strong ethical relationships with our clients such that they stay with us, come back to us with more projects, and get us more clients through referrals.<br/><br/>Our leadership team has worked in MNCs and startups across New York, Bengaluru, and New Delhi, and ensures the same level of professionalism and work culture while working from a small city in India, Karnal.",
+    "We are a team of 40+ young, talented and dynamic engineers, selected through a rigorous process and shaped through a hands-on training program. We’ve shipped quality code on-time to over three dozen clients across startups and enterprises. We have built such strong ethical relationships with our clients that they stay with us for long, come back to us with more projects, and get us more clients through referrals.<br/><br/>Our leadership team has worked in MNCs and startups across New York, Bengaluru, and New Delhi, and ensures the same level of professionalism and work culture while working from a small city in India, Karnal.",
   office_heading: "Our corporate office is located in Karnal,<br/> India",
   office_paragraph:
     "But why Karnal and not a metro city? This we get asked quite often. To answer, we thought <strong>instead of adding to the problem of migration</strong> to already overburdened cities, why not build a company in a small city and give people an option to do great work here itself.<br/> <br/>With that intent we built a <strong>beautiful and large office</strong> with a natural feel and built professional work culture with meritocracy at the center of it. We have been able to keep both <strong>our clients as well as employees happy</strong> and satisfied by our work policies, professional work ethics and transparent communication.<br/> <br/> We intend to give our employees <strong>an experience of working in a silicon valley tech company</strong> without having to migrate there.",
-  office_1: "/assets/img/office_1.jpg",
+  office_1: "/assets/img/office_view.jpg",
   office_2: "/assets/img/office_2.jpg",
 };
 
@@ -122,16 +122,16 @@ export const TEAM = [
     bio: "EM with experience of building Enterprise Applications.Ex-Siemens, NIT Durgapur",
     link: "https://www.linkedin.com/in/rishabh-garg-77023ab6/",
   },
-];
-
-export const OUR_MENTORS = [
   {
     image: "/assets/img/hcode_about_us_shweta.jpg",
     name: "Shweta Goel",
-    title: "Communication Coach",
+    // title: "Communication Coach",
     bio: "Started, grown & led multiple quant teams as VP in Goldman Sachs, New York, IIT Delhi",
     link: "https://www.linkedin.com/in/shweta-singla/",
   },
+];
+
+export const OUR_MENTORS = [
   {
     image: "/assets/img/hcode_about_us_arpit.jpg",
     name: "Arpit Maheshwari",
@@ -191,10 +191,18 @@ export const remote = "/assets/icons/remote.svg";
 export const work_with_us_1 = "/assets/img/work_with_us_1.jpg";
 export const work_with_us_2 = "/assets/img/work_with_us_2.jpg";
 export const work_with_us_3 = "/assets/img/work_with_us_3.jpg";
+export const thailand_trip = "/assets/img/thailand_trip.jpg";
+export const office_v3 = "/assets/img/office_v3.jpg";
 export const work_with_us_recuriter_image =
   "/assets/img/work_with_us_recruiter.jpg";
 export const our_services_hero = "/assets/img/our_services_hero.jpg";
 export const work_with_us_image_carousel = [
+  { image: "/assets/img/thailand_trip.jpg" },
+  { image: "/assets/img/office_v3.jpg" },
+  { image: "/assets/img/cake_1.jpg" },
+  { image: "/assets/img/swim_2.jpg" },
+  { image: "/assets/img/swim_3.jpg" },
+  { image: "/assets/img/trip_1.jpg" },
   { image: "/assets/img/work_with_us_4.jpg" },
   { image: "/assets/img/work_with_us_5.jpg" },
   { image: "/assets/img/work_with_us_6.jpg" },
@@ -688,12 +696,119 @@ export const how_to_get_started = {
   ],
 };
 
+export const metaData = {
+  homepage: {
+    description:
+      "We’re in the business of writing great code. We provide on-time delivery along with transparent communication. But we also make sure that our people have great work-life balance, meritocracy, and a healthy work environment",
+    title: "Servicing End-To-End Engineering Needs | Hcode ",
+    share_image: "https://hcode.tech/assets/img/Meta-Image.jpg",
+    url: "https://hcode.tech",
+  },
+  our_services: {
+    title: "Hire Top Tech talent for your Remote Team",
+    description:
+      "We help assemble and manage a team of world-class software developers dedicated to bringing your vision to life",
+    share_image: "https://hcode.tech/assets/img/Meta-Image.jpg",
+    url: "https://hcode.tech/our_services",
+  },
+  developer_as_a_service: {
+    title: "Developer as a Service (DaaS) ",
+    description:
+      "You get developer(s) experienced in the required skills that you can directly manage. They can work standalone on a project or work with your existing team. You should ideally have someone technical in your team who can manage these developers.",
+    share_image: "https://hcode.tech/assets/img/Meta-Image.jpg",
+    url: "https://hcode.tech/our_services/developer_as_a_service",
+  },
+
+  team_as_a_service: {
+    title: "Team as a Service (TaaS)",
+    description:
+      "You get a team of software developers headed by a Tech-Lead or a Project Manager. This team can either function as your standalone technology team or this could be augmenting your existing team. With a Tech Lead or Project Manager in the mix, you don’t have to directly manage all your resources and can provide a high-level plan of what you want to achieve.",
+    share_image: "https://hcode.tech/assets/img/Meta-Image.jpg",
+    url: "https://hcode.tech/our_services/team_as_a_service",
+  },
+
+  blockchain: {
+    title: "Blockchain Development Services",
+    description:
+      "We’re proficient in various Blockchain services including, but not limited to, Dapps, Smart Contracts, NFT marketplace and Blockchain Security Audit.",
+    share_image: "https://hcode.tech/assets/img/Meta-Image.jpg",
+    url: "https://hcode.tech/our_services/blockchain",
+  },
+
+  mvp: {
+    title: "MVP Development Services",
+    description:
+      "Get your Minimal Viable Product built by a team of experienced product builders",
+    share_image: "https://hcode.tech/assets/img/Meta-Image.jpg",
+    url: "https://hcode.tech/our_services/mvp",
+  },
+
+  about: {
+    title: "We’re in the business of Writing Great Code",
+    description:
+      "We provide on-time delivery along with transparent communication. But we also make sure that our people have great work-life balance, meritocracy, and a healthy work environment",
+    share_image: "https://hcode.tech/assets/img/Meta-Image.jpg",
+    url: "https://hcode.tech/about",
+  },
+
+  work_with_us: {
+    title: "Let’s Work Together at HCode",
+    description:
+      "We abide by our core value, ‘Our people are our biggest asset’, in letter and spirit. We do everything to make sure that our people are personally happy, professionally satisfied, and continue growing.",
+    share_image: "https://hcode.tech/assets/img/Meta-Image.jpg",
+    url: "https://hcode.tech/work_with_us",
+  },
+
+  our_work: {
+    title: "Products we've made for our client partners",
+    description:
+      "We have worked on a broad range of projects, from algorithm-heavy backend projects to beautiful and interactive responsive web products. Listed below are some of our creations.",
+    share_image: "https://hcode.tech/assets/img/Meta-Image.jpg",
+    url: "https://hcode.tech/our_work",
+  },
+
+  technologies: {
+    title: "We work with the latest and most popular tech stacks",
+    description:
+      "Extend your tech team with top talent from us. We oversee the execution and management of your software projects with our proven processes and tech mentorship",
+    share_image: "https://hcode.tech/assets/img/Meta-Image.jpg",
+    url: "https://hcode.tech/technologies",
+  },
+
+  terms_and_conditions: {
+    title: "Terms and Conditions | Hcode",
+    description: `This Privacy Policy governs how HCODE collects, uses, maintains, and discloses information collected from users (each, a "User") of the www.hcode.tech website ("Site"). This privacy policy applies to the Site and all products and services offered by HCODE.`,
+    share_image: "https://hcode.tech/assets/img/Meta-Image.jpg",
+    url: "https://hcode.tech/terms_and_conditions",
+  },
+
+  privacy_policy: {
+    title: "PRIVACY POLICY | Hcode",
+    description: `This Privacy Policy governs how HCODE collects, uses, maintains, and discloses information collected from users (each, a "User") of the www.hcode.tech website ("Site"). This privacy policy applies to the Site and all products and services offered by HCODE.`,
+    share_image: "https://hcode.tech/assets/img/Meta-Image.jpg",
+    url: "https://hcode.tech/privacy_policy",
+  },
+
+  contact: {
+    title: "Contact Us | Hcode",
+    description: "Let’s scale your team together",
+    share_image: "https://hcode.tech/assets/img/Meta-Image.jpg",
+    url: "https://hcode.tech/contact",
+  },
+
+  newsletter: {
+    title: "HCode | Monthly Newsletter by HCode Technologies",
+    description: "Hear about the cool tech the world is building",
+    share_image: "https://hcode.tech/assets/img/Meta-Image.jpg",
+    url: "https://hcode.tech/newsletter",
+  },
+};
+
 export const homepage = {
   description:
     "We’re in the business of writing great code. We provide on-time delivery along with transparent communication. But we also make sure that our people have great work-life balance, meritocracy, and a healthy work environment",
   title: "Servicing End-To-End Engineering Needs | Hcode ",
-  share_image:
-    "https://s3.amazonaws.com/hcode.tech/assets/img/hcode-logo-vertical.jpg",
+  share_image: "https://hcode.tech/assets/img/Meta-Image.jpg",
   who_are_we: {
     image: "/assets/img/homepage_who_we_are.jpg",
     heading: "Who We Are?",
@@ -940,6 +1055,7 @@ export const selected_technologies = [
   },
   {
     tech_name: "I Don't Know Yet",
+    tech: "Other",
   },
 ];
 
@@ -1556,3 +1672,130 @@ export const faq_mvp = [
       "Our standard technology stacks are React and Typescript for Frontend and Python for Backend. We’ve chosen these in the interest of being open source and fairly comprehensive and fast to implement, along with our decent expertise in these. If for any reason you have any specific preference in the technology stack, please feel free to discuss with us.",
   },
 ];
+
+export const hcode_provide = [
+  {
+    id: "1",
+    title: "Scale as per need",
+    info: `We can support the agility in demand by startups to scale up or down their engineering team, with simple process and short notice periods`,
+  },
+  {
+    id: "2",
+    title: "Trust & Confidentiality",
+    info: `
+    We take the confidentiality of your data and IPR very seriously and maintain formal agreements on Confidentiality with all our employees. 
+    `,
+  },
+  {
+    id: "3",
+    title: "Accountability",
+    info: `
+    We act as partners to our clients, and are there to ensure resolution of any issues they face in anything with the developers 
+    `,
+  },
+];
+
+export const hire_dev_hcode = [
+  {
+    icon: "",
+    id: "1",
+    title: "Tell us your requirements",
+    info: `We'll schedule a call and understand your requirements`,
+  },
+  {
+    icon: "",
+    id: "2",
+    title: "We find the best talent for you",
+    info: `
+    Within days, we'll introduce you to the right developer for your project.
+    `,
+  },
+  {
+    icon: "",
+    id: "3",
+    title: "Start the recruiting process",
+    info: `
+    You can start at the on-boarding process and working with your selected developer
+
+    `,
+  },
+];
+
+// export const daas_faq_services = [
+//   {
+//     question: "Who should hire MERN developers?",
+//     answer: "",
+//   },
+//   {
+//     question: "Who should hire React Native developers?",
+//     answer: "",
+//   },
+//   {
+//     question: "Who should hire Node developers?",
+//     answer: "",
+//   },
+//   {
+//     question: "How are HCode Developers Different?",
+//     answer: "",
+//   },
+//   {
+//     question: "Does your team have experience of working with US/Global teams?",
+//     answer: "",
+//   },
+//   {
+//     question: "How do you ensure privacy and confidentiality?",
+//     answer: "",
+//   },
+//   {
+//     question:
+//       "What are your working hours? Can the resource work in our time zone?",
+//     answer: "",
+//   },
+//   {
+//     question: "What is the hiring time?",
+//     answer: "",
+//   },
+//   {
+//     question: "What is your working model?",
+//     answer: "",
+//   },
+// ];
+
+export const daas_faq_services = [
+  {
+    question: "How soon can I start and what is the required notice period?",
+    answer:
+      "It depends on the requirement, i.e no. of resources required. Typically for 1-2 developer requirements, we can start in 1-4 weeks. For larger team requirements we may need 1-3 months. A typical notice period of increase/decrease of resources in a project is 1-3 months depending on the size of the project as above.",
+  },
+
+  {
+    question: "Does your team have experience of working with US/Global teams?",
+    answer:
+      "More than 80% of our clients have been from the US and we’re very well experienced in working and collaborating with international teams working in different time zone than ours.",
+  },
+  {
+    question:
+      "What are your working hours? Can the resource work in our time zone?",
+    answer:
+      "Our employees typically work 9:30 am to 6:30 pm IST (12 am to 9 am EST) 5 days a week. This ensures that we have 1-hour overlap in US mornings. Other than this, we do ad-hoc meetings on a need basis that could go outside this time window.      ",
+  },
+  {
+    question: "How do you ensure privacy and confidentiality?",
+    answer:
+      "We sign NDA and confidentiality agreements provided by clients and our employees are bound by company NDA and confidentiality agreement.",
+  },
+];
+
+export const bestOthers = "/assets/img/best-others.jpg";
+export const rigorousVetting = "/assets/img/rigorous-vetting.jpg";
+export const effectiveCollaboration = "/assets/img/effective-collaboration.jpg";
+
+export const dollarIcons = "/assets/img/daas-icons/dollar-icon.svg";
+export const skills = "/assets/img/daas-icons/skills.svg";
+export const zero_risk = "/assets/img/daas-icons/zero_risk.svg";
+export const testIcon = "/assets/img/daas-icons/test.svg";
+export const seniority = "/assets/img/daas-icons/Seniority.svg";
+export const daily_updates = "/assets/img/daas-icons/Daily_updates.svg";
+export const easy_to_manage = "/assets/img/daas-icons/Easy_to_manage.svg";
+export const match_your_timezone =
+  "/assets/img/daas-icons/Match_your_timezone.svg";

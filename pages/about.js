@@ -4,18 +4,20 @@ import Client from "../components/Client";
 import CTA from "../components/CTA";
 import ServicesCard from "../components/ServicesCard";
 import Team from "../components/Team";
-import { about_page, client, TEAM } from "../constants/constants";
+import { about_page, client, metaData, TEAM } from "../constants/constants";
 import { ArrowRightIcon } from "@heroicons/react/solid";
 import React, { useState, useEffect } from "react";
+import MetaTags from "../components/MetaTags";
 function about() {
-  const [isDesktop, setIsDesktop] = useState("")
+  const [isDesktop, setIsDesktop] = useState("");
   useEffect(() => {
-     window.innerWidth<=750 ? setIsDesktop(false) : setIsDesktop(true) 
-      })
+    window.innerWidth <= 750 ? setIsDesktop(false) : setIsDesktop(true);
+  });
   return (
     <>
       <Head>
-        <title>About Us | Hcode Techonolgies </title>
+        <title>About Us | Hcode Technologies </title>
+        <MetaTags page={metaData.about} />
         {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
       <section className="new-container ">
@@ -82,7 +84,7 @@ function about() {
         <h1 className="font-poppins text-center font-semibold text-3xl  md:text-4xl md:leading-tight">
           Our Core Team
         </h1>
-        <div className="flex-wrap flex justify-between mt-7 w-3/4 mx-auto">
+        <div className="flex-wrap flex justify-between mt-7  mx-auto">
           {TEAM.map(({ name, image, bio, link, title }, index) => (
             <Team
               key={index}
@@ -131,7 +133,11 @@ function about() {
           </div>
         </div>
         <div className=" hidden lg:block relative col-span-12 lg:col-span-6 ">
-          <img src={about_page.office_1} layout="fill" className="rounded-lg" />
+          <img
+            src={about_page.office_1}
+            layout="fill"
+            className="rounded-lg h-full object-cover"
+          />
           <div className="hidden xl:block absolute rounded-lg h-[400px] w-[300px] -bottom-3/4 xl:-bottom-5 z-20 -ml-24 border-none">
             <img
               src={about_page.office_2}
@@ -151,7 +157,7 @@ function about() {
       <div className="my-10 new-container">
         <Client data={client} slides={isDesktop} />
       </div>
-     
+
       {/* CTA */}
       <div className="new-container mb-10">
         <CTA />

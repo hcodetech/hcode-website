@@ -1,41 +1,47 @@
 import { useEffect, useRef, useState } from "react";
 // import Accordion from "../../components/Accordion";
-import { faq_services, technologies_page } from "../../constants/constants";
+import {
+  faq_services,
+  metaData,
+  technologies_page,
+} from "../../constants/constants";
 // import { useRouter } from "next/dist/client/router";
 import Link from "next/link";
 import Head from "next/head";
+import MetaTags from "../../components/MetaTags";
 
 function technologies(props) {
   // const { asPath } = useRouter();
 
   // To check if the any category is included in the URL
   // const isTechnologiesStack = (pathname) => asPath.includes(pathname);
-  
+
   const [hashOnScroll, setHashOnScroll] = useState("#");
   const [hashOnClick, setHashOnClick] = useState("");
   // const [hashOnUrlChange, setHashOnUrlChange] = useState("");
   const refs = useRef([]); // create empty array for creating multiple refs
 
-  let technologies = ["Backend",
+  let technologies = [
+    "Backend",
     "Frontend",
     "Blockchain",
     "Cloud",
     "Database",
-    "CI/CD"
-  ]
+    "CI/CD",
+  ];
 
-  useEffect(()=>{
-    window.addEventListener('hashchange', function() { 
+  useEffect(() => {
+    window.addEventListener("hashchange", function () {
       // setHashOnUrlChange(window.location.hash)
-      setHashOnScroll("")
-      setHashOnClick("")
+      setHashOnScroll("");
+      setHashOnClick("");
     });
-  },[])
+  }, []);
 
   useEffect(() => {
     let myHash = window.location.hash.substring(1);
-    technologies.includes(myHash) && setHashOnClick(myHash)
-  })
+    technologies.includes(myHash) && setHashOnClick(myHash);
+  });
 
   useEffect(() => {
     let observerOptions = {
@@ -47,9 +53,9 @@ function technologies(props) {
 
     function observerCallback(sections) {
       if (sections[0].isIntersecting) {
-        window.location.hash = sections[0].target.id
-        setHashOnScroll(sections[0].target.id)
-        setHashOnClick("")
+        window.location.hash = sections[0].target.id;
+        setHashOnScroll(sections[0].target.id);
+        setHashOnClick("");
         // setHashOnUrlChange("")
       }
     }
@@ -57,17 +63,20 @@ function technologies(props) {
       // refs.current.forEach((i) => {
       observer.observe(i);
     });
-  }, [])
-
+  }, []);
 
   return (
     <>
       <Head>
         <title>Technologies | Hcode Technologies</title>
+        <MetaTags page={metaData.technologies} />
       </Head>
       <div className="scroll-smooth">
         {/* Hero Section */}
-        <section id="" className="bg-blue-100 max-h-[1000px] z-30 relative overflow-hidden">
+        <section
+          id=""
+          className="bg-blue-100 max-h-[1000px] z-30 relative overflow-hidden"
+        >
           <div className=" grid grid-cols-1 md:grid-cols-12 lg:new-container  min-h-[80vh]  ">
             <div className="md:col-span-5 new-container">
               <h2 className="pt-40 text-4xl font-semibold">
@@ -102,9 +111,11 @@ function technologies(props) {
               <h2 className="font-bold">Technologies</h2>
               {technologies.map((stack) => (
                 <Link href={`#${stack}`} key={stack}>
-                  <a href={`#${stack}`} key={stack}
+                  <a
+                    href={`#${stack}`}
+                    key={stack}
                     className={
-                      (hashOnScroll === stack) || (hashOnClick === stack)
+                      hashOnScroll === stack || hashOnClick === stack
                         ? "text-blue-600 font-semibold underline"
                         : ""
                     }
