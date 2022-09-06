@@ -1,14 +1,15 @@
+# Hcode Website
+
+This website is created in **Next Js** but it is hosted in AWS S3 and cloudfront i.e. without server. So while doing the developing please avoid server function that next js provide, if you try to include the server function then you won't be able to deploy on S3 bucket.
+
+### Git Branch Structure:
+
 ```
-cp -r img/\* out/assets/img/.
+Main : Production Ready code for deployment
+Deploy : Dev ready code for testing
 ```
 
-(optional) If sitemap is available
-
-```
-cp sitemap.xml out/.
-```
-
-final step\*
+## Final Steps for Production Deployment Steps for AWS S3 Buckets
 
 ```
 npm run build
@@ -21,40 +22,16 @@ for old in *.html; do aws s3 mv s3://hcode.tech/$old s3://hcode.tech/our_service
 aws cloudfront create-invalidation --distribution-id E2E03LDNL94VC6 --paths "/*"
 ```
 
-for old in \*.html; do echo $old; done
+## Steps to configure the AWS cli for Deployment
 
 ```
-*  need to install awscli first and run aws configure command with the correct key and secret params
+Install awscli first and run aws configure command with the correct key and secret params
 ```
 
-https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
+**Reference Docs AWS:** https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
+
+## S3 bucket link
 
 ```
-
-for old in *.html; do mv $old `basename $old .html`'';  aws s3 cp `basename $old .html` s3://hcode.tech --content-type 'text/html'; done
-
-(old process)if deploying from server
-```
-
-zip -r out.zip out
-scp out.zip hcode:~/.
-
-ssh hcode
-unzip -o out
-
-cd out
-
-// aws s3 cp . s3://hcode.tech --recursive --exclude ".git/_" --exclude "_.py" --exclude "**pycache**/_" --exclude "php/_" --exclude "\*.html"
-
-```
-final step to check the changes is deployed on live server
 http://hcode.tech.s3-website-us-east-1.amazonaws.com/
-
-
-
-<!-- aws s3 cp . s3://hcode.tech --recursive  --content-type 'text/html' --exclude "*"  --include "*.html" -->
-
-<!-- https://github.com/github/gitignore/blob/master/Node.gitignore -->
-
-
 ```
