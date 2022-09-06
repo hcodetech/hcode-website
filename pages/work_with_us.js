@@ -88,6 +88,22 @@ function work_with_us() {
           </div>
         </div>
       </section>
+      {/* Glass door Branding  */}
+      <section>
+        <h2 className="text-bold text-center my-3 font-semibold">
+          Rating and Reviews
+        </h2>
+        <a
+          href="https://www.glassdoor.co.in/Overview/Working-at-HCODE-Technologies-EI_IE5545851.11,29.htm"
+          target="_blank"
+        >
+          <img
+            alt="Find Hcode on Glassdoor."
+            className="mx-auto "
+            src="https://www.glassdoor.co.in/api/widget/horizontalStarRating.htm?e=5545851"
+          />
+        </a>
+      </section>
       {/* Campus Overview */}
       <section className="new-container mt-10">
         <div className="sm:mt-10">
