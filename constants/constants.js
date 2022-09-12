@@ -129,6 +129,13 @@ export const TEAM = [
     bio: "Started, grown & led multiple quant teams as VP in Goldman Sachs, New York, IIT Delhi",
     link: "https://www.linkedin.com/in/shweta-singla/",
   },
+  {
+    image: "/assets/img/hcode_about_us_harshit.jpg",
+    name: "Harshit Garg",
+    // title: "Communication Coach",
+    bio: "Management executive with exp. of driving large projects. Ex-Godfrey Phillips, and Ex-Pidilite, NIT Kurukshetra",
+    link: "https://www.linkedin.com/in/gargharshit/",
+  },
 ];
 
 export const OUR_MENTORS = [
