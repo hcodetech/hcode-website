@@ -133,7 +133,7 @@ export const TEAM = [
     image: "/assets/img/hcode_about_us_harshit.jpg",
     name: "Harshit Garg",
     // title: "Communication Coach",
-    bio: "Management executive with exp. of driving large projects. Ex-Godfrey Phillips, and Ex-Pidilite, NIT Kurukshetra",
+    bio: "Management exec, Problem solver, led large-scale digital transformation. Ex-Godfrey & Pidilite, NITIE, NIT KKR",
     link: "https://www.linkedin.com/in/gargharshit/",
   },
 ];
