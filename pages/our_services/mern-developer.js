@@ -77,7 +77,7 @@ const mern_Developer = () => {
     <>
       <Head>
         <title>Hire Mern Developer | Hcode Technologies</title>
-        <MetaTags page={metaData.developer_as_a_service} />
+        <MetaTags page={metaData.mern_developer} />
       </Head>
       {/* Hero Image */}
       {isModalVisible && (
