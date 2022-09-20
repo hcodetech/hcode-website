@@ -1075,6 +1075,17 @@ export const selected_technologies = [
   },
 ];
 
+export const mern_page_selected_technologies = [
+  {
+    tech_name: "MERN",
+    tech: "Full Stack",
+  },
+  {
+    tech_name: "Something Else",
+    tech: "Other",
+  },
+];
+
 export const consumer_card = {
   card_color: "bg-yellow-400",
   link: "/our_services",

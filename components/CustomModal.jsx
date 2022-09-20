@@ -2,7 +2,7 @@ import { Fragment, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { CheckIcon } from "@heroicons/react/outline";
 import { XIcon } from "@heroicons/react/solid";
-import { selected_technologies } from "../constants/constants";
+import { mern_page_selected_technologies } from "../constants/constants";
 import { apiRoutes } from "../pages/api/APIRoutes";
 import { getAPIUrl } from "../pages/api/APIHelpers";
 import { DotLoader } from "react-spinners";
@@ -46,6 +46,7 @@ function CustomModal({ open, setOpen }) {
       hiring_need: hiringNeed,
       number_of_dev: numberOfDev,
       tech_preference: preferredTechStack.join(","),
+      project_description: "filled on MERN page",
       is_daas: true,
     };
 
@@ -136,7 +137,7 @@ function CustomModal({ open, setOpen }) {
               <div
                 className={
                   !formSubmitted
-                    ? "inline-block bg-white rounded-lg py-5 px-5 text-left overflow-scroll shadow-xl transform transition-all align-middle min-h-screen md:min-h-full md:h-[80vh] top-0 md:max-h-[600px] w-full md:w-max"
+                    ? "inline-block bg-white rounded-lg py-5 px-5 text-left overflow-scroll shadow-xl transform transition-all align-middle min-h-screen md:min-h-full top-0 md:max-h-[600px] w-full md:w-max"
                     : "inline-block bg-white transform transition-all align-middle  rounded-md "
                 }
               >
@@ -262,7 +263,7 @@ function CustomModal({ open, setOpen }) {
                               htmlFor="country"
                               className="block text-sm font-medium text-gray-700"
                             >
-                              Time<sup>*</sup>
+                              For Duration <sup>*</sup>
                             </label>
                             <select
                               required
@@ -295,38 +296,40 @@ function CustomModal({ open, setOpen }) {
                               </legend>
                             </div>
                             <div className=" grid grid-cols-12">
-                              {selected_technologies.map((tech, index) => (
-                                <div
-                                  key={index}
-                                  style={{ minHeight: 48 }}
-                                  className={`flex items-center  col-span-6  md:col-span-4 lg:col-span-3 input-select mt-4`}
-                                >
-                                  <input
-                                    onChange={(e) =>
-                                      setSelectedTech(e, tech.tech_name)
-                                    }
-                                    id={tech.tech_name}
-                                    name={tech.tech_name}
-                                    type="checkbox"
-                                    className="input-radio hidden"
-                                  />
-                                  <label
-                                    htmlFor={tech.tech_name}
-                                    className={`block text-sm min-w-[140px] font-medium text-gray-700 border border-1 rounded-lg text-center px-5 py-3 ${
-                                      preferredTechStack.includes(
-                                        tech.tech_name
-                                      ) && "bg-blue-200"
-                                    }`}
+                              {mern_page_selected_technologies.map(
+                                (tech, index) => (
+                                  <div
+                                    key={index}
+                                    style={{ minHeight: 48 }}
+                                    className={`flex items-center  col-span-6  md:col-span-4 lg:col-span-3 input-select mt-4`}
                                   >
-                                    {tech.tech_name}
-                                    <br />
-                                    <span className="text-gray-500 text-xs font-normal">
-                                      {" "}
-                                      {tech.tech}
-                                    </span>
-                                  </label>
-                                </div>
-                              ))}
+                                    <input
+                                      onChange={(e) =>
+                                        setSelectedTech(e, tech.tech_name)
+                                      }
+                                      id={tech.tech_name}
+                                      name={tech.tech_name}
+                                      type="checkbox"
+                                      className="input-radio hidden"
+                                    />
+                                    <label
+                                      htmlFor={tech.tech_name}
+                                      className={`block text-sm min-w-[140px] font-medium text-gray-700 border border-1 rounded-lg text-center px-5 py-3 ${
+                                        preferredTechStack.includes(
+                                          tech.tech_name
+                                        ) && "bg-blue-200"
+                                      }`}
+                                    >
+                                      {tech.tech_name}
+                                      <br />
+                                      <span className="text-gray-500 text-xs font-normal">
+                                        {" "}
+                                        {tech.tech}
+                                      </span>
+                                    </label>
+                                  </div>
+                                )
+                              )}
                             </div>
                           </fieldset>
                         </div>

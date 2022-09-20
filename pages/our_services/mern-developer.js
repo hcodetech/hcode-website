@@ -42,7 +42,7 @@ import "pure-react-carousel/dist/react-carousel.es.css";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/outline";
 import MetaTags from "../../components/MetaTags";
 import { ArrowRightIcon } from "@heroicons/react/solid";
-const mern_Developer = () => {
+const MERN_Developer = () => {
   const [isDesktop, setIsDesktop] = useState("");
   const [isModalVisible, setIsModalVisible] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState([]);
@@ -76,7 +76,7 @@ const mern_Developer = () => {
   return (
     <>
       <Head>
-        <title>Hire Mern Developer | Hcode Technologies</title>
+        <title>Hire MERN Developer | Hcode Technologies</title>
         <MetaTags page={metaData.mern_developer} />
       </Head>
       {/* Hero Image */}
@@ -84,24 +84,24 @@ const mern_Developer = () => {
         <CustomModal setOpen={setIsModalVisible} open={isModalVisible} />
       )}
       <section>
-        <div className=" relative cursor-pointer">
+        <div className="relative">
           <img
             className="w-full object-cover h-[70vh] md:h-full max-h-[75vh] relative z-0 object-left"
             src={our_services_hero}
           />
           <div className="absolute bg-gradient-to-r from-black z-10 w-full h-full top-0 left-0"></div>
 
-          <div className="absolute flex flex-col  justify-center h-full new-container  top-4 z-10 text-white md:w-5/12 space-y-3 md:left-16">
+          <div className="absolute flex flex-col  justify-center h-full new-container  top-4 z-10 text-white md:w-5/12 space-y-4 md:left-16">
             <h1 className="text-3xl md:text-4xl font-semibold ">
               Hire Vetted MERN Developers
             </h1>
-            <p className=" font-light text-md md:text-lg text-gray-300">
+            <p className=" font-light text-md md:text-xl text-gray-200 ">
               Hire experienced remote developers trained to write{" "}
               <span className="font-bold">good quality of code</span> and
               comfortable working with international tech-clients
             </p>
             <button
-              className="primary-button rounded-none max-w-xs text-lg"
+              className="primary-button rounded-none max-w-xs text-lg "
               onClick={showModal}
             >
               Hire Now
@@ -121,8 +121,8 @@ const mern_Developer = () => {
       {/* 1 Best offers */}
       <section id="best-offers" className=" grid grid-cols-12 mt-10 md:mt-28">
         <div className="col-span-12 lg:col-span-6 space-y-3 order-2 lg:order-1 flex flex-col justify-center max-w-3xl mx-auto md:w-4/5 px-10 my-10 lg:my-0">
-          <h2 className="text-2xl md:text-4xl font-semibold capitalize lg:-mt-10">
-            Why Hiring from us is a good choice ?
+          <h2 className="text-2xl md:text-4xl font-semibold  lg:-mt-10">
+            Why hiring from us is a good choice ?
           </h2>
           <p className="text-lg md:text-xl font-light pb-5">
             It is the same as hiring in India directly but with us doing the
@@ -148,7 +148,7 @@ const mern_Developer = () => {
                 </h5>
                 <p className=" pointer-paragraph">
                   You get the best RoI on your investment through our high
-                  quality pre-vetter engineers
+                  quality pre-vetted engineers
                 </p>
               </div>
             </div>
@@ -165,7 +165,7 @@ const mern_Developer = () => {
                   Developers backed by an strong ecosystem
                 </h5>
                 <p className="pointer-paragraph">
-                  Our Developers work from in-office environment, where any help
+                  Our developers work from in-office environment, where any help
                   they need is handy from a team of experienced developers
                 </p>
               </div>
@@ -183,7 +183,7 @@ const mern_Developer = () => {
                   Experience of working with CTOs/Tech Clients
                 </h5>
                 <p className="pointer-paragraph">
-                  Our Developers have experience of working with global teams
+                  Our developers have experience of working with global teams
                   and CTOs/Founders
                 </p>
               </div>
@@ -273,9 +273,9 @@ const mern_Developer = () => {
           </div>
           <a
             onClick={showModal}
-            className=" pb-1 border-b border-primary inline-flex text-primary cursor-pointer max-w-[230px] pt-5"
+            className=" pb-1 border-b border-primary inline-flex text-primary cursor-pointer max-w-[240px] pt-5"
           >
-            Hire Mern Developer Now
+            Hire MERN Developer Now
             <ArrowRightIcon className="w-6 ml-2 " />
           </a>
         </div>
@@ -332,7 +332,7 @@ const mern_Developer = () => {
               </div>
               <div className="ml-3">
                 <h5 className=" pointer-heading ">
-                  Overlap with international time zones
+                  Overlap with International time zones
                 </h5>
                 <p className=" pointer-paragraph">
                   Our typical operating hours are 0930 to 1830 IST, which gives
@@ -351,9 +351,12 @@ const mern_Developer = () => {
           />
         </div>
       </section>
-
+      {/* CTA */}
+      <div className="mt-10">
+        <CTA showModal={showModal} />
+      </div>
       {/* What Does Hcode Provide */}
-      <section id="hcode_provide" className="new-container my-10">
+      <section id="hcode_provide" className="new-container mt-5 mb-10">
         <div className=" grid grid-cols-12 md:gap-8">
           <h2 className="col-span-12 text-3xl font-semibold mb-14 mt-10 md:mb-7 text-center w-full ">
             What Does Hcode Provide
@@ -374,7 +377,12 @@ const mern_Developer = () => {
             </div>
           ))}
         </div>
-        <div className="mx-auto text-center -mt-5 md:mt-10">
+      </section>
+
+      {/* Testimonial */}
+      <section id="testimonial" className="pt-10 pb-0 bg-gray-50 mb-16">
+        <Testimonial />
+        <div className="mx-auto text-center pb-5">
           <a
             href="/contact"
             className=" pb-1 border-b border-primary inline-flex text-primary cursor-pointer max-w-[200px]"
@@ -385,16 +393,11 @@ const mern_Developer = () => {
         </div>
       </section>
 
-      {/* Testimonial */}
-      <section id="testimonial" className="pt-10 pb-0 bg-gray-50 mb-20">
-        <Testimonial />
-      </section>
-
-      {/* TODO: Tech Stack */}
+      {/* Tech Stack */}
       <section id="tech_stack" className="new-container my-10">
         <div className="md:w-1/2">
           <h2 className=" text-3xl md:text-4xl font-semibold mb-2 mt-10 capitalize  ">
-            Check out Mern technology stack
+            Check out MERN technology stack
           </h2>
           <p className="pointer-paragraph text-base md:text-lg">
             In delivering scalable, flawlessly working apps, top-notch
@@ -405,18 +408,27 @@ const mern_Developer = () => {
         <div className=" grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-8 mt-5">
           {mern_tech_stack.map((tech) => (
             <div key={tech.tech_name}>
-              <img src={tech.image} alt={tech.tech_name} />
+              <img
+                src={tech.image}
+                alt={tech.tech_name}
+                className="hover:scale-110 duration-100 ease-in-out hover:shadow-sm w-full"
+              />
               <h2 className="font-semibold mt-3 text-lg">{tech.tech_name}</h2>
             </div>
           ))}
         </div>
+        <div className="mx-auto text-center pb-5 mt-10">
+          <button
+            onClick={showModal}
+            className="  outline-button cursor-pointer"
+          >
+            Hire MERN Developer Now
+          </button>
+        </div>
       </section>
 
-      {/* CTA */}
-      <CTA showModal={showModal} />
-
       {/* Our Work */}
-      <section id="our-work" className=" pt-16 relative">
+      <section id="our-work" className=" pt-16 relative bg-gray-50">
         <h2 className="text-4xl font-semibold text-center">Our Work</h2>
         <div className=" new-container pt-10 grid grid-cols-12 ">
           <div className="col-span-12 ">
@@ -474,15 +486,10 @@ const mern_Developer = () => {
           </div>
         ))}
       </section>
-      <div className="mx-auto text-center mt-10">
-        <a
-          // href="/contact"
-          onClick={showModal}
-          className=" pb-1 border-b border-primary inline-flex text-primary cursor-pointer"
-        >
-          Hire Mern Developer Now
-          <ArrowRightIcon className="w-6 ml-2 " />
-        </a>
+      <div className="mx-auto text-center pb-5 mt-10">
+        <button onClick={showModal} className="  outline-button cursor-pointer">
+          Hire MERN Developer Now
+        </button>
       </div>
 
       {/* FAQ */}
@@ -491,18 +498,18 @@ const mern_Developer = () => {
       </section>
 
       {/* CTA */}
-      <CTA showModal={showModal} buttonText="Hire Mern Developer" />
+      <CTA showModal={showModal} buttonText="Hire MERN Developer" />
     </>
   );
 };
 
-export default mern_Developer;
+export default MERN_Developer;
 
 const CTA = ({ showModal, heading, paragraph, buttonText }) => (
   <section id="cta" className="new-container text-center text-white mb-10">
     <div className="bg-gradient-to-r from-primary to-blue-900 p-10">
       <h2 className="col-span-12 text-4xl font-semibold  ">
-        {heading ?? "Hire Dedicated Developers"}
+        {heading ?? "Hire MERN Developers"}
       </h2>
       <p className="mt-1 font-light">
         {paragraph ??
