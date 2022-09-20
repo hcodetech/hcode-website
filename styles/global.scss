@@ -4,7 +4,7 @@
     @apply max-w-7xl mx-auto px-6 sm:px-6 lg:px-8;
   }
   .primary-button {
-    @apply bg-primary px-12 py-5 text-center text-white rounded-md hover:bg-blue-800 hover:scale-x-105 active:scale-100 focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white;
+    @apply bg-primary px-12 py-5 text-center text-white rounded-md hover:bg-blue-800  active:scale-100 focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white;
   }
   .outline-button {
     @apply bg-white border border-primary text-primary hover:bg-gray-100   transition-colors duration-100 ease-out rounded px-5 py-3 mt-3;
@@ -22,16 +22,14 @@
     @apply px-4 py-3 rounded border border-primary hover:bg-primary hover:text-white text-primary transform transition duration-100 ease-out;
   }
 
-  .pointer-heading{
-    @apply font-bold leading-6 md:leading-4
+  .pointer-heading {
+    @apply font-bold leading-6 md:leading-4 capitalize;
   }
 
-  .pointer-paragraph{
-    @apply font-light mt-1
+  .pointer-paragraph {
+    @apply font-light mt-1;
   }
 }
-
-
 
 /* Start Accordion Css */
 .accordionSection {
@@ -294,74 +292,72 @@ $animationSpeed: 40s;
       align-items: center;
       padding: 0;
 
-    .step {
-      display: block;
-      align-items: center;
-      flex-direction: column;
-      position: relative;
-      z-index: 1;
-    }
+      .step {
+        display: block;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        z-index: 1;
+      }
 
-    .step-icon {
-      height: 50px;
-      width: 50px;
-      border-radius: 50%;
-      background: #276ef1;
-      font-size: 10px;
-      text-align: center;
-      color: #ffffff;
-      position: relative;
-      line-height: 50px;
-      font-size: 20px;
-    }
+      .step-icon {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background: #276ef1;
+        font-size: 10px;
+        text-align: center;
+        color: #ffffff;
+        position: relative;
+        line-height: 50px;
+        font-size: 20px;
+      }
 
-    .step.active .step-icon {
-      background: crimson;
-    }
+      .step.active .step-icon {
+        background: crimson;
+      }
 
-    .step p {
-      text-align: left;
-      position: absolute;
-      bottom: 15px;
-      left: 20%;
-      color: #000;
-      font-size: 14px;
-      font-weight: 600;
-      width:130px;
-      top: 30%;
-    }
+      .step p {
+        text-align: left;
+        position: absolute;
+        bottom: 15px;
+        left: 20%;
+        color: #000;
+        font-size: 14px;
+        font-weight: 600;
+        width: 130px;
+        top: 30%;
+      }
 
-    .step.active p {
-      color: crimson;
-    }
+      .step.active p {
+        color: crimson;
+      }
 
-    .step.step2 p {
-      top: 13px;
-      bottom: 0;
-      left: 20%;
-      transform: unset;
+      .step.step2 p {
+        top: 13px;
+        bottom: 0;
+        left: 20%;
+        transform: unset;
+      }
 
-    }
+      .step.step3 p {
+        top: 5px;
+        bottom: 0;
+        left: 20%;
+        transform: unset;
+      }
 
-    .step.step3 p {
-      top: 5px;
-      bottom: 0;
-      left: 20%;
-      transform: unset;
-    }
+      .indicator-line {
+        height: 50px;
+        width: 2px;
+        background: #000;
+        flex: 1;
+        margin: 12px 24px;
+      }
 
-    .indicator-line {
-      height: 50px;
-      width : 2px;
-      background: #000;
-      flex: 1;
-      margin: 12px 24px;
-    }
-
-    .indicator-line.active {
-      background: crimson;
-    }
-
+      .indicator-line.active {
+        background: crimson;
+      }
     }
   }
 }

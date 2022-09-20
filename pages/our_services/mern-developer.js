@@ -18,6 +18,7 @@ import {
   hcode_provide,
   hire_dev_hcode,
   match_your_timezone,
+  mern_tech_stack,
   metaData,
   our_services_hero,
   rigorousVetting,
@@ -40,6 +41,7 @@ import {
 import "pure-react-carousel/dist/react-carousel.es.css";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/outline";
 import MetaTags from "../../components/MetaTags";
+import { ArrowRightIcon } from "@heroicons/react/solid";
 const mern_Developer = () => {
   const [isDesktop, setIsDesktop] = useState("");
   const [isModalVisible, setIsModalVisible] = useState(false);
@@ -99,7 +101,7 @@ const mern_Developer = () => {
               comfortable working with international tech-clients
             </p>
             <button
-              className="primary-button rounded-none max-w-xs"
+              className="primary-button rounded-none max-w-xs text-lg"
               onClick={showModal}
             >
               Hire Now
@@ -110,7 +112,7 @@ const mern_Developer = () => {
 
       {/* Clients */}
       <section id="clients" className=" new-container pt-10">
-        <h2 className="text-center text-xl md:text-3xl font-semibold ">
+        <h2 className="text-center text-2xl md:text-3xl font-semibold capitalize ">
           Our Developers are trusted by Startups like
         </h2>
         <Client data={client} slides={isDesktop} heading />
@@ -118,8 +120,8 @@ const mern_Developer = () => {
 
       {/* 1 Best offers */}
       <section id="best-offers" className=" grid grid-cols-12 mt-10 md:mt-28">
-        <div className="col-span-12 md:col-span-6 space-y-3 order-2 md:order-1 flex flex-col justify-center max-w-3xl mx-auto md:w-4/5 px-10 my-10 md:my-0">
-          <h2 className="text-2xl md:text-4xl font-semibold capitalize md:-mt-10">
+        <div className="col-span-12 lg:col-span-6 space-y-3 order-2 lg:order-1 flex flex-col justify-center max-w-3xl mx-auto md:w-4/5 px-10 my-10 lg:my-0">
+          <h2 className="text-2xl md:text-4xl font-semibold capitalize lg:-mt-10">
             Why Hiring from us is a good choice ?
           </h2>
           <p className="text-lg md:text-xl font-light pb-5">
@@ -189,7 +191,7 @@ const mern_Developer = () => {
           </div>
         </div>
 
-        <div className="col-span-12 md:col-span-6 order-1 md:order-2">
+        <div className="col-span-12 lg:col-span-6 order-1 lg:order-2">
           <img
             className="h-[50vh] md:h-[80vh] object-cover w-full "
             src={bestOthers}
@@ -199,7 +201,7 @@ const mern_Developer = () => {
       </section>
       {/* 2 Rigorous Vetting */}
       <section id="rigorous-vetting" className=" grid grid-cols-12 bg-gray-100">
-        <div className="col-span-12 md:col-span-6 ">
+        <div className="col-span-12 lg:col-span-6 ">
           <img
             className="h-[50vh] md:h-[80vh] object-cover w-full "
             src={rigorousVetting}
@@ -207,7 +209,7 @@ const mern_Developer = () => {
           />
         </div>
 
-        <div className="col-span-12 md:col-span-6 space-y-3 flex flex-col justify-center max-w-3xl mx-auto md:w-4/5 px-10 my-10 md:my-0">
+        <div className="col-span-12 lg:col-span-6 space-y-3 flex flex-col justify-center max-w-3xl mx-auto md:w-4/5 px-10 my-10 lg:my-0">
           <h2 className="text-2xl md:text-4xl font-semibold pb-5 ">
             Professionalism Guaranteed
           </h2>
@@ -240,8 +242,8 @@ const mern_Developer = () => {
                 />
               </div>
               <div className="ml-3">
-                <h5 className=" font-bold ">Delivery Managers</h5>
-                <p className=" font-light">
+                <h5 className=" pointer-heading ">Delivery Managers</h5>
+                <p className=" pointer-paragraph">
                   We align delivery managers for each engagement who work
                   closely, especially at beginning to ensure smooth start and
                   continued satisfaction
@@ -258,8 +260,10 @@ const mern_Developer = () => {
                 />
               </div>
               <div className="ml-3">
-                <h5 className=" font-bold ">Quality of efforts and delivery</h5>
-                <p className=" font-light">
+                <h5 className=" pointer-heading ">
+                  Quality of efforts and delivery
+                </h5>
+                <p className=" pointer-paragraph">
                   We ensure strong adherence to delivery standards and have
                   systems in place to ensure that our engineers put in effective
                   40hrs weekly
@@ -267,12 +271,19 @@ const mern_Developer = () => {
               </div>
             </div>
           </div>
+          <a
+            onClick={showModal}
+            className=" pb-1 border-b border-primary inline-flex text-primary cursor-pointer max-w-[230px] pt-5"
+          >
+            Hire Mern Developer Now
+            <ArrowRightIcon className="w-6 ml-2 " />
+          </a>
         </div>
       </section>
       {/* 3 Best Others */}
       <section id="best_offers" className="  grid grid-cols-12">
         {/*  */}
-        <div className="col-span-12 md:col-span-6 space-y-3  order-2 md:order-1 flex flex-col justify-center max-w-3xl mx-auto md:w-4/5 px-10 my-10 md:my-0">
+        <div className="col-span-12 lg:col-span-6 space-y-3  order-2 lg:order-1 flex flex-col justify-center max-w-3xl mx-auto md:w-4/5 px-10 my-10 lg:my-0">
           <h2 className="text-2xl md:text-4xl font-semibold pb-6">
             Effective Team Collaboration
           </h2>
@@ -287,8 +298,8 @@ const mern_Developer = () => {
                 />
               </div>
               <div className="ml-3">
-                <h5 className=" font-bold ">Regular Updates</h5>
-                <p className=" font-light">
+                <h5 className=" pointer-heading ">Regular Updates</h5>
+                <p className=" pointer-paragraph">
                   We get onboard on your Slack, Chats etc to stay in touch with
                   you. You get regular updates and hustle over virtual standups
                   per your convenience
@@ -304,8 +315,8 @@ const mern_Developer = () => {
                 />
               </div>
               <div className="ml-3">
-                <h5 className=" font-bold ">Effective Management</h5>
-                <p className=" font-light">
+                <h5 className=" pointer-heading ">Effective Management</h5>
+                <p className=" pointer-paragraph">
                   Our developers are easy to manage and are trained to ensure
                   that they constantly work on what’s most valuable to you.
                 </p>
@@ -320,10 +331,10 @@ const mern_Developer = () => {
                 />
               </div>
               <div className="ml-3">
-                <h5 className=" font-bold ">
+                <h5 className=" pointer-heading ">
                   Overlap with international time zones
                 </h5>
-                <p className=" font-light">
+                <p className=" pointer-paragraph">
                   Our typical operating hours are 0930 to 1830 IST, which gives
                   us some day-time overlap with US East to Australian East time
                   zones to work effectively
@@ -333,7 +344,7 @@ const mern_Developer = () => {
           </div>
         </div>
         {/*  */}
-        <div className="col-span-12 md:col-span-6 order-1 md:order-2">
+        <div className="col-span-12 lg:col-span-6 order-1 lg:order-2">
           <img
             className="h-[50vh] md:h-[80vh] object-cover w-full "
             src={effectiveCollaboration}
@@ -344,13 +355,18 @@ const mern_Developer = () => {
       {/* What Does Hcode Provide */}
       <section id="hcode_provide" className="new-container my-10">
         <div className=" grid grid-cols-12 md:gap-8">
-          <h2 className="col-span-12 text-3xl font-semibold mt-10 text-center w-full ">
-            What does Hcode provide
+          <h2 className="col-span-12 text-3xl font-semibold mb-14 mt-10 md:mb-7 text-center w-full ">
+            What Does Hcode Provide
           </h2>
           {hcode_provide.map((item) => (
-            <div className="lg:col-span-4 md:col-span-6 col-span-12 bg-gray-100 mb-20 lg:mt-0 px-10 pb-10  rounded-md border-t-8 border-blue-600 ">
-              {/* <div className="w-20 h-20 rounded-full bg-blue-600 mx-auto -mt-10 "></div> */}
-              <h5 className="text-xl pb-2 font-bold pt-5">{item.title}</h5>
+            <div className="lg:col-span-4 md:col-span-6 col-span-12 mb-20 md:mb-0 bg-gray-100 px-10 pb-10 rounded-md border-b-8 border-blue-600 text-center ">
+              <div className="w-20 h-20 rounded-full bg-white mx-auto -mt-10 shadow-md flex justify-center items-center">
+                {/* <img src={} /> */}
+                <item.icons />
+              </div>
+              <h5 className="text-xl pb-2 font-bold pt-5 capitalize">
+                {item.title}
+              </h5>
               <ul
                 className="list-disc list-inside"
                 dangerouslySetInnerHTML={{ __html: item.info }}
@@ -358,11 +374,42 @@ const mern_Developer = () => {
             </div>
           ))}
         </div>
+        <div className="mx-auto text-center -mt-5 md:mt-10">
+          <a
+            href="/contact"
+            className=" pb-1 border-b border-primary inline-flex text-primary cursor-pointer max-w-[200px]"
+          >
+            Request Consultation
+            <ArrowRightIcon className="w-6 ml-2 " />
+          </a>
+        </div>
       </section>
 
       {/* Testimonial */}
       <section id="testimonial" className="pt-10 pb-0 bg-gray-50 mb-20">
         <Testimonial />
+      </section>
+
+      {/* TODO: Tech Stack */}
+      <section id="tech_stack" className="new-container my-10">
+        <div className="md:w-1/2">
+          <h2 className=" text-3xl md:text-4xl font-semibold mb-2 mt-10 capitalize  ">
+            Check out Mern technology stack
+          </h2>
+          <p className="pointer-paragraph text-base md:text-lg">
+            In delivering scalable, flawlessly working apps, top-notch
+            technology stack is a must. Here are the web development solutions
+            we rely on to deliver high quality applications.
+          </p>
+        </div>
+        <div className=" grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-8 mt-5">
+          {mern_tech_stack.map((tech) => (
+            <div key={tech.tech_name}>
+              <img src={tech.image} alt={tech.tech_name} />
+              <h2 className="font-semibold mt-3 text-lg">{tech.tech_name}</h2>
+            </div>
+          ))}
+        </div>
       </section>
 
       {/* CTA */}
@@ -410,9 +457,9 @@ const mern_Developer = () => {
         </div>
       </section>
 
-      {/* What Does Hcode Provide */}
+      {/* Hire MERN Developer for your team */}
       <section className="new-container  grid grid-cols-12 md:gap-8 ">
-        <h2 className="col-span-12 text-2xl md:text-3xl font-semibold my-5 md:mt-10 text-center">
+        <h2 className="col-span-12 text-2xl md:text-3xl font-semibold my-5 md:mt-10 text-center capitalize">
           Hire MERN Developer for your team
         </h2>
         {hire_dev_hcode.map((item) => (
@@ -427,6 +474,16 @@ const mern_Developer = () => {
           </div>
         ))}
       </section>
+      <div className="mx-auto text-center mt-10">
+        <a
+          // href="/contact"
+          onClick={showModal}
+          className=" pb-1 border-b border-primary inline-flex text-primary cursor-pointer"
+        >
+          Hire Mern Developer Now
+          <ArrowRightIcon className="w-6 ml-2 " />
+        </a>
+      </div>
 
       {/* FAQ */}
       <section id="faq" className="faqs bg-gray-50 my-10">
@@ -434,7 +491,7 @@ const mern_Developer = () => {
       </section>
 
       {/* CTA */}
-      <CTA showModal={showModal} />
+      <CTA showModal={showModal} buttonText="Hire Mern Developer" />
     </>
   );
 };
@@ -447,7 +504,7 @@ const CTA = ({ showModal, heading, paragraph, buttonText }) => (
       <h2 className="col-span-12 text-4xl font-semibold  ">
         {heading ?? "Hire Dedicated Developers"}
       </h2>
-      <p className="">
+      <p className="mt-1 font-light">
         {paragraph ??
           "Get our experienced developers working for you right away"}
       </p>

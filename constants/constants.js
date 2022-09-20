@@ -1,3 +1,5 @@
+import { AccountIcon, TrustIcon, UserIcon } from "./Icons";
+
 export const navbar_links = [
   {
     label: "Home",
@@ -69,7 +71,7 @@ export const hiring_process = [
 
 export const work_with_us_benefits = {
   heading: "Standard Benefits",
-  paragraph: "They are boring, yet important",
+  paragraph: "Stuff that's also important",
   points: [
     {
       image: "/assets/img/health.svg",
@@ -1685,20 +1687,19 @@ export const hcode_provide = [
     id: "1",
     title: "Scale as per need",
     info: `We can support the agility in demand by startups to scale up or down their engineering team, with simple process and short notice periods`,
+    icons: UserIcon,
   },
   {
     id: "2",
     title: "Trust & Confidentiality",
-    info: `
-    We take the confidentiality of your data and IPR very seriously and maintain formal agreements on Confidentiality with all our employees. 
-    `,
+    info: `We take the confidentiality of your data and IPR very seriously and maintain formal agreements on Confidentiality with all our employees. `,
+    icons: TrustIcon,
   },
   {
     id: "3",
     title: "Accountability",
-    info: `
-    We act as partners to our clients, and are there to ensure resolution of any issues they face in anything with the developers 
-    `,
+    info: `We act as partners to our clients, and are there to ensure resolution of any issues they face in anything with the developers `,
+    icons: AccountIcon,
   },
 ];
 
@@ -1806,3 +1807,22 @@ export const daily_updates = "/assets/img/daas-icons/Daily_updates.svg";
 export const easy_to_manage = "/assets/img/daas-icons/Easy_to_manage.svg";
 export const match_your_timezone =
   "/assets/img/daas-icons/Match_your_timezone.svg";
+
+export const mern_tech_stack = [
+  {
+    image: "/assets/img/tech_stack/tech_stack_mongodb.jpg",
+    tech_name: "Mongo DB",
+  },
+  {
+    image: "/assets/img/tech_stack/tech_stack_express.jpg",
+    tech_name: "Express JS",
+  },
+  {
+    image: "/assets/img/tech_stack/tech_stack_react.jpg",
+    tech_name: "React JS",
+  },
+  {
+    image: "/assets/img/tech_stack/tech_stack_node.jpg",
+    tech_name: "Node JS",
+  },
+];

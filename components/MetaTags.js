@@ -5,7 +5,9 @@ const MetaTags = ({ page }) => {
     <>
       <meta
         name="keywords"
-        content="Software, Development Studio, Development, Engineer, Mobile Apps, Web Apps"
+        content="Software, Development Studio, Development, Engineer, Mobile Apps, Web Apps, Software Company Karnal, Hcode Karnal, Pollen Studio Karnal, Website Development Company Karnal, Website Development Company, 
+        Best Web Design Company in Karnal, Website Designing in Karnal, Website Development in Karnal, SEO in Karnal, Software Development  in  Karnal, Web Hosting in Karnal, Web designing in Karnal, Karnal web designing company, Karnal web designing company, Website designing company in  Karnal, Karnal web designing company, Website designing in Karnal, Website designing company in  Karnal, website design,web designers,SEO,Web design and development,Website development,Good Web design,ecommerce web site development,best web design,web application development,web development company,web site development company,business web site development,web site development services,web page development,web ecommerce development,web development india,Professional web development,Website design company,Web development company,Web site development India,Affordable web development
+        "
       />
       <link rel="canonical" href={page.url} />
       <meta name="description" content={page.description} />

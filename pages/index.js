@@ -74,7 +74,7 @@ export default function Home() {
 
       {/* Our Services */}
 
-      <section id="services" className="mt-4 ">
+      <section id="services" className="mt-4 md:mt-10 ">
         <div className="new-container ">
           <ServicesCard heading={true} />
         </div>

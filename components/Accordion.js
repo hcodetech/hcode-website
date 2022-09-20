@@ -16,7 +16,7 @@ const Accordion = ({ data }) => {
     <div className="new-container py-12">
       <div className="text-center my-4">
         <p className="opacity-50">FAQs</p>
-        <h2 className="text-2xl md:text-4xl font-semibold">
+        <h2 className="text-2xl md:text-4xl font-semibold capitalize">
           Got any Questions?
         </h2>
       </div>

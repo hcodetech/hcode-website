@@ -99,7 +99,11 @@ function CustomModal({ open, setOpen }) {
           className="fixed z-50 inset-0 overflow-y-auto "
           onClose={setOpen}
         >
-          <div className="flex items-end justify-center min-h-screen  text-center sm:block ">
+          <div
+            className={`flex md:items-end md:justify-center md:min-h-screen  text-center sm:block ${
+              formSubmitted ? "items-center h-screen justify-center " : ""
+            }`}
+          >
             <Transition.Child
               as={Fragment}
               enter="ease-out duration-300"
@@ -132,7 +136,7 @@ function CustomModal({ open, setOpen }) {
               <div
                 className={
                   !formSubmitted
-                    ? "inline-block bg-white rounded-lg py-5 px-5 text-left overflow-scroll shadow-xl transform transition-all align-middle h-screen md:h-[80vh] top-0 max-h-[600px]"
+                    ? "inline-block bg-white rounded-lg py-5 px-5 text-left overflow-scroll shadow-xl transform transition-all align-middle min-h-screen md:min-h-full md:h-[80vh] top-0 md:max-h-[600px] w-full md:w-max"
                     : "inline-block bg-white transform transition-all align-middle  rounded-md "
                 }
               >
@@ -183,7 +187,7 @@ function CustomModal({ open, setOpen }) {
                       <form autoComplete="off" onSubmit={contactUser}>
                         <div className="grid grid-cols-12 gap-6">
                           {/* Full Name */}
-                          <div className="col-span-6">
+                          <div className="col-span-12 md:col-span-6">
                             <label
                               htmlFor="first-name"
                               className="block text-sm font-medium text-gray-700"
@@ -201,7 +205,7 @@ function CustomModal({ open, setOpen }) {
                             />
                           </div>
                           {/* Company Email */}
-                          <div className="col-span-6">
+                          <div className="col-span-12 md:col-span-6">
                             <label
                               htmlFor="company-email"
                               className="block text-sm font-medium text-gray-700"
@@ -226,7 +230,7 @@ function CustomModal({ open, setOpen }) {
                           </div>
 
                           {/* Number of Developers required */}
-                          <div className="col-span-6">
+                          <div className="col-span-12 md:col-span-6">
                             <label
                               htmlFor="country"
                               className="block text-sm font-medium text-gray-700"
@@ -253,7 +257,7 @@ function CustomModal({ open, setOpen }) {
                               <option value="4">10+</option>
                             </select>
                           </div>
-                          <div className="col-span-6">
+                          <div className="col-span-12 md:col-span-6">
                             <label
                               htmlFor="country"
                               className="block text-sm font-medium text-gray-700"
@@ -329,7 +333,7 @@ function CustomModal({ open, setOpen }) {
                         <div className="col-span-12 lg:col-span-4 mt-4 ">
                           <button
                             disabled={loading}
-                            className="bg-primary hover:bg-blue-600 text-white rounded-md px-7 py-3 disabled:opacity-50"
+                            className="bg-primary w-full hover:bg-blue-600 text-white rounded-md px-7 py-3 disabled:opacity-50"
                           >
                             Submit
                           </button>
