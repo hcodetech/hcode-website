@@ -1,10 +1,14 @@
 import Head from "next/head";
 import { ArrowRightIcon } from "@heroicons/react/solid";
 import {
+  Delhi,
   faq_hiring,
   hiring_process,
   karnal,
   metaData,
+  newyork,
+  NewYork,
+  Noida,
   office_v3,
   OUR_MENTORS,
   remote,
@@ -116,10 +120,26 @@ function work_with_us() {
           }}
         />
 
-        <div className="grid sm:grid-cols-2 md:w-3/4 pt-10">
+        <div className="grid sm:grid-cols-4 md:w-3/6 pt-10">
           <div className="">
-            <img src={karnal} alt="" />
-            <h4 className="text-xl font-semibold py-2">Karnal</h4>
+            <img src={karnal} alt="Hcode Karnal Office" />
+            <h4 className="text-lg font-medium py-0 text-gray-500">Karnal</h4>
+          </div>
+          <div className="mt-8 sm:mt-0">
+            <img src={Delhi} alt="Hcode Delhi Office" />
+            <h4 className="text-lg font-medium  py-2  text-gray-500">Delhi</h4>
+          </div>
+          <div className="mt-8 sm:mt-0">
+            <img src={Noida} alt="Hcode Noida Office" />
+            <h4 className="text-lg font-medium  py-2  text-gray-500">Noida</h4>
+            </div>
+          <div className="">
+            <img src={newyork} alt="Hcode New York Office" />
+            <h3 className="text-lg font-medium  text-gray-500">New York</h3>
+          </div>
+          </div>
+          </section>
+          {/* <div className="flex justify-center">
             <a
               href="https://in.indeed.com/cmp/Hcode-Technologies/jobs?q=&l=Karnal%2C+Haryana#cmp-skip-header-desktop"
               target="_blank"
@@ -128,27 +148,23 @@ function work_with_us() {
               See positions in Karnal, India
               <ArrowRightIcon className="w-6 ml-2 " />
             </a>
-          </div>
-          <div className="mt-8 sm:mt-0">
-            <img src={remote} alt="" />
-            <h4 className="text-xl font-semibold  py-2">Remote</h4>
+            </div> */}
+      {/* Image Carousel */}
+      <div className="py-10 md:py-6">
+      <div className="flex justify-center -mb-6 mt-6">
             <a
-              href="https://in.indeed.com/cmp/Hcode-Technologies/jobs?q=&l=Remote#cmp-skip-header-desktop"
+              href="https://in.indeed.com/cmp/Hcode-Technologies/jobs?q=&l=Karnal%2C+Haryana#cmp-skip-header-desktop"
               target="_blank"
               className="pb-1 border-b inline-flex border-black hover:scale-100  cursor-pointer opacity-50 hover:opacity-100"
             >
-              See positions in Remote
+              See positions in Karnal, India
               <ArrowRightIcon className="w-6 ml-2 " />
             </a>
-          </div>
-        </div>
-      </section>
-      {/* Image Carousel */}
-      <div className="py-10 md:py-4">
+            </div>
         <ImageCarousel />
       </div>
       {/* What we offer */}
-      <section className="new-container bg">
+      <section className="new-container -mt-4">
         <h1 className="font-semibold text-5xl mt-2 mb-4">What we offer</h1>
         <div className="grid grid-cols-12">
           {what_we_do.map((item, index) => (
