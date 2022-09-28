@@ -36,8 +36,8 @@ export default function Home() {
 
   useEffect(() => {
     window.innerWidth <= 750 ? setIsDesktop(false) : setIsDesktop(true);
-
     // on scroll, url is changing with section ids with the help of intersectionObserver API
+    // Testing the even
     // intersectionObserver API contain two arguements i.e, callback function and options
     let observerOptions = {
       rootMargin: "10px",
