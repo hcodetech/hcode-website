@@ -196,7 +196,9 @@ export const work_different = [
 ];
 
 export const karnal = "/assets/icons/karnal.svg";
-export const remote = "/assets/icons/remote.svg";
+export const Delhi = "/assets/icons/Group.svg";
+export const Noida = "/assets/icons/noida.svg";
+export const newyork ="/assets/icons/newyork1.svg";
 export const work_with_us_1 = "/assets/img/work_with_us_1.jpg";
 export const work_with_us_2 = "/assets/img/work_with_us_2.jpg";
 export const work_with_us_3 = "/assets/img/work_with_us_3.jpg";
