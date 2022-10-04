@@ -139,7 +139,7 @@ export default function Home() {
               <img
                 src={homepage.who_are_we.image}
                 alt={homepage.who_are_we.heading}
-                className="rounded-lg"
+                className="md:rounded-xl h-[102%]"
               />
             </div>
             <div className="lg:px-4 col-span-12 lg:col-span-6 ">
