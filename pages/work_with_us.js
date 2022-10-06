@@ -157,7 +157,7 @@ function work_with_us() {
               target="_blank"
               className="pb-1 border-b inline-flex border-black hover:scale-100  cursor-pointer opacity-50 hover:opacity-100"
             >
-              see curent positions
+              See current positions
               { <ArrowRightIcon className="w-4 ml-2 " />}
             </a>
             </div>
