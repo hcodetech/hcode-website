@@ -10,6 +10,7 @@ function ImageCarousel() {
   }, []);
 
   const SliderData = {
+
     dots: false,
     infinite: true,
     slidesToShow: isDesktop ? 6 : 3,
