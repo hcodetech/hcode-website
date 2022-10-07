@@ -29,13 +29,12 @@ function ImageCarousel() {
           {work_with_us_image_carousel.map(({ image }, index) => (
             <div className=" mx-4" key={index}>
               <img
-                className="h-[300px] max-w-[200px] mr-4 border-white min-w-[200px] border-4 object-cover"
+                className="min-h-[300px] max-h-[200px] max-w-[100%] mr-4 border-white min-w-[100%] border-4 object-contain object-top"
                 src={image}
               />
             </div>
           ))}
         </Slider>
-
         {/* {work_with_us_image_carousel.map(({ image }, index) => (
                         <div className="image_slide" key={index}>
                             <img className='imgs' src={image} />
