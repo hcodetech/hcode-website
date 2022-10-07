@@ -29,7 +29,7 @@ function ImageCarousel() {
           {work_with_us_image_carousel.map(({ image }, index) => (
             <div className=" mx-4" key={index}>
               <img
-                className="min-h-[200px] max-h-[280px] max-w-[100%] mr-4 border-white min-w-[100%] border-4 object-contain object-top"
+                className="min-h-[280px] max-h-[280px] max-w-[100%] mr-4 border-white min-w-[100%] border-4 object-contain object-top"
                 src={image}
               />
             </div>
