@@ -84,7 +84,7 @@ function work_with_us() {
               <img
                 src={thailand_trip}
                 layout="fill"
-                className="rounded-lg object-cover shadow-md md:hover:scale-105 transition-all duration-100 ease-out"
+                className="rounded-lg object-cover shadow-md md:hover:scale-105 transition-all duration-100 ease-out max-h-[200px] w-full object-bottom"
               />
             </div>
           </div>
