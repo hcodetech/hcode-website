@@ -120,12 +120,12 @@ function work_with_us() {
           }}
         />
 
-        <div className="grid sm:grid-cols-4 md:w-3/6 pt-10">
+        <div className="grid grid-cols-2 sm:grid-cols-4 md:w-3/6 pt-10">
           <div className="">
             <img src={karnal} alt="Hcode Karnal Office" />
             <h4 className="text-lg font-medium py-0 text-gray-500">Karnal</h4>
           </div>
-          <div className="mt-8 sm:mt-0">
+          <div className=" ">
             <img src={Delhi} alt="Hcode Delhi Office" />
             <h4 className="text-lg font-medium  py-2  text-gray-500">Delhi</h4>
           </div>
@@ -139,26 +139,17 @@ function work_with_us() {
           </div> */}
         </div>
       </section>
-      {/* <div className="flex justify-center">
-            <a
-              href="https://in.indeed.com/cmp/Hcode-Technologies/jobs?q=&l=Karnal%2C+Haryana#cmp-skip-header-desktop"
-              target="_blank"
-              className="pb-1 border-b inline-flex border-black hover:scale-100  cursor-pointer opacity-50 hover:opacity-100"
-            >
-              See positions in Karnal, India
-              <ArrowRightIcon className="w-6 ml-2 " />
-            </a>
-            </div> */}
+
       {/* Image Carousel */}
-      <div className="py-10 md:py-6">
-        <div className="flex justify-center -mb-6 mt-6">
+      <div>
+        <div className="flex justify-center -mb-6">
           <a
-            href="https://in.indeed.com/cmp/Hcode-Technologies/jobs?q=&l=Karnal%2C+Haryana#cmp-skip-header-desktop"
+            href="https://in.indeed.com/cmp/Hcode-Technologies/jobs"
             target="_blank"
-            className="pb-1 border-b inline-flex border-black hover:scale-100  cursor-pointer opacity-50 hover:opacity-100"
+            className="outline-button flex"
           >
             See current positions
-            {<ArrowRightIcon className="w-4 ml-2 " />}
+            <ArrowRightIcon className="w-4 ml-2 " />
           </a>
         </div>
         <ImageCarousel />
