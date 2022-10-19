@@ -91,7 +91,7 @@ function work_with_us() {
         </div>
       </section>
       {/* Glass door Branding  */}
-      <section>
+      <section className="py-10">
         <h2 className="text-bold text-center my-3 font-semibold">
           Rating and Reviews
         </h2>
@@ -101,7 +101,7 @@ function work_with_us() {
         >
           <img
             alt="Find Hcode on Glassdoor."
-            className="mx-auto "
+            className="mx-auto w-full max-w-md px-10"
             src="https://www.glassdoor.co.in/api/widget/horizontalStarRating.htm?e=5545851"
           />
         </a>
