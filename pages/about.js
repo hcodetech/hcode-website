@@ -82,7 +82,7 @@ function about() {
       {/* Core Team  */}
       <section className="new-container pt-14  text-center">
         <h1 className="font-poppins text-center font-semibold text-3xl  md:text-4xl md:leading-tight">
-          Our Core Team
+          Leadership Team
         </h1>
         <div className="flex-wrap flex justify-between mt-7  mx-auto">
           {TEAM.map(({ name, image, bio, link, title }, index) => (

@@ -182,9 +182,19 @@ export const work_with_us_content = {
   hero_heading: "Let’s Build Together",
   hero_paragraph:
     "We abide by our core value, <strong>‘Our people are our biggest asset’,</strong> in letter and spirit. We do everything to make sure that our people are personally happy, professionally satisfied, and continue growing.<br/><br/>We do this by making sure that people work with global clients on interesting problems with the <strong>latest tech stacks</strong> while maintaining a good work-life balance. We keep our <strong>working hours sane</strong> so that you get time for whatever else is important in your life.",
-  campus_heading: "Our Campus",
-  campus_paragarph:
-    "We have built a great place to work for the best of minds in the small city of Karnal in Haryana.<br/><br/>Our large, natural feel office campus rivals some of the best offices you’d find anywhere else with a huge open green area, sports options of Basketball, Badminton, Table Tennis, and more. We invite brilliant minds to come, collaborate and build with us.<br/><br/>Further, we understand, at times it is hard for people to move to our city and we don’t want our location to be a roadblock in hiring anyone. If that’s the case for you, check out our remote job roles below:",
+  campus_heading: "Our Offices",
+  campus_paragarph: `
+HCode's development offices are present in: <strong> Karnal (our HQ), Delhi (Dwarka), and Noida (Sec-62).</strong> 
+<br/>
+<br/>
+Our headquarters in Karnal, rivals some of the best offices you’d find anywhere else. Our state-of-the-art office is housed inside a vast campus, with a huge open green area, sports facilities like Basketball, Badminton, Table Tennis, and more. 
+<br/>
+<br/>
+We understand, at times it is hard for people to move to our city and we don’t want our location to be a roadblock in onboarding good engineers. Our Noida and Delhi offices enable people in NCR to work with us.
+<br/>
+<br/>
+We invite brilliant minds to come, collaborate and build with us. Check out below for openings at our various locations, or write to us, <a href="mailto:hr@hcode.tech" class="text-primary underline">hr@hcode.tech</a>
+`,
 };
 
 export const work_different = [
@@ -196,11 +206,14 @@ export const work_different = [
 ];
 
 export const karnal = "/assets/icons/karnal.svg";
-export const remote = "/assets/icons/remote.svg";
+export const Delhi = "/assets/icons/Group.svg";
+export const Noida = "/assets/icons/noida.svg";
+export const newyork = "/assets/icons/newyork1.svg";
 export const work_with_us_1 = "/assets/img/work_with_us_1.jpg";
 export const work_with_us_2 = "/assets/img/work_with_us_2.jpg";
 export const work_with_us_3 = "/assets/img/work_with_us_3.jpg";
-export const thailand_trip = "/assets/img/thailand_trip.jpg";
+// export const thailand_trip = "/assets/img/thailand_trip.jpg";
+export const thailand_trip = "/assets/img/thailand_trip.png";
 export const office_v3 = "/assets/img/office_v3.jpg";
 export const work_with_us_recuriter_image =
   "/assets/img/work_with_us_recruiter.jpg";

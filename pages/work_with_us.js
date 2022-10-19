@@ -1,10 +1,14 @@
 import Head from "next/head";
 import { ArrowRightIcon } from "@heroicons/react/solid";
 import {
+  Delhi,
   faq_hiring,
   hiring_process,
   karnal,
   metaData,
+  newyork,
+  NewYork,
+  Noida,
   office_v3,
   OUR_MENTORS,
   remote,
@@ -80,14 +84,14 @@ function work_with_us() {
               <img
                 src={thailand_trip}
                 layout="fill"
-                className="rounded-lg object-cover shadow-md md:hover:scale-105 transition-all duration-100 ease-out"
+                className="rounded-lg object-cover shadow-md md:hover:scale-105 transition-all duration-100 ease-out max-h-[200px] w-full object-bottom"
               />
             </div>
           </div>
         </div>
       </section>
       {/* Glass door Branding  */}
-      <section>
+      <section className="py-10">
         <h2 className="text-bold text-center my-3 font-semibold">
           Rating and Reviews
         </h2>
@@ -97,7 +101,7 @@ function work_with_us() {
         >
           <img
             alt="Find Hcode on Glassdoor."
-            className="mx-auto "
+            className="mx-auto w-full max-w-md px-10"
             src="https://www.glassdoor.co.in/api/widget/horizontalStarRating.htm?e=5545851"
           />
         </a>
@@ -116,39 +120,42 @@ function work_with_us() {
           }}
         />
 
-        <div className="grid sm:grid-cols-2 md:w-3/4 pt-10">
+        <div className="grid grid-cols-2 sm:grid-cols-4 md:w-3/6 pt-10">
           <div className="">
-            <img src={karnal} alt="" />
-            <h4 className="text-xl font-semibold py-2">Karnal</h4>
-            <a
-              href="https://in.indeed.com/cmp/Hcode-Technologies/jobs?q=&l=Karnal%2C+Haryana#cmp-skip-header-desktop"
-              target="_blank"
-              className="pb-1 border-b inline-flex border-black hover:scale-100  cursor-pointer opacity-50 hover:opacity-100"
-            >
-              See positions in Karnal, India
-              <ArrowRightIcon className="w-6 ml-2 " />
-            </a>
+            <img src={karnal} alt="Hcode Karnal Office" />
+            <h4 className="text-lg font-medium py-0 text-gray-500">Karnal</h4>
+          </div>
+          <div className=" ">
+            <img src={Delhi} alt="Hcode Delhi Office" />
+            <h4 className="text-lg font-medium  py-2  text-gray-500">Delhi</h4>
           </div>
           <div className="mt-8 sm:mt-0">
-            <img src={remote} alt="" />
-            <h4 className="text-xl font-semibold  py-2">Remote</h4>
-            <a
-              href="https://in.indeed.com/cmp/Hcode-Technologies/jobs?q=&l=Remote#cmp-skip-header-desktop"
-              target="_blank"
-              className="pb-1 border-b inline-flex border-black hover:scale-100  cursor-pointer opacity-50 hover:opacity-100"
-            >
-              See positions in Remote
-              <ArrowRightIcon className="w-6 ml-2 " />
-            </a>
+            <img src={Noida} alt="Hcode Noida Office" />
+            <h4 className="text-lg font-medium  py-2  text-gray-500">Noida</h4>
           </div>
+          {/* <div className="">
+            <img src={newyork} alt="Hcode New York Office" />
+            <h3 className="text-lg font-medium  text-gray-500">New York</h3>
+          </div> */}
         </div>
       </section>
+
       {/* Image Carousel */}
-      <div className="py-10 md:py-4">
+      <div>
+        <div className="flex justify-center -mb-6">
+          <a
+            href="https://in.indeed.com/cmp/Hcode-Technologies/jobs"
+            target="_blank"
+            className="outline-button flex"
+          >
+            See current positions
+            <ArrowRightIcon className="w-4 ml-2 " />
+          </a>
+        </div>
         <ImageCarousel />
       </div>
       {/* What we offer */}
-      <section className="new-container bg">
+      <section className="new-container -mt-4">
         <h1 className="font-semibold text-5xl mt-2 mb-4">What we offer</h1>
         <div className="grid grid-cols-12">
           {what_we_do.map((item, index) => (

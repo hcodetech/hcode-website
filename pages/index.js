@@ -36,8 +36,8 @@ export default function Home() {
 
   useEffect(() => {
     window.innerWidth <= 750 ? setIsDesktop(false) : setIsDesktop(true);
-
     // on scroll, url is changing with section ids with the help of intersectionObserver API
+    // Testing the even
     // intersectionObserver API contain two arguements i.e, callback function and options
     let observerOptions = {
       rootMargin: "10px",
@@ -139,7 +139,7 @@ export default function Home() {
               <img
                 src={homepage.who_are_we.image}
                 alt={homepage.who_are_we.heading}
-                className="rounded-lg"
+                className="md:rounded-xl h-[102%] object-cover"
               />
             </div>
             <div className="lg:px-4 col-span-12 lg:col-span-6 ">
@@ -222,7 +222,7 @@ export default function Home() {
       <section id="our_core_team" className="py-14 bg-gray-100 text-center">
         <div className="lg:new-container">
           <h1 className="font-poppins text-center font-semibold text-3xl  md:text-4xl md:leading-tight">
-            Our Core Team
+            Leadership Team
           </h1>
           <div className="flex-wrap flex justify-between  mt-7  mx-auto">
             {TEAM.map(({ name, image, bio, link, title }, index) => (
