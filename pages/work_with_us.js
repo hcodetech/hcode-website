@@ -223,18 +223,18 @@ function work_with_us() {
     totalSlides={2}
     step={1}
     isIntrinsicHeight
-    interval={3000}
+    interval={5000}
     isPlaying
     playDirection='forward'
   >
-    <div className="relative md:mt-[130px] mb-10">
+    <div className="relative mb-10 pt-10 md:pt-20">
     <Slider>
       <Slide index={0}>
       <div className='relative'>
       <img
                 src={image_slider_blog}
                 alt=''
-                className='md:h-[700px] w-screen'
+                className='md:h-[700px] w-screen object-cover '
               />
               </div>
         </Slide>
@@ -243,16 +243,16 @@ function work_with_us() {
           <img
                 src={image_slider_blog}
                 alt=''
-                className='md:h-[700px] w-screen'
+                className='md:h-[700px] w-screen object-cover '
               />
               </div>
         </Slide>
         </Slider>
-        <div className="bg-white absolute md:top-[15%] md:left-[8%] p-6 md:shadow-xl">
+        <div className="md:max-w-[480px]  bg-white md:absolute md:top-[25%] md:left-[8%] md:p-10 p-5 md:shadow-xl md:rounded-sm">
           <h1 className="font-semibold text-3xl">{blog_page.blog_heading}</h1>
-          <p className="md:max-w-[450px] mt-4">{blog_page.blog_para}</p>
-          <p className="md:max-w-[450px] mt-4">{blog_page.blog_para2}</p>
-          <div className="md:mt-[150px] mt-[10px]">
+          <p className="mt-4">{blog_page.blog_para}</p>
+          <p className="mt-4">{blog_page.blog_para2}</p>
+          <div className="md:mt-14">
                     
                     <a
                       href='https://hcode.tech/blog/' target="_blank"
@@ -265,7 +265,7 @@ function work_with_us() {
         </div>
         </div>
         </CarouselProvider>
-      <section className="pt-20  text-center">
+      <section className="pt-10 md:pt-20  text-center">
         <div className="lg:new-container">
           <h1 className="font-poppins text-center font-semibold text-3xl  md:text-4xl md:leading-tight">
             Our Mentors
