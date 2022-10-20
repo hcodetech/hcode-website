@@ -1,4 +1,14 @@
 import Head from "next/head";
+import {
+  CarouselProvider,
+  Slide,
+  Slider,
+} from "pure-react-carousel";
+import "pure-react-carousel/dist/react-carousel.es.css";
+import {
+  image_slider_blog,
+  blog_page,
+} from "../constants/constants";
 import { ArrowRightIcon } from "@heroicons/react/solid";
 import {
   Delhi,
@@ -28,7 +38,7 @@ import MetaTags from "../components/MetaTags";
 
 function work_with_us() {
   return (
-    <>
+    <div>
       <Head>
         <title>Work With Us | Hcode Technologies</title>
         <MetaTags page={metaData.work_with_us} />
@@ -208,6 +218,53 @@ function work_with_us() {
         </div>
       </section>
       {/* Core Team  */}
+      <CarouselProvider
+    visibleSlides={1}
+    totalSlides={2}
+    step={1}
+    isIntrinsicHeight
+    interval={3000}
+    isPlaying
+    playDirection='forward'
+  >
+    <div className="relative md:mt-[130px] mb-10">
+    <Slider>
+      <Slide index={0}>
+      <div className='relative'>
+      <img
+                src={image_slider_blog}
+                alt=''
+                className='md:h-[700px] w-screen'
+              />
+              </div>
+        </Slide>
+        <Slide index={1}>
+         <div className="relative">
+          <img
+                src={image_slider_blog}
+                alt=''
+                className='md:h-[700px] w-screen'
+              />
+              </div>
+        </Slide>
+        </Slider>
+        <div className="bg-white absolute md:top-[15%] md:left-[8%] p-6 md:shadow-xl">
+          <h1 className="font-semibold text-3xl">{blog_page.blog_heading}</h1>
+          <p className="md:max-w-[450px] mt-4">{blog_page.blog_para}</p>
+          <p className="md:max-w-[450px] mt-4">{blog_page.blog_para2}</p>
+          <div className="md:mt-[150px] mt-[10px]">
+                    
+                    <a
+                      href='https://hcode.tech/blog/' target="_blank"
+                      className='pt-5 pb-1  mt-2 w-50 whitespace-nowrap flex-nowrap border-b border-[#8F929F] inline-flex text-[#8F929F] hover:scale-100  cursor-pointer hover:opacity-100 '
+                    >
+                      Read More About Life Karnal
+                      <ArrowRightIcon className='w-6 md:ml-2  h-full' />
+                    </a>
+                  </div>
+        </div>
+        </div>
+        </CarouselProvider>
       <section className="pt-20  text-center">
         <div className="lg:new-container">
           <h1 className="font-poppins text-center font-semibold text-3xl  md:text-4xl md:leading-tight">
@@ -266,7 +323,7 @@ function work_with_us() {
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 }
 

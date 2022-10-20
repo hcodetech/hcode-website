@@ -19,6 +19,12 @@ export const navbar_links = [
   },
 ];
 
+export const blog_page={
+blog_heading:"Life At Karnal",
+blog_para:"We have built a great place to work for the best of minds in the small city of Karnal in Haryana.",
+blog_para2:"Our large, natural feel office campus rivals some of the best offices you’d find anywhere else with huge open green area, sports options of Basketball, Badminton, Table Tennis and more. We invite brilliant minds to come, collaborate and build with us."
+}
+
 export const about_page = {
   hero_heading: "We’re in the business of Writing Great Code",
   hero_paragraph:
@@ -1074,6 +1080,7 @@ export const image_slider_1 = "/assets/img/hero_image_1.jpg";
 export const image_slider_2 = "/assets/img/hero_image_2.jpg";
 export const image_slider_3 = "/assets/img/hero_image_3.jpg";
 export const contact_us_circle = "/assets/img/contact_circle.svg";
+export const image_slider_blog = "/assets/img/blogbackgroundimg.png";
 
 export const selected_technologies = [
   {
