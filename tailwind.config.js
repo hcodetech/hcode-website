@@ -55,8 +55,27 @@ module.exports = {
   variants: {
     extend: {},
   },
+  // plugins: [
+  //   require("@tailwindcss/forms"),
+  //   require('tailwind-scrollbar-hide')
+  //  ],
   plugins: [
-    require("@tailwindcss/forms"),
-    require('tailwind-scrollbar-hide')
-   ],
+    require('@tailwindcss/forms'),
+    plugin(function ({addUtilities}) {
+      addUtilities({
+        '.scrollbar-hide': {
+          /* IE and Edge */
+          '-ms-overflow-style': 'none',
+
+          /* Firefox */
+          'scrollbar-width': 'none',
+
+          /* Safari and Chrome */
+          '&::-webkit-scrollbar': {
+            display: 'none',
+          },
+        },
+      });
+    }),
+  ],
 };
