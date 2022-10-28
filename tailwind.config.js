@@ -1,4 +1,5 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
+const plugin = require('tailwindcss/plugin');
 
 module.exports = {
   mode: "jit",
@@ -55,6 +56,7 @@ module.exports = {
     extend: {},
   },
   plugins: [
-    require("@tailwindcss/forms")
+    require("@tailwindcss/forms"),
+    require('tailwind-scrollbar-hide')
    ],
 };

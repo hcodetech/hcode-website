@@ -58,9 +58,9 @@ const our_work = (props) => {
       </section>
 
       {/* Selected Industry */}
-      <section className="new-container mt-10 ">
+      <section className="new-container mt-10">
         <h2 className="font-semibold text-xl pb-2">Popular Categories</h2>
-        <div className="flex overflow-scroll">
+        <div className="flex overflow-y-scroll scrollbar-hide">
           {portfolioIndustry.map((industryName, index) => (
             <div
               key={index}
