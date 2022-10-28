@@ -1,6 +1,6 @@
 import { useState } from "react";
 import DotLoader from "react-spinners/DotLoader";
-
+import {ArrowRightIcon} from "@heroicons/react/solid"
 const NewsletterForm = ({ status, message, onValidated }) => {
   const defaultColor = "#373536";
 
@@ -65,24 +65,25 @@ const NewsletterForm = ({ status, message, onValidated }) => {
       <h3 className="mb-1 font-bold  text-md mt-10 ">
         Subscribe to newsletter
       </h3>
-      <div className="flex newsletter-input-fields mt-2">
-        <div className="mc-field-group">
+      <div className="newsletter-input-fields mt-2">
+        <div className="mc-field-group flex rounded-lg border-2 border-gray-400">
           <input
             onChange={(event) => setEmail(event?.target?.value ?? "")}
             type="email"
             placeholder="Email"
-            className="appearance-none rounded border border-gray-400 border-b block pl-4 pr-6 py-2 w-full bg-white text-sm placeholder-gray-400 text-gray-700 focus:bg-white focus:placeholder-gray-600 focus:text-gray-700 focus:outline-none"
+            className="border-transparent focus:border-transparent rounded-l-lg focus:ring-0 appearance-none block pl-4 pr-6 py-2 w-full bg-white text-sm placeholder-gray-400 text-gray-700 focus:bg-white focus:placeholder-gray-600 focus:text-gray-700 focus:outline-none"
             onKeyUp={(event) => handleInputKeyEvent(event)}
           />
-        </div>
-        <div className="button-wrap wp-block-button">
+         <div className="bg-primary border-primary border-2 px-2 focus:outline-none rounded-r-md">
           <button
-            className="cursor-pointer	text-white bg-primary border-0 h-full px-5 ml-2 focus:outline-none  rounded"
+            className="cursor-pointer	text-white h-full "
             onClick={handleFormSubmit}
           >
-            Submit
+          <ArrowRightIcon className="h-5 w-5 "/>
           </button>
         </div>
+        </div>
+        
       </div>
       <div className="min-h-42px">
         {"sending" === status ? (

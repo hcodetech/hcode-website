@@ -9,19 +9,60 @@ function Footer() {
   return (
     <footer className="footer-1 bg-gray-100 pt-6  pb-12 z-30 relative">
       <div className="new-container mx-auto px-4">
-        <div className="sm:flex sm:flex-wrap sm:-mx-4 md:py-4">
-          <div className="px-4 w-full sm:w-1/2 md:w-1/3  ">
-            <div className="md:w-3/4 ">
+        <div className="sm:flex sm:flex-wrap md:py-4"> 
+          <div className="px-4 w-full sm:w-1/2 md:w-[25%]">
+            <div className="md:w-3/4">
               <img
                 src={hcode_footer}
                 alt="Hcode Technologies"
                 className="w-40 mb-3 "
               />
+              <p>Agile, Predictable, Outcome<br/>Oriented App Development</p>
               {/* <p className="mt-3">Agile, Predictable, Outcome</p> */}
-              <NewsletterComponent />
+            </div>
+            <div className="flex mt-2">
+              <a
+                href="https://www.linkedin.com/company/hcodetech/"
+                target="_blank"
+              >
+                <img
+                  src={linkedin_icon}
+                  className="rounded-full w-10 h-10 p-2 hover:bg-blue-200  bg-gray-200 "
+                  alt="https://www.linkedin.com/company/hcodetech/"
+                />
+              </a>
+              <a href="https://twitter.com/HcodeTech" target="_blank">
+                <img
+                  src={twitter_icon}
+                  className="rounded-full w-10 h-10 p-2 hover:bg-blue-200  ml-4 bg-gray-200 "
+                  alt="https://twitter.com/HcodeTech"
+                />
+              </a>
             </div>
           </div>
-          <div className="px-4 sm:w-1/2 md:w-[22%] xl:w-1/6 mt-8 sm:mt-0">
+          <div className="px-4 sm:w-1/2 md:w-[70%] xl:w-[auto] mt-8 md:mt-3">
+          <ul className="md:flex">
+          <li className="md:max-w-[170px] mb-3 md:mr-4">
+          <h5 className="font-bold  text-md mb-3">HQ Karnal</h5>
+          <p>120/7 Milestone, Main GT Road,<br/>#132001</p>
+          </li>
+          <li className="md:max-w-[200px] md:ml-6 md:mr-4 mb-3">
+          <h5 className="font-bold  text-md mb-3">New Delhi</h5>
+          <p>3rd Floor, Invento Coworking, Plot No.8 Sector 12b, Dwarka #110078</p>
+          </li>
+          <li className="md:max-w-[200px] md:mr-4 mb-3">
+          <h5 className="font-bold text-md mb-3 ">Noida, India</h5>
+          <p>Galaxy Business Park, Electronic City, Sec 62 #201309</p>
+          </li>
+          <li className="md:max-w-[200px] mb-3">
+          <h5 className="font-bold  text-md mb-3  ">New York</h5>
+          <p>675 Hudson St Suite 3S, New York, NY<br/> #10014</p>
+          </li>
+          </ul>
+          </div>
+          </div>
+          <div className="py-4 md:flex  md:justify-around border-t md:ml-[25%] xl:ml-[23%]">
+          <div className="px-4 sm:w-1/2 md:w-[22%] xl:w-1/6 mt-8 md:mt-3">
             <h5 className="font-bold  text-md mb-3  ">Quick Links</h5>
             <ul className="list-none footer-links">
               <li className="mb-2">
@@ -58,7 +99,7 @@ function Footer() {
               </li>
             </ul>
           </div>
-          <div className="px-4 sm:w-1/2 md:w-[22%] xl:w-1/6 mt-8 md:mt-0">
+          <div className="px-4 sm:w-1/2 md:w-[22%] xl:w-1/6 mt-8 md:mt-3">
             <h5 className="font-bold  text-md mb-3 ">Company</h5>
             <ul className="list-none footer-links">
               <li className="mb-2">
@@ -85,9 +126,17 @@ function Footer() {
                   Contact Us
                 </a>
               </li>
+              <li className="mb-2">
+                <a
+                  href="https://hcode.tech/blog/" target="_blank"
+                  className="border-b border-solid border-transparent hover:border-primary hover:text-primary"
+                >
+                  Blog
+                </a>
+              </li>
             </ul>
           </div>
-          <div className="px-4 sm:w-1/2 md:w-[22%] xl:w-1/6 mt-8 md:mt-0">
+          <div className="px-4 sm:w-1/2 md:w-[22%] xl:w-1/6 mt-8 md:mt-3">
             <h5 className="font-bold  text-md mb-3 ">Further Information</h5>
             <ul className="list-none footer-links">
               <li className="mb-2">
@@ -107,32 +156,13 @@ function Footer() {
                 </a>
               </li>
             </ul>
-          </div>
-          <div className="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6 mt-8 md:mt-0 mb-4">
-            <div className="flex mt-2">
-              <a
-                href="https://www.linkedin.com/company/hcodetech/"
-                target="_blank"
-              >
-                <img
-                  src={linkedin_icon}
-                  className="rounded-full w-10 h-10 p-2 hover:bg-blue-200  bg-gray-200 "
-                  alt="https://www.linkedin.com/company/hcodetech/"
-                />
-              </a>
-              <a href="https://twitter.com/HcodeTech" target="_blank">
-                <img
-                  src={twitter_icon}
-                  className="rounded-full w-10 h-10 p-2 hover:bg-blue-200  ml-4 bg-gray-200 "
-                  alt="https://twitter.com/HcodeTech"
-                />
-              </a>
             </div>
-          </div>
-        </div>
-
+           <div className="px-4 sm:w-[auto] md:w-[auto] xl:w-[auto] mt-8 md:mt-[-28px]">
+            <NewsletterComponent /> 
+           </div>
+           </div>
         <div className="text-center  border-t pt-5">
-          Copyright @ 2021{" "}
+          Copyright @ 2022{" "}
           <a href="/" className="text-primary font-semibold underline">
             Hcode.tech
           </a>{" "}
