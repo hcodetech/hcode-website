@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import DotLoader from 'react-spinners/DotLoader';
 import { ArrowRightIcon } from '@heroicons/react/solid';
+
 const NewsletterForm = ({ status, message, onValidated }) => {
   const defaultColor = '#373536';
 
@@ -66,7 +67,7 @@ const NewsletterForm = ({ status, message, onValidated }) => {
         Subscribe to newsletter
       </h3>
       <div className="newsletter-input-fields mt-2">
-        <div className="mc-field-group flex rounded-lg border-2 border-gray-400">
+        <div className="mc-field-group flex border-gray-400">
           <input
             onChange={(event) => setEmail(event?.target?.value ?? '')}
             type="email"
