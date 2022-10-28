@@ -52,6 +52,9 @@ function Footer() {
                 />
               </a>
             </div>
+            <div className="md:hidden sm:w-[auto] md:w-[auto] xl:w-[auto] mt-8 md:mt-[-28px]">
+              <NewsletterComponent />
+            </div>
           </div>
           <div className="px-4 sm:w-1/2 md:w-[70%] xl:w-[auto] mt-8 md:mt-3">
             <ul className="md:flex">
@@ -181,7 +184,7 @@ function Footer() {
               </li>
             </ul>
           </div>
-          <div className="px-4 sm:w-[auto] md:w-[auto] xl:w-[auto] mt-8 md:mt-[-28px]">
+          <div className="hidden md:block px-4 sm:w-[auto] md:w-[auto] xl:w-[auto] mt-8 md:mt-[-28px]">
             <NewsletterComponent />
           </div>
         </div>
