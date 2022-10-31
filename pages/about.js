@@ -136,7 +136,7 @@ function about() {
           <img
             src={about_page.office_1}
             layout="fill"
-            className="rounded-lg h-full object-cover"
+            className="rounded-lg h-full object-cover max-h-[700px]"
           />
           <div className="hidden xl:block absolute rounded-lg h-[400px] w-[300px] -bottom-3/4 xl:-bottom-5 z-20 -ml-24 border-none">
             <img

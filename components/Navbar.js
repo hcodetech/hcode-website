@@ -134,6 +134,17 @@ export default function Navbar() {
                   >
                     Our Work
                   </a>
+                  <a
+                    href="https://hcode.tech/blog/" target="_blank"
+                    className={` text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium  border-transparent
+                      ${
+                        pathname === "/blog"
+                          ? "border-blue-500 border-b-4"
+                          : ""
+                      }   `}
+                  >
+                    Blog
+                  </a>
                 </div>
               </div>
               <div className="hidden sm:ml-6 md:flex sm:items-center">
