@@ -184,7 +184,7 @@ function Footer() {
               </li>
             </ul>
           </div>
-          <div className="hidden md:block px-4 sm:w-[auto] md:w-[auto] xl:w-[auto] mt-8 md:mt-[-28px]">
+          <div className="hidden md:block px-4 sm:max-w-[250px] sm:min-w-[250px] md:min-w-[250px] xl:min-w-[250px]  md:max-w-[250px] xl:max-w-[250px] mt-8 md:mt-[-28px]">
             <NewsletterComponent />
           </div>
         </div>
