@@ -160,7 +160,12 @@ function contact() {
             </p>
             <div className="flex mt-4 border-t pt-4">
               <LocationMarkerIcon className="w-6 h-6 mr-2" />
-              120/7th Milestone, NH-1, Karnal, Haryana 132001
+              120/7th Milestone, NH-1, Karnal, Haryana #132001
+            </div>
+            <div className="flex mt-4 ">
+              <LocationMarkerIcon className="w-6 h-6 mr-1 pr-1" />
+              675 Hudson St Suite 3S, New York, <br />
+              NY #10014
             </div>
             <div className="flex mt-4 ">
               <PhoneIcon className="w-6 h-6 mr-2" />
