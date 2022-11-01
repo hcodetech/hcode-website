@@ -9,8 +9,8 @@ function Footer() {
   return (
     <footer className="footer-1 bg-gray-100 pt-6  pb-12 z-30">
       <div className="new-container mx-auto px-4">
-        <div className="sm:flex sm:flex-wrap md:py-4">
-          <div className="px-4 w-full sm:w-1/2 md:w-[25%]">
+        <div className=" md:py-4 grid grid-cols-12 gap-8">
+          <div className="px-4 col-span-12 md:col-span-3 ">
             <div className="md:w-3/4">
               <img
                 src={hcode_footer}
@@ -22,7 +22,6 @@ function Footer() {
                 <br />
                 Oriented App Development
               </p>
-              {/* <p className="mt-3">Agile, Predictable, Outcome</p> */}
             </div>
             <div className="flex mt-2">
               <a
@@ -47,32 +46,56 @@ function Footer() {
               <NewsletterComponent />
             </div>
           </div>
-          <div className="px-4 sm:w-1/2 md:w-[70%] xl:w-[auto] mt-8 md:mt-3">
-            <ul className="md:flex">
-              <li className="md:max-w-[170px] mb-3 md:mr-4">
+          <div className="px-4  my-4 md:mt-0 col-span-12 md:col-span-8">
+            <ul className="md:flex justify-between  grid grid-cols-12 gap-8">
+              <li className=" col-span-12 sm:col-span-6">
                 <h5 className="font-bold  text-md mb-1">HQ Karnal</h5>
                 <p>
-                  120/7 Milestone, Main GT Road,
+                  120/7 Milestone,
+                  <br />
+                  Main GT Road,
+                  <br />
+                  Karnal HR
                   <br />
                   #132001
                 </p>
               </li>
-              <li className="md:max-w-[200px] md:ml-6 md:mr-4 mb-3">
+              <li className=" col-span-12 sm:col-span-6">
                 <h5 className="font-bold text-md mb-1">New Delhi</h5>
                 <p>
-                  3rd Floor, Invento Coworking, Plot No.8 Sector 12b, Dwarka
+                  Invento Coworking,
+                  <br />
+                  3rd Floor, Plot No.8
+                  <br />
+                  Sector 12b,
+                  <br />
+                  Dwarka, New Delhi
+                  <br />
                   #110078
                 </p>
               </li>
-              <li className="md:max-w-[200px] md:mr-4 mb-3">
+              <li className="col-span-12 sm:col-span-6">
                 <h5 className="font-bold text-md mb-1 ">Noida, India</h5>
-                <p>Galaxy Business Park, Electronic City, Sec 62 #201309</p>
+                <p>
+                  Galaxy Business Park,
+                  <br />
+                  Electronic City, Sec 62
+                  <br />
+                  Noida UP
+                  <br />
+                  #201309
+                </p>
               </li>
-              <li className="md:max-w-[200px] mb-3">
+              <li className="col-span-12 sm:col-span-6">
                 <h5 className="font-bold  text-md mb-1">New York</h5>
                 <p>
-                  675 Hudson St Suite 3S, New York, NY
-                  <br /> #10014
+                  675 Hudson
+                  <br />
+                  St Suite 3S,
+                  <br />
+                  New York, NY
+                  <br />
+                  #10014
                 </p>
               </li>
             </ul>
