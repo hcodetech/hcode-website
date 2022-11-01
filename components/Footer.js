@@ -50,7 +50,7 @@ function Footer() {
           <div className="px-4 sm:w-1/2 md:w-[70%] xl:w-[auto] mt-8 md:mt-3">
             <ul className="md:flex">
               <li className="md:max-w-[170px] mb-3 md:mr-4">
-                <h5 className="font-bold  text-md mb-3">HQ Karnal</h5>
+                <h5 className="font-bold  text-md mb-1">HQ Karnal</h5>
                 <p>
                   120/7 Milestone, Main GT Road,
                   <br />
@@ -58,18 +58,18 @@ function Footer() {
                 </p>
               </li>
               <li className="md:max-w-[200px] md:ml-6 md:mr-4 mb-3">
-                <h5 className="font-bold  text-md mb-3">New Delhi</h5>
+                <h5 className="font-bold text-md mb-1">New Delhi</h5>
                 <p>
                   3rd Floor, Invento Coworking, Plot No.8 Sector 12b, Dwarka
                   #110078
                 </p>
               </li>
               <li className="md:max-w-[200px] md:mr-4 mb-3">
-                <h5 className="font-bold text-md mb-3 ">Noida, India</h5>
+                <h5 className="font-bold text-md mb-1 ">Noida, India</h5>
                 <p>Galaxy Business Park, Electronic City, Sec 62 #201309</p>
               </li>
               <li className="md:max-w-[200px] mb-3">
-                <h5 className="font-bold  text-md mb-3  ">New York</h5>
+                <h5 className="font-bold  text-md mb-1">New York</h5>
                 <p>
                   675 Hudson St Suite 3S, New York, NY
                   <br /> #10014
