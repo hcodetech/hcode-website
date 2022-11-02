@@ -63,11 +63,9 @@ function Footer() {
               <li className=" col-span-12 sm:col-span-6">
                 <h5 className="font-bold text-md mb-1">New Delhi</h5>
                 <p>
-                  Invento Coworking,
+                  Invento, 3rd Floor,
                   <br />
-                  3rd Floor, Plot No.8
-                  <br />
-                  Sector 12b,
+                  Plot No.8, Sector 12b,
                   <br />
                   Dwarka, New Delhi
                   <br />
@@ -75,7 +73,7 @@ function Footer() {
                 </p>
               </li>
               <li className="col-span-12 sm:col-span-6">
-                <h5 className="font-bold text-md mb-1 ">Noida, India</h5>
+                <h5 className="font-bold text-md mb-1 ">Noida</h5>
                 <p>
                   Galaxy Business Park,
                   <br />
