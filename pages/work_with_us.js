@@ -221,7 +221,7 @@ function work_with_us() {
         playDirection="forward"
         infinite
       >
-        <div className="relative mb-10 pt-10 md:pt-20">
+        <div className="relative mb-10 pt-10 md:pt-20 shadow-lg">
           <Slider>
             {karnalImages.map((image, idx) => (
               <Slide index={idx} key={image + idx}>
@@ -235,7 +235,7 @@ function work_with_us() {
               </Slide>
             ))}
           </Slider>
-          <div className="md:max-w-[520px]  bg-white md:absolute md:top-[20%] md:left-[8%] md:p-10 p-5 md:shadow-xl md:rounded-sm">
+          <div className="md:max-w-[480px]  bg-white md:absolute md:top-[20%] md:left-[8%] md:p-10 p-5 md:shadow-xl md:rounded-sm">
             <h1 className="font-semibold text-3xl">{blog_page.blog_heading}</h1>
             <div className="space-y-4 font-light tracking-normal">
               <p className="mt-4">{blog_page.blog_para}</p>

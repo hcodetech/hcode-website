@@ -22,7 +22,7 @@ export const navbar_links = [
 export const blog_page = {
   blog_heading: 'Why Choose Karnal?',
   blog_para: `Nestled in the middle of Delhi and Chandigarh, with an approximate distance of 2.5 hours from Delhi Airport and 1.5 hours from Chandigarh Airport, Karnal is the capital district of Haryana, fitting to work, grow, live and raise a family.`,
-  blog_para2: `Karnal is a one-of-a-kind city offering superior education, medical, and recreational amenities with a low cost of living. From trustworthy preschool facilities like Montfort, Beanstalk, and Shemrock to renowned education systems like DPS, the district sports complexes that will push the athletes to break records, to an array of cafes and restaurants for a fun outing, there is something for everyone in this friendly city.`,
+  blog_para2: `Karnal is a one-of-a-kind city offering superior education, medical, sport facilities, and recreational amenities with a low cost of living.`,
   blog_para3: `With its clean, chaos-free, and lush green surroundings, Karnal offers fresh air for those who are tired of the traffic and big city life. Choose Karnal as your current city. Karnalites will make your experience worth cherishing.`,
 };
 
@@ -1088,7 +1088,6 @@ export const karnalImages = [
   '/assets/img/karnal_image2.jpg',
   '/assets/img/karnal_image3.jpg',
   '/assets/img/karnal_image4.jpg',
-  '/assets/img/karnal_image5.jpg',
 ];
 
 export const selected_technologies = [
