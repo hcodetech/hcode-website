@@ -34,7 +34,6 @@ function CustomModal({ open, setOpen }) {
       });
     }
   };
-  console.log(window.location, "pathname");
   useEffect(() => {
     checkPageUrl();
   }, []);
