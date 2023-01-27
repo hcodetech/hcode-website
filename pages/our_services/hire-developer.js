@@ -76,7 +76,7 @@ const Hire_Developer = () => {
   return (
     <>
       <Head>
-        <title>Hire  Developer | Hcode Technologies</title>
+        <title>Hire Developer | Hcode Technologies</title>
         <MetaTags page={metaData.hire_developer} />
       </Head>
       {/* Hero Image */}
@@ -93,7 +93,7 @@ const Hire_Developer = () => {
 
           <div className="absolute flex flex-col  justify-center h-full new-container  top-4 z-10 text-white md:w-5/12 space-y-4 md:left-16">
             <h1 className="text-3xl md:text-4xl font-semibold ">
-              Hire Vetted Developers
+              Hire Prevetted Developers And Team
             </h1>
             <p className=" font-light text-md md:text-xl text-gray-200 ">
               Hire experienced remote developers trained to write{" "}
@@ -371,7 +371,8 @@ const Hire_Developer = () => {
                 {item.title}
               </h5>
               <ul
-                className="list-disc list-inside"MERN_Developer
+                className="list-disc list-inside"
+                MERN_Developer
                 dangerouslySetInnerHTML={{ __html: item.info }}
               />
             </div>
@@ -384,7 +385,8 @@ const Hire_Developer = () => {
         <Testimonial />
         <div className="mx-auto text-center pb-5">
           <a
-            href="/contact"
+            // href="/contact"
+            onClick={showModal}
             className=" pb-1 border-b border-primary inline-flex text-primary cursor-pointer max-w-[200px]"
           >
             Request Consultation
@@ -394,7 +396,7 @@ const Hire_Developer = () => {
       </section>
 
       {/* Tech Stack */}
-      <section id="tech_stack" className="new-container my-10">
+      {/* <section id="tech_stack" className="new-container my-10">
         <div className="md:w-1/2">
           <h2 className=" text-3xl md:text-4xl font-semibold mb-2 mt-10 capitalize  ">
             Check out technology stack
@@ -425,7 +427,7 @@ const Hire_Developer = () => {
             Hire  Developer Now
           </button>
         </div>
-      </section>
+      </section> */}
 
       {/* Our Work */}
       <section id="our-work" className=" pt-16 relative bg-gray-50">
@@ -472,7 +474,7 @@ const Hire_Developer = () => {
       {/* Hire MERN Developer for your team */}
       <section className="new-container  grid grid-cols-12 md:gap-8 ">
         <h2 className="col-span-12 text-2xl md:text-3xl font-semibold my-5 md:mt-10 text-center capitalize">
-          Hire  Developer for your team
+          Hire Developer for your team
         </h2>
         {hire_dev_hcode.map((item) => (
           <div
@@ -487,7 +489,7 @@ const Hire_Developer = () => {
         ))}
       </section>
       <div className="mx-auto text-center pb-5 mt-10">
-        <button onClick={showModal} className="  outline-button cursor-pointer">
+        <button onClick={showModal} className="outline-button cursor-pointer">
           Hire Developer Now
         </button>
       </div>
@@ -498,7 +500,7 @@ const Hire_Developer = () => {
       </section>
 
       {/* CTA */}
-      <CTA showModal={showModal} buttonText="Hire  Developer" />
+      <CTA showModal={showModal} buttonText="Hire Developer" />
     </>
   );
 };
