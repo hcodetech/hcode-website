@@ -841,9 +841,6 @@ export const metaData = {
   },
 };
 
-
-
-
 export const homepage = {
   description:
     "We’re in the business of writing great code. We provide on-time delivery along with transparent communication. But we also make sure that our people have great work-life balance, meritocracy, and a healthy work environment",
