@@ -748,6 +748,14 @@ export const metaData = {
     share_image: "https://hcode.tech/assets/img/Meta-Image.jpg",
     url: "https://hcode.tech/our_services/mern-developer",
   },
+  hire_developer: {
+    title: "Hire Developer | Hcode",
+    description:
+      "Hire experienced remote developers trained to write good quality of code and comfortable working with international tech-clients",
+    share_image: "https://hcode.tech/assets/img/Meta-Image.jpg",
+    url: "https://hcode.tech/our_services/hire-developer",
+  },
+
   team_as_a_service: {
     title: "Team as a Service (TaaS)",
     description:
