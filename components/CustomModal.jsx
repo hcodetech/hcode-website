@@ -1,4 +1,4 @@
-import { Fragment, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { CheckIcon } from "@heroicons/react/outline";
 import { XIcon } from "@heroicons/react/solid";
@@ -22,6 +22,7 @@ function CustomModal({ open, setOpen }) {
   const [currentNumberOfEmployees, setCurrentNumberOfEmployees] = useState("0");
   const [preferredTechStack, setPreferredTechStack] = useState([]);
   const [hiringNeed, setHiringNeed] = useState(1);
+  const [checkPage, setCheckPage] = useState();
   const defaultColor = "#373536";
 
   const setSelectedTech = (e, tech) => {
@@ -31,6 +32,17 @@ function CustomModal({ open, setOpen }) {
       setPreferredTechStack((tstack) => {
         return tstack.filter((item) => item !== tech);
       });
+    }
+  };
+  useEffect(() => {
+    checkPageUrl();
+  }, []);
+
+  const checkPageUrl = () => {
+    if (window.location.pathname === "/our_services/hire-developer") {
+      setCheckPage("hire Page");
+    } else {
+      setCheckPage("mern page");
     }
   };
 
@@ -47,6 +59,7 @@ function CustomModal({ open, setOpen }) {
       number_of_dev: numberOfDev,
       tech_preference: preferredTechStack.join(","),
       project_description: "filled on MERN page",
+      coming_from: checkPage,
       is_daas: true,
     };
 
