@@ -37,7 +37,7 @@ function CustomModal({ open, setOpen }) {
   console.log(window.location, "pathname");
   useEffect(() => {
     checkPageUrl();
-  }, [checkPage]);
+  }, []);
 
   const checkPageUrl = () => {
     if (window.location.pathname === "/our_services/hire-developer") {
