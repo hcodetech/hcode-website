@@ -217,6 +217,8 @@ export const thailand_trip = "/assets/img/thailand_trip.png";
 export const office_v3 = "/assets/img/office_v3.jpg";
 export const work_with_us_recuriter_image =
   "/assets/img/work_with_us_recruiter.jpg";
+// export const our_services_hero1 = "/assets/img/our_services_hero1.jpg";
+export const our_services_hero1 = "/assets/img/our_services_hero1.jpg";
 export const our_services_hero = "/assets/img/our_services_hero.jpg";
 export const work_with_us_image_carousel = [
   { image: "/assets/img/thailand_trip.jpg" },
@@ -305,29 +307,29 @@ export const client = [
   // { img: "/assets/img/clients/kashi.jpg", alt: "Kashi Capital" },
   // { img: "/assets/img/clients/closed_rounds.jpg", alt: "Closed Rounds" },
   { img: "/assets/img/clients/absolute.jpg", alt: "Absolute" },
-  { img: "/assets/img/clients/blue-elephant.jpg", alt: "Blue Elephant" },
-  { img: "/assets/img/clients/bluebook.jpg", alt: "Blue Book" },
-  { img: "/assets/img/clients/bts.jpg", alt: "Biltmore" },
+  // { img: "/assets/img/clients/blue-elephant.jpg", alt: "Blue Elephant" },
+  // { img: "/assets/img/clients/bluebook.jpg", alt: "Blue Book" },
+  // { img: "/assets/img/clients/bts.jpg", alt: "Biltmore" },
   { img: "/assets/img/clients/carDekho.jpg", alt: "CarDekho Loans" },
-  { img: "/assets/img/clients/chart-biopsy.jpg", alt: "Chart Biopsy" },
-  { img: "/assets/img/clients/debie.jpg", alt: "Debie" },
+  // { img: "/assets/img/clients/chart-biopsy.jpg", alt: "Chart Biopsy" },
+  // { img: "/assets/img/clients/debie.jpg", alt: "Debie" },
   { img: "/assets/img/clients/fable.jpg", alt: "Fable" },
-  { img: "/assets/img/clients/funday.jpg", alt: "Funday" },
-  { img: "/assets/img/clients/hoi.jpg", alt: "Hoi Food" },
-  { img: "/assets/img/clients/indra.jpg", alt: "Indra" },
-  { img: "/assets/img/clients/kgc.jpg", alt: "Knowledge Graph Conference" },
-  { img: "/assets/img/clients/lift_rocket.jpg", alt: "Lift Rocket" },
+  // { img: "/assets/img/clients/funday.jpg", alt: "Funday" },
+  // { img: "/assets/img/clients/hoi.jpg", alt: "Hoi Food" },
+  // { img: "/assets/img/clients/indra.jpg", alt: "Indra" },
+  // { img: "/assets/img/clients/kgc.jpg", alt: "Knowledge Graph Conference" },
+  // { img: "/assets/img/clients/lift_rocket.jpg", alt: "Lift Rocket" },
   { img: "/assets/img/clients/ohana.jpg", alt: "Ohana" },
   { img: "/assets/img/clients/pcg.jpg", alt: "Paramount Capital Group" },
-  { img: "/assets/img/clients/pollinate.jpg", alt: "Pollinate" },
-  { img: "/assets/img/clients/prepay.jpg", alt: "Prepay" },
-  { img: "/assets/img/clients/pulselabs.jpg", alt: "Pulse Labs" },
-  { img: "/assets/img/clients/r_logo.jpg", alt: "Roz" },
-  { img: "/assets/img/clients/resource.jpg", alt: "Resource Fashion" },
-  { img: "/assets/img/clients/riff.jpg", alt: "Riff" },
-  { img: "/assets/img/clients/shaped.jpg", alt: "Shaped AI" },
+  // { img: "/assets/img/clients/pollinate.jpg", alt: "Pollinate" },
+  // { img: "/assets/img/clients/prepay.jpg", alt: "Prepay" },
+  // { img: "/assets/img/clients/pulselabs.jpg", alt: "Pulse Labs" },
+  // { img: "/assets/img/clients/r_logo.jpg", alt: "Roz" },
+  // { img: "/assets/img/clients/resource.jpg", alt: "Resource Fashion" },
+  // { img: "/assets/img/clients/riff.jpg", alt: "Riff" },
+  // { img: "/assets/img/clients/shaped.jpg", alt: "Shaped AI" },
   { img: "/assets/img/clients/verificient.jpg", alt: "Verificient" },
-  { img: "/assets/img/clients/wagmi.jpg", alt: "Wagmi Estate" },
+  // { img: "/assets/img/clients/wagmi.jpg", alt: "Wagmi Estate" },
 ];
 
 export const city = [

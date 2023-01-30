@@ -6,6 +6,7 @@ import CardPortfolio from "../../components/CardPortfolio";
 import Client from "../../components/Client";
 import CustomModal from "../../components/CustomModal";
 import Testimonial from "../../components/Testimonial";
+// import newImg from '/img/our_services_hero1.jpg';
 import {
   bestOthers,
   client,
@@ -21,6 +22,7 @@ import {
   mern_tech_stack,
   metaData,
   our_services_hero,
+  our_services_hero1,
   rigorousVetting,
   seniority,
   skills,
@@ -84,14 +86,39 @@ const Hire_Developer = () => {
         <CustomModal setOpen={setIsModalVisible} open={isModalVisible} />
       )}
       <section>
-        <div className="relative">
-          <img
-            className="w-full object-cover h-[70vh] md:h-full max-h-[75vh] relative z-0 object-left"
-            src={our_services_hero}
-          />
-          <div className="absolute bg-gradient-to-r from-black z-10 w-full h-full top-0 left-0"></div>
+        <div className="grid grid-cols-6">
 
-          <div className="absolute flex flex-col  justify-center h-full new-container  top-4 z-10 text-white md:w-5/12 space-y-4 md:left-16">
+          <div className="col-span-3 text-black">
+          <div className="text-black flex flex-col  justify-center h-full new-container  top-4 z-10  md:w-5/12 space-y-4 md:left-16">
+            <h1 className="text-3xl md:text-4xl font-semibold ">
+              Hire Prevetted Developers And Team
+            </h1>
+            <p className=" font-light text-md md:text-xl ">
+              Hire experienced remote developers trained to write{" "}
+              <span className="font-bold">good quality of code</span> and
+              comfortable working with international tech-clients
+            </p>
+            <button
+              className="primary-button rounded-none max-w-xs text-lg "
+              onClick={showModal}
+            >
+              Hire Now
+            </button>
+          </div>
+
+          </div>
+        <div className="col-span-3 ">
+        <img
+            className=" object-contain h-[600px] w-[500px] relative z-50"
+            src={our_services_hero1}
+            alt="our-services"
+          />
+        </div>
+
+         
+          {/* <div className="absolute bg-gradient-to-r from-black z-10 w-full h-full top-0 left-0"></div> */}
+
+          {/* <div className="absolute flex flex-col  justify-center h-full new-container  top-4 z-10 text-white md:w-5/12 space-y-4 md:left-16">
             <h1 className="text-3xl md:text-4xl font-semibold ">
               Hire Prevetted Developers And Team
             </h1>
@@ -106,14 +133,14 @@ const Hire_Developer = () => {
             >
               Hire Now
             </button>
-          </div>
+          </div> */}
         </div>
       </section>
 
       {/* Clients */}
       <section id="clients" className=" new-container pt-10">
         <h2 className="text-center text-2xl md:text-3xl font-semibold capitalize ">
-          Our Developers are trusted by Startups like
+          Our developers are trusted by 50+ global companies and startups.
         </h2>
         <Client data={client} slides={isDesktop} heading />
       </section>
