@@ -33,7 +33,7 @@ const newsletter = () => {
 
 export default newsletter;
 
-export function NewsLetterPage({ status, message, onValidated }) {
+function NewsLetterPage({ status, message, onValidated }) {
   const defaultColor = "#373536";
 
   const [error, setError] = useState(null);
