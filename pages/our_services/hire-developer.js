@@ -6,10 +6,10 @@ import CardPortfolio from "../../components/CardPortfolio";
 import Client from "../../components/Client";
 import CustomModal from "../../components/CustomModal";
 import Testimonial from "../../components/Testimonial";
-// import newImg from '/img/our_services_hero1.jpg';
 import {
   bestOthers,
   client,
+  clientsOnHirePage,
   daas_faq_services,
   daily_updates,
   dollarIcons,
@@ -85,64 +85,61 @@ const Hire_Developer = () => {
       {isModalVisible && (
         <CustomModal setOpen={setIsModalVisible} open={isModalVisible} />
       )}
-      <section>
-        <div className="grid grid-cols-6">
-
-          <div className="col-span-3 text-black">
-          <div className="text-black flex flex-col  justify-center h-full new-container  top-4 z-10  md:w-5/12 space-y-4 md:left-16">
-            <h1 className="text-3xl md:text-4xl font-semibold ">
-              Hire Prevetted Developers And Team
-            </h1>
-            <p className=" font-light text-md md:text-xl ">
-              Hire experienced remote developers trained to write{" "}
-              <span className="font-bold">good quality of code</span> and
-              comfortable working with international tech-clients
-            </p>
-            <button
-              className="primary-button rounded-none max-w-xs text-lg "
-              onClick={showModal}
-            >
-              Hire Now
-            </button>
+      <section className="new-container">
+        <div className="grid grid-cols-3 md:grid-cols-6 pt-20">
+          <div className="col-span-3 order-last md:order-first text-black">
+            <div className="text-black flex flex-col  justify-center h-full  space-y-4">
+              <h1 className="text-3xl md:text-4xl font-semibold ">
+                Hire pre vetted developers <br className="hidden md:block"/> and team
+              </h1>
+              <p className="font-light text-md md:text-xl">
+                Hire skilled remote developers with experience delivering
+                <span className="font-bold"> quality code</span> and working
+                with global tech clients.
+              </p>
+       
+              <div className="flex flex-col sm:flex-row gap-5 pt-6">
+                <button
+                  className="primary-button rounded-md  text-white text-lg "
+                  onClick={showModal}
+                >
+                  Hire Developers
+                </button>
+                <button
+                  className=" primary-outline rounded-none  h-16 sm:h-auto min-w-[200px] text-lg "
+                  onClick={showModal}
+                >
+                  Hire a Team
+                </button>
+              </div>
+            </div>
           </div>
-
+          <div className="col-span-3 order-first md:order-last">
+            <img
+              className=" object-contain  h-96 w-96 mx-auto pt-6"
+              src={our_services_hero1}
+              alt="our-services"
+            />
           </div>
-        <div className="col-span-3 ">
-        <img
-            className=" object-contain h-[600px] w-[500px] relative z-50"
-            src={our_services_hero1}
-            alt="our-services"
-          />
-        </div>
-
-         
-          {/* <div className="absolute bg-gradient-to-r from-black z-10 w-full h-full top-0 left-0"></div> */}
-
-          {/* <div className="absolute flex flex-col  justify-center h-full new-container  top-4 z-10 text-white md:w-5/12 space-y-4 md:left-16">
-            <h1 className="text-3xl md:text-4xl font-semibold ">
-              Hire Prevetted Developers And Team
-            </h1>
-            <p className=" font-light text-md md:text-xl text-gray-200 ">
-              Hire experienced remote developers trained to write{" "}
-              <span className="font-bold">good quality of code</span> and
-              comfortable working with international tech-clients
-            </p>
-            <button
-              className="primary-button rounded-none max-w-xs text-lg "
-              onClick={showModal}
-            >
-              Hire Now
-            </button>
-          </div> */}
         </div>
       </section>
 
       {/* Clients */}
-      <section id="clients" className=" new-container pt-10">
-        <h2 className="text-center text-2xl md:text-3xl font-semibold capitalize ">
+      <section id="clients" className=" new-container mt-16 pt-10">
+        <h2 className="text-center text-2xl md:text-3xl font-semibold ">
           Our developers are trusted by 50+ global companies and startups.
         </h2>
-        <Client data={client} slides={isDesktop} heading />
+
+        <duv className="flex flex-wrap md:flex-nowrap justify-center gap-5 mt-8">
+          {clientsOnHirePage.map(({ img, name, alt }, index) => (
+            <div className="text-center" key={index}>
+              <img src={img} alt={alt} className="max-h-20 " />
+              <h6 className="font-medium text-primary float-left text-center">
+                {name && name}
+              </h6>
+            </div>
+          ))}
+        </duv>
       </section>
 
       {/* 1 Best offers */}
@@ -152,8 +149,7 @@ const Hire_Developer = () => {
             Why hiring from us is a good choice ?
           </h2>
           <p className="text-lg md:text-xl font-light pb-5">
-            It is the same as hiring in India directly but with us doing the
-            most difficult parts so that you can focus on your business.
+            You focus on your business and we focus on your hiring.
           </p>
 
           {/*  */}
