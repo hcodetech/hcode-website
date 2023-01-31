@@ -217,7 +217,7 @@ export const thailand_trip = "/assets/img/thailand_trip.png";
 export const office_v3 = "/assets/img/office_v3.jpg";
 export const work_with_us_recuriter_image =
   "/assets/img/work_with_us_recruiter.jpg";
-export const our_services_hero1 = "/assets/img/our_services_hero1.jpg";
+export const pre_vetted_hero = "/assets/img/our_services_hero1.jpg";
 export const our_services_hero = "/assets/img/our_services_hero.jpg";
 export const work_with_us_image_carousel = [
   { image: "/assets/img/thailand_trip.jpg" },
@@ -331,7 +331,7 @@ export const client = [
   { img: "/assets/img/clients/wagmi.jpg", alt: "Wagmi Estate" },
 ];
 
-export const clientsOnHirePage = [
+export const clients_on_hire_page = [
   { img: "/assets/img/clients/absolute.jpg", alt: "Absolute" },
   { img: "/assets/img/clients/carDekho.jpg", alt: "CarDekho Loans" },
   { img: "/assets/img/clients/fable.jpg", alt: "Fable" },

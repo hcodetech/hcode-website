@@ -9,7 +9,7 @@ import Testimonial from "../../components/Testimonial";
 import {
   bestOthers,
   client,
-  clientsOnHirePage,
+  clients_on_hire_page,
   daas_faq_services,
   daily_updates,
   dollarIcons,
@@ -21,8 +21,7 @@ import {
   match_your_timezone,
   mern_tech_stack,
   metaData,
-  our_services_hero,
-  our_services_hero1,
+  pre_vetted_hero,
   rigorousVetting,
   seniority,
   skills,
@@ -44,6 +43,7 @@ import "pure-react-carousel/dist/react-carousel.es.css";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/outline";
 import MetaTags from "../../components/MetaTags";
 import { ArrowRightIcon } from "@heroicons/react/solid";
+import NewsletterForm from "../../components/NewsletterForm";
 const Hire_Developer = () => {
   const [isDesktop, setIsDesktop] = useState("");
   const [isModalVisible, setIsModalVisible] = useState(false);
@@ -117,8 +117,9 @@ const Hire_Developer = () => {
           <div className="col-span-3 order-first md:order-last">
             <img
               className=" object-contain  h-96 w-96 mx-auto pt-6"
-              src={our_services_hero1}
-              alt="our-services"
+              src={pre_vetted_hero}
+              alt="Hire pre vetted developers
+              and team"
             />
           </div>
         </div>
@@ -131,7 +132,7 @@ const Hire_Developer = () => {
         </h2>
 
         <duv className="flex flex-wrap md:flex-nowrap justify-center gap-5 mt-8">
-          {clientsOnHirePage.map(({ img, name, alt }, index) => (
+          {clients_on_hire_page.map(({ img, name, alt }, index) => (
             <div className="text-center" key={index}>
               <img src={img} alt={alt} className="max-h-20 " />
               <h6 className="font-medium text-primary float-left text-center">
