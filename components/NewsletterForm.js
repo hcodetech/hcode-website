@@ -83,25 +83,25 @@ const NewsletterForm = ({ status, message, onValidated }) => {
             </button>
           </div>
         </div>
-        <div className="min-h-42px">
-          {'sending' === status ? (
-            <div className="fixed top-1/2 inset-x-2/4">
-              <DotLoader color={defaultColor} size={60} />
-            </div>
-          ) : null}
-          {'error' === status || error ? (
-            <div
-              className="text-red-700 pt-2"
-              dangerouslySetInnerHTML={{ __html: error || getMessage(message) }}
-            />
-          ) : null}
-          {'success' === status && 'error' !== status && !error && (
-            <div
-              className="text-green-500 font-bold pt-2"
-              dangerouslySetInnerHTML={{ __html: message }}
-            />
-          )}
-        </div>
+      </div>
+      <div className="min-h-42px">
+        {'sending' === status ? (
+          <div className="fixed top-1/2 inset-x-2/4">
+            <DotLoader color={defaultColor} size={60} />
+          </div>
+        ) : null}
+        {'error' === status || error ? (
+          <div
+            className="text-red-700 pt-2"
+            dangerouslySetInnerHTML={{ __html: error || getMessage(message) }}
+          />
+        ) : null}
+        {'success' === status && 'error' !== status && !error && (
+          <div
+            className="text-green-500 font-bold pt-2"
+            dangerouslySetInnerHTML={{ __html: message }}
+          />
+        )}
       </div>
     </div>
   );
