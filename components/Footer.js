@@ -2,8 +2,8 @@ import {
   hcode_footer,
   linkedin_icon,
   twitter_icon,
-} from "../constants/constants";
-import NewsletterComponent from "./NewsletterComponent";
+} from '../constants/constants';
+import NewsletterComponent from './NewsletterComponent';
 
 function Footer() {
   return (
@@ -201,10 +201,10 @@ function Footer() {
           </div>
         </div>
         <div className="text-center  border-t pt-5">
-          Copyright @ 2022{" "}
+          Copyright @ 2022{' '}
           <a href="/" className="text-primary font-semibold underline">
             Hcode.tech
-          </a>{" "}
+          </a>{' '}
           | All rights reserved by Hcode Techonologies
         </div>
       </div>

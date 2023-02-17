@@ -1,5 +1,8 @@
-import Head from "next/head";
-import { ArrowRightIcon } from "@heroicons/react/solid";
+import Head from 'next/head';
+import { CarouselProvider, Slide, Slider } from 'pure-react-carousel';
+import 'pure-react-carousel/dist/react-carousel.es.css';
+import { karnalImages, blog_page } from '../constants/constants';
+import { ArrowRightIcon } from '@heroicons/react/solid';
 import {
   Delhi,
   faq_hiring,
@@ -19,16 +22,16 @@ import {
   work_with_us_benefits,
   work_with_us_content,
   work_with_us_recuriter_image,
-} from "../constants/constants";
-import ImageCarousel from "../components/ImageCarousel";
-import Benefits from "../components/Benefits";
-import Accordion from "../components/Accordion";
-import Team from "../components/Team";
-import MetaTags from "../components/MetaTags";
+} from '../constants/constants';
+import ImageCarousel from '../components/ImageCarousel';
+import Benefits from '../components/Benefits';
+import Accordion from '../components/Accordion';
+import Team from '../components/Team';
+import MetaTags from '../components/MetaTags';
 
 function work_with_us() {
   return (
-    <>
+    <div>
       <Head>
         <title>Work With Us | Hcode Technologies</title>
         <MetaTags page={metaData.work_with_us} />
@@ -55,7 +58,7 @@ function work_with_us() {
             </a>
 
             <p className="mt-8 ">
-              Connect with the HR:{" "}
+              Connect with the HR:{' '}
               <a
                 className="text-primary underline"
                 href="mailto:hr@hcode.tech"
@@ -79,7 +82,7 @@ function work_with_us() {
                 layout="fill"
                 className="rounded-lg object-cover shadow-md md:hover:scale-105 transition-all duration-100 ease-out"
               />
-            </div>{" "}
+            </div>{' '}
             <div className="col-span-6 w-full -mt-24 hidden md:block">
               <img
                 src={thailand_trip}
@@ -208,7 +211,51 @@ function work_with_us() {
         </div>
       </section>
       {/* Core Team  */}
-      <section className="pt-20  text-center">
+      <CarouselProvider
+        visibleSlides={1}
+        totalSlides={karnalImages.length}
+        step={1}
+        isIntrinsicHeight
+        interval={10000}
+        isPlaying
+        playDirection="forward"
+        infinite
+      >
+        <div className="relative mb-10 pt-10 md:pt-20 shadow-lg">
+          <Slider>
+            {karnalImages.map((image, idx) => (
+              <Slide index={idx} key={image + idx}>
+                <div className="relative">
+                  <img
+                    src={image}
+                    alt=""
+                    className="md:h-[700px] w-screen object-cover "
+                  />
+                </div>
+              </Slide>
+            ))}
+          </Slider>
+          <div className="md:max-w-[480px]  bg-white md:absolute md:top-[20%] md:left-[8%] md:p-10 p-5 md:shadow-xl md:rounded-sm">
+            <h1 className="font-semibold text-3xl">{blog_page.blog_heading}</h1>
+            <div className="space-y-4 font-light tracking-normal">
+              <p className="mt-4">{blog_page.blog_para}</p>
+              <p>{blog_page.blog_para2}</p>
+              <p>{blog_page.blog_para3}</p>
+            </div>
+            <div className="md:mt-14 hidden">
+              <a
+                href="https://hcode.tech/blog/"
+                target="_blank"
+                className="pt-5 pb-1  mt-2 w-50 whitespace-nowrap flex-nowrap border-b border-[#8F929F] inline-flex text-[#8F929F] hover:scale-100  cursor-pointer hover:opacity-100 "
+              >
+                Read More About Life Karnal
+                <ArrowRightIcon className="w-6 md:ml-2  h-full" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </CarouselProvider>
+      <section className="pt-10 md:pt-20  text-center">
         <div className="lg:new-container">
           <h1 className="font-poppins text-center font-semibold text-3xl  md:text-4xl md:leading-tight">
             Our Mentors
@@ -266,7 +313,7 @@ function work_with_us() {
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 }
 

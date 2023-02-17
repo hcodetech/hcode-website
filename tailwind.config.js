@@ -1,9 +1,9 @@
-const defaultTheme = require("tailwindcss/defaultTheme");
+const defaultTheme = require('tailwindcss/defaultTheme');
 const plugin = require('tailwindcss/plugin');
 
 module.exports = {
-  mode: "jit",
-  purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
+  mode: 'jit',
+  purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   darkMode: false, // or 'media' or 'class'
   theme: {
     // container:{
@@ -16,15 +16,15 @@ module.exports = {
     //   }
     // },
     colors: {
-      primary: "#276EF1",
-      secondary: "#FFC043",
-      cyan:"#61DAFB",
-      transparent: "transparent",
+      primary: '#276EF1',
+      secondary: '#FFC043',
+      cyan: '#61DAFB',
+      transparent: 'transparent',
       ...defaultTheme.colors,
     },
     extend: {
       fontFamily: {
-        poppins: ["Poppins", ...defaultTheme.fontFamily.sans],
+        poppins: ['Poppins', ...defaultTheme.fontFamily.sans],
       },
       backgroundImage: (theme) => ({
         work_with_us_hero: "url('/assets/img/work_with_us_hero.png')",
@@ -47,21 +47,18 @@ module.exports = {
         mvp: "url('/assets/img/mvp_service.jpg')",
         blockchain: "url('/assets/img/blockchain_service.jpg')",
         blockchain_small: "url('/assets/img/blockchain_service_small.jpg')",
-        
-
       }),
     },
   },
   variants: {
     extend: {},
   },
-  // plugins: [
-  //   require("@tailwindcss/forms"),
-  //   require('tailwind-scrollbar-hide')
-  //  ],
+
   plugins: [
     require('@tailwindcss/forms'),
-    plugin(function ({addUtilities}) {
+    require('tailwind-scrollbar-hide'),
+
+    plugin(function ({ addUtilities }) {
       addUtilities({
         '.scrollbar-hide': {
           /* IE and Edge */
