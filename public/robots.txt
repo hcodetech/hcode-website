@@ -7,4 +7,3 @@ Host: https://www.hcode.tech
 
 # Sitemaps
 Sitemap: https://www.hcode.tech/sitemap.xml
-Sitemap: https://www.hcode.tech/sitemap-0.xml

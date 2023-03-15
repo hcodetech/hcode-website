@@ -12,11 +12,16 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html lang='en ' className='scroll-smooth'>
+      <Html lang="en " className="scroll-smooth">
         <Head>
+          {/* Google Console */}
+          <meta
+            name="google-site-verification"
+            content="p7p1JCWqzYMbOUuHZl6n__1vqE9IJksl6EMduIHHrao"
+          />
           {/* MailChimp */}
           <script
-            id='mcjs'
+            id="mcjs"
             dangerouslySetInnerHTML={{
               __html: `!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/f5258b0c0d2b6c7561d024d3c/3da1e5017282a765c7865d2a3.js")`,
             }}
@@ -41,18 +46,18 @@ class MyDocument extends Document {
 
           {/* Google Fonts - Poppins */}
           <link
-            href='https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500&display=swap'
-            rel='stylesheet'
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500&display=swap"
+            rel="stylesheet"
           />
           <link
-            rel='icon'
-            type='image/png'
-            sizes='16x16'
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
             href={fav_icon}
           ></link>
           {/* Microsoft Clarity tracking code */}
           <script
-            type='text/javascript'
+            type="text/javascript"
             dangerouslySetInnerHTML={{
               __html: `
           (function(c,l,a,r,i,t,y){
