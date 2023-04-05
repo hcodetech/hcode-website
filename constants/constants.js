@@ -114,6 +114,13 @@ export const work_with_us_benefits = {
 };
 export const TEAM = [
   {
+    image: '/assets/img/hcode_about_us_shweta.jpg',
+    name: 'Shweta Goel',
+    // title: "Communication Coach",
+    bio: 'Started, grown & led multiple quant teams as VP in Goldman Sachs, New York, IIT Delhi',
+    link: 'https://www.linkedin.com/in/shweta-singla/',
+  },
+  {
     image: '/assets/img/hcode_about_us_shashank.jpg',
     name: 'Shashank Singla',
     bio: 'Entrepreneur by trade, Engineer at heart with 2 exits in AI in US & India. Ex Goldman Sachs, IIT Delhi',
@@ -130,13 +137,6 @@ export const TEAM = [
     name: 'Rishabh Garg',
     bio: 'EM with experience of building Enterprise Applications.Ex-Siemens, NIT Durgapur',
     link: 'https://www.linkedin.com/in/rishabh-garg-77023ab6/',
-  },
-  {
-    image: '/assets/img/hcode_about_us_shweta.jpg',
-    name: 'Shweta Goel',
-    // title: "Communication Coach",
-    bio: 'Started, grown & led multiple quant teams as VP in Goldman Sachs, New York, IIT Delhi',
-    link: 'https://www.linkedin.com/in/shweta-singla/',
   },
   {
     image: '/assets/img/hcode_about_us_harshit.jpg',
