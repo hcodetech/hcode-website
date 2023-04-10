@@ -78,14 +78,14 @@ export default function Home() {
         <div className='new-container '>
           <ServicesCard heading={true} />
         </div>
-        <div className='hidden'>
-          <div className='bg-primary '>
-            <div className='text-white bg-serviceIllustration bg-left-bottom bg-no-repeat w-full bg-contain '>
-              <div className='new-container text-center pt-32 -mt-20 pb-24 md:pb-24 md:pt-52 md:-mt-32'>
-                <h2 className='text-4xl font-semibold w-4/5 md:mx-auto text-left md:text-center md:w-full'>
+        <div className="hidden">
+          <div className="bg-primary ">
+            <div className="text-white bg-serviceIllustration bg-left-bottom bg-no-repeat w-full bg-contain ">
+              <div className="new-container text-center pt-32 -mt-20 pb-24 md:pb-24 md:pt-52 md:-mt-32">
+                <h2 className="text-4xl font-semibold w-4/5 md:mx-auto text-left md:text-center md:w-full">
                   What can we do for you ?
                 </h2>
-                <p className='text-left md:text-center md:w-4/5 md:mx-auto font-light mt-3 opacity-80'>
+                <p className="text-left md:text-center md:w-4/5 md:mx-auto font-light mt-3 opacity-80">
                   Are you a startup or an enterprise looking to set up/augment
                   your tech team? If yes, we have the right solution tailored
                   for you. We staff, manage and support your offshore
@@ -153,12 +153,12 @@ export default function Home() {
                 />
               </picture>
             </div>
-            <div className='lg:px-4 col-span-12 lg:col-span-6 '>
-              <h3 className='text-3xl lg:text-4xl font-semibold py-2 mt-4 md:mt-0'>
+            <div className="lg:px-4 col-span-12 lg:col-span-6 ">
+              <h3 className="text-3xl lg:text-4xl font-semibold py-2 mt-4 md:mt-0">
                 {homepage.who_are_we.heading}
               </h3>
-              <div className='py-2 lg:py-5'>
-                <p className='lg:text-lg break-words'>
+              <div className="py-2 lg:py-5">
+                <p className="lg:text-lg break-words">
                   {homepage.who_are_we.paragraph}
                 </p>
                 <br />
@@ -166,9 +166,10 @@ export default function Home() {
                   {homepage.who_are_we.paragraph_2nd}
                 </p>
               </div>
-              <div className=''>
-                <h4 className='text-xl font-semibold'>
+              <div className="">
+                <h4 className="text-xl font-semibold">
                   {homepage.who_are_we.clients.heading}
+                </h4>
                 </h4>
                 <Client data={city} heading={true} />
               </div>
@@ -230,25 +231,22 @@ export default function Home() {
 
       <NewsletterCTA />
       {/* Core Team  */}
-      <section id='our_core_team' className='py-14 bg-gray-100 text-center'>
-        <div className='lg:new-container'>
-          <h3 className='font-poppins text-center font-semibold text-3xl  md:text-4xl md:leading-tight'>
+      <section id="our_core_team" className="py-14 bg-gray-100 text-center">
+        <div className="lg:new-container">
+          <h3 className="font-poppins text-center font-semibold text-3xl  md:text-4xl md:leading-tight">
             Leadership Team
           </h3>
-          <div className='flex-wrap flex justify-between  mt-7  mx-auto'>
-            {TEAM.map(
-              ({ name, image, bio, link, title, image_webp }, index) => (
-                <Team
-                  key={index}
-                  name={name}
-                  image={image}
-                  image_webp={image_webp}
-                  bio={bio}
-                  link={link}
-                  title={title}
-                />
-              )
-            )}
+          <div className="flex-wrap flex justify-between  mt-7  mx-auto">
+            {TEAM.map(({ name, image, bio, link, title }, index) => (
+              <Team
+                key={index}
+                name={name}
+                image={image}
+                bio={bio}
+                link={link}
+                title={title}
+              />
+            ))}
           </div>
           <div></div>
         </div>

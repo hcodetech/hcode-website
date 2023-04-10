@@ -62,13 +62,13 @@ const blockchain = () => {
         <MetaTags page={metaData.blockchain} />
       </Head>
       {/* Hero Section */}
-      <section className='bg-BlockchainBackground bg-no-repeat bg-cover text-white'>
-        <div className='new-container grid grid-cols-12 min-h-[90vh] '>
-          <div className='col-span-12 md:col-span-5 order-2 md:order-1 pb-5'>
-            <h1 className='md:pt-44 lg:mt-10 text-3xl md:text-5xl font-semibold '>
+      <section className="bg-BlockchainBackground bg-no-repeat bg-cover text-white">
+        <div className="new-container grid grid-cols-12 min-h-[90vh] ">
+          <div className="col-span-12 md:col-span-5 order-2 md:order-1 pb-5">
+            <h1 className="md:pt-44 lg:mt-10 text-3xl md:text-5xl font-semibold ">
               Blockchain Development Services
             </h1>
-            <p className='mt-2 md:mt-4 mb-6 md:mb-10 text-white tracking-tight md:text-lg opacity-70'>
+            <p className="mt-2 md:mt-4 mb-6 md:mb-10 text-white tracking-tight md:text-lg opacity-70">
               We’re proficient in various Blockchain services including, but not
               limited to, <strong>Dapps, Smart Contracts, NFT</strong>{" "}
               marketplace and <strong>Blockchain Security Audit.</strong>
@@ -108,12 +108,13 @@ const blockchain = () => {
       </section>
 
       {/* Tech Stack */}
-      <section className='py-10 lg:py-16 bg-gray-200'>
-        <div className='new-container '>
-          <h6 className='font-light'>Capabilities</h6>
-          <h3 className='text-lg lg:text-3xl font-semibold  lg:leading-snug'>
+      <section className="py-10 lg:py-16 bg-gray-200">
+        <div className="new-container ">
+          <h6 className="font-light">Capabilities</h6>
+          <h3 className="text-lg lg:text-3xl font-semibold  lg:leading-snug">
             We have experience in following <br />
             Blockchain Technologies and Integrations
+          </h3>
           </h3>
 
           <div>

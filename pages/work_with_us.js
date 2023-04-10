@@ -184,10 +184,12 @@ function work_with_us() {
       {/* What we offer */}
       <section className="new-container -mt-4">
         <h4 className="font-semibold text-5xl mt-2 mb-4">What we offer</h4>
+        <h3 className="font-semibold text-5xl mt-2 mb-4">What we offer</h3>
         <div className="grid grid-cols-12">
           {what_we_do.map((item, index) => (
             <div className="col-span-12 mb-7 md:mb-0 md:col-span-6" key={index}>
               <img src={item.img} alt={item.heading} />
+              <h4 className="font-semibold text-2xl mt-3">{item.heading}</h4>
               <h4 className="font-semibold text-2xl mt-3">{item.heading}</h4>
               <ul className="list-disc list-inside mt-2">
                 {item.points.map((li, index) => (
@@ -205,7 +207,7 @@ function work_with_us() {
       {/* Hiring Process */}
       <section className="new-container">
         <div className="text-center sm:w-1/2 mx-auto">
-          <h4 className="text-4xl font-semibold">Our hiring process</h4>
+          <h3 className="text-4xl font-semibold">Our hiring process</h3>
           <p className="mt-2 mb-5 font-light">
             We have a 5-step hiring process that generally takes about 2-4 weeks
             from application to offer letter.
@@ -218,6 +220,7 @@ function work_with_us() {
                 <img src={image} layout="fill" loading='lazy'    height='50px' width='100px' />
               </div>
               <div className="mt-3 md:mt-0 md:ml-4">
+                <h4 className="font-semibold text-xl">{heading}</h4>
                 <h4 className="font-semibold text-xl">{heading}</h4>
                 <p className="font-light">{descripition}</p>
               </div>
@@ -270,6 +273,7 @@ function work_with_us() {
           </Slider>
           <div className="md:max-w-[480px]  bg-white md:absolute md:top-[20%] md:left-[8%] md:p-10 p-5 md:shadow-xl md:rounded-sm">
             <h2 className="font-semibold text-3xl">{blog_page.blog_heading}</h2>
+            <h2 className="font-semibold text-3xl">{blog_page.blog_heading}</h2>
             <div className="space-y-4 font-light tracking-normal">
               <p className="mt-4">{blog_page.blog_para}</p>
               <p>{blog_page.blog_para2}</p>
@@ -291,7 +295,9 @@ function work_with_us() {
       <section className="pt-10 md:pt-20  text-center">
         <div className="lg:new-container">
           <h3 className="font-poppins text-center font-semibold text-3xl  md:text-4xl md:leading-tight">
+          <h3 className="font-poppins text-center font-semibold text-3xl  md:text-4xl md:leading-tight">
             Our Mentors
+          </h3>
           </h3>
           <p className="px-10 md:px-0 md:w-3/4 mx-auto mt-2">
             Learning & Development is an important part of the culture at HCode.
@@ -333,7 +339,9 @@ function work_with_us() {
           />
           <div className="my-4 md:my-auto md:w-4/5 ml-3">
             <h2 className="text-3xl md:text-4xl font-semibold">
+            <h2 className="text-3xl md:text-4xl font-semibold">
               Connect with the HR
+            </h2>
             </h2>
             <p className="text-base md:text-lg mt-2 mb-8">
               Are you a Candidate exploring working options with us or a

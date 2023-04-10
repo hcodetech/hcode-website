@@ -77,7 +77,9 @@ function developer_as_a_service() {
               {dass.startup.tag}
             </button>
             <h3 className="text-2xl font-semibold ">
+            <h3 className="text-2xl font-semibold ">
               {dass.startup.secondary_heading}
+            </h3>
             </h3>
             <ul className="list-outside list-disc text-sm px-4 py-2">
               {dass.startup.points.map((point, index) => (
@@ -97,9 +99,9 @@ function developer_as_a_service() {
             <button className="px-4 py-2 rounded-full bg-primary text-white cursor-default mb-5 ">
               {dass.enterprise.tag}
             </button>
-            <h4 className="text-2xl font-semibold ">
+            <h3 className="text-2xl font-semibold ">
               {dass.enterprise.secondary_heading}
-            </h4>
+            </h3>
             <ul className="list-outside list-disc text-sm px-4 py-2">
               {dass.enterprise.points.map((point, index) => (
                 <li key={index} dangerouslySetInnerHTML={{ __html: point }} />
@@ -117,7 +119,7 @@ function developer_as_a_service() {
         {/* Get Started CTA */}
         <div className="p-8 bg-gradient-to-br  from-green-200 to-white text-center mt-8 ">
           <div className="mb-6">
-            <h2 className="text-3xl font-semibold mb-2">{dass.cta.heading}</h2>
+            <h3 className="text-3xl font-semibold mb-2">{dass.cta.heading}</h3>
             <p className="font-light">{dass.cta.main_paragraph}</p>
           </div>
           <a

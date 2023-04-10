@@ -57,7 +57,9 @@ function team_as_a_service() {
       {/* Who is it for ? */}
       <section className="new-container mt-6">
         <h2 className="text-3xl md:text-4xl font-semibold text-center ">
+        <h2 className="text-3xl md:text-4xl font-semibold text-center ">
           {tass.who_is_it_for}
+        </h2>
         </h2>
         <p className="md:w-4/6 mx-auto mt-3 font-light leading-normal text-center ">
           {tass.who_is_it_for_paragraph}
@@ -78,7 +80,9 @@ function team_as_a_service() {
               {tass.startup.tag}
             </button>
             <h3 className="text-2xl font-semibold">
+            <h3 className="text-2xl font-semibold">
               {tass.startup.main_heading}
+            </h3>
             </h3>
             <ul className="list-outside list-disc text-sm px-4 py-2">
               {tass.startup.points.map((point, index) => (
@@ -87,7 +91,9 @@ function team_as_a_service() {
             </ul>
             {/*  */}
             <h3 className="text-2xl font-semibold mt-5">
+            <h3 className="text-2xl font-semibold mt-5">
               {tass.startup.secondary_heading}
+            </h3>
             </h3>
             <ul className="list-outside list-disc text-sm px-4 py-2">
               {tass.startup.points.map((point, index) => (
@@ -107,18 +113,18 @@ function team_as_a_service() {
             <button className="px-4 py-2 rounded-full bg-primary text-white cursor-default mb-5 ">
               {tass.enterprise.tag}
             </button>
-            <h4 className="text-2xl font-semibold">
+            <h3 className="text-2xl font-semibold">
               {tass.enterprise.main_heading}
-            </h4>
+            </h3>
             <ul className="list-outside list-disc text-sm px-4 py-2">
               {tass.enterprise.points.map((point, index) => (
                 <li key={index}>{point}</li>
               ))}
             </ul>
             {/*  */}
-            <h5 className="text-2xl font-semibold mt-5">
+            <h3 className="text-2xl font-semibold mt-5">
               {tass.enterprise.secondary_heading}
-            </h5>
+            </h3>
             <ul className="list-outside list-disc text-sm px-4 py-2">
               {tass.enterprise.points.map((point, index) => (
                 <li key={index}>{point}</li>
