@@ -46,6 +46,10 @@ function Testimonial() {
                         src={message.profile_image}
                         alt={message.person_name}
                         className="rounded w-[280px] h-[320px] lg:w-[320px] lg:h-[400px] object-cover"
+                        loading="lazy"
+                        height='400px'
+                        width='300px'
+                        
                       />
                       <div>
                         <div className="md:ml-10 mt-4 md:mt-0">

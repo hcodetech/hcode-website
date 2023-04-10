@@ -38,6 +38,10 @@ function about() {
           src={about_page.hero_image}
           layout="fill"
           className="min-w-full min-h-[400px] object-cover"
+          loading="lazy"
+          width='700px'
+          height='500px'
+          alt='Hcode is in the business of writing great code'
         />
       </div>
       <section className="new-container bg-gray-50 pt-4">
@@ -65,6 +69,10 @@ function about() {
               src="/assets/img/hcode_about_us_vertical.jpg"
               layout="fill"
               className="min-w-full"
+              loading="lazy"
+              width='300px'
+              height='550px'
+              alt='Hcode office'
             />
           </div>
         </div>
@@ -74,6 +82,10 @@ function about() {
               src="/assets/img/hcode_about_us_horizontal.jpg"
               layout="fill"
               className="min-w-full"
+              loading="lazy"
+              height='500px'
+              width='600px'
+              alt='Hcode office'
             />
           </div>
         </div>
@@ -136,13 +148,21 @@ function about() {
           <img
             src={about_page.office_1}
             layout="fill"
-            className="rounded-lg h-full object-cover max-h-[700px]"
+            className="rounded-lg h-full w-auto object-cover max-h-[700px]"
+            loading="lazy"
+            height='700px'
+            width='600px'
+            alt='Hcode office'
           />
           <div className="hidden xl:block absolute rounded-lg h-[400px] w-[300px] -bottom-3/4 xl:-bottom-5 z-20 -ml-24 border-none">
             <img
               src={about_page.office_2}
               layout="fill"
               className="rounded-lg"
+              loading="lazy"
+            height='350px'
+            width='500px'
+            alt='Hcode office'
             />
           </div>
         </div>

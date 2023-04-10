@@ -30,6 +30,7 @@ function ImageCarousel() {
               <img
                 className="min-h-[280px] h-full md:max-h-[280px] max-w-full mr-4 border-white min-w-full border-4 object-cover md:object-contain object-top"
                 src={image}
+                height='280px' width='200px' loading='lazy'
               />
             </div>
           ))}

@@ -69,7 +69,10 @@ function HeroSection() {
               <img
                 src={image_slider_1}
                 alt=''
-                className='h-screen w-screen object-cover '
+                className='h-screen w-screen object-cover'
+                height='700px'
+                width='100%'
+                loading="lazy"
               />
             </div>
           </Slide>
@@ -101,6 +104,9 @@ function HeroSection() {
                 src={image_slider_2}
                 alt=''
                 className='h-screen w-screen object-cover '
+                height='700px'
+                width='100%'
+                loading="lazy"
               />
             </div>
           </Slide>
@@ -130,6 +136,9 @@ function HeroSection() {
                 src={image_slider_3}
                 alt=''
                 className='h-screen w-screen object-cover '
+                width='100%'
+                height='700px'
+                loading="lazy"
               />
             </div>
           </Slide>

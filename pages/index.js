@@ -138,8 +138,12 @@ export default function Home() {
             <div className="col-span-12 lg:col-span-6">
               <img
                 src={homepage.who_are_we.image}
-                alt={homepage.who_are_we.heading}
-                className="md:rounded-xl h-[102%] max-h-[600px] object-cover"
+                alt='Team of young, talented, and dynamic engineers.'
+                className="md:rounded-xl h-[102%] max-h-[600px] object-cover w-auto"
+                height='600px'
+                width='500px'
+                loading="lazy"
+
               />
             </div>
             <div className="lg:px-4 col-span-12 lg:col-span-6 ">

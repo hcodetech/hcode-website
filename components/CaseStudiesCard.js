@@ -82,6 +82,10 @@ function CaseStudiesCard({ data }) {
                       <img
                         src={project?.thumbnail_image}
                         className="h-[280px] md:h-[390px]   object-cover w-full rounded-tl-lg rounded-tr-lg"
+                        width='350px'
+                        height='450px'
+                        loading="lazy"
+                        alt='Hcode work'
                       />
                       <div className=" px-4 pt-2 pb-4 ">
                         <div className="flex flex-wrap mb-3">
@@ -143,6 +147,10 @@ function CaseStudiesCard({ data }) {
                       <img
                         src={project?.thumbnail_image}
                         className="h-[280px] md:h-[390px]   object-cover w-full rounded-tl-lg rounded-tr-lg"
+                        alt='case studies'
+                        width='350px'
+                        height='400px'
+                        loading='lazy'
                       />
                       <div className=" px-4 pt-2 pb-4 ">
                         <div className="flex flex-wrap mb-3">
