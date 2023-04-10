@@ -25,7 +25,7 @@ const Accordion = ({ data }) => {
           return (
             <div className="border-b-2" key={index}>
               <div className="wrap" onClick={() => toggle(index)} key={index}>
-                <h1 className="text-left">{item.question}</h1>
+                <h3 className="text-left">{item.question}</h3>
                 <span>
                   {clicked === index ? (
                     <MinusIcon className="h-6 w-6" />

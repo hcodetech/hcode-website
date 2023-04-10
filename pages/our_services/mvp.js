@@ -39,9 +39,9 @@ const mvp = () => {
       <section className="bg-[#060501] text-white">
         <div className="new-container grid grid-cols-12 min-h-screen md:min-h-[90vh] ">
           <div className="col-span-12 md:col-span-5 order-2 md:order-1">
-            <h2 className=" md:pt-48 lg:mt-10 text-3xl md:text-5xl font-semibold leading-loose ">
+            <h1 className=" md:pt-48 lg:mt-10 text-3xl md:text-5xl font-semibold leading-loose ">
               MVP Development Services
-            </h2>
+            </h1>
             <p className=" md:mt-4 mb-6 md:mb-10 text-white tracking-tight md:text-lg opacity-70 md:w-3/4">
               Get your Minimal Viable Product built by a team of experienced
               product builders
@@ -68,9 +68,9 @@ const mvp = () => {
       {/* Why MVP */}
       <section className="lg:py-16 bg-gray-100">
         <div className="new-container ">
-          <h1 className="text-4xl font-semibold lg:w-3/4">
+          <h2 className="text-4xl font-semibold lg:w-3/4">
             Startups which need MVP,
-          </h1>
+          </h2>
 
           <div className="grid grid-cols-12 gap-8 py-8">
             <div className="col-span-12 md:col-span-6 lg:col-span-4">
@@ -78,9 +78,9 @@ const mvp = () => {
                 <img src={MVP_want_icon} className="ml-auto pb-8" />
                 <div className="absolute bottom-0 pb-10 pr-5">
                   <h6 className="font-light">Want</h6>
-                  <h2 className="font-semibold text-2xl">
+                  <h3 className="font-semibold text-2xl">
                     High RoI on their time and money
-                  </h2>
+                  </h3>
                 </div>
               </div>
             </div>
@@ -89,9 +89,9 @@ const mvp = () => {
                 <img src={MVP_need_icon} className="ml-auto pb-8" />
                 <div className="absolute bottom-0 pb-10 pr-5">
                   <h6 className="font-light align-baseline">Need</h6>
-                  <h2 className="font-semibold text-2xl">
+                  <h3 className="font-semibold text-2xl">
                     Clear understanding of timelines
-                  </h2>
+                  </h3>
                 </div>
               </div>
             </div>
@@ -100,9 +100,9 @@ const mvp = () => {
                 <img src={MVP_look_icon} className="ml-auto pb-8" />
                 <div className="absolute bottom-0 pb-10 pr-5">
                   <h6 className="font-light">Look for</h6>
-                  <h2 className="font-semibold text-2xl">
+                  <h3 className="font-semibold text-2xl">
                     An experienced team for building their MVP
-                  </h2>
+                  </h3>
                 </div>
               </div>
             </div>
@@ -119,9 +119,9 @@ const mvp = () => {
       <section className="new-container py-16">
         <div className="lg:pb-10">
           <h6 className="font-light ">Our Approach</h6>
-          <h1 className="text-4xl font-semibold pt-1 pb-3 lg:w-5/12">
+          <h2 className="text-4xl font-semibold pt-1 pb-3 lg:w-5/12">
             You just need a Product Idea, We will do the Rest
-          </h1>
+          </h2>
           <p className="text-lg font-light lg:w-9/12 ">
             Yes you read it right. Our offering is not just for tech-founders
             who can drive the technology decisions, but equally well tailored

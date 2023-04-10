@@ -33,7 +33,7 @@ function about() {
           />
         </div>
       </section>
-      <div className="max-w-screen-xl   mx-auto pt-4">
+      <div className="max-w-screen-xl  mx-auto pt-4">
         <img
           src={about_page.hero_image}
           layout="fill"
@@ -42,16 +42,16 @@ function about() {
       </div>
       <section className="new-container bg-gray-50 pt-4">
         <div className="font-poppins sm:w-10/12 md:w-10/12 xl:w-1/2 max-w-[700px]  mx-auto py-5 md:py-10  ">
-          <h1 className=" text-center font-semibold text-3xl pt-10  md:text-4xl md:leading-tight">
+          <h3 className=" text-center font-semibold text-3xl pt-10  md:text-4xl md:leading-tight">
             {about_page.heading_2}
-          </h1>
+          </h3>
           <p
             className="font-light mt-5 mb-5 leading-relaxed md:text-lg"
             dangerouslySetInnerHTML={{ __html: about_page.paragraph_2 }}
           />
-          <h1 className=" text-center pt-10 font-semibold text-3xl  md:text-4xl md:leading-tight">
+          <h3 className=" text-center pt-10 font-semibold text-3xl  md:text-4xl md:leading-tight">
             {about_page.heading_3}
-          </h1>
+          </h3>
           <p
             className="font-light mt-5 mb-5 leading-relaxed md:text-lg"
             dangerouslySetInnerHTML={{ __html: about_page.paragraph_3 }}
@@ -81,9 +81,9 @@ function about() {
 
       {/* Core Team  */}
       <section className="new-container pt-14  text-center">
-        <h1 className="font-poppins text-center font-semibold text-3xl  md:text-4xl md:leading-tight">
+        <h2 className="font-poppins text-center font-semibold text-3xl  md:text-4xl md:leading-tight">
           Leadership Team
-        </h1>
+        </h2>
         <div className="flex-wrap flex justify-between mt-7  mx-auto">
           {TEAM.map(({ name, image, bio, link, title }, index) => (
             <Team
@@ -132,7 +132,7 @@ function about() {
             </Link>
           </div>
         </div>
-        <div className=" hidden lg:block relative col-span-12 lg:col-span-6 ">
+        <div className="hidden lg:block relative col-span-12 lg:col-span-6">
           <img
             src={about_page.office_1}
             layout="fill"

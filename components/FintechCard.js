@@ -3,7 +3,7 @@ function FintechCard({ data }) {
   return (
     <div className={`bg-gray-100 grid md:grid-cols-2 lg:bg-fintech bg-no-repeat bg-right px-4 py-8 md:p-16 md:h-[550px]  mb-20`}>
       <div className="">
-        <h1 className="font-semibold text-2xl md:text-4xl">{data.heading}</h1>
+        <h2 className="font-semibold text-2xl md:text-4xl">{data.heading}</h2>
         <p className="mt-2 text-sm md:text-base">
           {data.paragraph}
         </p>

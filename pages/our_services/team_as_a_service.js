@@ -48,9 +48,9 @@ function team_as_a_service() {
 
       {/* Who is it for ? */}
       <section className="new-container mt-6">
-        <h1 className="text-3xl md:text-4xl font-semibold text-center ">
+        <h2 className="text-3xl md:text-4xl font-semibold text-center ">
           {tass.who_is_it_for}
-        </h1>
+        </h2>
         <p className="md:w-4/6 mx-auto mt-3 font-light leading-normal text-center ">
           {tass.who_is_it_for_paragraph}
           <br />
@@ -69,18 +69,18 @@ function team_as_a_service() {
             <button className="px-4 py-2 rounded-full bg-purple-800 text-white cursor-default mb-5 ">
               {tass.startup.tag}
             </button>
-            <h2 className="text-2xl font-semibold">
+            <h3 className="text-2xl font-semibold">
               {tass.startup.main_heading}
-            </h2>
+            </h3>
             <ul className="list-outside list-disc text-sm px-4 py-2">
               {tass.startup.points.map((point, index) => (
                 <li key={index}>{point}</li>
               ))}
             </ul>
             {/*  */}
-            <h2 className="text-2xl font-semibold mt-5">
+            <h3 className="text-2xl font-semibold mt-5">
               {tass.startup.secondary_heading}
-            </h2>
+            </h3>
             <ul className="list-outside list-disc text-sm px-4 py-2">
               {tass.startup.points.map((point, index) => (
                 <li key={index}>{point}</li>
@@ -99,18 +99,18 @@ function team_as_a_service() {
             <button className="px-4 py-2 rounded-full bg-primary text-white cursor-default mb-5 ">
               {tass.enterprise.tag}
             </button>
-            <h2 className="text-2xl font-semibold">
+            <h3 className="text-2xl font-semibold">
               {tass.enterprise.main_heading}
-            </h2>
+            </h3>
             <ul className="list-outside list-disc text-sm px-4 py-2">
               {tass.enterprise.points.map((point, index) => (
                 <li key={index}>{point}</li>
               ))}
             </ul>
             {/*  */}
-            <h2 className="text-2xl font-semibold mt-5">
+            <h3 className="text-2xl font-semibold mt-5">
               {tass.enterprise.secondary_heading}
-            </h2>
+            </h3>
             <ul className="list-outside list-disc text-sm px-4 py-2">
               {tass.enterprise.points.map((point, index) => (
                 <li key={index}>{point}</li>
@@ -128,7 +128,7 @@ function team_as_a_service() {
         {/* Get Started CTA */}
         <div className="p-8 bg-gradient-to-br  from-green-200 to-white text-center mt-8 ">
           <div className="mb-6">
-            <h1 className="text-3xl font-semibold mb-2">{tass.cta.heading}</h1>
+            <h3 className="text-3xl font-semibold mb-2">{tass.cta.heading}</h3>
             <p className="font-light">{tass.cta.main_paragraph}</p>
           </div>
           <a
@@ -146,7 +146,7 @@ function team_as_a_service() {
         <div className="text-center mb-10">
           <a
             href="/contact"
-            className=" pb-1  border-b border-primary inline-flex text-primary hover:scale-100  cursor-pointer hover:opacity-100"
+            className="pb-1  border-b border-primary inline-flex text-primary hover:scale-100  cursor-pointer hover:opacity-100"
           >
             Request Consultation
             <ArrowRightIcon className="w-6 ml-2 " />
