@@ -21,7 +21,7 @@ function Client(props) {
       <Slider {...SliderData}>
         {props.data.map(({ img, name, alt }, index) => (
           <div className="text-center" key={index}>
-            <img src={img} alt={alt} className="max-h-20 " />
+            <img src={img} alt={alt} className="max-h-20 " height='150px' width='280' loading="lazy" />
             <h6 className="font-medium text-primary float-left text-center">
               {name && name}
             </h6>

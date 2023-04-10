@@ -56,7 +56,10 @@ const CardPortfolio = (props) => {
               <img
                 src={YoutubeIcon}
                 alt="Product Demo"
-                className="opacity-90 hover:opacity-100 bg-white rounded-lg hover:shadow-md"
+                className="opacity-90 hover:opacity-100 bg-white w-auto rounded-lg hover:shadow-md"
+                height='50px'
+                width='80px'
+                loading="lazy"
               />
             </a>
           )}
@@ -73,7 +76,10 @@ const CardPortfolio = (props) => {
           <img
             src={cardData.thumbnail_image}
             alt={cardData.name}
-            className="lg:w-[870px] h-auto"
+            className="lg:w-[870px] h-auto w-auto"
+            loading="lazy"
+            width='500px'
+            height='500px'
           />
         </div>
       </div>

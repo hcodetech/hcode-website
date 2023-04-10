@@ -49,6 +49,10 @@ function our_services() {
               className="object-cover w-screen md:h-[580px] h-[300px]"
               src={our_services_hero}
               layout="fill"
+              loading="lazy"
+              height='580px'
+              width='100%'
+              alt='Top tech talent'
             />
           </div>
         </div>

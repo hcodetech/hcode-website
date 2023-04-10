@@ -38,6 +38,9 @@ function developer_as_a_service() {
           src={dass.hero_image}
           alt={dass.hero_heading}
           className="w-screen my-10"
+          width="100%"
+          height="100%"
+          loading="lazy"
         />
       </section>
 
@@ -49,8 +52,9 @@ function developer_as_a_service() {
       {/* Who is it for ? */}
       <section className="new-container mt-6">
         <h3 className="text-3xl md:text-4xl font-semibold text-center ">
+        <h2 className="text-3xl md:text-4xl font-semibold text-center ">
           {dass.who_is_it_for}
-        </h3>
+        </h2>
         <p className="md:w-4/6 mx-auto mt-3 font-light leading-normal text-center ">
           {dass.who_is_it_for_paragraph}
           <br />

@@ -55,7 +55,7 @@ const mvp = () => {
             </a>
           </div>
           <div className="col-span-12 md:col-span-7 order-1 md:order-2 mt-24 md:mt-20 scale-90  lg:absolute lg:right-24 ">
-            <img src={MVP_Hero} className="object-cover lg:min-w-[120%]" />
+            <img src={MVP_Hero} className="object-cover w-auto h-auto lg:min-w-[120%]" width='400px' height='auto'/>
           </div>
         </div>
       </section>
@@ -75,7 +75,7 @@ const mvp = () => {
           <div className="grid grid-cols-12 gap-8 py-8">
             <div className="col-span-12 md:col-span-6 lg:col-span-4">
               <div className="bg-white shadow p-10 min-h-[320px] h-full relative">
-                <img src={MVP_want_icon} className="ml-auto pb-8" />
+                <img src={MVP_want_icon} className="ml-auto pb-8 w-auto h-auto" width='100px' height='100px' loading='lazy' />
                 <div className="absolute bottom-0 pb-10 pr-5">
                   <h6 className="font-light">Want</h6>
                   <h3 className="font-semibold text-2xl">
@@ -86,7 +86,7 @@ const mvp = () => {
             </div>
             <div className="col-span-12 md:col-span-6 lg:col-span-4">
               <div className="bg-white shadow p-10 min-h-[320px] h-full relative">
-                <img src={MVP_need_icon} className="ml-auto pb-8" />
+                <img src={MVP_need_icon} className="ml-auto pb-8 h-auto w-auto" width='100px'  height='100px' loading='lazy'   />
                 <div className="absolute bottom-0 pb-10 pr-5">
                   <h6 className="font-light align-baseline">Need</h6>
                   <h3 className="font-semibold text-2xl">
@@ -97,7 +97,7 @@ const mvp = () => {
             </div>
             <div className="col-span-12 md:col-span-6 lg:col-span-4">
               <div className="bg-white shadow p-10 min-h-[320px] h-full relative">
-                <img src={MVP_look_icon} className="ml-auto pb-8" />
+                <img src={MVP_look_icon} className="ml-auto pb-8 w-auto h-auto" width='100px'  height='100px' loading='lazy'  />
                 <div className="absolute bottom-0 pb-10 pr-5">
                   <h6 className="font-light">Look for</h6>
                   <h3 className="font-semibold text-2xl">

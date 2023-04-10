@@ -12,7 +12,12 @@ function Benefits(props) {
               <img
                 src={image}
                 layout="fill"
-                className="max-h-[55px]"
+                className="max-h-[55px] w-auto"
+                height='60px'
+                width='70px'
+                loading="lazy"
+                alt='hcode services'
+
               />
               <h4 className="text-xl font-semibold py-2"> {heading}</h4>
               <p className="font-light"

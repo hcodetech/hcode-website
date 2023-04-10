@@ -7,10 +7,14 @@ function Team({ name, image, bio, link, title }) {
           className="object-cover md:h-[248px] w-[227px]"
           src={image}
           layout="fill"
+          loading="lazy"
+          height='280px'
+          width='220'
+          alt='Leadership team and mentors in hcode technologies'
         />
         <div className="p-2 absolute bottom-4  left-2 cursor-pointer bg-gray-100 rounded-full hover:bg-white">
           <a href={link} target="_blank">
-            <img src={linkedin_icon} alt={link} className="w-4 md:w-full" />
+            <img src={linkedin_icon} alt={link} className="w-4 md:w-full" width='15px' height='15px' loading='lazy' />
           </a>
         </div>
       </div>

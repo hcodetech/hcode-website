@@ -16,6 +16,9 @@ function Footer() {
                 src={hcode_footer}
                 alt="Hcode Technologies"
                 className="w-40 mb-3 "
+                width='150px'
+                height='100px'
+                loading='lazy'
               />
               <p className="text-sm">
                 Agile, Predictable, Outcome

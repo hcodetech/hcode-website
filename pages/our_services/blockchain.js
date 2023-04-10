@@ -138,7 +138,7 @@ const blockchain = () => {
             <div className="grid grid-cols-12 gap-8 py-8">
               {blockchain_techStack_icon[activeTab].icons.map((tech, index) => (
                 <div key={index} className="col-span-4 lg:col-span-2">
-                  <img src={tech.image} alt={tech.name} />
+                  <img src={tech.image} alt={tech.name} height='200px' width='200px' loading="lazy"  />
                   {/* <h4 className="text-center font-semibold text-lg">{tech.name}</h4> */}
                 </div>
               ))}

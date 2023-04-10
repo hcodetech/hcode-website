@@ -38,6 +38,9 @@ function team_as_a_service() {
           src={tass.hero_image}
           alt={tass.hero_heading}
           className="w-screen my-10"
+          loading="lazy"
+          height='100%'
+          width='100%'
         />
       </section>
 
