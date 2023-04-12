@@ -36,9 +36,9 @@ function our_services() {
         <div className="   ">
           <div className="new-container p-4 lg:p-16 xl:p-32 xl:pb-0 text-center mx-auto md:w-3/5 ">
             <div className="mt-20 md:mt-4">
-              <h1 className=" font-semibold text-3xl  md:text-5xl md:leading-tight">
+              <h2 className=" font-semibold text-3xl  md:text-5xl md:leading-tight">
                 {our_services_data.hero_heading}
-              </h1>
+              </h2>
             </div>
             <p className="py-5  text-xl md:text-2xl font-light  mx-auto">
               {our_services_data.hero_paragraph}

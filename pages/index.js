@@ -95,13 +95,13 @@ export default function Home() {
                 <div className="grid grid-cols-12 gap-8 mt-10 md:w-4/5 md:mx-auto">
                   <div className="col-span-12 md:col-span-6 lg:col-span-4">
                     <div className="bg-blue-50 px-8 py-6 shadow hover:shadow-2xl hover:bg-white hover:cursor-pointer text-black font-medium text-xl text-left">
-                      <h2 className="text-2xl">Mobile / Webapp</h2>
+                      <h4 className="text-2xl">Mobile / Webapp</h4>
                       <img src={MobileSVG} className="mx-auto my-10 max-h-32" />
                     </div>
                   </div>
                   <div className="col-span-12 md:col-span-6 lg:col-span-4">
                     <div className="bg-blue-50 px-8 py-6 shadow hover:shadow-2xl hover:bg-white hover:cursor-pointer text-black font-medium text-xl text-left">
-                      <h2 className="text-2xl">Backend</h2>
+                      <h5 className="text-2xl">Backend</h5>
                       <img
                         src={BackendSVG}
                         className="mx-auto my-10 max-h-32"
@@ -110,7 +110,7 @@ export default function Home() {
                   </div>
                   <div className="col-span-12 md:col-span-6 lg:col-span-4">
                     <div className="bg-blue-50 px-8 py-6 shadow hover:shadow-2xl hover:bg-white hover:cursor-pointer text-black font-medium text-xl text-left">
-                      <h2 className="text-2xl">Blockchain</h2>
+                      <h3 className="text-2xl">Blockchain</h3>
                       <img
                         src={BlockchainSVG}
                         className="mx-auto my-10 max-h-32"

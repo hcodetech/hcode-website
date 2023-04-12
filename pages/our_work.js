@@ -47,9 +47,9 @@ const our_work = (props) => {
       </Head>
       {/* Hero Section */}
       <section className="new-container mx-auto text-center lg:w-1/2 ">
-        <h2 className="pt-40 text-4xl font-semibold pb-3">
+        <h1 className="pt-40 text-4xl font-semibold pb-3">
           Some of the products we've made for our client partners
-        </h2>
+        </h1>
         <h6>
           We have worked on a broad range of projects, from algorithm-heavy
           backend projects to beautiful and interactive responsive web products.

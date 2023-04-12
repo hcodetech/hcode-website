@@ -186,7 +186,7 @@ const mvp = () => {
       <section className="py-10">
         <div className=" new-container py-10 grid grid-cols-12">
           <div className="col-span-12 md:col-span-7 ">
-            <h2 className="text-4xl font-semibold pb-2">MVPs built by HCode</h2>
+            <h3 className="text-4xl font-semibold pb-2">MVPs built by HCode</h3>
             <p className="font-light text-xl mt-2">
               We have delivered these high quality complete MVP products in very
               competitive timelines for our clients.

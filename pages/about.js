@@ -23,7 +23,7 @@ function about() {
       <section className="new-container ">
         <div className="text-center font-poppins sm:w-10/12  mx-auto py-4">
           <h6 className="pt-4 pb-2 mt-16">About Us</h6>
-          <h1
+          <h3
             className="font-semibold text-3xl  md:text-5xl md:leading-tight  md:w-10/12 xl:w-4/6 mx-auto"
             dangerouslySetInnerHTML={{ __html: about_page.hero_heading }}
           />
