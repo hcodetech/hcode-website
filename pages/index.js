@@ -92,25 +92,25 @@ export default function Home() {
                   development team and we can get your team up and ready at
                   short notice.
                 </p>
-                <div className='grid grid-cols-12 gap-8 mt-10 md:w-4/5 md:mx-auto'>
-                  <div className='col-span-12 md:col-span-6 lg:col-span-4'>
-                    <div className='bg-blue-50 px-8 py-6 shadow hover:shadow-2xl hover:bg-white hover:cursor-pointer text-black font-medium text-xl text-left'>
-                      <h4 className='text-2xl'>Mobile / Webapp</h4>
-                      <img src={MobileSVG} className='mx-auto my-10 max-h-32' />
+                <div className="grid grid-cols-12 gap-8 mt-10 md:w-4/5 md:mx-auto">
+                  <div className="col-span-12 md:col-span-6 lg:col-span-4">
+                    <div className="bg-blue-50 px-8 py-6 shadow hover:shadow-2xl hover:bg-white hover:cursor-pointer text-black font-medium text-xl text-left">
+                      <h4 className="text-2xl">Mobile / Webapp</h4>
+                      <img src={MobileSVG} className="mx-auto my-10 max-h-32" />
                     </div>
                   </div>
-                  <div className='col-span-12 md:col-span-6 lg:col-span-4'>
-                    <div className='bg-blue-50 px-8 py-6 shadow hover:shadow-2xl hover:bg-white hover:cursor-pointer text-black font-medium text-xl text-left'>
-                      <h5 className='text-2xl'>Backend</h5>
+                  <div className="col-span-12 md:col-span-6 lg:col-span-4">
+                    <div className="bg-blue-50 px-8 py-6 shadow hover:shadow-2xl hover:bg-white hover:cursor-pointer text-black font-medium text-xl text-left">
+                      <h5 className="text-2xl">Backend</h5>
                       <img
                         src={BackendSVG}
                         className='mx-auto my-10 max-h-32'
                       />
                     </div>
                   </div>
-                  <div className='col-span-12 md:col-span-6 lg:col-span-4'>
-                    <div className='bg-blue-50 px-8 py-6 shadow hover:shadow-2xl hover:bg-white hover:cursor-pointer text-black font-medium text-xl text-left'>
-                      <h3 className='text-2xl'>Blockchain</h3>
+                  <div className="col-span-12 md:col-span-6 lg:col-span-4">
+                    <div className="bg-blue-50 px-8 py-6 shadow hover:shadow-2xl hover:bg-white hover:cursor-pointer text-black font-medium text-xl text-left">
+                      <h3 className="text-2xl">Blockchain</h3>
                       <img
                         src={BlockchainSVG}
                         className='mx-auto my-10 max-h-32'

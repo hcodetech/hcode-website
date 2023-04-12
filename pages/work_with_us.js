@@ -137,7 +137,9 @@ function work_with_us() {
       <section className="new-container mt-10">
         <div className="sm:mt-10">
           <h3 className="text-4xl  font-semibold font-poppins">
+          <h3 className="text-4xl  font-semibold font-poppins">
             {work_with_us_content.campus_heading}
+          </h3>
           </h3>
         </div>
         <p
@@ -151,6 +153,7 @@ function work_with_us() {
           <div className="">
             <img src={karnal} alt="Hcode Karnal Office" />
             <h5 className="text-lg font-medium py-0 text-gray-500">Karnal</h5>
+            <h5 className="text-lg font-medium py-0 text-gray-500">Karnal</h5>
           </div>
           <div className=" ">
             <img src={Delhi} alt="Hcode Delhi Office" className='w-auto' height='80px' width='75px' loading='lazy' />
@@ -158,6 +161,7 @@ function work_with_us() {
           </div>
           <div className="mt-8 sm:mt-0">
             <img src={Noida} alt="Hcode Noida Office" />
+            <h5 className="text-lg font-medium  py-2  text-gray-500">Noida</h5>
             <h5 className="text-lg font-medium  py-2  text-gray-500">Noida</h5>
           </div>
           {/* <div className="">
@@ -184,7 +188,6 @@ function work_with_us() {
       {/* What we offer */}
       <section className="new-container -mt-4">
         <h4 className="font-semibold text-5xl mt-2 mb-4">What we offer</h4>
-        <h3 className="font-semibold text-5xl mt-2 mb-4">What we offer</h3>
         <div className="grid grid-cols-12">
           {what_we_do.map((item, index) => (
             <div className="col-span-12 mb-7 md:mb-0 md:col-span-6" key={index}>
@@ -207,7 +210,7 @@ function work_with_us() {
       {/* Hiring Process */}
       <section className="new-container">
         <div className="text-center sm:w-1/2 mx-auto">
-          <h3 className="text-4xl font-semibold">Our hiring process</h3>
+          <h4 className="text-4xl font-semibold">Our hiring process</h4>
           <p className="mt-2 mb-5 font-light">
             We have a 5-step hiring process that generally takes about 2-4 weeks
             from application to offer letter.
