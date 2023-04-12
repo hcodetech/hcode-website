@@ -136,6 +136,11 @@ export default function Home() {
         <div className="new-container py-10">
           <div className="grid grid-cols-12">
             <div className="col-span-12 lg:col-span-6">
+
+              <picture>
+                <source srcSet={homepage.who_are_we.image_webp}
+                     type='image/webp'
+                     className="md:rounded-xl h-[102%] max-h-[600px] object-cover w-auto" />
               <img
                 src={homepage.who_are_we.image}
                 alt='Team of young, talented, and dynamic engineers.'
@@ -145,6 +150,10 @@ export default function Home() {
                 loading="lazy"
 
               />
+
+              </picture>
+
+           
             </div>
             <div className="lg:px-4 col-span-12 lg:col-span-6 ">
               <h3 className="text-3xl lg:text-4xl font-semibold py-2 mt-4 md:mt-0">
@@ -229,11 +238,12 @@ export default function Home() {
             Leadership Team
           </h3>
           <div className="flex-wrap flex justify-between  mt-7  mx-auto">
-            {TEAM.map(({ name, image, bio, link, title }, index) => (
+            {TEAM.map(({ name, image, bio, link, title, image_webp }, index) => (
               <Team
                 key={index}
                 name={name}
                 image={image}
+                image_webp={image_webp}
                 bio={bio}
                 link={link}
                 title={title}

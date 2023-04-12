@@ -115,6 +115,7 @@ export const work_with_us_benefits = {
 export const TEAM = [
   {
     image: '/assets/img/hcode_about_us_shweta.jpg',
+    image_webp: '/assets/img/webp-images/hcode_about_us_shweta.webp',
     name: 'Shweta Goel',
     // title: "Communication Coach",
     bio: 'Started, grown & led multiple quant teams as VP in Goldman Sachs, New York, IIT Delhi',
@@ -122,24 +123,28 @@ export const TEAM = [
   },
   {
     image: '/assets/img/hcode_about_us_shashank.jpg',
+    image_webp: '/assets/img/webp-images/hcode_about_us_shashank.webp',
     name: 'Shashank Singla',
     bio: 'Entrepreneur by trade, Engineer at heart with 2 exits in AI in US & India. Ex Goldman Sachs, IIT Delhi',
     link: 'https://www.linkedin.com/in/shashanksingla/',
   },
   {
     image: '/assets/img/hcode_about_us_rakesh.jpg',
+    image_webp: '/assets/img/webp-images/hcode_about_us_rakesh.webp',
     name: 'Rakesh Sehgal',
     bio: 'Co-founded an ad-tech platform Paytunes. Experienced in MVP building. Ex- PwC, IIT Delhi',
     link: 'https://www.linkedin.com/in/sehgalrakesh/',
   },
   {
     image: '/assets/img/hcode_about_us_rishabh.jpg',
+    image_webp: '/assets/img/webp-images/hcode_about_us_rishabh.webp',
     name: 'Rishabh Garg',
     bio: 'EM with experience of building Enterprise Applications.Ex-Siemens, NIT Durgapur',
     link: 'https://www.linkedin.com/in/rishabh-garg-77023ab6/',
   },
   {
     image: '/assets/img/hcode_about_us_harshit.jpg',
+    image_webp: '/assets/img/webp-images/hcode_about_us_harshit.webp',
     name: 'Harshit Garg',
     // title: "Communication Coach",
     bio: 'Management exec, Problem solver, led large-scale digital transformation. Ex-Godfrey & Pidilite, NITIE, NIT KKR',
@@ -338,7 +343,13 @@ export const client = [
   { img: '/assets/img/clients/shaped.jpg', alt: 'Hcode provides its services to Shaped AI' },
   { img: '/assets/img/clients/verificient.jpg', alt: 'Hcode provides its services to Verificient' },
   { img: '/assets/img/clients/wagmi.jpg', alt: 'Hcode provides its services to Wagmi Estate' },
+
+
+
+
 ];
+
+
 
 export const clients_on_hire_page = [
   { img: '/assets/img/clients/absolute.jpg', alt: 'Absolute' },
@@ -860,13 +871,14 @@ export const metaData = {
   },
 };
 
-export const homepage = {
+export const  homepage = {
   description:
     'We’re in the business of writing great code. We provide on-time delivery along with transparent communication. But we also make sure that our people have great work-life balance, meritocracy, and a healthy work environment',
   title: 'Servicing End-To-End Engineering Needs | Hcode ',
   share_image: 'https://hcode.tech/assets/img/Meta-Image.jpg',
   who_are_we: {
     image: '/assets/img/homepage_who_we_are.jpg',
+    image_webp: '/assets/img/webp-images/homepage_who_we_are.webp',
     heading: 'Who We Are?',
     paragraph:
       'We are a team of young, talented, and dynamic engineers based in a small city in India, Karnal.  Our leadership team has worked in MNCs and startups across New York, Bengaluru, and New Delhi, and ensures the same level of professionalism and work culture.',
@@ -1082,6 +1094,10 @@ export const terms_and_conditions_data = {
 export const image_slider_1 = '/assets/img/hero_image_1.jpg';
 export const image_slider_2 = '/assets/img/hero_image_2.jpg';
 export const image_slider_3 = '/assets/img/hero_image_3.jpg';
+export const image_slider_1_webp = '/assets/img/webp-images/hero_image_1.webp';
+export const image_slider_2_webp = '/assets/img/webp-images/hero_image_2.webp';
+export const image_slider_3_webp = '/assets/img/webp-images/hero_image_3.webp';
+
 export const contact_us_circle = '/assets/img/contact_circle.svg';
 export const karnalImages = [
   '/assets/img/karnal_image1.jpg',
