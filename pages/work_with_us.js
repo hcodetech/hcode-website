@@ -112,9 +112,9 @@ function work_with_us() {
       {/* Campus Overview */}
       <section className='new-container mt-10'>
         <div className='sm:mt-10'>
-          <h2 className='text-4xl  font-semibold font-poppins'>
+          <h3 className='text-4xl  font-semibold font-poppins'>
             {work_with_us_content.campus_heading}
-          </h2>
+          </h3>
         </div>
         <p
           className='mt-4 md:w-3/4 leading-snug font-light text-lg'
@@ -159,7 +159,7 @@ function work_with_us() {
       </div>
       {/* What we offer */}
       <section className='new-container -mt-4'>
-        <h3 className='font-semibold text-5xl mt-2 mb-4'>What we offer</h3>
+        <h4 className='font-semibold text-5xl mt-2 mb-4'>What we offer</h4>
         <div className='grid grid-cols-12'>
           {what_we_do.map((item, index) => (
             <div className='col-span-12 mb-7 md:mb-0 md:col-span-6' key={index}>
@@ -181,7 +181,7 @@ function work_with_us() {
       {/* Hiring Process */}
       <section className='new-container'>
         <div className='text-center sm:w-1/2 mx-auto'>
-          <h1 className='text-4xl font-semibold'>Our hiring process</h1>
+          <h4 className='text-4xl font-semibold'>Our hiring process</h4>
           <p className='mt-2 mb-5 font-light'>
             We have a 5-step hiring process that generally takes about 2-4 weeks
             from application to offer letter.
