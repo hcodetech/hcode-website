@@ -40,8 +40,14 @@ function Testimonial() {
             <Slider>
               {testimonial.map((message, index) => (
                 <Slide index={message.id} key={index}>
-                  <div className=" p-10">
+                  <div className="p-10">
                     <div className="md:flex">
+                      <picture>
+                        <source 
+                        className="rounded w-[280px] h-[320px] lg:w-[320px] lg:h-[400px] object-cover"
+                        type='image/webp'
+                        srcSet={message.profile_image_webp}
+                        />
                       <img
                         src={message.profile_image}
                         alt={message.person_name}
@@ -51,6 +57,9 @@ function Testimonial() {
                         width='300px'
                         
                       />
+
+                      </picture>
+                  
                       <div>
                         <div className="md:ml-10 mt-4 md:mt-0">
                           <h4 className="font-semibold text-2xl">
