@@ -7,10 +7,10 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - name: Use Node.js 18.x
+      - name: Use Node.js 16.x
         uses: actions/setup-node@v1
         with:
-          node-version: 18.x
+          node-version: 16.x
 
       - name: Install Dependencies
         run: yarn
@@ -26,13 +26,13 @@ jobs:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_EC2_METADATA_DISABLED: true
-       run: 
-       - aws s3 cp . s3://hcode-dev --recursive
-       - for old in *.html; do aws s3 mv s3://hcode-dev/$old s3://hcode-dev/`basename $old .html`; done
-       - cd our_services
-       - aws s3 cp . s3://hcode-dev --recursive
-       - for old in *.html; do aws s3 mv s3://hcode-dev/$old s3://hcode-dev/our_services/`basename $old .html`; done
-       - aws cloudfront create-invalidation --distribution-id E2E03LDNL94VC6 --paths "/*"
+        run: |
+          aws s3 cp . s3://hcode-dev --recursive
+          for old in *.html; do aws s3 mv s3://hcode-dev/$old s3://hcode-dev/`basename $old .html`; done
+          cd our_services
+          aws s3 cp . s3://hcode-dev --recursive
+          for old in *.html; do aws s3 mv s3://hcode-dev/$old s3://hcode-dev/our_services/`basename $old .html`; done
+          aws cloudfront create-invalidation --distribution-id E2E03LDNL94VC6 --paths "/*"
 
       # - uses: prewk/s3-cp-action@v2
       #   name: Configure AWS and Deploy

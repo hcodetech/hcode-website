@@ -6,7 +6,7 @@ function ServicesCard({ heading }) {
     <div className="">
       {heading && (
         <div className="md:w-4/5 text-center mx-auto">
-          <h1 className="text-4xl font-bold">{our_service.heading}</h1>
+          <h2 className="text-4xl font-bold">{our_service.heading}</h2>
           <p className="pb-5 md:text-lg leading-normal font-light mt-4 md:w-4/5 mx-auto">
             {our_service.paragraph}
           </p>

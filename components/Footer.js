@@ -101,7 +101,7 @@ function Footer() {
         </div>
         <div className="py-4 md:flex  md:justify-around border-t md:ml-[25%] xl:ml-[23%]">
           <div className="px-4 sm:w-1/2 md:w-[22%] xl:w-1/6 mt-8 md:mt-3">
-            <h5 className="font-bold  text-md mb-3  ">Quick Links</h5>
+            <h5 className="font-bold  text-md mb-3">Quick Links</h5>
             <ul className="list-none footer-links">
               <li className="mb-2">
                 <a

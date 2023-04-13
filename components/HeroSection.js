@@ -41,11 +41,11 @@ function HeroSection() {
             <div className='relative'>
               <div className='absolute h-screen w-screen'>
                 <div className='centered text-white  text-center w-80 md:w-1/2 '>
-                  <h1 className='text-3xl md:text-5xl lg:leading-tight  font-bold  mx-auto text-white  '>
+                  <h2 className='text-3xl md:text-5xl lg:leading-tight  font-bold  mx-auto text-white  '>
                     End-To-End
                     <br />
                     Engineering Services
-                  </h1>
+                  </h2>
                   <p className='text-xl font-normal opacity-90 mt-4 '>
                     When you partner with us, you get our team of developers
                     acting as your engineering team. They take care of your
@@ -77,10 +77,10 @@ function HeroSection() {
             <div className='relative'>
               <div className='absolute h-screen w-screen'>
                 <div className='centered text-white  text-center w-80 md:w-1/2'>
-                  <h1 className='text-3xl lg:text-5xl lg:leading-tight  font-bold  mx-auto text-white   '>
+                  <h3 className='text-3xl lg:text-5xl lg:leading-tight  font-bold  mx-auto text-white   '>
                     Hire Top Talent as
                     <br /> Your Offshore Team
-                  </h1>
+                  </h3>
                   <p className='text-xl font-normal opacity-90 mt-3 '>
                     You can rely on us for great quality of code written by
                     responsible and driven developers, trained for such
@@ -108,10 +108,10 @@ function HeroSection() {
             <div className='relative'>
               <div className='absolute h-screen w-screen'>
                 <div className='centered text-white  text-center  w-80 md:w-1/2'>
-                  <h1 className='text-3xl lg:text-5xl lg:leading-tight  font-bold  mx-auto text-white  '>
+                  <h3 className='text-3xl lg:text-5xl lg:leading-tight  font-bold  mx-auto text-white  '>
                     We Focus on your Tech
                     <br /> So you can Focus on Business
-                  </h1>
+                  </h3>
                   <p className='text-xl font-normal opacity-90 mt-3 '>
                     Maximize your RoI by hiring our team of young and passionate
                     developers who deliver value to your business by improving
