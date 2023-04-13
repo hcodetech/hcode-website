@@ -69,7 +69,7 @@ function team_as_a_service() {
             <button className="px-4 py-2 rounded-full bg-purple-800 text-white cursor-default mb-5 ">
               {tass.startup.tag}
             </button>
-            <h3 className="text-2xl font-semibold">
+            <h2 className="text-2xl font-semibold">
               {tass.startup.main_heading}
             </h3>
             <ul className="list-outside list-disc text-sm px-4 py-2">
