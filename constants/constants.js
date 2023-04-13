@@ -1386,6 +1386,14 @@ export const technologies_page = {
 export const testimonial = [
   {
     id: '1',
+    profile_image: '../assets/img/client_image/tyler.png',
+    person_name: 'Tyler Stambaugh',
+    company_name: 'COO, Magnetiq',
+    testimonial_paragraph:
+      `I completed a platform build for my company MAGNETIQ with HCode and I must say, I'm thoroughly impressed with the output. They provided exceptional developer services and exceeded my expectations in every way possible. <br/><br/> Their team of developers are not only highly skilled in front-end, back-end, and blockchain development, but also incredibly creative and collaborative.  Their level of professionalism, attention to detail, and dedication to quality is truly unmatched. I would highly recommend HCode to anyone looking for reliable and expert developer services. They have truly proven themselves to be a leader in their field.`,
+  },
+  {
+    id: '1',
     profile_image: '../assets/img/client_image/Gregory_Correll.png',
     person_name: 'Gregory Correll',
     company_name: 'Technical Project Manager, Parmount Capital Group',
