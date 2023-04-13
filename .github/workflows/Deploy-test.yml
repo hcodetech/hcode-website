@@ -3,7 +3,7 @@ on: [workflow_dispatch]
 jobs:
   build-cmd:
     runs-on: ubuntu-latest
-    environment: Dev
+    environment: Prod
 
     steps:
       - uses: actions/checkout@v2
