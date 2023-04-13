@@ -1389,10 +1389,11 @@ export const testimonial = [
     profile_image: '../assets/img/client_image/tyler.png',
     person_name: 'Tyler Stambaugh',
     company_name: 'COO, Magnetiq',
-    testimonial_paragraph: `I recently completed a platform build for my company MAGNETIQ with HCode and I must say, I'm thoroughly impressed with the output. They provided exceptional developer services and exceeded my expectations in every way possible. <br/><br/> Their team of developers are not only highly skilled in front-end, back-end, and blockchain development, but also incredibly creative and collaborative.  Their level of professionalism, attention to detail, and dedication to quality is truly unmatched. I would highly recommend HCode to anyone looking for reliable and expert developer services. They have truly proven themselves to be a leader in their field.`,
+    testimonial_paragraph:
+      `I completed a platform build for my company MAGNETIQ with HCode and I must say, I'm thoroughly impressed with the output. They provided exceptional developer services and exceeded my expectations in every way possible. <br/><br/> Their team of developers are not only highly skilled in front-end, back-end, and blockchain development, but also incredibly creative and collaborative.  Their level of professionalism, attention to detail, and dedication to quality is truly unmatched. I would highly recommend HCode to anyone looking for reliable and expert developer services. They have truly proven themselves to be a leader in their field.`,
   },
   {
-    id: '1',
+    id: '2',
     profile_image: '../assets/img/client_image/Gregory_Correll.png',
     person_name: 'Gregory Correll',
     company_name: 'Technical Project Manager, Parmount Capital Group',
@@ -1400,7 +1401,7 @@ export const testimonial = [
       'As a technology manager with over 25 years of experience, I cannot think of a better partnership that I’ve had over the years.  Not only are Shashank and his teams are immensely qualified across a wide range of disciplines as well as attentive and disciplined in their approach to solutions, but they have also proven they can rapidly adjust to a constantly changing set of directives with ease.<br/><br/>They were ready to work on day 1, and by day 2 had already surpassed my initial expectations.  In only a few months’ time, they carefully crafted a complete internal self-service portal for both our employees and clients which will eventually be the backbone of our entire firm.  I’m looking forward to a long and healthy relationship!!',
   },
   {
-    id: '2',
+    id: '3',
     profile_image: '../assets/img/client_image/alex_chumbley.jpg',
     person_name: 'Alex Chumbley',
     company_name: ' Co-founder at Fable (YC W21)',
@@ -1408,7 +1409,7 @@ export const testimonial = [
       "HCode has a been a fantastic partner through the product development journey. The management team is quick and responsive, and always looking for feedback on how to improve. The team itself brings deep engineering experience to bear, and a willingness to pivot and change with priorities. We definitely recommend this team if you're looking to build quality product, quickly.",
   },
   {
-    id: '3',
+    id: '4',
     profile_image: '../assets/img/client_image/naam_lee.png',
     person_name: 'Nam Le',
     company_name: 'CEO, Pollinate Inc.',
@@ -1416,7 +1417,7 @@ export const testimonial = [
       " The quality of the Hcode's work and communication is superb, and they feel like our internal engineering team. When it comes to hitting our development and company milestones, their team is there to deliver from day 1. They have been fantastic partners for us and we look forward to growing with the Hcode team.",
   },
   {
-    id: '4',
+    id: '5',
     profile_image: '../assets/img/client_image/tatina.jpg',
     person_name: 'Tatiana Tian',
     company_name: ' Co-founder & CEO at RE(SOURCE) ',
@@ -1424,7 +1425,7 @@ export const testimonial = [
       'What I value the most about HCode is their startup mindset on agile testing. As a pre-seed startup that’s still looking for product market fit, it’s critical to have a technical partner who understands that speed is everything. HCode understood our use case which required quick iterations and quickly put together multiple versions of the product for us to test in the market. Their honesty and flexibility to deliver with our tight guidelines were greatly appreciated. We compared more than 30 teams across India, Europe and South America, and decided to proceed with HCode at the end.',
   },
   {
-    id: '5',
+    id: '6',
     profile_image: '../assets/img/client_image/Suyash_Kothari.png',
     person_name: 'Suyash Kothari',
     company_name: 'Co-Founder, Ohana',
@@ -1433,7 +1434,7 @@ export const testimonial = [
   },
 
   {
-    id: '6',
+    id: '7',
     profile_image: '../assets/img/client_image/mohit_metha.png',
     person_name: 'Mohit Mehta',
     company_name: 'Co-Founder, Indira New York',
