@@ -82,9 +82,9 @@ export default function Home() {
           <div className="bg-primary ">
             <div className="text-white bg-serviceIllustration bg-left-bottom bg-no-repeat w-full bg-contain ">
               <div className="new-container text-center pt-32 -mt-20 pb-24 md:pb-24 md:pt-52 md:-mt-32">
-                <h1 className="text-4xl font-semibold w-4/5 md:mx-auto text-left md:text-center md:w-full">
+                <h2 className="text-4xl font-semibold w-4/5 md:mx-auto text-left md:text-center md:w-full">
                   What can we do for you ?
-                </h1>
+                </h2>
                 <p className="text-left md:text-center md:w-4/5 md:mx-auto font-light mt-3 opacity-80">
                   Are you a startup or an enterprise looking to set up/augment
                   your tech team? If yes, we have the right solution tailored
@@ -95,13 +95,13 @@ export default function Home() {
                 <div className="grid grid-cols-12 gap-8 mt-10 md:w-4/5 md:mx-auto">
                   <div className="col-span-12 md:col-span-6 lg:col-span-4">
                     <div className="bg-blue-50 px-8 py-6 shadow hover:shadow-2xl hover:bg-white hover:cursor-pointer text-black font-medium text-xl text-left">
-                      <h2 className="text-2xl">Mobile / Webapp</h2>
+                      <h4 className="text-2xl">Mobile / Webapp</h4>
                       <img src={MobileSVG} className="mx-auto my-10 max-h-32" />
                     </div>
                   </div>
                   <div className="col-span-12 md:col-span-6 lg:col-span-4">
                     <div className="bg-blue-50 px-8 py-6 shadow hover:shadow-2xl hover:bg-white hover:cursor-pointer text-black font-medium text-xl text-left">
-                      <h2 className="text-2xl">Backend</h2>
+                      <h5 className="text-2xl">Backend</h5>
                       <img
                         src={BackendSVG}
                         className="mx-auto my-10 max-h-32"
@@ -110,7 +110,7 @@ export default function Home() {
                   </div>
                   <div className="col-span-12 md:col-span-6 lg:col-span-4">
                     <div className="bg-blue-50 px-8 py-6 shadow hover:shadow-2xl hover:bg-white hover:cursor-pointer text-black font-medium text-xl text-left">
-                      <h2 className="text-2xl">Blockchain</h2>
+                      <h3 className="text-2xl">Blockchain</h3>
                       <img
                         src={BlockchainSVG}
                         className="mx-auto my-10 max-h-32"
@@ -143,9 +143,9 @@ export default function Home() {
               />
             </div>
             <div className="lg:px-4 col-span-12 lg:col-span-6 ">
-              <h1 className="text-3xl lg:text-4xl font-semibold py-2 mt-4 md:mt-0">
+              <h3 className="text-3xl lg:text-4xl font-semibold py-2 mt-4 md:mt-0">
                 {homepage.who_are_we.heading}
-              </h1>
+              </h3>
               <div className="py-2 lg:py-5">
                 <p className="lg:text-lg break-words">
                   {homepage.who_are_we.paragraph}
@@ -156,9 +156,9 @@ export default function Home() {
                 </p>
               </div>
               <div className="">
-                <h3 className="text-xl font-semibold">
+                <h4 className="text-xl font-semibold">
                   {homepage.who_are_we.clients.heading}
-                </h3>
+                </h4>
                 <Client data={city} heading={true} />
               </div>
               <a
@@ -221,9 +221,9 @@ export default function Home() {
       {/* Core Team  */}
       <section id="our_core_team" className="py-14 bg-gray-100 text-center">
         <div className="lg:new-container">
-          <h1 className="font-poppins text-center font-semibold text-3xl  md:text-4xl md:leading-tight">
+          <h3 className="font-poppins text-center font-semibold text-3xl  md:text-4xl md:leading-tight">
             Leadership Team
-          </h1>
+          </h3>
           <div className="flex-wrap flex justify-between  mt-7  mx-auto">
             {TEAM.map(({ name, image, bio, link, title }, index) => (
               <Team

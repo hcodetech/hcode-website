@@ -19,7 +19,7 @@ const CardPortfolio = (props) => {
       >
         <div className="col-span-12 order-2 lg:order-1 lg:col-span-6 p-8 md:p-10 flex flex-col ">
           {/* <img src={cardData.logo_image} alt={cardData.name} className="mb-7" /> */}
-          <h1 className="text-4xl mt-2 font-bold mb-3">{cardData.name}</h1>
+          <h2 className="text-4xl mt-2 font-bold mb-3">{cardData.name}</h2>
           <div className="flex flex-wrap mb-3">
             {cardData.category.slice(0, 3).map((industry) => (
               <div
