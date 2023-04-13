@@ -71,7 +71,7 @@ function team_as_a_service() {
             </button>
             <h2 className="text-2xl font-semibold">
               {tass.startup.main_heading}
-            </h3>
+            </h2>
             <ul className="list-outside list-disc text-sm px-4 py-2">
               {tass.startup.points.map((point, index) => (
                 <li key={index}>{point}</li>
