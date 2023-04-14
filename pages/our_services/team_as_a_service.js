@@ -34,7 +34,9 @@ function team_as_a_service() {
         <p className="new-container md:w-9/12  text-base mx-auto mt-3 font-light leading-normal">
           {tass.hero_paragraph}
         </p>
-        <img
+        <picture>
+          <source type='image/webp' srcSet={tass.hero_image_webp} />
+          <img
           src={tass.hero_image}
           alt={tass.hero_heading}
           className="w-screen my-10"
@@ -42,6 +44,9 @@ function team_as_a_service() {
           height='100%'
           width='100%'
         />
+
+        </picture>
+      
       </section>
 
       {/* Clients */}
