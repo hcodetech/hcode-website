@@ -17,6 +17,7 @@ import {
   remote,
   TEAM,
   thailand_trip,
+  thailand_trip_webp,
   what_we_do,
   work_with_us_1,
   work_with_us_benefits,
@@ -94,7 +95,11 @@ function work_with_us() {
               />
             </div>{' '}
             <div className="col-span-6 w-full -mt-24 hidden md:block">
-              <img
+              <picture>
+                <source srcSet={thailand_trip_webp}
+                     media="(min-width:250px)"
+                     type='image/webp'  />
+                           <img
                 src={thailand_trip}
                 layout="fill"
                 loading='lazy'
@@ -104,6 +109,10 @@ function work_with_us() {
 
                 className="rounded-lg object-cover shadow-md md:hover:scale-105 transition-all duration-100 ease-out max-h-[200px] w-full object-bottom"
               />
+
+              </picture>
+
+        
             </div>
           </div>
         </div>
@@ -238,17 +247,23 @@ function work_with_us() {
       >
         <div className="relative mb-10 pt-10 md:pt-20 shadow-lg">
           <Slider>
-            {karnalImages.map((image, idx) => (
-              <Slide index={idx} key={image + idx}>
+            {karnalImages.map((item, idx) => (
+              <Slide index={idx} key={item.img + idx}>
                 <div className="relative">
-                  <img
-                    src={image}
+                  <picture>
+                    <source srcSet={item.img_webp} type='image/webp'
+                     media="(min-width:250px)"
+                     />
+                          <img
+                    src={item.img}
                     alt="Karnal city"
                     className="md:h-[700px] w-screen object-cover "
                     width='100%'
                     height='100%'
                     loading='lazy'
                   />
+                  </picture>
+             
                 </div>
               </Slide>
             ))}

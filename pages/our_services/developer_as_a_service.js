@@ -34,14 +34,19 @@ function developer_as_a_service() {
         <p className="new-container md:w-9/12  text-base mx-auto mt-3 font-light leading-normal">
           {dass.hero_paragraph}
         </p>
-        <img
-          src={dass.hero_image}
-          alt={dass.hero_heading}
-          className="w-screen my-10"
-          width="100%"
-          height="100%"
-          loading="lazy"
-        />
+
+        <picture>
+          <source type="image/webp" srcSet={dass.hero_image_webp} />
+
+          <img
+            src={dass.hero_image}
+            alt={dass.hero_heading}
+            className="w-screen my-10"
+            width="100%"
+            height="100%"
+            loading="lazy"
+          />
+        </picture>
       </section>
 
       {/* Clients */}
@@ -51,7 +56,7 @@ function developer_as_a_service() {
 
       {/* Who is it for ? */}
       <section className="new-container mt-6">
-        <h3 className="text-3xl md:text-4xl font-semibold text-center ">
+        {/* <h3 className="text-3xl md:text-4xl font-semibold text-center "> */}
         <h2 className="text-3xl md:text-4xl font-semibold text-center ">
           {dass.who_is_it_for}
         </h2>
@@ -59,7 +64,7 @@ function developer_as_a_service() {
           {dass.who_is_it_for_paragraph}
           <br />
           (Don’t think you’ve the right tech skillsets to manage this? Check out
-          our{' '}
+          our
           <a href="/our_services/team_as_a_service" className="text-primary">
             Team-as-a-Service
           </a>{' '}

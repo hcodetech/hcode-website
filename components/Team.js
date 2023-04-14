@@ -4,9 +4,10 @@ function Team({ name, image, image_webp, bio, link, title }) {
     <div className="mb-5 w-[227px] mx-auto">
       <div className="relative   mb-2">
         <picture>
-          <source className="object-cover md:h-[248px] w-[227px]" 
+          <source 
           type="image/webp"
           srcSet={image_webp} 
+          media="(min-width:250px)"
           />
         <img
           className="object-cover md:h-[248px] w-[227px]"
