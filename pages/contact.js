@@ -183,8 +183,21 @@ function contact() {
         {/* Form Start Here */}
         <div className="px-4 py-8 md:p-10 col-span-12 md:col-span-8">
           <h1 className="text-4xl font-semibold pb-5">
-            Please enter the details{" "}
+            Please enter the details
           </h1>
+
+          {/* Schedule a call with Rakesh Seghal */}
+          <div className="flex gap-3 items-center border rounded-lg p-4 mb-10">
+            <img className="w-20 h-20 rounded-full" src='/assets/img/hcode_about_us_rakesh.jpg' alt='Chief Operating Officer | HCode Technologies' />
+            <div>
+              <h5 className="text-xl font-bold">Schedule a 15min call with Rakesh Seghal</h5>
+              <p className="text-gray-800 pt-1">Chief Operating Officer | HCode Technologies</p>
+            </div>
+         <a target="_blank" href='https://calendly.com/rakesh-sehgal/15min?month=2023-05&date=2023-04-19' className="primary-outline ml-auto">Schedule</a>
+
+
+          </div>
+
           <form autoComplete="off" onSubmit={contactUser}>
             <div className="grid grid-cols-12 gap-6">
               {/* Full Name */}

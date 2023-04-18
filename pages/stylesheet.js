@@ -28,7 +28,10 @@ const stylesheet = () => {
       <div className="bg-[#FBFBFB]"></div>
       <div className="bg-[#0758A7] text-[#E5C837]"></div>
       <div className="bg-[#4D8FC9] "></div>
-
+      <div className="bg-[#C0EDDE] "></div>
+      <div className="bg-[#FCF2CB] "></div>
+      <div className="bg-[#383838] "></div>
+      <div className="bg-[#85CB33] "></div>
     </div>
   );
 };
