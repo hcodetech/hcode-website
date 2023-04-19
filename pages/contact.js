@@ -2,12 +2,11 @@ import {
   LocationMarkerIcon,
   PhoneIcon,
   ChatAltIcon,
+  VideoCameraIcon
+
 } from "@heroicons/react/solid";
 import Head from "next/head";
-import {
- 
-  VideoCameraIcon
-} from "@heroicons/react/outline";
+
 
 
 import { useState } from "react";
@@ -193,9 +192,13 @@ function contact() {
 
           {/* Schedule a call with Rakesh Seghal */}
           <div className="flex gap-3 items-center border rounded-lg p-4 mb-10 bg-blue-50">
-            <VideoCameraIcon className="w-8 h-8 text-black" />
+            <div className="bg-white p-3 sm:p-5 rounded-full">
+            <VideoCameraIcon className="sm:w-8 sm:h-8 h-6 w-6 text-primary" />
+
+
+            </div>
             <div>
-              <h5 className="text-xl">Schedule a brief call.</h5>
+              <h5 className="text-base sm:text-2xl font-semibold">Schedule a brief call</h5>
             </div>
          <a target="_blank" href='https://calendly.com/rakesh-sehgal/15min?month=2023-05&date=2023-04-19' className="primary-outline ml-auto">Schedule</a>
 
