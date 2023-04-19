@@ -77,7 +77,9 @@ function developer_as_a_service() {
               {dass.startup.tag}
             </button>
             <h3 className="text-2xl font-semibold ">
+            <h3 className="text-2xl font-semibold ">
               {dass.startup.secondary_heading}
+            </h3>
             </h3>
             <ul className="list-outside list-disc text-sm px-4 py-2">
               {dass.startup.points.map((point, index) => (

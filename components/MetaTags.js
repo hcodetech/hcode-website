@@ -5,8 +5,20 @@ const MetaTags = ({ page }) => {
     <>
       <meta
         name="keywords"
-        content="Software, Development Studio, Development, Engineer, Mobile Apps, Web Apps, Software Company, Hcode, Pollen Studio, Website Development Company, Website Development Company, 
-        Best Web Design Company, Website Designing, Website Development, SEO, Software Development, Web Hosting, Web designing, web designing company,web designing company, Website designing company,Website designing,web designers,SEO,Web design and development,Website development,Good Web design,ecommerce web site development,best web design,web application development,web development company,web site development company,business web site development,web site development services,web page development,web ecommerce development,web development india,Professional web development,Website design company,Web development company,Web site development India,Affordable web development
+        content="
+        Custom Software Development Services , 
+         Web Development Company   , 
+         Mobile App Development Company,
+         MERN Stack Development Services,    
+         React Development Services,
+        Python Development Services , 
+        Java Development Services ,   
+        Agile Software Development , 
+        Full-stack Development Services,    
+        UX/UI Design Services ,   
+        Blockchain Development Services,    
+        Technology Consulting Services,    
+        Best Practices in Software Development,
         "
       />
       <link rel="canonical" href={page.url} />

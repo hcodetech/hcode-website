@@ -137,7 +137,9 @@ function work_with_us() {
       <section className="new-container mt-10">
         <div className="sm:mt-10">
           <h3 className="text-4xl  font-semibold font-poppins">
+          <h3 className="text-4xl  font-semibold font-poppins">
             {work_with_us_content.campus_heading}
+          </h3>
           </h3>
         </div>
         <p
@@ -291,7 +293,9 @@ function work_with_us() {
       <section className="pt-10 md:pt-20  text-center">
         <div className="lg:new-container">
           <h3 className="font-poppins text-center font-semibold text-3xl  md:text-4xl md:leading-tight">
+          <h3 className="font-poppins text-center font-semibold text-3xl  md:text-4xl md:leading-tight">
             Our Mentors
+          </h3>
           </h3>
           <p className="px-10 md:px-0 md:w-3/4 mx-auto mt-2">
             Learning & Development is an important part of the culture at HCode.
@@ -333,7 +337,9 @@ function work_with_us() {
           />
           <div className="my-4 md:my-auto md:w-4/5 ml-3">
             <h2 className="text-3xl md:text-4xl font-semibold">
+            <h2 className="text-3xl md:text-4xl font-semibold">
               Connect with the HR
+            </h2>
             </h2>
             <p className="text-base md:text-lg mt-2 mb-8">
               Are you a Candidate exploring working options with us or a
