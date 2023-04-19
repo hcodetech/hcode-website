@@ -16,6 +16,9 @@ function Footer() {
                 src={hcode_footer}
                 alt="Hcode Technologies"
                 className="w-40 mb-3 "
+                width='150px'
+                height='100px'
+                loading='lazy'
               />
               <p className="text-sm">
                 Agile, Predictable, Outcome
@@ -32,6 +35,9 @@ function Footer() {
                   src={linkedin_icon}
                   className="rounded-full w-10 h-10 p-2 hover:bg-blue-200  bg-gray-200 "
                   alt="https://www.linkedin.com/company/hcodetech/"
+                  width='15px'
+                  height='15px'
+                  loading='lazy'
                 />
               </a>
               <a href="https://twitter.com/HcodeTech" target="_blank">
@@ -39,6 +45,9 @@ function Footer() {
                   src={twitter_icon}
                   className="rounded-full w-10 h-10 p-2 hover:bg-blue-200  ml-4 bg-gray-200 "
                   alt="https://twitter.com/HcodeTech"
+                  width='15px'
+                  height='15px'
+                  loading='lazy'
                 />
               </a>
             </div>

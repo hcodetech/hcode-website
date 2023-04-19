@@ -1,22 +1,22 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
 import {
   client,
   faq_services,
   metaData,
   tass,
   tass_benefits,
-} from "../../constants/constants";
-import Client from "../../components/Client";
-import { ArrowRightIcon } from "@heroicons/react/solid";
-import Head from "next/head";
-import Benefits from "../../components/Benefits";
-import Accordion from "../../components/Accordion";
-import CTA from "../../components/CTA";
-import TechStack from "../../components/TechStack";
-import MetaTags from "../../components/MetaTags";
+} from '../../constants/constants';
+import Client from '../../components/Client';
+import { ArrowRightIcon } from '@heroicons/react/solid';
+import Head from 'next/head';
+import Benefits from '../../components/Benefits';
+import Accordion from '../../components/Accordion';
+import CTA from '../../components/CTA';
+import TechStack from '../../components/TechStack';
+import MetaTags from '../../components/MetaTags';
 
 function team_as_a_service() {
-  const [isDesktop, setIsDesktop] = useState("");
+  const [isDesktop, setIsDesktop] = useState('');
   useEffect(() => {
     window.innerWidth <= 750 ? setIsDesktop(false) : setIsDesktop(true);
   });
@@ -34,11 +34,19 @@ function team_as_a_service() {
         <p className="new-container md:w-9/12  text-base mx-auto mt-3 font-light leading-normal">
           {tass.hero_paragraph}
         </p>
-        <img
+        <picture>
+          <source type='image/webp' srcSet={tass.hero_image_webp} />
+          <img
           src={tass.hero_image}
           alt={tass.hero_heading}
           className="w-screen my-10"
+          loading="lazy"
+          height='100%'
+          width='100%'
         />
+
+        </picture>
+      
       </section>
 
       {/* Clients */}
@@ -54,13 +62,13 @@ function team_as_a_service() {
         <p className="md:w-4/6 mx-auto mt-3 font-light leading-normal text-center ">
           {tass.who_is_it_for_paragraph}
           <br />
-          (Looking to hire 1 or 2 developers? please check out our{" "}
+          (Looking to hire 1 or 2 developers? please check out our{' '}
           <a
             href="/our_services/developer_as_a_service"
             className="text-primary"
           >
             Developer-as-a-Service
-          </a>{" "}
+          </a>{' '}
           model)
         </p>
         <div className="grid md:grid-cols-2 gap-4 mt-8">
@@ -69,9 +77,9 @@ function team_as_a_service() {
             <button className="px-4 py-2 rounded-full bg-purple-800 text-white cursor-default mb-5 ">
               {tass.startup.tag}
             </button>
-            <h2 className="text-2xl font-semibold">
+            <h3 className="text-2xl font-semibold">
               {tass.startup.main_heading}
-            </h2>
+            </h3>
             <ul className="list-outside list-disc text-sm px-4 py-2">
               {tass.startup.points.map((point, index) => (
                 <li key={index}>{point}</li>

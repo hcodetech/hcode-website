@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import ServicesCard from "../../components/ServicesCard";
 import {
   our_services_hero,
+  our_services_hero_webp,
   our_services_data,
   faq_services,
   client,
@@ -45,11 +46,21 @@ function our_services() {
             </p>
           </div>
           <div className="relative  md:mt-8 ">
-            <img
+            <picture>
+              <source type="image/webp"
+              srcSet={our_services_hero_webp} />
+              <img
               className="object-cover w-screen md:h-[580px] h-[300px]"
               src={our_services_hero}
               layout="fill"
+              loading="lazy"
+              height='580px'
+              width='100%'
+              alt='Top tech talent'
             />
+
+            </picture>
+           
           </div>
         </div>
       </section>

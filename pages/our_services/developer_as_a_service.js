@@ -27,93 +27,102 @@ function developer_as_a_service() {
         <MetaTags page={metaData.developer_as_a_service} />
       </Head>
       {/* Hero Section */}
-      <section className='text-center '>
-        <h1 className='new-container pt-32 font-semibold text-3xl md:text-4xl  '>
+      <section className="text-center ">
+        <h1 className="new-container pt-32 font-semibold text-3xl md:text-4xl  ">
           {dass.hero_heading}
         </h1>
-        <p className='new-container md:w-9/12  text-base mx-auto mt-3 font-light leading-normal'>
+        <p className="new-container md:w-9/12  text-base mx-auto mt-3 font-light leading-normal">
           {dass.hero_paragraph}
         </p>
-        <img
-          src={dass.hero_image}
-          alt={dass.hero_heading}
-          className='w-screen my-10'
-        />
+
+        <picture>
+          <source type="image/webp" srcSet={dass.hero_image_webp} />
+
+          <img
+            src={dass.hero_image}
+            alt={dass.hero_heading}
+            className="w-screen my-10"
+            width="100%"
+            height="100%"
+            loading="lazy"
+          />
+        </picture>
       </section>
 
       {/* Clients */}
-      <section className='new-container'>
+      <section className="new-container">
         <Client data={client} slides={isDesktop} />
       </section>
 
       {/* Who is it for ? */}
-      <section className='new-container mt-6'>
-        <h3 className='text-3xl md:text-4xl font-semibold text-center '>
+      <section className="new-container mt-6">
+        {/* <h3 className="text-3xl md:text-4xl font-semibold text-center "> */}
+        <h2 className="text-3xl md:text-4xl font-semibold text-center ">
           {dass.who_is_it_for}
-        </h3>
-        <p className='md:w-4/6 mx-auto mt-3 font-light leading-normal text-center '>
+        </h2>
+        <p className="md:w-4/6 mx-auto mt-3 font-light leading-normal text-center ">
           {dass.who_is_it_for_paragraph}
           <br />
           (Don’t think you’ve the right tech skillsets to manage this? Check out
-          our{' '}
-          <a href='/our_services/team_as_a_service' className='text-primary'>
+          our
+          <a href="/our_services/team_as_a_service" className="text-primary">
             Team-as-a-Service
           </a>{' '}
           model)
         </p>
-        <div className='grid md:grid-cols-2 gap-4 mt-8'>
+        <div className="grid md:grid-cols-2 gap-4 mt-8">
           {/* Startup */}
-          <div className='p-8 bg-gradient-to-br  from-purple-200 to-white '>
-            <button className='px-4 py-2 rounded-full bg-purple-800 text-white cursor-default mb-5 '>
+          <div className="p-8 bg-gradient-to-br  from-purple-200 to-white ">
+            <button className="px-4 py-2 rounded-full bg-purple-800 text-white cursor-default mb-5 ">
               {dass.startup.tag}
             </button>
-            <h3 className='text-2xl font-semibold '>
+            <h3 className="text-2xl font-semibold ">
               {dass.startup.secondary_heading}
             </h3>
-            <ul className='list-outside list-disc text-sm px-4 py-2'>
+            <ul className="list-outside list-disc text-sm px-4 py-2">
               {dass.startup.points.map((point, index) => (
                 <li key={index} dangerouslySetInnerHTML={{ __html: point }} />
               ))}
             </ul>
             <a
-              href='/contact'
-              className='pt-3 pb-1 border-b border-purple-600 inline-flex text-purple-600 hover:scale-100  cursor-pointer '
+              href="/contact"
+              className="pt-3 pb-1 border-b border-purple-600 inline-flex text-purple-600 hover:scale-100  cursor-pointer "
             >
               Get Started
-              <ArrowRightIcon className='w-6 ml-2 ' />
+              <ArrowRightIcon className="w-6 ml-2 " />
             </a>
           </div>
           {/* Enterprise */}
-          <div className='p-8 bg-gradient-to-br  from-blue-200 to-white '>
-            <button className='px-4 py-2 rounded-full bg-primary text-white cursor-default mb-5 '>
+          <div className="p-8 bg-gradient-to-br  from-blue-200 to-white ">
+            <button className="px-4 py-2 rounded-full bg-primary text-white cursor-default mb-5 ">
               {dass.enterprise.tag}
             </button>
-            <h4 className='text-2xl font-semibold '>
+            <h4 className="text-2xl font-semibold ">
               {dass.enterprise.secondary_heading}
             </h4>
-            <ul className='list-outside list-disc text-sm px-4 py-2'>
+            <ul className="list-outside list-disc text-sm px-4 py-2">
               {dass.enterprise.points.map((point, index) => (
                 <li key={index} dangerouslySetInnerHTML={{ __html: point }} />
               ))}
             </ul>
             <a
-              href='/contact'
-              className='pt-3 pb-1 border-b border-blue-600 inline-flex text-blue-600 hover:scale-100  cursor-pointer '
+              href="/contact"
+              className="pt-3 pb-1 border-b border-blue-600 inline-flex text-blue-600 hover:scale-100  cursor-pointer "
             >
               Get Started
-              <ArrowRightIcon className='w-6 ml-2 ' />
+              <ArrowRightIcon className="w-6 ml-2 " />
             </a>
           </div>
         </div>
         {/* Get Started CTA */}
-        <div className='p-8 bg-gradient-to-br  from-green-200 to-white text-center mt-8 '>
-          <div className='mb-6'>
-            <h2 className='text-3xl font-semibold mb-2'>{dass.cta.heading}</h2>
-            <p className='font-light'>{dass.cta.main_paragraph}</p>
+        <div className="p-8 bg-gradient-to-br  from-green-200 to-white text-center mt-8 ">
+          <div className="mb-6">
+            <h2 className="text-3xl font-semibold mb-2">{dass.cta.heading}</h2>
+            <p className="font-light">{dass.cta.main_paragraph}</p>
           </div>
           <a
-            href='/contact'
-            className='text-white py-4 px-10 rounded-md  bg-green-600'
+            href="/contact"
+            className="text-white py-4 px-10 rounded-md  bg-green-600"
           >
             Contact Us
           </a>
@@ -121,15 +130,15 @@ function developer_as_a_service() {
       </section>
 
       {/* What makes it a great choice */}
-      <section className='new-container mt-10'>
+      <section className="new-container mt-10">
         <Benefits data={dass_benefits} />
-        <div className='text-center mb-10'>
+        <div className="text-center mb-10">
           <a
-            href='/contact'
-            className=' pb-1  border-b border-primary inline-flex text-primary hover:scale-100  cursor-pointer hover:opacity-100'
+            href="/contact"
+            className=" pb-1  border-b border-primary inline-flex text-primary hover:scale-100  cursor-pointer hover:opacity-100"
           >
             Request Consultation
-            <ArrowRightIcon className='w-6 ml-2 ' />
+            <ArrowRightIcon className="w-6 ml-2 " />
           </a>
         </div>
       </section>
@@ -141,7 +150,7 @@ function developer_as_a_service() {
       </section>
 
       {/* Cta */}
-      <section className='my-10'>
+      <section className="my-10">
         <CTA />
       </section>
     </>

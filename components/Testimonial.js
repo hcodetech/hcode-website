@@ -19,7 +19,7 @@ import {
 function Testimonial() {
   return (
     <>
-      <h2 className="text-3xl font-semibold text-center pb-2 capitalize">
+      <h2 className='text-3xl font-semibold text-center pb-2 capitalize'>
         What Clients say about us
       </h2>
       <CarouselProvider
@@ -33,30 +33,41 @@ function Testimonial() {
         interval={10000}
         isPlaying
         lockOnWindowScroll
-        playDirection="forward"
+        playDirection='forward'
       >
-        <div className="relative">
-          <div className="new-container  pt-6 pb-2">
+        <div className='relative'>
+          <div className='new-container  pt-6 pb-2'>
             <Slider>
               {testimonial.map((message, index) => (
                 <Slide index={message.id} key={index}>
-                  <div className=" p-10">
-                    <div className="md:flex">
-                      <img
-                        src={message.profile_image}
-                        alt={message.person_name}
-                        className="rounded w-[280px] h-[320px] lg:w-[320px] lg:h-[400px] object-cover"
-                      />
+                  <div className='p-10'>
+                    <div className='md:flex'>
+                      <picture>
+                        <source
+                          type='image/webp'
+                          srcSet={message.profile_image_webp}
+                          media='(min-width:250px)'
+                        />
+                        <img
+                          src={message.profile_image}
+                          alt={message.person_name}
+                          className='rounded w-[280px] h-[320px] lg:min-w-[320px] lg:h-[400px] object-cover'
+                          loading='lazy'
+                          height='400px'
+                          width='300px'
+                        />
+                      </picture>
+
                       <div>
-                        <div className="md:ml-10 mt-4 md:mt-0">
-                          <h4 className="font-semibold text-2xl">
+                        <div className='md:ml-10 mt-4 md:mt-0'>
+                          <h4 className='font-semibold text-2xl'>
                             {message.person_name}
                           </h4>
-                          <p className="font-regular text-sm opacity-50 pt-1">
+                          <p className='font-regular text-sm opacity-50 pt-1'>
                             {message.company_name}
                           </p>
                           <p
-                            className=" text-lg mt-4 border-t border-black pt-3 lg:leading-loose tracking-tight"
+                            className=' text-lg mt-4 border-t border-black pt-3 lg:leading-loose tracking-tight'
                             dangerouslySetInnerHTML={{
                               __html: message.testimonial_paragraph,
                             }}
@@ -70,10 +81,10 @@ function Testimonial() {
             </Slider>
           </div>
           <ButtonBack>
-            <ChevronLeftIcon className="bg-white   text-primary  shadow-md absolute left-0 md:left-4 bottom-1/2 rounded-full w-8 h-8   hover:shadow-lg " />
+            <ChevronLeftIcon className='bg-white   text-primary  shadow-md absolute left-0 md:left-4 bottom-1/2 rounded-full w-8 h-8   hover:shadow-lg ' />
           </ButtonBack>
           <ButtonNext>
-            <ChevronRightIcon className="  text-primary bg-white shadow-md absolute right-0 md:right-4 bottom-1/2 rounded-full w-8 h-8   hover:shadow-lg " />
+            <ChevronRightIcon className='  text-primary bg-white shadow-md absolute right-0 md:right-4 bottom-1/2 rounded-full w-8 h-8   hover:shadow-lg ' />
           </ButtonNext>
           {/* <ButtonBack>
             <div className='bg-black absolute left-0 bottom-1/2 opacity-20 hover:opacity-80 px-2 md:px-5'>

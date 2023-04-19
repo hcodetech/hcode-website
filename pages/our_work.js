@@ -46,8 +46,8 @@ const our_work = (props) => {
         <MetaTags page={metaData.our_work} />
       </Head>
       {/* Hero Section */}
-      <section className='new-container mx-auto text-center lg:w-1/2 '>
-        <h1 className='pt-40 text-4xl font-semibold pb-3'>
+      <section className="new-container mx-auto text-center lg:w-1/2 ">
+        <h1 className="pt-40 text-4xl font-semibold pb-3">
           Some of the products we've made for our client partners
         </h1>
         <h6>
@@ -58,9 +58,9 @@ const our_work = (props) => {
       </section>
 
       {/* Selected Industry */}
-      <section className='new-container mt-10'>
-        <h2 className='font-semibold text-xl pb-2'>Popular Categories</h2>
-        <div className='flex overflow-y-scroll scrollbar-hide'>
+      <section className="new-container mt-10">
+        <h2 className="font-semibold text-xl pb-2">Popular Categories</h2>
+        <div className="flex overflow-y-scroll scrollbar-hide">
           {portfolioIndustry.map((industryName, index) => (
             <div
               key={index}
@@ -71,8 +71,8 @@ const our_work = (props) => {
                 onChange={(e) => setSelectedTech(e, industryName)}
                 id={industryName}
                 name={industryName}
-                type='checkbox'
-                className='input-radio hidden'
+                type="checkbox"
+                className="input-radio hidden"
                 checked={selectedCategory.includes(industryName)}
               />
               <label
@@ -90,30 +90,30 @@ const our_work = (props) => {
 
       {/* Card Section */}
       {isLoading ? (
-        <div className='new-container'>
-          <div className='w-full h-[400px] border  rounded-md mx-auto mt-10'>
-            <div className='flex animate-pulse flex-row h-full justify-between'>
-              <div className='flex flex-col space-y-3 m-10'>
-                <div className='w-96 bg-gray-300 h-10 rounded-md '></div>
-                <div className='w-full bg-gray-300 h-20 rounded-md '></div>
-                <div className='w-24 bg-gray-300 h-4 rounded-md '></div>
+        <div className="new-container">
+          <div className="w-full h-[400px] border  rounded-md mx-auto mt-10">
+            <div className="flex animate-pulse flex-row h-full justify-between">
+              <div className="flex flex-col space-y-3 m-10">
+                <div className="w-96 bg-gray-300 h-10 rounded-md "></div>
+                <div className="w-full bg-gray-300 h-20 rounded-md "></div>
+                <div className="w-24 bg-gray-300 h-4 rounded-md "></div>
               </div>
-              <div className='w-1/2 bg-gray-300 h-full '></div>
+              <div className="w-1/2 bg-gray-300 h-full "></div>
             </div>
           </div>
-          <div className='w-full h-[400px] border  rounded-md mx-auto my-10'>
-            <div className='flex animate-pulse flex-row h-full justify-between'>
-              <div className='flex flex-col space-y-3 m-10'>
-                <div className='w-96 bg-gray-300 h-10 rounded-md '></div>
-                <div className='w-full bg-gray-300 h-20 rounded-md '></div>
-                <div className='w-24 bg-gray-300 h-4 rounded-md '></div>
+          <div className="w-full h-[400px] border  rounded-md mx-auto my-10">
+            <div className="flex animate-pulse flex-row h-full justify-between">
+              <div className="flex flex-col space-y-3 m-10">
+                <div className="w-96 bg-gray-300 h-10 rounded-md "></div>
+                <div className="w-full bg-gray-300 h-20 rounded-md "></div>
+                <div className="w-24 bg-gray-300 h-4 rounded-md "></div>
               </div>
-              <div className='w-1/2 bg-gray-300 h-full '></div>
+              <div className="w-1/2 bg-gray-300 h-full "></div>
             </div>
           </div>
         </div>
       ) : (
-        <section className='new-container mx-auto mt-10 '>
+        <section className="new-container mx-auto mt-10 ">
           {portfolioData.map((data) => (
             <CardPortfolio
               key={data.id}

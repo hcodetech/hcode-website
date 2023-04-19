@@ -25,12 +25,19 @@ function ImageCarousel() {
       <div className="image_slider">
         {/* <div className="image_slide-track"> */}
         <Slider {...SliderData}>
-          {work_with_us_image_carousel.map(({ image }, index) => (
+          {work_with_us_image_carousel.map(({ image, image_webp }, index) => (
             <div className=" mx-4" key={index}>
-              <img
+              <picture>
+                <source srcSet={image_webp} type='image/webp'
+                     media="(min-width:250px)"
+                     />
+                         <img
                 className="min-h-[280px] h-full md:max-h-[280px] max-w-full mr-4 border-white min-w-full border-4 object-cover md:object-contain object-top"
                 src={image}
+                height='280px' width='200px' loading='lazy'
               />
+              </picture>
+          
             </div>
           ))}
         </Slider>

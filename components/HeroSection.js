@@ -11,6 +11,10 @@ import {
   image_slider_1,
   image_slider_2,
   image_slider_3,
+  image_slider_1_webp,
+  image_slider_2_webp,
+  image_slider_3_webp,
+ 
 } from "../constants/constants";
 import {
   ArrowRightIcon,
@@ -53,24 +57,35 @@ function HeroSection() {
                     deployment, testing, and maintenance
                   </p>
                   {/* <button className="bg-white px-16 py-4 text-primary rounded hover:bg-gray-100  mt-4">Get In Touch</button> */}
-                  <div className="flex items-center justify-center">
-                    
-                  <a
-                    href='/contact'
-                    className='pt-5 pb-1  mt-2 w-50 whitespace-nowrap flex-nowrap border-b border-white inline-flex text-white hover:scale-100  cursor-pointer hover:opacity-100 '
-                  >
-                    Get In Touch
-                    <ArrowRightIcon className='w-6 md:ml-2  h-full' />
-                  </a>
+                  <div className='flex items-center justify-center'>
+                    <a
+                      href='/contact'
+                      className='pt-5 pb-1  mt-2 w-50 whitespace-nowrap flex-nowrap border-b border-white inline-flex text-white hover:scale-100  cursor-pointer hover:opacity-100 '
+                    >
+                      Get In Touch
+                      <ArrowRightIcon className='w-6 md:ml-2  h-full' />
+                    </a>
+                  </div>
                 </div>
-                </div>
-
               </div>
-              <img
-                src={image_slider_1}
-                alt=''
-                className='h-screen w-screen object-cover '
-              />
+           
+              <picture>
+                <source
+                  className='h-screen w-screen object-cover'
+                  srcSet={image_slider_1_webp}
+                  media='(min-width:250px)'
+                  type='image/webp'
+                />
+
+                <img
+                  src={image_slider_1}
+                  className='h-screen w-screen object-cover'
+                  alt='Engineering Services'
+                  height='750px'
+                  width='1800px'
+                  loading='lazy'
+                />
+              </picture>
             </div>
           </Slide>
           <Slide index={1}>
@@ -97,11 +112,25 @@ function HeroSection() {
                   </a>
                 </div>
               </div>
-              <img
-                src={image_slider_2}
-                alt=''
-                className='h-screen w-screen object-cover '
-              />
+           
+              <picture>
+                <source
+                  srcSet={image_slider_2_webp}
+                  className='h-screen w-screen object-cover'
+                  type='image/webp'
+                  media='(min-width:250px)'
+                />
+
+                <img
+                  src={image_slider_2}
+                  className='h-screen w-screen object-cover'
+                  type='image/webp'
+                  alt='Team of young and passionate developers'
+                  height='750px'
+                  width='1800px'
+                  loading='lazy'
+                />
+              </picture>
             </div>
           </Slide>
           <Slide index={2}>
@@ -126,11 +155,25 @@ function HeroSection() {
                   </a>
                 </div>
               </div>
-              <img
-                src={image_slider_3}
-                alt=''
-                className='h-screen w-screen object-cover '
-              />
+            
+              <picture>
+                <source
+                  srcSet={image_slider_3_webp}
+                  className='h-screen w-screen object-cover'
+                  type='image/webp'
+                  media='(min-width:250px)'
+                />
+
+                <img
+                  src={image_slider_3}
+                  className='h-screen w-screen object-cover'
+                  type='image/webp'
+                  alt='Our business services'
+                  height='750px'
+                  width='1800px'
+                  loading='lazy'
+                />
+              </picture>
             </div>
           </Slide>
         </Slider>
