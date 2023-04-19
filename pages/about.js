@@ -49,14 +49,12 @@ function about() {
           <h3 className=" text-center font-semibold text-3xl pt-10  md:text-4xl md:leading-tight">
             {about_page.heading_2}
           </h3>
-          </h3>
           <p
             className='font-light mt-5 mb-5 leading-relaxed md:text-lg'
             dangerouslySetInnerHTML={{ __html: about_page.paragraph_2 }}
           />
           <h3 className=" text-center pt-10 font-semibold text-3xl  md:text-4xl md:leading-tight">
             {about_page.heading_3}
-          </h3>
           </h3>
           <p
             className='font-light mt-5 mb-5 leading-relaxed md:text-lg'

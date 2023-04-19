@@ -153,7 +153,6 @@ function work_with_us() {
           <div className="">
             <img src={karnal} alt="Hcode Karnal Office" />
             <h5 className="text-lg font-medium py-0 text-gray-500">Karnal</h5>
-            <h5 className="text-lg font-medium py-0 text-gray-500">Karnal</h5>
           </div>
           <div className=" ">
             <img src={Delhi} alt="Hcode Delhi Office" className='w-auto' height='80px' width='75px' loading='lazy' />
@@ -161,7 +160,6 @@ function work_with_us() {
           </div>
           <div className="mt-8 sm:mt-0">
             <img src={Noida} alt="Hcode Noida Office" />
-            <h5 className="text-lg font-medium  py-2  text-gray-500">Noida</h5>
             <h5 className="text-lg font-medium  py-2  text-gray-500">Noida</h5>
           </div>
           {/* <div className="">
@@ -193,7 +191,6 @@ function work_with_us() {
             <div className="col-span-12 mb-7 md:mb-0 md:col-span-6" key={index}>
               <img src={item.img} alt={item.heading} />
               <h4 className="font-semibold text-2xl mt-3">{item.heading}</h4>
-              <h4 className="font-semibold text-2xl mt-3">{item.heading}</h4>
               <ul className="list-disc list-inside mt-2">
                 {item.points.map((li, index) => (
                   <li key={index}>{li.point}</li>
@@ -223,7 +220,6 @@ function work_with_us() {
                 <img src={image} layout="fill" loading='lazy'    height='50px' width='100px' />
               </div>
               <div className="mt-3 md:mt-0 md:ml-4">
-                <h4 className="font-semibold text-xl">{heading}</h4>
                 <h4 className="font-semibold text-xl">{heading}</h4>
                 <p className="font-light">{descripition}</p>
               </div>
@@ -275,7 +271,6 @@ function work_with_us() {
             ))}
           </Slider>
           <div className="md:max-w-[480px]  bg-white md:absolute md:top-[20%] md:left-[8%] md:p-10 p-5 md:shadow-xl md:rounded-sm">
-            <h2 className="font-semibold text-3xl">{blog_page.blog_heading}</h2>
             <h2 className="font-semibold text-3xl">{blog_page.blog_heading}</h2>
             <div className="space-y-4 font-light tracking-normal">
               <p className="mt-4">{blog_page.blog_para}</p>

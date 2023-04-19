@@ -170,7 +170,6 @@ export default function Home() {
                 <h4 className="text-xl font-semibold">
                   {homepage.who_are_we.clients.heading}
                 </h4>
-                </h4>
                 <Client data={city} heading={true} />
               </div>
               <a

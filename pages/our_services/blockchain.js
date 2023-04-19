@@ -115,7 +115,6 @@ const blockchain = () => {
             We have experience in following <br />
             Blockchain Technologies and Integrations
           </h3>
-          </h3>
 
           <div>
             <ul className='flex flex-row pt-3 border-b border-black items-center text-black overflow-scroll  '>
