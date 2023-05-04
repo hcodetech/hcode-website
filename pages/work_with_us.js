@@ -234,7 +234,7 @@ function work_with_us() {
               See All Open Positions
             </a>
           </div>
-        </div>
+        </div>The default export is not a React Component in page
       </section>
       {/* Core Team  */}
       <CarouselProvider

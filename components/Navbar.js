@@ -13,6 +13,7 @@ function classNames(...classes) {
 
 export default function Navbar() {
   const { pathname } = useRouter();
+  console.log(pathname);
 
   return (
     <Disclosure as="nav" className="bg-white shadow fixed w-screen z-50">
@@ -134,6 +135,20 @@ export default function Navbar() {
                   >
                     Our Work
                   </a>
+
+                  <a
+                    href="case_studies"
+                    className={` text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium  border-transparent
+                      ${
+                        pathname === "/case_studies"
+                          ? "border-blue-500 border-b-4"
+                          : ""
+                      }   `}
+                  >
+                         Case Studies
+                  </a>
+
+
                   <a
                     href="https://hcode.tech/blog/" target="_blank"
                     className={` text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium  border-transparent
@@ -271,6 +286,18 @@ export default function Navbar() {
                     }   `}
               >
                 Our Work
+              </a>
+
+              <a
+                href="/case_studies"
+                className={` border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium
+                    ${
+                      pathname === "/case_studies"
+                        ? "bg-blue-50 border-blue-500 text-blue-700"
+                        : ""
+                    }   `}
+              >
+                Case Studies
               </a>
               <a
                 href="https://hcode.tech/blog/" target="_blank"
