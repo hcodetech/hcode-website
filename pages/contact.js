@@ -157,7 +157,7 @@ function contact() {
         <div className="bg-primary md:max-w-[450px] max-h-screen text-white p-10 col-span-12 md:col-span-4 md:sticky top-14">
           <div className="z-50 sticky">
             <h1 className="text-4xl font-semibold">
-              Let’s scale your team together
+              Let’s scale your team together !
             </h1>
             <p className="text-normal opacity-80 mt-3">
               Fill out the form, including details about your next project (or
