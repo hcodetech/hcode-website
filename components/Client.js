@@ -26,14 +26,14 @@ function Client(props) {
                 srcSet={webp_img}
                 type='image/webp'
                 media='(min-width:250px)'
-                className='max-h-20 '
+                className='max-h-20'
               />
               <img
                 src={img}
                 alt={alt}
-                className='max-h-20 '
-                height='150px'
-                width='280'
+                className="max-h-20"
+                height={170}
+                width={100}
                 loading='lazy'
               />
             </picture>
