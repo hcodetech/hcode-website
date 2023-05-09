@@ -68,7 +68,7 @@ export default function Home() {
         <HeroSection />
         {/* Client Section */}
         <div className=' new-container pt-10'>
-          <Client data={client} slides={isDesktop} />
+          <Client logoWidth={250} logoHeight={100} data={client} slides={isDesktop} />
         </div>
       </section>
 
@@ -170,7 +170,7 @@ export default function Home() {
                 <h4 className="text-xl font-semibold">
                   {homepage.who_are_we.clients.heading}
                 </h4>
-                <Client data={city} heading={true} />
+                <Client logoWidth={100} logoHeight={170}  data={city} heading={true} />
               </div>
               <a
                 href='/about'

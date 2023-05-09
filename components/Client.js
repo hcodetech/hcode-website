@@ -32,8 +32,8 @@ function Client(props) {
                 src={img}
                 alt={alt}
                 className="max-h-20"
-                height={170}
-                width={100}
+                height={props.logoHeight}
+                width={props.logoWidth}
                 loading='lazy'
               />
             </picture>
