@@ -1,12 +1,14 @@
-import Head from 'next/head';
-import { useState, useEffect } from 'react';
-import CardPortfolio from '../components/CardPortfolio';
-import MetaTags from '../components/MetaTags';
-import { metaData, portfolioIndustry } from '../constants/constants';
-import { getAPIUrl } from './api/APIHelpers';
-import { apiRoutes } from './api/APIRoutes';
-import useGetFetch from './hooks/useGetFetch';
-import { useRouter } from 'next/router';
+/** @format */
+
+import Head from "next/head";
+import { useState, useEffect } from "react";
+import CardPortfolio from "../components/CardPortfolio";
+import MetaTags from "../components/MetaTags";
+import { metaData, portfolioIndustry } from "../constants/constants";
+import { getAPIUrl } from "./api/APIHelpers";
+import { apiRoutes } from "./api/APIRoutes";
+import useGetFetch from "./hooks/useGetFetch";
+import { useRouter } from "next/router";
 
 const our_work = (props) => {
   const [selectedCategory, setSelectedCategory] = useState([]);
@@ -78,7 +80,7 @@ const our_work = (props) => {
               <label
                 htmlFor={industryName}
                 className={`block text-sm min-w-[140px] whitespace-nowrap font-medium text-gray-700 border border-1 rounded-lg text-center px-5 py-3 mr-5 
-                ${selectedCategory.includes(industryName) && 'bg-blue-200'}
+                ${selectedCategory.includes(industryName) && "bg-blue-200"}
                 `}
               >
                 {industryName}
