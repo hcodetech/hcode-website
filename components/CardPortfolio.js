@@ -8,14 +8,8 @@ import Link from "next/link";
 const CardPortfolio = (props) => {
   const { selectedCategory, cardData } = props;
   const { pathname } = useRouter();
-  console.log(pathname)
 
-  const casestudyData =
-    cardData.media.length > 0 &&
-    cardData.media.filter((mediaFile) => mediaFile.type === "case_study");
-  console.log(casestudyData, "vchgg");
-
-  const downloadPdf = (media_url) => {
+  const downloadCaseStudyPdf = (media_url) => {
     fetch(media_url)
       .then((response) => response.blob())
       .then((blob) => {
@@ -40,15 +34,10 @@ const CardPortfolio = (props) => {
   ) {
     return (
       <div
-        className={` ${
-          cardData.additionalClass
-        } grid grid-cols-12 rounded mb-10 
-        bg-[${cardData.background_color_code}] text-[${
-          cardData.font_color_code
-        }] `}
+        className={` ${cardData.additionalClass} grid grid-cols-12 rounded mb-10 
+        bg-[${cardData.background_color_code}] text-[${cardData.font_color_code}] `}
       >
         <div className='col-span-12 order-2 lg:order-1 lg:col-span-6 p-8 md:p-10 flex flex-col '>
-          {/* <img src={cardData.logo_image} alt={cardData.name} className="mb-7" /> */}
           <h2 className='text-4xl mt-2 font-bold mb-3'>{cardData.name}</h2>
           <div className='flex flex-wrap mb-3'>
             {cardData.category.slice(0, 3).map((industry) => (
@@ -106,41 +95,29 @@ const CardPortfolio = (props) => {
                 </div>
               )}
             </div>
-            {/* <div>
-              {pathname === "/our_work" && !cardData?.case_study && (
-                <a href='/case_studies' className='primary-outline'>Read case study</a>
-              )}
-            </div> */}
           </div>
 
-          <div className='mt-6'>
-            {pathname === "/our_work" && casestudyData.length > 0 && (
-              <a href='/case_studies' className='primary-outline'>
-                Read case study
-              </a>
-            )}
-          </div>
-          {/* 
-          <div className='mt-6'>
-            {pathname === "/our_work" && cardData.media.length > 0 && cardData.media.filter((mediaFile) => mediaFile.type === 'case_study' ) && (
-              <a href='/case_studies' className='primary-outline'>
-                Read case study
-              </a>
-            )}
-          </div> */}
-          <div className='mt-6'>
-            {pathname === "/case_studies" && casestudyData.length > 0 && (
-              <div>
-                {casestudyData.map((media) => (
-                  <button
-                    className='primary-outline'
-                    onClick={() => downloadPdf(media.media_url)}
-                  >
-                    Download case study
-                  </button>
-                ))}
-              </div>
-            )}
+          <div className='mt-8'>
+            {pathname === "/our_work" &&
+              cardData.media.filter(
+                (mediaFile) => mediaFile.type === "case_study"
+              ).length > 0 && (
+                <a href='/case_studies' className='primary-outline'>
+                  Read case study
+                </a>
+              )}
+
+            {pathname === "/case_studies" &&
+              cardData.media.filter(
+                (mediaFile) => mediaFile.type === "case_study"
+              ).length > 0 && (
+                <button
+                  className='primary-outline'
+                  onClick={() => downloadCaseStudyPdf(cardData.media_url)}
+                >
+                  Download case study
+                </button>
+              )}
           </div>
         </div>
         <div className='col-span-12 order-1 lg:order-2 lg:col-span-6 ml-auto'>
