@@ -47,7 +47,7 @@ const our_work = (props) => {
       </Head>
       {/* Hero Section */}
       <section className="new-container mx-auto text-center lg:w-1/2 ">
-        <h1 className="pt-40 text-4xl font-semibold pb-3">
+        <h1 className="pt-40 text-4xl font-semibold pb-3 lg:px-20">
           Some of the products we've made for our client partners
         </h1>
         <h6>

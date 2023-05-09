@@ -11,9 +11,6 @@ import { useRouter } from "next/router";
 const CaseStudies = (props) => {
   const [selectedCategory, setSelectedCategory] = useState([]);
   const [portfolioData, isLoading] = useGetFetch(getAPIUrl(apiRoutes.OUR_WORK));
-  const router = useRouter();
-
-
 
   return (
     <>
@@ -23,13 +20,12 @@ const CaseStudies = (props) => {
       </Head>
       {/* Hero Section */}
       <section className='new-container mx-auto text-center lg:w-1/2 '>
-        <h1 className='pt-40 text-4xl font-semibold pb-3'>
-          Some of the products we've made for our client partners
+        <h1 className='pt-40 text-4xl font-semibold pb-3 lg:px-20'>
+          Real examples of our technology solutions in action
         </h1>
-        <h6>
-          We have worked on a broad range of projects, from algorithm-heavy
-          backend projects to beautiful and interactive responsive web products.
-          Listed below are some of our creations.
+        <h6 className="lg:px-48">
+          Discover how our services have helped businesses achieve their goals
+          and overcome challenges.
         </h6>
       </section>
 
