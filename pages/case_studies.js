@@ -1,3 +1,5 @@
+/** @format */
+
 import Head from "next/head";
 import { useState, useEffect } from "react";
 import CardPortfolio from "../components/CardPortfolio";
@@ -6,7 +8,6 @@ import { metaData, portfolioIndustry } from "../constants/constants";
 import { getAPIUrl } from "./api/APIHelpers";
 import { apiRoutes } from "./api/APIRoutes";
 import useGetFetch from "./hooks/useGetFetch";
-import { useRouter } from "next/router";
 
 const CaseStudies = (props) => {
   const [selectedCategory, setSelectedCategory] = useState([]);
@@ -19,11 +20,11 @@ const CaseStudies = (props) => {
         <MetaTags page={metaData.our_work} />
       </Head>
       {/* Hero Section */}
-      <section className='new-container mx-auto text-center lg:w-1/2 '>
-        <h1 className='pt-40 text-4xl font-semibold pb-3 lg:px-20'>
+      <section className="new-container mx-auto text-center lg:w-1/2 ">
+        <h1 className="pt-40 text-4xl font-semibold pb-3 xl:px-20">
           Real examples of our technology solutions in action
         </h1>
-        <h6 className="lg:px-48">
+        <h6 className="xl:px-48">
           Discover how our services have helped businesses achieve their goals
           and overcome challenges.
         </h6>
@@ -62,31 +63,31 @@ const CaseStudies = (props) => {
 
       {/* Card Section */}
       {isLoading ? (
-        <div className='new-container'>
-          <div className='w-full h-[400px] border  rounded-md mx-auto mt-10'>
-            <div className='flex animate-pulse flex-row h-full justify-between'>
-              <div className='flex flex-col space-y-3 m-10'>
-                <div className='w-96 bg-gray-300 h-10 rounded-md '></div>
-                <div className='w-full bg-gray-300 h-20 rounded-md '></div>
-                <div className='w-24 bg-gray-300 h-4 rounded-md '></div>
+        <div className="new-container">
+          <div className="w-full h-[400px] border  rounded-md mx-auto mt-10">
+            <div className="flex animate-pulse flex-row h-full justify-between">
+              <div className="flex flex-col space-y-3 m-10">
+                <div className="w-96 bg-gray-300 h-10 rounded-md "></div>
+                <div className="w-full bg-gray-300 h-20 rounded-md "></div>
+                <div className="w-24 bg-gray-300 h-4 rounded-md "></div>
               </div>
-              <div className='w-1/2 bg-gray-300 h-full '></div>
+              <div className="w-1/2 bg-gray-300 h-full "></div>
             </div>
           </div>
-          <div className='w-full h-[400px] border  rounded-md mx-auto my-10'>
-            <div className='flex animate-pulse flex-row h-full justify-between'>
-              <div className='flex flex-col space-y-3 m-10'>
-                <div className='w-96 bg-gray-300 h-10 rounded-md'></div>
-                <div className='w-full bg-gray-300 h-20 rounded-md'></div>
-                <div className='w-24 bg-gray-300 h-4 rounded-md'></div>
+          <div className="w-full h-[400px] border  rounded-md mx-auto my-10">
+            <div className="flex animate-pulse flex-row h-full justify-between">
+              <div className="flex flex-col space-y-3 m-10">
+                <div className="w-96 bg-gray-300 h-10 rounded-md"></div>
+                <div className="w-full bg-gray-300 h-20 rounded-md"></div>
+                <div className="w-24 bg-gray-300 h-4 rounded-md"></div>
               </div>
-              <div className='w-1/2 bg-gray-300 h-full '></div>
+              <div className="w-1/2 bg-gray-300 h-full "></div>
             </div>
           </div>
         </div>
       ) : (
         <div>
-          <section className='new-container mx-auto mt-10 '>
+          <section className="new-container mx-auto mt-10 ">
             {portfolioData.map((data) => (
               <div>
                 {data.media.filter((media) => media.type === "case_study")

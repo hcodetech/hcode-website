@@ -229,12 +229,12 @@ function work_with_us() {
             <a
               href="https://in.indeed.com/cmp/Hcode-Technologies/jobs"
               target="_blank"
-              className="primary-button text-ce"
+              className="primary-button"
             >
               See All Open Positions
             </a>
           </div>
-        </div>The default export is not a React Component in page
+        </div>
       </section>
       {/* Core Team  */}
       <CarouselProvider

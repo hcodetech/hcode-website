@@ -5,28 +5,16 @@ import { ArrowRightIcon } from "@heroicons/react/solid";
 // import  YoutubeIcon  from "..public/assets/icons/youtube_icon.svg"
 import YoutubeIcon from "../public/assets/icons/youtube_icon.svg";
 import { useRouter } from "next/router";
-import Link from "next/link";
 
 const CardPortfolio = (props) => {
   const { selectedCategory, cardData } = props;
   const { pathname } = useRouter();
 
-  const downloadCaseStudyPdf = (media_url) => {
-    fetch(media_url)
-      .then((response) => response.blob())
-      .then((blob) => {
-        const url = URL.createObjectURL(blob);
-        const a = document.createElement("a");
-        a.href = url;
-        a.download = "case-study.pdf";
-        document.body.appendChild(a);
-        a.click();
-        setTimeout(() => {
-          document.body.removeChild(a);
-          URL.revokeObjectURL(url);
-        }, 0);
-      });
-  };
+  //filter case studies feild
+  const filterCaseStudies = cardData.media.filter(
+    (mediaFile) => mediaFile.type === "case_study"
+  );
+
 
   if (
     cardData.category.filter((category) =>
@@ -84,42 +72,34 @@ const CardPortfolio = (props) => {
               />
             </a>
           )}
-          <div className="flex justify-between">
-            <div>
-              {cardData?.tech_stack && (
-                <div className="mt-10 md:mt-auto">
-                  <h5 className="text-lg mt-2 font-bold">
-                    Technologies Used :
-                  </h5>
-                  <p className="text-base md:text-lg mt-1 font-light leading-normal ">
-                    {cardData.tech_stack}
-                  </p>
-                </div>
-              )}
-            </div>
+          <div>
+            {cardData?.tech_stack && (
+              <div className="mt-10 md:mt-auto">
+                <h5 className="text-lg mt-2 font-bold">Technologies Used :</h5>
+                <p className="text-base md:text-lg mt-1 font-light leading-normal">
+                  {cardData.tech_stack}
+                </p>
+              </div>
+            )}
           </div>
 
-          <div className="mt-8">
-            {pathname === "/our_work" &&
-              cardData.media.filter(
-                (mediaFile) => mediaFile.type === "case_study"
-              ).length > 0 && (
-                <a href="/case_studies" className="primary-outline">
-                  Read case study
-                </a>
-              )}
+          <div className="mt-auto mb-10 ml-auto">
+            {pathname === "/our_work" && filterCaseStudies.length > 0 && (
+              <a href="/case_studies" className="primary-outline">
+                Read case study
+              </a>
+            )}
 
             {pathname === "/case_studies" &&
-              cardData.media.filter(
-                (mediaFile) => mediaFile.type === "case_study"
-              ).length > 0 && (
-                <button
-                  className="primary-outline"
-                  onClick={() => downloadCaseStudyPdf(cardData.media_url)}
+              filterCaseStudies.map((media) => (
+                <a
+                  target="_blank"
+                  href={media.media_url}
+                  className="primary-button"
                 >
-                  Download case study
-                </button>
-              )}
+                  View case study
+                </a>
+              ))}
           </div>
         </div>
         <div className="col-span-12 order-1 lg:order-2 lg:col-span-6 ml-auto">

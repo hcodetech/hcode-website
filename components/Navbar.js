@@ -13,7 +13,6 @@ function classNames(...classes) {
 
 export default function Navbar() {
   const { pathname } = useRouter();
-  console.log(pathname);
 
   return (
     <Disclosure as="nav" className="bg-white shadow fixed w-screen z-50">
@@ -43,7 +42,7 @@ export default function Navbar() {
                     href="/"
                     className={` text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium  border-transparent
                       ${
-                        pathname === "/" ? "border-blue-500 border-b-4" : ""
+                        pathname === "/" && "border-blue-500 border-b-4" 
                       }   `}
                   >
                     Home
@@ -59,8 +58,8 @@ export default function Navbar() {
                         pathname === "/our_services/blockchain" ||
                         pathname === "/our_services/mvp" ||
                         pathname === "/our_services/developer_as_a_service"
-                          ? "border-blue-500 border-b-4"
-                          : ""
+                          &&"border-blue-500 border-b-4"
+                          
                       }   `}
                   >
                     Our Services
@@ -107,8 +106,8 @@ export default function Navbar() {
                     className={` text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium  border-transparent
                       ${
                         pathname === "/about"
-                          ? "border-blue-500 border-b-4"
-                          : ""
+                          && "border-blue-500 border-b-4"
+                          
                       }   `}
                   >
                     About Us
@@ -118,8 +117,8 @@ export default function Navbar() {
                     className={` text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium  border-transparent
                       ${
                         pathname === "/work_with_us"
-                          ? "border-blue-500 border-b-4"
-                          : ""
+                          && "border-blue-500 border-b-4"
+                          
                       }   `}
                   >
                     Work With Us
@@ -129,8 +128,8 @@ export default function Navbar() {
                     className={` text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium  border-transparent
                       ${
                         pathname === "/our_work"
-                          ? "border-blue-500 border-b-4"
-                          : ""
+                          && "border-blue-500 border-b-4"
+                          
                       }   `}
                   >
                     Our Work
@@ -141,8 +140,8 @@ export default function Navbar() {
                     className={` text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium  border-transparent
                       ${
                         pathname === "/case_studies"
-                          ? "border-blue-500 border-b-4"
-                          : ""
+                          && "border-blue-500 border-b-4"
+                          
                       }   `}
                   >
                          Case Studies
@@ -154,8 +153,8 @@ export default function Navbar() {
                     className={` text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium  border-transparent
                       ${
                         pathname === "/blog"
-                          ? "border-blue-500 border-b-4"
-                          : ""
+                          && "border-blue-500 border-b-4"
+                          
                       }   `}
                   >
                     Blog
@@ -188,8 +187,8 @@ export default function Navbar() {
                 className={` border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium
                       ${
                         pathname === "/"
-                          ? "bg-blue-50 border-blue-500 text-blue-700"
-                          : ""
+                          && "bg-blue-50 border-blue-500 text-blue-700"
+                          
                       }   `}
               >
                 Home
@@ -200,8 +199,8 @@ export default function Navbar() {
                 className={` border-transparent  text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium
                     ${
                       pathname === "/our_services"
-                        ? "bg-blue-50 border-blue-500 text-blue-700"
-                        : ""
+                        && "bg-blue-50 border-blue-500 text-blue-700"
+                        
                     }   `}
               >
                 Our Services
@@ -212,8 +211,8 @@ export default function Navbar() {
                   className={` border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block  px-6 py-2  border-l-4 text-sm font-medium
                     ${
                       pathname === "/our_services/team_as_a_service"
-                        ? "bg-blue-50 border-blue-500 text-blue-700"
-                        : ""
+                        && "bg-blue-50 border-blue-500 text-blue-700"
+                        
                     }   `}
                 >
                   Team as a Service
@@ -223,8 +222,8 @@ export default function Navbar() {
                   className={` border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block px-6 py-2  border-l-4 text-sm font-medium
                     ${
                       pathname === "/our_services/developer_as_a_service"
-                        ? "bg-blue-50 border-blue-500 text-blue-700"
-                        : ""
+                        && "bg-blue-50 border-blue-500 text-blue-700"
+                        
                     }   `}
                 >
                   Developer as a Service
@@ -235,8 +234,8 @@ export default function Navbar() {
                   className={` border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block px-6 py-2  border-l-4 text-sm font-medium
                             ${
                               pathname === "/our_services/blockchain"
-                                ? "bg-blue-50 border-blue-500 text-blue-700"
-                                : ""
+                                && "bg-blue-50 border-blue-500 text-blue-700"
+                                
                             }   `}
                 >
                   Blockchain Services
@@ -246,8 +245,8 @@ export default function Navbar() {
                   className={` border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block px-6 py-2  border-l-4 text-sm font-medium
                             ${
                               pathname === "/our_services/mvp"
-                                ? "bg-blue-50 border-blue-500 text-blue-700"
-                                : ""
+                                && "bg-blue-50 border-blue-500 text-blue-700"
+                                
                             }   `}
                 >
                   Rapid Prototyping (MVP)
@@ -259,8 +258,8 @@ export default function Navbar() {
                 className={` border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium
                     ${
                       pathname === "/about"
-                        ? "bg-blue-50 border-blue-500 text-blue-700"
-                        : ""
+                        && "bg-blue-50 border-blue-500 text-blue-700"
+                        
                     }   `}
               >
                 About Us
@@ -270,8 +269,8 @@ export default function Navbar() {
                 className={` border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium
                     ${
                       pathname === "/work_with_us"
-                        ? "bg-blue-50 border-blue-500 text-blue-700"
-                        : ""
+                        && "bg-blue-50 border-blue-500 text-blue-700"
+                        
                     }   `}
               >
                 Work With Us
@@ -281,8 +280,8 @@ export default function Navbar() {
                 className={` border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium
                     ${
                       pathname === "/our_work"
-                        ? "bg-blue-50 border-blue-500 text-blue-700"
-                        : ""
+                        && "bg-blue-50 border-blue-500 text-blue-700"
+                        
                     }   `}
               >
                 Our Work
@@ -293,8 +292,8 @@ export default function Navbar() {
                 className={` border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium
                     ${
                       pathname === "/case_studies"
-                        ? "bg-blue-50 border-blue-500 text-blue-700"
-                        : ""
+                        && "bg-blue-50 border-blue-500 text-blue-700"
+                        
                     }   `}
               >
                 Case Studies
@@ -304,8 +303,8 @@ export default function Navbar() {
                 className={` border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium
                     ${
                       pathname === "/blog"
-                        ? "bg-blue-50 border-blue-500 text-blue-700"
-                        : ""
+                        && "bg-blue-50 border-blue-500 text-blue-700"
+                        
                     }   `}
               >
                 Blog
