@@ -16,8 +16,8 @@ const CaseStudies = (props) => {
   return (
     <>
       <Head>
-        <title>Our Work | Hcode Technologies </title>
-        <MetaTags page={metaData.our_work} />
+        <title>Case Studies | Hcode Technologies </title>
+        <MetaTags page={metaData.case_studies} />
       </Head>
       {/* Hero Section */}
       <section className="new-container mx-auto text-center lg:w-1/2 ">

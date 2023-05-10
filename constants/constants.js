@@ -822,6 +822,13 @@ export const metaData = {
     share_image: "https://hcode.tech/assets/img/Meta-Image.jpg",
     url: "https://hcode.tech/our_work",
   },
+  case_studies: {
+    title: "Case studies we've made for our client partners",
+    description:
+      "We have worked on a broad range of projects, from algorithm-heavy backend projects to beautiful and interactive responsive web products. Listed below are some of our creations.",
+    share_image: "https://hcode.tech/assets/img/Meta-Image.jpg",
+    url: "https://hcode.tech/case_studies",
+  },
 
   technologies: {
     title: "We work with the latest and most popular tech stacks",
