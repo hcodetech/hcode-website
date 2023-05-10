@@ -8,61 +8,32 @@ import { metaData, portfolioIndustry } from "../constants/constants";
 import { getAPIUrl } from "./api/APIHelpers";
 import { apiRoutes } from "./api/APIRoutes";
 import useGetFetch from "./hooks/useGetFetch";
-import { useRouter } from "next/router";
 
-const our_work = (props) => {
+const CaseStudies = (props) => {
   const [selectedCategory, setSelectedCategory] = useState([]);
   const [portfolioData, isLoading] = useGetFetch(getAPIUrl(apiRoutes.OUR_WORK));
-  const router = useRouter();
 
-  // useEffect(() => {
-  //   if(props?.query?.q){
-  //     (Array.isArray(props.query.q) ?
-  //     portfolioIndustry.includes(props.query.q[0]) && setSelectedCategory(props.query.q):
-  //     portfolioIndustry.includes(props.query.q)) && setSelectedCategory([props.query.q])
-  //   }
-  // }, [])
-
-  // Select Industry Card
-  const setSelectedTech = (e, industryName) => {
-    if (e.target.checked) {
-      setSelectedCategory((prev) => [...prev, industryName]);
-      // router.push({
-      //   pathname: router.pathname,
-      //   query: { q: [...selectedCategory, industryName] },
-      // });
-    } else {
-      setSelectedCategory((industry) => {
-        return industry.filter((item) => item !== industryName);
-      });
-      // router.push({
-      //   pathname: router.pathname,
-      //   query: { q: selectedCategory.filter((item) => item !== industryName) },
-      // });
-    }
-  };
   return (
     <>
       <Head>
-        <title>Our Work | Hcode Technologies </title>
-        <MetaTags page={metaData.our_work} />
+        <title>Case Studies | Hcode Technologies </title>
+        <MetaTags page={metaData.case_studies} />
       </Head>
       {/* Hero Section */}
       <section className="new-container mx-auto text-center lg:w-1/2 ">
         <h1 className="pt-40 text-4xl font-semibold pb-3 xl:px-20">
-          Some of the products we've made for our client partners
+          Real examples of our technology solutions in action
         </h1>
-        <h6>
-          We have worked on a broad range of projects, from algorithm-heavy
-          backend projects to beautiful and interactive responsive web products.
-          Listed below are some of our creations.
+        <h6 className="xl:px-48">
+          Discover how our services have helped businesses achieve their goals
+          and overcome challenges.
         </h6>
       </section>
 
       {/* Selected Industry */}
-      <section className="new-container mt-10">
-        <h2 className="font-semibold text-xl pb-2">Popular Categories</h2>
-        <div className="flex overflow-y-scroll scrollbar-hide">
+      {/* <section className='new-container mt-10'>
+        <h2 className='font-semibold text-xl pb-2'>Popular Categories</h2>
+        <div className='flex overflow-y-scroll scrollbar-hide'>
           {portfolioIndustry.map((industryName, index) => (
             <div
               key={index}
@@ -73,8 +44,8 @@ const our_work = (props) => {
                 onChange={(e) => setSelectedTech(e, industryName)}
                 id={industryName}
                 name={industryName}
-                type="checkbox"
-                className="input-radio hidden"
+                type='checkbox'
+                className='input-radio hidden'
                 checked={selectedCategory.includes(industryName)}
               />
               <label
@@ -88,7 +59,7 @@ const our_work = (props) => {
             </div>
           ))}
         </div>
-      </section>
+      </section> */}
 
       {/* Card Section */}
       {isLoading ? (
@@ -115,24 +86,25 @@ const our_work = (props) => {
           </div>
         </div>
       ) : (
-        <section className="new-container mx-auto mt-10 ">
-          {portfolioData.map((data) => (
-            <CardPortfolio
-              key={data.id}
-              cardData={data}
-              selectedCategory={selectedCategory}
-            />
-          ))}
-        </section>
+        <div>
+          <section className="new-container mx-auto mt-10 ">
+            {portfolioData.map((data) => (
+              <div>
+                {data.media.filter((media) => media.type === "case_study")
+                  .length > 0 && (
+                  <CardPortfolio
+                    key={data.id}
+                    cardData={data}
+                    selectedCategory={selectedCategory}
+                  />
+                )}
+              </div>
+            ))}
+          </section>
+        </div>
       )}
     </>
   );
 };
 
-// export async function getServerSideProps(router) {
-//   return {
-//     props: {query: router?.query}, // will be passed to the page component as props
-//   }
-// }
-
-export default our_work;
+export default CaseStudies;
