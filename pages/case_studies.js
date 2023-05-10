@@ -24,7 +24,7 @@ const CaseStudies = (props) => {
         <h1 className="pt-40 text-4xl font-semibold pb-3 xl:px-20">
           Real examples of our technology solutions in action
         </h1>
-        <h6 className="xl:px-48">
+        <h6 className="xl:px-20 2xl:px-48">
           Discover how our services have helped businesses achieve their goals
           and overcome challenges.
         </h6>
