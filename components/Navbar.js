@@ -15,7 +15,7 @@ export default function Navbar() {
   const { pathname } = useRouter();
 
   return (
-    <Disclosure as="nav" className="bg-white shadow fixed w-screen z-50">
+    <Disclosure as="nav" className="bg-white shadow fixed w-screen z-[60]">
       {({ open }) => (
         <>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

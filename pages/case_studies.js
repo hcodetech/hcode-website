@@ -22,11 +22,14 @@ const CaseStudies = (props) => {
       {/* Hero Section */}
       <section className="new-container mx-auto text-center lg:w-1/2 ">
         <h1 className="pt-40 text-4xl font-semibold pb-3 xl:px-20">
-          Real examples of our technology solutions in action
+          HCode's Tech Solutions:       
+           <br />
+            Real-Life Success in Action
         </h1>
         <h6 className="xl:px-20 2xl:px-48">
-          Discover how our services have helped businesses achieve their goals
-          and overcome challenges.
+ 
+          Discover how our services drive business success by achieving goals
+          and overcoming challenges.
         </h6>
       </section>
 
@@ -71,7 +74,7 @@ const CaseStudies = (props) => {
                 <div className="w-full bg-gray-300 h-20 rounded-md "></div>
                 <div className="w-24 bg-gray-300 h-4 rounded-md "></div>
               </div>
-              <div className="w-1/2 bg-gray-300 h-full "></div>
+              <div className="w-1/2 bg-gray-300 h-full"></div>
             </div>
           </div>
           <div className="w-full h-[400px] border  rounded-md mx-auto my-10">
