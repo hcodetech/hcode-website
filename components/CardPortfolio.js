@@ -24,7 +24,7 @@ const CardPortfolio = (props) => {
   ) {
     return (
       <div
-        className={` ${cardData.additionalClass} grid grid-cols-12 rounded mb-10 
+        className={` ${cardData.additionalClass} grid grid-cols-12 rounded mb-10  pb-6
         bg-[${cardData.background_color_code}] text-[${cardData.font_color_code}] `}
       >
         <div className="col-span-12 order-2 lg:order-1 lg:col-span-6 p-8 md:p-10 flex flex-col ">
@@ -43,7 +43,7 @@ const CardPortfolio = (props) => {
               </div>
             ))}
           </div>
-          <p className="text-base md:text-lg font-light leading-normal opacity-80">
+          <p className="text-base md:text-lg font-light leading-normal pt-4 opacity-80">
             {cardData.short_description}
           </p>
           {cardData.product_url && (
@@ -83,7 +83,7 @@ const CardPortfolio = (props) => {
             )}
           </div>
 
-          <div className="mt-auto mb-10 ml-auto">
+          <div className="lg:mt-auto mt-16 sm:ml-auto">
             {pathname === "/our_work" && filterCaseStudies.length > 0 && (
               <a href="/case_studies" className="primary-outline">
                 Read case study
@@ -95,7 +95,7 @@ const CardPortfolio = (props) => {
                 <a
                   target="_blank"
                   href={media.media_url}
-                  className="primary-button"
+                  className="primary-button "
                 >
                   View case study
                 </a>
