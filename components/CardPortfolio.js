@@ -43,7 +43,7 @@ const CardPortfolio = (props) => {
               </div>
             ))}
           </div>
-          <p className="text-base md:text-lg font-light leading-normal pt-3 opacity-80">
+          <p className="text-base md:text-lg font-light leading-normal pt-4 opacity-80">
             {cardData.short_description}
           </p>
           {cardData.product_url && (
@@ -83,7 +83,7 @@ const CardPortfolio = (props) => {
             )}
           </div>
 
-          <div className="md:mt-auto mt-10 sm:ml-auto">
+          <div className="lg:mt-auto mt-16 sm:ml-auto">
             {pathname === "/our_work" && filterCaseStudies.length > 0 && (
               <a href="/case_studies" className="primary-outline">
                 Read case study
@@ -95,7 +95,7 @@ const CardPortfolio = (props) => {
                 <a
                   target="_blank"
                   href={media.media_url}
-                  className="primary-button"
+                  className="primary-button "
                 >
                   View case study
                 </a>

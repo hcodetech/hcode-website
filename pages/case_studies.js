@@ -8,6 +8,7 @@ import { metaData, portfolioIndustry } from "../constants/constants";
 import { getAPIUrl } from "./api/APIHelpers";
 import { apiRoutes } from "./api/APIRoutes";
 import useGetFetch from "./hooks/useGetFetch";
+import Portfolio_skelton from "../components/Portfolio_skelton";
 
 const CaseStudies = (props) => {
   const [selectedCategory, setSelectedCategory] = useState([]);
@@ -66,28 +67,7 @@ const CaseStudies = (props) => {
 
       {/* Card Section */}
       {isLoading ? (
-        <div className="new-container">
-          <div className="w-full h-[400px] border  rounded-md mx-auto mt-10">
-            <div className="flex animate-pulse flex-row h-full justify-between">
-              <div className="flex flex-col space-y-3 m-10">
-                <div className="w-96 bg-gray-300 h-10 rounded-md "></div>
-                <div className="w-full bg-gray-300 h-20 rounded-md "></div>
-                <div className="w-24 bg-gray-300 h-4 rounded-md "></div>
-              </div>
-              <div className="w-1/2 bg-gray-300 h-full"></div>
-            </div>
-          </div>
-          <div className="w-full h-[400px] border  rounded-md mx-auto my-10">
-            <div className="flex animate-pulse flex-row h-full justify-between">
-              <div className="flex flex-col space-y-3 m-10">
-                <div className="w-96 bg-gray-300 h-10 rounded-md"></div>
-                <div className="w-full bg-gray-300 h-20 rounded-md"></div>
-                <div className="w-24 bg-gray-300 h-4 rounded-md"></div>
-              </div>
-              <div className="w-1/2 bg-gray-300 h-full "></div>
-            </div>
-          </div>
-        </div>
+ <Portfolio_skelton />
       ) : (
         <div>
           <section className="new-container mx-auto mt-10 ">
