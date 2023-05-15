@@ -30,7 +30,7 @@ const CaseStudies = (props) => {
         <h6 className="xl:px-20 2xl:px-48">
  
           Discover how our services drive business success by achieving goals
-          and overcoming challenges.
+          and overcoming challenges
         </h6>
       </section>
 
