@@ -1460,6 +1460,14 @@ export const testimonial = [
     testimonial_paragraph:
       "Hcode has been a pleasure to work with, they’re efficient, always communicative and available, and flexible. Couldn’t hope for a better team for all our dev needs. I highly recommend working with them and have recommended them to many friends/colleagues looking to build for the future.",
   },
+  {
+    id: "8",
+    profile_image: "../assets/img/client_image/ritu-panesar.jpeg",
+    person_name: "Ritu Panesar",
+    company_name: "Founder & Travel Advisor",
+    testimonial_paragraph:
+      "Having started working with Hcode Technologies after a personal recommendation more than a year ago, we haven't looked back. Hcode understood our needs and took a professional approach to our project. Their collaborative and professional approach is worthy of praise, and the complexity and the quality of their work is impressive. Hcode team completes the deliverables on time and with high quality. In-person and virtual meetings ensure a seamless workflow. They do their best in order to ensure that we have a good relationship and a successful outcome. I can highly recommend them to anyone looking for this type of work.",
+  },
 ];
 
 export const portfolioCard = [
