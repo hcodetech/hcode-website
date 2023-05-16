@@ -24,7 +24,7 @@ const CardPortfolio = (props) => {
   ) {
     return (
       <div
-        className={` ${cardData.additionalClass} grid grid-cols-12 rounded mb-10  pb-6
+        className={` ${cardData.additionalClass} grid grid-cols-12 rounded mb-10
         bg-[${cardData.background_color_code}] text-[${cardData.font_color_code}] `}
       >
         <div className="col-span-12 order-2 lg:order-1 lg:col-span-6 p-8 md:p-10 flex flex-col ">
@@ -106,10 +106,11 @@ const CardPortfolio = (props) => {
           <img
             src={cardData.thumbnail_image}
             alt={cardData.name}
-            className="lg:w-[870px] h-auto w-auto"
+            className="h-full w-full object-cover"
             loading="lazy"
             width="500px"
             height="500px"
+
           />
         </div>
       </div>
