@@ -51,7 +51,7 @@ function Testimonial() {
                         <img
                           src={message.profile_image}
                           alt={message.person_name}
-                          className='rounded w-[280px] h-[320px] lg:min-w-[320px] lg:h-[400px] object-cover'
+                          className='rounded w-[280px] h-[320px] md:min-w-[320px] lg:h-[400px] object-cover'
                           loading='lazy'
                           height='400px'
                           width='300px'
