@@ -1464,7 +1464,7 @@ export const testimonial = [
     id: "8",
     profile_image: "../assets/img/client_image/ritu-panesar.jpeg",
     person_name: "Ritu Panesar",
-    company_name: "Founder & Travel Advisor",
+    company_name: "Founder, Travelopod.com",
     testimonial_paragraph:
       "Having started working with Hcode Technologies after a personal recommendation more than a year ago, we haven't looked back. Hcode understood our needs and took a professional approach to our project. Their collaborative and professional approach is worthy of praise, and the complexity and the quality of their work is impressive. Hcode team completes the deliverables on time and with high quality. In-person and virtual meetings ensure a seamless workflow. They do their best in order to ensure that we have a good relationship and a successful outcome. I can highly recommend them to anyone looking for this type of work.",
   },
