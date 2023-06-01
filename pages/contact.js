@@ -2,13 +2,9 @@ import {
   LocationMarkerIcon,
   PhoneIcon,
   ChatAltIcon,
-  VideoCameraIcon
-
-
+  VideoCameraIcon,
 } from "@heroicons/react/solid";
 import Head from "next/head";
-
-
 
 import { useState } from "react";
 import {
@@ -23,12 +19,15 @@ import { getAPIUrl } from "./api/APIHelpers";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/plain.css";
 import MetaTags from "../components/MetaTags";
+import UpdateUserLeadPopup from "../components/updateUserLeadPopup";
 const defaultColor = "#373536";
 function contact() {
   const [success, setSuccess] = useState(false);
+  const [showProjectDetailsPopup, setShowProjectDetailsPopup] = useState(false);
   const [failure, setFailure] = useState(false);
   const [responseMessage, setResponseMessage] = useState("");
   const [firstName, setFirstName] = useState("");
+  const [leadId, setLeadId] = useState("");
   const [lastName, setLastName] = useState("");
   const [loading, setLoading] = useState(false);
   const [companyName, setCompanyName] = useState("");
@@ -59,16 +58,16 @@ function contact() {
     const contactUsFormData = {
       first_name: firstName,
       last_name: lastName,
-      mobile_number: mobileNumber.length > 4 ? `{+${mobileNumber}}` : "",
-      company_name: companyName,
+      // mobile_number: mobileNumber.length > 4 ? `{+${mobileNumber}}` : "",
+      // company_name: companyName,
       email: companyEmail,
-      project_type: projectType,
-      is_proj_run_by_tech_person: projectLeadRequired,
-      project_description: projectDesc,
-      number_of_dev: numberOfDev,
-      employee_number: numberOfEmployees,
-      time_commitment: expectedTimeCommitment,
-      tech_preference: preferredTechStack.join(","),
+      // project_type: projectType,
+      // is_proj_run_by_tech_person: projectLeadRequired,
+      // project_description: projectDesc,
+      // number_of_dev: numberOfDev,
+      // employee_number: numberOfEmployees,
+      // time_commitment: expectedTimeCommitment,
+      // tech_preference: preferredTechStack.join(","),
     };
 
     const formData = new FormData();
@@ -76,7 +75,7 @@ function contact() {
       formData.append(key, value);
     });
 
-    const url = getAPIUrl(apiRoutes.CONTACT);
+    const url = getAPIUrl(apiRoutes.CONTACT+"/as");
     // const url2 =
     //   "https://script.google.com/a/hcode.tech/macros/s/AKfycbytrG1hsiIqFlkL4vMMNVRy0WXpEq2E26mU8JGuIA/exec";
     const options = {
@@ -87,9 +86,9 @@ function contact() {
     try {
       setLoading(true);
       const res = await fetch(url, options);
+      const json = await res.json();
       if (!res.ok) {
         if (res.status >= 400 && res.body) {
-          const json = await res.json();
           window.scrollTo(0, 0);
           setResponseMessage(json?.mobile_number);
           setFailure(true);
@@ -111,7 +110,10 @@ function contact() {
       setPreferredTechStack([]);
       setExpectedTimeCommitment("0");
       // Show the Success Message
-      setSuccess(true);
+      // setSuccess(true);
+      console.log(json);
+      setLeadId(json?.id);
+      toggleProjectDetailsPopup();
     } catch (e) {
       // Show the failure Message
       setFailure(true);
@@ -122,6 +124,8 @@ function contact() {
     window.scrollTo(0, 0);
   };
 
+  const toggleProjectDetailsPopup = () =>
+    setShowProjectDetailsPopup((prev) => !prev);
   return (
     <>
       <Head>
@@ -153,7 +157,16 @@ function contact() {
           }
         />
       )}
-      <section className="md:new-container grid grid-cols-12 pt-14">
+      {showProjectDetailsPopup && (
+        <UpdateUserLeadPopup
+          setSuccess={setSuccess}
+          setFailure={setFailure}
+          setLeadId={setLeadId}
+          toggleProjectDetailsPopup={toggleProjectDetailsPopup}
+          leadId={leadId}
+        />
+      )}
+      <section className="md:new-container grid grid-cols-12 pt-14 h-[80vh]">
         <div className="bg-primary md:max-w-[450px] max-h-screen text-white p-10 col-span-12 md:col-span-4 md:sticky top-14">
           <div className="z-50 sticky">
             <h1 className="text-4xl font-semibold">
@@ -194,16 +207,20 @@ function contact() {
           {/* Schedule a call with Rakesh Seghal */}
           <div className="flex gap-3 items-center border rounded-lg py-2 px-2.5 mb-10 bg-blue-50">
             <div className="bg-white p-3 rounded-full">
-            <VideoCameraIcon className="h-6 w-6 text-primary" />
-
-
+              <VideoCameraIcon className="h-6 w-6 text-primary" />
             </div>
             <div>
-              <h5 className="text-base sm:text-lg font-semibold">Schedule a brief call</h5>
+              <h5 className="text-base sm:text-lg font-semibold">
+                Schedule a brief call
+              </h5>
             </div>
-         <a target="_blank" href='https://calendly.com/rakesh-sehgal/15min?month=2023-05&date=2023-04-19' className="primary-outline ml-auto">Schedule</a>
-
-
+            <a
+              target="_blank"
+              href="https://calendly.com/rakesh-sehgal/15min?month=2023-05&date=2023-04-19"
+              className="primary-outline ml-auto"
+            >
+              Schedule
+            </a>
           </div>
 
           <form autoComplete="off" onSubmit={contactUser}>
@@ -244,13 +261,30 @@ function contact() {
                   className="input-form"
                 />
               </div>
+              <div className="col-span-12 mt-4">
+                <label
+                  htmlFor="company-email"
+                  className="block text-sm font-medium text-gray-700"
+                >
+                  Company Email<sup>*</sup>
+                </label>
+                <input
+                  required
+                  value={companyEmail}
+                  onChange={(e) => setCompanyEmail(e.target.value)}
+                  type="email"
+                  name="company-email"
+                  id="company-email"
+                  className="input-form"
+                />
+              </div>
               {/* Your Company Details */}
-              <div className="col-span-12">
-                <h2 className="font-semibold text-xl pb-2 border-b-2">
+              {/* <div className="col-span-12"> */}
+              {/* <h2 className="font-semibold text-xl pb-2 border-b-2">
                   Your Company Details
-                </h2>
-                {/* Company Name */}
-                <div className="col-span-12 mt-4">
+                </h2> */}
+              {/* Company Name */}
+              {/* <div className="col-span-12 mt-4">
                   <label
                     htmlFor="company-name"
                     className="block text-sm font-medium text-gray-700"
@@ -266,9 +300,9 @@ function contact() {
                     id="company-name"
                     className="input-form"
                   />
-                </div>
-                {/* Company Email */}
-                <div className="col-span-12 mt-4">
+                </div> */}
+              {/* Company Email */}
+              {/* <div className="col-span-12 mt-4">
                   <label
                     htmlFor="company-email"
                     className="block text-sm font-medium text-gray-700"
@@ -284,9 +318,9 @@ function contact() {
                     id="company-email"
                     className="input-form"
                   />
-                </div>
-                {/* Mobile Number */}
-                <div className="col-span-12 mt-4 hidden ">
+                </div> */}
+              {/* Mobile Number */}
+              {/* <div className="col-span-12 mt-4 hidden ">
                   <label
                     htmlFor="mobile-number"
                     className="block text-sm  font-medium text-gray-700"
@@ -312,10 +346,10 @@ function contact() {
                   <small className="italic text-xs">
                     Please enter the mobile number with your country code.
                   </small>
-                </div>
+                </div> */}
 
-                {/* Number of Employees */}
-                <div className="col-span-12 mt-4">
+              {/* Number of Employees */}
+              {/* <div className="col-span-12 mt-4">
                   <label
                     htmlFor="no-of-employees"
                     className="block text-sm font-medium text-gray-700"
@@ -337,15 +371,15 @@ function contact() {
                     <option value="2">20 - 50</option>
                     <option value="3">50+</option>
                   </select>
-                </div>
-              </div>
+                </div> */}
+              {/* </div> */}
               {/* Your Project Details */}
-              <div className="col-span-12 mt-4">
-                <h2 className="font-semibold text-xl pb-2 border-b-2">
+              {/* <div className="col-span-12 mt-4"> */}
+              {/* <h2 className="font-semibold text-xl pb-2 border-b-2">
                   Project Details
-                </h2>
-                {/*  Describe your project briefy */}
-                <div className="col-span-12 mt-4">
+                </h2> */}
+              {/*  Describe your project briefy */}
+              {/* <div className="col-span-12 mt-4">
                   <label
                     htmlFor="project-briefy"
                     className="block text-sm font-medium text-gray-700"
@@ -362,9 +396,9 @@ function contact() {
                     className="input-form"
                     defaultValue={""}
                   />
-                </div>
-                {/* Number of Developers required */}
-                <div className="col-span-12 mt-4">
+                </div> */}
+              {/* Number of Developers required */}
+              {/* <div className="col-span-12 mt-4">
                   <label
                     htmlFor="country"
                     className="block text-sm font-medium text-gray-700"
@@ -390,10 +424,10 @@ function contact() {
                     <option value="3">6 - 10</option>
                     <option value="4">10+</option>
                   </select>
-                </div>
+                </div> */}
 
-                {/*  Time */}
-                <div className="col-span-12 mt-4">
+              {/*  Time */}
+              {/* <div className="col-span-12 mt-4">
                   <label
                     htmlFor="time-commitment"
                     className="block text-sm font-medium text-gray-700"
@@ -417,11 +451,11 @@ function contact() {
                     <option value="2">6 to 12 Months</option>
                     <option value="3">More than a year</option>
                   </select>
-                </div>
+                </div> */}
 
-                {/* Project manager/Engineering Manger/CTO */}
+              {/* Project manager/Engineering Manger/CTO */}
 
-                <fieldset className="mt-6">
+              {/* <fieldset className="mt-6">
                   <div>
                     <legend className="text-sm font-medium text-gray-700">
                       Will the project be run by a technical person like a
@@ -464,11 +498,11 @@ function contact() {
                       </label>
                     </div>
                   </div>
-                </fieldset>
-              </div>
+                </fieldset> */}
+              {/* </div> */}
               {/* Technical Details */}
-              <div className="col-span-12 mt-4">
-                <h2 className="font-semibold text-xl pb-2 border-b-2">
+              {/* <div className="col-span-12 mt-4"> */}
+              {/* <h2 className="font-semibold text-xl pb-2 border-b-2">
                   Technical Details
                 </h2>
 
@@ -512,9 +546,9 @@ function contact() {
                       </label>
                     </div>
                   </div>
-                </fieldset>
-                {/* Tech Stack */}
-                <fieldset className="mt-6">
+                </fieldset> */}
+              {/* Tech Stack */}
+              {/* <fieldset className="mt-6">
                   <div>
                     <legend className="text-sm font-medium text-gray-700">
                       Choose your preferred tech stack
@@ -551,14 +585,14 @@ function contact() {
                       </div>
                     ))}
                   </div>
-                </fieldset>
-              </div>
+                </fieldset> */}
+              {/* </div> */}
               <div className="col-span-12 lg:col-span-4">
                 <button
                   disabled={loading}
                   className="bg-primary hover:bg-blue-600 text-white rounded-md px-7 py-3 disabled:opacity-50"
                 >
-                  Submit
+                  Get Quote
                 </button>
               </div>
             </div>
