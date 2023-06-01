@@ -75,7 +75,7 @@ function contact() {
       formData.append(key, value);
     });
 
-    const url = getAPIUrl(apiRoutes.CONTACT+"/as");
+    const url = getAPIUrl(apiRoutes.CONTACT);
     // const url2 =
     //   "https://script.google.com/a/hcode.tech/macros/s/AKfycbytrG1hsiIqFlkL4vMMNVRy0WXpEq2E26mU8JGuIA/exec";
     const options = {
@@ -166,7 +166,7 @@ function contact() {
           leadId={leadId}
         />
       )}
-      <section className="md:new-container grid grid-cols-12 pt-14 h-[80vh]">
+      <section className="md:new-container grid grid-cols-12 pt-14 md:h-[80vh]">
         <div className="bg-primary md:max-w-[450px] max-h-screen text-white p-10 col-span-12 md:col-span-4 md:sticky top-14">
           <div className="z-50 sticky">
             <h1 className="text-4xl font-semibold">

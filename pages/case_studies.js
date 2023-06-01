@@ -27,7 +27,7 @@ const CaseStudies = (props) => {
            <br />
             Real-Life Success in Action
         </h1>
-        <h6 className="xl:px-20 2xl:px-48">
+        <h6 className="text-sm sm:text-base xl:px-20 2xl:px-48">
  
           Discover how our services drive business success by achieving goals
           and overcoming challenges
