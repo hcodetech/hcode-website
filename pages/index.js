@@ -1,10 +1,21 @@
-import Head from 'next/head';
+import { ArrowRightIcon } from "@heroicons/react/solid";
+import Head from "next/head";
+import Benefits from "../components/Benefits";
+import CTA from "../components/CTA";
+import CaseStudiesCard from "../components/CaseStudiesCard";
+import Client from "../components/Client";
+import HeroSection from "../components/HeroSection";
+import Process from "../components/Process";
+import ServicesCard from "../components/ServicesCard";
+import Team from "../components/Team";
+import TechStack from "../components/TechStack";
+import Testimonial from "../components/Testimonial";
 import {
+  TEAM,
+  city,
+  client,
   homepage,
   how_to_get_started,
-  client,
-  city,
-  TEAM,
   metaData,
 } from '../constants/constants';
 import Client from '../components/Client';
