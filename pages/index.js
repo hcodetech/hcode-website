@@ -235,7 +235,7 @@ export default function Home() {
           <h3 className="font-poppins text-center font-semibold text-3xl  md:text-4xl md:leading-tight">
             Leadership Team
           </h3>
-          <div className="flex-wrap flex justify-between  mt-7  mx-auto">
+          <div className="flex-wrap flex gap-6 mt-7  mx-auto">
             {TEAM.map(({ name, image, bio, link, title }, index) => (
               <Team
                 key={index}

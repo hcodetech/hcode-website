@@ -56,8 +56,8 @@ function Footer() {
             </div>
           </div>
           <div className="px-4  my-4 md:mt-0 col-span-12 md:col-span-8">
-            <ul className="md:flex  grid grid-cols-12 gap-20">
-              <li className=" col-span-12 sm:col-span-6">
+            <ul className="flex  gap-20">
+              <li className="">
                 <h5 className="font-bold  text-md mb-1">HQ Karnal</h5>
                 <p>
                   120/7 Milestone,
