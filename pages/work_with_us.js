@@ -75,11 +75,10 @@ function work_with_us() {
                 src={office_v3}
                 layout="fill"
                 className="md:rounded-lg object-cover shadow-md md:hover:scale-105 w-auto transition-all duration-100 ease-out "
-                loading='lazy'
-                width='500px'
-                height='350px'
-                alt='Hcode team'
-
+                loading="lazy"
+                width="500px"
+                height="350px"
+                alt="Hcode team"
               />
             </div>
             <div className="col-span-6 w-full -mt-24 hidden md:block">
@@ -87,32 +86,29 @@ function work_with_us() {
                 src={work_with_us_1}
                 layout="fill"
                 className="rounded-lg object-cover shadow-md md:hover:scale-105 transition-all duration-100 ease-out"
-                loading='lazy'
-                width='300px'
-                height='250px'
-                alt='Hcode office'
-
+                loading="lazy"
+                width="300px"
+                height="250px"
+                alt="Hcode office"
               />
             </div>{' '}
             <div className="col-span-6 w-full -mt-24 hidden md:block">
               <picture>
-                <source srcSet={thailand_trip_webp}
-                     media="(min-width:250px)"
-                     type='image/webp'  />
-                           <img
-                src={thailand_trip}
-                layout="fill"
-                loading='lazy'
-                width='300px'
-                height='350px'
-                alt='Hcode team in Thailand'
-
-                className="rounded-lg object-cover shadow-md md:hover:scale-105 transition-all duration-100 ease-out max-h-[200px] w-full object-bottom"
-              />
-
+                <source
+                  srcSet={thailand_trip_webp}
+                  media="(min-width:250px)"
+                  type="image/webp"
+                />
+                <img
+                  src={thailand_trip}
+                  layout="fill"
+                  loading="lazy"
+                  width="300px"
+                  height="350px"
+                  alt="Hcode team in Thailand"
+                  className="rounded-lg object-cover shadow-md md:hover:scale-105 transition-all duration-100 ease-out max-h-[200px] w-full object-bottom"
+                />
               </picture>
-
-        
             </div>
           </div>
         </div>
@@ -137,9 +133,9 @@ function work_with_us() {
       <section className="new-container mt-10">
         <div className="sm:mt-10">
           <h3 className="text-4xl  font-semibold font-poppins">
-          <h3 className="text-4xl  font-semibold font-poppins">
-            {work_with_us_content.campus_heading}
-          </h3>
+            <h3 className="text-4xl  font-semibold font-poppins">
+              {work_with_us_content.campus_heading}
+            </h3>
           </h3>
         </div>
         <p
@@ -155,7 +151,14 @@ function work_with_us() {
             <h5 className="text-lg font-medium py-0 text-gray-500">Karnal</h5>
           </div>
           <div className=" ">
-            <img src={Delhi} alt="Hcode Delhi Office" className='w-auto' height='80px' width='75px' loading='lazy' />
+            <img
+              src={Delhi}
+              alt="Hcode Delhi Office"
+              className="w-auto"
+              height="80px"
+              width="75px"
+              loading="lazy"
+            />
             <h4 className="text-lg font-medium  py-2  text-gray-500">Delhi</h4>
           </div>
           <div className="mt-8 sm:mt-0">
@@ -217,7 +220,13 @@ function work_with_us() {
           {hiring_process.map(({ image, heading, descripition }, index) => (
             <div className="md:flex mb-10" key={index}>
               <div className="min-w-[64px] max-w-[64px] min-h-[64px] max-h-[64px] bg-blue-200  rounded-full">
-                <img src={image} layout="fill" loading='lazy'    height='50px' width='100px' />
+                <img
+                  src={image}
+                  layout="fill"
+                  loading="lazy"
+                  height="50px"
+                  width="100px"
+                />
               </div>
               <div className="mt-3 md:mt-0 md:ml-4">
                 <h4 className="font-semibold text-xl">{heading}</h4>
@@ -253,19 +262,20 @@ function work_with_us() {
               <Slide index={idx} key={item.img + idx}>
                 <div className="relative">
                   <picture>
-                    <source srcSet={item.img_webp} type='image/webp'
-                     media="(min-width:250px)"
-                     />
-                          <img
-                    src={item.img}
-                    alt="Karnal city"
-                    className="md:h-[700px] w-screen object-cover "
-                    width='100%'
-                    height='100%'
-                    loading='lazy'
-                  />
+                    <source
+                      srcSet={item.img_webp}
+                      type="image/webp"
+                      media="(min-width:250px)"
+                    />
+                    <img
+                      src={item.img}
+                      alt="Karnal city"
+                      className="md:h-[700px] w-screen object-cover "
+                      width="100%"
+                      height="100%"
+                      loading="lazy"
+                    />
                   </picture>
-             
                 </div>
               </Slide>
             ))}
@@ -293,9 +303,9 @@ function work_with_us() {
       <section className="pt-10 md:pt-20  text-center">
         <div className="lg:new-container">
           <h3 className="font-poppins text-center font-semibold text-3xl  md:text-4xl md:leading-tight">
-          <h3 className="font-poppins text-center font-semibold text-3xl  md:text-4xl md:leading-tight">
-            Our Mentors
-          </h3>
+            <h3 className="font-poppins text-center font-semibold text-3xl  md:text-4xl md:leading-tight">
+              Our Mentors
+            </h3>
           </h3>
           <p className="px-10 md:px-0 md:w-3/4 mx-auto mt-2">
             Learning & Development is an important part of the culture at HCode.
@@ -304,7 +314,7 @@ function work_with_us() {
             experience in different dimensions to propel them in personal and
             professional life.
           </p>
-          <div className="flex-wrap flex justify-between mt-7 w-3/4 mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-2   mt-7 md:w-1/2 mx-auto">
             {OUR_MENTORS.map(({ name, image, bio, link, title }, index) => (
               <Team
                 key={index}
@@ -331,15 +341,15 @@ function work_with_us() {
             src={work_with_us_recuriter_image}
             layout="fill"
             className="rounded-lg w-auto"
-            loading='lazy'
-            width='500px'
-            height='400px'
+            loading="lazy"
+            width="500px"
+            height="400px"
           />
           <div className="my-4 md:my-auto md:w-4/5 ml-3">
             <h2 className="text-3xl md:text-4xl font-semibold">
-            <h2 className="text-3xl md:text-4xl font-semibold">
-              Connect with the HR
-            </h2>
+              <h2 className="text-3xl md:text-4xl font-semibold">
+                Connect with the HR
+              </h2>
             </h2>
             <p className="text-base md:text-lg mt-2 mb-8">
               Are you a Candidate exploring working options with us or a
