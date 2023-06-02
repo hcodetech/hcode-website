@@ -55,17 +55,14 @@ function Footer() {
               <NewsletterComponent />
             </div>
           </div>
-          <div className="px-4  my-4 md:mt-0 col-span-12 md:col-span-8">
-            <ul className="flex  gap-20">
-              <li className="">
+          <div className="px-4  my-4 md:mt-0 col-span-12 md:col-span-6">
+            <ul className="grid grid-cols-2 gap-6">
+              <li className="col-span-1">
                 <h5 className="font-bold  text-md mb-1">HQ Karnal</h5>
                 <p>
                   120/7 Milestone,
-                  <br />
                   Main GT Road,
-                  <br />
                   Karnal HR
-                  <br />
                   #132001
                 </p>
               </li>
@@ -93,15 +90,12 @@ function Footer() {
                   #201309
                 </p>
               </li> */}
-              <li className="col-span-12 sm:col-span-6">
+              <li className="col-span-1">
                 <h5 className="font-bold  text-md mb-1">New York</h5>
                 <p>
                   675 Hudson
-                  <br />
                   St Suite 3S,
-                  <br />
                   New York, NY
-                  <br />
                   #10014
                 </p>
               </li>
@@ -209,6 +203,9 @@ function Footer() {
             <NewsletterComponent />
           </div>
         </div>
+
+
+        
         <div className="text-center  border-t pt-5">
           Copyright @ 2022{' '}
           <a href="/" className="text-primary font-semibold underline">
