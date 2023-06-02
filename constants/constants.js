@@ -115,17 +115,12 @@ export const work_with_us_benefits = {
 export const TEAM = [
   {
     image: "/assets/img/hcode_about_us_shweta.jpg",
-    name: "Shweta Goel",
+    name: "Shweta Singla",
     // title: "Communication Coach",
     bio: "Started, grown & led multiple quant teams as VP in Goldman Sachs, New York, IIT Delhi",
     link: "https://www.linkedin.com/in/shweta-singla/",
   },
-  {
-    image: "/assets/img/hcode_about_us_shashank.jpg",
-    name: "Shashank Singla",
-    bio: "Entrepreneur by trade, Engineer at heart with 2 exits in AI in US & India. Ex Goldman Sachs, IIT Delhi",
-    link: "https://www.linkedin.com/in/shashanksingla/",
-  },
+
   {
     image: "/assets/img/hcode_about_us_rakesh.jpg",
     name: "Rakesh Sehgal",
@@ -139,12 +134,18 @@ export const TEAM = [
     link: "https://www.linkedin.com/in/rishabh-garg-77023ab6/",
   },
   {
-    image: "/assets/img/hcode_about_us_harshit.jpg",
-    name: "Harshit Garg",
-    // title: "Communication Coach",
-    bio: "Management exec, Problem solver, led large-scale digital transformation. Ex-Godfrey & Pidilite, NITIE, NIT KKR",
-    link: "https://www.linkedin.com/in/gargharshit/",
+    image: "/assets/img/hcode_about_us_shashank.jpg",
+    name: "Shashank Singla",
+    bio: "Entrepreneur by trade, Engineer at heart with 2 exits in AI in US & India. Ex Goldman Sachs, IIT Delhi",
+    link: "https://www.linkedin.com/in/shashanksingla/",
   },
+  // {
+  //   image: "/assets/img/hcode_about_us_harshit.jpg",
+  //   name: "Harshit Garg",
+  //   // title: "Communication Coach",
+  //   bio: "Management exec, Problem solver, led large-scale digital transformation. Ex-Godfrey & Pidilite, NITIE, NIT KKR",
+  //   link: "https://www.linkedin.com/in/gargharshit/",
+  // },
 ];
 
 export const OUR_MENTORS = [
