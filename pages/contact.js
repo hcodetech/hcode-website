@@ -1,3 +1,5 @@
+/** @format */
+
 import {
   LocationMarkerIcon,
   PhoneIcon,
@@ -20,6 +22,7 @@ import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/plain.css";
 import MetaTags from "../components/MetaTags";
 import UpdateUserLeadPopup from "../components/updateUserLeadPopup";
+import QueryPopup from "../components/QueryPopup";
 const defaultColor = "#373536";
 function contact() {
   const [success, setSuccess] = useState(false);
@@ -39,6 +42,7 @@ function contact() {
   const [projectDesc, setProjectDesc] = useState("");
   const [numberOfDev, setNumberOfDevs] = useState("0");
   const [numberOfEmployees, setNumberOfEmployees] = useState("0");
+  const [openQueryPopup, setOpenQueryPopup] = useState(false);
 
   const [expectedTimeCommitment, setExpectedTimeCommitment] = useState("0");
   const [preferredTechStack, setPreferredTechStack] = useState([]);
@@ -63,7 +67,8 @@ function contact() {
       email: companyEmail,
       // project_type: projectType,
       // is_proj_run_by_tech_person: projectLeadRequired,
-      // project_description: projectDesc,
+      project_description: projectDesc,
+      type: 1,
       // number_of_dev: numberOfDev,
       // employee_number: numberOfEmployees,
       // time_commitment: expectedTimeCommitment,
@@ -166,6 +171,7 @@ function contact() {
           leadId={leadId}
         />
       )}
+      {openQueryPopup && <QueryPopup />}
       <section className="md:new-container grid grid-cols-12 pt-14 md:h-[80vh]">
         <div className="bg-primary md:max-w-[450px] max-h-screen text-white p-10 col-span-12 md:col-span-4 md:sticky top-14">
           <div className="z-50 sticky">
@@ -261,7 +267,7 @@ function contact() {
                   className="input-form"
                 />
               </div>
-              <div className="col-span-12 mt-4">
+              <div className="col-span-12 mt-1">
                 <label
                   htmlFor="company-email"
                   className="block text-sm font-medium text-gray-700"
@@ -277,7 +283,28 @@ function contact() {
                   id="company-email"
                   className="input-form"
                 />
+                <br />
+
+                <div className="col-span-12 mt-1">
+                  <label
+                    htmlFor="project-briefy"
+                    className="block text-sm font-medium text-gray-700"
+                  >
+                    Describe your project briefly<sup>*</sup>
+                  </label>
+                  <textarea
+                    required
+                    value={projectDesc}
+                    onChange={(e) => setProjectDesc(e.target.value)}
+                    id="project-briefy"
+                    name="project-briefy"
+                    rows={3}
+                    className="input-form"
+                    defaultValue={""}
+                  />
+                </div>
               </div>
+
               {/* Your Company Details */}
               {/* <div className="col-span-12"> */}
               {/* <h2 className="font-semibold text-xl pb-2 border-b-2">
@@ -597,6 +624,11 @@ function contact() {
               </div>
             </div>
           </form>
+
+          <button onClick={() => setOpenQueryPopup(true)} className="mt-5 text-gray-800 border-b italic">
+          For other queries, Click here.
+
+          </button>
         </div>
       </section>
     </>

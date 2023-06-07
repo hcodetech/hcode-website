@@ -4,10 +4,14 @@ import { CheckIcon } from '@heroicons/react/outline'
 import { XIcon } from '@heroicons/react/solid'
 function Modal(props) {
     const [open, setOpen] = useState(true)
+    const handleClose = () => {
+      props.setCaseStudyModalPopup?.(false)
+      setOpen(false)
+    }
     return (
         <div>
              <Transition.Root show={open} as={Fragment}>
-              <Dialog as="div" className="fixed z-10 -inset-y-60 md:inset-0 overflow-y-auto" onClose={setOpen}>
+              <Dialog as="div" className="fixed z-10 inset-0 overflow-y-auto" onClose={() => handleClose()}>
                 <div className="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
                   <Transition.Child
                     as={Fragment}
@@ -38,19 +42,20 @@ function Modal(props) {
                       <div>
                         <div className={`mx-auto flex items-center justify-center h-12 w-12 rounded-full ${props.color}`}>
                             {props.success ? 
-                                <CheckIcon className={`h-6 w-6 ${props.iconColor}`} aria-hidden="true" />
+                                // <CheckIcon className={`h-6 w-6 ${props.iconColor}`} aria-hidden="true" />
+                                <>{props.titleIcon}</>
                                 :
                                 <XIcon className={`h-6 w-6 ${props.iconColor}`} aria-hidden="true" />
                             }
                         </div>
                         <div className="mt-3 text-center sm:mt-5">
-                          <Dialog.Title as="h3" className="text-lg leading-6 font-medium text-gray-900">
+                          <Dialog.Title as="h3" className="text-lg leading-6 font-medium text-gray-900 px-8">
                           {props.heading}
                           </Dialog.Title>
                           <div className="mt-2">
-                            <p className="text-sm text-gray-500">
+                            <div className="text-sm text-gray-500">
                             {props.paragraph}
-                            </p>
+                            </div>
                           </div>
                         </div>
                       </div>

@@ -18,17 +18,6 @@ import {
   how_to_get_started,
   metaData,
 } from '../constants/constants';
-import Client from '../components/Client';
-import ServicesCard from '../components/ServicesCard';
-import CTA from '../components/CTA';
-import Benefits from '../components/Benefits';
-import TechStack from '../components/TechStack';
-import Process from '../components/Process';
-import HeroSection from '../components/HeroSection';
-import Team from '../components/Team';
-import { ArrowRightIcon } from '@heroicons/react/solid';
-import Testimonial from '../components/Testimonial';
-import CaseStudiesCard from '../components/CaseStudiesCard';
 
 import MobileSVG from '../public/assets/img/mobile-illu.svg';
 import BackendSVG from '../public/assets/img/backend-illu.svg';
