@@ -1,4 +1,6 @@
- export const API_BASE_URL = "https://dev-portal.hcode.tech/api/v1/";
+/** @format */
+
+export const API_BASE_URL = "https://dev-portal.hcode.tech/api/v1/";
 // export const API_BASE_URL = "https://portal.hcode.tech/api/v1/";
 
 export const apiRoutes = {

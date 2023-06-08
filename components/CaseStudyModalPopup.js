@@ -4,10 +4,17 @@ import { useState } from "react";
 import Modal from "./Modal";
 import { getAPIUrl } from "../pages/api/APIHelpers";
 import { apiRoutes } from "../pages/api/APIRoutes";
-import { CheckIcon, MailIcon, DocumentDownloadIcon} from "@heroicons/react/outline";
+import {
+  CheckIcon,
+  MailIcon,
+  DocumentDownloadIcon,
+} from "@heroicons/react/outline";
 
-
-const CaseStudyModalPopup = ({ mediaId,caseStudyModalPopup, setCaseStudyModalPopup }) => {
+const CaseStudyModalPopup = ({
+  mediaId,
+  caseStudyModalPopup,
+  setCaseStudyModalPopup,
+}) => {
   const [firstName, setFirstName] = useState("");
   // const [description, setDescription] = useState('');
   const [success, setSuccess] = useState(false);
@@ -17,9 +24,8 @@ const CaseStudyModalPopup = ({ mediaId,caseStudyModalPopup, setCaseStudyModalPop
   const [userEmail, setUserEmail] = useState("");
 
   const [loading, setLoading] = useState(false);
-//   const [failure, setFailure] = useState(false);
+  //   const [failure, setFailure] = useState(false);
   const [leadId, setLeadId] = useState("");
-
 
   const handleCaseStudy = async (event) => {
     setSuccess(false);
@@ -63,7 +69,7 @@ const CaseStudyModalPopup = ({ mediaId,caseStudyModalPopup, setCaseStudyModalPop
       // const res2 = await fetch(url2, options);
       setFirstName("");
 
-    //   setUserEmail("");
+      //   setUserEmail("");
 
       setSuccess(true);
       console.log(json);
@@ -80,12 +86,22 @@ const CaseStudyModalPopup = ({ mediaId,caseStudyModalPopup, setCaseStudyModalPop
   return (
     <Modal
       success
-      titleIcon={!success ? <DocumentDownloadIcon className="h-6 w-6 text-primary " /> : <MailIcon className='w-6 h-6 text-green-600'/>}
+      titleIcon={
+        !success ? (
+          <DocumentDownloadIcon className="h-6 w-6 text-primary " />
+        ) : (
+          <MailIcon className="w-6 h-6 text-green-600" />
+        )
+      }
       setOpenModal={setCaseStudyModalPopup}
       openModal={caseStudyModalPopup}
-      color={`${!success  ?'bg-blue-100' : 'bg-green-100 '}`}
+      color={`${!success ? "bg-blue-100" : "bg-green-100 "}`}
       iconColor={"text-green-600"}
-      heading={`${!success ? 'Discover actionable insights in our Case Study': `This case study has been sent to ${userEmail}`}`}
+      heading={`${
+        !success
+          ? "Discover actionable insights in our Case Study"
+          : `This case study has been sent to ${userEmail}`
+      }`}
       paragraph={
         <>
           {!success ? (
@@ -136,14 +152,10 @@ const CaseStudyModalPopup = ({ mediaId,caseStudyModalPopup, setCaseStudyModalPop
                   </div>
                 </form>
               </div>
-              {/* {success && <div>Success</div>} */}
             </>
           ) : (
             <>
-              <div>
-                
-                
-              </div>
+              <div></div>
             </>
           )}
         </>

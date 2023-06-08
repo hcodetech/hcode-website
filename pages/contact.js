@@ -23,6 +23,7 @@ import "react-phone-input-2/lib/plain.css";
 import MetaTags from "../components/MetaTags";
 import UpdateUserLeadPopup from "../components/updateUserLeadPopup";
 import QueryPopup from "../components/QueryPopup";
+import { CheckIcon } from "@heroicons/react/outline";
 const defaultColor = "#373536";
 function contact() {
   const [success, setSuccess] = useState(false);
@@ -33,18 +34,12 @@ function contact() {
   const [leadId, setLeadId] = useState("");
   const [lastName, setLastName] = useState("");
   const [loading, setLoading] = useState(false);
-  const [companyName, setCompanyName] = useState("");
   const [companyEmail, setCompanyEmail] = useState("");
-  const [mobileNumber, setMobileNumber] = useState("+91");
 
-  const [projectType, setProjectType] = useState("");
-  const [projectLeadRequired, setProjectLeadRequired] = useState();
   const [projectDesc, setProjectDesc] = useState("");
   const [numberOfDev, setNumberOfDevs] = useState("0");
-  const [numberOfEmployees, setNumberOfEmployees] = useState("0");
   const [openQueryPopup, setOpenQueryPopup] = useState(false);
 
-  const [expectedTimeCommitment, setExpectedTimeCommitment] = useState("0");
   const [preferredTechStack, setPreferredTechStack] = useState([]);
   const setSelectedTech = (e, tech) => {
     if (e.target.checked) {
@@ -62,17 +57,9 @@ function contact() {
     const contactUsFormData = {
       first_name: firstName,
       last_name: lastName,
-      // mobile_number: mobileNumber.length > 4 ? `{+${mobileNumber}}` : "",
-      // company_name: companyName,
       email: companyEmail,
-      // project_type: projectType,
-      // is_proj_run_by_tech_person: projectLeadRequired,
       project_description: projectDesc,
       type: 1,
-      // number_of_dev: numberOfDev,
-      // employee_number: numberOfEmployees,
-      // time_commitment: expectedTimeCommitment,
-      // tech_preference: preferredTechStack.join(","),
     };
 
     const formData = new FormData();
@@ -94,9 +81,9 @@ function contact() {
       const json = await res.json();
       if (!res.ok) {
         if (res.status >= 400 && res.body) {
+          setFailure(true);
           window.scrollTo(0, 0);
           setResponseMessage(json?.mobile_number);
-          setFailure(true);
           return;
         }
         throw new Error(res);
@@ -104,21 +91,12 @@ function contact() {
       // const res2 = await fetch(url2, options);
       setFirstName("");
       setLastName("");
-      setCompanyName("");
       setCompanyEmail("");
-      setMobileNumber("");
-      setProjectType("");
-      setProjectLeadRequired();
       setProjectDesc("");
-      setNumberOfDevs("0");
-      setNumberOfEmployees("0");
-      setPreferredTechStack([]);
-      setExpectedTimeCommitment("0");
-      // Show the Success Message
-      // setSuccess(true);
-      console.log(json);
       setLeadId(json?.id);
-      toggleProjectDetailsPopup();
+      setFailure(false);
+      // setSuccess(true);
+      setShowProjectDetailsPopup(true);
     } catch (e) {
       // Show the failure Message
       setFailure(true);
@@ -129,8 +107,6 @@ function contact() {
     window.scrollTo(0, 0);
   };
 
-  const toggleProjectDetailsPopup = () =>
-    setShowProjectDetailsPopup((prev) => !prev);
   return (
     <>
       <Head>
@@ -154,7 +130,10 @@ function contact() {
       )}
       {failure && (
         <Modal
+          setOpenModal={setShowProjectDetailsPopup}
+          openModal={failure}
           color={"bg-red-100"}
+          setFailure={setFailure}
           iconColor={"text-red-600"}
           heading={"Oops !"}
           paragraph={
@@ -165,10 +144,13 @@ function contact() {
       )}
       {showProjectDetailsPopup && (
         <UpdateUserLeadPopup
+          success={success}
+          failure={failure}
           setSuccess={setSuccess}
           setFailure={setFailure}
           setLeadId={setLeadId}
-          toggleProjectDetailsPopup={toggleProjectDetailsPopup}
+          setShowProjectDetailsPopup={setShowProjectDetailsPopup}
+          showProjectDetailsPopup={showProjectDetailsPopup}
           leadId={leadId}
         />
       )}

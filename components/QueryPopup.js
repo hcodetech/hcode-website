@@ -4,12 +4,17 @@ import { useState } from "react";
 import Modal from "./Modal";
 import { getAPIUrl } from "../pages/api/APIHelpers";
 import { apiRoutes } from "../pages/api/APIRoutes";
-import { CheckIcon, QuestionMarkCircleIcon } from "@heroicons/react/outline";
+import {
+  CheckIcon,
+  QuestionMarkCircleIcon,
+  XIcon,
+} from "@heroicons/react/outline";
 import { DotLoader } from "react-spinners/DotLoader";
 
 const QueryPopup = ({ openQueryPopup, setOpenQueryPopup }) => {
   const [firstName, setFirstName] = useState("");
   const [success, setSuccess] = useState(false);
+  const [error, setError] = useState(false);
 
   const [projectDesc, setProjectDesc] = useState("");
 
@@ -60,7 +65,11 @@ const QueryPopup = ({ openQueryPopup, setOpenQueryPopup }) => {
       setSuccess(true);
     } catch (e) {
       // Show the failure Message
+
+      setOpenQueryPopup(false);
+
       setSuccess(false);
+      setError(true);
     } finally {
       setLoading(false);
     }
@@ -76,100 +85,117 @@ const QueryPopup = ({ openQueryPopup, setOpenQueryPopup }) => {
     );
   }
 
-  return (
-    <Modal
-      success
-      titleIcon={
-        !success ? (
-          <QuestionMarkCircleIcon className="h-6 w-6 text-green-600" />
-        ) : (
-          <CheckIcon className="h-6 w-6 text-green-600" />
-        )
-      }
-      color={"bg-green-100"}
-      iconColor={"text-green-600"}
-      heading={`${
-        !success
-          ? "Please enter your query"
-          : "Thanks for your interest. We will contact you shortly."
-      }`}
-      openModal={openQueryPopup}
-      setOpenModal={setOpenQueryPopup}
-      paragraph={
-        <>
-          {!success ? (
-            <div className="text-left">
-              {/* Full Name */}
-              <form autoComplete="off" onSubmit={generalQuery}>
-                <div className="col-span-6">
-                  <label
-                    htmlFor="first-name"
-                    className="block text-sm font-medium text-gray-700"
-                  >
-                    First Name<sup>*</sup>
-                  </label>
-                  <input
-                    required
-                    value={firstName}
-                    onChange={(e) => setFirstName(e.target.value)}
-                    type="text"
-                    name="first-name"
-                    id="first-name"
-                    className="input-form"
-                  />
-                </div>
-                <div className="col-span-12 mt-4">
-                  <label
-                    htmlFor="company-email"
-                    className="block text-sm font-medium text-gray-700"
-                  >
-                    Email<sup>*</sup>
-                  </label>
-                  <input
-                    required
-                    value={userEmail}
-                    onChange={(e) => setUserEmail(e.target.value)}
-                    type="email"
-                    name="user-email"
-                    id="user-email"
-                    className="input-form"
-                  />
+  {
+    error && (
+      <Modal
+        titleIcon={<XIcon className="h-6 w-6 text-green-600" />}
+        color={"bg-blue-100"}
+        iconColor={"text-blue-600"}
+        success
+        heading={"Thank You uhuh !"}
+        paragraph={
+          "Thanks for your interest. We will contact yo diuhdxiu u shortly."
+        }
+      />
+    );
+  }
 
-                  <div className="col-span-12 mt-4">
+  return (
+    <>
+      <Modal
+        success
+        titleIcon={
+          !success ? (
+            <QuestionMarkCircleIcon className="h-6 w-6 text-green-600" />
+          ) : (
+            <CheckIcon className="h-6 w-6 text-green-600" />
+          )
+        }
+        color={"bg-green-100"}
+        iconColor={"text-green-600"}
+        heading={`${
+          !success
+            ? "Please enter your query"
+            : "Thanks for your interest. We will contact you shortly."
+        }`}
+        openModal={openQueryPopup}
+        setOpenModal={setOpenQueryPopup}
+        paragraph={
+          <>
+            {!success ? (
+              <div className="text-left">
+                {/* Full Name */}
+                <form autoComplete="off" onSubmit={generalQuery}>
+                  <div className="col-span-6">
                     <label
-                      htmlFor="project-briefy"
+                      htmlFor="first-name"
                       className="block text-sm font-medium text-gray-700"
                     >
-                      Description<sup>*</sup>
+                      First Name<sup>*</sup>
                     </label>
-                    <textarea
+                    <input
                       required
-                      value={projectDesc}
-                      onChange={(e) => setProjectDesc(e.target.value)}
-                      id="project-briefy"
-                      name="project-briefy"
-                      rows={3}
+                      value={firstName}
+                      onChange={(e) => setFirstName(e.target.value)}
+                      type="text"
+                      name="first-name"
+                      id="first-name"
                       className="input-form"
-                      // defaultValue={""}
                     />
                   </div>
+                  <div className="col-span-12 mt-4">
+                    <label
+                      htmlFor="company-email"
+                      className="block text-sm font-medium text-gray-700"
+                    >
+                      Email<sup>*</sup>
+                    </label>
+                    <input
+                      required
+                      value={userEmail}
+                      onChange={(e) => setUserEmail(e.target.value)}
+                      type="email"
+                      name="user-email"
+                      id="user-email"
+                      className="input-form"
+                    />
 
-                  <button
-                    type="submit"
-                    disabled={loading}
-                    className="bg-primary hover:bg-blue-600 text-white rounded-md px-7 py-3 disabled:opacity-50  mt-5 ml-56"
-                  >
-                    Submit
-                  </button>
-                </div>
-              </form>
-            </div>
-          ) : (
-            <div></div>
-          )}
-        </>
-      }
-    />
+                    <div className="col-span-12 mt-4">
+                      <label
+                        htmlFor="project-briefy"
+                        className="block text-sm font-medium text-gray-700"
+                      >
+                        Description<sup>*</sup>
+                      </label>
+                      <textarea
+                        required
+                        value={projectDesc}
+                        onChange={(e) => setProjectDesc(e.target.value)}
+                        id="project-briefy"
+                        name="project-briefy"
+                        rows={3}
+                        className="input-form"
+                        // defaultValue={""}
+                      />
+                    </div>
+
+                    <button
+                      type="submit"
+                      disabled={loading}
+                      className="bg-primary hover:bg-blue-600 text-white rounded-md px-7 py-3 disabled:opacity-50  mt-5 ml-56"
+                    >
+                      Submit
+                    </button>
+                  </div>
+                </form>
+              </div>
+            ) : (
+              <div></div>
+            )}
+          </>
+        }
+      />
+    </>
   );
 };
 
