@@ -1,3 +1,5 @@
+/** @format */
+
 import React, { useState } from "react";
 import { getAPIUrl } from "../pages/api/APIHelpers";
 import Modal from "./Modal";
@@ -5,10 +7,12 @@ import { apiRoutes } from "../pages/api/APIRoutes";
 
 const UpdateUserLeadPopup = ({
   leadId,
-  toggleProjectDetailsPopup,
+  // toggleProjectDetailsPopup,
+  setShowProjectDetailsPopup,
+  showProjectDetailsPopup,
   setLeadId,
   setSuccess,
-  setFailure
+  setFailure,
 }) => {
   const [loading, setLoading] = useState(false);
   const [projectLeadRequired, setProjectLeadRequired] = useState();
@@ -54,12 +58,12 @@ const UpdateUserLeadPopup = ({
       setProjectLeadRequired();
       setNumberOfDevs("0");
       // Show the Success Message
-      setSuccess(true);
+      // setSuccess(true);
       setLeadId("");
-      toggleProjectDetailsPopup();
+      // toggleProjectDetailsPopup();
     } catch (e) {
       // Show the failure Message
-      setFailure(true);
+      // setFailure(true);
     } finally {
       setLoading(false);
     }
@@ -72,6 +76,8 @@ const UpdateUserLeadPopup = ({
       color={"bg-green-100"}
       iconColor={"text-green-600"}
       heading="Project details"
+      openModal={showProjectDetailsPopup}
+      setOpenModal={setShowProjectDetailsPopup}
       paragraph={
         <form autoComplete="off" onSubmit={updateUserLead}>
           <div className="col-span-12 mt-4 text-left">
@@ -180,7 +186,7 @@ const UpdateUserLeadPopup = ({
             <div className="grid grid-cols-2 gap-5 mt-5">
               <a
                 className="primary-outline ml-auto"
-                onClick={toggleProjectDetailsPopup}
+                onClick={() => setShowProjectDetailsPopup(false)}
               >
                 Close
               </a>

@@ -3,15 +3,13 @@ import { Dialog, Transition } from '@headlessui/react'
 import { CheckIcon } from '@heroicons/react/outline'
 import { XIcon } from '@heroicons/react/solid'
 function Modal(props) {
-    const [open, setOpen] = useState(true)
     const handleClose = () => {
-      props.setCaseStudyModalPopup?.(false)
-      setOpen(false)
+      props.setOpenModal?.(false)
     }
     return (
         <div>
-             <Transition.Root show={open} as={Fragment}>
-              <Dialog as="div" className="fixed z-10 inset-0 overflow-y-auto" onClose={() => handleClose()}>
+             <Transition.Root show={props.openModal} as={Fragment}>
+              <Dialog as="div" className="fixed z-50 inset-0 overflow-y-auto" onClose={() => handleClose()}>
                 <div className="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
                   <Transition.Child
                     as={Fragment}

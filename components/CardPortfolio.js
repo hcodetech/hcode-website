@@ -14,7 +14,6 @@ const CardPortfolio = (props) => {
   const [mediaId, setMediaId] = useState();
 
   const handleCaseStudyBtnClick = (media_id) => {
-    console.log('clicked!!!!!!!!!!!!!!!!')
     setCaseStudyModalPopup(true);
     setMediaId(media_id);
   };
@@ -32,7 +31,7 @@ const CardPortfolio = (props) => {
   ) {
     return (
       <>
-        {caseStudyModalPopup && <CaseStudyModalPopup mediaId={mediaId} setCaseStudyModalPopup={setCaseStudyModalPopup} />}
+        {caseStudyModalPopup && <CaseStudyModalPopup mediaId={mediaId} caseStudyModalPopup={caseStudyModalPopup} setCaseStudyModalPopup={setCaseStudyModalPopup} />}
 
         <div
           className={` ${cardData.additionalClass} grid grid-cols-12 rounded mb-10

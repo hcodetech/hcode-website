@@ -144,6 +144,7 @@ function contact() {
       )}
       {success && (
         <Modal
+          titleIcon={<CheckIcon className="h-6 w-6 text-green-600" />}
           color={"bg-blue-100"}
           iconColor={"text-blue-600"}
           success={true}
@@ -171,7 +172,12 @@ function contact() {
           leadId={leadId}
         />
       )}
-      {openQueryPopup && <QueryPopup />}
+      {openQueryPopup && (
+        <QueryPopup
+          openQueryPopup={openQueryPopup}
+          setOpenQueryPopup={setOpenQueryPopup}
+        />
+      )}
       <section className="md:new-container grid grid-cols-12 pt-14 md:h-[80vh]">
         <div className="bg-primary md:max-w-[450px] max-h-screen text-white p-10 col-span-12 md:col-span-4 md:sticky top-14">
           <div className="z-50 sticky">
@@ -625,9 +631,11 @@ function contact() {
             </div>
           </form>
 
-          <button onClick={() => setOpenQueryPopup(true)} className="mt-5 text-gray-800 border-b italic">
-          For other queries, Click here.
-
+          <button
+            onClick={() => setOpenQueryPopup(true)}
+            className="mt-5 text-gray-800 border-b italic"
+          >
+            For other queries, Click here.
           </button>
         </div>
       </section>

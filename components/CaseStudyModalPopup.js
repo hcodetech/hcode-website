@@ -7,7 +7,7 @@ import { apiRoutes } from "../pages/api/APIRoutes";
 import { CheckIcon, MailIcon, DocumentDownloadIcon} from "@heroicons/react/outline";
 
 
-const CaseStudyModalPopup = ({ mediaId, setCaseStudyModalPopup }) => {
+const CaseStudyModalPopup = ({ mediaId,caseStudyModalPopup, setCaseStudyModalPopup }) => {
   const [firstName, setFirstName] = useState("");
   // const [description, setDescription] = useState('');
   const [success, setSuccess] = useState(false);
@@ -81,7 +81,8 @@ const CaseStudyModalPopup = ({ mediaId, setCaseStudyModalPopup }) => {
     <Modal
       success
       titleIcon={!success ? <DocumentDownloadIcon className="h-6 w-6 text-primary " /> : <MailIcon className='w-6 h-6 text-green-600'/>}
-      setCaseStudyModalPopup={setCaseStudyModalPopup}
+      setOpenModal={setCaseStudyModalPopup}
+      openModal={caseStudyModalPopup}
       color={`${!success  ?'bg-blue-100' : 'bg-green-100 '}`}
       iconColor={"text-green-600"}
       heading={`${!success ? 'Discover actionable insights in our Case Study': `This case study has been sent to ${userEmail}`}`}
