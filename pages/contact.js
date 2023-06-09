@@ -118,26 +118,16 @@ function contact() {
           <DotLoader color={defaultColor} size={60} />
         </div>
       )}
-      {success && (
-        <Modal
-          titleIcon={<CheckIcon className="h-6 w-6 text-green-600" />}
-          color={"bg-blue-100"}
-          iconColor={"text-blue-600"}
-          success={true}
-          heading={"Thank You !"}
-          paragraph={"Thanks for your interest. We will contact you shortly."}
-        />
-      )}
+      {/* TODO: Check this is open, at the same time below modal is not closed */}
+
       {failure && (
         <Modal
-          setOpenModal={setShowProjectDetailsPopup}
+          setOpenModal={setFailure}
           openModal={failure}
           color={"bg-red-100"}
-          setFailure={setFailure}
           iconColor={"text-red-600"}
           heading={"Oops !"}
           paragraph={
-            responseMessage ??
             "We are unable to register your request at current time. Please send us an email at hello@hcode.tech"
           }
         />

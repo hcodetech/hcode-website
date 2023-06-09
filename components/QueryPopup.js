@@ -15,6 +15,7 @@ const QueryPopup = ({ openQueryPopup, setOpenQueryPopup }) => {
   const [firstName, setFirstName] = useState("");
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(false);
+  console.log(error);
 
   const [projectDesc, setProjectDesc] = useState("");
 
@@ -66,7 +67,7 @@ const QueryPopup = ({ openQueryPopup, setOpenQueryPopup }) => {
     } catch (e) {
       // Show the failure Message
 
-      setOpenQueryPopup(false);
+      // setOpenQueryPopup(false);
 
       setSuccess(false);
       setError(true);
@@ -85,23 +86,22 @@ const QueryPopup = ({ openQueryPopup, setOpenQueryPopup }) => {
     );
   }
 
-  {
-    error && (
-      <Modal
-        titleIcon={<XIcon className="h-6 w-6 text-green-600" />}
-        color={"bg-blue-100"}
-        iconColor={"text-blue-600"}
-        success
-        heading={"Thank You uhuh !"}
-        paragraph={
-          "Thanks for your interest. We will contact yo diuhdxiu u shortly."
-        }
-      />
-    );
-  }
-
   return (
     <>
+      {/* TODO: Check this is open, at the same time below modal is not closed */}
+      {error && (
+        <Modal
+          titleIcon={<XIcon className="h-6 w-6" />}
+          setOpenModal={setError}
+          openModal={error}
+          color={"bg-red-100"}
+          iconColor={"text-red-600"}
+          heading={"Oops !"}
+          paragraph={
+            "We are unable to register your request at current time. Please send us an email at hello@hcode.tech"
+          }
+        />
+      )}
       <Modal
         success
         titleIcon={
@@ -123,10 +123,10 @@ const QueryPopup = ({ openQueryPopup, setOpenQueryPopup }) => {
         paragraph={
           <>
             {!success ? (
-              <div className="text-left">
+              <div className="">
                 {/* Full Name */}
                 <form autoComplete="off" onSubmit={generalQuery}>
-                  <div className="col-span-6">
+                  <div className="col-span-6 text-left">
                     <label
                       htmlFor="first-name"
                       className="block text-sm font-medium text-gray-700"
@@ -143,7 +143,7 @@ const QueryPopup = ({ openQueryPopup, setOpenQueryPopup }) => {
                       className="input-form"
                     />
                   </div>
-                  <div className="col-span-12 mt-4">
+                  <div className="col-span-12 mt-4 text-left">
                     <label
                       htmlFor="company-email"
                       className="block text-sm font-medium text-gray-700"
@@ -160,7 +160,7 @@ const QueryPopup = ({ openQueryPopup, setOpenQueryPopup }) => {
                       className="input-form"
                     />
 
-                    <div className="col-span-12 mt-4">
+                    <div className="col-span-12 mt-4 text-left">
                       <label
                         htmlFor="project-briefy"
                         className="block text-sm font-medium text-gray-700"
@@ -179,13 +179,15 @@ const QueryPopup = ({ openQueryPopup, setOpenQueryPopup }) => {
                       />
                     </div>
 
-                    <button
-                      type="submit"
-                      disabled={loading}
-                      className="bg-primary hover:bg-blue-600 text-white rounded-md px-7 py-3 disabled:opacity-50  mt-5 ml-56"
-                    >
-                      Submit
-                    </button>
+                    <div className=" text-right">
+                      <button
+                        type="submit"
+                        disabled={loading}
+                        className="bg-primary hover:bg-blue-600 text-white rounded-md px-7 py-3 disabled:opacity-50  mt-5"
+                      >
+                        Submit
+                      </button>
+                    </div>
                   </div>
                 </form>
               </div>

@@ -7,11 +7,13 @@ import { XIcon } from "@heroicons/react/solid";
 function Modal(props) {
   const handleClose = () => {
     props.setOpenModal(false);
-    props.setFailure?.(false);
+    // props.setFailure?.(false);
   };
+
+  // console.log(props.openModal);
   return (
     <div>
-      <Transition.Root show={props?.openModal ?? false} as={Fragment}>
+      <Transition.Root show={props.openModal} as={Fragment}>
         <Dialog
           as="div"
           className="fixed z-50 inset-0 overflow-y-auto"
