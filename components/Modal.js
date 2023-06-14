@@ -1,8 +1,8 @@
 /** @format */
 
-import { Fragment } from "react";
-import { Dialog, Transition } from "@headlessui/react";
-import { XIcon } from "@heroicons/react/solid";
+import { Fragment } from 'react';
+import { Dialog, Transition } from '@headlessui/react';
+import { XIcon } from '@heroicons/react/solid';
 function Modal(props) {
   return (
     <div>
@@ -63,7 +63,7 @@ function Modal(props) {
                       {props.heading}
                     </Dialog.Title>
                     <div className="mt-2">
-                      <div className="text-sm text-gray-500 px-10">
+                      <div className="text-sm text-gray-500 ">
                         {props.paragraph}
                       </div>
                     </div>

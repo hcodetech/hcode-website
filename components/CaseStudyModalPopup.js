@@ -1,14 +1,14 @@
 /** @format */
 
-import { DocumentDownloadIcon } from "@heroicons/react/outline";
-import { useState } from "react";
-import { getAPIUrl } from "../pages/api/APIHelpers";
-import { apiRoutes } from "../pages/api/APIRoutes";
-import Modal from "./Modal";
+import { DocumentDownloadIcon } from '@heroicons/react/outline';
+import { useState } from 'react';
+import { getAPIUrl } from '../pages/api/APIHelpers';
+import { apiRoutes } from '../pages/api/APIRoutes';
+import Modal from './Modal';
 
 const CaseStudyModalPopup = ({ mediaId, downloadCallback, close }) => {
-  const [firstName, setFirstName] = useState("");
-  const [userEmail, setUserEmail] = useState("");
+  const [firstName, setFirstName] = useState('');
+  const [userEmail, setUserEmail] = useState('');
   const [loading, setLoading] = useState(false);
 
   const handleCaseStudy = async (event) => {
@@ -30,14 +30,14 @@ const CaseStudyModalPopup = ({ mediaId, downloadCallback, close }) => {
     //   "https://script.google.com/a/hcode.tech/macros/s/AKfycbytrG1hsiIqFlkL4vMMNVRy0WXpEq2E26mU8JGuIA/exec";
     const options = {
       body: formData,
-      method: "POST",
-      "Content-Type": "application/x-www-form-urlencoded",
+      method: 'POST',
+      'Content-Type': 'application/x-www-form-urlencoded',
     };
     try {
       setLoading(true);
       const res = await fetch(url, options);
       const json = await res.json();
-      console.log("1");
+      console.log('1');
       if (!res.ok) {
         if (res.status >= 400 && res.body) {
           window.scrollTo(0, 0);
@@ -46,11 +46,11 @@ const CaseStudyModalPopup = ({ mediaId, downloadCallback, close }) => {
         }
         throw new Error(res);
       } else {
-        console.log("2");
+        console.log('2');
         downloadCallback(true, userEmail);
       }
     } catch (e) {
-      console.log("3");
+      console.log('3');
       downloadCallback(false, userEmail);
     } finally {
       setLoading(false);
@@ -69,7 +69,8 @@ const CaseStudyModalPopup = ({ mediaId, downloadCallback, close }) => {
         close={close}
         color="bg-blue-100"
         iconColor="text-green-600"
-        heading="Discover actionable insights in our Case Study"
+        // heading="Discover actionable insights in our Case Study"
+        heading="Get yourself a Case Study about the project"
         paragraph={
           <div className="text-left">
             {/* Full Name */}
@@ -110,9 +111,10 @@ const CaseStudyModalPopup = ({ mediaId, downloadCallback, close }) => {
 
                 <button
                   type="submit"
-                  className="bg-primary hover:bg-blue-600 text-white rounded-md px-7 py-3 disabled:opacity-50  mt-5 ml-56"
+                  className="bg-primary hover:bg-blue-600 text-white rounded-md px-7 py-3 disabled:opacity-50  mt-5 ml-auto"
                 >
                   Download
+                  {/* Submit Request */}
                 </button>
               </div>
             </form>
