@@ -4,29 +4,25 @@ import { useState } from "react";
 import Modal from "./Modal";
 import { getAPIUrl } from "../pages/api/APIHelpers";
 import { apiRoutes } from "../pages/api/APIRoutes";
-import {
-  CheckIcon,
-  QuestionMarkCircleIcon,
-  XIcon,
-} from "@heroicons/react/outline";
+import { QuestionMarkCircleIcon } from "@heroicons/react/outline";
 import { DotLoader } from "react-spinners/DotLoader";
 
-const QueryPopup = ({ openQueryPopup, setOpenQueryPopup }) => {
+const QueryPopup = ({
+  openQueryPopup,
+  setOpenQueryPopup,
+  querySubmitCallback,
+  close,
+}) => {
   const [firstName, setFirstName] = useState("");
-  const [success, setSuccess] = useState(false);
-  const [error, setError] = useState(false);
-  console.log(error);
-
   const [projectDesc, setProjectDesc] = useState("");
-
   const [userEmail, setUserEmail] = useState("");
   const [loading, setLoading] = useState(false);
 
   const defaultColor = "#373536";
 
   const generalQuery = async (event) => {
-    setSuccess(false);
     event.preventDefault();
+    // setSuccess(false);
     const contactUsFormData = {
       first_name: firstName,
       project_description: projectDesc,
@@ -40,8 +36,7 @@ const QueryPopup = ({ openQueryPopup, setOpenQueryPopup }) => {
     });
 
     const url = getAPIUrl(apiRoutes.CONTACT);
-    // const url2 =
-    //   "https://script.google.com/a/hcode.tech/macros/s/AKfycbytrG1hsiIqFlkL4vMMNVRy0WXpEq2E26mU8JGuIA/exec";
+
     const options = {
       body: formData,
       method: "POST",
@@ -55,22 +50,14 @@ const QueryPopup = ({ openQueryPopup, setOpenQueryPopup }) => {
         if (res.status >= 400 && res.body) {
           window.scrollTo(0, 0);
           setResponseMessage(json?.mobile_number);
-          setSuccess(false);
           return;
         }
         throw new Error(res);
+      } else {
+        querySubmitCallback(true);
       }
-      setFirstName("");
-      setUserEmail("");
-      setProjectDesc("");
-      setSuccess(true);
     } catch (e) {
-      // Show the failure Message
-
-      // setOpenQueryPopup(false);
-
-      setSuccess(false);
-      setError(true);
+      querySubmitCallback(false);
     } finally {
       setLoading(false);
     }
@@ -88,112 +75,87 @@ const QueryPopup = ({ openQueryPopup, setOpenQueryPopup }) => {
 
   return (
     <>
-      {/* TODO: Check this is open, at the same time below modal is not closed */}
-      {error && (
-        <Modal
-          titleIcon={<XIcon className="h-6 w-6" />}
-          setOpenModal={setError}
-          openModal={error}
-          color={"bg-red-100"}
-          iconColor={"text-red-600"}
-          heading={"Oops !"}
-          paragraph={
-            "We are unable to register your request at current time. Please send us an email at hello@hcode.tech"
-          }
-        />
-      )}
       <Modal
         success
         titleIcon={
-          !success ? (
-            <QuestionMarkCircleIcon className="h-6 w-6 text-green-600" />
-          ) : (
-            <CheckIcon className="h-6 w-6 text-green-600" />
-          )
+          <QuestionMarkCircleIcon className="h-6 w-6 text-green-600" />
         }
-        color={"bg-green-100"}
-        iconColor={"text-green-600"}
-        heading={`${
-          !success
-            ? "Please enter your query"
-            : "Thanks for your interest. We will contact you shortly."
-        }`}
+        close={close}
+        color="bg-green-100"
+        iconColor="text-green-600"
+        heading="Please enter your query"
         openModal={openQueryPopup}
         setOpenModal={setOpenQueryPopup}
         paragraph={
           <>
-            {!success ? (
-              <div className="">
-                {/* Full Name */}
-                <form autoComplete="off" onSubmit={generalQuery}>
-                  <div className="col-span-6 text-left">
-                    <label
-                      htmlFor="first-name"
-                      className="block text-sm font-medium text-gray-700"
-                    >
-                      First Name<sup>*</sup>
-                    </label>
-                    <input
-                      required
-                      value={firstName}
-                      onChange={(e) => setFirstName(e.target.value)}
-                      type="text"
-                      name="first-name"
-                      id="first-name"
-                      className="input-form"
-                    />
-                  </div>
+            <div className="">
+              {/* Full Name */}
+              <form autoComplete="off" onSubmit={generalQuery}>
+                <div className="col-span-6 text-left">
+                  <label
+                    htmlFor="first-name"
+                    className="block text-sm font-medium text-gray-700"
+                  >
+                    First Name<sup>*</sup>
+                  </label>
+                  <input
+                    required
+                    value={firstName}
+                    onChange={(e) => setFirstName(e.target.value)}
+                    type="text"
+                    name="first-name"
+                    id="first-name"
+                    className="input-form"
+                  />
+                </div>
+                <div className="col-span-12 mt-4 text-left">
+                  <label
+                    htmlFor="company-email"
+                    className="block text-sm font-medium text-gray-700"
+                  >
+                    Email<sup>*</sup>
+                  </label>
+                  <input
+                    required
+                    value={userEmail}
+                    onChange={(e) => setUserEmail(e.target.value)}
+                    type="email"
+                    name="user-email"
+                    id="user-email"
+                    className="input-form"
+                  />
+
                   <div className="col-span-12 mt-4 text-left">
                     <label
-                      htmlFor="company-email"
+                      htmlFor="project-briefy"
                       className="block text-sm font-medium text-gray-700"
                     >
-                      Email<sup>*</sup>
+                      Description<sup>*</sup>
                     </label>
-                    <input
+                    <textarea
                       required
-                      value={userEmail}
-                      onChange={(e) => setUserEmail(e.target.value)}
-                      type="email"
-                      name="user-email"
-                      id="user-email"
+                      value={projectDesc}
+                      onChange={(e) => setProjectDesc(e.target.value)}
+                      id="project-briefy"
+                      name="project-briefy"
+                      rows={3}
                       className="input-form"
+                      // defaultValue={""}
                     />
-
-                    <div className="col-span-12 mt-4 text-left">
-                      <label
-                        htmlFor="project-briefy"
-                        className="block text-sm font-medium text-gray-700"
-                      >
-                        Description<sup>*</sup>
-                      </label>
-                      <textarea
-                        required
-                        value={projectDesc}
-                        onChange={(e) => setProjectDesc(e.target.value)}
-                        id="project-briefy"
-                        name="project-briefy"
-                        rows={3}
-                        className="input-form"
-                        // defaultValue={""}
-                      />
-                    </div>
-
-                    <div className=" text-right">
-                      <button
-                        type="submit"
-                        disabled={loading}
-                        className="bg-primary hover:bg-blue-600 text-white rounded-md px-7 py-3 disabled:opacity-50  mt-5"
-                      >
-                        Submit
-                      </button>
-                    </div>
                   </div>
-                </form>
-              </div>
-            ) : (
-              <div></div>
-            )}
+
+                  <div className=" text-right">
+                    <button
+                      type="submit"
+                      disabled={loading}
+                      className="bg-primary hover:bg-blue-600 text-white rounded-md px-7 py-3 disabled:opacity-50  mt-5"
+                    >
+                      Submit
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
           </>
         }
       />

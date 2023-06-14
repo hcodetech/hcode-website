@@ -6,16 +6,42 @@ import { ArrowRightIcon } from "@heroicons/react/solid";
 import YoutubeIcon from "../public/assets/icons/youtube_icon.svg";
 import { useRouter } from "next/router";
 import CaseStudyModalPopup from "./CaseStudyModalPopup";
+import DownloadResponsePopup from "./caseStudyDownloadResponsePopup";
 
 const CardPortfolio = (props) => {
   const { selectedCategory, cardData } = props;
   const { pathname } = useRouter();
   const [caseStudyModalPopup, setCaseStudyModalPopup] = useState(false);
+  const [caseStudyResponsePopup, setCaseStudyResponsePopup] = useState({
+    show: false,
+    title: "",
+    description: "",
+    error: false,
+  });
   const [mediaId, setMediaId] = useState();
 
   const handleCaseStudyBtnClick = (media_id) => {
     setCaseStudyModalPopup(true);
     setMediaId(media_id);
+  };
+
+  const downloadCallback = (success, userEmail) => {
+    setCaseStudyModalPopup(false);
+    if (success)
+      setCaseStudyResponsePopup({
+        show: true,
+        title: "Thank You !",
+        description: `This case study has been sent to ${userEmail}`,
+        error: false,
+      });
+    else
+      setCaseStudyResponsePopup({
+        show: true,
+        title: "Oops !",
+        description:
+          "We are unable to register your request at current time. Please send us an email at hello@hcode.tech",
+        error: true,
+      });
   };
 
   //filter case studies feild
@@ -31,7 +57,23 @@ const CardPortfolio = (props) => {
   ) {
     return (
       <>
-        {caseStudyModalPopup && <CaseStudyModalPopup mediaId={mediaId} caseStudyModalPopup={caseStudyModalPopup} setCaseStudyModalPopup={setCaseStudyModalPopup} />}
+        {caseStudyModalPopup && (
+          <CaseStudyModalPopup
+            close={() => setCaseStudyModalPopup(false)}
+            mediaId={mediaId}
+            downloadCallback={downloadCallback}
+            caseStudyModalPopup={caseStudyModalPopup}
+            setCaseStudyModalPopup={setCaseStudyModalPopup}
+          />
+        )}
+        {caseStudyResponsePopup?.show && (
+          <DownloadResponsePopup
+            close={() => setCaseStudyResponsePopup({ show: false })}
+            error={caseStudyResponsePopup?.error}
+            title={caseStudyResponsePopup.title}
+            description={caseStudyResponsePopup?.description}
+          />
+        )}
 
         <div
           className={` ${cardData.additionalClass} grid grid-cols-12 rounded mb-10

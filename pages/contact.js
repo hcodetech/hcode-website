@@ -9,21 +9,16 @@ import {
 import Head from "next/head";
 
 import { useState } from "react";
-import {
-  contact_us_circle,
-  metaData,
-  selected_technologies,
-} from "../constants/constants";
+import { contact_us_circle, metaData } from "../constants/constants";
 import DotLoader from "react-spinners/DotLoader";
-import Modal from "../components/Modal";
 import { apiRoutes } from "./api/APIRoutes";
 import { getAPIUrl } from "./api/APIHelpers";
-import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/plain.css";
 import MetaTags from "../components/MetaTags";
 import UpdateUserLeadPopup from "../components/updateUserLeadPopup";
 import QueryPopup from "../components/QueryPopup";
-import { CheckIcon } from "@heroicons/react/outline";
+import QueryResponsePopUp from "../components/QueryResponsePopUp";
+import GetQuoteResponsePopUp from "../components/GetQuoteResponsePopup";
 const defaultColor = "#373536";
 function contact() {
   const [success, setSuccess] = useState(false);
@@ -37,8 +32,60 @@ function contact() {
   const [companyEmail, setCompanyEmail] = useState("");
 
   const [projectDesc, setProjectDesc] = useState("");
-  const [numberOfDev, setNumberOfDevs] = useState("0");
   const [openQueryPopup, setOpenQueryPopup] = useState(false);
+  const [submitQueryResponsePopUp, setSubmitQueryResponsePopUp] = useState({
+    show: false,
+    title: "",
+    description: "",
+    error: false,
+  });
+
+  const [getQuoteResponsePopup, setGetQuoteResponsePopup] = useState({
+    show: false,
+    title: "",
+    description: "",
+    error: false,
+  });
+
+  const querySubmitCallback = (success) => {
+    setOpenQueryPopup(false);
+
+    if (success)
+      setSubmitQueryResponsePopUp({
+        show: true,
+        title: "Thank You !",
+        description: "Thanks for your interest. We will contact you shortly.",
+        error: false,
+      });
+    else
+      setSubmitQueryResponsePopUp({
+        show: true,
+        title: "Oops !",
+        description:
+          "We are unable to register your request at current time. Please send us an email at hello@hcode.tech",
+        error: true,
+      });
+  };
+
+  const getQuoteCallback = (success) => {
+    setShowProjectDetailsPopup(false);
+
+    if (success)
+      setGetQuoteResponsePopup({
+        show: true,
+        title: "Thank You !",
+        description: "Thanks for your interest. We will contact you shortly.",
+        error: false,
+      });
+    else
+      setGetQuoteResponsePopup({
+        show: true,
+        title: "Oops !",
+        description:
+          "We are unable to register your request at current time. Please send us an email at hello@hcode.tech",
+        error: true,
+      });
+  };
 
   const [preferredTechStack, setPreferredTechStack] = useState([]);
   const setSelectedTech = (e, tech) => {
@@ -51,8 +98,6 @@ function contact() {
     }
   };
   const contactUser = async (event) => {
-    setSuccess(false);
-    setFailure(false);
     event.preventDefault();
     const contactUsFormData = {
       first_name: firstName,
@@ -88,18 +133,12 @@ function contact() {
         }
         throw new Error(res);
       }
-      // const res2 = await fetch(url2, options);
-      setFirstName("");
-      setLastName("");
-      setCompanyEmail("");
-      setProjectDesc("");
+
       setLeadId(json?.id);
-      setFailure(false);
-      // setSuccess(true);
+
       setShowProjectDetailsPopup(true);
     } catch (e) {
-      // Show the failure Message
-      setFailure(true);
+      // setFailure(true);
     } finally {
       setLoading(false);
     }
@@ -118,36 +157,42 @@ function contact() {
           <DotLoader color={defaultColor} size={60} />
         </div>
       )}
-      {/* TODO: Check this is open, at the same time below modal is not closed */}
 
-      {failure && (
-        <Modal
-          setOpenModal={setFailure}
-          openModal={failure}
-          color={"bg-red-100"}
-          iconColor={"text-red-600"}
-          heading={"Oops !"}
-          paragraph={
-            "We are unable to register your request at current time. Please send us an email at hello@hcode.tech"
-          }
-        />
-      )}
       {showProjectDetailsPopup && (
         <UpdateUserLeadPopup
-          success={success}
-          failure={failure}
-          setSuccess={setSuccess}
-          setFailure={setFailure}
+          close={() => setShowProjectDetailsPopup(false)}
           setLeadId={setLeadId}
           setShowProjectDetailsPopup={setShowProjectDetailsPopup}
           showProjectDetailsPopup={showProjectDetailsPopup}
           leadId={leadId}
+          getQuoteCallback={getQuoteCallback}
         />
       )}
+
+      {getQuoteResponsePopup?.show && (
+        <GetQuoteResponsePopUp
+          close={() => setGetQuoteResponsePopup({ show: false })}
+          error={getQuoteResponsePopup?.error}
+          title={getQuoteResponsePopup.title}
+          description={getQuoteResponsePopup?.description}
+        />
+      )}
+
+      {submitQueryResponsePopUp?.show && (
+        <QueryResponsePopUp
+          close={() => setSubmitQueryResponsePopUp({ show: false })}
+          error={submitQueryResponsePopUp?.error}
+          title={submitQueryResponsePopUp.title}
+          description={submitQueryResponsePopUp?.description}
+        />
+      )}
+
       {openQueryPopup && (
         <QueryPopup
+          close={() => setOpenQueryPopup(false)}
           openQueryPopup={openQueryPopup}
           setOpenQueryPopup={setOpenQueryPopup}
+          querySubmitCallback={querySubmitCallback}
         />
       )}
       <section className="md:new-container grid grid-cols-12 pt-14 md:h-[80vh]">

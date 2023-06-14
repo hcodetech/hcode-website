@@ -1,42 +1,21 @@
 /** @format */
 
+import { DocumentDownloadIcon } from "@heroicons/react/outline";
 import { useState } from "react";
-import Modal from "./Modal";
 import { getAPIUrl } from "../pages/api/APIHelpers";
 import { apiRoutes } from "../pages/api/APIRoutes";
-import {
-  CheckIcon,
-  MailIcon,
-  DocumentDownloadIcon,
-  XIcon,
-} from "@heroicons/react/outline";
+import Modal from "./Modal";
 
-const CaseStudyModalPopup = ({
-  mediaId,
-  caseStudyModalPopup,
-  setCaseStudyModalPopup,
-}) => {
+const CaseStudyModalPopup = ({ mediaId, downloadCallback, close }) => {
   const [firstName, setFirstName] = useState("");
-  // const [description, setDescription] = useState('');
-  const [success, setSuccess] = useState(false);
-
-  //   const [projectDesc, setProjectDesc] = useState("");
-
   const [userEmail, setUserEmail] = useState("");
-
   const [loading, setLoading] = useState(false);
-  const [failure, setFailure] = useState(false);
-  const [leadId, setLeadId] = useState("");
 
   const handleCaseStudy = async (event) => {
-    setSuccess(false);
-    setFailure(false);
     event.preventDefault();
     const contactUsFormData = {
       first_name: firstName,
-
       email: userEmail,
-
       type: 2,
       media_id: mediaId,
     };
@@ -58,31 +37,21 @@ const CaseStudyModalPopup = ({
       setLoading(true);
       const res = await fetch(url, options);
       const json = await res.json();
+      console.log("1");
       if (!res.ok) {
         if (res.status >= 400 && res.body) {
           window.scrollTo(0, 0);
-
           setResponseMessage(json?.mobile_number);
-
-          setSuccess(false);
           return;
         }
-
         throw new Error(res);
+      } else {
+        console.log("2");
+        downloadCallback(true, userEmail);
       }
-      // const res2 = await fetch(url2, options);
-      setFirstName("");
-
-      //   setUserEmail("");
-
-      setSuccess(true);
-      console.log(json);
     } catch (e) {
-      // Show the failure Message
-
-      setSuccess(false);
-      //   setCaseStudyModalPopup(false);
-      setFailure(true);
+      console.log("3");
+      downloadCallback(false, userEmail);
     } finally {
       setLoading(false);
     }
@@ -93,97 +62,61 @@ const CaseStudyModalPopup = ({
   return (
     <>
       {/* TODO: Check this is open, at the same time below modal is not closed */}
-
-      {failure && (
-        <Modal
-          titleIcon={<XIcon className="h-6 w-6" />}
-          setOpenModal={setFailure}
-          openModal={failure}
-          color={"bg-red-100"}
-          iconColor={"text-red-600"}
-          heading={"Oops !"}
-          paragraph={
-            "We are unable to register your request at current time. Please send us an email at hello@hcode.tech"
-          }
-        />
-      )}
-
       <Modal
         success
-        titleIcon={
-          !success ? (
-            <DocumentDownloadIcon className="h-6 w-6 text-primary " />
-          ) : (
-            <MailIcon className="w-6 h-6 text-green-600" />
-          )
-        }
-        setOpenModal={setCaseStudyModalPopup}
-        openModal={caseStudyModalPopup}
-        color={`${!success ? "bg-blue-100" : "bg-green-100 "}`}
-        iconColor={"text-green-600"}
-        heading={`${
-          !success
-            ? "Discover actionable insights in our Case Study"
-            : `This case study has been sent to ${userEmail}`
-        }`}
+        titleIcon={<DocumentDownloadIcon className="h-6 w-6 text-primary " />}
+        openModal={true}
+        close={close}
+        color="bg-blue-100"
+        iconColor="text-green-600"
+        heading="Discover actionable insights in our Case Study"
         paragraph={
-          <>
-            {!success ? (
-              <>
-                <div className="text-left">
-                  {/* Full Name */}
-                  <form autoComplete="off" onSubmit={handleCaseStudy}>
-                    <div className="col-span-6">
-                      <label
-                        htmlFor="first-name"
-                        className="block text-sm font-medium text-gray-700"
-                      >
-                        First Name<sup>*</sup>
-                      </label>
-                      <input
-                        required
-                        value={firstName}
-                        onChange={(e) => setFirstName(e.target.value)}
-                        type="text"
-                        name="first-name"
-                        id="first-name"
-                        className="input-form"
-                      />
-                    </div>
-                    <div className="col-span-12 mt-4">
-                      <label
-                        htmlFor="company-email"
-                        className="block text-sm font-medium text-gray-700"
-                      >
-                        Email<sup>*</sup>
-                      </label>
-                      <input
-                        required
-                        value={userEmail}
-                        onChange={(e) => setUserEmail(e.target.value)}
-                        type="email"
-                        name="user-email"
-                        id="user-email"
-                        className="input-form"
-                      />
+          <div className="text-left">
+            {/* Full Name */}
+            <form autoComplete="off" onSubmit={handleCaseStudy}>
+              <div className="col-span-6">
+                <label
+                  htmlFor="first-name"
+                  className="block text-sm font-medium text-gray-700"
+                >
+                  First Name<sup>*</sup>
+                </label>
+                <input
+                  required
+                  value={firstName}
+                  onChange={(e) => setFirstName(e.target.value)}
+                  type="text"
+                  name="first-name"
+                  id="first-name"
+                  className="input-form"
+                />
+              </div>
+              <div className="col-span-12 mt-4">
+                <label
+                  htmlFor="company-email"
+                  className="block text-sm font-medium text-gray-700"
+                >
+                  Email<sup>*</sup>
+                </label>
+                <input
+                  required
+                  value={userEmail}
+                  onChange={(e) => setUserEmail(e.target.value)}
+                  type="email"
+                  name="user-email"
+                  id="user-email"
+                  className="input-form"
+                />
 
-                      <button
-                        type="submit"
-                        className="bg-primary hover:bg-blue-600 text-white rounded-md px-7 py-3 disabled:opacity-50  mt-5 ml-56"
-                      >
-                        Download
-                      </button>
-                    </div>
-                  </form>
-                </div>
-                {/* {success && <div>Success</div>} */}
-              </>
-            ) : (
-              <>
-                <div></div>
-              </>
-            )}
-          </>
+                <button
+                  type="submit"
+                  className="bg-primary hover:bg-blue-600 text-white rounded-md px-7 py-3 disabled:opacity-50  mt-5 ml-56"
+                >
+                  Download
+                </button>
+              </div>
+            </form>
+          </div>
         }
       />
     </>
