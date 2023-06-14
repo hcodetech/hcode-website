@@ -133,12 +133,15 @@ function contact() {
         }
         throw new Error(res);
       }
-
+      setFirstName("");
+      setLastName("");
+      setCompanyEmail("");
+      setProjectDesc("");
       setLeadId(json?.id);
 
       setShowProjectDetailsPopup(true);
     } catch (e) {
-      // setFailure(true);
+      setFailure(true);
     } finally {
       setLoading(false);
     }

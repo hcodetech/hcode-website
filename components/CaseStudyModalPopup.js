@@ -1,14 +1,14 @@
 /** @format */
 
-import { DocumentDownloadIcon } from '@heroicons/react/outline';
-import { useState } from 'react';
-import { getAPIUrl } from '../pages/api/APIHelpers';
-import { apiRoutes } from '../pages/api/APIRoutes';
-import Modal from './Modal';
+import { DocumentDownloadIcon } from "@heroicons/react/outline";
+import { useState } from "react";
+import { getAPIUrl } from "../pages/api/APIHelpers";
+import { apiRoutes } from "../pages/api/APIRoutes";
+import Modal from "./Modal";
 
 const CaseStudyModalPopup = ({ mediaId, downloadCallback, close }) => {
-  const [firstName, setFirstName] = useState('');
-  const [userEmail, setUserEmail] = useState('');
+  const [firstName, setFirstName] = useState("");
+  const [userEmail, setUserEmail] = useState("");
   const [loading, setLoading] = useState(false);
 
   const handleCaseStudy = async (event) => {
@@ -30,14 +30,13 @@ const CaseStudyModalPopup = ({ mediaId, downloadCallback, close }) => {
     //   "https://script.google.com/a/hcode.tech/macros/s/AKfycbytrG1hsiIqFlkL4vMMNVRy0WXpEq2E26mU8JGuIA/exec";
     const options = {
       body: formData,
-      method: 'POST',
-      'Content-Type': 'application/x-www-form-urlencoded',
+      method: "POST",
+      "Content-Type": "application/x-www-form-urlencoded",
     };
     try {
       setLoading(true);
       const res = await fetch(url, options);
       const json = await res.json();
-      console.log('1');
       if (!res.ok) {
         if (res.status >= 400 && res.body) {
           window.scrollTo(0, 0);
@@ -46,11 +45,9 @@ const CaseStudyModalPopup = ({ mediaId, downloadCallback, close }) => {
         }
         throw new Error(res);
       } else {
-        console.log('2');
         downloadCallback(true, userEmail);
       }
     } catch (e) {
-      console.log('3');
       downloadCallback(false, userEmail);
     } finally {
       setLoading(false);
@@ -64,7 +61,7 @@ const CaseStudyModalPopup = ({ mediaId, downloadCallback, close }) => {
       {/* TODO: Check this is open, at the same time below modal is not closed */}
       <Modal
         success
-        titleIcon={<DocumentDownloadIcon className="h-6 w-6 text-primary " />}
+        titleIcon={<DocumentDownloadIcon className="h-6 w-6 text-primary" />}
         openModal={true}
         close={close}
         color="bg-blue-100"
@@ -72,10 +69,10 @@ const CaseStudyModalPopup = ({ mediaId, downloadCallback, close }) => {
         // heading="Discover actionable insights in our Case Study"
         heading="Get yourself a Case Study about the project"
         paragraph={
-          <div className="text-left">
+          <div className="">
             {/* Full Name */}
             <form autoComplete="off" onSubmit={handleCaseStudy}>
-              <div className="col-span-6">
+              <div className="col-span-6 text-left">
                 <label
                   htmlFor="first-name"
                   className="block text-sm font-medium text-gray-700"
@@ -92,7 +89,7 @@ const CaseStudyModalPopup = ({ mediaId, downloadCallback, close }) => {
                   className="input-form"
                 />
               </div>
-              <div className="col-span-12 mt-4">
+              <div className="col-span-12 mt-4 text-left">
                 <label
                   htmlFor="company-email"
                   className="block text-sm font-medium text-gray-700"
@@ -108,14 +105,15 @@ const CaseStudyModalPopup = ({ mediaId, downloadCallback, close }) => {
                   id="user-email"
                   className="input-form"
                 />
-
-                <button
-                  type="submit"
-                  className="bg-primary hover:bg-blue-600 text-white rounded-md px-7 py-3 disabled:opacity-50  mt-5 ml-auto"
-                >
-                  Download
-                  {/* Submit Request */}
-                </button>
+                <div className="text-right">
+                  <button
+                    type="submit"
+                    className="bg-primary hover:bg-blue-600 text-white rounded-md px-7 py-3 disabled:opacity-50  mt-5"
+                  >
+                    Submit Request
+                    {/* Submit Request */}
+                  </button>
+                </div>
               </div>
             </form>
           </div>
