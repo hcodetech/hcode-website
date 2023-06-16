@@ -1,23 +1,23 @@
-import Head from 'next/head';
+import { ArrowRightIcon } from "@heroicons/react/solid";
+import Head from "next/head";
+import Benefits from "../components/Benefits";
+import CTA from "../components/CTA";
+import CaseStudiesCard from "../components/CaseStudiesCard";
+import Client from "../components/Client";
+import HeroSection from "../components/HeroSection";
+import Process from "../components/Process";
+import ServicesCard from "../components/ServicesCard";
+import Team from "../components/Team";
+import TechStack from "../components/TechStack";
+import Testimonial from "../components/Testimonial";
 import {
+  TEAM,
+  city,
+  client,
   homepage,
   how_to_get_started,
-  client,
-  city,
-  TEAM,
   metaData,
 } from '../constants/constants';
-import Client from '../components/Client';
-import ServicesCard from '../components/ServicesCard';
-import CTA from '../components/CTA';
-import Benefits from '../components/Benefits';
-import TechStack from '../components/TechStack';
-import Process from '../components/Process';
-import HeroSection from '../components/HeroSection';
-import Team from '../components/Team';
-import { ArrowRightIcon } from '@heroicons/react/solid';
-import Testimonial from '../components/Testimonial';
-import CaseStudiesCard from '../components/CaseStudiesCard';
 
 import MobileSVG from '../public/assets/img/mobile-illu.svg';
 import BackendSVG from '../public/assets/img/backend-illu.svg';

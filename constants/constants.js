@@ -354,34 +354,42 @@ export const city = [
   {
     img: "/assets/icons/new-york.png",
     name: "New York",
+    alt:"New York"
   },
   {
     img: "/assets/icons/florida.png",
     name: "Florida",
+    alt:"Florida"
   },
   {
     img: "/assets/icons/los-angeles.png",
     name: "Los Angeles",
+    alt:"Los Angeles"
   },
   {
     img: "/assets/icons/sydney.png",
     name: "Sydney",
+    alt:"Sydney"
   },
   {
     img: "/assets/icons/singapore.png",
     name: "Singapore",
+    alt:"Singapore"
   },
   {
     img: "/assets/icons/new-delhi.png",
     name: "New Delhi",
+    alt:"New Delhi"
   },
   {
     img: "/assets/icons/Berlin.svg",
     name: "Berlin",
+    alt:"Berlin"
   },
   {
     img: "/assets/icons/chicago.svg",
     name: "Chicago",
+    alt:"Chicago"
   },
 ];
 
