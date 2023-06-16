@@ -31,7 +31,7 @@ const CardPortfolio = (props) => {
       setCaseStudyResponsePopup({
         show: true,
         title: 'Thank You !',
-        description: `This case study has been sent to ${userEmail}`,
+        description: `This case study has been sent to  ${userEmail}`,
         error: false,
       });
     else
