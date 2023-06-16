@@ -1,11 +1,11 @@
 /** @format */
 
-import { useState } from "react";
-import Modal from "./Modal";
-import { getAPIUrl } from "../pages/api/APIHelpers";
-import { apiRoutes } from "../pages/api/APIRoutes";
-import { QuestionMarkCircleIcon } from "@heroicons/react/outline";
-import { DotLoader } from "react-spinners/DotLoader";
+import { useState } from 'react';
+import Modal from './Modal';
+import { getAPIUrl } from '../pages/api/APIHelpers';
+import { apiRoutes } from '../pages/api/APIRoutes';
+import { QuestionMarkCircleIcon } from '@heroicons/react/outline';
+import { DotLoader } from 'react-spinners/DotLoader';
 
 const QueryPopup = ({
   openQueryPopup,
@@ -13,12 +13,12 @@ const QueryPopup = ({
   querySubmitCallback,
   close,
 }) => {
-  const [firstName, setFirstName] = useState("");
-  const [projectDesc, setProjectDesc] = useState("");
-  const [userEmail, setUserEmail] = useState("");
+  const [firstName, setFirstName] = useState('');
+  const [projectDesc, setProjectDesc] = useState('');
+  const [userEmail, setUserEmail] = useState('');
   const [loading, setLoading] = useState(false);
 
-  const defaultColor = "#373536";
+  const defaultColor = '#373536';
 
   const generalQuery = async (event) => {
     event.preventDefault();
@@ -39,8 +39,8 @@ const QueryPopup = ({
 
     const options = {
       body: formData,
-      method: "POST",
-      "Content-Type": "application/x-www-form-urlencoded",
+      method: 'POST',
+      'Content-Type': 'application/x-www-form-urlencoded',
     };
     try {
       setLoading(true);
@@ -67,7 +67,7 @@ const QueryPopup = ({
 
   {
     loading && (
-      <div className="fixed top-1/2 inset-x-2/4">
+      <div className='fixed top-1/2 inset-x-2/4'>
         <DotLoader color={defaultColor} size={60} />
       </div>
     );
@@ -78,23 +78,23 @@ const QueryPopup = ({
       <Modal
         success
         titleIcon={
-          <QuestionMarkCircleIcon className="h-6 w-6 text-green-600" />
+          <QuestionMarkCircleIcon className='h-6 w-6 text-green-600' />
         }
         close={close}
-        color="bg-green-100"
-        iconColor="text-green-600"
-        heading="Please enter your query"
+        color='bg-green-100'
+        iconColor='text-green-600'
+        heading='Please reach out to us below, we would love to connect with you !'
         openModal={openQueryPopup}
         setOpenModal={setOpenQueryPopup}
         paragraph={
           <>
-            <div className="">
+            <div className='pt-2'>
               {/* Full Name */}
-              <form autoComplete="off" onSubmit={generalQuery}>
-                <div className="col-span-6 text-left">
+              <form autoComplete='off' onSubmit={generalQuery}>
+                <div className='col-span-6 text-left'>
                   <label
-                    htmlFor="first-name"
-                    className="block text-sm font-medium text-gray-700"
+                    htmlFor='first-name'
+                    className='block text-sm font-medium text-gray-700'
                   >
                     First Name<sup>*</sup>
                   </label>
@@ -102,16 +102,16 @@ const QueryPopup = ({
                     required
                     value={firstName}
                     onChange={(e) => setFirstName(e.target.value)}
-                    type="text"
-                    name="first-name"
-                    id="first-name"
-                    className="input-form"
+                    type='text'
+                    name='first-name'
+                    id='first-name'
+                    className='input-form'
                   />
                 </div>
-                <div className="col-span-12 mt-4 text-left">
+                <div className='col-span-12 mt-4 text-left'>
                   <label
-                    htmlFor="company-email"
-                    className="block text-sm font-medium text-gray-700"
+                    htmlFor='company-email'
+                    className='block text-sm font-medium text-gray-700'
                   >
                     Email<sup>*</sup>
                   </label>
@@ -119,16 +119,16 @@ const QueryPopup = ({
                     required
                     value={userEmail}
                     onChange={(e) => setUserEmail(e.target.value)}
-                    type="email"
-                    name="user-email"
-                    id="user-email"
-                    className="input-form"
+                    type='email'
+                    name='user-email'
+                    id='user-email'
+                    className='input-form'
                   />
 
-                  <div className="col-span-12 mt-4 text-left">
+                  <div className='col-span-12 mt-4 text-left'>
                     <label
-                      htmlFor="project-briefy"
-                      className="block text-sm font-medium text-gray-700"
+                      htmlFor='project-briefy'
+                      className='block text-sm font-medium text-gray-700'
                     >
                       Description<sup>*</sup>
                     </label>
@@ -136,19 +136,18 @@ const QueryPopup = ({
                       required
                       value={projectDesc}
                       onChange={(e) => setProjectDesc(e.target.value)}
-                      id="project-briefy"
-                      name="project-briefy"
+                      id='project-briefy'
+                      name='project-briefy'
                       rows={3}
-                      className="input-form"
-                      // defaultValue={""}
+                      className='input-form'
                     />
                   </div>
 
-                  <div className=" text-right">
+                  <div className=' text-right'>
                     <button
-                      type="submit"
+                      type='submit'
                       disabled={loading}
-                      className="bg-primary hover:bg-blue-600 text-white rounded-md px-7 py-3 disabled:opacity-50  mt-5"
+                      className='bg-primary hover:bg-blue-600 text-white rounded-md px-7 py-3 disabled:opacity-50  mt-5'
                     >
                       Submit
                     </button>
