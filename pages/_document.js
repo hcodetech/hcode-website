@@ -27,7 +27,7 @@ class MyDocument extends Document {
             }}
           />
           {/* Google Analytics */}
-          <script
+          {/* <script
             dangerouslySetInnerHTML={{
               __html: `
             window.dataLayer = window.dataLayer || [];
@@ -38,11 +38,26 @@ class MyDocument extends Document {
             });
           `,
             }}
-          />
+          /> */}
+
           <script
             async
-            src={`https://www.googletagmanager.com/gtag/js?id=UA-148478855-1`}
+            src="https://www.googletagmanager.com/gtag/js?id=G-6LJ1JVZYH6"
+          ></script>
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `  window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+      
+        gtag('config', 'G-6LJ1JVZYH6');`,
+            }}
           />
+
+          {/* <script
+            async
+            src={`https://www.googletagmanager.com/gtag/js?id=UA-148478855-1`}
+          /> */}
 
           {/* Google Fonts - Poppins */}
           <link
