@@ -21,7 +21,6 @@ import QueryResponsePopUp from '../components/QueryResponsePopUp';
 import GetQuoteResponsePopUp from '../components/GetQuoteResponsePopup';
 const defaultColor = '#373536';
 function contact() {
-  const [success, setSuccess] = useState(false);
   const [showProjectDetailsPopup, setShowProjectDetailsPopup] = useState(false);
   const [failure, setFailure] = useState(false);
   const [responseMessage, setResponseMessage] = useState('');
@@ -198,7 +197,7 @@ function contact() {
           querySubmitCallback={querySubmitCallback}
         />
       )}
-      <section className='md:new-container grid grid-cols-12 pt-14  md:h-[100vh] lg:h-[100vh] 2xl:h-[80vh]'>
+      <section className='md:new-container grid grid-cols-12 pt-14'>
         <div className='bg-primary md:max-w-[450px] max-h-screen text-white p-10 col-span-12 md:col-span-4 md:sticky top-14'>
           <div className='z-50 sticky'>
             <h1 className='text-4xl font-semibold'>
@@ -345,10 +344,13 @@ function contact() {
 
           <button
             onClick={() => setOpenQueryPopup(true)}
-            className='mt-5 text-primary italic'
+            className='mt-5 text-gray-700 italic'
           >
             For any other queries,{' '}
-            <span className='border-b border-primary'> Click here.</span>
+            <span className='border-b border-primary text-primary'>
+              {' '}
+              Click here.
+            </span>
           </button>
         </div>
       </section>
