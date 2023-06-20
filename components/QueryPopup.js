@@ -6,6 +6,7 @@ import { getAPIUrl } from '../pages/api/APIHelpers';
 import { apiRoutes } from '../pages/api/APIRoutes';
 import { QuestionMarkCircleIcon } from '@heroicons/react/outline';
 import { DotLoader } from 'react-spinners/DotLoader';
+import { hcode_footer } from '../constants/constants';
 
 const QueryPopup = ({
   openQueryPopup,
@@ -78,10 +79,14 @@ const QueryPopup = ({
       <Modal
         success
         titleIcon={
-          <QuestionMarkCircleIcon className='h-6 w-6 text-green-600' />
+          <img
+            className='min-w-[120px] '
+            src={hcode_footer}
+            alt='Hcode Technologies'
+          />
         }
         close={close}
-        color='bg-green-100'
+        color='bg-white'
         iconColor='text-green-600'
         heading={`Please reach out to us below, <br/> we would love to connect with you !`}
         openModal={openQueryPopup}
