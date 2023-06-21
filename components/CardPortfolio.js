@@ -140,7 +140,7 @@ const CardPortfolio = (props) => {
             <div className='lg:mt-auto mt-16 sm:ml-auto'>
               {pathname === '/our_work' && filterCaseStudies.length > 0 && (
                 <a href='/case_studies' className='primary-outline'>
-                  Read case study
+                  Get case study
                 </a>
               )}
 
