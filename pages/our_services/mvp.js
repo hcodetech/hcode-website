@@ -212,7 +212,7 @@ const mvp = () => {
       {/* Benefits */}
       <section className=" pt-12 ">
         <div className=" ">
-          <Benefits data={mvp_benefits} />
+          <Benefits additionalClass='lg:w-1/2' data={mvp_benefits} />
           {/*  */}
         </div>
       </section>

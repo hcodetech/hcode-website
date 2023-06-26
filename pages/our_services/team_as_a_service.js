@@ -31,7 +31,7 @@ function team_as_a_service() {
         <h1 className="new-container pt-32 font-semibold text-3xl md:text-4xl  ">
           {tass.hero_heading}
         </h1>
-        <p className="new-container md:w-9/12  text-base mx-auto mt-3 font-light leading-normal">
+        <p className="new-container md:w-3/4 xl:w-5/12   text-base mx-auto mt-3 font-light leading-normal">
           {tass.hero_paragraph}
         </p>
         <picture>
@@ -156,7 +156,7 @@ function team_as_a_service() {
 
       {/* What makes it a great choice */}
       <section className="new-container mt-10">
-        <Benefits data={tass_benefits} />
+        <Benefits additionalClass='w-3/4' data={tass_benefits} />
         <div className="text-center mb-10">
           <a
             href="/contact"

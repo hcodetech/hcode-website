@@ -31,7 +31,7 @@ function developer_as_a_service() {
         <h1 className="new-container pt-32 font-semibold text-3xl md:text-4xl  ">
           {dass.hero_heading}
         </h1>
-        <p className="new-container md:w-9/12  text-base mx-auto mt-3 font-light leading-normal">
+        <p className="new-container md:w-3/4 xl:w-5/12  text-base mx-auto mt-3 font-light leading-normal">
           {dass.hero_paragraph}
         </p>
 
@@ -133,7 +133,7 @@ function developer_as_a_service() {
 
       {/* What makes it a great choice */}
       <section className="new-container mt-10">
-        <Benefits data={dass_benefits} />
+        <Benefits additionalClass='lg:w-1/2' data={dass_benefits} />
         <div className="text-center mb-10">
           <a
             href="/contact"
