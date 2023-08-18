@@ -58,40 +58,25 @@ function Footer() {
               <NewsletterComponent />
             </div>
           </div>
-          <div className="px-4  my-4 md:mt-0 col-span-12 md:col-span-6">
-            <ul className="grid grid-cols-2 gap-6">
-              <li className="col-span-1">
+          <div className="px-4  my-4 md:mt-0 col-span-12 md:col-span-8">
+            <ul className="grid grid-cols-12 gap-6">
+              <li className="col-span-12 md:col-span-4">
                 <h5 className="font-bold  text-md mb-1">HQ Karnal</h5>
                 <p>120/7 Milestone, Main GT Road, Karnal HR #132001</p>
               </li>
-              {/* <li className=" col-span-12 sm:col-span-6">
-                <h5 className="font-bold text-md mb-1">New Delhi</h5>
+              <li className="col-span-12  md:col-span-8">
+                <h5 className="font-bold  text-md mb-1">Noida</h5>
                 <p>
-                  Invento, 3rd Floor,
+                  India Accelerator, 3rd Floor, <br />
+                  The Iconic Corenthum, Sector 62,
                   <br />
-                  Plot No.8, Sector 12b,
-                  <br />
-                  Dwarka, New Delhi
-                  <br />
-                  #110078
+                  Noida Uttar Pradesh ,201301
                 </p>
-              </li> */}
-              {/* <li className="col-span-12 sm:col-span-6">
-                <h5 className="font-bold text-md mb-1 ">Noida</h5>
-                <p>
-                  Galaxy Business Park,
-                  <br />
-                  Electronic City, Sec 62
-                  <br />
-                  Noida UP
-                  <br />
-                  #201309
-                </p>
-              </li> */}
-              <li className="col-span-1">
+              </li>
+              {/* <li className="col-span-1">
                 <h5 className="font-bold  text-md mb-1">New York</h5>
                 <p>675 Hudson St Suite 3S, New York, NY #10014</p>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>

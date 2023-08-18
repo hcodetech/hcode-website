@@ -150,7 +150,7 @@ function work_with_us() {
             <img src={karnal} alt="Hcode Karnal Office" />
             <h5 className="text-lg font-medium py-0 text-gray-500">Karnal</h5>
           </div>
-          <div className=" ">
+          {/* <div className=" ">
             <img
               src={Delhi}
               alt="Hcode Delhi Office"
@@ -160,7 +160,7 @@ function work_with_us() {
               loading="lazy"
             />
             <h4 className="text-lg font-medium  py-2  text-gray-500">Delhi</h4>
-          </div>
+          </div> */}
           <div className="mt-8 sm:mt-0">
             <img src={Noida} alt="Hcode Noida Office" />
             <h5 className="text-lg font-medium  py-2  text-gray-500">Noida</h5>

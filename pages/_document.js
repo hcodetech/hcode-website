@@ -26,19 +26,20 @@ class MyDocument extends Document {
               __html: `!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/f5258b0c0d2b6c7561d024d3c/3da1e5017282a765c7865d2a3.js")`,
             }}
           />
-          {/* Google Analytics */}
-          {/* <script
+
+          <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-V751ZVXNMP"
+          ></script>
+          <script
             dangerouslySetInnerHTML={{
-              __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'UA-148478855-1', {
-              page_path: window.location.pathname,
-            });
-          `,
+              __html: ` window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-V751ZVXNMP');`,
             }}
-          /> */}
+          />
 
           <script
             async
@@ -53,11 +54,6 @@ class MyDocument extends Document {
         gtag('config', 'G-6LJ1JVZYH6');`,
             }}
           />
-
-          {/* <script
-            async
-            src={`https://www.googletagmanager.com/gtag/js?id=UA-148478855-1`}
-          /> */}
 
           {/* Google Fonts - Poppins */}
           <link
