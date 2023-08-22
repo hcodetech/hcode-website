@@ -64,19 +64,19 @@ function Footer() {
                 <h5 className="font-bold  text-md mb-1">HQ Karnal</h5>
                 <p>120/7 Milestone, Main GT Road, Karnal HR #132001</p>
               </li>
-              <li className="col-span-12  md:col-span-8">
+              <li className="col-span-12  md:col-span-5">
                 <h5 className="font-bold  text-md mb-1">Noida</h5>
                 <p>
                   India Accelerator, 3rd Floor, <br />
                   The Iconic Corenthum, Sector 62,
                   <br />
-                  Noida Uttar Pradesh ,201301
+                  Noida Uttar Pradesh, 201301
                 </p>
               </li>
-              {/* <li className="col-span-1">
+              <li className="col-span-12  md:col-span-3 ">
                 <h5 className="font-bold  text-md mb-1">New York</h5>
                 <p>675 Hudson St Suite 3S, New York, NY #10014</p>
-              </li> */}
+              </li>
             </ul>
           </div>
         </div>

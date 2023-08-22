@@ -192,7 +192,7 @@ export const work_with_us_content = {
     'We abide by our core value, <strong>‘Our people are our biggest asset’,</strong> in letter and spirit. We do everything to make sure that our people are personally happy, professionally satisfied, and continue growing.<br/><br/>We do this by making sure that people work with global clients on interesting problems with the <strong>latest tech stacks</strong> while maintaining a good work-life balance. We keep our <strong>working hours sane</strong> so that you get time for whatever else is important in your life.',
   campus_heading: 'Our Offices',
   campus_paragarph: `
-HCode's development offices are present in: <strong> Karnal (our HQ) and Noida (Sec-62).</strong> 
+HCode's development offices are present in: <strong> Karnal (our HQ), Noida (Sec-62)</strong> and <strong> New York</strong> 
 <br/>
 <br/>
 Our headquarters in Karnal, rivals some of the best offices you’d find anywhere else. Our state-of-the-art office is housed inside a vast campus, with a huge open green area, sports facilities like Basketball, Badminton, Table Tennis, and more. 

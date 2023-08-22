@@ -198,7 +198,7 @@ function contact() {
         />
       )}
       <section className="md:new-container grid grid-cols-12 pt-14">
-        <div className="bg-primary md:max-w-[450px] max-h-screen text-white p-10 col-span-12 md:col-span-4 md:sticky top-14">
+        <div className="bg-primary md:max-w-[450px] max-h-screen text-white p-10 col-span-12 md:col-span-4 md:sticky top-14 overflow-hidden">
           <div className="z-50 sticky">
             <h1 className="text-4xl font-semibold">
               Let’s scale your team together !
@@ -218,11 +218,12 @@ function contact() {
               <br />
               Uttar Pradesh ,201301
             </div>
-            {/* <div className='flex mt-4 '>
-              <LocationMarkerIcon className='w-6 h-6 mr-1 pr-1' />
+            <div className="flex mt-4 ">
+              <LocationMarkerIcon className="w-6 h-6 mr-1 pr-1" />
               675 Hudson St Suite 3S, New York, <br />
               NY #10014
-            </div> */}
+            </div>
+
             <div className="flex mt-4 ">
               <PhoneIcon className="w-6 h-6 mr-2" />
               <a href="tel:+919350674450">+91-9350674450</a>
@@ -232,7 +233,7 @@ function contact() {
               <a href="mailto:hello@hcode.tech">hello@hcode.tech</a>
             </div>
           </div>
-          <div className=" left-0 bottom-0 hidden md:block md:absolute ">
+          <div className=" left-0 -bottom-28 hidden md:block md:absolute ">
             <img src={contact_us_circle} alt="" />
           </div>
         </div>

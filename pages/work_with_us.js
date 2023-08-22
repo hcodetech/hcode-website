@@ -165,10 +165,10 @@ function work_with_us() {
             <img src={Noida} alt="Hcode Noida Office" />
             <h5 className="text-lg font-medium  py-2  text-gray-500">Noida</h5>
           </div>
-          {/* <div className="">
+          <div className="">
             <img src={newyork} alt="Hcode New York Office" />
             <h3 className="text-lg font-medium  text-gray-500">New York</h3>
-          </div> */}
+          </div>
         </div>
       </section>
 
