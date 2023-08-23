@@ -197,7 +197,7 @@ function contact() {
           querySubmitCallback={querySubmitCallback}
         />
       )}
-      <section className="md:new-container grid grid-cols-12 pt-14">
+      <section className="md:new-container grid grid-cols-12 pt-14 ">
         <div className="bg-primary md:max-w-[450px] max-h-screen text-white p-10 col-span-12 md:col-span-4 md:sticky top-14 overflow-hidden">
           <div className="z-50 sticky">
             <h1 className="text-4xl font-semibold">
@@ -243,7 +243,7 @@ function contact() {
             Please enter the details
           </h1>
 
-          {/* Schedule a call with Rakesh Seghal */}
+          {/* Schedule a call with Gourav Tomar */}
           <div className="flex gap-3 items-center border rounded-lg py-2 px-2.5 mb-10 bg-blue-50">
             <div className="bg-white p-3 rounded-full">
               <VideoCameraIcon className="h-6 w-6 text-primary" />
@@ -255,7 +255,8 @@ function contact() {
             </div>
             <a
               target="_blank"
-              href="https://calendly.com/rakesh-sehgal/15min?month=2023-05&date=2023-04-19"
+              // https://calendly.com/rakesh-sehgal/15min
+              href="https://calendly.com/gaurav-tomar/30min"
               className="primary-outline ml-auto"
             >
               Schedule
