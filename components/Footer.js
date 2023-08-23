@@ -4,6 +4,7 @@ import {
   hcode_footer,
   linkedin_icon,
   twitter_icon,
+  startupindia,
 } from '../constants/constants';
 import NewsletterComponent from './NewsletterComponent';
 
@@ -181,13 +182,19 @@ function Footer() {
             <NewsletterComponent />
           </div>
         </div>
-
-        <div className="text-center  border-t pt-5">
-          Copyright @{year}
-          <a href="/" className="text-primary font-semibold underline ml-1">
-            Hcode.tech
-          </a>{' '}
-          | All rights reserved by Hcode Techonologies
+        <div className="flex-col flex md:flex-row justify-between border-t pt-5">
+          <div className=" ">
+            Copyright @{year}
+            <a href="/" className="text-primary font-semibold underline ml-1">
+              Hcode.tech
+            </a>{' '}
+            | All rights reserved by Hcode Techonologies
+          </div>
+          <img
+            src={startupindia}
+            className="h-10 mt-10 md:mt-0 object-contain"
+            alt="hcode startup india"
+          />
         </div>
       </div>
     </footer>

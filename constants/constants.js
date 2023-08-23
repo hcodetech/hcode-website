@@ -992,6 +992,7 @@ export const linkedin_icon = '/assets/icons/linkedIn.svg';
 export const twitter_icon = '/assets/icons/twitter.svg';
 export const hcode_footer = '/assets/icons/full-logo.png';
 export const fav_icon = '/assets/icons/icon.png';
+export const startupindia = '/assets/img/startupindia.png';
 
 export const terms_and_conditions_data = {
   main_heading: 'Terms and Conditions',
