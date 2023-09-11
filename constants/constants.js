@@ -268,6 +268,7 @@ export const TechSideImage = '/assets/img/tech_side_image.jpg';
 export const ReactIcon = '/assets/img/react-icon.png';
 export const Eclipses_Group = '/assets/img/eclipses-group.png';
 export const Blockchain_Hero = '/assets/img/blockchain_hero.svg';
+export const AIService_Hero = '/assets/img/aiService_hero.png';
 export const MVP_Hero = '/assets/img/mvp_hero.svg';
 export const MVP_need_icon = '/assets/img/mvp_need_icon.svg';
 export const MVP_want_icon = '/assets/img/mvp_want_icon.svg';
@@ -705,6 +706,52 @@ export const blockchain_benefits = {
       heading: 'Best Practices and Help',
       descripition:
         'Over time, we have built best practices for project management, code delivery, SDLC. Working together, each developer has help at their disposal.',
+    },
+    {
+      image: '/assets/img/roi.svg',
+      heading: 'High RoI',
+      descripition:
+        'We deliver value to your business by improving quality and reducing cost resulting in high RoI. We will help you operate the business more efficiently through innovation.',
+    },
+    {
+      image: '/assets/img/trust.svg',
+      heading: 'Trust ',
+      descripition:
+        'We believe in building relationships based on trust. Whether it is the confidentiality of your data and IPR or delivering your project on-time, we only make promises we can deliver on.',
+    },
+  ],
+};
+
+export const ai_benefits = {
+  heading: 'Why Choose HCode for AI Integration?',
+  paragraph:
+    'Discover the advantages of partnering with HCode for AI integration. Our expertise, tailored solutions, and proven success make us the top choice for businesses seeking seamless AI transformation.',
+  points: [
+    {
+      image: '/assets/img/top_talent.svg',
+      heading: 'Expertise in AI Integration',
+      descripition:
+        'With years of experience in AI integration, our seasoned team of experts brings in-depth knowledge and a proven track record to every project. Our expertise ensures seamless AI implementation tailored to your business needs.',
+    },
+    {
+      image: '/assets/img/managed_process.svg',
+      heading: 'Client-Centric Approach',
+      descripition:
+        'Client satisfaction is at the core of our philosophy. We collaborate closely with you, prioritizing your goals and ensuring that the AI solutions we provide truly empower your organization.',
+    },
+    {
+      image: '/assets/img/easy_admin.svg',
+      heading: 'Proven Success Stories',
+      descripition:
+        "Our portfolio of successful AI integration projects speaks volumes about our capabilities. We've helped numerous clients achieve remarkable results through AI, from increased efficiency to enhanced decision-making.",
+    },
+
+    {
+      image: '/assets/img/best.svg',
+      heading: 'Cutting-Edge AI  Technologies',
+
+      descripition:
+        'We stay at the forefront of AI advancements, leveraging the latest technologies to offer innovative solutions. Our commitment to staying updated guarantees you access to the most advanced AI tools available.',
     },
     {
       image: '/assets/img/roi.svg',
@@ -1680,6 +1727,39 @@ export const blockchain_services = {
   ],
 };
 
+export const ai_services = {
+  heading: 'Our AI Integration Services',
+  paragraph:
+    'Our range of services seamlessly embeds artificial intelligence into your operations, enhancing efficiency and driving competitiveness. Explore our offerings below to unlock the power of AI for your organization.',
+  points: [
+    {
+      image: '/assets/img/ai_workFlow.svg',
+      heading: 'AI-Powered Workflow Optimization',
+      descripition:
+        "We seamlessly integrate Artificial Intelligence into your workflows, automating tasks, providing real-time insights, and enhancing efficiency. Tailored to your unique needs, our service ensures you stay competitive in today's business landscape.",
+    },
+    {
+      image: '/assets/img/strategy_Consulting.svg',
+      heading: 'AI Strategy Consulting  ',
+
+      descripition:
+        'Our expert consultants collaborate with you to develop customized AI strategies that align with your unique goals and industry requirements. From AI adoption planning to implementation guidance, we provide comprehensive insights and actionable recommendations to drive your organization’s innovation, efficiency, and competitiveness.',
+    },
+    {
+      image: '/assets/img/maintenance.svg',
+      heading: 'AI Maintenance and Support Solutions',
+      descripition:
+        'We provide proactive maintenance, timely updates, and responsive support to keep your AI technologies running at peak performance. Our team of experts is dedicated to resolving issues, optimizing algorithms, and staying ahead of potential challenges so that you can focus on your core business activities with confidence.',
+    },
+    {
+      image: '/assets/img/app_development.svg',
+      heading: 'Bespoke AI App Development',
+      descripition:
+        "Our custom-built generative AI applications are meticulously designed to meet your organization's unique requirements. These tailor-made solutions seamlessly integrate generative AI into your existing infrastructure, workflows, and systems, ensuring minimal disruption while unlocking the full potential of AI to enhance innovation and efficiency in your operations.",
+    },
+  ],
+};
+
 export const blockchain_techStack = [
   {
     name: 'Blockchain',
@@ -1937,5 +2017,29 @@ export const mern_tech_stack = [
   {
     image: '/assets/img/tech_stack/tech_stack_node.jpg',
     tech_name: 'Node JS',
+  },
+];
+
+export const ai_technologies = [
+  {
+    id: 1,
+    image: '/assets/img/aiTechnologiesLogo4.svg',
+  },
+  {
+    id: 2,
+    image: '/assets/img/aiTechnologiesLogo1.png',
+  },
+  {
+    id: 3,
+    image: '/assets/img/aiTechnologiesLogo2.svg',
+  },
+  {
+    id: 4,
+    image: '/assets/img/aiTechnologiesLogo3.png',
+  },
+
+  {
+    id: 5,
+    image: '/assets/img/aiTechnologiesLogo1.png',
   },
 ];

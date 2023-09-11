@@ -1,14 +1,14 @@
 /** @format */
 
-import Head from "next/head";
-import React, { useState, useEffect } from "react";
-import Tab from "../../components/atoms/Tab";
-import Benefits from "../../components/Benefits";
-import CardPortfolio from "../../components/CardPortfolio";
-import Client from "../../components/Client";
-import CTA from "../../components/CTA";
-import MetaTags from "../../components/MetaTags";
-import Testimonial from "../../components/Testimonial";
+import Head from 'next/head';
+import React, { useState, useEffect } from 'react';
+import Tab from '../../components/atoms/Tab';
+import Benefits from '../../components/Benefits';
+import CardPortfolio from '../../components/CardPortfolio';
+import Client from '../../components/Client';
+import CTA from '../../components/CTA';
+import MetaTags from '../../components/MetaTags';
+import Testimonial from '../../components/Testimonial';
 import {
   client,
   blockchain_benefits,
@@ -17,16 +17,16 @@ import {
   blockchain_techStack_icon,
   Blockchain_Hero,
   metaData,
-} from "../../constants/constants";
-import { getAPIUrl } from "../api/APIHelpers";
-import { apiRoutes } from "../api/APIRoutes";
-import useGetFetch from "../hooks/useGetFetch";
+} from '../../constants/constants';
+import { getAPIUrl } from '../api/APIHelpers';
+import { apiRoutes } from '../api/APIRoutes';
+import useGetFetch from '../hooks/useGetFetch';
 
 const Blockchain = () => {
-  const [selectedCategory, setSelectedCategory] = useState(["Blockchain"]);
+  const [selectedCategory, setSelectedCategory] = useState(['Blockchain']);
   const [id, setId] = useState(1);
   const [activeTab, setActiveTab] = useState(0);
-  const [isDesktop, setIsDesktop] = useState("");
+  const [isDesktop, setIsDesktop] = useState('');
   useEffect(() => {
     window.innerWidth <= 750 ? setIsDesktop(false) : setIsDesktop(true);
   });
@@ -34,8 +34,8 @@ const Blockchain = () => {
 
   const selectedTabsFn = (condition) =>
     condition
-      ? "border-b-4 border-primary pt-2.5 px-2"
-      : " pt-3 pb-2.5 opacity-60";
+      ? 'border-b-4 border-primary pt-2.5 px-2'
+      : ' pt-3 pb-2.5 opacity-60';
   const onTabClick = (tab) => {
     setActiveTab(tab);
   };
@@ -72,7 +72,7 @@ const Blockchain = () => {
             </h1>
             <p className='mt-2 md:mt-4 mb-6 md:mb-10 text-white tracking-tight md:text-lg opacity-70'>
               We’re proficient in various Blockchain services including, but not
-              limited to, <strong>Dapps, Smart Contracts, NFT</strong>{" "}
+              limited to, <strong>Dapps, Smart Contracts, NFT</strong>{' '}
               marketplace and <strong>Blockchain Security Audit.</strong>
             </p>
 

@@ -61,7 +61,7 @@ function work_with_us() {
             </a>
 
             <p className='mt-8 '>
-              Connect with the HR:{' '}
+              Connect with the HR:
               <a
                 className='text-primary underline'
                 href='mailto:hr@hcode.tech'
