@@ -1,3 +1,5 @@
+/** @format */
+
 import Head from "next/head";
 import React, { useState, useEffect } from "react";
 import ServicesCard from "../../components/ServicesCard";
@@ -22,7 +24,7 @@ import EnterpriseCard from "../../components/EnterpriseCard";
 import FintechCard from "../../components/FintechCard";
 import { ArrowRightIcon } from "@heroicons/react/solid";
 import MetaTags from "../../components/MetaTags";
-function our_services() {
+function Our_services() {
   const [isDesktop, setIsDesktop] = useState("");
   useEffect(() => {
     window.innerWidth <= 750 ? setIsDesktop(false) : setIsDesktop(true);
@@ -33,50 +35,47 @@ function our_services() {
         <title>Our Services | Hcode Technologies</title>
         <MetaTags page={metaData.our_services} />
       </Head>
-      <section className="relative bg-no-repeat bg-contain">
-        <div className="   ">
-          <div className="new-container p-4 lg:p-16 xl:p-32 xl:pb-0 text-center mx-auto md:w-3/5 ">
-            <div className="mt-20 md:mt-4">
-              <h2 className=" font-semibold text-3xl  md:text-5xl md:leading-tight">
+      <section className='relative bg-no-repeat bg-contain'>
+        <div className='   '>
+          <div className='new-container p-4 lg:p-16 xl:p-32 xl:pb-0 text-center mx-auto md:w-3/5 '>
+            <div className='mt-20 md:mt-4'>
+              <h2 className=' font-semibold text-3xl  md:text-5xl md:leading-tight'>
                 {our_services_data.hero_heading}
               </h2>
             </div>
-            <p className="py-5  text-xl md:text-2xl font-light  mx-auto">
+            <p className='py-5  text-xl md:text-2xl font-light  mx-auto'>
               {our_services_data.hero_paragraph}
             </p>
           </div>
-          <div className="relative  md:mt-8 ">
+          <div className='relative  md:mt-8 '>
             <picture>
-              <source type="image/webp"
-              srcSet={our_services_hero_webp} />
+              <source type='image/webp' srcSet={our_services_hero_webp} />
               <img
-              className="object-cover w-screen md:h-[580px] h-[300px]"
-              src={our_services_hero}
-              layout="fill"
-              loading="lazy"
-              height='580px'
-              width='100%'
-              alt='Top tech talent'
-            />
-
+                className='object-cover w-screen md:h-[580px] h-[300px]'
+                src={our_services_hero}
+                layout='fill'
+                loading='lazy'
+                height='580px'
+                width='100%'
+                alt='Top tech talent'
+              />
             </picture>
-           
           </div>
         </div>
       </section>
 
       {/* Process */}
-      <div className="my-20">
+      <div className='my-20'>
         <Process data={how_to_get_started} />
-        <div className="text-center my-10">
-          <a href="/contact" className="primary-outline  text-center">
+        <div className='text-center my-10'>
+          <a href='/contact' className='primary-outline  text-center'>
             Let’s Connect To Start Your Project
           </a>
         </div>
       </div>
       {/* Our Services card */}
-      <section className="new-container my-10">
-        <div className="new-container">
+      <section className='new-container my-10'>
+        <div className='new-container'>
           <ServicesCard heading={true} />
         </div>
         {/* <div>
@@ -133,40 +132,40 @@ function our_services() {
         </div> */}
       </section>
       {/* Tech Stack */}
-      <section className="mt-14 mb-10 ">
+      <section className='mt-14 mb-10 '>
         <TechStack />
       </section>
 
       {/* Project Showcase */}
-      <section className="new-container">
+      <section className='new-container'>
         <Consumer_Card data={consumer_card} />
         <EnterpriseCard data={enterprise_card} />
         <FintechCard data={fintech_card} />
         {/* <Consumer_Card/  data={enterprise_card}/> */}
-        <div className="new-container mx-auto -mt-16 pb-16">
-          <div className="text-center">
+        <div className='new-container mx-auto -mt-16 pb-16'>
+          <div className='text-center'>
             <a
-              href="/our_work"
-              className="pt-10 pb-1  border-b border-primary inline-flex text-primary hover:scale-100  cursor-pointer hover:opacity-100"
+              href='/our_work'
+              className='pt-10 pb-1  border-b border-primary inline-flex text-primary hover:scale-100  cursor-pointer hover:opacity-100'
             >
               See More of Our Work
-              <ArrowRightIcon className="w-6 ml-2 " />
+              <ArrowRightIcon className='w-6 ml-2 ' />
             </a>
           </div>
         </div>
       </section>
 
       {/* FAQ */}
-      <div className="bg-gray-100">
+      <div className='bg-gray-100'>
         <Accordion data={faq_services} />
       </div>
 
       {/* Client Section */}
-      <section className="new-container py-10">
+      <section className='new-container py-10'>
         <Client data={client} slides={isDesktop} />
       </section>
     </>
   );
 }
 
-export default our_services;
+export default Our_services;

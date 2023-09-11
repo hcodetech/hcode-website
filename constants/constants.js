@@ -1,3 +1,5 @@
+/** @format */
+
 import { AccountIcon, TrustIcon, UserIcon } from './Icons';
 
 export const navbar_links = [
@@ -190,18 +192,20 @@ export const work_with_us_content = {
   hero_heading: 'Let’s Build Together',
   hero_paragraph:
     'We abide by our core value, <strong>‘Our people are our biggest asset’,</strong> in letter and spirit. We do everything to make sure that our people are personally happy, professionally satisfied, and continue growing.<br/><br/>We do this by making sure that people work with global clients on interesting problems with the <strong>latest tech stacks</strong> while maintaining a good work-life balance. We keep our <strong>working hours sane</strong> so that you get time for whatever else is important in your life.',
-  campus_heading: 'Our Offices',
+  campus_heading: 'Our Office',
   campus_paragarph: `
-HCode's development offices are present in: <strong> Karnal (our HQ), Noida (Sec-62)</strong> and <strong> New York</strong> 
+  HCode's development office is located in: <strong>  Karnal (Haryana).</strong> 
 <br/>
 <br/>
-Our headquarters in Karnal, rivals some of the best offices you’d find anywhere else. Our state-of-the-art office is housed inside a vast campus, with a huge open green area, sports facilities like Basketball, Badminton, Table Tennis, and more. 
+
+Our office in Karnal, rivals some of the best offices you’d find anywhere else. Our state-of-the-art office is housed inside a vast campus, with a huge open green area, sports facilities like Basketball, Badminton, Table Tennis, and more.
 <br/>
 <br/>
-We understand, at times it is hard for people to move to our city and we don’t want our location to be a roadblock in onboarding good engineers. Our Noida and Delhi offices enable people in NCR to work with us.
-<br/>
-<br/>
-We invite brilliant minds to come, collaborate and build with us. Check out below for openings at our various locations, or write to us, <a href="mailto:hr@hcode.tech" class="text-primary underline">hr@hcode.tech</a>
+
+We invite brilliant minds to come, collaborate and build with us. Check out below for openings at our various locations, or write to us, <a href="mailto:hr@hcode.tech" class="text-primary underline">hr@hcode.tech</a>
+
+
+
 `,
 };
 
