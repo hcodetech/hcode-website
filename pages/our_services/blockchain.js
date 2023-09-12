@@ -155,7 +155,7 @@ const Blockchain = () => {
               ))}
             </div>
           </div>
-        </div>
+   </div>
       </section>
 
       {/* Portfolio */}

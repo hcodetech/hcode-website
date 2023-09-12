@@ -728,42 +728,42 @@ export const ai_benefits = {
     'Discover the advantages of partnering with HCode for AI integration. Our expertise, tailored solutions, and proven success make us the top choice for businesses seeking seamless AI transformation.',
   points: [
     {
-      image: '/assets/img/top_talent.svg',
+      image: '/assets/img/ai_integration.svg',
       heading: 'Expertise in AI Integration',
       descripition:
         'With years of experience in AI integration, our seasoned team of experts brings in-depth knowledge and a proven track record to every project. Our expertise ensures seamless AI implementation tailored to your business needs.',
     },
     {
-      image: '/assets/img/managed_process.svg',
+      image: '/assets/img/centric_approach.svg',
       heading: 'Client-Centric Approach',
       descripition:
         'Client satisfaction is at the core of our philosophy. We collaborate closely with you, prioritizing your goals and ensuring that the AI solutions we provide truly empower your organization.',
     },
     {
-      image: '/assets/img/easy_admin.svg',
+      image: '/assets/img/success_stories.svg',
       heading: 'Proven Success Stories',
       descripition:
         "Our portfolio of successful AI integration projects speaks volumes about our capabilities. We've helped numerous clients achieve remarkable results through AI, from increased efficiency to enhanced decision-making.",
     },
 
     {
-      image: '/assets/img/best.svg',
+      image: '/assets/img/cutting_edge.svg',
       heading: 'Cutting-Edge AI  Technologies',
 
       descripition:
         'We stay at the forefront of AI advancements, leveraging the latest technologies to offer innovative solutions. Our commitment to staying updated guarantees you access to the most advanced AI tools available.',
     },
     {
-      image: '/assets/img/roi.svg',
-      heading: 'High RoI',
+      image: '/assets/img/support_and_maintenance.svg',
+      heading: 'Dedicated Support and Maintenance',
       descripition:
-        'We deliver value to your business by improving quality and reducing cost resulting in high RoI. We will help you operate the business more efficiently through innovation.',
+        "Beyond implementation, our support doesn't waver. We provide proactive maintenance, timely updates, and responsive support to ensure your AI technologies consistently perform at their best.",
     },
     {
-      image: '/assets/img/trust.svg',
-      heading: 'Trust ',
+      image: '/assets/img/transparency.svg',
+      heading: 'Transparency and Clear Communication',
       descripition:
-        'We believe in building relationships based on trust. Whether it is the confidentiality of your data and IPR or delivering your project on-time, we only make promises we can deliver on.',
+        'We believe in transparent project management and clear communication at every stage. Our collaborative approach keeps you informed, involved, and in control throughout the AI integration process.',
     },
   ],
 };

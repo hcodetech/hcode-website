@@ -61,8 +61,8 @@ const AIService = () => {
       </Head>
 
       {/* Hero Section */}
-      <div className='new-container  grid grid-cols-4 pt-16 '>
-        <div className='py-5 md:py-24 md:pr-32 mt-20 col-span-2'>
+      <div className='new-container  grid  grid-cols-2 md:grid-cols-4 pt-16 '>
+        <div className='py-5 md:py-24 md:pr-32 mt-20 col-span-2 order-2 md:order-1'>
           <h1 className='text-3xl lg:text-4xl font-semibold'>
             Seamless AI Integration Solutions for Your Business
           </h1>
@@ -83,7 +83,7 @@ const AIService = () => {
             </a>
           </div>
         </div>
-        <div className='col-span-2'>
+        <div className='col-span-2 order-1 md:order-2'>
           <img src={AIService_Hero} alt='AI services' className='w-full' />
         </div>
       </div>
@@ -96,7 +96,7 @@ const AIService = () => {
       <section className=' pb-14 '>
         <div className=' '>
           <Benefits data={ai_services} additionalClass='max-w-xl' />
-          <div className='text-center pt-2 pb-12'>
+          <div className='text-center pt-2 pb-8'>
             <a
               href='/contact'
               className='bg-primary px-4 lg:px-24 py-5 text-center text-white rounded-md hover:bg-blue-800 hover:scale-x-105 active:scale-100 focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white '
@@ -117,7 +117,7 @@ const AIService = () => {
             Blockchain Technologies and Integrations
           </h3>
         </div>
-        <div className='flex justify-between mt-16'>
+        <div className='flex flex-wrap gap-5 justify-between mt-16'>
           {ai_technologies.map((data) => (
             <div
               className='bg-gray-100 rounded-md flex justify-center w-[200px] items-center p-4'
@@ -130,27 +130,27 @@ const AIService = () => {
       </section>
 
       {/* Portfolio */}
-      {/* <section className='py-10'>
+      <section className='py-10'>
         <div className=' new-container py-10 grid grid-cols-12'>
           <div className='col-span-12 md:col-span-7 '>
             <h2 className='text-4xl font-semibold pb-2'>
-              Blockchain products built by HCode
+              AI products built by HCode
             </h2>
             <p className='font-light'>
-              We’ve built the following Blockchain products for our clients
+              We’ve built the following AI products for our clients
             </p>
           </div>
           <div className='col-span-12 py-10'>
-            {portfolioData.map((data) => (
+            {/* {portfolioData.map((data) => (
               <CardPortfolio
                 key={data.id}
                 cardData={data}
                 selectedCategory={selectedCategory}
               />
-            ))}
+            ))} */}
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* Testimonial */}
       <div className='pt-10 pb-0 bg-gray-100'>
@@ -160,19 +160,20 @@ const AIService = () => {
       {/* Benefits */}
       <section className=' pt-12 '>
         <div className='new-container '>
-          <Benefits data={ai_benefits} />
+          <Benefits data={ai_benefits} additionalClass='max-w-xl' />
         </div>
       </section>
 
       {/* CTA */}
       <div className='my-10 '>
         <CTA
-          heading='Hire Blockchain Developers'
+          heading="Let's work with AI"
           paragraph='Get our top talent working for you right away'
           widthClass='w-full'
         />
       </div>
     </div>
+
   );
 };
 
