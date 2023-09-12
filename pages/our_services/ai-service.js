@@ -9,6 +9,7 @@ import {
   ai_services,
   ai_technologies,
   portfolioData,
+  ai_benefits,
 } from '../../constants/constants';
 import Head from 'next/head';
 import MetaTags from '../../components/MetaTags';
@@ -16,6 +17,7 @@ import Client from '../../components/Client';
 import Benefits from '../../components/Benefits';
 import CardPortfolio from '../../components/CardPortfolio';
 import Testimonial from '../../components/Testimonial';
+import CTA from '../../components/CTA';
 
 const AIService = () => {
   const [isDesktop, setIsDesktop] = useState('');
@@ -153,6 +155,22 @@ const AIService = () => {
       {/* Testimonial */}
       <div className='pt-10 pb-0 bg-gray-100'>
         <Testimonial />
+      </div>
+
+      {/* Benefits */}
+      <section className=' pt-12 '>
+        <div className='new-container '>
+          <Benefits data={ai_benefits} />
+        </div>
+      </section>
+
+      {/* CTA */}
+      <div className='my-10 '>
+        <CTA
+          heading='Hire Blockchain Developers'
+          paragraph='Get our top talent working for you right away'
+          widthClass='w-full'
+        />
       </div>
     </div>
   );
