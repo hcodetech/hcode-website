@@ -1531,37 +1531,8 @@ export const testimonial = [
   },
 ];
 
-export const portfolioCard = [
-  {
-    client_logo: '/assets/img/homepage_portfolio/pollinate.webp',
-    client_name: 'Pollinate',
-    mockup_image: '',
-    descripition:
-      'We worked closely with the NYC based Pollinate’s team to define the product roadmap for the minimum viable product (MVP) and build the complete product (ios/android app).',
-    link: '/caseStudies/pollinate',
-    color: 'bg-blue-400',
-  },
-  {
-    client_logo: '/assets/img/homepage_portfolio/prepay.webp',
-    client_name: 'Prepay',
-    mockup_image: '',
-    descripition:
-      'We created a web-app to enable customers to seamlessly prepay for professional services.The web-app is written in React js and is supported by a Python Django backend. ',
-    link: '/caseStudies/pollinate',
-    color: 'bg-red-400',
-  },
-  {
-    client_logo: '/assets/img/homepage_portfolio/funday.webp',
-    client_name: 'Funday',
-    mockup_image: '',
-    descripition:
-      'We are building this fun app for the Florida based Funday, Inc. Our stack is django and react-native. We work closely with founders to priortize features for our every 2 week release. ',
-    link: '/caseStudies/pollinate',
-    color: 'bg-red-400',
-  },
-];
 export const portfolioIndustry = [
-  // 'Fintech', 'Ed-Tech', 'eCommerce', 'Blockchain', 'Food & Agri Tech', 'Productivity', 'Medical Tech', 'Consumer Tech'
+  
   'Fintech',
   'Ed-Tech',
   'eCommerce',

@@ -64,6 +64,8 @@ export default function Home() {
       <section>
         <HeroSection />
         {/* Client Section */}
+
+        
         <div className=' new-container pt-10'>
           <Client
             logoWidth={250}
