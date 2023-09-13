@@ -748,7 +748,7 @@ export const ai_benefits = {
 
     {
       image: '/assets/img/cutting_edge.svg',
-      heading: 'Cutting-Edge AI  Technologies',
+      heading: 'Cutting-Edge AI Technologies',
 
       descripition:
         'We stay at the forefront of AI advancements, leveraging the latest technologies to offer innovative solutions. Our commitment to staying updated guarantees you access to the most advanced AI tools available.',

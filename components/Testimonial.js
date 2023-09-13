@@ -19,7 +19,7 @@ import {
 function Testimonial() {
   return (
     <>
-      <h2 className='text-3xl font-semibold text-center pb-2 capitalize'>
+      <h2 className='text-2xl md:text-4xl font-semibold text-center pb-2 capitalize'>
         What Clients say about us
       </h2>
       <CarouselProvider
