@@ -1,20 +1,10 @@
-/**
- * This example requires Tailwind CSS v2.0+
- *
- * @format
- */
+
 
 import { Disclosure } from '@headlessui/react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
 import { useRouter } from 'next/dist/client/router';
-import { useEffect } from 'react';
-import { hcode_footer, navbar_links } from '../constants/constants';
-import { Menu, Popover, Transition } from '@headlessui/react';
-import { Fragment } from 'react';
+import { hcode_footer } from '../constants/constants';
 
-function classNames(...classes) {
-  return classes.filter(Boolean).join(' ');
-}
 
 export default function Navbar() {
   const { pathname } = useRouter();
@@ -95,7 +85,7 @@ export default function Navbar() {
                         <li>
                           <a
                             href='/our_services/mvp'
-                            className='block py-3 pl-4  text-sm text-gray-700 hover:bg-gray-100'
+                            className='block py-3 pl-4  text-sm text-gray-700 hover:bg-gray-100 border-b'
                           >
                             Rapid Prototyping (MVP)
                           </a>

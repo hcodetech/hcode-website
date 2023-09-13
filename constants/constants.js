@@ -851,6 +851,14 @@ export const metaData = {
     url: 'https://hcode.tech/our_services/blockchain',
   },
 
+  AI: {
+    title: 'AI Development Services',
+    description:
+      'Transform your business with our Hcode AI integration services. Enhance efficiency, customer engagement, and decision-making, with personalized, scalable AI solutions.',
+    share_image: 'https://hcode.tech/assets/img/Meta-Image.jpg',
+    url: 'https://hcode.tech/our_services/ai-service',
+  },
+
   mvp: {
     title: 'MVP Development Services',
     description:
