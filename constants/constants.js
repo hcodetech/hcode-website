@@ -1711,12 +1711,7 @@ export const ai_services = {
   paragraph:
     'Our range of services seamlessly embeds artificial intelligence into your operations, enhancing efficiency and driving competitiveness. Explore our offerings below to unlock the power of AI for your organization.',
   points: [
-    {
-      image: '/assets/img/ai_workFlow.svg',
-      heading: 'AI-Powered Workflow Optimization',
-      descripition:
-        "We seamlessly integrate Artificial Intelligence into your workflows, automating tasks, providing real-time insights, and enhancing efficiency. Tailored to your unique needs, our service ensures you stay competitive in today's business landscape.",
-    },
+
     {
       image: '/assets/img/strategy_Consulting.svg',
       heading: 'AI Strategy Consulting  ',
@@ -1724,6 +1719,13 @@ export const ai_services = {
       descripition:
         'Our expert consultants collaborate with you to develop customized AI strategies that align with your unique goals and industry requirements. From AI adoption planning to implementation guidance, we provide comprehensive insights and actionable recommendations to drive your organization’s innovation, efficiency, and competitiveness.',
     },
+    {
+      image: '/assets/img/ai_workFlow.svg',
+      heading: 'AI-Powered Workflow Optimization',
+      descripition:
+        "We seamlessly integrate Artificial Intelligence into your workflows, automating tasks, providing real-time insights, and enhancing efficiency. Tailored to your unique needs, our service ensures you stay competitive in today's business landscape.",
+    },
+  
     {
       image: '/assets/img/maintenance.svg',
       heading: 'AI Maintenance and Support Solutions',
