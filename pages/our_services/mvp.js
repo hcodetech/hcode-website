@@ -1,31 +1,36 @@
 import Head from "next/head";
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Benefits from "../../components/Benefits";
 import CardPortfolio from "../../components/CardPortfolio";
 import Client from "../../components/Client";
 import CTA from "../../components/CTA";
 import Testimonial from "../../components/Testimonial";
+
+import Accordion from "../../components/Accordion";
+import MetaTags from "../../components/MetaTags";
 import {
   client,
   faq_mvp,
-  faq_services,
   metaData,
   mvp_benefits,
   MVP_Hero,
   MVP_look_icon,
   MVP_need_icon,
-  MVP_want_icon,
+  MVP_want_icon
 } from "../../constants/constants";
+import { getTestimonialData } from "../../utils/config";
 import { getAPIUrl } from "../api/APIHelpers";
 import { apiRoutes } from "../api/APIRoutes";
 import useGetFetch from "../hooks/useGetFetch";
-import Accordion from "../../components/Accordion";
-import MetaTags from "../../components/MetaTags";
 
 const mvp = () => {
   const [selectedCategory, setSelectedCategory] = useState(["MVP"]);
   const [portfolioData, isLoading] = useGetFetch(getAPIUrl(apiRoutes.OUR_WORK));
   const [isDesktop, setIsDesktop] = useState("");
+
+ 
+
+  const data = getTestimonialData('mvp')
   useEffect(() => {
     window.innerWidth <= 750 ? setIsDesktop(false) : setIsDesktop(true);
   });
@@ -40,7 +45,7 @@ const mvp = () => {
         <div className="new-container grid grid-cols-12 min-h-screen md:min-h-[90vh] ">
           <div className="col-span-12 md:col-span-5 order-2 md:order-1">
             <h1 className=" md:pt-48 lg:mt-10 text-3xl md:text-5xl font-semibold leading-loose ">
-              MVP Development Services
+              MVP App Development 
             </h1>
             <p className=" md:mt-4 mb-6 md:mb-10 text-white tracking-tight md:text-lg opacity-70 md:w-3/4">
               Get your Minimal Viable Product built by a team of experienced
@@ -55,7 +60,12 @@ const mvp = () => {
             </a>
           </div>
           <div className="col-span-12 md:col-span-7 order-1 md:order-2 mt-24 md:mt-20 scale-90  lg:absolute lg:right-24 ">
-            <img src={MVP_Hero} className="object-cover w-auto h-auto lg:min-w-[120%]" width='400px' height='auto'/>
+            <img
+              src={MVP_Hero}
+              className="object-cover w-auto h-auto lg:min-w-[120%]"
+              width="400px"
+              height="auto"
+            />
           </div>
         </div>
       </section>
@@ -75,7 +85,13 @@ const mvp = () => {
           <div className="grid grid-cols-12 gap-8 py-8">
             <div className="col-span-12 md:col-span-6 lg:col-span-4">
               <div className="bg-white shadow p-10 min-h-[320px] h-full relative">
-                <img src={MVP_want_icon} className="ml-auto pb-8 w-auto h-auto" width='100px' height='100px' loading='lazy' />
+                <img
+                  src={MVP_want_icon}
+                  className="ml-auto pb-8 w-auto h-auto"
+                  width="100px"
+                  height="100px"
+                  loading="lazy"
+                />
                 <div className="absolute bottom-0 pb-10 pr-5">
                   <h6 className="font-light">Want</h6>
                   <h3 className="font-semibold text-2xl">
@@ -86,7 +102,13 @@ const mvp = () => {
             </div>
             <div className="col-span-12 md:col-span-6 lg:col-span-4">
               <div className="bg-white shadow p-10 min-h-[320px] h-full relative">
-                <img src={MVP_need_icon} className="ml-auto pb-8 h-auto w-auto" width='100px'  height='100px' loading='lazy'   />
+                <img
+                  src={MVP_need_icon}
+                  className="ml-auto pb-8 h-auto w-auto"
+                  width="100px"
+                  height="100px"
+                  loading="lazy"
+                />
                 <div className="absolute bottom-0 pb-10 pr-5">
                   <h6 className="font-light align-baseline">Need</h6>
                   <h3 className="font-semibold text-2xl">
@@ -97,7 +119,13 @@ const mvp = () => {
             </div>
             <div className="col-span-12 md:col-span-6 lg:col-span-4">
               <div className="bg-white shadow p-10 min-h-[320px] h-full relative">
-                <img src={MVP_look_icon} className="ml-auto pb-8 w-auto h-auto" width='100px'  height='100px' loading='lazy'  />
+                <img
+                  src={MVP_look_icon}
+                  className="ml-auto pb-8 w-auto h-auto"
+                  width="100px"
+                  height="100px"
+                  loading="lazy"
+                />
                 <div className="absolute bottom-0 pb-10 pr-5">
                   <h6 className="font-light">Look for</h6>
                   <h3 className="font-semibold text-2xl">
@@ -206,13 +234,13 @@ const mvp = () => {
 
       {/* Testimonial */}
       <div className="pt-10 pb-0 bg-gray-100">
-        <Testimonial />
+        <Testimonial data={data}/>
       </div>
 
       {/* Benefits */}
       <section className=" pt-12 ">
         <div className=" ">
-          <Benefits additionalClass='lg:w-1/2' data={mvp_benefits} />
+          <Benefits additionalClass="lg:w-1/2" data={mvp_benefits} />
           {/*  */}
         </div>
       </section>

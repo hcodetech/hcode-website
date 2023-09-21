@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from "react";
 
 import Head from "next/head";
+import Accordion from "../../components/Accordion";
 import Benefits from "../../components/Benefits";
 import CTA from "../../components/CTA";
 import CardPortfolio from "../../components/CardPortfolio";
@@ -18,20 +19,22 @@ import {
   faq_ai,
   metaData,
 } from "../../constants/constants";
+import { getTestimonialData } from "../../utils/config";
 import { getAPIUrl } from "../api/APIHelpers";
 import { apiRoutes } from "../api/APIRoutes";
 import useGetFetch from "../hooks/useGetFetch";
-import Accordion from "../../components/Accordion";
 
 const AIService = () => {
   const [isDesktop, setIsDesktop] = useState("");
-  const selectedCategory = ["Blockchain"];
+  const selectedCategory = ["AI"];
 
   const [portfolioData, isLoading] = useGetFetch(getAPIUrl(apiRoutes.OUR_WORK));
 
   useEffect(() => {
     window.innerWidth <= 750 ? setIsDesktop(false) : setIsDesktop(true);
   });
+  const data = getTestimonialData('AI')
+
 
   return (
     <div>
@@ -173,7 +176,7 @@ const AIService = () => {
 
       {/* Testimonial */}
       <div className="pt-10 pb-0 bg-gray-100">
-        <Testimonial />
+        <Testimonial data={data} />
       </div>
 
       {/* Benefits */}

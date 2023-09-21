@@ -1,23 +1,24 @@
 /** @format */
 
 import Head from 'next/head';
-import React, { useState, useEffect } from 'react';
-import Tab from '../../components/atoms/Tab';
+import React, { useEffect, useState } from 'react';
 import Benefits from '../../components/Benefits';
+import CTA from '../../components/CTA';
 import CardPortfolio from '../../components/CardPortfolio';
 import Client from '../../components/Client';
-import CTA from '../../components/CTA';
 import MetaTags from '../../components/MetaTags';
 import Testimonial from '../../components/Testimonial';
+import Tab from '../../components/atoms/Tab';
 import {
-  client,
+  Blockchain_Hero,
   blockchain_benefits,
   blockchain_services,
   blockchain_techStack,
   blockchain_techStack_icon,
-  Blockchain_Hero,
+  client,
   metaData,
 } from '../../constants/constants';
+import { getTestimonialData } from '../../utils/config';
 import { getAPIUrl } from '../api/APIHelpers';
 import { apiRoutes } from '../api/APIRoutes';
 import useGetFetch from '../hooks/useGetFetch';
@@ -56,6 +57,7 @@ const Blockchain = () => {
       });
     }
   };
+  const data = getTestimonialData('blockchain')
 
   return (
     <>
@@ -68,7 +70,7 @@ const Blockchain = () => {
         <div className='new-container grid grid-cols-12 min-h-[90vh] '>
           <div className='col-span-12 md:col-span-5 order-2 md:order-1 pb-5'>
             <h1 className='md:pt-44 lg:mt-10 text-3xl md:text-5xl font-semibold '>
-              Blockchain Development Services
+              Blockchain App Development
             </h1>
             <p className='mt-2 md:mt-4 mb-6 md:mb-10 text-white tracking-tight md:text-lg opacity-70'>
               We’re proficient in various Blockchain services including, but not
@@ -183,7 +185,7 @@ const Blockchain = () => {
 
       {/* Testimonial */}
       <div className='pt-10 pb-0 bg-gray-100'>
-        <Testimonial />
+        <Testimonial data={data} />
       </div>
 
       {/* Benefits */}

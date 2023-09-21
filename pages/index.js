@@ -19,6 +19,7 @@ import {
   homepage,
   how_to_get_started,
   metaData,
+  testimonial,
 } from '../constants/constants';
 
 import { useEffect, useState } from 'react';
@@ -211,7 +212,7 @@ export default function Home() {
 
       {/* Testimonial */}
       <section id='testimonial' className='pt-10 pb-0 bg-gray-100'>
-        <Testimonial />
+        <Testimonial data={testimonial} />
       </section>
 
       {/* Tech Stack */}
