@@ -15,11 +15,13 @@ import {
   ai_services,
   ai_technologies,
   client,
+  faq_ai,
   metaData,
 } from "../../constants/constants";
 import { getAPIUrl } from "../api/APIHelpers";
 import { apiRoutes } from "../api/APIRoutes";
 import useGetFetch from "../hooks/useGetFetch";
+import Accordion from "../../components/Accordion";
 
 const AIService = () => {
   const [isDesktop, setIsDesktop] = useState("");
@@ -125,14 +127,21 @@ const AIService = () => {
               AI Technologies and Integrations
             </h3>
           </div>
-          <div className="grid grid-cols-6 md:grid-cols-10 gap-8 justify-between mt-16">
+          <div className="flex justify-between flex-wrap gap-8  mt-16">
             {ai_technologies.map((data) => (
-              <div
-                className="bg-gray-300 rounded-sm flex justify-center col-span-2 items-center p-4"
+              <div>
+                   <div
+                className="border bg-white border-gray-300 h-36 w-36 p-1 hover:scale-105 ease-out duration-300 flex justify-center items-center rounded-sm "
                 key={data.id}
               >
                 <img src={data.image} alt="AI technologies" />
+
               </div>
+              <p className="text-center pt-2 font-medium">{data.name}</p>
+
+              </div>
+           
+              
             ))}
           </div>
         </section>
@@ -172,6 +181,11 @@ const AIService = () => {
         <div className="new-container ">
           <Benefits data={ai_benefits} additionalClass="max-w-2xl" />
         </div>
+      </section>
+
+       {/* FAQ */}
+       <section className="bg-gray-100">
+        <Accordion data={faq_ai} />
       </section>
 
       {/* CTA */}

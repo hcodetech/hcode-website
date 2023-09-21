@@ -1856,6 +1856,38 @@ export const faq_mvp = [
   },
 ];
 
+export const faq_ai = [
+  {
+    question: 'What is AI integration, and how can it benefit my business?',
+    answer:
+      'AI integration involves seamlessly incorporating artificial intelligence into your existing systems and workflows. It can benefit your business by automating tasks, providing real-time insights, enhancing decision-making, and improving overall efficiency.',
+  },
+  {
+    question: 'Do I need to have existing AI systems in place to benefit from your services?',
+    answer:"No, you don't need existing AI systems. We work with businesses at all stages of AI adoption, from those looking to start integrating AI to those wanting to enhance their existing AI infrastructure."
+  },
+  {
+    question:
+      'How long does it typically take to see results from AI integration?',
+    answer:'The timeline for seeing results varies depending on the complexity of the project and specific goals. Some businesses may experience improvements in operational efficiency within weeks, while others may see substantial benefits over several months.'
+  },
+  {
+    question:
+      'What is the typical cost associated with AI integration services, and how can I determine the budget for my project?',
+    answer:'The cost of AI integration can vary widely depending on project complexity and scope. We offer customized solutions, and the pricing is tailored to your specific needs. To determine a budget, we recommend discussing your requirements with our team for a detailed estimate.'
+  },
+
+  {
+    question:'Are there any potential challenges or risks associated with AI integration, and how do you mitigate them?',
+    answer:'While AI integration offers significant benefits, challenges may include data security, ethical concerns, and technology compatibility. We address these by implementing robust security measures, adhering to ethical AI principles, and conducting compatibility assessments.'
+  },
+  {
+    question:
+      'Is my data secure when integrating AI into my systems?',
+    answer:'Yes, data security is a top priority. We implement industry-standard security measures to protect your data throughout the AI integration process, ensuring confidentiality and compliance with privacy regulations.'
+  },
+];
+
 export const hcode_provide = [
   {
     id: '1',
@@ -2005,22 +2037,31 @@ export const ai_technologies = [
   {
     id: 1,
     image: '/assets/img/aiTechnologiesLogo4.svg',
+    name: 'OpenAI'
   },
   {
     id: 2,
-    image: '/assets/img/aiTechnologiesLogo1.png',
+    image: '/assets/img/Eleven_labs.svg',
+    name: 'ElevenLabs'
+
   },
   {
     id: 3,
-    image: '/assets/img/aiTechnologiesLogo2.svg',
+    image: '/assets/img/hugging_face.png',
+    name: 'Hugging Face'
+
   },
   {
     id: 4,
-    image: '/assets/img/aiTechnologiesLogo3.png',
+    image: '/assets/img/leap_ai.svg',
+    name: 'Leap AI'
+
   },
 
   {
     id: 5,
-    image: '/assets/img/aiTechnologiesLogo1.png',
+    image: '/assets/img/synthesia.png',
+    name: 'Synthesia'
+
   },
 ];
