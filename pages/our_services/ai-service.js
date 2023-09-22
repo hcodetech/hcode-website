@@ -39,7 +39,7 @@ const AIService = () => {
     <div>
       <Head>
         <title>AI services | Hcode Technologies</title>
-        <MetaTags page={metaData.work_with_us} />
+        <MetaTags page={metaData.AI} />
       </Head>
 
       {/* Hero Section */}
