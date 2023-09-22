@@ -11,7 +11,6 @@ import React from "react";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/outline";
 
 function Testimonial({ data }) {
-  console.log("data---------------", data);
   return (
     <>
       <h2 className="text-2xl md:text-4xl font-semibold text-center pb-2 capitalize">

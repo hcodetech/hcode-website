@@ -33,8 +33,7 @@ const AIService = () => {
   useEffect(() => {
     window.innerWidth <= 750 ? setIsDesktop(false) : setIsDesktop(true);
   });
-  const data = getTestimonialData('AI')
-
+  const data = getTestimonialData("AI");
 
   return (
     <div>
@@ -57,11 +56,7 @@ const AIService = () => {
           </p>
 
           <div className="mt-5">
-            <a
-              href="https://in.indeed.com/cmp/Hcode-Technologies/jobs"
-              target="_blank"
-              className="primary-button"
-            >
+            <a href="/contact" target="_blank" className="primary-button">
               Get in Touch
             </a>
           </div>
@@ -70,18 +65,13 @@ const AIService = () => {
           <img src={AIService_Hero} alt="AI services" className="w-full" />
         </div>
       </div>
-      
-
-
-
-
 
       <section className="new-container pt-20 pb-32">
         <Client data={client} slides={isDesktop} />
       </section>
 
       {/* Tech Services */}
-      <section className=" pb-14 new-container ">
+      <section className=" pb-14 new-container">
         <div className="text-center">
           <h1 className="text-2xl lg:text-4xl font-semibold">
             Our AI Integration Services
@@ -113,38 +103,30 @@ const AIService = () => {
         </div>
 
         <div className=" text-center mt-14 pt-2 pb-8">
-
-        <a href='/contact' className='primary-outline'>
-                  <span className='px-5'>Contact Us</span>
-                </a>
-       
+          <a href="/contact" className="primary-outline">
+            <span className="px-5">Contact Us</span>
+          </a>
         </div>
       </section>
 
       <div className="bg-gray-100 py-10 my-8">
         <section className="py-10 lg:py-16 new-container">
           <div className="text-center ">
-          
             <h3 className="text-2xl lg:text-4xl max-w-xl mx-auto font-semibold  lg:leading-snug">
-              We have experience in following 
-              AI Technologies and Integrations
+              We have experience in following AI Technologies and Integrations
             </h3>
           </div>
-          <div className="flex justify-between flex-wrap gap-8  mt-16">
+          <div className="flex justify-center lg:justify-between flex-wrap gap-4 sm:gap-8  mt-16">
             {ai_technologies.map((data) => (
               <div>
-                   <div
-                className="border bg-white border-gray-300 h-36 w-36 p-1 hover:scale-105 ease-out duration-300 flex justify-center items-center rounded-sm "
-                key={data.id}
-              >
-                <img src={data.image} alt="AI technologies" />
-
+                <div
+                  className="border bg-white border-gray-300 h-36 w-36 p-1 hover:scale-105 ease-out duration-300 flex justify-center items-center rounded-sm "
+                  key={data.id}
+                >
+                  <img src={data.image} alt="AI technologies" />
+                </div>
+                <p className="text-center pt-2 font-medium">{data.name}</p>
               </div>
-              <p className="text-center pt-2 font-medium">{data.name}</p>
-
-              </div>
-           
-              
             ))}
           </div>
         </section>
@@ -186,8 +168,8 @@ const AIService = () => {
         </div>
       </section>
 
-       {/* FAQ */}
-       <section className="bg-gray-100">
+      {/* FAQ */}
+      <section className="bg-gray-100">
         <Accordion data={faq_ai} />
       </section>
 

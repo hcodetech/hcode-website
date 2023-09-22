@@ -203,7 +203,7 @@ const mvp = () => {
         <div className="text-center mt-16 md:mt-28">
           <a
             href="/our_services"
-            className="bg-primary text-white rounded px-16 py-4    text-center transition transform duration-200 ease-out"
+            className="bg-primary text-white rounded px-16 py-4    text-center"
           >
             Contact Us
           </a>

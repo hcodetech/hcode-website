@@ -87,7 +87,7 @@ export default function Navbar() {
                             href='/our_services/mvp'
                             className='block py-3 pl-4  text-sm text-gray-700 hover:bg-gray-100 border-b'
                           >
-                            Rapid Prototyping (MVP)
+                             MVP Development Services
                           </a>
                         </li>
                         <li>
@@ -236,7 +236,7 @@ export default function Navbar() {
                               'bg-blue-50 border-blue-500 text-blue-700'
                             }   `}
                 >
-                  Rapid Prototyping (MVP)
+                MVP Development Services
                 </a>
 
                 <a

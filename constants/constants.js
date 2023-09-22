@@ -1486,7 +1486,7 @@ export const testimonial = [
     profile_image: "../assets/img/client_image/Gregory_Correll.png",
     person_name: "Gregory Correll",
     company_name: "Technical Project Manager, Parmount Capital Group",
-    preview_on: ['AI'],
+    preview_on: ["AI"],
     testimonial_paragraph:
       "As a technology manager with over 25 years of experience, I cannot think of a better partnership that I’ve had over the years.  Not only are Shashank and his teams are immensely qualified across a wide range of disciplines as well as attentive and disciplined in their approach to solutions, but they have also proven they can rapidly adjust to a constantly changing set of directives with ease.<br/><br/>They were ready to work on day 1, and by day 2 had already surpassed my initial expectations.  In only a few months’ time, they carefully crafted a complete internal self-service portal for both our employees and clients which will eventually be the backbone of our entire firm.  I’m looking forward to a long and healthy relationship!!",
   },
@@ -1504,7 +1504,7 @@ export const testimonial = [
     profile_image: "../assets/img/client_image/naam_lee.png",
     person_name: "Nam Le",
     company_name: "CEO, Pollinate Inc.",
-    preview_on: [],
+    preview_on: ["mvp", "blockchain", "AI"],
     testimonial_paragraph:
       " The quality of the Hcode's work and communication is superb, and they feel like our internal engineering team. When it comes to hitting our development and company milestones, their team is there to deliver from day 1. They have been fantastic partners for us and we look forward to growing with the Hcode team.",
   },
@@ -1719,17 +1719,18 @@ export const ai_services = {
     "Our range of services seamlessly embeds artificial intelligence into your operations, enhancing efficiency and driving competitiveness. Explore our offerings below to unlock the power of AI for your organization.",
   points: [
     {
+      image: "/assets/img/ai_workFlow.svg",
+      heading: "AI-Powered Workflow Optimization",
+      descripition:
+        "We seamlessly integrate Artificial Intelligence into your workflows, automating tasks, providing real-time insights, and enhancing efficiency. Tailored to your unique needs, our service ensures you stay competitive in today's business landscape.",
+    },
+
+  {
       image: "/assets/img/strategy_Consulting.svg",
       heading: "AI Strategy Consulting  ",
 
       descripition:
         "Our expert consultants collaborate with you to develop customized AI strategies that align with your unique goals and industry requirements. From AI adoption planning to implementation guidance, we provide comprehensive insights and actionable recommendations to drive your organization’s innovation, efficiency, and competitiveness.",
-    },
-    {
-      image: "/assets/img/ai_workFlow.svg",
-      heading: "AI-Powered Workflow Optimization",
-      descripition:
-        "We seamlessly integrate Artificial Intelligence into your workflows, automating tasks, providing real-time insights, and enhancing efficiency. Tailored to your unique needs, our service ensures you stay competitive in today's business landscape.",
     },
 
     {

@@ -68,7 +68,7 @@ function ServicesCard({ heading }) {
           <Link href="/our_services/mvp">
             <div className="bg-mvp bg-no-repeat bg-left bg-cover  min-h-[300px] 2xl:h-[400px] h-full   transform transition duration-100 ease-out mb-5 md:mb-0 cursor-pointer hover:opacity-95">
               <div className=" text-black p-8 md:p-10">
-                <h1 className=" text-3xl md:text-4xl font-semibold md:font-bold lg:w-1/2">
+                <h1 className=" text-3xl md:text-4xl font-semibold md:font-bold lg:w-3/4">
                   {our_service.mvp_heading}
                 </h1>
                 <p className="mt-3 font-light md:text-xl  w-3/5">
