@@ -4,7 +4,6 @@ import { CheckIcon, XIcon } from "@heroicons/react/outline";
 import Modal from "./Modal";
 
 const DownloadResponsePopup = ({ error, title, description, close }) => {
-  console.log(close, "close function");
   return (
     <>
       <Modal
