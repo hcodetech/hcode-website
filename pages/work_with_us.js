@@ -1,36 +1,24 @@
 /** @format */
 
+import { ArrowRightIcon } from '@heroicons/react/solid';
 import Head from 'next/head';
 import { CarouselProvider, Slide, Slider } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
-import { karnalImages, blog_page } from '../constants/constants';
-import { ArrowRightIcon } from '@heroicons/react/solid';
+import Accordion from '../components/Accordion';
+import Benefits from '../components/Benefits';
+import ImageCarousel from '../components/ImageCarousel';
+import MetaTags from '../components/MetaTags';
+import Team from '../components/Team';
 import {
-  Delhi,
-  faq_hiring,
-  hiring_process,
-  karnal,
-  metaData,
-  newyork,
-  NewYork,
-  Noida,
-  office_v3,
-  OUR_MENTORS,
-  remote,
-  TEAM,
-  thailand_trip,
+  OUR_MENTORS, blog_page, faq_hiring,
+  hiring_process, karnalImages, metaData, office_v3, thailand_trip,
   thailand_trip_webp,
   what_we_do,
   work_with_us_1,
   work_with_us_benefits,
   work_with_us_content,
-  work_with_us_recuriter_image,
+  work_with_us_recuriter_image
 } from '../constants/constants';
-import ImageCarousel from '../components/ImageCarousel';
-import Benefits from '../components/Benefits';
-import Accordion from '../components/Accordion';
-import Team from '../components/Team';
-import MetaTags from '../components/MetaTags';
 
 function work_with_us() {
   return (
@@ -61,7 +49,7 @@ function work_with_us() {
             </a>
 
             <p className='mt-8 '>
-              Connect with the HR:{' '}
+              Connect with the HR:
               <a
                 className='text-primary underline'
                 href='mailto:hr@hcode.tech'
