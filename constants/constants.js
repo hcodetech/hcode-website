@@ -274,6 +274,8 @@ export const MVP_need_icon = "/assets/img/mvp_need_icon.svg";
 export const MVP_want_icon = "/assets/img/mvp_want_icon.svg";
 export const MVP_look_icon = "/assets/img/mvp_look_icon.svg";
 
+export const Newsletter_popup_img = "/assets/img/newsletter_popup.jpg";
+
 export const our_services_data = {
   hero_heading: "Hire Top Tech talent for your Remote Team",
   hero_paragraph:
@@ -1725,7 +1727,7 @@ export const ai_services = {
         "We seamlessly integrate Artificial Intelligence into your workflows, automating tasks, providing real-time insights, and enhancing efficiency. Tailored to your unique needs, our service ensures you stay competitive in today's business landscape.",
     },
 
-  {
+    {
       image: "/assets/img/strategy_Consulting.svg",
       heading: "AI Strategy Consulting  ",
 

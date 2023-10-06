@@ -4,17 +4,32 @@ import "tailwindcss/tailwind.css";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import "../styles/global.scss";
+import NewsletterPopUp from "../components/NewsletterPopUp";
+import { useEffect, useState } from "react";
 
 function MyApp({ Component, pageProps }) {
+  const [showNewsLetterPopup, setShowNewsLetterPopup] = useState(false);
   let url;
   if (typeof window !== "undefined") {
     url = window.location.pathname;
   }
+
+  useEffect(() => {
+    setTimeout(() => {
+      setShowNewsLetterPopup(true);
+    }, [2000]);
+  }, []);
+
   return (
-    <div className="bg-white">
-      <Navbar />
-      <Component {...pageProps} />
-      {url !== "/newsletter" && <Footer />}
+    <div>
+      {showNewsLetterPopup && (
+        <NewsletterPopUp setShowNewsLetterPopup={setShowNewsLetterPopup} />
+      )}
+      <div className="bg-white">
+        <Navbar />
+        <Component {...pageProps} />
+        {url !== "/newsletter" && <Footer />}
+      </div>
     </div>
   );
 }
