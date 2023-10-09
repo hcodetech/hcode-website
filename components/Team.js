@@ -10,7 +10,7 @@ function Team({ name, image, image_webp, bio, link, title }) {
             media="(min-width:250px)"
           />
           <img
-            className="object-cover  h-[250px] min-w-full "
+            className="object-cover h-[360px] md:h-[250px] w-full px-4 "
             src={image}
             layout="fill"
             loading="lazy"
@@ -20,7 +20,7 @@ function Team({ name, image, image_webp, bio, link, title }) {
           />
         </picture>
 
-        <div className="p-2 absolute bottom-4  left-2 cursor-pointer bg-gray-100 rounded-full hover:bg-white">
+        <div className="p-2 absolute bottom-4 left-7 sm:left-2 cursor-pointer bg-gray-100 rounded-full hover:bg-white">
           <a href={link} target="_blank">
             <img
               src={linkedin_icon}

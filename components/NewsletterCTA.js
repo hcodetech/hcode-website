@@ -48,7 +48,7 @@ const NewsletterCTA = () => {
               <div className="sm:flex">
                 <input
                   placeholder="Enter your email"
-                  className="w-full border-white px-5 py-3 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-primary focus:ring-white rounded-md"
+                  className="w-full border-white px-5 py-3 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-primary focus:ring-white mt-3 sm:mt-0 rounded-md"
                   type="email"
                   onChange={(e) => setData({ ...data, EMAIL: e.target.value })}
                 />
