@@ -1,7 +1,7 @@
-import { linkedin_icon } from '../constants/constants';
+import { linkedin_icon } from "../constants/constants";
 function Team({ name, image, image_webp, bio, link, title }) {
   return (
-    <div className="mb-5 w-[227px] md:w-full mx-auto">
+    <div className="mb-5  md:w-full mx-auto">
       <div className="relative text-center mx-auto  mb-2">
         <picture>
           <source
@@ -10,7 +10,7 @@ function Team({ name, image, image_webp, bio, link, title }) {
             media="(min-width:250px)"
           />
           <img
-            className="object-cover md:h-[280px] min-w-full xl:min-w-[275px]"
+            className="object-cover  h-[250px] min-w-full "
             src={image}
             layout="fill"
             loading="lazy"

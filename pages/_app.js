@@ -15,9 +15,14 @@ function MyApp({ Component, pageProps }) {
   }
 
   useEffect(() => {
-    setTimeout(() => {
-      setShowNewsLetterPopup(true);
-    }, [2000]);
+    const stroredData = sessionStorage.getItem("isSubscriptionPopupVisible");
+
+    if (stroredData === null) {
+      setTimeout(() => {
+        setShowNewsLetterPopup(true);
+      }, [4000]);
+    }
+    sessionStorage.setItem("isSubscriptionPopupVisible", showNewsLetterPopup);
   }, []);
 
   return (

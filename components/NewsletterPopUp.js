@@ -1,4 +1,4 @@
-import { XCircleIcon, XIcon } from "@heroicons/react/solid";
+import { XCircleIcon } from "@heroicons/react/solid";
 import React, { useState } from "react";
 import { Newsletter_popup_img } from "../constants/constants";
 
@@ -9,7 +9,7 @@ const NewsletterPopUp = ({ setShowNewsLetterPopup }) => {
     email_address_check: "",
     locale: "en",
   });
-  // const [responseMessage, setResponseMessage] = useState("");
+  const [responseMessage, setResponseMessage] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -19,16 +19,19 @@ const NewsletterPopUp = ({ setShowNewsLetterPopup }) => {
       formdata.append(name, data[name]);
     }
 
-    const response = await fetch(
-      "https://03f10e9f.sibforms.com/serve/MUIFAFon6slsvbzyViM6v5hm5konmTHb900cNJkcvCMk-l5Tubm1j_uwDD9fyQ-FxeFObGDgLn2rffxmhaubqfcOHTuTAezf83WhBUca6gc81tBvveeskDpeWvgN2mxAglcqKVnaQSTLcqSvabDOoPrwsKAIdBAtFbr5oeI6Hz8Lnviih0O8Q0H2n5zNTkG3RAiNRb1-Frjd1J0z?isAjax=1",
-      {
-        method: "POST",
-        body: formdata,
-      }
-    );
-    const result = await response.json();
-    // setResponseMessage(result.message);
-    // console.log(result.message);
+    try {
+      const response = await fetch(
+        "https://03f10e9f.sibforms.com/serve/MUIFAFon6slsvbzyViM6v5hm5konmTHb900cNJkcvCMk-l5Tubm1j_uwDD9fyQ-FxeFObGDgLn2rffxmhaubqfcOHTuTAezf83WhBUca6gc81tBvveeskDpeWvgN2mxAglcqKVnaQSTLcqSvabDOoPrwsKAIdBAtFbr5oeI6Hz8Lnviih0O8Q0H2n5zNTkG3RAiNRb1-Frjd1J0z?isAjax=1",
+        {
+          method: "POST",
+          body: formdata,
+        }
+      );
+      const result = await response.json();
+      setResponseMessage(result.message);
+    } catch (err) {
+      setResponseMessage("This email is not valid. Please try again.");
+    }
   };
   return (
     <div className=" fixed max-w-lg  z-10 top-28 left-1/3 ">
@@ -48,6 +51,9 @@ const NewsletterPopUp = ({ setShowNewsLetterPopup }) => {
               <h2 className="text-3xl mt-3 font-bold">
                 Subscribe to our newsletter
               </h2>
+              {responseMessage && (
+                <p className="font-bold text-sm mt-2 ml-1">{responseMessage}</p>
+              )}
               <form onSubmit={handleSubmit} className="flex mt-4 flex-col">
                 <label className="font-semibold">First Name</label>
                 <input

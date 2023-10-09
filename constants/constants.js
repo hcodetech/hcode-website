@@ -122,13 +122,6 @@ export const TEAM = [
     bio: "Started, grown & led multiple quant teams as VP in Goldman Sachs, New York, IIT Delhi",
     link: "https://www.linkedin.com/in/shweta-singla/",
   },
-
-  {
-    image: "/assets/img/hcode_about_us_rakesh.jpg",
-    name: "Rakesh Sehgal",
-    bio: "Co-founded an ad-tech platform Paytunes. Experienced in MVP building. Ex- PwC, IIT Delhi",
-    link: "https://www.linkedin.com/in/sehgalrakesh/",
-  },
   {
     image: "/assets/img/hcode_about_us_rishabh.jpg",
     name: "Rishabh Garg",
@@ -140,6 +133,20 @@ export const TEAM = [
     name: "Shashank Singla",
     bio: "Entrepreneur by trade, Engineer at heart with 2 exits in AI in US & India. Ex Goldman Sachs, IIT Delhi",
     link: "https://www.linkedin.com/in/shashanksingla/",
+  },
+  {
+    image: "/assets/img/hcode_about_us_anuj.png",
+    name: "Anuj Arora",
+    bio: "Engineering Manager @ HCODE | Ex PE @Byju's, Ex @Amazon, Experienced in MVP building, IIT Delhi",
+
+    link: "https://www.linkedin.com/in/anuj-arora-95091621/",
+  },
+
+  {
+    image: "/assets/img/hcode_about_us_mudit.jpg",
+    name: "Mudit Sharma",
+    bio: "EM @ HCODE | Experience in building Enterprise SAAS as Ex EM @Brevo, N.C.C.E.-KUK",
+    link: "https://www.linkedin.com/in/sharma-mudit/",
   },
   // {
   //   image: "/assets/img/hcode_about_us_harshit.jpg",
