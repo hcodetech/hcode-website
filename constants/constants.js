@@ -118,26 +118,26 @@ export const TEAM = [
   {
     image: "/assets/img/hcode_about_us_shweta.jpg",
     name: "Shweta Singla",
-    // title: "Communication Coach",
-    bio: "Started, grown & led multiple quant teams as VP in Goldman Sachs, New York, IIT Delhi",
+    designation: "Co-Founder",
+    bio: " Leader with experience in building, training and running teams at Goldman Sachs, New York  IIT Delhi ",
     link: "https://www.linkedin.com/in/shweta-singla/",
   },
   {
     image: "/assets/img/hcode_about_us_rishabh.jpg",
     name: "Rishabh Garg",
-    bio: "EM with experience of building Enterprise Applications.Ex-Siemens, NIT Durgapur",
+    designation: " Engineering Manager",
+
+    bio: "Expert in Enterprise App Development with  a rich background at Siemens and Samsung  NIT Durgapur  ",
+
     link: "https://www.linkedin.com/in/rishabh-garg-77023ab6/",
   },
-  {
-    image: "/assets/img/hcode_about_us_shashank.jpg",
-    name: "Shashank Singla",
-    bio: "Entrepreneur by trade, Engineer at heart with 2 exits in AI in US & India. Ex Goldman Sachs, IIT Delhi",
-    link: "https://www.linkedin.com/in/shashanksingla/",
-  },
+
   {
     image: "/assets/img/hcode_about_us_anuj.png",
     name: "Anuj Arora",
-    bio: "Engineering Manager @ HCODE | Ex PE @Byju's, Ex @Amazon, Experienced in MVP building, IIT Delhi",
+    designation: "Engineering Manager",
+
+    bio: "Experienced in MVP development, cloud and scaling products with a strong foundation at BYju's and Amazon    IIT Delhi  ",
 
     link: "https://www.linkedin.com/in/anuj-arora-95091621/",
   },
@@ -145,16 +145,19 @@ export const TEAM = [
   {
     image: "/assets/img/hcode_about_us_mudit.jpg",
     name: "Mudit Sharma",
-    bio: "EM @ HCODE | Experience in building Enterprise SAAS as Ex EM @Brevo, N.C.C.E.-KUK",
+    designation: "Engineering Manager",
+
+    bio: "Experienced in enterprise SAAS development, and a successful track record at Brevo   N.C.C.E. - KUK  ",
     link: "https://www.linkedin.com/in/sharma-mudit/",
   },
-  // {
-  //   image: "/assets/img/hcode_about_us_harshit.jpg",
-  //   name: "Harshit Garg",
-  //   // title: "Communication Coach",
-  //   bio: "Management exec, Problem solver, led large-scale digital transformation. Ex-Godfrey & Pidilite, NITIE, NIT KKR",
-  //   link: "https://www.linkedin.com/in/gargharshit/",
-  // },
+  {
+    image: "/assets/img/hcode_about_us_shashank.jpg",
+    name: "Shashank Singla",
+    designation: "Co-Founder ",
+
+    bio: "Loves building products, is an Entrepreneur with 2 AI exits, in the US and India; formerly at Goldman Sachs IIT Delhi",
+    link: "https://www.linkedin.com/in/shashanksingla/",
+  },
 ];
 
 export const OUR_MENTORS = [

@@ -244,15 +244,15 @@ export default function Home() {
           <h3 className="font-poppins text-center font-semibold text-3xl  md:text-4xl md:leading-tight">
             Leadership Team
           </h3>
-          <div className="grid grid-cols-1 lg:grid-cols-5 gap-4  mt-7">
-            {TEAM.map(({ name, image, bio, link, title }, index) => (
+          <div className="grid grid-cols-1 lg:grid-cols-5 gap-4 mt-7">
+            {TEAM.map(({ name, image, bio, link, designation }, index) => (
               <Team
                 key={name}
                 name={name}
                 image={image}
                 bio={bio}
                 link={link}
-                title={title}
+                designation={designation}
               />
             ))}
           </div>
