@@ -118,16 +118,16 @@ export const TEAM = [
   {
     image: "/assets/img/hcode_about_us_shweta.jpg",
     name: "Shweta Singla",
-    designation: "Co-Founder",
-    bio: " Leader with experience in building, training and running teams at Goldman Sachs, New York  IIT Delhi ",
+    designation: "CO-FOUNDER",
+    bio: "Led high-performing teams <br/> Goldman Sachs <br/> IIT Delhi ",
     link: "https://www.linkedin.com/in/shweta-singla/",
   },
   {
     image: "/assets/img/hcode_about_us_rishabh.jpg",
     name: "Rishabh Garg",
-    designation: " Engineering Manager",
+    designation: "ENGINEERING MANAGER",
 
-    bio: "Expert in Enterprise App Development with  a rich background at Siemens and Samsung  NIT Durgapur  ",
+    bio: "​​Enterprise app dev expert<br/> Siemens; Samsung <br/> NIT Durgapur ",
 
     link: "https://www.linkedin.com/in/rishabh-garg-77023ab6/",
   },
@@ -135,9 +135,9 @@ export const TEAM = [
   {
     image: "/assets/img/hcode_about_us_anuj.png",
     name: "Anuj Arora",
-    designation: "Engineering Manager",
+    designation: "ENGINEERING MANAGER",
 
-    bio: "Experienced in MVP development, cloud and scaling products with a strong foundation at BYju's and Amazon    IIT Delhi  ",
+    bio: "   MVP, cloud, & scaling expert <br/> BYju's; Amazon <br/> IIT Delhi",
 
     link: "https://www.linkedin.com/in/anuj-arora-95091621/",
   },
@@ -145,17 +145,17 @@ export const TEAM = [
   {
     image: "/assets/img/hcode_about_us_mudit.jpg",
     name: "Mudit Sharma",
-    designation: "Engineering Manager",
+    designation: "ENGINEERING MANAGER",
 
-    bio: "Experienced in enterprise SAAS development, and a successful track record at Brevo   N.C.C.E. - KUK  ",
+    bio: "Ran multiple SAAS teams <br/> Brevo <br/> Kurukshetra University",
     link: "https://www.linkedin.com/in/sharma-mudit/",
   },
   {
     image: "/assets/img/hcode_about_us_shashank.jpg",
     name: "Shashank Singla",
-    designation: "Co-Founder ",
+    designation: "CO-FOUNDER",
 
-    bio: "Loves building products, is an Entrepreneur with 2 AI exits, in the US and India; formerly at Goldman Sachs IIT Delhi",
+    bio: "Product builder, 2 AI exits <br/> Serial Entrepreneur  <br/> IIT Delhi ",
     link: "https://www.linkedin.com/in/shashanksingla/",
   },
 ];

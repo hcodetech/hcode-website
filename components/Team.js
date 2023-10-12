@@ -33,10 +33,13 @@ function Team({ name, image, image_webp, bio, link, designation }) {
           </a>
         </div>
       </div>
-      <div className="w-full px-4 text-center mx-auto">
+      <div className="w-full px-2 text-center mx-auto">
         <h4 className="text-lg md:text-xl font-semibold  ">{name}</h4>
         <h6 className="text-md font-medium text-gray-400">{designation}</h6>
-        <p className="text-sm md:text-base font-light">{bio}</p>
+        <p
+          dangerouslySetInnerHTML={{ __html: bio }}
+          className="text-sm md:text-base pt-1 font-light"
+        ></p>
       </div>
     </div>
   );
