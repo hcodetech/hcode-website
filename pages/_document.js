@@ -2,8 +2,10 @@
 // The font is required to be available throughout the website so instead of adding a Head to every page
 // we can utilise a custom _document.js and only add the Google Font into the Head in a single place.
 
-import Document, { Html, Head, Main, NextScript } from 'next/document';
-import { fav_icon } from '../constants/constants';
+import Document, { Html, Head, Main, NextScript } from "next/document";
+import { fav_icon } from "../constants/constants";
+// import NewsletterComponent from "../components/NewsletterComponent";
+import NewsletterPopUp from "../components/NewsletterPopUp";
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
     const initialProps = await Document.getInitialProps(ctx);
@@ -20,12 +22,22 @@ class MyDocument extends Document {
             content="p7p1JCWqzYMbOUuHZl6n__1vqE9IJksl6EMduIHHrao"
           />
           {/* MailChimp */}
-          <script
+          {/* <script
             id="mcjs"
             dangerouslySetInnerHTML={{
               __html: `!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/f5258b0c0d2b6c7561d024d3c/3da1e5017282a765c7865d2a3.js")`,
             }}
-          />
+          /> */}
+
+          {/* <iframe
+            width="540"
+            height="305"
+            src="https://03f10e9f.sibforms.com/serve/MUIFAB7_tr7Rxeu_Qtakv4I4u0lON-SIpgcZZq5WYYXqQwSbRKtiArhHr2qO3FfhXOuPuvLi6FL7GaNTDXZD4GEHiYuGM_Pt66hkNRjgahy7akXIoHqOkl_2VxQ7rNIQ_nkhV3CI3XZHBNzAMbX7vGT1UlfQhW2mUGYOyCMlMncGVEkU7lJjDPTsL_tM3XTWv4HftJhR3TV8MYt3"
+            frameborder="0"
+            scrolling="auto"
+            allowfullscreen
+            style={{display: 'block',marginLeft: 'auto',marginRight: 'auto',maxWidth: '100%'}}
+          ></iframe> */}
 
           {/* Shashank Google analytics account */}
           <script
@@ -40,6 +52,12 @@ class MyDocument extends Document {
                         gtag('config', 'G-V751ZVXNMP');`,
             }}
           />
+
+          <script
+            defer
+            src="https://sibforms.com/forms/end-form/build/main.js"
+          ></script>
+
           {/* Shashank Google analytics account */}
 
           {/* GTAG */}
@@ -84,7 +102,7 @@ class MyDocument extends Document {
               src="https://www.googletagmanager.com/ns.html?id=GTM-5XWGPH57"
               height="0"
               width="0"
-              style={{ display: 'none', visibility: 'hidden' }}
+              style={{ display: "none", visibility: "hidden" }}
             ></iframe>
           </noscript>
           {/* <!-- End Google Tag Manager (noscript) --> */}

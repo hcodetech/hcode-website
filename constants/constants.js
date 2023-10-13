@@ -118,36 +118,46 @@ export const TEAM = [
   {
     image: "/assets/img/hcode_about_us_shweta.jpg",
     name: "Shweta Singla",
-    // title: "Communication Coach",
-    bio: "Started, grown & led multiple quant teams as VP in Goldman Sachs, New York, IIT Delhi",
+    designation: "CO-FOUNDER",
+    bio: "Led high-performing teams <br/> Goldman Sachs <br/> IIT Delhi ",
     link: "https://www.linkedin.com/in/shweta-singla/",
-  },
-
-  {
-    image: "/assets/img/hcode_about_us_rakesh.jpg",
-    name: "Rakesh Sehgal",
-    bio: "Co-founded an ad-tech platform Paytunes. Experienced in MVP building. Ex- PwC, IIT Delhi",
-    link: "https://www.linkedin.com/in/sehgalrakesh/",
   },
   {
     image: "/assets/img/hcode_about_us_rishabh.jpg",
     name: "Rishabh Garg",
-    bio: "EM with experience of building Enterprise Applications.Ex-Siemens, NIT Durgapur",
+    designation: "ENGINEERING MANAGER",
+
+    bio: "​​Enterprise app dev expert<br/> Siemens; Samsung <br/> NIT Durgapur ",
+
     link: "https://www.linkedin.com/in/rishabh-garg-77023ab6/",
+  },
+
+  {
+    image: "/assets/img/hcode_about_us_anuj.png",
+    name: "Anuj Arora",
+    designation: "ENGINEERING MANAGER",
+
+    bio: "   MVP, cloud, & scaling expert <br/> BYju's; Amazon <br/> IIT Delhi",
+
+    link: "https://www.linkedin.com/in/anuj-arora-95091621/",
+  },
+
+  {
+    image: "/assets/img/hcode_about_us_mudit.jpg",
+    name: "Mudit Sharma",
+    designation: "ENGINEERING MANAGER",
+
+    bio: "Ran multiple SAAS teams <br/> Brevo <br/> Kurukshetra University",
+    link: "https://www.linkedin.com/in/sharma-mudit/",
   },
   {
     image: "/assets/img/hcode_about_us_shashank.jpg",
     name: "Shashank Singla",
-    bio: "Entrepreneur by trade, Engineer at heart with 2 exits in AI in US & India. Ex Goldman Sachs, IIT Delhi",
+    designation: "CO-FOUNDER",
+
+    bio: "Product builder, 2 AI exits <br/> Serial Entrepreneur  <br/> IIT Delhi ",
     link: "https://www.linkedin.com/in/shashanksingla/",
   },
-  // {
-  //   image: "/assets/img/hcode_about_us_harshit.jpg",
-  //   name: "Harshit Garg",
-  //   // title: "Communication Coach",
-  //   bio: "Management exec, Problem solver, led large-scale digital transformation. Ex-Godfrey & Pidilite, NITIE, NIT KKR",
-  //   link: "https://www.linkedin.com/in/gargharshit/",
-  // },
 ];
 
 export const OUR_MENTORS = [
@@ -273,6 +283,8 @@ export const MVP_Hero = "/assets/img/mvp_hero.svg";
 export const MVP_need_icon = "/assets/img/mvp_need_icon.svg";
 export const MVP_want_icon = "/assets/img/mvp_want_icon.svg";
 export const MVP_look_icon = "/assets/img/mvp_look_icon.svg";
+
+export const Newsletter_popup_img = "/assets/img/newsletter_popup.jpg";
 
 export const our_services_data = {
   hero_heading: "Hire Top Tech talent for your Remote Team",
@@ -1725,7 +1737,7 @@ export const ai_services = {
         "We seamlessly integrate Artificial Intelligence into your workflows, automating tasks, providing real-time insights, and enhancing efficiency. Tailored to your unique needs, our service ensures you stay competitive in today's business landscape.",
     },
 
-  {
+    {
       image: "/assets/img/strategy_Consulting.svg",
       heading: "AI Strategy Consulting  ",
 
