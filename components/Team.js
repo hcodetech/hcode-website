@@ -1,7 +1,7 @@
 import { linkedin_icon } from "../constants/constants";
 function Team({ name, image, image_webp, bio, link, designation }) {
   return (
-    <div className="mb-5  md:w-full mx-auto">
+    <div className="mb-5 w-full  px-4 sm:px-0 mx-auto">
       <div className="relative text-center mx-auto  mb-2">
         <picture>
           <source
@@ -10,7 +10,7 @@ function Team({ name, image, image_webp, bio, link, designation }) {
             media="(min-width:250px)"
           />
           <img
-            className="object-cover h-[360px] md:h-[250px] w-full px-4 lg:px-0 "
+            className="object-cover h-[360px] md:h-[250px] w-full min-w-full  lg:px-0 "
             src={image}
             layout="fill"
             loading="lazy"
