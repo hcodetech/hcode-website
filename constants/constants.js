@@ -283,6 +283,7 @@ export const MVP_Hero = "/assets/img/mvp_hero.svg";
 export const MVP_need_icon = "/assets/img/mvp_need_icon.svg";
 export const MVP_want_icon = "/assets/img/mvp_want_icon.svg";
 export const MVP_look_icon = "/assets/img/mvp_look_icon.svg";
+export const Thanku_page_img = "/assets/img/thankuImg1.png";
 
 export const Newsletter_popup_img = "/assets/img/newsletter_popup.jpg";
 
