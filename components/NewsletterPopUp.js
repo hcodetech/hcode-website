@@ -49,9 +49,17 @@ const NewsletterPopUp = ({ setShowNewsLetterPopup }) => {
 
             <div className="mx-4 sm:mx-8">
               {responseMessage ? (
-                <p className="font-bold pt-3 text-3xl text-center mt-2 ml-1">
-                  {responseMessage}
-                </p>
+                <>
+                  <p className="font-bold pt-3 text-3xl text-center mt-2 ml-1">
+                    {/* {responseMessage} */}
+                    Almost there!
+                  </p>
+
+                  <p className=" font-bold  text-center text-lg mt-2.5 ml-1">
+                    Just click the confirmation link in your inbox to subscribe
+                    to HCode's newsletter.{" "}
+                  </p>
+                </>
               ) : (
                 <>
                   <h2 className="text-2xl lg:text-3xl mt-3 font-bold">
@@ -94,7 +102,7 @@ const NewsletterPopUp = ({ setShowNewsLetterPopup }) => {
                 </>
               )}
 
-              <p className="text-center text-gray-700 pb-8 max-w-lg mx-auto mt-4">
+              <p className="text-center text-gray-700 pb-8 max-w-lg mx-auto mt-7">
                 We share two monthly newsletters, exploring technology trends
                 from our perspective and around the world.
               </p>

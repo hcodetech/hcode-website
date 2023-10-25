@@ -20,7 +20,7 @@ function MyApp({ Component, pageProps }) {
     if (stroredData === null) {
       setTimeout(() => {
         setShowNewsLetterPopup(true);
-      }, [4000]);
+      }, [60000]);
     }
     sessionStorage.setItem("isSubscriptionPopupVisible", showNewsLetterPopup);
   }, []);
@@ -31,7 +31,8 @@ function MyApp({ Component, pageProps }) {
         <NewsletterPopUp setShowNewsLetterPopup={setShowNewsLetterPopup} />
       )}
       <div className="bg-white">
-        <Navbar />
+        {<Navbar />}
+
         <Component {...pageProps} />
         {url !== "/newsletter" && <Footer />}
       </div>
