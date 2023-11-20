@@ -47,6 +47,7 @@ module.exports = {
         mvp: "url('/assets/img/mvp_service.jpg')",
         blockchain: "url('/assets/img/blockchain_service.jpg')",
         blockchain_small: "url('/assets/img/blockchain_service_small.jpg')",
+        mvp_bgimg: "url('/assets/img/mvpbg.png')",
       }),
     },
   },
