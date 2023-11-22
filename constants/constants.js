@@ -1815,8 +1815,7 @@ export const mvp_benefits = {
 };
 export const mvp_services = {
   heading: "Why choose us as your  MVP development services provides? ",
-  paragraph:
-    "We don’t just work as a developer team, but more as a partner with you for your Product as well as Business. We also lose sleep, just like you do, if something isn’t going right.",
+
   points: [
     {
       image: "/assets/img/expedited_ mvp_ dev.png",
@@ -1825,16 +1824,16 @@ export const mvp_services = {
         "Navigate tight timeframes and budget constraints with our streamlined MVP development process. We proactively identify potential issues early, keeping you informed and on track to achieve your product development goals.",
     },
     {
-      image: "/assets/img/IT_decision.png",
+      image: "/assets/img/IT _decision.png",
       heading: "Informed Technology Decisions for Your MVP",
       descripition:
         "Leverage our expertise to make informed technology decisions for your MVP. We guide you through the selection of the most suitable tech stack and develop enterprise-grade solutions tailored to your specific needs, ensuring your MVP is built for scalability and future growth.",
     },
     {
-      image: "/assets/img/trust.svg",
+      image: "/assets/img/agile_mvp_dev.png",
       heading: "Agile MVP Development Aligned with Your Vision",
       descripition:
-           "Embrace rapid iteration and continuous improvement with our agile MVP development approach. We focus on core functionalities, validate through user feedback, and conduct beta testing to gather real-world insights before launch, ensuring your MVP exceeds expectations and aligns with your product vision."
+        "Embrace rapid iteration and continuous improvement with our agile MVP development approach. We focus on core functionalities, validate through user feedback, and conduct beta testing to gather real-world insights before launch, ensuring your MVP exceeds expectations and aligns with your product vision.",
     },
     {
       image: "/assets/img/best.svg",
@@ -1843,19 +1842,63 @@ export const mvp_services = {
         "Foster a strong partnership with our team, who understand that your MVP may evolve to respond to market demands or pivot toward new opportunities. Our flexible approach adapts accordingly, delivering products that not only meet your technical requirements but also exceed your expectations and contribute to your long-term success.",
     },
     {
-      image: "/assets/img/managed_process.svg",
+      image: "/assets/img/support_mvp.jpg",
       heading: "Comprehensive MVP Support for the Long Haul",
       descripition:
         "Receive comprehensive end-to-end support that extends beyond the initial build, ensuring your MVP thrives in the long run. We provide handholding for your in-house tech teams, ongoing maintenance, and support services, keeping your MVP up-to-date, secure, and aligned with your evolving business needs.",
     },
     {
-      image: "/assets/img/managed_process.svg",
+      image: "/assets/img/support_mvp.jpg",
       heading: "Comprehensive MVP Support for the Long Haul",
       descripition:
         "Receive comprehensive end-to-end support that extends beyond the initial build, ensuring your MVP thrives in the long run. We provide handholding for your in-house tech teams, ongoing maintenance, and support services, keeping your MVP up-to-date, secure, and aligned with your evolving business needs.",
     },
   ],
 };
+export const blog_data = [
+  {
+    id: 1,
+    image: "/assets/img/Blog post card.png",
+    heading: "Expedited MVP Development",
+    descripition:
+      "Navigate tight timeframes and budget constraints with our streamlined MVP development process. We proactively identify potential issues early, keeping you informed and on track to achieve your product development goals.",
+  },
+  {
+    id: 2,
+    image: "/assets/img/Blog post card.png",
+    heading: "Informed Technology Decisions for Your MVP",
+    descripition:
+      "Leverage our expertise to make informed technology decisions for your MVP. We guide you through the selection of the most suitable tech stack and develop enterprise-grade solutions tailored to your specific needs, ensuring your MVP is built for scalability and future growth.",
+  },
+  {
+    id: 3,
+    image: "/assets/img/Blog post card.png",
+        heading: "Agile MVP Development Aligned with Your Vision",
+    descripition:
+      "Embrace rapid iteration and continuous improvement with our agile MVP development approach. We focus on core functionalities, validate through user feedback, and conduct beta testing to gather real-world insights before launch, ensuring your MVP exceeds expectations and aligns with your product vision.",
+  },
+  {
+    id: 4,
+    image: "/assets/img/Blog post card.png",
+    heading: "Collaborative Partnership for Your MVP Success",
+    descripition:
+      "Foster a strong partnership with our team, who understand that your MVP may evolve to respond to market demands or pivot toward new opportunities. Our flexible approach adapts accordingly, delivering products that not only meet your technical requirements but also exceed your expectations and contribute to your long-term success.",
+  },
+  {
+    id: 5,
+    image: "/assets/img/Blog post card.png",
+    heading: "Comprehensive MVP Support for the Long Haul",
+    descripition:
+      "Receive comprehensive end-to-end support that extends beyond the initial build, ensuring your MVP thrives in the long run. We provide handholding for your in-house tech teams, ongoing maintenance, and support services, keeping your MVP up-to-date, secure, and aligned with your evolving business needs.",
+  },
+  {
+    id: 6,
+    image: "/assets/img/Blog post card.png",
+    heading: "Comprehensive MVP Support for the Long Haul",
+    descripition:
+      "Receive comprehensive end-to-end support that extends beyond the initial build, ensuring your MVP thrives in the long run. We provide handholding for your in-house tech teams, ongoing maintenance, and support services, keeping your MVP up-to-date, secure, and aligned with your evolving business needs.",
+  },
+];
 
 export const blockchain_techStack_icon = [
   {
@@ -2001,6 +2044,35 @@ export const hire_dev_hcode = [
     You can start at the on-boarding process and working with your selected developer
 
     `,
+  },
+];
+export const posts = [
+  {
+    id: 1,
+    title: "How collaboration makes us better designers",
+    href: "#",
+    description:
+      " Collaboration can make our teams stronger, and our individual designs better.",
+    imageUrl:
+      "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80",
+  },
+  {
+    id: 2,
+    title: "Our top 10 Javascript frameworks to use",
+    href: "#",
+    description:
+      "JavaScript frameworks make development easy with extensive features and functionalities.",
+    imageUrl:
+      "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80",
+  },
+  {
+    id: 3,
+    title: "Podcast: Creating a better CX Community",
+    href: "#",
+    description:
+      "Starting a community doesn’t need to be complicated, but how do you get started?",
+    imageUrl:
+      "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80",
   },
 ];
 
