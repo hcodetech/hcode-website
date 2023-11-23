@@ -32,7 +32,7 @@ function mvp1() {
                 <div className="relative w-full">
                   <img
                     src={post.imageUrl}
-                    alt=""
+                    alt="currently ofline"
                     className="aspect-[16/9] w-full  bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]"
                   />
                 </div>
@@ -60,17 +60,23 @@ function mvp1() {
   return (
     <>
       <section className="h-screen  bg-mvp_bgimg bg-no-repeat bg-cover">
-        <div className="max-w-2xl px-4 h-2/5 pt-64 mx-auto flex  flex-col items-center	text-center">
-          <h1 className="font-normal text-6xl text-white py-4 w-10/12">
+        <div className="max-w-2xl sm:px-4 h-2/5 pt-36 sm:pt-64 mx-auto flex  flex-col items-center	text-center">
+          <h1 className="font-normal text-4xl sm:text-6xl text-white py-4 w-[95.33%] sm:w-10/12">
             MVP Development Services
           </h1>
-          <p className="font-poppins text-white text-2xl font-normal py-4 leading-10 ">
+          <p className="font-poppins text-white text-[20px] px-5 sm:text-2xl font-normal py-3 leading-7 md:leading-10 ">
             Validate your business idea with a real-world beta test of your
             digital product, and launch smarter with HCode MVP development
             services.
           </p>
-          <div className="w-64  py-4 bg-primary text-white mt-10 rounded">
-            <button className="text-xl">Tell us about your project</button>
+
+          <div className="text-center mt-14 sm:mt-10">
+            <a
+              href="/our_services"
+              className="bg-primary text-white rounded px-16 py-4 text-center"
+            >
+              Tell us about your project
+            </a>
           </div>
         </div>
       </section>
@@ -84,8 +90,8 @@ function mvp1() {
         />
       </div>
 
-      <div className="box-border w-6/12	 mx-auto mt-24 mb-24">
-        <h1 className=" text-5xl font-poppins font-semibold mb-5 text-center">
+      <div className="box-border sm:w-6/12	mx-7 sm:mx-auto mt-24 mb-24">
+        <h1 className=" text-2xl sm:text-5xl font-poppins font-semibold mb-5 text-center">
           SUCCESS OF YOUR PRODUCT STARTS WITH A GREAT MVP
         </h1>
         <p className="text-base font-poppins font-normal  leading-7 text-center">
@@ -103,24 +109,26 @@ function mvp1() {
           with a full-scale product launch.
         </p>
       </div>
+      {/* our services */}
+
       <div className="  bg-gray-100 pb-4">
-        <h1 className=" text-5xl  font-poppins font-semibold pt-28 ml-80">
+        <h1 className="  text-3xl sm:text-5xl  font-poppins font-semibold px-8 pt-14 sm:pt-28 sm:ml-80">
           Our Services
         </h1>
 
-        <div className=" new-container grid  grid-cols-2 grid-rows-1 mb-32 mt-24 gap-y-32 gap-x-7">
-          <div className="bg-white px-6 pb-6 pr-20">
-            <div className="bg-primary h-28 w-28 pt-6 pl-7 rounded-full -mt-12">
+        <div className=" new-container grid grid-cols-1 grid-rows-2 sm:grid-cols-2 sm:grid-rows-1 mb-32 mt-24 gap-y-32 gap-x-7">
+          <div className="bg-white px-3 sm:px-6 pb-6 sm:pr-20">
+            <div className="bg-primary h-20 w-20 sm:h-28 sm:w-28 sm:pt-6 sm:pl-7 pl-[15.75px] pt-[14.5px] rounded-full -mt-12">
               <img
-                className="w-14 h-14"
+                className="w-12 h-12 sm:w-14 sm:h-14"
                 src="/assets/img/mvp_design.svg"
                 alt="icon"
               />
             </div>
-            <p className="font-poppins text-3xl text-black font-semibold  mt-4 mb-4 ">
+            <p className="font-poppins text-xl sm:text-3xl text-black font-semibold  mt-4 mb-4 ">
               MVP DESIGN
             </p>
-            <p className="font-poppins text-lg text-black font-normal leading-9">
+            <p className="font-poppins text-[16px] text-black font-normal leading-7 sm:leading-9">
               For MVP design, we offer thorough technology and business
               analysis, project requirements identification, feature
               prioritization, and product development strategy, as well as UX/UI
@@ -128,14 +136,14 @@ function mvp1() {
             </p>
           </div>
 
-          <div className="bg-white px-6 pb-16">
-            <div className="bg-primary h-28 w-28 p-8 rounded-full -mt-12">
-              <img src="/assets/img/mvp_dev.svg" alt="icon" />
+          <div className="bg-white  px-3 sm:px-6 pb-12">
+            <div className="bg-primary h-20 w-20 sm:h-28 sm:w-28 p-[20px] sm:p-8 rounded-full -mt-12">
+              <img className="" src="/assets/img/mvp_dev.svg" alt="icon" />
             </div>
-            <p className="font-poppins text-3xl text-black font-semibold  mt-4 mb-4 ">
+            <p className="font-poppins text-xl sm:text-3xl text-black font-semibold  mt-4 mb-4 ">
               MVP Development
             </p>
-            <p className="font-poppins text-lg text-black font-normal leading-9">
+            <p className="font-poppins text-[16px] text-black font-normal leading-7 sm:leading-9">
               Our end-to-end custom MVP development services cover everything
               from technology and business analysis, project requirements
               identification, feature prioritization, and product development
@@ -147,21 +155,18 @@ function mvp1() {
         </div>
       </div>
 
-
-      <section className=" pt-12 ">
+      <section className=" pt-9 ">
         <div className=" ">
           <Mvpbenifits additionalClass="lg:w-1/2" data={mvp_services} />
           {/*  */}
         </div>
       </section>
 
-
-
-      <div className="new-container my-36">
-        <h1 className="font-poppins text-[45px] text-black font-semibold  leading-[79px] text-center">
+      <div className="mb-36 mt-20">
+        <h1 className="font-poppins text-[28px] px-3 sm:text-[45px] text-black font-semibold  sm:leading-[79px] text-center">
           MVPs built by HCode
         </h1>
-        <p className="font-poppins text-[20px] text-black font-normal leading-[45px] text-center mb-10 ">
+        <p className="font-poppins text-[17px] leading-[30px] px-3 text-black font-normal sm:leading-[45px] text-center mb-10 ">
           We have delivered these high quality complete MVP products in very
           competitive timelines for our clients.
         </p>
@@ -172,32 +177,36 @@ function mvp1() {
         <Testimonial data={data} />
       </div>
 
-     
       {/* transform idea section */}
       <section className=" new-container flex flex-col mt-24">
-        <div className="flex justify-between flex-col md:flex-row  ">
+        <div className="flex justify-between flex-col lg:flex-row  max-sm:mx-auto">
           <div>
-            <h1 className="font-poppins text-4xl font-semibold leading-10 w-[550px] pr-4">
+            <h1 className="font-poppins text-[28px] sm:text-4xl font-semibold sm:leading-10 sm:w-[550px] pr-4">
               Transform your ideas into reality with an MVP
             </h1>
-            <p className="font-poppins text-xl font-normal leading-8 w-[600px] pr-4 mt-2">
+            <p className="font-poppins text-[16px] font-normal sm:leading-8 sm:w-[600px] pr-4 mt-2">
               We can help you turn your ideas into successful MVPs that attract
               early adopters.
             </p>
           </div>
-          <div className="bg-primary text-white  h-10 px-3 pt-2 mt-3 rounded-sm">
-            <button>speak with our consultants</button>
+          <div className="text-center mt-16 sm:mt-28">
+            <a
+              href="/our_services"
+              className="bg-primary text-white rounded px-16 py-4    text-center"
+            >
+              Speak with our consultants
+            </a>
           </div>
         </div>
-        <div className="flex mt-10 mb-16 ">
-          <div className=" mr-10">
+        <div className="flex flex-col lg:flex-row  mt-10 mb-16 ">
+          <div className="mx-auto sm:mr-10">
             <img
-              className="w-[700px] h-[538px] "
+              className=" lg:w-[700px] sm:h-[538px] "
               src="/assets/img/Rectangle 388.png"
               alt="imagee"
             />
           </div>
-          <div className="">
+          <div className="mt-10">
             <h1 className="font-poppins text-4xl font-semibold leading-10">
               How We Develop MVP
             </h1>
@@ -238,7 +247,7 @@ function mvp1() {
       </section>
 
       {/* blogs section  */}
-      <div className="new-container ">
+      <div className=" sm:new-container ">
         <Blogs />
       </div>
 
@@ -247,7 +256,7 @@ function mvp1() {
         <Accordion data={faq_mvp} />
       </section>
       {/* CTA */}
-      <div className="m-20">
+      <div className="py-10 sm:py-0 sm:m-20">
         <CTA
           widthClass="w-full"
           heading="Get your MVP built by Us"

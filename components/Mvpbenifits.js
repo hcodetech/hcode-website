@@ -2,7 +2,7 @@ function Mvpbenifits(props) {
   return (
     <div className={props.background ? "" : ""}>
       <div className="text-center">
-        <h2 className="text-4xl font-poppins  font-semibold  pt-16 text-center w-6/12 mx-auto">
+        <h2 className=" text-[28px] sm:text-4xl font-poppins  font-semibold  pt-16 text-center w-[98%] sm:w-6/12 mx-auto">
           {props.data.heading}
         </h2>
       </div>
@@ -24,7 +24,7 @@ function Mvpbenifits(props) {
 
             <h4 className="text-xl font-semibold mt-4"> {heading}</h4>
             <p
-              className="font-light pt-2"
+              className="font-light pt-2 leading-6"
               dangerouslySetInnerHTML={{ __html: descripition }}
             />
           </div>
