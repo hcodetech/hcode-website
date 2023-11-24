@@ -1814,14 +1814,14 @@ export const mvp_benefits = {
   ],
 };
 export const mvp_services = {
-  heading: "Why choose us as your  MVP development services provides? ",
+  // heading: "Why choose us as your  MVP development services provides? ",
 
   points: [
     {
       image: "/assets/img/expedited_ mvp_ dev.png",
-      heading: "Expedited MVP Development",
+      heading: "We prioritize timely delivery and client transparency",
       descripition:
-        "Navigate tight timeframes and budget constraints with our streamlined MVP development process. We proactively identify potential issues early, keeping you informed and on track to achieve your product development goals.",
+        "We promise realistic delivery timelines, prioritize startup challenges in our development process, and communicate openly about any unexpected issues, providing prompt updates and swift resolution",
     },
     {
       image: "/assets/img/IT _decision.png",
@@ -1831,27 +1831,27 @@ export const mvp_services = {
     },
     {
       image: "/assets/img/agile_mvp_dev.png",
-      heading: "Agile MVP Development Aligned with Your Vision",
+      heading: "We Embrace Lean: Our Agile MVP Development Approach",
       descripition:
-        "Embrace rapid iteration and continuous improvement with our agile MVP development approach. We focus on core functionalities, validate through user feedback, and conduct beta testing to gather real-world insights before launch, ensuring your MVP exceeds expectations and aligns with your product vision.",
+        "Guided by Lean methodology, we prioritize core functionalities, user feedback, and beta testing to exceed expectations and align with your product vision. With our team's firsthand product-building experience, we deeply understand MVPs, incorporating agile methodology into every decision for success.",
     },
     {
       image: "/assets/img/best.svg",
-      heading: "Collaborative Partnership for Your MVP Success",
+      heading: "We Ensure Success: Our Collaborative MVP Approach",
       descripition:
-        "Foster a strong partnership with our team, who understand that your MVP may evolve to respond to market demands or pivot toward new opportunities. Our flexible approach adapts accordingly, delivering products that not only meet your technical requirements but also exceed your expectations and contribute to your long-term success.",
+        "We adopt a partnership-oriented approach rather than a purely transactional one in crafting your product. Recognizing the necessity for iterative adjustments based on market responses, continuous learning, or potential pivots to novel ideas, we afford you the flexibility to adopt an agile methodology in your approach.",
     },
     {
       image: "/assets/img/support_mvp.jpg",
-      heading: "Comprehensive MVP Support for the Long Haul",
+      heading: "Comprehensive End-to-End Support",
       descripition:
-        "Receive comprehensive end-to-end support that extends beyond the initial build, ensuring your MVP thrives in the long run. We provide handholding for your in-house tech teams, ongoing maintenance, and support services, keeping your MVP up-to-date, secure, and aligned with your evolving business needs.",
+        "We're a leading MVP development company offering comprehensive support beyond the initial build. Our services include ongoing maintenance and assistance, ensuring your MVP stays current, secure, and aligned with evolving business needs. If you opt for an in-house tech team later, we provide additional support.",
     },
     {
       image: "/assets/img/support_mvp.jpg",
-      heading: "Comprehensive MVP Support for the Long Haul",
+      heading: "Your Success, Our Commitment",
       descripition:
-        "Receive comprehensive end-to-end support that extends beyond the initial build, ensuring your MVP thrives in the long run. We provide handholding for your in-house tech teams, ongoing maintenance, and support services, keeping your MVP up-to-date, secure, and aligned with your evolving business needs.",
+      "HCode transcends conventional development, becoming your strategic partner for product and business success. Our commitment to excellence drives solutions that consistently exceed expectations. Embrace our customer-centric approach where your success is not just a goal but our primary commitment.",
     },
   ],
 };
