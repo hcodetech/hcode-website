@@ -1,4 +1,5 @@
 import React from "react";
+import useGetFetch from "../pages/hooks/useGetFetch";
 import {
   ButtonBack,
   ButtonNext,
@@ -13,6 +14,8 @@ import { blog_data } from "../constants/constants";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/solid";
 
 function Mvpcards({ data }) {
+    const [portfolioData, isPortfolioDataLoading] = useGetFetch(
+        'https://dev-portal.hcode.tech/api/v1/project/?to_show_on_homepage=true' )
   return (
     <div>
       <div className="hidden md:block">
@@ -33,7 +36,7 @@ function Mvpcards({ data }) {
             <div className="new-container">
               <Slider>
                 {/* <div className="grid grid-cols-12 "> */}
-                {blog_data?.map((project) => (
+                {portfolioData?.map((project) => (
                   <Slide>
                     <div
                       className="mx-2 bg-[#fbfbfb] rounded-lg border h-full hover:transition hover:duration-200 hover:ease-out hover:shadow-2xl hover:scale-100"
@@ -41,7 +44,7 @@ function Mvpcards({ data }) {
                       key={project.id}
                     >
                       <img
-                        src={project.image}
+                        src={project.thumbnail_image}
                         className="h-[280px] md:h-[390px]   object-cover w-full rounded-tl-lg rounded-tr-lg"
                         width="350px"
                         height="450px"
@@ -50,9 +53,9 @@ function Mvpcards({ data }) {
                       />
                       <div className=" px-4 pt-2 pb-4 ">
                         <h2 className="font-semibold text-2xl my-1">
-                          {project.heading}
+                          {project.name}
                         </h2>
-                        <p className="leading-7">{project?.descripition}</p>
+                        <p className="leading-7">{project?.short_description}</p>
                       </div>
                     </div>
                   </Slide>

@@ -78,7 +78,7 @@ function mvp1() {
         </div>
       </section>
 
-      <div className=" new-container pt-10 my-8">
+      <div className=" new-container pt-10 my-9">
         <Client
           logoWidth={250}
           logoHeight={100}
@@ -102,13 +102,15 @@ function mvp1() {
       {/* our services */}
 
       <div className="  bg-gray-100 pb-4">
-        <h1 className="  text-3xl pl-[32.75px] sm:text-4xl  font-poppins font-semibold lg:pl-72 pt-14 sm:pt-28 sm:ml-80 md:ml-[1px] lg:ml-[42px]">
+        <div className="new-container px-3 sm:px-6 pb-6 sm:pr-20 pt-12">
+        <h1 className="  text-2xl pl-[16.75px] sm:text-4xl  font-poppins font-semibold max-w-[630px]">
           MVP Development Solutions at HCode
         </h1>
-        <p className="  pl-[32.75px] text-[20px]  font-poppins font-normal lg:pl-72 md:w-[70%] lg:w-[50%] pt-4 sm:pt-7 sm:ml-80 md:ml-[1px] lg:ml-[42px]">
+        <p className="  pl-[16.75px] text-[18px]  font-poppins font-normal pt-2">
           We deliver exceptional ROI and clear timelines for your MVP, ensuring
           your success through our proven MVP as a Service approach.
         </p>
+        </div>
 
         <div className=" new-container grid grid-cols-1 grid-rows-2 sm:grid-cols-2 sm:grid-rows-1 mb-32 mt-20 gap-y-32 gap-x-7">
           <div className="bg-white px-3 sm:px-6 pb-6 sm:pr-20">
@@ -240,70 +242,79 @@ function mvp1() {
       </div>
 
       {/* transform idea v2 */}
-      <div className="pt-3">
-        <section className="  new-container flex flex-col mt-16 sm:mt-24">
-          <div className="flex justify-between flex-col lg:flex-row  max-sm:mx-auto">
-            <div className="">
-              <h1 className="font-poppins text-[26px] sm:text-4xl font-semibold sm:leading-10 sm:w-[550px] pr-4">
-                Transform your ideas into reality with an MVP
-              </h1>
-              <p className="font-poppins text-[16px] md:text-[21px] font-normal sm:leading-8 sm:w-[600px] pr-4 mt-2">
-                We can help you turn your ideas into successful MVPs that
-                attract early adopters.
-              </p>
-            </div>
-            <div className="text-center md:text-left mt-10 md:mt-[48px] sm:mt-28 lg:mt-3 lg:mr-6 hidden sm:block">
-              <a
-                href="/our_services"
-                className="bg-primary text-white rounded px-16 py-4 text-center "
-              >
-                Speak with our consultants
-              </a>
-            </div>
-          </div>
-        </section>
-        <div className="w-[100%] h-[60vh] mt-10 mb-16  bg-mvp_transforn_idea bg-no-repeat mx-auto ">
-          <div className="flex flex-col mt-10 text-white"> 
-            <h1 className="font-poppins text-[29.6px] sm:text-4xl font-semibold leading-10">
-              How We Develop MVP
+
+      <section className="  new-container flex flex-col mt-16 sm:mt-24">
+        <div className="flex justify-between flex-col lg:flex-row">
+          <div className="">
+            <h1 className="font-poppins text-[26px] sm:text-4xl font-semibold sm:leading-10 sm:w-[550px] pr-4">
+              Transform your ideas into reality with an MVP
             </h1>
-            <h2 className="mt-5 font-poppins text-[20px] sm:text-2xl font-semibold leading-10">
-              Discovery Meeting
-            </h2>
-            <p className="mt-3 font-poppins text-sm font-normal leading-6">
-              In the discovery phase, we conduct a thorough analysis of your
-              business to gather key insights. This enables us to strategically
-              prioritize MVP features that align with your vision.
+            <p className="font-poppins text-[16px] md:text-[21px] font-normal sm:leading-8 sm:w-[600px] pr-4 mt-2">
+              We can help you turn your ideas into successful MVPs that attract
+              early adopters.
             </p>
-
-            <h2 className=" mt-3 font-poppins text-[20px] sm:text-2xl font-semibold leading-10">
-              Desiging
-            </h2>
-            <p className=" mt-3 font-poppins text-sm font-normal leading-6">
-              Our innovative approach ensures that we prioritize your user's
-              experience to design a modern MVP that solves real user problems.
-            </p>
-
-            <h2 className=" mt-3 font-poppins text-[20px] sm:text-2xl font-semibold leading-10">
-              Development
-            </h2>
-            <p className="mt-3 font-poppins text-sm font-normal leading-6">
-              We ensure excellent results by utilizing the latest tech stack and
-              implementing rigorous code review and development processes.
-            </p>
-
-            <h2 className="mt-3 font-poppins text-[20px] sm:text-2xl font-semibold leading-10">
-              Release
-            </h2>
-            <p className="mt-3 font-poppins text-sm font-normal leading-6">
-              We ensure your product is launch-ready and performs as expected
-              through real device testing and user insights.
-            </p>
+          </div>
+          <div className="text-center sm:text-left md:text-left mt-10 md:mt-[48px] sm:mt-3 lg:mt-[60px] lg:mr-6 hidden sm:block">
+            <a
+              href="/our_services"
+              className="bg-primary text-white rounded px-16 py-4 text-center "
+            >
+              Speak with our consultants
+            </a>
           </div>
         </div>
+      </section>
+
+      <div
+        className="  w-[100%] md:h-[720px] mt-10 mb-16  bg-mvp_transforn_idea bg-no-repeat  bg-left bg-cover">
+        <div className="flex flex-col mt-10 text-white  sm:px-1 md:w-[635px] md:ml-[4%] lg:ml-[17%] px-[20px] sm:ml-[33px] sm:mr-[30%] sm:pt-[100px] py-[35px] sm:py-[20px]">
+          <h1 className="font-poppins text-[29.6px] sm:text-4xl font-semibold leading-10">
+            How We Develop MVP
+          </h1>
+          <h2 className="mt-5 font-poppins text-[20px] sm:text-2xl font-semibold leading-10">
+            Discovery Meeting
+          </h2>
+          <p className="mt-3 font-poppins text-base font-normal leading-6">
+            In the discovery phase, we conduct a thorough analysis of your
+            business to gather key insights. This enables us to strategically
+            prioritize MVP features that align with your vision.
+          </p>
+
+          <h2 className=" mt-3 font-poppins text-[20px] sm:text-2xl font-semibold leading-10">
+            Desiging
+          </h2>
+          <p className=" mt-3 font-poppins text-base font-normal leading-6">
+            Our innovative approach ensures that we prioritize your user's
+            experience to design a modern MVP that solves real user problems.
+          </p>
+
+          <h2 className=" mt-3 font-poppins text-[20px] sm:text-2xl font-semibold leading-10">
+            Development
+          </h2>
+          <p className="mt-3 font-poppins text-base font-normal leading-6">
+            We ensure excellent results by utilizing the latest tech stack and
+            implementing rigorous code review and development processes.
+          </p>
+
+          <h2 className="mt-3 font-poppins text-[20px] sm:text-2xl font-semibold leading-10">
+            Release
+          </h2>
+          <p className="mt-3 font-poppins text-base font-normal leading-6">
+            We ensure your product is launch-ready and performs as expected
+            through real device testing and user insights.
+          </p>
+        </div>
+      </div>
+      <div className="text-center md:text-left mt-2 md:mt-[48px] sm:mt-28 lg:mt-3 lg:mr-6  sm:hidden">
+        <a
+          href="/our_services"
+          className="bg-primary text-white rounded px-16 py-4 text-center "
+        >
+          Speak with our consultants
+        </a>
       </div>
 
-      <div className="mb-36 mt-20">
+      <div className="mb-36 mt-32">
         <h1 className="font-poppins text-[28px] px-3 sm:text-[36px] text-black font-semibold  sm:leading-[79px] text-center">
           MVPs built by HCode
         </h1>
