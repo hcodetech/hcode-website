@@ -1851,7 +1851,7 @@ export const mvp_services = {
       image: "/assets/img/support_mvp.jpg",
       heading: "Your Success, Our Commitment",
       descripition:
-      "HCode transcends conventional development, becoming your strategic partner for product and business success. Our commitment to excellence drives solutions that consistently exceed expectations. Embrace our customer-centric approach where your success is not just a goal but our primary commitment.",
+        "HCode transcends conventional development, becoming your strategic partner for product and business success. Our commitment to excellence drives solutions that consistently exceed expectations. Embrace our customer-centric approach where your success is not just a goal but our primary commitment.",
     },
   ],
 };
@@ -1873,7 +1873,7 @@ export const blog_data = [
   {
     id: 3,
     image: "/assets/img/Blog post card.png",
-        heading: "Agile MVP Development Aligned with Your Vision",
+    heading: "Agile MVP Development Aligned with Your Vision",
     descripition:
       "Embrace rapid iteration and continuous improvement with our agile MVP development approach. We focus on core functionalities, validate through user feedback, and conduct beta testing to gather real-world insights before launch, ensuring your MVP exceeds expectations and aligns with your product vision.",
   },
@@ -2049,30 +2049,27 @@ export const hire_dev_hcode = [
 export const posts = [
   {
     id: 1,
-    title: "How collaboration makes us better designers",
-    href: "#",
-    description:
-      " Collaboration can make our teams stronger, and our individual designs better.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80",
+    title: "MVP: A Game-Changer for Product Success",
+    href: "https://hcode.tech/blog/mvp-a-game-changer-for-product-success/",
+    description: "MVP: A Game-Changer for Product Success   Why create a […].",
+    imageUrl: "/assets/img/blog_1.png",
   },
   {
     id: 2,
-    title: "Our top 10 Javascript frameworks to use",
-    href: "#",
+    title: "Decoding The Mern Technology Stack",
+    href: "https://hcode.tech/blog/decoding-the-mern-technology-stack/",
     description:
-      "JavaScript frameworks make development easy with extensive features and functionalities.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80",
+      "DECODING THE MERN TECHNOLOGY STACK Decoding the MERN stack: Front […] ",
+    imageUrl: "/assets/img/blog_2.png",
   },
   {
     id: 3,
-    title: "Podcast: Creating a better CX Community",
-    href: "#",
+    title:
+      "Next.js: The Modern Javascript Framework for Blazing-Fast Web Applications ",
+    href: "https://hcode.tech/blog/next-js-the-modern-javascript-framework-for-blazing-fast-web-applications/",
     description:
-      "Starting a community doesn’t need to be complicated, but how do you get started?",
-    imageUrl:
-      "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80",
+      "Next.js: The Modern Javascript Framework for Blazing-Fast Web Applications […]",
+    imageUrl: "/assets/img/blog_3.jpg",
   },
 ];
 

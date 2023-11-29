@@ -21,7 +21,7 @@ function Mvpcards({ data }) {
       <div className="hidden md:block">
         <CarouselProvider
           visibleSlides={2}
-          totalSlides={blog_data.length}
+          totalSlides={portfolioData.length}
           step={1}
           // naturalSlideWidth={400}
           // naturalSlideHeight={500}
@@ -92,7 +92,7 @@ function Mvpcards({ data }) {
             <div className="new-container">
               <Slider>
                 {/* <div className="grid grid-cols-12 "> */}
-                {blog_data?.map((project) => (
+                {portfolioData?.map((project) => (
                   <Slide>
                     <div
                       className="mx-2 bg-[#fbfbfb] rounded-lg border h-full hover:transition hover:duration-200 hover:ease-out hover:shadow-2xl hover:scale-100"
@@ -100,7 +100,7 @@ function Mvpcards({ data }) {
                       key={project.id}
                     >
                       <img
-                        src={project?.image}
+                        src={project?.thumbnail_image}
                         className="h-[280px] md:h-[390px]   object-cover w-full rounded-tl-lg rounded-tr-lg"
                         alt="case studies"
                         width="350px"
@@ -109,9 +109,9 @@ function Mvpcards({ data }) {
                       />
                       <div className=" px-7 py-6 ">
                         <h2 className="font-semibold text-2xl my-1">
-                          {project?.heading}
+                          {project?.name}
                         </h2>
-                        <p>{project?.descripition}</p>
+                        <p>{project?.short_descripition}</p>
                       </div>
                     </div>
                   </Slide>
