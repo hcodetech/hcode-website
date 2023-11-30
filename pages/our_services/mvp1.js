@@ -1,21 +1,21 @@
-import Navbar from "../../components/Navbar";
-import { useState } from "react";
-import { mvp_services, faq_mvp } from "../../constants/constants";
-import { getTestimonialData } from "../../utils/config";
-import { posts } from "../../constants/constants";
-import { useEffect } from "react";
-import { client } from "../../constants/constants";
-import Client from "../../components/Client";
-import Testimonial from "../../components/Testimonial";
-import Accordion from "../../components/Accordion";
-import CTA from "../../components/CTA";
-import Mvpcards from "../../components/Mvpcards";
-import Mvpbenifits from "../../components/Mvpbenifits";
-import { ArrowRightIcon } from "@heroicons/react/solid";
+import Navbar from '../../components/Navbar';
+import { useState } from 'react';
+import { mvp_services, faq_mvp } from '../../constants/constants';
+import { getTestimonialData } from '../../utils/config';
+import { posts } from '../../constants/constants';
+import { useEffect } from 'react';
+import { client } from '../../constants/constants';
+import Client from '../../components/Client';
+import Testimonial from '../../components/Testimonial';
+import Accordion from '../../components/Accordion';
+import CTA from '../../components/CTA';
+import Mvpcards from '../../components/Mvpcards';
+import Mvpbenifits from '../../components/Mvpbenifits';
+import { ArrowRightIcon } from '@heroicons/react/solid';
 
 function mvp1() {
-  const data = getTestimonialData("mvp");
-  const [isDesktop, setIsDesktop] = useState("");
+  const data = getTestimonialData('mvp');
+  const [isDesktop, setIsDesktop] = useState('');
 
   useEffect(() => {
     window.innerWidth <= 750 ? setIsDesktop(false) : setIsDesktop(true);
@@ -121,77 +121,82 @@ function mvp1() {
         </div>
       </section>
 
-      <div className="pb-4">
-        <div className="new-container px-3  pb-6  pt-12 ">
-          <div className="bg-primary max-w-[20px] h-2 mx-auto mb-3"></div>
+      <div className="new-container pb-6  pt-12 ">
+        <div className="bg-primary max-w-[20px] h-2 mx-auto mb-3"></div>
 
-          <h1 className="  text-2xl  sm:text-4xl mx-auto text-center  font-poppins font-semibold max-w-[500px]">
-            MVP Development Solutions at HCode
-          </h1>
-          <p className="   text-xl text-center mx-auto font-poppins font-normal pt-2 max-w-[700px]">
-            We deliver exceptional ROI and clear timelines for your MVP,
-            ensuring your success through our proven MVP as a Service approach.
-          </p>
+        <h1 className="  text-2xl  sm:text-4xl mx-auto text-center  font-poppins font-semibold max-w-[500px]">
+          MVP Development Solutions at HCode
+        </h1>
+        <p className="   text-xl text-center mx-auto font-poppins font-normal pt-2 max-w-[700px]">
+          We deliver exceptional ROI and clear timelines for your MVP, ensuring
+          your success through our proven MVP as a Service approach.
+        </p>
+      </div>
+
+      <div className=" new-container my-10 md:my-20 space-y-10">
+        {/* 1st Card */}
+        <div className="  grid grid-cols-12  ease-in-out duration-500 hover:shadow-md md:px-10 hover:p-10 hover:scale-105 hover:border hover:rounded-lg ">
+          <div className="col-span-12 md:col-span-1 h-20 w-20">
+            <img
+              className=""
+              src="/assets/img/Group 574.svg"
+              alt="MVP Design Services"
+            />
+          </div>
+          <div className="col-span-12 md:col-span-11 mt-4 md:mt-0 space-y-3 md:space-y-5">
+            <h4 className=" font-poppins text-3xl  text-black font-semibold   ">
+              MVP Design Services
+            </h4>
+            <p className=" font-poppins text-xl text-black font-normal leading-7  ">
+              We transform product ideas into user-friendly prototypes,
+              encompassing core feature definition, user-friendly interface
+              design, and prototype development. Our MVP design services include
+              comprehensive technology and business analysis, project
+              requirements identification, feature prioritization, product
+              development strategy, and UX/UI design and prototyping.
+            </p>
+
+            <a
+              href="https://calendly.com/gaurav-tomar/30min"
+              target="_blank"
+              className=" text-lg flex items-center mt-2 w-50 text-gray-500 cursor-pointer hover:underline  "
+            >
+              Schedule a brief call
+              <ArrowRightIcon className="w-6 md:ml-2  h-full text-gray-500" />
+            </a>
+          </div>
         </div>
 
-        <div className=" new-container mb-32 mt-20">
-          <div className="bg-white  px-3 sm:px-6 pb-12 grid grid-cols-12 lg:gap-x-32 ease-in-out duration-500 hover:drop-shadow-md hover:scale-105 hover:-translate-y-3">
-            <div className="col-span-12 md:col-span-1 h-20 w-20 sm:h-20 sm:w-20  rounded-full">
-              <img className="" src="/assets/img/Group 574.svg" alt="icon" /> 
-            </div>
-            <div className="col-span-12 md:col-span-11 space-y-5">
-              <p className=" font-poppins text-3xl  text-black font-semibold   ">
-                MVP Design Services
-              </p>
-              <p className=" font-poppins text-xl text-black font-normal leading-7 max-w-4xl ">
-                We transform product ideas into user-friendly prototypes,
-                encompassing core feature definition, user-friendly interface
-                design, and prototype development. Our MVP design services
-                include comprehensive technology and business analysis, project
-                requirements identification, feature prioritization, product
-                development strategy, and UX/UI design and prototyping.
-              </p>
-              <div className="">
-                <div className="flex items-center">
-                  <a
-                    href="/contact"
-                    className=" pb-1  mt-2 w-50 whitespace-nowrap flex-nowrap border-b border-white inline-flex text-[#6C7C83] hover:scale-100  cursor-pointer hover:opacity-100 "
-                  >
-                    Consult with our Expert
-                    <ArrowRightIcon className="w-6 md:ml-2  h-full" />
-                  </a>
-                </div>
-              </div>
-            </div>
+        {/* 2nd Card */}
+        <div className="  grid grid-cols-12  ease-in-out duration-500 hover:shadow-md px-10 hover:p-10 hover:scale-105 hover:border hover:rounded-lg ">
+          <div className="col-span-12 md:col-span-1 h-20 w-20">
+            <img
+              className=""
+              src="/assets/img/Group 573.svg"
+              alt="MVP Design Services"
+            />
           </div>
-          <div className="bg-white  px-3 sm:px-6 pb-12 grid grid-cols-12 lg:gap-x-32 mt-1 ease-in-out duration-500 hover:drop-shadow-md hover:scale-105 hover:-translate-y-3">
-            <div className="col-span-12 md:col-span-1 h-20 w-20 sm:h-20 sm:w-20  rounded-full">
-              <img className="" src="/assets/img/Group 573.svg" alt="icon" />
-            </div>
-            <div className="col-span-12 md:col-span-11 space-y-5">
-              <p className=" font-poppins text-3xl text-black font-semibold   ">
-                End-To-End Custom MVP Development
-              </p>
-              <p className=" font-poppins text-xl text-black font-normal leading-7 max-w-4xl">
-                HCode's MVP development services provide rapid delivery of
-                high-quality MVPs, leveraging cutting-edge technologies to
-                accelerate product launch. Our team of experts builds MVPs for
-                web, mobile, and desktop platforms, offering comprehensive
-                end-to-end development services from technology and business
-                analysis to full product delivery.
-              </p>
-              <div className="col-start-2 ">
-                <div className="flex items-center">
-                  <a
-                    href="/contact"
-                    className=" pb-1  mt-2 w-50 whitespace-nowrap flex-nowrap border-b border-white inline-flex text-[#6C7C83] hover:scale-100  cursor-pointer hover:opacity-100 "
-                  >
-                    Consult with our Expert
-                    <ArrowRightIcon className="w-6 md:ml-2  h-full" />
-                  </a>
-                </div>
-              </div>
-            </div>
+          <div className="col-span-12 md:col-span-11 space-y-5">
+            <h4 className=" font-poppins text-3xl  text-black font-semibold   ">
+              End-to-End Custom MVP Development
+            </h4>
+            <p className=" font-poppins text-xl text-black font-normal leading-7  ">
+              HCode's MVP development services provide rapid delivery of
+              high-quality MVPs, leveraging cutting-edge technologies to
+              accelerate product launch. Our team of experts builds MVPs for
+              web, mobile, and desktop platforms, offering comprehensive
+              end-to-end development services from technology and business
+              analysis to full product delivery.
+            </p>
+
+            <a
+              href="https://calendly.com/gaurav-tomar/30min"
+              target="_blank"
+              className=" text-lg flex items-center mt-2 w-50 text-gray-500 cursor-pointer hover:underline  "
+            >
+              Schedule a brief call
+              <ArrowRightIcon className="w-6 md:ml-2  h-full text-gray-500" />
+            </a>
           </div>
         </div>
       </div>
@@ -205,15 +210,14 @@ function mvp1() {
         </div>
       </section>
 
-   
-
       {/* transform idea */}
 
-      <div className="my-24 ">
+      <div className="my-24  ">
         <CTA
           heading="Transform your ideas into reality with an MVP"
           paragraph="We can help you turn your ideas into successful MVPs that attract early adopters."
           buttonText="Tell us about your project"
+          widthClass="lg:w-[70%]"
         />
       </div>
 
@@ -295,3 +299,10 @@ function mvp1() {
   );
 }
 export default mvp1;
+
+const sectionHeader = ({ heading, paragraph }) => (
+  <div>
+    <h2>{heading}</h2>
+    <p>{paragraph}</p>
+  </div>
+);
