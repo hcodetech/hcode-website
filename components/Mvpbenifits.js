@@ -2,7 +2,7 @@ function Mvpbenifits(props) {
   return (
     <div className={props.background ? "" : ""}>
       <div className="text-center">
-        <h2 className=" text-[28px] sm:text-4xl font-poppins  font-semibold sm:leading-[52px] pt-16 text-center w-[98%] md:w-[70%] lg:w-6/12 mx-auto">
+        <h2 className=" text-[28px] sm:text-4xl font-poppins  font-semibold sm:leading-[52px] pt-6 text-center w-[98%] md:w-[70%] lg:w-6/12 mx-auto">
           {/* {props.data.heading} */}
           Why choose us as your
           <span className="bg-primary  text-white inline-block ml-1 px-[5px] py-[2px]"> MVP</span> <br></br>
