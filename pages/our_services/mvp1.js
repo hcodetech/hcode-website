@@ -1,21 +1,23 @@
-import Navbar from "../../components/Navbar";
-import { useState } from "react";
-import { mvp_services, faq_mvp } from "../../constants/constants";
-import { getTestimonialData } from "../../utils/config";
-import { posts } from "../../constants/constants";
-import { useEffect } from "react";
-import { client } from "../../constants/constants";
-import Client from "../../components/Client";
-import Testimonial from "../../components/Testimonial";
-import Accordion from "../../components/Accordion";
-import CTA from "../../components/CTA";
-import Mvpcards from "../../components/Mvpcards";
-import Mvpbenifits from "../../components/Mvpbenifits";
-import { ArrowRightIcon } from "@heroicons/react/solid";
+import Navbar from '../../components/Navbar';
+import { useState } from 'react';
+import { mvp_services, faq_mvp, metaData } from '../../constants/constants';
+import { getTestimonialData } from '../../utils/config';
+import { posts } from '../../constants/constants';
+import { useEffect } from 'react';
+import { client } from '../../constants/constants';
+import Client from '../../components/Client';
+import Testimonial from '../../components/Testimonial';
+import Accordion from '../../components/Accordion';
+import CTA from '../../components/CTA';
+import Mvpcards from '../../components/Mvpcards';
+import Mvpbenifits from '../../components/Mvpbenifits';
+import { ArrowRightIcon } from '@heroicons/react/solid';
+import Head from 'next/head';
+import MetaTags from '../../components/MetaTags';
 
 function mvp1() {
-  const data = getTestimonialData("mvp");
-  const [isDesktop, setIsDesktop] = useState("");
+  const data = getTestimonialData('mvp');
+  const [isDesktop, setIsDesktop] = useState('');
 
   useEffect(() => {
     window.innerWidth <= 750 ? setIsDesktop(false) : setIsDesktop(true);
@@ -32,15 +34,15 @@ function mvp1() {
           </div>
           <div className="mx-auto mt-14 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:h-[700px] ">
             {posts.map((post) => (
-              <a href={post.href}>
+              <a href={post.href} key={post.href}>
                 <article
                   key={post.id}
-                  className="flex flex-col items-start  hover:scale-105"
+                  className="flex flex-col items-start duration-100  hover:scale-105"
                 >
                   <div className="relative  w-full">
                     <img
                       src={post.imageUrl}
-                      alt="currently ofline"
+                      alt={post.title}
                       className="aspect-[16/9] w-full  bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2] lg:h-[300px]"
                     />
                   </div>
@@ -68,6 +70,10 @@ function mvp1() {
 
   return (
     <>
+      <Head>
+        <title> MVP Development Services (MVP) | Hcode </title>
+        <MetaTags page={metaData.mvp} />
+      </Head>
       <section className="h-screen bg-gray-50  bg-mvp_bgimg_2 bg-no-repeat bg-cover">
         <div className="max-w-2xl sm:px-4 h-2/5 pt-[275px] sm:pt-64 mx-auto flex  flex-col items-center	text-center">
           <h1 className="font-bold text-4xl sm:text-7xl text-primary py-4 w-[95.33%] sm:w-[102%]">
@@ -101,43 +107,23 @@ function mvp1() {
       {/* our services */}
       {/* Greate MVP */}
       <section className="bg-[#F8F9FB] mt-24">
-        <div className="new-container text-center mx-auto  py-16 ">
-          <div className="max-w-xl mx-auto ">
-            <div className="px-3 py-1 max-w-[10px] my-4 bg-blue-500 mx-auto"></div>
-            <h2 className="font-semibold text-4xl my-4"> 
-              Success of your product starts with a great MVP
-            </h2>
-            <p className="text-xl my-4">
-              An MVP is a cost-effective way to test your idea. It has essential
-              and unique features that showcase your product's value. Validate
-              your hypothesis, optimize your resources, and get feedback before
-              launching at scale.
-            </p>
-            <div className="text-center my-14">
-              <a
-                href="/our_services"
-                className="bg-white text-primary  border-primary border-2 rounded px-16 py-4 text-center"
-              >
-                Tell us about your project
-              </a>
-            </div>
-          </div>
-        </div>
+        <SectionHeader
+          heading="  Success of your product starts with a great MVP"
+          paragraph=" An MVP is a cost-effective way to test your idea. It has essential
+        and unique features that showcase your product's value. Validate
+        your hypothesis, optimize your resources, and get feedback before
+        launching at scale."
+          cta
+        />
       </section>
 
-      <div className="new-container pb-6  pt-16 ">
-        <div className="bg-primary max-w-[20px] h-2 mx-auto mb-3"></div>
+      <SectionHeader
+        heading=" MVP Development Solutions at HCode"
+        paragraph=" We deliver exceptional ROI and clear timelines for your MVP, ensuring
+        your success through our proven MVP as a Service approach."
+      />
 
-        <h1 className="  text-2xl  sm:text-4xl mx-auto text-center  font-poppins font-semibold max-w-[500px]">
-          MVP Development Solutions at HCode
-        </h1>
-        <p className="   text-xl text-center mx-auto font-poppins font-normal pt-2 max-w-[700px]">
-          We deliver exceptional ROI and clear timelines for your MVP, ensuring
-          your success through our proven MVP as a Service approach.
-        </p>
-      </div>
-
-      <div className=" new-container my-10 md:my-20 space-y-10">
+      <div className=" new-container mt-4 mb-10  space-y-10">
         {/* 1st Card */}
         <div className="  grid grid-cols-12  ease-in-out duration-500 hover:shadow-md md:px-10 hover:p-10 hover:scale-105 hover:border hover:rounded-lg ">
           <div className="col-span-12 md:col-span-1 h-20 w-20">
@@ -304,9 +290,24 @@ function mvp1() {
 }
 export default mvp1;
 
-const sectionHeader = ({ heading, paragraph }) => (
+const SectionHeader = ({ heading, paragraph, cta, ctaText }) => (
   <div>
-    <h2>{heading}</h2>
-    <p>{paragraph}</p>
+    <div className="new-container text-center mx-auto  py-16 ">
+      <div className="max-w-lg mx-auto ">
+        <h2 className="font-semibold text-4xl my-4">{heading}</h2>
+        <div className="px-3 py-[2px] max-w-[120px] my-4 bg-blue-500 mx-auto"></div>
+        <p className="text-xl pt-2 pb-6">{paragraph}</p>
+        <div className="mt-4">
+          {cta && (
+            <a
+              href="/contact"
+              className="bg-white text-primary  border-primary border-2 rounded px-16 py-4 text-center"
+            >
+              {ctaText || 'Tell us about your project'}
+            </a>
+          )}
+        </div>
+      </div>
+    </div>
   </div>
 );
