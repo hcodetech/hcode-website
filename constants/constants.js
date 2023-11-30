@@ -1818,37 +1818,37 @@ export const mvp_services = {
 
   points: [
     {
-      image: "/assets/img/expedited_ mvp_ dev.png",
+      image: "/assets/img/prioritize.svg",
       heading: "We prioritize timely delivery and client transparency",
       descripition:
         "We promise realistic delivery timelines, prioritize startup challenges in our development process, and communicate openly about any unexpected issues, providing prompt updates and swift resolution",
     },
     {
-      image: "/assets/img/IT _decision.png",
+      image: "/assets/img/IT_growth.svg",
       heading: "Informed Technology Decisions for Your MVP",
       descripition:
         "Leverage our expertise to make informed technology decisions for your MVP. We guide you through the selection of the most suitable tech stack and develop enterprise-grade solutions tailored to your specific needs, ensuring your MVP is built for scalability and future growth.",
     },
     {
-      image: "/assets/img/agile_mvp_dev.png",
+      image: "/assets/img/agile.svg",
       heading: "We Embrace Lean: Our Agile MVP Development Approach",
       descripition:
         "Guided by Lean methodology, we prioritize core functionalities, user feedback, and beta testing to exceed expectations and align with your product vision. With our team's firsthand product-building experience, we deeply understand MVPs, incorporating agile methodology into every decision for success.",
     },
     {
-      image: "/assets/img/best.svg",
+      image: "/assets/img/mvp_collab.svg",
       heading: "We Ensure Success: Our Collaborative MVP Approach",
       descripition:
         "We adopt a partnership-oriented approach rather than a purely transactional one in crafting your product. Recognizing the necessity for iterative adjustments based on market responses, continuous learning, or potential pivots to novel ideas, we afford you the flexibility to adopt an agile methodology in your approach.",
     },
     {
-      image: "/assets/img/support_mvp.jpg",
+      image:  "/assets/img/IT _decision.png",
       heading: "Comprehensive End-to-End Support",
       descripition:
         "We're a leading MVP development company offering comprehensive support beyond the initial build. Our services include ongoing maintenance and assistance, ensuring your MVP stays current, secure, and aligned with evolving business needs. If you opt for an in-house tech team later, we provide additional support.",
     },
     {
-      image: "/assets/img/support_mvp.jpg",
+      image: "/assets/img/best.svg",
       heading: "Your Success, Our Commitment",
       descripition:
         "HCode transcends conventional development, becoming your strategic partner for product and business success. Our commitment to excellence drives solutions that consistently exceed expectations. Embrace our customer-centric approach where your success is not just a goal but our primary commitment.",

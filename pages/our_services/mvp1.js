@@ -1,21 +1,21 @@
-import Navbar from '../../components/Navbar';
-import { useState } from 'react';
-import { mvp_services, faq_mvp } from '../../constants/constants';
-import { getTestimonialData } from '../../utils/config';
-import { posts } from '../../constants/constants';
-import { useEffect } from 'react';
-import { client } from '../../constants/constants';
-import Client from '../../components/Client';
-import Testimonial from '../../components/Testimonial';
-import Accordion from '../../components/Accordion';
-import CTA from '../../components/CTA';
-import Mvpcards from '../../components/Mvpcards';
-import Mvpbenifits from '../../components/Mvpbenifits';
-import { ArrowRightIcon } from '@heroicons/react/solid';
+import Navbar from "../../components/Navbar";
+import { useState } from "react";
+import { mvp_services, faq_mvp } from "../../constants/constants";
+import { getTestimonialData } from "../../utils/config";
+import { posts } from "../../constants/constants";
+import { useEffect } from "react";
+import { client } from "../../constants/constants";
+import Client from "../../components/Client";
+import Testimonial from "../../components/Testimonial";
+import Accordion from "../../components/Accordion";
+import CTA from "../../components/CTA";
+import Mvpcards from "../../components/Mvpcards";
+import Mvpbenifits from "../../components/Mvpbenifits";
+import { ArrowRightIcon } from "@heroicons/react/solid";
 
 function mvp1() {
-  const data = getTestimonialData('mvp');
-  const [isDesktop, setIsDesktop] = useState('');
+  const data = getTestimonialData("mvp");
+  const [isDesktop, setIsDesktop] = useState("");
 
   useEffect(() => {
     window.innerWidth <= 750 ? setIsDesktop(false) : setIsDesktop(true);
@@ -32,28 +32,33 @@ function mvp1() {
           </div>
           <div className="mx-auto mt-14 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:h-[700px] ">
             {posts.map((post) => (
-              <article key={post.id} className="flex flex-col items-start ">
-                <div className="relative  w-full">
-                  <img
-                    src={post.imageUrl}
-                    alt="currently ofline"
-                    className="aspect-[16/9] w-full  bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2] lg:h-[300px]"
-                  />
-                </div>
-                <div className="max-w-xl">
-                  <div className="group relative">
-                    <h3 className="mt-3 text-[20px] font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
-                      <a href={post.href}>
-                        <span className="absolute inset-0" />
-                        {post.title}
-                      </a>
-                    </h3>
-                    <p className="mt-5 line-clamp-3 text-[17px] leading-6 text-gray-600 px-2 -ml-2">
-                      {post.description}
-                    </p>
+              <a href={post.href}>
+                <article
+                  key={post.id}
+                  className="flex flex-col items-start  hover:scale-105"
+                >
+                  <div className="relative  w-full">
+                    <img
+                      src={post.imageUrl}
+                      alt="currently ofline"
+                      className="aspect-[16/9] w-full  bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2] lg:h-[300px]"
+                    />
                   </div>
-                </div>
-              </article>
+                  <div className="max-w-xl">
+                    <div className="group relative">
+                      <h3 className="mt-3 text-[20px] font-semibold leading-6 text-gray-900 group-hover:text-primary">
+                        <a href={post.href}>
+                          <span className="absolute inset-0" />
+                          {post.title}
+                        </a>
+                      </h3>
+                      <p className="mt-5 line-clamp-3 text-[17px] leading-6 text-gray-600 px-2 -ml-2">
+                        {post.description}
+                      </p>
+                    </div>
+                  </div>
+                </article>
+              </a>
             ))}
           </div>
         </div>
@@ -97,19 +102,18 @@ function mvp1() {
       {/* Greate MVP */}
       <section className="bg-[#F8F9FB] mt-24">
         <div className="new-container text-center mx-auto  py-16 ">
-          <div className="max-w-xl mx-auto space-y-7">
-            <div className="px-3 py-1 max-w-[10px] bg-blue-500 mx-auto"></div>
-
-            <h2 className="font-semibold text-4xl">
+          <div className="max-w-xl mx-auto ">
+            <div className="px-3 py-1 max-w-[10px] my-4 bg-blue-500 mx-auto"></div>
+            <h2 className="font-semibold text-4xl my-4"> 
               Success of your product starts with a great MVP
             </h2>
-            <p className="text-xl ">
+            <p className="text-xl my-4">
               An MVP is a cost-effective way to test your idea. It has essential
               and unique features that showcase your product's value. Validate
               your hypothesis, optimize your resources, and get feedback before
               launching at scale.
             </p>
-            <div className="text-center">
+            <div className="text-center my-14">
               <a
                 href="/our_services"
                 className="bg-white text-primary  border-primary border-2 rounded px-16 py-4 text-center"
@@ -121,7 +125,7 @@ function mvp1() {
         </div>
       </section>
 
-      <div className="new-container pb-6  pt-12 ">
+      <div className="new-container pb-6  pt-16 ">
         <div className="bg-primary max-w-[20px] h-2 mx-auto mb-3"></div>
 
         <h1 className="  text-2xl  sm:text-4xl mx-auto text-center  font-poppins font-semibold max-w-[500px]">
@@ -168,7 +172,7 @@ function mvp1() {
         </div>
 
         {/* 2nd Card */}
-        <div className="  grid grid-cols-12  ease-in-out duration-500 hover:shadow-md px-10 hover:p-10 hover:scale-105 hover:border hover:rounded-lg ">
+        <div className="  grid grid-cols-12  ease-in-out duration-500 hover:shadow-md md:px-10 hover:p-10 hover:scale-105 hover:border hover:rounded-lg ">
           <div className="col-span-12 md:col-span-1 h-20 w-20">
             <img
               className=""
@@ -176,7 +180,7 @@ function mvp1() {
               alt="MVP Design Services"
             />
           </div>
-          <div className="col-span-12 md:col-span-11 space-y-5">
+          <div className="col-span-12 md:col-span-11 mt-4 md:mt-0 space-y-3 md:space-y-5">
             <h4 className=" font-poppins text-3xl  text-black font-semibold   ">
               End-to-End Custom MVP Development
             </h4>
@@ -201,7 +205,7 @@ function mvp1() {
         </div>
       </div>
 
-      <section className="bg-[#F8F9FB] pt-[35px] sm:pt-9 ">
+      <section className="bg-[#F8F9FB] pt-[35px] sm:pt-16 ">
         <div className="bg-primary max-w-[20px] h-2 mx-auto "></div>
 
         <div className=" ">
@@ -261,8 +265,8 @@ function mvp1() {
         </div>
       </div>
 
-      <div className="mb-36 mt-32">
-        <div className="bg-primary max-w-[20px] h-2 mx-auto mb-3"></div>
+      <div className="mb-36 mt-16">
+        <div className="bg-primary max-w-[20px] h-2 mx-auto mb-1"></div>
 
         <h1 className="font-poppins text-[28px] px-3 sm:text-[36px] text-black font-semibold  sm:leading-[79px] text-center">
           MVPs built by HCode
