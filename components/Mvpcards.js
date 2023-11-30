@@ -20,7 +20,7 @@ function Mvpcards({ data }) {
     <div>
       <div className="hidden md:block">
         <CarouselProvider
-          visibleSlides={2}
+          visibleSlides={3}
           totalSlides={portfolioData.length}
           step={1}
           // naturalSlideWidth={400}
@@ -111,7 +111,7 @@ function Mvpcards({ data }) {
                         <h2 className="font-semibold text-2xl my-1">
                           {project?.name}
                         </h2>
-                        <p>{project?.short_descripition}</p>
+                        <p>{project?.short_description}</p>
                       </div>
                     </div>
                   </Slide>

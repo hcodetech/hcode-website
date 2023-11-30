@@ -8,6 +8,8 @@ function Mvpbenifits(props) {
           <span className="bg-primary  text-white inline-block ml-1 px-[5px] py-[2px]"> MVP</span> <br></br>
           development services provides?
         </h2>
+        <div className="px-3 py-[2px] max-w-[120px] my-4 bg-blue-500 mx-auto"></div>
+
         <p className="text-base font-poppins font-normal  leading-7 text-center w-[90%] md:w-[60%] lg:w-2/6 mx-auto pt-2">
           We are more than just developers; we are your partners in achieving
           your product and business objectives. We share your commitment to

@@ -1,23 +1,23 @@
-import Navbar from '../../components/Navbar';
-import { useState } from 'react';
-import { mvp_services, faq_mvp, metaData } from '../../constants/constants';
-import { getTestimonialData } from '../../utils/config';
-import { posts } from '../../constants/constants';
-import { useEffect } from 'react';
-import { client } from '../../constants/constants';
-import Client from '../../components/Client';
-import Testimonial from '../../components/Testimonial';
-import Accordion from '../../components/Accordion';
-import CTA from '../../components/CTA';
-import Mvpcards from '../../components/Mvpcards';
-import Mvpbenifits from '../../components/Mvpbenifits';
-import { ArrowRightIcon } from '@heroicons/react/solid';
-import Head from 'next/head';
-import MetaTags from '../../components/MetaTags';
+import Navbar from "../../components/Navbar";
+import { useState } from "react";
+import { mvp_services, faq_mvp, metaData } from "../../constants/constants";
+import { getTestimonialData } from "../../utils/config";
+import { posts } from "../../constants/constants";
+import { useEffect } from "react";
+import { client } from "../../constants/constants";
+import Client from "../../components/Client";
+import Testimonial from "../../components/Testimonial";
+import Accordion from "../../components/Accordion";
+import CTA from "../../components/CTA";
+import Mvpcards from "../../components/Mvpcards";
+import Mvpbenifits from "../../components/Mvpbenifits";
+import { ArrowRightIcon } from "@heroicons/react/solid";
+import Head from "next/head";
+import MetaTags from "../../components/MetaTags";
 
-function mvp1() {
-  const data = getTestimonialData('mvp');
-  const [isDesktop, setIsDesktop] = useState('');
+function mvp_development_services() {
+  const data = getTestimonialData("mvp");
+  const [isDesktop, setIsDesktop] = useState("");
 
   useEffect(() => {
     window.innerWidth <= 750 ? setIsDesktop(false) : setIsDesktop(true);
@@ -74,7 +74,7 @@ function mvp1() {
         <title> MVP Development Services (MVP) | Hcode </title>
         <MetaTags page={metaData.mvp} />
       </Head>
-      <section className="h-screen bg-gray-50  bg-mvp_bgimg_2 bg-no-repeat bg-cover">
+      <section className="h-screen bg-gray-50  bg-mvp_bg_img bg-no-repeat bg-cover">
         <div className="max-w-2xl sm:px-4 h-2/5 pt-[275px] sm:pt-64 mx-auto flex  flex-col items-center	text-center">
           <h1 className="font-bold text-4xl sm:text-7xl text-primary py-4 w-[95.33%] sm:w-[102%]">
             MVP Development Services
@@ -95,6 +95,8 @@ function mvp1() {
           </div>
         </div>
       </section>
+
+      {/* timeline */}
 
       <div className=" new-container pt-10 my-9">
         <Client
@@ -123,17 +125,17 @@ function mvp1() {
         your success through our proven MVP as a Service approach."
       />
 
-      <div className=" new-container mt-4 mb-10  space-y-10">
+      <div className=" new-container -mt-9 mb-12  space-y-10">
         {/* 1st Card */}
         <div className="  grid grid-cols-12  ease-in-out duration-500 hover:shadow-md md:px-10 hover:p-10 hover:scale-105 hover:border hover:rounded-lg ">
-          <div className="col-span-12 md:col-span-1 h-20 w-20">
+          <div className="col-span-12 lg:col-span-1 h-20 w-20">
             <img
               className=""
               src="/assets/img/Group 574.svg"
               alt="MVP Design Services"
             />
           </div>
-          <div className="col-span-12 md:col-span-11 mt-4 md:mt-0 space-y-3 md:space-y-5">
+          <div className="col-span-12 lg:col-span-11 mt-4 md:mt-0 space-y-3 md:space-y-5">
             <h4 className=" font-poppins text-3xl  text-black font-semibold   ">
               MVP Design Services
             </h4>
@@ -159,14 +161,14 @@ function mvp1() {
 
         {/* 2nd Card */}
         <div className="  grid grid-cols-12  ease-in-out duration-500 hover:shadow-md md:px-10 hover:p-10 hover:scale-105 hover:border hover:rounded-lg ">
-          <div className="col-span-12 md:col-span-1 h-20 w-20">
+          <div className="col-span-12 lg:col-span-1 h-20 w-20">
             <img
               className=""
               src="/assets/img/Group 573.svg"
               alt="MVP Design Services"
             />
           </div>
-          <div className="col-span-12 md:col-span-11 mt-4 md:mt-0 space-y-3 md:space-y-5">
+          <div className="col-span-12 lg:col-span-11 mt-4 md:mt-0 space-y-3 md:space-y-5">
             <h4 className=" font-poppins text-3xl  text-black font-semibold   ">
               End-to-End Custom MVP Development
             </h4>
@@ -192,8 +194,6 @@ function mvp1() {
       </div>
 
       <section className="bg-[#F8F9FB] pt-[35px] sm:pt-16 ">
-        <div className="bg-primary max-w-[20px] h-2 mx-auto "></div>
-
         <div className=" ">
           <Mvpbenifits additionalClass="lg:w-1/2" data={mvp_services} />
           {/*  */}
@@ -211,7 +211,7 @@ function mvp1() {
         />
       </div>
 
-      <div className="  w-[100%] md:h-[720px] mt-10 mb-16  bg-mvp_transforn_idea bg-no-repeat  bg-left bg-cover">
+      <div className="  w-[100%] md:h-[720px] mt-10   bg-mvp_transforn_idea bg-no-repeat  bg-left bg-cover">
         <div className="flex flex-col mt-10 text-white  sm:px-1 md:w-[635px] md:ml-[4%] lg:ml-[17%] px-[20px] sm:ml-[33px] sm:mr-[30%] sm:pt-[70px] py-[35px] sm:py-[20px]">
           <h1 className="font-poppins text-[29.6px] sm:text-4xl font-semibold leading-10">
             How We Develop MVP
@@ -251,30 +251,129 @@ function mvp1() {
         </div>
       </div>
 
-      <div className="mb-36 mt-16">
-        <div className="bg-primary max-w-[20px] h-2 mx-auto mb-1"></div>
+      {/* transform v2 */}
+      <div className="  w-[100%] md:h-[850px] mt-10   bg-mvp_transforn_idea bg-no-repeat  bg-left bg-cover">
+        <div class="py-7">
+          <div class="p-4 mt-4">
+            <h1 class="font-poppins text-[29.6px] sm:text-4xl font-semibold leading-10 text-left text-white mb-6 lg:ml-96">
+            How We Develop MVP
+            </h1>
+            <div class="container">
+              <div class="flex flex-col md:grid grid-cols-12 text-gray-50">
+                <div class="flex md:contents">
+                  <div class="col-start-2 col-end-4 mr-10 md:mx-auto relative">
+                    <div class="h-full w-6 flex items-center justify-center">
+                      <div class="h-full w-1 bg-white pointer-events-none"></div>
+                    </div>
+                    <div class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full  bg-primary shadow text-center">
+                      <i class="fas fa-check-circle text-white"></i>
+                    </div>
+                  </div>
+                  <div class=" col-start-4 col-end-12 p-4 rounded-xl my-4 mr-auto  w-full">
+                    <h3 class="font-poppins text-[20px] sm:text-2xl font-semibold leading-10 mb-1">
+                      {" "}
+                      Discovery Meeting
+                    </h3>
+                    <p class="font-poppins text-base font-normal leading-6 max-w-lg ">
+                      In the discovery phase, we conduct a thorough analysis of
+                      your business to gather key insights. This enables us to
+                      strategically prioritize MVP features that align with your
+                      vision.
+                    </p>
+                  </div>
+                </div>
 
-        <h1 className="font-poppins text-[28px] px-3 sm:text-[36px] text-black font-semibold  sm:leading-[79px] text-center">
-          MVPs built by HCode
-        </h1>
-        <p className="font-poppins text-[17px] leading-[30px] px-3 text-black font-normal  text-center sm:w-[40%] mx-auto mb-6 ">
-          We have delivered these high quality complete MVP products in very
-          competitive timelines for our clients.
-        </p>
-        <Mvpcards />
+                <div class="flex md:contents">
+                  <div class="col-start-2 col-end-4 mr-10 md:mx-auto relative">
+                    <div class="h-full w-6 flex items-center justify-center">
+                      <div class="h-full w-1  bg-white pointer-events-none"></div>
+                    </div>
+                    <div class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full  bg-primary shadow text-center">
+                      <i class="fas fa-check-circle text-white"></i>
+                    </div>
+                  </div>
+                  <div class=" col-start-4 col-end-12 p-4 rounded-xl my-4 mr-auto  w-full">
+                    <h3 class="font-poppins text-[20px] sm:text-2xl font-semibold leading-10 mb-1">Desiging </h3>
+                    <p class="font-poppins text-base font-normal leading-6 max-w-md">
+                      Our innovative approach ensures that we prioritize your
+                      user's experience to design a modern MVP that solves real
+                      user problems.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex md:contents">
+                  <div class="col-start-2 col-end-4 mr-10 md:mx-auto relative">
+                    <div class="h-full w-6 flex items-center justify-center">
+                      <div class="h-full w-1  bg-white pointer-events-none"></div>
+                    </div>
+                    <div class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full  bg-primary shadow text-center">
+                      <i class="fas fa-times-circle text-white"></i>
+                    </div>
+                  </div>
+                  <div class=" col-start-4 col-end-12 p-4 rounded-xl my-4 mr-auto  w-full">
+                    <h3 class="font-poppins text-[20px] sm:text-2xl font-semibold leading-10 mb-1 ">
+                      Development
+                    </h3>
+                    <p class="font-poppins text-base font-normal leading-6 max-w-md">
+                      We ensure excellent results by utilizing the latest tech
+                      stack and implementing rigorous code review and
+                      development processes.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex md:contents">
+                  <div class="col-start-2 col-end-4 mr-10 md:mx-auto relative">
+                    <div class="h-full w-6 flex items-center justify-center">
+                      <div class="h-full w-1  bg-white pointer-events-none"></div>
+                    </div>
+                    <div class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full  bg-primary shadow text-center">
+                      <i class="fas fa-exclamation-circle text-gray-400"></i>
+                    </div>
+                  </div>
+                  <div class=" col-start-4 col-end-12 p-4 rounded-xl my-4 mr-auto w-full">
+                    <h3 class="font-poppins text-[20px] sm:text-2xl font-semibold leading-10 mb-1">
+                      Release
+                    </h3>
+                    <p class="font-poppins text-base font-normal leading-6 max-w-sm">
+                      We ensure your product is launch-ready and performs as
+                      expected through real device testing and user insights.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+
+      {/* mvp built by hcode */}
+      <div className=" mt-8 mb-40">
+        <SectionHeader
+          heading={" MVPs built by HCode"}
+          paragraph={
+            "We have delivered these high quality complete MVP products in very competitive timelines for our clients"
+          }
+        />
+        <div className="lg:-mt-6">
+          <Mvpcards />
+        </div>
+      </div>
+
+      {/* testimonial */}
 
       <div className="py-20 bg-gray-100">
         <Testimonial data={data} />
       </div>
 
       {/* blogs section  */}
-      <div className="sm:new-container mt-3 ">
+      <div className="sm:new-container  ">
         <Blogs />
       </div>
 
       {/* FAQ */}
-      <section className="bg-gray-100 lg:-mt-36">
+      <section className="bg-gray-100 lg:-mt-56">
         <Accordion data={faq_mvp} />
       </section>
       {/* CTA */}
@@ -288,7 +387,7 @@ function mvp1() {
     </>
   );
 }
-export default mvp1;
+export default mvp_development_services;
 
 const SectionHeader = ({ heading, paragraph, cta, ctaText }) => (
   <div>
@@ -296,14 +395,14 @@ const SectionHeader = ({ heading, paragraph, cta, ctaText }) => (
       <div className="max-w-lg mx-auto ">
         <h2 className="font-semibold text-4xl my-4">{heading}</h2>
         <div className="px-3 py-[2px] max-w-[120px] my-4 bg-blue-500 mx-auto"></div>
-        <p className="text-xl pt-2 pb-6">{paragraph}</p>
-        <div className="mt-4">
+        <p className="text-xl pt-1 pb-6">{paragraph}</p>
+        <div className="mt-6">
           {cta && (
             <a
               href="/contact"
               className="bg-white text-primary  border-primary border-2 rounded px-16 py-4 text-center"
             >
-              {ctaText || 'Tell us about your project'}
+              {ctaText || "Tell us about your project"}
             </a>
           )}
         </div>

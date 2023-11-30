@@ -46,10 +46,9 @@ module.exports = {
         daas: "url('/assets/img/developer_as_service.jpg')",
         mvp: "url('/assets/img/mvp_service.jpg')",
         blockchain: "url('/assets/img/blockchain_service.jpg')",
-        blockchain_small: "url('/assets/img/blockchain_service_small.jpg')",
-        mvp_bgimg: "url('/assets/img/mvpbg.png')",
-        mvp_bgimg_2:"url('/assets/img/Group 572.png')",
-        mvp_transforn_idea:"url('/assets/img/Group 575.png')"
+        blockchain_small: "url('/assets/img/blockchain_service_small.jpg')",        
+        mvp_bg_img:"url('/assets/img/mvp_bg.png')",
+        mvp_transforn_idea:"url('/assets/img/transform_idea_section.png')"
       }),
     },
   },
