@@ -1,14 +1,14 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from 'react';
 // import Accordion from "../../components/Accordion";
 import {
   faq_services,
   metaData,
   technologies_page,
-} from "../../constants/constants";
+} from '../../constants/constants';
 // import { useRouter } from "next/dist/client/router";
-import Link from "next/link";
-import Head from "next/head";
-import MetaTags from "../../components/MetaTags";
+import Link from 'next/link';
+import Head from 'next/head';
+import MetaTags from '../../components/MetaTags';
 
 function technologies(props) {
   // const { asPath } = useRouter();
@@ -16,25 +16,25 @@ function technologies(props) {
   // To check if the any category is included in the URL
   // const isTechnologiesStack = (pathname) => asPath.includes(pathname);
 
-  const [hashOnScroll, setHashOnScroll] = useState("#");
-  const [hashOnClick, setHashOnClick] = useState("");
+  const [hashOnScroll, setHashOnScroll] = useState('#');
+  const [hashOnClick, setHashOnClick] = useState('');
   // const [hashOnUrlChange, setHashOnUrlChange] = useState("");
   const refs = useRef([]); // create empty array for creating multiple refs
 
   let technologies = [
-    "Backend",
-    "Frontend",
-    "Blockchain",
-    "Cloud",
-    "Database",
-    "CI/CD",
+    'Backend',
+    'Frontend',
+    'Blockchain',
+    'Cloud',
+    'Database',
+    'CI/CD',
   ];
 
   useEffect(() => {
-    window.addEventListener("hashchange", function () {
+    window.addEventListener('hashchange', function () {
       // setHashOnUrlChange(window.location.hash)
-      setHashOnScroll("");
-      setHashOnClick("");
+      setHashOnScroll('');
+      setHashOnClick('');
     });
   }, []);
 
@@ -45,7 +45,7 @@ function technologies(props) {
 
   useEffect(() => {
     let observerOptions = {
-      rootMargin: "10px",
+      rootMargin: '10px',
       threshold: window.innerWidth <= 750 ? 0.3 : 1,
     };
 
@@ -55,11 +55,11 @@ function technologies(props) {
       if (sections[0].isIntersecting) {
         window.location.hash = sections[0].target.id;
         setHashOnScroll(sections[0].target.id);
-        setHashOnClick("");
+        setHashOnClick('');
         // setHashOnUrlChange("")
       }
     }
-    document.querySelectorAll("section").forEach((i) => {
+    document.querySelectorAll('section').forEach((i) => {
       // refs.current.forEach((i) => {
       observer.observe(i);
     });
@@ -116,12 +116,12 @@ function technologies(props) {
                     key={stack}
                     className={
                       hashOnScroll === stack || hashOnClick === stack
-                        ? "text-blue-600 font-semibold underline"
-                        : ""
+                        ? 'text-blue-600 font-semibold underline'
+                        : ''
                     }
                     onClick={(e) => {
                       setHashOnClick(e.target.text);
-                      setHashOnScroll("");
+                      setHashOnScroll('');
                       // setHashOnUrlChange("")
                     }}
                   >
@@ -164,7 +164,7 @@ function technologies(props) {
                             {language.tech_name}
                           </h4>
                           <p className=" text-sm font-light md:text-base opacity-90 pr-5">
-                            {language.descripition}
+                            {language.description}
                           </p>
                         </div>
                       ))}

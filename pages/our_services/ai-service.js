@@ -1,15 +1,15 @@
 // /** @format */
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from 'react';
 
-import Head from "next/head";
-import Accordion from "../../components/Accordion";
-import Benefits from "../../components/Benefits";
-import CTA from "../../components/CTA";
-import CardPortfolio from "../../components/CardPortfolio";
-import Client from "../../components/Client";
-import MetaTags from "../../components/MetaTags";
-import Testimonial from "../../components/Testimonial";
+import Head from 'next/head';
+import Accordion from '../../components/Accordion';
+import Benefits from '../../components/Benefits';
+import CTA from '../../components/CTA';
+import CardPortfolio from '../../components/CardPortfolio';
+import Client from '../../components/Client';
+import MetaTags from '../../components/MetaTags';
+import Testimonial from '../../components/Testimonial';
 import {
   AIService_Hero,
   ai_benefits,
@@ -18,22 +18,22 @@ import {
   client,
   faq_ai,
   metaData,
-} from "../../constants/constants";
-import { getTestimonialData } from "../../utils/config";
-import { getAPIUrl } from "../api/APIHelpers";
-import { apiRoutes } from "../api/APIRoutes";
-import useGetFetch from "../hooks/useGetFetch";
+} from '../../constants/constants';
+import { getTestimonialData } from '../../utils/config';
+import { getAPIUrl } from '../api/APIHelpers';
+import { apiRoutes } from '../api/APIRoutes';
+import useGetFetch from '../hooks/useGetFetch';
 
 const AIService = () => {
-  const [isDesktop, setIsDesktop] = useState("");
-  const selectedCategory = ["AI"];
+  const [isDesktop, setIsDesktop] = useState('');
+  const selectedCategory = ['AI'];
 
   const [portfolioData, isLoading] = useGetFetch(getAPIUrl(apiRoutes.OUR_WORK));
 
   useEffect(() => {
     window.innerWidth <= 750 ? setIsDesktop(false) : setIsDesktop(true);
   });
-  const data = getTestimonialData("AI");
+  const data = getTestimonialData('AI');
 
   return (
     <div>
@@ -96,7 +96,7 @@ const AIService = () => {
 
               <h3 className="text-xl pt-2 font-semibold">{data.heading}</h3>
               <p className="text-gray-700 mt-1 leading-relaxed sm:pr-8">
-                {data.descripition}
+                {data.description}
               </p>
             </div>
           ))}
@@ -118,7 +118,7 @@ const AIService = () => {
           </div>
           <div className="flex justify-center lg:justify-between flex-wrap gap-4 sm:gap-8  mt-16">
             {ai_technologies.map((data) => (
-              <div>
+              <div key={data.id}>
                 <div
                   className="border bg-white border-gray-300 h-36 w-36 p-1 hover:scale-105 ease-out duration-300 flex justify-center items-center rounded-sm "
                   key={data.id}
@@ -144,14 +144,13 @@ const AIService = () => {
             </p>
           </div>
           <div className="col-span-12 py-10">
-            {portfolioData &&
-              portfolioData?.map((data) => (
-                <CardPortfolio
-                  key={data.id}
-                  cardData={data}
-                  selectedCategory={selectedCategory}
-                />
-              ))}
+            {portfolioData?.map((data) => (
+              <CardPortfolio
+                key={data.id}
+                cardData={data}
+                selectedCategory={selectedCategory}
+              />
+            ))}
           </div>
         </div>
       </section>

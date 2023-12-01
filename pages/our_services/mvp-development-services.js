@@ -1,23 +1,30 @@
-import Navbar from "../../components/Navbar";
-import { useState } from "react";
-import { mvp_services, faq_mvp, metaData } from "../../constants/constants";
-import { getTestimonialData } from "../../utils/config";
-import { posts } from "../../constants/constants";
-import { useEffect } from "react";
-import { client } from "../../constants/constants";
-import Client from "../../components/Client";
-import Testimonial from "../../components/Testimonial";
-import Accordion from "../../components/Accordion";
-import CTA from "../../components/CTA";
-import Mvpcards from "../../components/Mvpcards";
-import Mvpbenifits from "../../components/Mvpbenifits";
-import { ArrowRightIcon } from "@heroicons/react/solid";
-import Head from "next/head";
-import MetaTags from "../../components/MetaTags";
+import { useState, useEffect } from 'react';
+
+import { getTestimonialData } from '../../utils/config';
+
+import Client from '../../components/Client';
+import Testimonial from '../../components/Testimonial';
+import Accordion from '../../components/Accordion';
+import CTA from '../../components/CTA';
+import MvpBenefits from '../../components/MvpBenefits';
+
+import { ArrowRightIcon } from '@heroicons/react/solid';
+
+import Head from 'next/head';
+import MetaTags from '../../components/MetaTags';
+
+import {
+  mvp_services,
+  faq_mvp,
+  metaData,
+  posts,
+  client,
+} from '../../constants/constants';
+import CaseStudiesCard from '../../components/CaseStudiesCard';
 
 function mvp_development_services() {
-  const data = getTestimonialData("mvp");
-  const [isDesktop, setIsDesktop] = useState("");
+  const data = getTestimonialData('mvp');
+  const [isDesktop, setIsDesktop] = useState('');
 
   useEffect(() => {
     window.innerWidth <= 750 ? setIsDesktop(false) : setIsDesktop(true);
@@ -193,7 +200,7 @@ function mvp_development_services() {
 
       <section className="bg-[#F8F9FB] pt-[35px] sm:pt-16 ">
         <div className=" ">
-          <Mvpbenifits additionalClass="lg:w-1/2" data={mvp_services} />
+          <MvpBenefits additionalClassName="lg:w-1/2" data={mvp_services} />
           {/*  */}
         </div>
       </section>
@@ -209,68 +216,28 @@ function mvp_development_services() {
         />
       </div>
 
-      {/* <div className=" hidden w-[100%] md:h-[720px] mt-10   bg-mvp_transforn_idea bg-no-repeat  bg-left bg-cover">
-        <div className="flex flex-col mt-10 text-white  sm:px-1 md:w-[635px] md:ml-[4%] lg:ml-[17%] px-[20px] sm:ml-[33px] sm:mr-[30%] sm:pt-[70px] py-[35px] sm:py-[20px]">
-          <h1 className="font-poppins text-[29.6px] sm:text-4xl font-semibold leading-10">
-            How We Develop MVP
-          </h1>
-          <h2 className="mt-8 font-poppins text-[20px] sm:text-2xl font-semibold leading-10">
-            Discovery Meeting
-          </h2>
-          <p className="mt-3 font-poppins text-base font-normal leading-6">
-            In the discovery phase, we conduct a thorough analysis of your
-            business to gather key insights. This enables us to strategically
-            prioritize MVP features that align with your vision.
-          </p>
-
-          <h2 className=" mt-8 font-poppins text-[20px] sm:text-2xl font-semibold leading-10">
-            Desiging
-          </h2>
-          <p className=" mt-3 font-poppins text-base font-normal leading-6">
-            Our innovative approach ensures that we prioritize your user's
-            experience to design a modern MVP that solves real user problems.
-          </p>
-
-          <h2 className=" mt-8 font-poppins text-[20px] sm:text-2xl font-semibold leading-10">
-            Development
-          </h2>
-          <p className="mt-3 font-poppins text-base font-normal leading-6">
-            We ensure excellent results by utilizing the latest tech stack and
-            implementing rigorous code review and development processes.
-          </p>
-
-          <h2 className="mt-8 font-poppins text-[20px] sm:text-2xl font-semibold leading-10">
-            Release
-          </h2>
-          <p className="mt-3 font-poppins text-base font-normal leading-6">
-            We ensure your product is launch-ready and performs as expected
-            through real device testing and user insights.
-          </p>
-        </div>
-      </div> */}
-
       {/* transform v2 */}
       <div className="  w-[100%] md:h-[850px] mt-10   bg-mvp_transforn_idea bg-no-repeat  bg-left bg-cover">
-        <div class="py-7">
-          <div class="new-container  mt-4 ">
-            <h1 class=" font-poppins text-[29.6px] sm:text-4xl font-semibold leading-10 text-left text-white mb-6 ">
+        <div className="py-7">
+          <div className="new-container  mt-4 ">
+            <h1 className=" font-poppins text-[29.6px] sm:text-4xl font-semibold leading-10 text-left text-white mb-6 ">
               How We Develop MVP
             </h1>
-            <div class="">
-              <div class="flex flex-col md:grid grid-cols-12 gap-x-0 text-gray-50 md:-ml-10">
-                <div class="flex md:contents">
-                  <div class="col-start-1 col-end-2 mr-10 md:mx-auto relative">
-                    <div class="h-full w-6 flex items-center justify-center mt-10">
-                      <div class="hidden md:block h-full w-1 bg-white pointer-events-none"></div>
+            <div className="">
+              <div className="flex flex-col md:grid grid-cols-12 gap-x-0 text-gray-50 md:-ml-10">
+                <div className="flex md:contents">
+                  <div className="col-start-1 col-end-2 mr-10 md:mx-auto relative">
+                    <div className="h-full w-6 flex items-center justify-center mt-10">
+                      <div className=" md:block h-full w-[0.5px] bg-white pointer-events-none"></div>
                     </div>
-                    <div class="w-4 h-4 md:w-8 md:h-8 absolute top-[27%]  left-[-4.6px] -mt-3 rounded-full  bg-primary shadow "></div>
+                    <div className="w-4 h-4 md:w-8 md:h-8 absolute top-[27%]  left-[-4.6px] -mt-3 rounded-full  bg-primary shadow "></div>
                   </div>
-                  <div class=" col-start-2 col-end-12 p-4 rounded-xl my-4 mr-auto ml-[-52px] md:ml-[-33px]  w-full">
-                    <h3 class="font-poppins text-[20px] sm:text-2xl font-semibold leading-10 mb-1">
-                      {" "}
+                  <div className=" col-start-2 col-end-12 p-4 rounded-xl my-4 mr-auto ml-[-52px] md:ml-[-33px]  w-full">
+                    <h3 className="font-poppins text-[20px] sm:text-2xl font-semibold leading-10 mb-1">
+                      {' '}
                       Discovery Meeting
                     </h3>
-                    <p class="font-poppins text-base font-normal leading-6 max-w-lg  ">
+                    <p className="font-poppins text-base font-normal leading-6 max-w-lg  ">
                       In the discovery phase, we conduct a thorough analysis of
                       your business to gather key insights. This enables us to
                       strategically prioritize MVP features that align with your
@@ -279,18 +246,18 @@ function mvp_development_services() {
                   </div>
                 </div>
 
-                <div class="flex md:contents">
-                  <div class="col-start-1 col-end-2 mr-10 md:mx-auto relative">
-                    <div class="h-full w-6 flex items-center justify-center">
-                      <div class="h-full w-1 hidden md:block bg-white pointer-events-none"></div>
+                <div className="flex md:contents">
+                  <div className="col-start-1 col-end-2 mr-10 md:mx-auto relative">
+                    <div className="h-full w-6 flex items-center justify-center">
+                      <div className="h-full w-1 hidden md:block bg-white pointer-events-none"></div>
                     </div>
-                    <div class="w-4 h-4 md:w-8 md:h-8 absolute top-[27%]  left-[-4.6px] -mt-3 rounded-full  bg-primary shadow text-center"></div>
+                    <div className="w-4 h-4 md:w-8 md:h-8 absolute top-[27%]  left-[-4.6px] -mt-3 rounded-full  bg-primary shadow text-center"></div>
                   </div>
-                  <div class=" col-start-2 col-end-12 p-4 rounded-xl my-4 mr-auto ml-[-52px] md:ml-[-33px] w-full">
-                    <h3 class="font-poppins text-[20px] sm:text-2xl font-semibold leading-10 mb-1">
-                      Desiging{" "}
+                  <div className=" col-start-2 col-end-12 p-4 rounded-xl my-4 mr-auto ml-[-52px] md:ml-[-33px] w-full">
+                    <h3 className="font-poppins text-[20px] sm:text-2xl font-semibold leading-10 mb-1">
+                      Desiging{' '}
                     </h3>
-                    <p class="font-poppins text-base font-normal leading-6 max-w-md">
+                    <p className="font-poppins text-base font-normal leading-6 max-w-md">
                       Our innovative approach ensures that we prioritize your
                       user's experience to design a modern MVP that solves real
                       user problems.
@@ -298,18 +265,18 @@ function mvp_development_services() {
                   </div>
                 </div>
 
-                <div class="flex md:contents">
-                  <div class="col-start-1 col-end-2 mr-10 md:mx-auto relative">
-                    <div class="h-full w-6 flex items-center justify-center">
-                      <div class="h-full w-1 hidden md:block bg-white pointer-events-none"></div>
+                <div className="flex md:contents">
+                  <div className="col-start-1 col-end-2 mr-10 md:mx-auto relative">
+                    <div className="h-full w-6 flex items-center justify-center">
+                      <div className="h-full w-1 hidden md:block bg-white pointer-events-none"></div>
                     </div>
-                    <div class="w-4 h-4 md:w-8 md:h-8  absolute top-[27%]  left-[-4.6px] -mt-3 rounded-full  bg-primary shadow text-center"></div>
+                    <div className="w-4 h-4 md:w-8 md:h-8  absolute top-[27%]  left-[-4.6px] -mt-3 rounded-full  bg-primary shadow text-center"></div>
                   </div>
-                  <div class=" col-start-2 col-end-12 p-4 rounded-xl my-4 mr-auto ml-[-52px] md:ml-[-33px] w-full">
-                    <h3 class="font-poppins text-[20px] sm:text-2xl font-semibold leading-10 mb-1 ">
+                  <div className=" col-start-2 col-end-12 p-4 rounded-xl my-4 mr-auto ml-[-52px] md:ml-[-33px] w-full">
+                    <h3 className="font-poppins text-[20px] sm:text-2xl font-semibold leading-10 mb-1 ">
                       Development
                     </h3>
-                    <p class="font-poppins text-base font-normal leading-6 max-w-md">
+                    <p className="font-poppins text-base font-normal leading-6 max-w-md">
                       We ensure excellent results by utilizing the latest tech
                       stack and implementing rigorous code review and
                       development processes.
@@ -317,18 +284,18 @@ function mvp_development_services() {
                   </div>
                 </div>
 
-                <div class="flex md:contents">
-                  <div class="col-start-1 col-end-2 mr-10 md:mx-auto relative">
-                    <div class="h-full w-6 flex items-center justify-center">
-                      <div class="h-full w-1 hidden md:block bg-white pointer-events-none"></div>
+                <div className="flex md:contents">
+                  <div className="col-start-1 col-end-2 mr-10 md:mx-auto relative">
+                    <div className="h-full w-6 flex items-center justify-center">
+                      <div className="h-full w-1 hidden md:block bg-white pointer-events-none"></div>
                     </div>
-                    <div class="w-4 h-4 md:w-8 md:h-8  absolute top-[27%]  left-[-4.6px] -mt-3 rounded-full  bg-primary shadow text-center"></div>
+                    <div className="w-4 h-4 md:w-8 md:h-8  absolute top-[27%]  left-[-4.6px] -mt-3 rounded-full  bg-primary shadow text-center"></div>
                   </div>
-                  <div class=" col-start-2 col-end-12 p-4 rounded-xl my-4 mr-auto ml-[-52px] md:ml-[-33px]  w-full">
-                    <h3 class="font-poppins text-[20px] sm:text-2xl font-semibold leading-10 mb-1">
+                  <div className=" col-start-2 col-end-12 p-4 rounded-xl my-4 mr-auto ml-[-52px] md:ml-[-33px]  w-full">
+                    <h3 className="font-poppins text-[20px] sm:text-2xl font-semibold leading-10 mb-1">
                       Release
                     </h3>
-                    <p class="font-poppins text-base font-normal leading-6 max-w-sm">
+                    <p className="font-poppins text-base font-normal leading-6 max-w-sm">
                       We ensure your product is launch-ready and performs as
                       expected through real device testing and user insights.
                     </p>
@@ -341,20 +308,19 @@ function mvp_development_services() {
       </div>
 
       {/* mvp built by hcode */}
-      <div className=" mt-8 mb-40">
+      <div className=" mt-8 mb-10">
         <SectionHeader
-          heading={" MVPs built by HCode"}
+          heading={' MVPs built by HCode'}
           paragraph={
-            "We have delivered these high quality complete MVP products in very competitive timelines for our clients"
+            'We have delivered these high quality complete MVP products in very competitive timelines for our clients'
           }
         />
-        <div className="lg:-mt-6">
-          <Mvpcards />
+        <div className="-mt-14">
+          <CaseStudiesCard />
         </div>
       </div>
 
       {/* testimonial */}
-
       <div className="py-20 bg-gray-100">
         <Testimonial data={data} />
       </div>
@@ -368,6 +334,7 @@ function mvp_development_services() {
       <section className="bg-gray-100 lg:-mt-56">
         <Accordion data={faq_mvp} />
       </section>
+
       {/* CTA */}
       <div className="py-10 sm:py-0 sm:m-20">
         <CTA
@@ -394,7 +361,7 @@ const SectionHeader = ({ heading, paragraph, cta, ctaText }) => (
               href="/contact"
               className="bg-white text-primary  border-primary border-2 rounded px-16 py-4 text-center"
             >
-              {ctaText || "Tell us about your project"}
+              {ctaText || 'Tell us about your project'}
             </a>
           )}
         </div>

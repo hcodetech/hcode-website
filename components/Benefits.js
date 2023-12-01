@@ -1,6 +1,6 @@
 function Benefits(props) {
   return (
-    <div className={props.background ? "" : ""}>
+    <div className={props.background ? '' : ''}>
       <div className="text-center">
         <h2 className="text-2xl md:text-4xl font-semibold  pt-16">
           {props.data.heading}
@@ -12,7 +12,7 @@ function Benefits(props) {
         </p>
       </div>
       <div className="new-container pb-16 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {props.data.points.map(({ image, heading, descripition }, index) => (
+        {props.data.points.map(({ image, heading, description }, index) => (
           <div key={index} className="pt-16 ">
             <div className=" h-16 w-16">
               <img
@@ -29,7 +29,7 @@ function Benefits(props) {
             <h4 className="text-xl font-semibold mt-4"> {heading}</h4>
             <p
               className="font-light pt-2"
-              dangerouslySetInnerHTML={{ __html: descripition }}
+              dangerouslySetInnerHTML={{ __html: description }}
             />
           </div>
         ))}
