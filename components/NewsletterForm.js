@@ -71,7 +71,7 @@ const NewsletterForm = ({ status, message, onValidated }) => {
             onChange={(event) => setEmail(event?.target?.value ?? '')}
             type="email"
             placeholder="Email"
-            className="border-transparent focus:border-transparent rounded-l-lg focus:ring-0 appearance-none block pl-4 pr-6 py-2 w-auto bg-white text-sm placeholder-gray-400 text-gray-700 focus:bg-white focus:placeholder-gray-600 focus:text-gray-700 focus:outline-none"
+            className="border-transparent  focus:border-transparent rounded-l-lg focus:ring-0 appearance-none block pl-4 pr-6 py-2 w-auto bg-white text-sm placeholder-gray-400 text-gray-700 focus:bg-white focus:placeholder-gray-600 focus:text-gray-700 focus:outline-none"
             onKeyUp={(event) => handleInputKeyEvent(event)}
           />
           <div className="bg-primary border-primary border-2 px-2 focus:outline-none rounded-r-md">
