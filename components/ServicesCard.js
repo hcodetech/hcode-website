@@ -1,6 +1,6 @@
-import { ArrowRightIcon } from "@heroicons/react/solid";
-import Link from "next/link";
-import { our_service } from "../constants/constants";
+import { ArrowRightIcon } from '@heroicons/react/solid';
+import Link from 'next/link';
+import { our_service } from '../constants/constants';
 function ServicesCard({ heading }) {
   return (
     <div className="">
@@ -65,7 +65,7 @@ function ServicesCard({ heading }) {
         </div>
         {/* MVP */}
         <div className="col-span-12 md:col-span-7">
-          <Link href="/our_services/mvp">
+          <Link href="/our_services/mvp-development-services">
             <div className="bg-mvp bg-no-repeat bg-left bg-cover  min-h-[300px] 2xl:h-[400px] h-full   transform transition duration-100 ease-out mb-5 md:mb-0 cursor-pointer hover:opacity-95">
               <div className=" text-black p-8 md:p-10">
                 <h1 className=" text-3xl md:text-4xl font-semibold md:font-bold lg:w-3/4">
@@ -76,7 +76,7 @@ function ServicesCard({ heading }) {
                 </p>
                 <div className=" mt-10">
                   <a
-                    href="/our_services/mvp"
+                    href="/our_services/mvp-development-services"
                     className=" pb-1  border-b border-black inline-flex  cursor-pointer"
                   >
                     Know More
@@ -87,8 +87,8 @@ function ServicesCard({ heading }) {
             </div>
           </Link>
         </div>
-          {/* Blockchain */}
-          <div className="col-span-12 md:col-span-5">
+        {/* Blockchain */}
+        <div className="col-span-12 md:col-span-5">
           <Link href="/our_services/blockchain">
             <div className="bg-blockchain_small md:bg-blockchain bg-[#323941] bg-no-repeat bg-right lg:bg-cover  min-h-[300px] 2xl:h-[400px] h-full   transform transition duration-100 ease-out mb-5 md:mb-0 cursor-pointer hover:opacity-95">
               <div className=" text-white p-8 md:p-10">
@@ -111,7 +111,6 @@ function ServicesCard({ heading }) {
             </div>
           </Link>
         </div>
-
       </div>
     </div>
   );
