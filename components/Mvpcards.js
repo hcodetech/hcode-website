@@ -14,9 +14,45 @@ import { blog_data } from "../constants/constants";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/solid";
 
 function Mvpcards({ data }) {
-    const [portfolioData, isPortfolioDataLoading] = useGetFetch(
-        'https://dev-portal.hcode.tech/api/v1/project/?to_show_on_homepage=true' )
-  return (
+  const [portfolioData, isPortfolioDataLoading] = useGetFetch(
+    "https://dev-portal.hcode.tech/api/v1/project/?to_show_on_homepage=true"
+  );
+  return isPortfolioDataLoading ? (
+    <div>
+      <div className="new-container grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="w-full h-[400px] border  rounded-md mx-auto mt-10">
+          <div className=" animate-pulse flex-row h-full justify-between">
+            <div className="h-1/2 bg-gray-300 w-full mb-4"></div>
+            <div className="p-4">
+              <div className="w-72 bg-gray-300 h-10 rounded-md mb-2 "></div>
+              <div className="w-full bg-gray-300 h-20 rounded-md mb-2 "></div>
+              <div className="w-24 bg-gray-300 h-4 rounded-md mb-2 "></div>
+            </div>
+          </div>
+        </div>
+        <div className="hidden md:block w-full h-[400px] border  rounded-md mx-auto mt-10">
+          <div className=" animate-pulse flex-row h-full justify-between">
+            <div className="h-1/2 bg-gray-300 w-full mb-4"></div>
+            <div className="p-4">
+              <div className="w-72 bg-gray-300 h-10 rounded-md mb-2 "></div>
+              <div className="w-full bg-gray-300 h-20 rounded-md mb-2 "></div>
+              <div className="w-24 bg-gray-300 h-4 rounded-md mb-2 "></div>
+            </div>
+          </div>
+        </div>{" "}
+        <div className=" hidden md:block w-full h-[400px] border  rounded-md mx-auto mt-10">
+          <div className=" animate-pulse flex-row h-full justify-between">
+            <div className="h-1/2 bg-gray-300 w-full mb-4"></div>
+            <div className="p-4">
+              <div className="w-72 bg-gray-300 h-10 rounded-md mb-2 "></div>
+              <div className="w-full bg-gray-300 h-20 rounded-md mb-2 "></div>
+              <div className="w-24 bg-gray-300 h-4 rounded-md mb-2 "></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  ) : (
     <div>
       <div className="hidden md:block">
         <CarouselProvider
@@ -55,7 +91,9 @@ function Mvpcards({ data }) {
                         <h2 className="font-semibold text-2xl my-1">
                           {project.name}
                         </h2>
-                        <p className="leading-7">{project?.short_description}</p>
+                        <p className="leading-7">
+                          {project?.short_description}
+                        </p>
                       </div>
                     </div>
                   </Slide>
@@ -77,7 +115,7 @@ function Mvpcards({ data }) {
       <div className="md:hidden">
         <CarouselProvider
           visibleSlides={1}
-          totalSlides={blog_data.length}
+          totalSlides={portfolioData.length}
           step={1}
           // naturalSlideWidth={400}
           // naturalSlideHeight={500}

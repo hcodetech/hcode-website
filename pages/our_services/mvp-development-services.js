@@ -87,7 +87,7 @@ function mvp_development_services() {
 
           <div className="text-center mt-10 sm:mt-10">
             <a
-              href="/our_services"
+              href="/contact"
               className="bg-primary text-white rounded px-16 py-4 text-center"
             >
               Tell us about your project
@@ -95,8 +95,6 @@ function mvp_development_services() {
           </div>
         </div>
       </section>
-
-      {/* timeline */}
 
       <div className=" new-container pt-10 my-9">
         <Client
@@ -125,7 +123,7 @@ function mvp_development_services() {
         your success through our proven MVP as a Service approach."
       />
 
-      <div className=" new-container -mt-9 mb-12  space-y-10">
+      <div className=" new-container -mt-9 mb-12  space-y-12">
         {/* 1st Card */}
         <div className="  grid grid-cols-12  ease-in-out duration-500 hover:shadow-md md:px-10 hover:p-10 hover:scale-105 hover:border hover:rounded-lg ">
           <div className="col-span-12 lg:col-span-1 h-20 w-20">
@@ -211,7 +209,7 @@ function mvp_development_services() {
         />
       </div>
 
-      <div className="  w-[100%] md:h-[720px] mt-10   bg-mvp_transforn_idea bg-no-repeat  bg-left bg-cover">
+      {/* <div className=" hidden w-[100%] md:h-[720px] mt-10   bg-mvp_transforn_idea bg-no-repeat  bg-left bg-cover">
         <div className="flex flex-col mt-10 text-white  sm:px-1 md:w-[635px] md:ml-[4%] lg:ml-[17%] px-[20px] sm:ml-[33px] sm:mr-[30%] sm:pt-[70px] py-[35px] sm:py-[20px]">
           <h1 className="font-poppins text-[29.6px] sm:text-4xl font-semibold leading-10">
             How We Develop MVP
@@ -249,32 +247,30 @@ function mvp_development_services() {
             through real device testing and user insights.
           </p>
         </div>
-      </div>
+      </div> */}
 
       {/* transform v2 */}
       <div className="  w-[100%] md:h-[850px] mt-10   bg-mvp_transforn_idea bg-no-repeat  bg-left bg-cover">
         <div class="py-7">
-          <div class="p-4 mt-4">
-            <h1 class="font-poppins text-[29.6px] sm:text-4xl font-semibold leading-10 text-left text-white mb-6 lg:ml-96">
-            How We Develop MVP
+          <div class="new-container  mt-4 ">
+            <h1 class=" font-poppins text-[29.6px] sm:text-4xl font-semibold leading-10 text-left text-white mb-6 ">
+              How We Develop MVP
             </h1>
-            <div class="container">
-              <div class="flex flex-col md:grid grid-cols-12 text-gray-50">
+            <div class="">
+              <div class="flex flex-col md:grid grid-cols-12 gap-x-0 text-gray-50 md:-ml-10">
                 <div class="flex md:contents">
-                  <div class="col-start-2 col-end-4 mr-10 md:mx-auto relative">
-                    <div class="h-full w-6 flex items-center justify-center">
-                      <div class="h-full w-1 bg-white pointer-events-none"></div>
+                  <div class="col-start-1 col-end-2 mr-10 md:mx-auto relative">
+                    <div class="h-full w-6 flex items-center justify-center mt-10">
+                      <div class="hidden md:block h-full w-1 bg-white pointer-events-none"></div>
                     </div>
-                    <div class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full  bg-primary shadow text-center">
-                      <i class="fas fa-check-circle text-white"></i>
-                    </div>
+                    <div class="w-4 h-4 md:w-8 md:h-8 absolute top-[27%]  left-[-4.6px] -mt-3 rounded-full  bg-primary shadow "></div>
                   </div>
-                  <div class=" col-start-4 col-end-12 p-4 rounded-xl my-4 mr-auto  w-full">
+                  <div class=" col-start-2 col-end-12 p-4 rounded-xl my-4 mr-auto ml-[-52px] md:ml-[-33px]  w-full">
                     <h3 class="font-poppins text-[20px] sm:text-2xl font-semibold leading-10 mb-1">
                       {" "}
                       Discovery Meeting
                     </h3>
-                    <p class="font-poppins text-base font-normal leading-6 max-w-lg ">
+                    <p class="font-poppins text-base font-normal leading-6 max-w-lg  ">
                       In the discovery phase, we conduct a thorough analysis of
                       your business to gather key insights. This enables us to
                       strategically prioritize MVP features that align with your
@@ -284,16 +280,16 @@ function mvp_development_services() {
                 </div>
 
                 <div class="flex md:contents">
-                  <div class="col-start-2 col-end-4 mr-10 md:mx-auto relative">
+                  <div class="col-start-1 col-end-2 mr-10 md:mx-auto relative">
                     <div class="h-full w-6 flex items-center justify-center">
-                      <div class="h-full w-1  bg-white pointer-events-none"></div>
+                      <div class="h-full w-1 hidden md:block bg-white pointer-events-none"></div>
                     </div>
-                    <div class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full  bg-primary shadow text-center">
-                      <i class="fas fa-check-circle text-white"></i>
-                    </div>
+                    <div class="w-4 h-4 md:w-8 md:h-8 absolute top-[27%]  left-[-4.6px] -mt-3 rounded-full  bg-primary shadow text-center"></div>
                   </div>
-                  <div class=" col-start-4 col-end-12 p-4 rounded-xl my-4 mr-auto  w-full">
-                    <h3 class="font-poppins text-[20px] sm:text-2xl font-semibold leading-10 mb-1">Desiging </h3>
+                  <div class=" col-start-2 col-end-12 p-4 rounded-xl my-4 mr-auto ml-[-52px] md:ml-[-33px] w-full">
+                    <h3 class="font-poppins text-[20px] sm:text-2xl font-semibold leading-10 mb-1">
+                      Desiging{" "}
+                    </h3>
                     <p class="font-poppins text-base font-normal leading-6 max-w-md">
                       Our innovative approach ensures that we prioritize your
                       user's experience to design a modern MVP that solves real
@@ -303,15 +299,13 @@ function mvp_development_services() {
                 </div>
 
                 <div class="flex md:contents">
-                  <div class="col-start-2 col-end-4 mr-10 md:mx-auto relative">
+                  <div class="col-start-1 col-end-2 mr-10 md:mx-auto relative">
                     <div class="h-full w-6 flex items-center justify-center">
-                      <div class="h-full w-1  bg-white pointer-events-none"></div>
+                      <div class="h-full w-1 hidden md:block bg-white pointer-events-none"></div>
                     </div>
-                    <div class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full  bg-primary shadow text-center">
-                      <i class="fas fa-times-circle text-white"></i>
-                    </div>
+                    <div class="w-4 h-4 md:w-8 md:h-8  absolute top-[27%]  left-[-4.6px] -mt-3 rounded-full  bg-primary shadow text-center"></div>
                   </div>
-                  <div class=" col-start-4 col-end-12 p-4 rounded-xl my-4 mr-auto  w-full">
+                  <div class=" col-start-2 col-end-12 p-4 rounded-xl my-4 mr-auto ml-[-52px] md:ml-[-33px] w-full">
                     <h3 class="font-poppins text-[20px] sm:text-2xl font-semibold leading-10 mb-1 ">
                       Development
                     </h3>
@@ -324,15 +318,13 @@ function mvp_development_services() {
                 </div>
 
                 <div class="flex md:contents">
-                  <div class="col-start-2 col-end-4 mr-10 md:mx-auto relative">
+                  <div class="col-start-1 col-end-2 mr-10 md:mx-auto relative">
                     <div class="h-full w-6 flex items-center justify-center">
-                      <div class="h-full w-1  bg-white pointer-events-none"></div>
+                      <div class="h-full w-1 hidden md:block bg-white pointer-events-none"></div>
                     </div>
-                    <div class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full  bg-primary shadow text-center">
-                      <i class="fas fa-exclamation-circle text-gray-400"></i>
-                    </div>
+                    <div class="w-4 h-4 md:w-8 md:h-8  absolute top-[27%]  left-[-4.6px] -mt-3 rounded-full  bg-primary shadow text-center"></div>
                   </div>
-                  <div class=" col-start-4 col-end-12 p-4 rounded-xl my-4 mr-auto w-full">
+                  <div class=" col-start-2 col-end-12 p-4 rounded-xl my-4 mr-auto ml-[-52px] md:ml-[-33px]  w-full">
                     <h3 class="font-poppins text-[20px] sm:text-2xl font-semibold leading-10 mb-1">
                       Release
                     </h3>
