@@ -227,12 +227,12 @@ function mvp_development_services() {
               <div className="flex flex-col md:grid grid-cols-12 gap-x-0 text-gray-50 md:-ml-10">
                 <div className="flex md:contents">
                   <div className="col-start-1 col-end-2 mr-10 md:mx-auto relative">
-                    <div className="h-full w-6 flex items-center justify-center mt-10">
-                      <div className=" md:block h-full w-[0.5px] bg-white pointer-events-none"></div>
+                    <div className="h-full w-6 flex items-center justify-center mt-12">
+                      <div className=" md:block h-full w-1 bg-white pointer-events-none"></div>
                     </div>
-                    <div className="w-4 h-4 md:w-8 md:h-8 absolute top-[27%]  left-[-4.6px] -mt-3 rounded-full  bg-primary shadow "></div>
+                    <div className="w-6 h-6 md:w-8 md:h-8 absolute top-[27%]  left-[0.4px] md:left-[-4.6px] -mt-5 md:-mt-3 rounded-full  bg-primary shadow "></div>
                   </div>
-                  <div className=" col-start-2 col-end-12 p-4 rounded-xl my-4 mr-auto ml-[-52px] md:ml-[-33px]  w-full">
+                  <div className=" col-start-2 col-end-12 p-4 rounded-xl my-4 mr-auto -ml-12  md:ml-[-33px]  w-full">
                     <h3 className="font-poppins text-[20px] sm:text-2xl font-semibold leading-10 mb-1">
                       {' '}
                       Discovery Meeting
@@ -249,11 +249,11 @@ function mvp_development_services() {
                 <div className="flex md:contents">
                   <div className="col-start-1 col-end-2 mr-10 md:mx-auto relative">
                     <div className="h-full w-6 flex items-center justify-center">
-                      <div className="h-full w-1 hidden md:block bg-white pointer-events-none"></div>
+                      <div className="h-full w-1  bg-white pointer-events-none"></div>
                     </div>
-                    <div className="w-4 h-4 md:w-8 md:h-8 absolute top-[27%]  left-[-4.6px] -mt-3 rounded-full  bg-primary shadow text-center"></div>
+                    <div className="w-6 h-6 md:w-8 md:h-8 absolute top-[27%] left-[0.4px] md:left-[-4.6px] -mt-3 rounded-full  bg-primary shadow text-center"></div>
                   </div>
-                  <div className=" col-start-2 col-end-12 p-4 rounded-xl my-4 mr-auto ml-[-52px] md:ml-[-33px] w-full">
+                  <div className=" col-start-2 col-end-12 p-4 rounded-xl my-4 mr-auto -ml-12 md:ml-[-33px] w-full">
                     <h3 className="font-poppins text-[20px] sm:text-2xl font-semibold leading-10 mb-1">
                       Desiging{' '}
                     </h3>
@@ -268,11 +268,11 @@ function mvp_development_services() {
                 <div className="flex md:contents">
                   <div className="col-start-1 col-end-2 mr-10 md:mx-auto relative">
                     <div className="h-full w-6 flex items-center justify-center">
-                      <div className="h-full w-1 hidden md:block bg-white pointer-events-none"></div>
+                      <div className="h-full w-1  bg-white pointer-events-none"></div>
                     </div>
-                    <div className="w-4 h-4 md:w-8 md:h-8  absolute top-[27%]  left-[-4.6px] -mt-3 rounded-full  bg-primary shadow text-center"></div>
+                    <div className="w-6 h-6 md:w-8 md:h-8  absolute top-[27%]  left-[0.4px] md:left-[-4.6px] -mt-3 rounded-full  bg-primary shadow text-center"></div>
                   </div>
-                  <div className=" col-start-2 col-end-12 p-4 rounded-xl my-4 mr-auto ml-[-52px] md:ml-[-33px] w-full">
+                  <div className=" col-start-2 col-end-12 p-4 rounded-xl my-4 mr-auto -ml-12 md:ml-[-33px] w-full">
                     <h3 className="font-poppins text-[20px] sm:text-2xl font-semibold leading-10 mb-1 ">
                       Development
                     </h3>
@@ -287,11 +287,11 @@ function mvp_development_services() {
                 <div className="flex md:contents">
                   <div className="col-start-1 col-end-2 mr-10 md:mx-auto relative">
                     <div className="h-full w-6 flex items-center justify-center">
-                      <div className="h-full w-1 hidden md:block bg-white pointer-events-none"></div>
+                      <div className="h-full w-1  bg-white pointer-events-none"></div>
                     </div>
-                    <div className="w-4 h-4 md:w-8 md:h-8  absolute top-[27%]  left-[-4.6px] -mt-3 rounded-full  bg-primary shadow text-center"></div>
+                    <div className="w-6 h-6 md:w-8 md:h-8  absolute top-[27%] left-[0.4px] md:left-[-4.6px] -mt-3 rounded-full  bg-primary shadow text-center"></div>
                   </div>
-                  <div className=" col-start-2 col-end-12 p-4 rounded-xl my-4 mr-auto ml-[-52px] md:ml-[-33px]  w-full">
+                  <div className=" col-start-2 col-end-12 p-4 rounded-xl my-4 mr-auto -ml-12 md:ml-[-33px]  w-full">
                     <h3 className="font-poppins text-[20px] sm:text-2xl font-semibold leading-10 mb-1">
                       Release
                     </h3>
