@@ -255,7 +255,7 @@ function mvp() {
                   </div>
                   <div className=" col-start-2 col-end-12 p-4 rounded-xl my-4 mr-auto -ml-12 md:ml-[-33px] w-full">
                     <h3 className="font-poppins text-[20px] sm:text-2xl font-semibold leading-10 mb-1">
-                      Desiging{' '}
+                      Designing{' '}
                     </h3>
                     <p className="font-poppins text-base font-normal leading-6 max-w-md">
                       Our innovative approach ensures that we prioritize your
