@@ -1,17 +1,17 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 
-import { getTestimonialData } from '../../utils/config';
+import { getTestimonialData } from "../../utils/config";
 
-import Client from '../../components/Client';
-import Testimonial from '../../components/Testimonial';
-import Accordion from '../../components/Accordion';
-import CTA from '../../components/CTA';
-import MvpBenefits from '../../components/MvpBenefits';
+import Client from "../../components/Client";
+import Testimonial from "../../components/Testimonial";
+import Accordion from "../../components/Accordion";
+import CTA from "../../components/CTA";
+import MvpBenefits from "../../components/MvpBenefits";
 
-import { ArrowRightIcon } from '@heroicons/react/solid';
+import { ArrowRightIcon } from "@heroicons/react/solid";
 
-import Head from 'next/head';
-import MetaTags from '../../components/MetaTags';
+import Head from "next/head";
+import MetaTags from "../../components/MetaTags";
 
 import {
   mvp_services,
@@ -19,12 +19,12 @@ import {
   metaData,
   posts,
   client,
-} from '../../constants/constants';
-import CaseStudiesCard from '../../components/CaseStudiesCard';
+} from "../../constants/constants";
+import CaseStudiesCard from "../../components/CaseStudiesCard";
 
 function mvp_development_services() {
-  const data = getTestimonialData('mvp');
-  const [isDesktop, setIsDesktop] = useState('');
+  const data = getTestimonialData("mvp");
+  const [isDesktop, setIsDesktop] = useState("");
 
   useEffect(() => {
     window.innerWidth <= 750 ? setIsDesktop(false) : setIsDesktop(true);
@@ -234,7 +234,7 @@ function mvp_development_services() {
                   </div>
                   <div className=" col-start-2 col-end-12 p-4 rounded-xl my-4 mr-auto -ml-12  md:ml-[-33px]  w-full">
                     <h3 className="font-poppins text-[20px] sm:text-2xl font-semibold leading-10 mb-1">
-                      {' '}
+                      {" "}
                       Discovery Meeting
                     </h3>
                     <p className="font-poppins text-base font-normal leading-6 max-w-lg  ">
@@ -255,7 +255,7 @@ function mvp_development_services() {
                   </div>
                   <div className=" col-start-2 col-end-12 p-4 rounded-xl my-4 mr-auto -ml-12 md:ml-[-33px] w-full">
                     <h3 className="font-poppins text-[20px] sm:text-2xl font-semibold leading-10 mb-1">
-                      Desiging{' '}
+                      Designing{" "}
                     </h3>
                     <p className="font-poppins text-base font-normal leading-6 max-w-md">
                       Our innovative approach ensures that we prioritize your
@@ -310,9 +310,9 @@ function mvp_development_services() {
       {/* mvp built by hcode */}
       <div className=" mt-8 mb-10">
         <SectionHeader
-          heading={' MVPs built by HCode'}
+          heading={" MVPs built by HCode"}
           paragraph={
-            'We have delivered these high quality complete MVP products in very competitive timelines for our clients'
+            "We have delivered these high quality complete MVP products in very competitive timelines for our clients"
           }
         />
         <div className="-mt-14">
@@ -361,7 +361,7 @@ const SectionHeader = ({ heading, paragraph, cta, ctaText }) => (
               href="/contact"
               className="bg-white text-primary  border-primary border-2 rounded px-16 py-4 text-center"
             >
-              {ctaText || 'Tell us about your project'}
+              {ctaText || "Tell us about your project"}
             </a>
           )}
         </div>
