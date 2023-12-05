@@ -188,7 +188,7 @@ function Footer() {
             <a href="/" className="text-primary font-semibold underline ml-1">
               Hcode.tech
             </a>{' '}
-            | All rights reserved by Hcode Techonologies
+            | All rights reserved by Hcode Technologies
           </div>
           <img
             src={startupindia}

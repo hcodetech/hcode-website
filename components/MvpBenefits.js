@@ -8,7 +8,7 @@ function MvpBenefits(props) {
             MVP
           </span>
           <br />
-          development services provides?
+          development services provider?
         </h2>
         <div className="px-3 py-[2px] max-w-[120px] my-4 bg-blue-500 mx-auto"></div>
 
