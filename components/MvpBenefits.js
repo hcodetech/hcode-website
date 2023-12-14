@@ -25,11 +25,11 @@ function MvpBenefits(props) {
             <div className=" h-16 w-16">
               <img
                 src={image}
+                alt={heading}
                 className=" w-auto object-contain"
                 height="70px"
                 width="70px"
-                loading="lazy"
-                alt="hcode services"
+                loading="lazy"               
               />
             </div>
 

@@ -873,9 +873,9 @@ export const metaData = {
   },
 
   mvp: {
-    title: "MVP Development Services",
+    title: "MVP Development Services|Hcode",
     description:
-      "Get your Minimal Viable Product built by a team of experienced product builders",
+      "Launch smarter with Hcode's MVP Development Services-validate, optimize, and succeed. Your trusted path to impactful digital products.",
     share_image: "https://hcode.tech/assets/img/Meta-Image.jpg",
     url: "https://hcode.tech/our_services/mvp",
   },
@@ -1818,7 +1818,7 @@ export const mvp_services = {
 
   points: [
     {
-      image: "/assets/img/prioritize.svg",
+      image: "/assets/img/prioritize.svg",      
       heading: "We prioritize timely delivery and client transparency",
       description:
         "We promise realistic delivery timelines, prioritize startup challenges in our development process, and communicate openly about any unexpected issues, providing prompt updates and swift resolution",
