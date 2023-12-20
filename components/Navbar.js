@@ -129,7 +129,7 @@ export default function Navbar() {
                   </a>
 
                   <a
-                    href="case_studies"
+                    href="/case_studies"
                     className={` text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium  border-transparent
                       ${
                         pathname === '/case_studies' &&

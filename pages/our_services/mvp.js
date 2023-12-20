@@ -219,9 +219,11 @@ function mvp_development_services() {
                     <div className="w-6 h-6 md:w-8 md:h-8 absolute top-[27%] left-[0.4px] md:left-[-4.6px] -mt-3 rounded-full  bg-primary shadow text-center"></div>
                   </div>
                   <div className=" col-start-2 col-end-12 p-4 rounded-xl my-4 mr-auto -ml-12 md:ml-[-33px] w-full">
-                    <h4 className="font-poppins text-[20px] sm:text-2xl font-semibold leading-10 mb-1">
-                      Designing{" "}
-                    </h4>
+
+                    <h3 className="font-poppins text-[20px] sm:text-2xl font-semibold leading-10 mb-1">
+                      Designing{' '}
+                    </h3>
+
                     <p className="font-poppins text-base font-normal leading-6 max-w-md">
                       Our innovative approach ensures that we prioritize your
                       user's experience to design a modern MVP that solves real
