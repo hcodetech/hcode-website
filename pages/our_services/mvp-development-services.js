@@ -72,7 +72,6 @@ function mvp_development_services() {
         />
       </div>
       {/* our services */}
-      {/* Greate MVP */}
       <section className="bg-[#F8F9FB] mt-24">
         <SectionHeader
           heading="  Success of your product starts with a great MVP"
@@ -94,8 +93,8 @@ function mvp_development_services() {
         {/* 1st Card */}
         <div className="  grid grid-cols-12  ease-in-out duration-500 hover:shadow-md md:px-10 hover:p-10 hover:scale-105 hover:border hover:rounded-lg ">
           <div className="col-span-12 lg:col-span-1 h-20 w-20">
-            <imgmt-4 text-gray-500
-              className=""
+            <img 
+              className="mt-4 text-gray-500"
               src="/assets/img/Group 574.svg"
               alt="MVP Design Services"
             />
@@ -128,7 +127,7 @@ function mvp_development_services() {
         <div className="  grid grid-cols-12  ease-in-out duration-500 hover:shadow-md md:px-10 hover:p-10 hover:scale-105 hover:border hover:rounded-lg ">
           <div className="col-span-12 lg:col-span-1 h-20 w-20">
             <img
-              className=""
+              className="mt-4 text-gray-500"
               src="/assets/img/Group 573.svg"
               alt=" End-to-End Custom MVP Development"
             />
