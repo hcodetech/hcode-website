@@ -37,7 +37,7 @@ function mvp_development_services() {
     const redirectPage = '/our_services/mvp-development-services';
 
     if (window.location.pathname === targetPage) {
-      window.location.href = redirectPage;
+       window.location.href = redirectPage;
     }
   }, []);
 
