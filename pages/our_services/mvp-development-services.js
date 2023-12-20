@@ -9,7 +9,6 @@ import CTA from "../../components/CTA";
 import MvpBenefits from "../../components/MvpBenefits";
 import { Blogs } from "../../components/Blogs";
 
-
 import { ArrowRightIcon } from "@heroicons/react/solid";
 
 import Head from "next/head";
@@ -31,8 +30,6 @@ function mvp_development_services() {
   useEffect(() => {
     window.innerWidth <= 750 ? setIsDesktop(false) : setIsDesktop(true);
   }, []);
-
-
 
   return (
     <>
@@ -93,9 +90,9 @@ function mvp_development_services() {
         {/* 1st Card */}
         <div className="  grid grid-cols-12  ease-in-out duration-500 hover:shadow-md md:px-10 hover:p-10 hover:scale-105 hover:border hover:rounded-lg ">
           <div className="col-span-12 lg:col-span-1 h-20 w-20">
-            <img 
+            <img
               className=""
-              src="/assets/img/Group 574.svg"
+              src="/assets/img/MVP_Design_Services.svg"
               alt="MVP Design Services"
             />
           </div>
@@ -128,7 +125,7 @@ function mvp_development_services() {
           <div className="col-span-12 lg:col-span-1 h-20 w-20">
             <img
               className=""
-              src="/assets/img/Group 573.svg"
+              src="/assets/img/ETE_MVP_Dev.svg"
               alt=" End-to-End Custom MVP Development"
             />
           </div>
@@ -176,7 +173,7 @@ function mvp_development_services() {
       </div>
 
       {/* transform v2 */}
-      <div className="  w-[100%] md:h-[850px] mt-10   bg-mvp_transforn_idea bg-no-repeat  bg-left bg-cover">
+      <div className="  w-[100%] md:h-[850px] mt-10   bg-mvp_transform_idea bg-no-repeat  bg-left bg-cover">
         <div className="py-7">
           <div className="new-container  mt-4 ">
             <h3 className=" font-poppins text-[29.6px] sm:text-4xl font-semibold leading-10 text-left text-white mb-6 ">
