@@ -13,11 +13,11 @@ function Client(props) {
   };
   return (
     <>
-      <h2 className='text-center text-2xl md:text-3xl max-w-2xl mx-auto font-semibold pb-5 md:pb-10'>
+      <h3 className='text-center text-2xl md:text-3xl max-w-2xl mx-auto font-semibold pb-5 md:pb-10'>
         {props.heading
           ? ""
           : "We're trusted by many fast growing companies for their tech needs"}
-      </h2>
+      </h3>
       <Slider {...SliderData}>
         {props.data.map(({ img, name, alt, webp_img }, index) => (
           <div className='text-center' key={index}>
