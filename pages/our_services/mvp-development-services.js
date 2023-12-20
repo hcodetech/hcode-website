@@ -7,6 +7,8 @@ import Testimonial from "../../components/Testimonial";
 import Accordion from "../../components/Accordion";
 import CTA from "../../components/CTA";
 import MvpBenefits from "../../components/MvpBenefits";
+import { Blogs } from "../../components/Blogs";
+
 
 import { ArrowRightIcon } from "@heroicons/react/solid";
 
@@ -30,50 +32,7 @@ function mvp_development_services() {
     window.innerWidth <= 750 ? setIsDesktop(false) : setIsDesktop(true);
   }, []);
 
-  function Blogs() {
-    return (
-      <div className="bg-white pt-5 pb-20 sm:py-32">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="max-w-2xl">
-            <p className="font-poppins text-[26px] font-semibold leading-8 sm:text-4xl">
-              Blogs
-            </p>
-          </div>
-          <div className="mx-auto mt-14 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:h-[700px] ">
-            {posts.map((post) => (
-              <a href={post.href} key={post.href}>
-                <article
-                  key={post.id}
-                  className="flex flex-col items-start duration-100  hover:scale-105"
-                >
-                  <div className="relative  w-full">
-                    <img
-                      src={post.imageUrl}
-                      alt={post.title}
-                      className="aspect-[16/9] w-full  bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2] lg:h-[300px]"
-                    />
-                  </div>
-                  <div className="max-w-xl">
-                    <div className="group relative">
-                      <h3 className="mt-3 text-[20px] font-semibold leading-6 text-gray-900 group-hover:text-primary">
-                        <a href={post.href}>
-                          <span className="absolute inset-0" />
-                          {post.title}
-                        </a>
-                      </h3>
-                      <p className="mt-5 line-clamp-3 text-[17px] leading-6 text-gray-600 px-2 -ml-2">
-                        {post.description}
-                      </p>
-                    </div>
-                  </div>
-                </article>
-              </a>
-            ))}
-          </div>
-        </div>
-      </div>
-    );
-  }
+
 
   return (
     <>
@@ -87,11 +46,11 @@ function mvp_development_services() {
           <h1 className="font-bold text-4xl sm:text-7xl text-primary py-4 w-[95.33%] sm:w-[102%]">
             MVP Development Services
           </h1>
-          <h2 className="font-poppins text-black text-[20px] px-5 sm:text-2xl font-medium py-3 leading-7 md:leading-10 ">
+          <p className="font-poppins text-black text-[20px] px-5 sm:text-2xl font-medium py-3 leading-7 md:leading-10 ">
             Validate your business idea with a real-world beta test of your
             digital product, and launch smarter with HCode MVP development
             services.
-          </h2>
+          </p>
 
           <div className="text-center mt-10 sm:mt-10">
             <a
@@ -142,9 +101,9 @@ function mvp_development_services() {
             />
           </div>
           <div className="col-span-12 lg:col-span-11 mt-4 md:mt-0 space-y-3 md:space-y-5">
-            <h4 className=" font-poppins text-3xl  text-black font-semibold   ">
+            <h3 className=" font-poppins text-3xl  text-black font-semibold   ">
               MVP Design Services
-            </h4>
+            </h3>
             <p className=" font-poppins text-xl text-black font-normal leading-7">
               We transform product ideas into user-friendly prototypes,
               encompassing core feature definition, user-friendly interface
@@ -175,9 +134,9 @@ function mvp_development_services() {
             />
           </div>
           <div className="col-span-12 lg:col-span-11 mt-4 md:mt-0 space-y-3 md:space-y-5">
-            <p className=" font-poppins text-3xl  text-black font-semibold   ">
+            <h3 className=" font-poppins text-3xl  text-black font-semibold   ">
               End-to-End Custom MVP Development
-            </p>
+            </h3>
             <p className=" font-poppins text-xl text-black font-normal leading-7  ">
               HCode's MVP development services provide rapid delivery of
               high-quality MVPs, leveraging cutting-edge technologies to
@@ -221,9 +180,9 @@ function mvp_development_services() {
       <div className="  w-[100%] md:h-[850px] mt-10   bg-mvp_transforn_idea bg-no-repeat  bg-left bg-cover">
         <div className="py-7">
           <div className="new-container  mt-4 ">
-            <h1 className=" font-poppins text-[29.6px] sm:text-4xl font-semibold leading-10 text-left text-white mb-6 ">
+            <h3 className=" font-poppins text-[29.6px] sm:text-4xl font-semibold leading-10 text-left text-white mb-6 ">
               How We Develop MVP
-            </h1>
+            </h3>
             <div className="">
               <div className="flex flex-col md:grid grid-cols-12 gap-x-0 text-gray-50 md:-ml-10">
                 <div className="flex md:contents">
@@ -234,10 +193,10 @@ function mvp_development_services() {
                     <div className="w-6 h-6 md:w-8 md:h-8 absolute top-[27%]  left-[0.4px] md:left-[-4.6px] -mt-5 md:-mt-3 rounded-full  bg-primary shadow "></div>
                   </div>
                   <div className=" col-start-2 col-end-12 p-4 rounded-xl my-4 mr-auto -ml-12  md:ml-[-33px]  w-full">
-                    <p className="font-poppins text-[20px] sm:text-2xl font-semibold leading-10 mb-1">
+                    <h4 className="font-poppins text-[20px] sm:text-2xl font-semibold leading-10 mb-1">
                       {" "}
                       Discovery Meeting
-                    </p>
+                    </h4>
                     <p className="font-poppins text-base font-normal leading-6 max-w-lg  ">
                       In the discovery phase, we conduct a thorough analysis of
                       your business to gather key insights. This enables us to
@@ -255,9 +214,9 @@ function mvp_development_services() {
                     <div className="w-6 h-6 md:w-8 md:h-8 absolute top-[27%] left-[0.4px] md:left-[-4.6px] -mt-3 rounded-full  bg-primary shadow text-center"></div>
                   </div>
                   <div className=" col-start-2 col-end-12 p-4 rounded-xl my-4 mr-auto -ml-12 md:ml-[-33px] w-full">
-                    <p className="font-poppins text-[20px] sm:text-2xl font-semibold leading-10 mb-1">
+                    <h4 className="font-poppins text-[20px] sm:text-2xl font-semibold leading-10 mb-1">
                       Designing{" "}
-                    </p>
+                    </h4>
                     <p className="font-poppins text-base font-normal leading-6 max-w-md">
                       Our innovative approach ensures that we prioritize your
                       user's experience to design a modern MVP that solves real
@@ -274,9 +233,9 @@ function mvp_development_services() {
                     <div className="w-6 h-6 md:w-8 md:h-8  absolute top-[27%]  left-[0.4px] md:left-[-4.6px] -mt-3 rounded-full  bg-primary shadow text-center"></div>
                   </div>
                   <div className=" col-start-2 col-end-12 p-4 rounded-xl my-4 mr-auto -ml-12 md:ml-[-33px] w-full">
-                    <p className="font-poppins text-[20px] sm:text-2xl font-semibold leading-10 mb-1 ">
+                    <h4 className="font-poppins text-[20px] sm:text-2xl font-semibold leading-10 mb-1 ">
                       Development
-                    </p>
+                    </h4>
                     <p className="font-poppins text-base font-normal leading-6 max-w-md">
                       We ensure excellent results by utilizing the latest tech
                       stack and implementing rigorous code review and
@@ -293,9 +252,9 @@ function mvp_development_services() {
                     <div className="w-6 h-6 md:w-8 md:h-8  absolute top-[27%] left-[0.4px] md:left-[-4.6px] -mt-3 rounded-full  bg-primary shadow text-center"></div>
                   </div>
                   <div className=" col-start-2 col-end-12 p-4 rounded-xl my-4 mr-auto -ml-12 md:ml-[-33px]  w-full">
-                    <p className="font-poppins text-[20px] sm:text-2xl font-semibold leading-10 mb-1">
+                    <h4 className="font-poppins text-[20px] sm:text-2xl font-semibold leading-10 mb-1">
                       Release
-                    </p>
+                    </h4>
                     <p className="font-poppins text-base font-normal leading-6 max-w-sm">
                       We ensure your product is launch-ready and performs as
                       expected through real device testing and user insights.
@@ -328,7 +287,7 @@ function mvp_development_services() {
 
       {/* blogs section  */}
       <div className="sm:new-container  ">
-        <Blogs />
+        <Blogs data={posts} />
       </div>
 
       {/* FAQ */}

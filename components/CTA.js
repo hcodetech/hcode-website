@@ -8,9 +8,9 @@ function CTA({ heading, paragraph, buttonText, widthClass }) {
             widthClass ?? 'lg:w-1/2'
           }`}
         >
-          <h1 className="text-2xl font-semibold">
+          <h3 className="text-2xl font-semibold">
             {heading ?? 'Hire Dedicated Developers'}
-          </h1>
+          </h3>
           <p className=" text-lg mt-2">
             {paragraph ?? 'Get our top talent working for you right away'}
           </p>
