@@ -12,7 +12,7 @@ function MvpBenefits(props) {
         </h2>
         <div className="px-3 py-[2px] max-w-[120px] my-4 bg-blue-500 mx-auto"></div>
 
-        <p className="text-base font-normal leading-7 md:w-1/2 mx-auto pt-2">
+        <p className="text-base font-light sm:font-normal leading-7 md:w-1/2 mx-auto pt-2">
           We are more than just developers; we are your partners in achieving
           your product and business objectives. We share your commitment to
           excellence and are dedicated to finding solutions that exceed your

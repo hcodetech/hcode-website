@@ -13,8 +13,8 @@ function Footer() {
   return (
     <footer className="footer-1 bg-gray-100 pt-6  pb-12 z-30">
       <div className="new-container mx-auto px-4">
-        <div className=" md:py-4 grid grid-cols-12 gap-8">
-          <div className="px-4 col-span-12 md:col-span-3 ">
+        <div className=" md:py-4 grid grid-cols-12  gap-5 sm:gap-8">
+          <div className="px-4 col-span-12 md:col-span-3">
             <div className="md:w-3/4">
               <img
                 src={hcode_footer}
@@ -55,7 +55,7 @@ function Footer() {
                 />
               </a>
             </div>
-            <div className="md:hidden sm:w-[auto] md:w-[auto] xl:w-[auto] mt-8 md:mt-[-28px]">
+            <div className="md:hidden w-full sm:w-[auto] md:w-[auto] xl:w-[auto] mt-8 md:mt-[-28px]">
               <NewsletterComponent />
             </div>
           </div>

@@ -24,7 +24,7 @@ function CaseStudiesCard({ data }) {
         <div className=" animate-pulse flex-row h-full justify-between">
           <div className="h-1/2 bg-gray-300 w-full mb-4"></div>
           <div className="p-4">
-            <div className="w-72 bg-gray-300 h-10 rounded-md mb-2 "></div>
+            <div className="w-52 bg-gray-300 h-10 rounded-md mb-2 "></div>
             <div className="w-full bg-gray-300 h-20 rounded-md mb-2 "></div>
             <div className="w-24 bg-gray-300 h-4 rounded-md mb-2 "></div>
           </div>
