@@ -94,11 +94,11 @@ function About() {
       </div>
 
       {/* Core Team  */}
-      <section className='new-container pt-14  text-center'>
+      <section className='new-container pt-24  text-center'>
         <h2 className='font-poppins text-center font-semibold text-3xl  md:text-4xl md:leading-tight'>
           Leadership Team
         </h2>
-        <div className='grid grid-cols-1 lg:grid-cols-4 gap-2  mt-7'>
+        <div className='grid grid-cols-1 lg:grid-cols-5 gap-2  mt-7'>
           {TEAM.map(({ name, image, bio, link, title }, index) => (
             <Team
               key={name}

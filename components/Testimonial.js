@@ -34,7 +34,7 @@ function Testimonial({ data }) {
             <Slider>
               {data?.map((message, index) => (
                 <Slide index={message.id} key={index}>
-                  <div className="p-10">
+                  <div className="p-1 sm:p-10">
                     <div className="md:flex">
                       <picture>
                         <source

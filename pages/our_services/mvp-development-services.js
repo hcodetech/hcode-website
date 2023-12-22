@@ -42,7 +42,7 @@ function mvp_development_services() {
           <h1 className="font-bold text-4xl sm:text-7xl text-primary py-4 w-[95.33%] sm:w-[102%]">
             MVP Development Services
           </h1>
-          <p className="font-poppins text-black text-[20px] px-5 sm:text-2xl font-medium py-3 leading-7 md:leading-10 ">
+          <p className="font-poppins text-black  px-5 sm:text-2xl font-light py-3 leading-7 md:leading-10 ">
             Validate your business idea with a real-world beta test of your
             digital product, and launch smarter with HCode MVP development
             services.
@@ -51,7 +51,7 @@ function mvp_development_services() {
           <div className="text-center mt-10 sm:mt-10">
             <a
               href="/contact"
-              className="bg-primary text-white rounded px-16 py-4 text-center"
+              className="bg-primary text-white font-light rounded px-16 py-4 text-center"
             >
               Tell us about your project
             </a>
@@ -96,10 +96,10 @@ function mvp_development_services() {
             />
           </div>
           <div className="col-span-12 lg:col-span-11 mt-4 md:mt-0 space-y-3 md:space-y-5">
-            <h3 className=" font-poppins text-3xl  text-black font-semibold   ">
+            <h3 className=" font-poppins text-2xl md:text-3xl  text-black font-semibold   ">
               MVP Design Services
             </h3>
-            <p className=" font-poppins text-xl text-black font-normal leading-7">
+            <p className="font-poppins font-light  sm:text-lg text-black sm:font-normal leading-7">
               We transform product ideas into user-friendly prototypes,
               encompassing core feature definition, user-friendly interface
               design, and prototype development. Our MVP design services include
@@ -129,10 +129,10 @@ function mvp_development_services() {
             />
           </div>
           <div className="col-span-12 lg:col-span-11 mt-4 md:mt-0 space-y-3 md:space-y-5">
-            <h3 className=" font-poppins text-3xl  text-black font-semibold   ">
+            <h3 className=" font-poppins text-2xl sm:text-3xl  text-black font-semibold   ">
               End-to-End Custom MVP Development
             </h3>
-            <p className=" font-poppins text-xl text-black font-normal leading-7  ">
+            <p className=" font-poppins font-light  sm:text-lg text-black sm:font-normal leading-7">
               HCode's MVP development services provide rapid delivery of
               high-quality MVPs, leveraging cutting-edge technologies to
               accelerate product launch. Our team of experts builds MVPs for
@@ -194,7 +194,7 @@ function mvp_development_services() {
                       {" "}
                       Discovery Meeting
                     </h4>
-                    <p className="font-poppins text-base font-normal leading-6 max-w-lg  ">
+                    <p className="font-poppins text-base font-light sm:font-normal leading-6 max-w-lg">
                       In the discovery phase, we conduct a thorough analysis of
                       your business to gather key insights. This enables us to
                       strategically prioritize MVP features that align with your
@@ -216,7 +216,7 @@ function mvp_development_services() {
                       Designing{" "}
                     </h4>
 
-                    <p className="font-poppins text-base font-normal leading-6 max-w-md">
+                    <p className="font-poppins text-base font-light sm:font-normal leading-6 max-w-md">
                       Our innovative approach ensures that we prioritize your
                       user's experience to design a modern MVP that solves real
                       user problems.
@@ -235,7 +235,7 @@ function mvp_development_services() {
                     <h4 className="font-poppins text-[20px] sm:text-2xl font-semibold leading-10 mb-1 ">
                       Development
                     </h4>
-                    <p className="font-poppins text-base font-normal leading-6 max-w-md">
+                    <p className="font-poppins text-base  font-light sm:font-normal leading-6 max-w-md">
                       We ensure excellent results by utilizing the latest tech
                       stack and implementing rigorous code review and
                       development processes.
@@ -280,7 +280,7 @@ function mvp_development_services() {
       </div>
 
       {/* testimonial */}
-      <div className="py-20 bg-gray-100">
+      <div className="py-20 mt-24 bg-gray-100">
         <Testimonial data={data} />
       </div>
 
@@ -311,14 +311,14 @@ const SectionHeader = ({ heading, paragraph, cta, ctaText }) => (
   <div>
     <div className="new-container text-center mx-auto  py-16 ">
       <div className="max-w-lg mx-auto ">
-        <h2 className="font-semibold text-4xl my-4">{heading}</h2>
+        <h2 className="font-semibold text-3xl md:text-4xl my-4">{heading}</h2>
         <div className="px-3 py-[2px] max-w-[120px] my-4 bg-blue-500 mx-auto"></div>
-        <p className="text-xl pt-1 pb-6">{paragraph}</p>
+        <p className="sm:text-xl font-light sm:font-normal pt-1 pb-6">{paragraph}</p>
         <div className="mt-6">
           {cta && (
             <a
               href="/contact"
-              className="bg-white text-primary  border-primary border-2 rounded px-16 py-4 text-center"
+              className="bg-white text-primary  border-primary border-2 rounded px-5 sm:px-16 py-4 text-center"
             >
               {ctaText || "Tell us about your project"}
             </a>
