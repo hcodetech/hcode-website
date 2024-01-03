@@ -1,30 +1,34 @@
-// /** @format */
+import { useState, useEffect } from "react";
 
-import React, { useEffect, useState } from 'react';
+import { getTestimonialData } from "../../utils/config";
 
-import Head from 'next/head';
-import Accordion from '../../components/Accordion';
-import Benefits from '../../components/Benefits';
-import CTA from '../../components/CTA';
-import CardPortfolio from '../../components/CardPortfolio';
-import Client from '../../components/Client';
-import MetaTags from '../../components/MetaTags';
-import Testimonial from '../../components/Testimonial';
+import Client from "../../components/Client";
+import Testimonial from "../../components/Testimonial";
+import Accordion from "../../components/Accordion";
+import CTA from "../../components/CTA";
+import { Blogs } from "../../components/Blogs";
+import { ArrowRightIcon } from "@heroicons/react/solid";
+import Benefits from "../../components/Benefits";
+import CardPortfolio from "../../components/CardPortfolio";
+
+import Head from "next/head";
+import MetaTags from "../../components/MetaTags";
+
 import {
-  AIService_Hero,
   ai_benefits,
   ai_services,
   ai_technologies,
-  client,
   faq_ai,
   metaData,
-} from '../../constants/constants';
-import { getTestimonialData } from '../../utils/config';
+  posts,
+  client,
+} from "../../constants/constants";
 import { getAPIUrl } from '../api/APIHelpers';
 import { apiRoutes } from '../api/APIRoutes';
 import useGetFetch from '../hooks/useGetFetch';
 
-const AIService = () => {
+function AIService() {
+
   const [isDesktop, setIsDesktop] = useState('');
   const selectedCategory = ['AI'];
 
@@ -36,79 +40,60 @@ const AIService = () => {
   const data = getTestimonialData('AI');
 
   return (
-    <div>
+    <>
       <Head>
-        <title>AI services | Hcode Technologies</title>
+        <title> AI Services | Hcode </title>
         <MetaTags page={metaData.AI} />
       </Head>
-
-      {/* Hero Section */}
-      <div className="new-container  grid  grid-cols-2 md:grid-cols-4 pt-16 ">
-        <div className="py-5 md:py-24 md:pr-28 mt-20 col-span-2 order-2 md:order-1">
-          <h1 className="text-3xl lg:text-5xl font-semibold">
-            Seamless AI Integration Solutions for Your Business
+      
+      <section className="h-screen bg-gray-50  bg-mvp_bg_img bg-no-repeat bg-cover">
+        <div className="max-w-2xl sm:px-4 h-2/5 pt-[275px] sm:pt-64 mx-auto flex  flex-col items-center	text-center">
+          <h1 className="font-bold text-4xl sm:text-7xl text-primary py-4 w-[95.33%] sm:w-[102%]">
+            AI Integration Services
           </h1>
-
-          <p className="py-5 text-lg font-light">
-            With Our Expertise, Your Business Will Seamlessly Integrate AI
-            Solutions for Enhanced Efficiency,  Data Insights, and Competitive
-            Advantage
+          <p className="font-poppins text-black  px-5 sm:text-2xl font-light py-3 leading-7 md:leading-10 ">
+            Gain a competitive edge and grow beyond limits. Unlock AI's
+            potential with our AI integration services and open the doors to
+            unparalleled growth.
           </p>
 
-          <div className="mt-5">
-            <a href="/contact" target="_blank" className="primary-button">
-              Get in Touch
+          <div className="text-center mt-10 sm:mt-10">
+            <a
+              href="/contact"
+              className="bg-primary text-white font-light rounded px-16 py-4 text-center"
+            >
+              Take the leap.
             </a>
           </div>
         </div>
-        <div className="col-span-2 order-1 md:order-2">
-          <img src={AIService_Hero} alt="AI services" className="w-full" />
-        </div>
+      </section>
+
+      <div className=" new-container pt-10 my-9">
+        <Client
+          logoWidth={250}
+          logoHeight={100}
+          data={client}
+          slides={isDesktop}
+        />
       </div>
 
-      <section className="new-container pt-20 pb-32">
-        <Client data={client} slides={isDesktop} />
+      {/* our services */}
+      <section className="bg-[#F8F9FB] mt-24">
+        <SectionHeader
+          heading="  The world is harnessing AI, what's stopping you? "
+          paragraph=" Maximize productivity and streamline processes with our customizable AI integration services. We seamlessly integrate Generative AI into your workflows to drive innovation and achieve optimal business performance."
+          cta
+        />
       </section>
 
-      {/* Tech Services */}
-      <section className=" pb-14 new-container">
-        <div className="text-center">
-          <h1 className="text-2xl lg:text-4xl font-semibold">
-            Our AI Integration Services
-          </h1>
-          <p className="max-w-xl  mx-auto mt-3 leading-relaxed text-lg text-gray-700">
-            Our range of services seamlessly embeds artificial intelligence into
-            your operations, enhancing efficiency and driving competitiveness.
-            Explore our offerings below to unlock the power of AI for your
-            organization.
-          </p>
-        </div>
+      {/* Our AI Integration Services */}
+      <SectionHeader
+        heading="Our AI Integration Services"
+        paragraph=" Our services utilize AI integrational tools to seamlessly embed artificial intelligence into your operations, enhancing efficiency and driving competitiveness."
+      />
+      <AiIntegrationServices />
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-12 mt-10">
-          {ai_services.points.map((data) => (
-            <div
-              className="bg-gray-100 p-8 col-span-2 border-b-[6px] border-primary hover:bg-gray-50 "
-              key={data.heading}
-            >
-              <div className="bg-gray-300 w-20 h-20 mb-2 flex justify-center items-center rounded-full">
-                <img src={data.image} />
-              </div>
-
-              <h3 className="text-xl pt-2 font-semibold">{data.heading}</h3>
-              <p className="text-gray-700 mt-1 leading-relaxed sm:pr-8">
-                {data.description}
-              </p>
-            </div>
-          ))}
-        </div>
-
-        <div className=" text-center mt-14 pt-2 pb-8">
-          <a href="/contact" className="primary-outline">
-            <span className="px-5">Contact Us</span>
-          </a>
-        </div>
-      </section>
-
+      {/* We have experience in following AI Technologies and Integrations */}
       <div className="bg-gray-100 py-10 my-8">
         <section className="py-10 lg:py-16 new-container">
           <div className="text-center ">
@@ -131,6 +116,118 @@ const AIService = () => {
           </div>
         </section>
       </div>
+
+      {/* Benefits */}
+      <section className=" pt-12">
+        <div className="new-container ">
+          <Benefits data={ai_benefits} additionalClass="max-w-2xl" />
+        </div>
+      </section>
+
+      <div className="my-10 ">
+        <CTA
+          heading="Tap into the disruptive potential of AI "
+          paragraph="Allow us to guide you in unlocking the advanced capabilities of artificial intelligence, revolutionizing your operational framework with cutting-edge efficiency."
+          buttonText="Speak to our AI Experts."
+          widthClass="w-full"
+        />
+      </div>
+
+      {/* AI Integration Process with HCode */}
+      <section className="  w-[100%] md:h-[800px] mt-10   bg-mvp_transform_idea bg-no-repeat  bg-left bg-cover">
+        <div className="py-7">
+          <div className="new-container  mt-4 ">
+            <h3 className=" font-poppins text-[29.6px] sm:text-4xl font-semibold leading-10 text-left text-white mb-6 ">
+              AI Integration Process with HCode
+            </h3>
+            <div className="">
+              <div className="flex flex-col md:grid grid-cols-12 gap-x-0 text-gray-50 md:-ml-10">
+                <div className="flex md:contents">
+                  <div className="col-start-1 col-end-2 mr-10 md:mx-auto relative">
+                    <div className="h-full w-6 flex items-center justify-center mt-12">
+                      <div className=" md:block h-full w-1 bg-white pointer-events-none"></div>
+                    </div>
+                    <div className="w-6 h-6 md:w-8 md:h-8 absolute top-[27%]  left-[0.4px] md:left-[-4.6px] -mt-5 md:-mt-3 rounded-full  bg-primary shadow "></div>
+                  </div>
+                  <div className=" col-start-2 col-end-12 p-4 rounded-xl my-4 mr-auto -ml-12  md:ml-[-33px]  w-full">
+                    <h4 className="font-poppins text-[20px] sm:text-2xl font-semibold leading-10 mb-1">
+                      {" "}
+                      Client Interaction:
+                    </h4>
+                    <p className="font-poppins text-base font-light sm:font-normal leading-6 max-w-xl">
+                      We analyze your needs, goals, and infrastructure to
+                      identify AI solutions. Then we present an integration plan
+                      detailing the chosen AI integration tools, data pipelines,
+                      and deployment strategy.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex md:contents">
+                  <div className="col-start-1 col-end-2 mr-10 md:mx-auto relative">
+                    <div className="h-full w-6 flex items-center justify-center">
+                      <div className="h-full w-1  bg-white pointer-events-none"></div>
+                    </div>
+                    <div className="w-6 h-6 md:w-8 md:h-8 absolute top-[27%] left-[0.4px] md:left-[-4.6px] -mt-3 rounded-full  bg-primary shadow text-center"></div>
+                  </div>
+                  <div className=" col-start-2 col-end-12 p-4 rounded-xl my-4 mr-auto -ml-12 md:ml-[-33px] w-full">
+                    <h4 className="font-poppins text-[20px] sm:text-2xl font-semibold leading-10 mb-1">
+                      Integration & Customization
+                    </h4>
+
+                    <p className="font-poppins text-base font-light sm:font-normal leading-6 max-w-xl">
+                      We prepare and structure your data to be compatible with
+                      the chosen AI models. Train and fine-tune the AI models on
+                      your specific data. Monitor performance and iterate to
+                      optimize accuracy and relevance.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex md:contents">
+                  <div className="col-start-1 col-end-2 mr-10 md:mx-auto relative">
+                    <div className="h-full w-6 flex items-center justify-center">
+                      <div className="h-full w-1  bg-white pointer-events-none"></div>
+                    </div>
+                    <div className="w-6 h-6 md:w-8 md:h-8  absolute top-[27%]  left-[0.4px] md:left-[-4.6px] -mt-3 rounded-full  bg-primary shadow text-center"></div>
+                  </div>
+                  <div className=" col-start-2 col-end-12 p-4 rounded-xl my-4 mr-auto -ml-12 md:ml-[-33px] w-full">
+                    <h4 className="font-poppins text-[20px] sm:text-2xl font-semibold leading-10 mb-1 ">
+                      Deployment & Training{" "}
+                    </h4>
+                    <p className="font-poppins text-base  font-light sm:font-normal leading-6 max-w-xl">
+                      Then, we seamlessly integrate the trained AI models into
+                      your existing workflows and applications using APIs or
+                      custom code. We provide user training and ongoing support
+                      to ensure smooth adoption.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex md:contents">
+                  <div className="col-start-1 col-end-2 mr-10 md:mx-auto relative">
+                    <div className="h-full w-6 flex items-center justify-center">
+                      <div className="h-full w-1  bg-white pointer-events-none"></div>
+                    </div>
+                    <div className="w-6 h-6 md:w-8 md:h-8  absolute top-[27%] left-[0.4px] md:left-[-4.6px] -mt-3 rounded-full  bg-primary shadow text-center"></div>
+                  </div>
+                  <div className=" col-start-2 col-end-12 p-4 rounded-xl my-4 mr-auto -ml-12 md:ml-[-33px]  w-full">
+                    <h4 className="font-poppins text-[20px] sm:text-2xl font-semibold leading-10 mb-1">
+                      Release & Support
+                    </h4>
+                    <p className="font-poppins text-base font-normal leading-6 max-w-xl">
+                      We continuously monitor the performance of your AI
+                      integration, track key metrics, and identify areas for
+                      improvement. We keep it up-to-date with the latest
+                      advancements, ensuring your success story unfolds.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Portfolio */}
       <section className="py-10">
@@ -155,33 +252,77 @@ const AIService = () => {
         </div>
       </section>
 
-      {/* Testimonial */}
-      <div className="pt-10 pb-0 bg-gray-100">
+      {/* testimonial */}
+      <div className="py-20 mt-24 bg-gray-100">
         <Testimonial data={data} />
       </div>
 
-      {/* Benefits */}
-      <section className=" pt-12">
-        <div className="new-container ">
-          <Benefits data={ai_benefits} additionalClass="max-w-2xl" />
-        </div>
-      </section>
+      {/* blogs section  */}
+      <div className="sm:new-container  ">
+        <Blogs data={posts} />
+      </div>
 
       {/* FAQ */}
-      <section className="bg-gray-100">
+      <section className="bg-gray-100 lg:-mt-56">
         <Accordion data={faq_ai} />
       </section>
 
-      {/* CTA */}
-      <div className="my-10 ">
-        <CTA
-          heading="Let's work with AI"
-          paragraph="Get our top talent working for you right away"
-          widthClass="w-full"
-        />
+    </>
+  );
+}
+export default AIService ;
+
+const SectionHeader = ({ heading, paragraph, cta, ctaText }) => (
+  <div>
+    <div className="new-container text-center mx-auto  py-16 ">
+      <div className="max-w-lg mx-auto ">
+        <h2 className="font-semibold text-3xl md:text-4xl my-4">{heading}</h2>
+        <div className="px-3 py-[2px] max-w-[120px] my-4 bg-blue-500 mx-auto"></div>
+        <p className="sm:text-xl font-light sm:font-normal pt-1 pb-6">
+          {paragraph}
+        </p>
+        <div className="mt-6">
+          {cta && (
+            <a
+              href="/contact"
+              className="bg-white text-primary  border-primary border-2 rounded px-5 sm:px-16 py-4 text-center hover:bg-primary hover:text-white hover:border-white"
+            >
+              {ctaText || "Tell us about your project"}
+            </a>
+          )}
+        </div>
       </div>
     </div>
-  );
-};
+  </div>
+);
 
-export default AIService;
+function AiIntegrationServices() {
+  return (
+    <div className=" new-container -mt-9 mb-12  space-y-12">
+      {ai_services.points.map(({ heading, image, description }) => (
+        <div className="  grid grid-cols-12  ease-in-out duration-500 hover:shadow-md md:px-10 hover:p-10 hover:scale-105 hover:border hover:rounded-lg ">
+          <div className="col-span-12 lg:col-span-1 h-20 w-20">
+            <img className="" src={image} alt={heading} />
+          </div>
+          <div className="col-span-12 lg:col-span-11 mt-4 md:mt-0 space-y-3 md:space-y-5">
+            <h3 className=" font-poppins text-2xl md:text-3xl  text-black font-semibold   ">
+              {heading}
+            </h3>
+            <p className="font-poppins font-light  sm:text-lg text-black sm:font-normal leading-7">
+              {description}
+            </p>
+
+            <a
+              href="https://calendly.com/gaurav-tomar/30min"
+              target="_blank"
+              className=" text-lg flex items-center mt-2 w-50 text-gray-500 cursor-pointer hover:underline  "
+            >
+              Schedule a brief call
+              <ArrowRightIcon className="w-6 md:ml-2  h-full text-gray-500" />
+            </a>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+}
