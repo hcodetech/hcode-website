@@ -318,7 +318,7 @@ const SectionHeader = ({ heading, paragraph, cta, ctaText }) => (
           {cta && (
             <a
               href="/contact"
-              className="bg-white text-primary  border-primary border-2 rounded px-5 sm:px-16 py-4 text-center"
+              className="bg-white text-primary  border-primary border-2 rounded px-5 sm:px-16 py-4 text-center hover:bg-primary hover:text-white hover:border-white"
             >
               {ctaText || "Tell us about your project"}
             </a>
