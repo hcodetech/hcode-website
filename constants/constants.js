@@ -1732,14 +1732,14 @@ export const ai_services = {
     "Our range of services seamlessly embeds artificial intelligence into your operations, enhancing efficiency and driving competitiveness. Explore our offerings below to unlock the power of AI for your organization.",
   points: [
     {
-      image: "/assets/img/ai_workFlow.svg",
+      image: "/assets/img/ai_workFlow _2.svg",
       heading: "AI-Powered Workflow Optimization",
       description:
         "We seamlessly integrate Artificial Intelligence into your workflows, automating tasks, providing real-time insights, and enhancing efficiency. Tailored to your unique needs, our service ensures you stay competitive in today's business landscape.",
     },
 
     {
-      image: "/assets/img/strategy_Consulting.svg",
+      image: "/assets/img/strategy_Consulting_2.svg",
       heading: "AI Strategy Consulting  ",
 
       description:
@@ -1747,13 +1747,13 @@ export const ai_services = {
     },
 
     {
-      image: "/assets/img/maintenance.svg",
+      image: "/assets/img/maintenance_2.svg",
       heading: "AI Maintenance and Support Solutions",
       description:
         "We provide proactive maintenance, timely updates, and responsive support to keep your AI technologies running at peak performance. Our team of experts is dedicated to resolving issues, optimizing algorithms, and staying ahead of potential challenges so that you can focus on your core business activities with confidence.",
     },
     {
-      image: "/assets/img/app_development.svg",
+      image: "/assets/img/app_development_2.svg",
       heading: "Bespoke AI App Development",
       description:
         "Our custom-built generative AI applications are meticulously designed to meet your organization's unique requirements. These tailor-made solutions seamlessly integrate generative AI into your existing infrastructure, workflows, and systems, ensuring minimal disruption while unlocking the full potential of AI to enhance innovation and efficiency in your operations.",

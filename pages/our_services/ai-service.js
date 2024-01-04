@@ -45,7 +45,7 @@ function AIService() {
         <MetaTags page={metaData.AI} />
       </Head>
 
-      <section className="h-screen bg-gray-50  bg-mvp_bg_img bg-no-repeat bg-cover">
+      <section className="h-screen bg-gray-50  bg-ai_bg_img bg-no-repeat bg-cover bg-center">
         <div className="max-w-2xl sm:px-4 h-2/5 pt-[275px] sm:pt-64 mx-auto flex  flex-col items-center	text-center">
           <h1 className="font-bold text-4xl sm:text-7xl text-primary py-4 w-[95.33%] sm:w-[102%]">
             AI Integration Services
@@ -59,7 +59,7 @@ function AIService() {
           <div className="text-center mt-10 sm:mt-10">
             <a
               href="/contact"
-              className="bg-primary text-white font-light rounded px-16 py-4 text-center hover:text-primary hover:bg-white hover:border-primary hover:border-2"
+              className="bg-primary text-white font-light rounded px-16 py-4 text-center "
             >
               Take the leap.
             </a>
@@ -145,7 +145,7 @@ function AIService() {
       </section>
 
       {/* Portfolio */}
-      <section className="py-10">
+      <section className="py-10 mt-20">
         <div className=" new-container py-10 grid grid-cols-12">
           <div className="col-span-12  text-center ">
             <h2 className="text-2xl md:text-4xl font-semibold pb-2">
@@ -224,11 +224,11 @@ function AiIntegrationServices() {
     <section className=" new-container -mt-9 mb-12  space-y-12">
       {ai_services.points.map(({ heading, image, description }) => (
         <div className="  grid grid-cols-12  ease-in-out duration-500 hover:shadow-md md:px-10 hover:p-10 hover:scale-105 hover:border hover:rounded-lg ">
-          <div className="col-span-12 lg:col-span-1 h-20 w-20">
-            <img className="" src={image} alt={heading} />
+          <div className="col-span-12 lg:col-span-1  ">
+            <img className="w-16 h-16 " src={image} alt={heading} />
           </div>
           <div className="col-span-12 lg:col-span-11 mt-4 md:mt-0 space-y-3 md:space-y-5">
-            <h3 className=" font-poppins text-2xl md:text-3xl  text-black font-semibold   ">
+            <h3 className=" font-poppins text-2xl md:text-3xl  text-black font-semibold ">
               {heading}
             </h3>
             <p className="font-poppins font-light  sm:text-lg text-black sm:font-normal leading-7">
@@ -252,7 +252,7 @@ function AiIntegrationServices() {
 
 function AiIntegrationProcessSection({ heading, description, id }) {
   return (
-    <section className="flex md:contents">
+    <section className="flex md:contents ">
       <div className="col-start-1 col-end-2 mr-10 md:mx-auto relative">
         <div className="h-full w-6 flex items-center justify-center mt-12">
           <div className="md:block h-full w-1 bg-white pointer-events-none"></div>
@@ -261,7 +261,6 @@ function AiIntegrationProcessSection({ heading, description, id }) {
       </div>
       <div className=" col-start-2 col-end-12 p-4 rounded-xl my-4 mr-auto -ml-12  md:ml-[-33px]  w-full">
         <h4 className="font-poppins text-[20px] sm:text-2xl font-semibold leading-10 mb-1">
-          {" "}
           {heading}
         </h4>
         <p className="font-poppins text-base font-light sm:font-normal leading-6 max-w-xl">
