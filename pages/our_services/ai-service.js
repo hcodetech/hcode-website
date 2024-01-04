@@ -45,7 +45,7 @@ function AIService() {
         <MetaTags page={metaData.AI} />
       </Head>
 
-      <section className="h-screen bg-gray-50  bg-ai_bg_img bg-no-repeat bg-cover bg-center">
+      <section className="h-screen bg-gray-50  bg-ai_bg_img bg-no-repeat bg-cover bg-center ">
         <div className="max-w-2xl sm:px-4 h-2/5 pt-[275px] sm:pt-64 mx-auto flex  flex-col items-center	text-center">
           <h1 className="font-bold text-4xl sm:text-7xl text-primary py-4 w-[95.33%] sm:w-[102%]">
             AI Integration Services
@@ -92,6 +92,15 @@ function AIService() {
       />
       <AiIntegrationServices />
 
+      <div className="mt-6 mb-36 text-center">
+        <a
+          href="/contact"
+          className="bg-white text-primary  border-primary border-2 rounded px-5 sm:px-16 py-4 text-center hover:bg-primary hover:text-white hover:border-white"
+        >
+          Tell us about your project
+        </a>
+      </div>
+
       {/* We have experience in following AI Technologies and Integrations */}
       <div className="bg-gray-100 py-10 my-8">
         <section className="py-10 lg:py-16 new-container">
@@ -124,7 +133,7 @@ function AIService() {
       </section>
 
       {/* AI Integration Process with HCode */}
-      <section className="  w-[100%] md:h-[850px] mt-10 bg-mvp_transform_idea bg-no-repeat  bg-left bg-cover">
+      <section className="  w-[100%] md:h-[850px] mt-10 bg-AI_Integration_Process_bg bg-no-repeat  bg-top bg-cover">
         <div className="py-7">
           <div className="new-container  mt-4 ">
             <h3 className=" font-poppins text-[29.6px] sm:text-4xl font-semibold leading-10 text-left text-white mb-6 ">
@@ -221,7 +230,7 @@ const SectionHeader = ({ heading, paragraph, cta, ctaText }) => (
 
 function AiIntegrationServices() {
   return (
-    <section className=" new-container -mt-9 mb-12  space-y-12">
+    <section className=" new-container -mt-9 mb-12  space-y-14">
       {ai_services.points.map(({ heading, image, description }) => (
         <div className="  grid grid-cols-12  ease-in-out duration-500 hover:shadow-md md:px-10 hover:p-10 hover:scale-105 hover:border hover:rounded-lg ">
           <div className="col-span-12 lg:col-span-1  ">
@@ -235,14 +244,14 @@ function AiIntegrationServices() {
               {description}
             </p>
 
-            <a
+            {/* <a
               href="https://calendly.com/gaurav-tomar/30min"
               target="_blank"
               className=" text-lg flex items-center mt-2 w-50 text-gray-500 cursor-pointer hover:underline  "
             >
               Schedule a brief call
               <ArrowRightIcon className="w-6 md:ml-2  h-full text-gray-500" />
-            </a>
+            </a> */}
           </div>
         </div>
       ))}
