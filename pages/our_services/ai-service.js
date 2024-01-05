@@ -46,7 +46,7 @@ function AIService() {
       </Head>
 
       <section className="h-screen bg-gray-50  bg-ai_bg_img bg-no-repeat bg-cover bg-center ">
-        <div className="max-w-2xl sm:px-4 h-2/5 pt-[275px] sm:pt-64 mx-auto flex  flex-col items-center	text-center">
+        <div className="max-w-2xl sm:px-4 h-2/5 pt-[275px] sm:pt-48 mx-auto flex  flex-col items-center	text-center">
           <h1 className="font-bold text-4xl sm:text-7xl text-primary py-4 w-[95.33%] sm:w-[102%]">
             AI Integration Services
           </h1>
