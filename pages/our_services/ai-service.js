@@ -134,7 +134,7 @@ function AIService() {
 
       {/* AI Integration Process with HCode */}
       <section className="  w-[100%] md:h-[850px] mt-10 bg-AI_Integration_Process_bg bg-no-repeat  bg-top bg-cover">
-        <div className="py-7">
+        <div className="pb-7 pt-16">
           <div className="new-container  mt-4 ">
             <h3 className=" font-poppins text-[29.6px] sm:text-4xl font-semibold leading-10 text-left text-white mb-6 ">
               AI Integration Process with HCode

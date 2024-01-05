@@ -49,7 +49,7 @@ module.exports = {
         blockchain_small: "url('/assets/img/blockchain_service_small.jpg')",        
         mvp_bg_img:"url('/assets/img/mvp_bg.png')",
         mvp_transform_idea:"url('/assets/img/transform_idea_section.png')",
-        ai_bg_img:"url('/assets/img/ai-bg-img-2.png')",
+        ai_bg_img:"url('/assets/img/ai-bg-img-2_.png')",
         AI_Integration_Process_bg:"url('/assets/img/AI_Integration_Process_bg.png')",
       }),
     },
