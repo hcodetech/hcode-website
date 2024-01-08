@@ -92,7 +92,7 @@ export default function Navbar() {
                             href="/our_services/ai-integration-services"
                             className="block py-3 pl-4  text-sm text-gray-700 hover:bg-gray-100"
                           >
-                            AI Services
+                            AI Integration Services
                           </a>
                         </li>
                       </ul>
@@ -245,7 +245,7 @@ export default function Navbar() {
                               'bg-blue-50 border-blue-500 text-blue-700'
                             }   `}
                 >
-                  AI Services
+                  AI Integration Services
                 </a>
               </div>
 
