@@ -61,7 +61,7 @@ function AIService() {
               href="/contact"
               className="bg-primary text-white font-light rounded px-16 py-4 text-center "
             >
-              Take the leap.
+              Take the leap
             </a>
           </div>
         </div>

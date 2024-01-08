@@ -47,7 +47,7 @@ export default function Navbar() {
                         pathname === '/our_services/team_as_a_service' ||
                         pathname === '/our_services/blockchain' ||
                         pathname === '/our_services/mvp-development-services' ||
-                        pathname === '/our_services/ai-service' ||
+                        pathname === '/our_services/ai-integration-services' ||
                         (pathname === '/our_services/developer_as_a_service' &&
                           'border-blue-500 border-b-4')
                       }   `}
@@ -89,7 +89,7 @@ export default function Navbar() {
                         </li>
                         <li>
                           <a
-                            href="/our_services/ai-service"
+                            href="/our_services/ai-integration-services"
                             className="block py-3 pl-4  text-sm text-gray-700 hover:bg-gray-100"
                           >
                             AI Services
@@ -238,10 +238,10 @@ export default function Navbar() {
                 </a>
 
                 <a
-                  href="/our_services/ai-service"
+                  href="/our_services/ai-integration-services"
                   className={` border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block px-6 py-2  border-l-4 text-sm font-medium
                             ${
-                              pathname === '/our_services/ai-service' &&
+                              pathname === '/our_services/ai-integration-services' &&
                               'bg-blue-50 border-blue-500 text-blue-700'
                             }   `}
                 >

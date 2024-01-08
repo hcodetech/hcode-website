@@ -869,7 +869,7 @@ export const metaData = {
     description:
       "Transform your business with our Hcode AI integration services. Enhance efficiency, customer engagement, and decision-making, with personalized, scalable AI solutions.",
     share_image: "https://hcode.tech/assets/img/Meta-Image.jpg",
-    url: "https://hcode.tech/our_services/ai-service",
+    url: "https://hcode.tech/our_services/ai-integration-services",
   },
 
   mvp: {
