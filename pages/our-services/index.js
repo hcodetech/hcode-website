@@ -15,7 +15,7 @@ import {
   fintech_card,
   metaData,
 } from "../../constants/constants";
-import Consumer_Card from "../../components/Consumer_Card";
+import Consumer_Card from "../../components/Consumer-Card";
 import Client from "../../components/Client";
 import TechStack from "../../components/TechStack";
 import Accordion from "../../components/Accordion";
