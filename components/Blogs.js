@@ -25,13 +25,13 @@ export function Blogs({data}){
                   </div>
                   <div className="max-w-xl">
                     <div className="group relative">
-                      <h3 className="mt-3 text-[20px] font-semibold leading-6 text-gray-900 group-hover:text-primary">
+                      <h3 className="mt-4 text-[20px] font-semibold leading-6 text-gray-900 group-hover:text-primary">
                         <a href={post.href}>
                           <span className="absolute inset-0" />
                           {post.title}
                         </a>
                       </h3>
-                      <p className="mt-5 line-clamp-3 text-[17px] leading-6 text-gray-600 px-2 -ml-2">
+                      <p className="mt-3 line-clamp-3 text-[17px] leading-6 text-gray-600 px-2 -ml-2">
                         {post.description}
                       </p>
                     </div>

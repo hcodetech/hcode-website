@@ -37,9 +37,9 @@ function mvp_development_services() {
 
         <MetaTags page={metaData.mvp} />
       </Head>
-      <section className="h-screen bg-gray-50  bg-mvp_bg_img bg-no-repeat bg-cover">
-        <div className="max-w-2xl sm:px-4 h-2/5 pt-[275px] sm:pt-64 mx-auto flex  flex-col items-center	text-center">
-          <h1 className="font-bold text-4xl sm:text-7xl text-primary py-4 w-[95.33%] sm:w-[102%]">
+      <section className="h-[550px] md:h-screen bg-gray-50  bg-mvp_bg_img bg-no-repeat bg-cover bg-center ">
+        <div className="max-w-2xl sm:px-4 h-2/5 pt-32 md:pt-[275px] sm:pt-48 mx-auto flex  flex-col items-center	text-center">
+          <h1 className="font-bold text-4xl sm:text-7xl text-primary py-4 w-[94%] sm:w-[102%]">
             MVP Development Services
           </h1>
           <p className="font-poppins text-black  px-5 sm:text-2xl font-light py-3 leading-7 md:leading-10 ">
@@ -318,7 +318,7 @@ const SectionHeader = ({ heading, paragraph, cta, ctaText }) => (
           {cta && (
             <a
               href="/contact"
-              className="bg-white text-primary  border-primary border-2 rounded px-5 sm:px-16 py-4 text-center"
+              className="bg-white text-primary  border-primary border-2 rounded px-5 sm:px-16 py-4 text-center hover:bg-primary hover:text-white hover:border-white"
             >
               {ctaText || "Tell us about your project"}
             </a>

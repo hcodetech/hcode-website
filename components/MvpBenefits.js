@@ -19,7 +19,7 @@ function MvpBenefits(props) {
           expectations.
         </p>
       </div>
-      <div className="new-container pb-16 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="pb-16 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {props?.data?.points.map(({ image, heading, description }) => (
           <div key={heading} className="pt-16 ">
             <div className=" h-16 w-16">

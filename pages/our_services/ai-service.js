@@ -1,15 +1,15 @@
 // /** @format */
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
 
-import Head from 'next/head';
-import Accordion from '../../components/Accordion';
-import Benefits from '../../components/Benefits';
-import CTA from '../../components/CTA';
-import CardPortfolio from '../../components/CardPortfolio';
-import Client from '../../components/Client';
-import MetaTags from '../../components/MetaTags';
-import Testimonial from '../../components/Testimonial';
+import Head from "next/head";
+import Accordion from "../../components/Accordion";
+import Benefits from "../../components/Benefits";
+import CTA from "../../components/CTA";
+import CardPortfolio from "../../components/CardPortfolio";
+import Client from "../../components/Client";
+import MetaTags from "../../components/MetaTags";
+import Testimonial from "../../components/Testimonial";
 import {
   AIService_Hero,
   ai_benefits,
@@ -18,22 +18,28 @@ import {
   client,
   faq_ai,
   metaData,
-} from '../../constants/constants';
-import { getTestimonialData } from '../../utils/config';
-import { getAPIUrl } from '../api/APIHelpers';
-import { apiRoutes } from '../api/APIRoutes';
-import useGetFetch from '../hooks/useGetFetch';
+} from "../../constants/constants";
+import { getTestimonialData } from "../../utils/config";
+import { getAPIUrl } from "../api/APIHelpers";
+import { apiRoutes } from "../api/APIRoutes";
+import useGetFetch from "../hooks/useGetFetch";
 
 const AIService = () => {
-  const [isDesktop, setIsDesktop] = useState('');
-  const selectedCategory = ['AI'];
+  const [isDesktop, setIsDesktop] = useState("");
+  const selectedCategory = ["AI"];
 
   const [portfolioData, isLoading] = useGetFetch(getAPIUrl(apiRoutes.OUR_WORK));
 
   useEffect(() => {
     window.innerWidth <= 750 ? setIsDesktop(false) : setIsDesktop(true);
   });
-  const data = getTestimonialData('AI');
+
+  useEffect(() => {
+    const redirectPage = "/our_services/ai_integration_services";
+    window.location.href = redirectPage;
+  }, []);
+
+  const data = getTestimonialData("AI");
 
   return (
     <div>
