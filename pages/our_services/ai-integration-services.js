@@ -20,7 +20,7 @@ import {
   ai_technologies,
   faq_ai,
   metaData,
-  posts,
+  Ai_blog_data,
   client,
 } from "../../constants/constants";
 import { getAPIUrl } from "../api/APIHelpers";
@@ -183,7 +183,7 @@ function AIService() {
 
       {/* blogs section  */}
       <div className="sm:new-container  ">
-        <Blogs data={posts} />
+        <Blogs data={Ai_blog_data} />
       </div>
 
       {/* FAQ */}

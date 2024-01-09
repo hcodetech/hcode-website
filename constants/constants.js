@@ -2046,6 +2046,32 @@ export const hire_dev_hcode = [
     `,
   },
 ];
+export const Ai_blog_data = [
+  {
+    id: 1,
+    title: "How AI Integration Services Can Fuel Your Business Growth",
+    href: "https://hcode.tech/blog/how-ai-integration-services-can-fuel-your-business-growth/",
+    description: "How AI Integration Services Can Fuel Your Business Growth […]",
+    imageUrl: "/assets/img/Ai_blog_1.jpg",
+  },
+  {
+    id: 2,
+    title: "AI-Powered Development: Top 10 Tools Every Developer Needs in 2023",
+    href: "https://hcode.tech/blog/ai-tools-for-developers-in-2023/",
+    description:
+      "AI-Powered Development: Top 10 Tools Every Developer Needs in 2023 […]",
+    imageUrl: "/assets/img/Ai_blog_2.jpg",
+  },
+  {
+    id: 3,
+    title:"How to Seamlessly Integrate ChatGPT API into Your Website?",
+    href: "https://hcode.tech/blog/how-to-seamlessly-integrate-chatgpt-api-into-your-website/",
+    description:
+      "How to Seamlessly Integrate ChatGPT API into Your Website? Have […]",
+    imageUrl: "/assets/img/Ai_blog_3.png",
+  },
+];
+
 export const posts = [
   {
     id: 1,
