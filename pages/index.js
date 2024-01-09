@@ -124,7 +124,7 @@ export default function Home() {
                 </div>
                 <div className="text-center mt-16 md:mt-20">
                   <a
-                    href="/our_services"
+                    href="/our-services"
                     className="border border-white rounded px-16 py-4 hover:bg-white hover:text-primary  text-center transition transform duration-200 ease-out"
                   >
                     Know More About Our Services
@@ -225,13 +225,13 @@ export default function Home() {
       </section>
 
       {/* Case Studies */}
-      <section id="case_studies" className=" ">
+      <section id="case-studies" className=" ">
         <h2 className="text-4xl font-semibold text-center py-5 mb-4">
           Our Work
         </h2>
         <CaseStudiesCard />
         <div className="text-center mt-10 mb-14">
-          <a href="/our_work" className="outline-button px-10  text-center">
+          <a href="/our-work" className="outline-button px-10  text-center">
             See Our Portfolio
           </a>
         </div>

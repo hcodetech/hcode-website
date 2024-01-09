@@ -95,7 +95,7 @@ function Footer() {
               </li>
               <li className="mb-2">
                 <a
-                  href="/our_services"
+                  href="/our-services"
                   className="border-b border-solid border-transparent hover:border-primary hover:text-primary"
                 >
                   Our Services
@@ -103,7 +103,7 @@ function Footer() {
               </li>
               <li className="mb-2">
                 <a
-                  href="/our_work"
+                  href="/our-work"
                   className="border-b border-solid border-transparent hover:border-primary hover:text-primary"
                 >
                   Our Work
@@ -132,7 +132,7 @@ function Footer() {
               </li>
               <li className="mb-2">
                 <a
-                  href="/work_with_us"
+                  href="/work-with-us"
                   className="border-b border-solid border-transparent hover:border-primary hover:text-primary"
                 >
                   Work With Us
@@ -162,7 +162,7 @@ function Footer() {
             <ul className="list-none footer-links">
               <li className="mb-2">
                 <a
-                  href="/terms_and_conditions"
+                  href="/terms-and-conditions"
                   className="border-b border-solid border-transparent hover:border-primary hover:text-primary"
                 >
                   Terms & Conditions
@@ -170,7 +170,7 @@ function Footer() {
               </li>
               <li className="mb-2">
                 <a
-                  href="/privacy_policy"
+                  href="/privacy-policy"
                   className="border-b border-solid border-transparent hover:border-primary hover:text-primary"
                 >
                   Privacy Policy

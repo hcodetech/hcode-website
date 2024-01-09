@@ -9,7 +9,7 @@ import { getAPIUrl } from "./api/APIHelpers";
 import { apiRoutes } from "./api/APIRoutes";
 import useGetFetch from "./hooks/useGetFetch";
 import { useRouter } from "next/router";
-import Portfolio_skelton from "../components/Portfolio_skelton";
+import Portfolio_skelton from "../components/Portfolio-skelton";
 
 const our_work = (props) => {
   const [selectedCategory, setSelectedCategory] = useState([]);

@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 import {
   client,
   faq_services,
+  dass,
+  dass_benefits,
   metaData,
-  tass,
-  tass_benefits,
 } from '../../constants/constants';
 import Client from '../../components/Client';
 import { ArrowRightIcon } from '@heroicons/react/solid';
@@ -15,7 +15,7 @@ import CTA from '../../components/CTA';
 import TechStack from '../../components/TechStack';
 import MetaTags from '../../components/MetaTags';
 
-function team_as_a_service() {
+function developer_as_a_service() {
   const [isDesktop, setIsDesktop] = useState('');
   useEffect(() => {
     window.innerWidth <= 750 ? setIsDesktop(false) : setIsDesktop(true);
@@ -23,30 +23,30 @@ function team_as_a_service() {
   return (
     <>
       <Head>
-        <title>Team as a Service | Hcode Technologies </title>
-        <MetaTags page={metaData.team_as_a_service} />
+        <title>Developer as a Service | Hcode Technologies</title>
+        <MetaTags page={metaData.developer_as_a_service} />
       </Head>
       {/* Hero Section */}
       <section className="text-center ">
         <h1 className="new-container pt-32 font-semibold text-3xl md:text-4xl  ">
-          {tass.hero_heading}
+          {dass.hero_heading}
         </h1>
-        <p className="new-container md:w-3/4 xl:w-5/12   text-base mx-auto mt-3 font-light leading-normal">
-          {tass.hero_paragraph}
+        <p className="new-container md:w-3/4 xl:w-5/12  text-base mx-auto mt-3 font-light leading-normal">
+          {dass.hero_paragraph}
         </p>
-        <picture>
-          <source type='image/webp' srcSet={tass.hero_image_webp} />
-          <img
-          src={tass.hero_image}
-          alt={tass.hero_heading}
-          className="w-screen my-10"
-          loading="lazy"
-          height='100%'
-          width='100%'
-        />
 
+        <picture>
+          <source type="image/webp" srcSet={dass.hero_image_webp} />
+
+          <img
+            src={dass.hero_image}
+            alt={dass.hero_heading}
+            className="w-screen my-10"
+            width="100%"
+            height="100%"
+            loading="lazy"
+          />
         </picture>
-      
       </section>
 
       {/* Clients */}
@@ -56,20 +56,17 @@ function team_as_a_service() {
 
       {/* Who is it for ? */}
       <section className="new-container mt-6">
+        {/* <h3 className="text-3xl md:text-4xl font-semibold text-center "> */}
         <h2 className="text-3xl md:text-4xl font-semibold text-center ">
-        <h2 className="text-3xl md:text-4xl font-semibold text-center ">
-          {tass.who_is_it_for}
-        </h2>
+          {dass.who_is_it_for}
         </h2>
         <p className="md:w-4/6 mx-auto mt-3 font-light leading-normal text-center ">
-          {tass.who_is_it_for_paragraph}
+          {dass.who_is_it_for_paragraph}
           <br />
-          (Looking to hire 1 or 2 developers? please check out our{' '}
-          <a
-            href="/our_services/developer_as_a_service"
-            className="text-primary"
-          >
-            Developer-as-a-Service
+          (Don’t think you’ve the right tech skillsets to manage this? Check out
+          our
+          <a href="/our-services/team-as-a-service" className="text-primary">
+            Team-as-a-Service
           </a>{' '}
           model)
         </p>
@@ -77,27 +74,16 @@ function team_as_a_service() {
           {/* Startup */}
           <div className="p-8 bg-gradient-to-br  from-purple-200 to-white ">
             <button className="px-4 py-2 rounded-full bg-purple-800 text-white cursor-default mb-5 ">
-              {tass.startup.tag}
+              {dass.startup.tag}
             </button>
-            <h3 className="text-2xl font-semibold">
-            <h3 className="text-2xl font-semibold">
-              {tass.startup.main_heading}
+            <h3 className="text-2xl font-semibold ">
+            <h3 className="text-2xl font-semibold ">
+              {dass.startup.secondary_heading}
             </h3>
             </h3>
             <ul className="list-outside list-disc text-sm px-4 py-2">
-              {tass.startup.points.map((point, index) => (
-                <li key={index}>{point}</li>
-              ))}
-            </ul>
-            {/*  */}
-            <h3 className="text-2xl font-semibold mt-5">
-            <h3 className="text-2xl font-semibold mt-5">
-              {tass.startup.secondary_heading}
-            </h3>
-            </h3>
-            <ul className="list-outside list-disc text-sm px-4 py-2">
-              {tass.startup.points.map((point, index) => (
-                <li key={index}>{point}</li>
+              {dass.startup.points.map((point, index) => (
+                <li key={index} dangerouslySetInnerHTML={{ __html: point }} />
               ))}
             </ul>
             <a
@@ -111,23 +97,14 @@ function team_as_a_service() {
           {/* Enterprise */}
           <div className="p-8 bg-gradient-to-br  from-blue-200 to-white ">
             <button className="px-4 py-2 rounded-full bg-primary text-white cursor-default mb-5 ">
-              {tass.enterprise.tag}
+              {dass.enterprise.tag}
             </button>
-            <h4 className="text-2xl font-semibold">
-              {tass.enterprise.main_heading}
+            <h4 className="text-2xl font-semibold ">
+              {dass.enterprise.secondary_heading}
             </h4>
             <ul className="list-outside list-disc text-sm px-4 py-2">
-              {tass.enterprise.points.map((point, index) => (
-                <li key={index}>{point}</li>
-              ))}
-            </ul>
-            {/*  */}
-            <h5 className="text-2xl font-semibold mt-5">
-              {tass.enterprise.secondary_heading}
-            </h5>
-            <ul className="list-outside list-disc text-sm px-4 py-2">
-              {tass.enterprise.points.map((point, index) => (
-                <li key={index}>{point}</li>
+              {dass.enterprise.points.map((point, index) => (
+                <li key={index} dangerouslySetInnerHTML={{ __html: point }} />
               ))}
             </ul>
             <a
@@ -142,8 +119,8 @@ function team_as_a_service() {
         {/* Get Started CTA */}
         <div className="p-8 bg-gradient-to-br  from-green-200 to-white text-center mt-8 ">
           <div className="mb-6">
-            <h3 className="text-3xl font-semibold mb-2">{tass.cta.heading}</h3>
-            <p className="font-light">{tass.cta.main_paragraph}</p>
+            <h2 className="text-3xl font-semibold mb-2">{dass.cta.heading}</h2>
+            <p className="font-light">{dass.cta.main_paragraph}</p>
           </div>
           <a
             href="/contact"
@@ -156,19 +133,19 @@ function team_as_a_service() {
 
       {/* What makes it a great choice */}
       <section className="new-container mt-10">
-        <Benefits additionalClass='w-3/4' data={tass_benefits} />
+        <Benefits additionalClass='lg:w-1/2' data={dass_benefits} />
         <div className="text-center mb-10">
           <a
             href="/contact"
-            className="pb-1  border-b border-primary inline-flex text-primary hover:scale-100  cursor-pointer hover:opacity-100"
+            className=" pb-1  border-b border-primary inline-flex text-primary hover:scale-100  cursor-pointer hover:opacity-100"
           >
             Request Consultation
             <ArrowRightIcon className="w-6 ml-2 " />
           </a>
         </div>
       </section>
-
       <TechStack />
+
       {/* FAQ */}
       <section>
         <Accordion data={faq_services} />
@@ -182,4 +159,4 @@ function team_as_a_service() {
   );
 }
 
-export default team_as_a_service;
+export default developer_as_a_service;

@@ -35,7 +35,7 @@ const AIService = () => {
   });
 
   useEffect(() => {
-    const redirectPage = "/our_services/ai_integration_services";
+    const redirectPage = "/our-services/ai-integration-services";
     window.location.href = redirectPage;
   }, []);
 

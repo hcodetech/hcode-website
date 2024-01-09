@@ -9,7 +9,7 @@ export const navbar_links = [
   },
   {
     label: "Our Services",
-    link: "/our_services",
+    link: "/our-services",
   },
   {
     label: "About Us",
@@ -17,7 +17,7 @@ export const navbar_links = [
   },
   {
     label: "Work With Us",
-    link: "/work_with_us",
+    link: "/work-with-us",
   },
 ];
 
@@ -823,14 +823,14 @@ export const metaData = {
     description:
       "We help assemble and manage a team of world-class software developers dedicated to bringing your vision to life",
     share_image: "https://hcode.tech/assets/img/Meta-Image.jpg",
-    url: "https://hcode.tech/our_services",
+    url: "https://hcode.tech/our-services",
   },
   developer_as_a_service: {
     title: "Developer as a Service (DaaS) ",
     description:
       "You get developer(s) experienced in the required skills that you can directly manage. They can work standalone on a project or work with your existing team. You should ideally have someone technical in your team who can manage these developers.",
     share_image: "https://hcode.tech/assets/img/Meta-Image.jpg",
-    url: "https://hcode.tech/our_services/developer_as_a_service",
+    url: "https://hcode.tech/our-services/developer-as-a-service",
   },
 
   mern_developer: {
@@ -838,14 +838,14 @@ export const metaData = {
     description:
       "Hire experienced remote developers trained to write good quality of code and comfortable working with international tech-clients",
     share_image: "https://hcode.tech/assets/img/Meta-Image.jpg",
-    url: "https://hcode.tech/our_services/mern-developer",
+    url: "https://hcode.tech/our-services/mern-developer",
   },
   hire_developer: {
     title: "Hire Developer | Hcode",
     description:
       "Hire experienced remote developers trained to write good quality of code and comfortable working with international tech-clients",
     share_image: "https://hcode.tech/assets/img/Meta-Image.jpg",
-    url: "https://hcode.tech/our_services/hire-developer",
+    url: "https://hcode.tech/our-services/hire-developer",
   },
 
   team_as_a_service: {
@@ -853,7 +853,7 @@ export const metaData = {
     description:
       "You get a team of software developers headed by a Tech-Lead or a Project Manager. This team can either function as your standalone technology team or this could be augmenting your existing team. With a Tech Lead or Project Manager in the mix, you don’t have to directly manage all your resources and can provide a high-level plan of what you want to achieve.",
     share_image: "https://hcode.tech/assets/img/Meta-Image.jpg",
-    url: "https://hcode.tech/our_services/team_as_a_service",
+    url: "https://hcode.tech/our-services/team-as-a-service",
   },
 
   blockchain: {
@@ -861,7 +861,7 @@ export const metaData = {
     description:
       "We’re proficient in various Blockchain services including, but not limited to, Dapps, Smart Contracts, NFT marketplace and Blockchain Security Audit.",
     share_image: "https://hcode.tech/assets/img/Meta-Image.jpg",
-    url: "https://hcode.tech/our_services/blockchain",
+    url: "https://hcode.tech/our-services/blockchain",
   },
 
   AI: {
@@ -869,7 +869,7 @@ export const metaData = {
     description:
       "Transform your business with our Hcode AI integration services. Enhance efficiency, customer engagement, and decision-making, with personalized, scalable AI solutions.",
     share_image: "https://hcode.tech/assets/img/Meta-Image.jpg",
-    url: "https://hcode.tech/our_services/ai_integration_services",
+    url: "https://hcode.tech/our-services/ai-integration-services",
   },
 
   mvp: {
@@ -877,7 +877,7 @@ export const metaData = {
     description:
       "Launch smarter with Hcode's MVP Development Services-validate, optimize, and succeed. Your trusted path to impactful digital products.",
     share_image: "https://hcode.tech/assets/img/Meta-Image.jpg",
-    url: "https://hcode.tech/our_services/mvp",
+    url: "https://hcode.tech/our-services/mvp",
   },
 
   about: {
@@ -893,7 +893,7 @@ export const metaData = {
     description:
       "We abide by our core value, ‘Our people are our biggest asset’, in letter and spirit. We do everything to make sure that our people are personally happy, professionally satisfied, and continue growing.",
     share_image: "https://hcode.tech/assets/img/Meta-Image.jpg",
-    url: "https://hcode.tech/work_with_us",
+    url: "https://hcode.tech/work-with-us",
   },
 
   our_work: {
@@ -901,14 +901,14 @@ export const metaData = {
     description:
       "We have worked on a broad range of projects, from algorithm-heavy backend projects to beautiful and interactive responsive web products. Listed below are some of our creations.",
     share_image: "https://hcode.tech/assets/img/Meta-Image.jpg",
-    url: "https://hcode.tech/our_work",
+    url: "https://hcode.tech/our-work",
   },
   case_studies: {
     title: "Case studies we've made for our client partners",
     description:
       "We have worked on a broad range of projects, from algorithm-heavy backend projects to beautiful and interactive responsive web products. Listed below are some of our creations.",
     share_image: "https://hcode.tech/assets/img/Meta-Image.jpg",
-    url: "https://hcode.tech/case_studies",
+    url: "https://hcode.tech/case-studies",
   },
 
   technologies: {
@@ -923,14 +923,14 @@ export const metaData = {
     title: "Terms and Conditions | Hcode",
     description: `This Privacy Policy governs how HCODE collects, uses, maintains, and discloses information collected from users (each, a "User") of the www.hcode.tech website ("Site"). This privacy policy applies to the Site and all products and services offered by HCODE.`,
     share_image: "https://hcode.tech/assets/img/Meta-Image.jpg",
-    url: "https://hcode.tech/terms_and_conditions",
+    url: "https://hcode.tech/terms-and-conditions",
   },
 
   privacy_policy: {
     title: "PRIVACY POLICY | Hcode",
     description: `This Privacy Policy governs how HCODE collects, uses, maintains, and discloses information collected from users (each, a "User") of the www.hcode.tech website ("Site"). This privacy policy applies to the Site and all products and services offered by HCODE.`,
     share_image: "https://hcode.tech/assets/img/Meta-Image.jpg",
-    url: "https://hcode.tech/privacy_policy",
+    url: "https://hcode.tech/privacy-policy",
   },
 
   contact: {
@@ -1236,7 +1236,7 @@ export const mern_page_selected_technologies = [
 
 export const consumer_card = {
   card_color: "bg-yellow-400",
-  link: "/our_services",
+  link: "/our-services",
   heading: "Consumer <> Mobile",
   paragraph:
     "We have built end-to-end products and mobile applications for various consumer companies across food delivery apps, market places, health segments to name a few.",
@@ -1246,7 +1246,7 @@ export const consumer_card = {
 };
 export const enterprise_card = {
   card_color: "bg-green-400",
-  link: "/our_services",
+  link: "/our-services",
   heading: "Enterprise <> SAAS",
   paragraph:
     "We've ample experience of building and managing Large Enterprise Solutions across education, remote technologies, productivity tools, research, etc. Our clients come to us as they can trust us with  confidentiality and expertise.",
@@ -1255,7 +1255,7 @@ export const enterprise_card = {
 };
 export const fintech_card = {
   card_color: "bg-blue-400",
-  link: "/our_services",
+  link: "/our-services",
   heading: "Fintech",
   paragraph:
     "Many of our clients have been from Fintech across New York and India. We have worked with enterprises with big data and analytics needs, as well as with startups to help make their products come to life.",

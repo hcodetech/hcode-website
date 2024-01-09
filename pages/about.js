@@ -138,7 +138,7 @@ function About() {
             }}
           />
           <div className='mt-3'>
-            <Link href='/work_with_us'>
+            <Link href='/work-with-us'>
               <div className='mt-auto py-3 border-b pb-2 border-black max-w-[180px]  opacity-80 hover:opacity-100 flex cursor-pointer whitespace-nowrap   '>
                 Want to work with us
                 <ArrowRightIcon className='w-4 h-4 ml-2 mt-1' />
