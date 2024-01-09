@@ -34,10 +34,10 @@ const AIService = () => {
     window.innerWidth <= 750 ? setIsDesktop(false) : setIsDesktop(true);
   });
 
-  // useEffect(() => {
-  //   const redirectPage = "/our_services/ai_integration_services";
-  //   window.location.href = redirectPage;
-  // }, []);
+  useEffect(() => {
+    const redirectPage = "/our_services/ai_integration_services";
+    window.location.href = redirectPage;
+  }, []);
 
   const data = getTestimonialData("AI");
 
