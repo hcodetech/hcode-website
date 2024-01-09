@@ -16,7 +16,7 @@ import {
   ai_services,
   ai_technologies,
   client,
-  faq_ai,
+  faqAi,
   metaData,
 } from "../../constants/constants";
 import { getTestimonialData } from "../../utils/config";
@@ -175,7 +175,7 @@ const AIService = () => {
 
       {/* FAQ */}
       <section className="bg-gray-100">
-        <Accordion data={faq_ai} />
+        <Accordion data={faqAi} />
       </section>
 
       {/* CTA */}
