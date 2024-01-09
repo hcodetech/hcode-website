@@ -33,6 +33,17 @@ const AIService = () => {
   useEffect(() => {
     window.innerWidth <= 750 ? setIsDesktop(false) : setIsDesktop(true);
   });
+
+  useEffect(() => {
+    const targetPage = "/our_services/ai-service";
+    const redirectPage = "/our_services/ai-integration-services";
+
+    if (window.location.pathname === targetPage) {
+      window.location.href = redirectPage;
+    }
+  }, []);
+
+
   const data = getTestimonialData('AI');
 
   return (
