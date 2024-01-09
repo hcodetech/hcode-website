@@ -8,7 +8,7 @@ import { metaData, portfolioIndustry } from "../constants/constants";
 import { getAPIUrl } from "./api/APIHelpers";
 import { apiRoutes } from "./api/APIRoutes";
 import useGetFetch from "./hooks/useGetFetch";
-import Portfolio_skelton from "../components/Portfolio_skelton";
+import Portfolio_skelton from "../components/Portfolio-skelton";
 
 const CaseStudies = (props) => {
   const [selectedCategory, setSelectedCategory] = useState([]);
