@@ -12,13 +12,13 @@ Deploy : Dev ready code for testing
 ## Final Steps for Production Deployment Steps for AWS S3 Buckets
 
 ```
-npm run build
+yarn build
 cd out
 aws s3 cp . s3://hcode.tech --recursive
 for old in *.html; do aws s3 mv s3://hcode.tech/$old s3://hcode.tech/`basename $old .html`; done
-cd our_services
+cd our-services
 aws s3 cp . s3://hcode.tech --recursive
-for old in *.html; do aws s3 mv s3://hcode.tech/$old s3://hcode.tech/our_services/`basename $old .html`; done
+for old in *.html; do aws s3 mv s3://hcode.tech/$old s3://hcode.tech/our-services/`basename $old .html`; done
 aws cloudfront create-invalidation --distribution-id E2E03LDNL94VC6 --paths "/*"
 ```
 

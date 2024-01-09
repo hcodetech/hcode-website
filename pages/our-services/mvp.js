@@ -32,7 +32,7 @@ function mvp_development_services() {
   }, []);
 
   useEffect(() => {
-    const redirectPage = "/our_services/mvp-development-services";
+    const redirectPage = "/our-services/mvp-development-services";
     window.location.href = redirectPage;
   }, []);
 

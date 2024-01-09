@@ -138,14 +138,14 @@ const CardPortfolio = (props) => {
 
             {/* button on our work page cards  */}
             <div className="lg:mt-auto mt-16 sm:ml-auto">
-              {pathname === "/our_work" && filterCaseStudies.length > 0 && (
-                <a href="/case_studies" className="primary-outline">
+              {pathname === "/our-work" && filterCaseStudies.length > 0 && (
+                <a href="/case-studies" className="primary-outline">
                   Get case study
                 </a>
               )}
 
               {/* button on case studies page cards*/}
-              {pathname === "/case_studies" &&
+              {pathname === "/case-studies" &&
                 filterCaseStudies.length > 0 &&
                 filterCaseStudies.map((media) => (
                   <a

@@ -39,7 +39,7 @@ function CustomModal({ open, setOpen }) {
   }, []);
 
   const checkPageUrl = () => {
-    if (window.location.pathname === "/our_services/hire-developer") {
+    if (window.location.pathname === "/our-services/hire-developer") {
       setCheckPage("hire Page");
     } else {
       setCheckPage("mern page");

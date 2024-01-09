@@ -40,15 +40,15 @@ export default function Navbar() {
                   {/* Our Services dropdown */}
 
                   <a
-                    href="/our_services"
+                    href="/our-services"
                     className={` text-gray-900 group  inline-flex items-center  pt-1 border-b-2 text-sm font-medium  border-transparent relative 
                       ${
-                        pathname === '/our_services' ||
-                        pathname === '/our_services/team_as_a_service' ||
-                        pathname === '/our_services/blockchain' ||
-                        pathname === '/our_services/mvp-development-services' ||
-                        pathname === '/our_services/ai_integration_services' ||
-                        (pathname === '/our_services/developer_as_a_service' &&
+                        pathname === '/our-services' ||
+                        pathname === '/our-services/team-as-a-service' ||
+                        pathname === '/our-services/blockchain' ||
+                        pathname === '/our-services/mvp-development-services' ||
+                        pathname === '/our-services/ai-integration-services' ||
+                        (pathname === '/our-services/developer-as-a-service' &&
                           'border-blue-500 border-b-4')
                       }   `}
                   >
@@ -57,7 +57,7 @@ export default function Navbar() {
                       <ul className="top-0 w-52 bg-white shadow text-left    rounded">
                         <li>
                           <a
-                            href="/our_services/team_as_a_service"
+                            href="/our-services/team-as-a-service"
                             className="block py-3 pl-4  text-sm text-gray-700 hover:bg-gray-100 border-b"
                           >
                             Team as a Service
@@ -65,7 +65,7 @@ export default function Navbar() {
                         </li>
                         <li>
                           <a
-                            href="/our_services/developer_as_a_service"
+                            href="/our-services/developer-as-a-service"
                             className="block py-3 pl-4  text-sm text-gray-700 hover:bg-gray-100 border-b"
                           >
                             Developer as a Service
@@ -73,7 +73,7 @@ export default function Navbar() {
                         </li>
                         <li>
                           <a
-                            href="/our_services/blockchain"
+                            href="/our-services/blockchain"
                             className="block py-3 pl-4  text-sm text-gray-700 hover:bg-gray-100 border-b"
                           >
                             Blockchain Services
@@ -81,7 +81,7 @@ export default function Navbar() {
                         </li>
                         <li>
                           <a
-                            href="/our_services/mvp-development-services"
+                            href="/our-services/mvp-development-services"
                             className="block py-3 pl-4  text-sm text-gray-700 hover:bg-gray-100 border-b"
                           >
                             MVP Development Services
@@ -89,7 +89,7 @@ export default function Navbar() {
                         </li>
                         <li>
                           <a
-                            href="/our_services/ai_integration_services"
+                            href="/our-services/ai-integration-services"
                             className="block py-3 pl-4  text-sm text-gray-700 hover:bg-gray-100"
                           >
                             AI Integration Services
@@ -109,30 +109,30 @@ export default function Navbar() {
                     About Us
                   </a>
                   <a
-                    href="/work_with_us"
+                    href="/work-with-us"
                     className={` text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium  border-transparent
                       ${
-                        pathname === '/work_with_us' &&
+                        pathname === '/work-with-us' &&
                         'border-blue-500 border-b-4'
                       }   `}
                   >
                     Work With Us
                   </a>
                   <a
-                    href="/our_work"
+                    href="/our-work"
                     className={` text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium  border-transparent
                       ${
-                        pathname === '/our_work' && 'border-blue-500 border-b-4'
+                        pathname === '/our-work' && 'border-blue-500 border-b-4'
                       }   `}
                   >
                     Our Work
                   </a>
 
                   <a
-                    href="/case_studies"
+                    href="/case-studies"
                     className={` text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium  border-transparent
                       ${
-                        pathname === '/case_studies' &&
+                        pathname === '/case-studies' &&
                         'border-blue-500 border-b-4'
                       }   `}
                   >
@@ -184,10 +184,10 @@ export default function Navbar() {
               </a>
 
               <a
-                href="/our_services"
+                href="/our-services"
                 className={` border-transparent  text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium
                     ${
-                      pathname === '/our_services' &&
+                      pathname === '/our-services' &&
                       'bg-blue-50 border-blue-500 text-blue-700'
                     }   `}
               >
@@ -195,20 +195,20 @@ export default function Navbar() {
               </a>
               <div className="border-t border-grey-200">
                 <a
-                  href="/our_services/team_as_a_service"
+                  href="/our-services/team-as-a-service"
                   className={` border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block  px-6 py-2  border-l-4 text-sm font-medium
                     ${
-                      pathname === '/our_services/team_as_a_service' &&
+                      pathname === '/our-services/team-as-a-service' &&
                       'bg-blue-50 border-blue-500 text-blue-700'
                     }   `}
                 >
                   Team as a Service
                 </a>
                 <a
-                  href="/our_services/developer_as_a_service"
+                  href="/our-services/developer-as-a-service"
                   className={` border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block px-6 py-2  border-l-4 text-sm font-medium
                     ${
-                      pathname === '/our_services/developer_as_a_service' &&
+                      pathname === '/our-services/developer-as-a-service' &&
                       'bg-blue-50 border-blue-500 text-blue-700'
                     }   `}
                 >
@@ -216,21 +216,21 @@ export default function Navbar() {
                 </a>
 
                 <a
-                  href="/our_services/blockchain"
+                  href="/our-services/blockchain"
                   className={` border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block px-6 py-2  border-l-4 text-sm font-medium
                             ${
-                              pathname === '/our_services/blockchain' &&
+                              pathname === '/our-services/blockchain' &&
                               'bg-blue-50 border-blue-500 text-blue-700'
                             }   `}
                 >
                   Blockchain Services
                 </a>
                 <a
-                  href="/our_services/mvp-development-services"
+                  href="/our-services/mvp-development-services"
                   className={` border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block px-6 py-2  border-l-4 text-sm font-medium
                             ${
                               pathname ===
-                                '/our_services/mvp-development-services' &&
+                                '/our-services/mvp-development-services' &&
                               'bg-blue-50 border-blue-500 text-blue-700'
                             }   `}
                 >
@@ -238,10 +238,10 @@ export default function Navbar() {
                 </a>
 
                 <a
-                  href="/our_services/ai_integration_services"
+                  href="/our-services/ai-integration-services"
                   className={` border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block px-6 py-2  border-l-4 text-sm font-medium
                             ${
-                              pathname === '/our_services/ai_integration_services' &&
+                              pathname === '/our-services/ai-integration-services' &&
                               'bg-blue-50 border-blue-500 text-blue-700'
                             }   `}
                 >
@@ -260,20 +260,20 @@ export default function Navbar() {
                 About Us
               </a>
               <a
-                href="/work_with_us"
+                href="/work-with-us"
                 className={` border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium
                     ${
-                      pathname === '/work_with_us' &&
+                      pathname === '/work-with-us' &&
                       'bg-blue-50 border-blue-500 text-blue-700'
                     }   `}
               >
                 Work With Us
               </a>
               <a
-                href="/our_work"
+                href="/our-work"
                 className={` border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium
                     ${
-                      pathname === '/our_work' &&
+                      pathname === '/our-work' &&
                       'bg-blue-50 border-blue-500 text-blue-700'
                     }   `}
               >
@@ -281,10 +281,10 @@ export default function Navbar() {
               </a>
 
               <a
-                href="/case_studies"
+                href="/case-studies"
                 className={` border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium
                     ${
-                      pathname === '/case_studies' &&
+                      pathname === '/case-studies' &&
                       'bg-blue-50 border-blue-500 text-blue-700'
                     }   `}
               >

@@ -15,7 +15,7 @@ import {
   fintech_card,
   metaData,
 } from "../../constants/constants";
-import Consumer_Card from "../../components/Consumer_Card";
+import Consumer_Card from "../../components/Consumer-Card";
 import Client from "../../components/Client";
 import TechStack from "../../components/TechStack";
 import Accordion from "../../components/Accordion";
@@ -145,7 +145,7 @@ function Our_services() {
         <div className='new-container mx-auto -mt-16 pb-16'>
           <div className='text-center'>
             <a
-              href='/our_work'
+              href='/our-work'
               className='pt-10 pb-1  border-b border-primary inline-flex text-primary hover:scale-100  cursor-pointer hover:opacity-100'
             >
               See More of Our Work
