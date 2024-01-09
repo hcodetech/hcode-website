@@ -7,7 +7,6 @@ import Testimonial from "../../components/Testimonial";
 import Accordion from "../../components/Accordion";
 import CTA from "../../components/CTA";
 import { Blogs } from "../../components/Blogs";
-import { ArrowRightIcon } from "@heroicons/react/solid";
 import Benefits from "../../components/Benefits";
 import CardPortfolio from "../../components/CardPortfolio";
 
@@ -18,9 +17,9 @@ import {
   ai_benefits,
   ai_services,
   ai_technologies,
-  faq_ai,
+  faqAi,
   metaData,
-  Ai_blog_data,
+  aiBlogData,
   client,
 } from "../../constants/constants";
 import { getAPIUrl } from "../api/APIHelpers";
@@ -36,18 +35,19 @@ function AIService() {
   useEffect(() => {
     window.innerWidth <= 750 ? setIsDesktop(false) : setIsDesktop(true);
   });
-  const data = getTestimonialData("AI");
+
+  const testimonialData = getTestimonialData("AI");
 
   return (
     <>
       <Head>
-        <title> AI Services | Hcode </title>
+        <title> Ai Integration Services | Hcode </title>
         <MetaTags page={metaData.AI} />
       </Head>
 
-      <section className="h-screen bg-gray-50  bg-ai_bg_img bg-no-repeat bg-cover bg-center ">
-        <div className="max-w-2xl sm:px-4 h-2/5 pt-[275px] sm:pt-48 mx-auto flex  flex-col items-center	text-center">
-          <h1 className="font-bold text-4xl sm:text-7xl text-primary py-4 w-[95.33%] sm:w-[102%]">
+      <section className="h-[550px] md:h-screen bg-gray-50  bg-ai_bg_img bg-no-repeat bg-cover bg-center ">
+        <div className="max-w-2xl sm:px-4 h-2/5 pt-32 md:pt-[275px] sm:pt-48 mx-auto flex  flex-col items-center	text-center">
+          <h1 className="font-bold text-4xl sm:text-7xl text-primary py-4 w-[94%] sm:w-[102%]">
             AI Integration Services
           </h1>
           <p className="font-poppins text-black  px-5 sm:text-2xl font-light py-3 leading-7 md:leading-10 ">
@@ -79,8 +79,8 @@ function AIService() {
       {/* our services */}
       <section className="bg-[#F8F9FB] mt-24">
         <SectionHeader
-          heading="  The world is harnessing AI, what's stopping you? "
-          paragraph=" Maximize productivity and streamline processes with our customizable AI integration services. We seamlessly integrate Generative AI into your workflows to drive innovation and achieve optimal business performance."
+          heading="The world is harnessing AI, what's stopping you?"
+          paragraph="Maximize productivity and streamline processes with our customizable AI integration services. We seamlessly integrate Generative AI into your workflows to drive innovation and achieve optimal business performance."
           cta
         />
       </section>
@@ -88,7 +88,7 @@ function AIService() {
       {/* Our AI Integration Services */}
       <SectionHeader
         heading="Our AI Integration Services"
-        paragraph=" Our services utilize AI integrational tools to seamlessly embed artificial intelligence into your operations, enhancing efficiency and driving competitiveness."
+        paragraph="Our services utilize AI integrational tools to seamlessly embed artificial intelligence into your operations, enhancing efficiency and driving competitiveness."
       />
       <AiIntegrationServices />
 
@@ -102,8 +102,8 @@ function AIService() {
       </div>
 
       {/* We have experience in following AI Technologies and Integrations */}
-      <div className="bg-gray-100 py-10 my-8">
-        <section className="py-10 lg:py-16 new-container">
+      <section className="bg-gray-100 py-10 my-8">
+        <div className="py-10 lg:py-16 new-container">
           <div className="text-center ">
             <h3 className="text-2xl lg:text-4xl max-w-xl mx-auto font-semibold  lg:leading-snug">
               We have experience in following AI Technologies and Integrations
@@ -122,21 +122,19 @@ function AIService() {
               </div>
             ))}
           </div>
-        </section>
-      </div>
-
-      {/* Benefits */}
-      <section className=" pt-12">
-        <div className="new-container ">
-          <Benefits data={ai_benefits} additionalClass="max-w-2xl" />
         </div>
       </section>
 
+      {/* Benefits */}
+      <section className=" pt-12">
+        <Benefits data={ai_benefits} additionalClass="max-w-2xl" />
+      </section>
+
       {/* AI Integration Process with HCode */}
-      <section className="  w-[100%] md:h-[850px] mt-10 bg-AI_Integration_Process_bg bg-no-repeat  bg-top bg-cover">
+      <section className="  w-full md:h-[850px] mt-10 bg-AI_Integration_Process_bg bg-no-repeat  bg-top bg-cover">
         <div className="pb-7 pt-16">
-          <div className="new-container  mt-4 ">
-            <h3 className=" font-poppins text-[29.6px] sm:text-4xl font-semibold leading-10 text-left text-white mb-6 ">
+          <div className="new-container mt-4">
+            <h3 className=" font-poppins text-3xl sm:text-4xl font-semibold leading-10 text-left text-white mb-6">
               AI Integration Process with HCode
             </h3>
             <div className="">
@@ -155,8 +153,8 @@ function AIService() {
 
       {/* Portfolio */}
       <section className="py-10 mt-20">
-        <div className=" new-container py-10 grid grid-cols-12">
-          <div className="col-span-12  text-center ">
+        <div className="new-container py-10">
+          <div className="text-center ">
             <h2 className="text-2xl md:text-4xl font-semibold pb-2">
               AI products built by HCode
             </h2>
@@ -164,7 +162,7 @@ function AIService() {
               We’ve built the following AI products for our clients
             </p>
           </div>
-          <div className="col-span-12 py-10">
+          <div className="grid col-span-12 py-10">
             {portfolioData?.map((data) => (
               <CardPortfolio
                 key={data.id}
@@ -178,17 +176,17 @@ function AIService() {
 
       {/* testimonial */}
       <div className="py-20 mt-24 bg-gray-100">
-        <Testimonial data={data} />
+        <Testimonial data={testimonialData} />
       </div>
 
       {/* blogs section  */}
       <div className="sm:new-container  ">
-        <Blogs data={Ai_blog_data} />
+        <Blogs data={aiBlogData} />
       </div>
 
       {/* FAQ */}
       <section className="bg-gray-100 lg:-mt-56">
-        <Accordion data={faq_ai} />
+        <Accordion data={faqAi} />
       </section>
 
       <div className="my-20">

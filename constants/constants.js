@@ -869,7 +869,7 @@ export const metaData = {
     description:
       "Transform your business with our Hcode AI integration services. Enhance efficiency, customer engagement, and decision-making, with personalized, scalable AI solutions.",
     share_image: "https://hcode.tech/assets/img/Meta-Image.jpg",
-    url: "https://hcode.tech/our_services/ai-integration-services",
+    url: "https://hcode.tech/our_services/ai_integration_services",
   },
 
   mvp: {
@@ -1732,7 +1732,7 @@ export const ai_services = {
     "Our range of services seamlessly embeds artificial intelligence into your operations, enhancing efficiency and driving competitiveness. Explore our offerings below to unlock the power of AI for your organization.",
   points: [
     {
-      image: "/assets/img/ai_workFlow _2.svg",
+      image: "/assets/img/ai_workFlow_2.svg",
       heading: "AI-Powered Workflow Optimization",
       description:
         "We seamlessly integrate Artificial Intelligence into your workflows, automating tasks, providing real-time insights, and enhancing efficiency. Tailored to your unique needs, our service ensures you stay competitive in today's business landscape.",
@@ -1962,7 +1962,7 @@ export const faq_mvp = [
   },
 ];
 
-export const faq_ai = [
+export const faqAi = [
   {
     question: "What is AI integration, and how can it benefit my business?",
     answer:
@@ -2046,7 +2046,7 @@ export const hire_dev_hcode = [
     `,
   },
 ];
-export const Ai_blog_data = [
+export const aiBlogData = [
   {
     id: 1,
     title: "How AI Integration Services Can Fuel Your Business Growth",
