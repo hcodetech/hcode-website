@@ -1,18 +1,18 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react';
 
-import { getTestimonialData } from "../../utils/config";
+import { getTestimonialData } from '../../utils/config';
 
-import Client from "../../components/Client";
-import Testimonial from "../../components/Testimonial";
-import Accordion from "../../components/Accordion";
-import CTA from "../../components/CTA";
-import MvpBenefits from "../../components/MvpBenefits";
-import { Blogs } from "../../components/Blogs";
+import Client from '../../components/Client';
+import Testimonial from '../../components/Testimonial';
+import Accordion from '../../components/Accordion';
+import CTA from '../../components/CTA';
+import MvpBenefits from '../../components/MvpBenefits';
+import { Blogs } from '../../components/Blogs';
 
-import { ArrowRightIcon } from "@heroicons/react/solid";
+import { ArrowRightIcon } from '@heroicons/react/solid';
 
-import Head from "next/head";
-import MetaTags from "../../components/MetaTags";
+import Head from 'next/head';
+import MetaTags from '../../components/MetaTags';
 
 import {
   mvp_services,
@@ -20,26 +20,26 @@ import {
   metaData,
   posts,
   client,
-} from "../../constants/constants";
-import CaseStudiesCard from "../../components/CaseStudiesCard";
+} from '../../constants/constants';
+import CaseStudiesCard from '../../components/CaseStudiesCard';
 
 function mvp_development_services() {
-  const data = getTestimonialData("mvp");
-  const [isDesktop, setIsDesktop] = useState("");
+  const data = getTestimonialData('mvp');
+  const [isDesktop, setIsDesktop] = useState('');
 
   useEffect(() => {
     window.innerWidth <= 750 ? setIsDesktop(false) : setIsDesktop(true);
   }, []);
 
   useEffect(() => {
-    const redirectPage = "/our-services/mvp-development-services";
+    const redirectPage = '/our-services/mvp-development-services';
     window.location.href = redirectPage;
   }, []);
 
   return (
     <>
       <Head>
-        <title> MVP Development Services | Hcode </title>
+        <title> MVP Development Services - Hcode </title>
 
         <MetaTags page={metaData.mvp} />
       </Head>
@@ -195,7 +195,7 @@ function mvp_development_services() {
                   </div>
                   <div className=" col-start-2 col-end-12 p-4 rounded-xl my-4 mr-auto -ml-12  md:ml-[-33px]  w-full">
                     <h4 className="font-poppins text-[20px] sm:text-2xl font-semibold leading-10 mb-1">
-                      {" "}
+                      {' '}
                       Discovery Meeting
                     </h4>
                     <p className="font-poppins text-base font-normal leading-6 max-w-lg  ">
@@ -216,7 +216,7 @@ function mvp_development_services() {
                   </div>
                   <div className=" col-start-2 col-end-12 p-4 rounded-xl my-4 mr-auto -ml-12 md:ml-[-33px] w-full">
                     <h3 className="font-poppins text-[20px] sm:text-2xl font-semibold leading-10 mb-1">
-                      Designing{" "}
+                      Designing{' '}
                     </h3>
 
                     <p className="font-poppins text-base font-normal leading-6 max-w-md">
@@ -272,9 +272,9 @@ function mvp_development_services() {
       {/* mvp built by hcode */}
       <div className=" mt-8 mb-10">
         <SectionHeader
-          heading={" MVPs built by HCode"}
+          heading={' MVPs built by HCode'}
           paragraph={
-            "We have delivered these high quality complete MVP products in very competitive timelines for our clients"
+            'We have delivered these high quality complete MVP products in very competitive timelines for our clients'
           }
         />
         <div className="-mt-14">
@@ -305,6 +305,7 @@ function mvp_development_services() {
           buttonText="Get in Touch"
         />
       </div>
+      <MVP_FAQSchema />
     </>
   );
 }
@@ -323,7 +324,7 @@ const SectionHeader = ({ heading, paragraph, cta, ctaText }) => (
               href="/contact"
               className="bg-white text-primary  border-primary border-2 rounded px-16 py-4 text-center"
             >
-              {ctaText || "Tell us about your project"}
+              {ctaText || 'Tell us about your project'}
             </a>
           )}
         </div>
@@ -331,3 +332,72 @@ const SectionHeader = ({ heading, paragraph, cta, ctaText }) => (
     </div>
   </div>
 );
+
+const MVP_FAQSchema = () => {
+  const script = {
+    __html: `
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "How to Develop an MVP",
+      "description": "A step-by-step guide to developing a Minimum Viable Product (MVP)",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "Determine MVP Requirements",
+          "text": "Start by determining the requirements of your MVP. Consider what features are essential for your product's initial release."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Plan Development Timeline",
+          "text": "Create a timeline for MVP development based on project requirements, budget, and complexity. Consider factors like technology stack, external integrations, and phase-wise development."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Choose Technology Stack",
+          "text": "Decide on the frontend and backend technologies to be used. Our standard technology stacks are React and Typescript for Frontend and Python for Backend. However, we are open to discussing any specific preferences."
+        }
+      ],
+      "faqSection": {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How much time you take for developing an MVP?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "This totally depends on what all is needed in the product, how well your product requirements are thought through, and what is your budget plan. We’ve built products in as short as 10 weeks when the founders were very precise and clear in what the product does and looks like as well as had done some ground work as well. Every additional thing would add to the time."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "I have no knowledge of technology. How should I start?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You need to know what the product should do, and we will take care to think through how it does that. It is always good to start with a brief of the Product, a single pager that explains what the product does and is its USP, whom is it built for, type of users, similar products, differentiators, and anything else that we should know. The next step is to plan the requirements in the MVP and chalk out the user journey through designs. You can get this service from us as well. Once these are fairly finalized, we can help with an estimate, and post mutual agreement can get started."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What are the decision points I have to make before getting started?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "If the product is client-facing, you need to decide which devices the product should be built for. Is it a Mobile application, or a Web Application for Desktop and/or Mobile. The more the devices, the more time it will take for development and optimization. Second, you need to tell us what all external integrations, if anything, in particular, are needed for the project, are important as any external dependency need to be evaluated. Third, you need to plan for the phase-wise development plan with respect to features which would help us plan the development."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What technologies you typically use for frontend and backend. If I have some specific preference, would you comply?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Our standard technology stacks are React and Typescript for Frontend and Python for Backend. We’ve chosen these in the interest of being open source and fairly comprehensive and fast to implement, along with our decent expertise in these. If for any reason you have any specific preference in the technology stack, please feel free to discuss with us."
+            }
+          }
+        ]
+      }
+    }
+    `,
+  };
+
+  return <script type="application/ld+json" dangerouslySetInnerHTML={script} />;
+};

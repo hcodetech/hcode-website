@@ -1,15 +1,15 @@
 // /** @format */
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from 'react';
 
-import Head from "next/head";
-import Accordion from "../../components/Accordion";
-import Benefits from "../../components/Benefits";
-import CTA from "../../components/CTA";
-import CardPortfolio from "../../components/CardPortfolio";
-import Client from "../../components/Client";
-import MetaTags from "../../components/MetaTags";
-import Testimonial from "../../components/Testimonial";
+import Head from 'next/head';
+import Accordion from '../../components/Accordion';
+import Benefits from '../../components/Benefits';
+import CTA from '../../components/CTA';
+import CardPortfolio from '../../components/CardPortfolio';
+import Client from '../../components/Client';
+import MetaTags from '../../components/MetaTags';
+import Testimonial from '../../components/Testimonial';
 import {
   AIService_Hero,
   ai_benefits,
@@ -18,15 +18,15 @@ import {
   client,
   faqAi,
   metaData,
-} from "../../constants/constants";
-import { getTestimonialData } from "../../utils/config";
-import { getAPIUrl } from "../api/APIHelpers";
-import { apiRoutes } from "../api/APIRoutes";
-import useGetFetch from "../hooks/useGetFetch";
+} from '../../constants/constants';
+import { getTestimonialData } from '../../utils/config';
+import { getAPIUrl } from '../api/APIHelpers';
+import { apiRoutes } from '../api/APIRoutes';
+import useGetFetch from '../hooks/useGetFetch';
 
 const AIService = () => {
-  const [isDesktop, setIsDesktop] = useState("");
-  const selectedCategory = ["AI"];
+  const [isDesktop, setIsDesktop] = useState('');
+  const selectedCategory = ['AI'];
 
   const [portfolioData, isLoading] = useGetFetch(getAPIUrl(apiRoutes.OUR_WORK));
 
@@ -35,16 +35,16 @@ const AIService = () => {
   });
 
   useEffect(() => {
-    const redirectPage = "/our-services/ai-integration-services";
+    const redirectPage = '/our-services/ai-integration-services';
     window.location.href = redirectPage;
   }, []);
 
-  const data = getTestimonialData("AI");
+  const data = getTestimonialData('AI');
 
   return (
     <div>
       <Head>
-        <title>AI services | Hcode Technologies</title>
+        <title>Ai Integration Services - Hcode</title>
         <MetaTags page={metaData.AI} />
       </Head>
 
@@ -186,8 +186,95 @@ const AIService = () => {
           widthClass="w-full"
         />
       </div>
+
+      <AIFAQSchema />
     </div>
   );
 };
 
 export default AIService;
+
+const AIFAQSchema = () => {
+  const script = {
+    __html: `
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "How to Integrate AI into Your Business",
+      "description": "A step-by-step guide to integrating artificial intelligence into your business processes",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "Understand AI Integration",
+          "text": "Learn about AI integration and its benefits for businesses. Understand how AI can automate tasks, provide insights, enhance decision-making, and improve efficiency."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Assess Your Business Needs",
+          "text": "Evaluate your business requirements and goals for AI integration. Determine the specific areas where AI can add value and address challenges within your organization."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Plan AI Integration Strategy",
+          "text": "Develop a strategy for integrating AI into your existing systems and workflows. Consider factors such as project complexity, timeline, budget, and technology compatibility."
+        }
+      ],
+      "faqSection": {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is AI integration, and how can it benefit my business?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "AI integration involves seamlessly incorporating artificial intelligence into your existing systems and workflows. It can benefit your business by automating tasks, providing real-time insights, enhancing decision-making, and improving overall efficiency."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need to have existing AI systems in place to benefit from your services?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No, you don't need existing AI systems. We work with businesses at all stages of AI adoption, from those looking to start integrating AI to those wanting to enhance their existing AI infrastructure."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does it typically take to see results from AI integration?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The timeline for seeing results varies depending on the complexity of the project and specific goals. Some businesses may experience improvements in operational efficiency within weeks, while others may see substantial benefits over several months."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the typical cost associated with AI integration services, and how can I determine the budget for my project?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The cost of AI integration can vary widely depending on project complexity and scope. We offer customized solutions, and the pricing is tailored to your specific needs. To determine a budget, we recommend discussing your requirements with our team for a detailed estimate."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are there any potential challenges or risks associated with AI integration, and how do you mitigate them?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "While AI integration offers significant benefits, challenges may include data security, ethical concerns, and technology compatibility. We address these by implementing robust security measures, adhering to ethical AI principles, and conducting compatibility assessments."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is my data secure when integrating AI into my systems?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, data security is a top priority. We implement industry-standard security measures to protect your data throughout the AI integration process, ensuring confidentiality and compliance with privacy regulations."
+            }
+          }
+        ]
+      }
+    }
+    `,
+  };
+
+  return <script type="application/ld+json" dangerouslySetInnerHTML={script} />;
+};
