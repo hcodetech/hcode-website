@@ -5,44 +5,45 @@ import {
   PhoneIcon,
   ChatAltIcon,
   VideoCameraIcon,
-} from '@heroicons/react/solid';
-import Head from 'next/head';
+} from "@heroicons/react/solid";
+import Head from "next/head";
 
-import { useState } from 'react';
-import { contact_us_circle, metaData } from '../constants/constants';
-import DotLoader from 'react-spinners/DotLoader';
-import { apiRoutes } from './api/APIRoutes';
-import { getAPIUrl } from './api/APIHelpers';
-import 'react-phone-input-2/lib/plain.css';
-import MetaTags from '../components/MetaTags';
-import UpdateUserLeadPopup from '../components/updateUserLeadPopup';
-import QueryPopup from '../components/QueryPopup';
-import QueryResponsePopUp from '../components/QueryResponsePopUp';
-import GetQuoteResponsePopUp from '../components/GetQuoteResponsePopup';
-const defaultColor = '#373536';
+import { useState } from "react";
+import { contact_us_circle, metaData } from "../constants/constants";
+import DotLoader from "react-spinners/DotLoader";
+import { apiRoutes } from "./api/APIRoutes";
+import { getAPIUrl } from "./api/APIHelpers";
+import "react-phone-input-2/lib/plain.css";
+import MetaTags from "../components/MetaTags";
+import UpdateUserLeadPopup from "../components/updateUserLeadPopup";
+import QueryPopup from "../components/QueryPopup";
+import QueryResponsePopUp from "../components/QueryResponsePopUp";
+import GetQuoteResponsePopUp from "../components/GetQuoteResponsePopup";
+const defaultColor = "#373536";
 function contact() {
   const [showProjectDetailsPopup, setShowProjectDetailsPopup] = useState(false);
   const [failure, setFailure] = useState(false);
-  const [responseMessage, setResponseMessage] = useState('');
-  const [firstName, setFirstName] = useState('');
-  const [leadId, setLeadId] = useState('');
-  const [lastName, setLastName] = useState('');
+  const [responseMessage, setResponseMessage] = useState("");
+  const [firstName, setFirstName] = useState("");
+  const [leadId, setLeadId] = useState("");
+  const [lastName, setLastName] = useState("");
   const [loading, setLoading] = useState(false);
-  const [companyEmail, setCompanyEmail] = useState('');
+  const [companyEmail, setCompanyEmail] = useState("");
+  const [referredBy, setReferredBy] = useState("Linkedin");
 
-  const [projectDesc, setProjectDesc] = useState('');
+  const [projectDesc, setProjectDesc] = useState("");
   const [openQueryPopup, setOpenQueryPopup] = useState(false);
   const [submitQueryResponsePopUp, setSubmitQueryResponsePopUp] = useState({
     show: false,
-    title: '',
-    description: '',
+    title: "",
+    description: "",
     error: false,
   });
 
   const [getQuoteResponsePopup, setGetQuoteResponsePopup] = useState({
     show: false,
-    title: '',
-    description: '',
+    title: "",
+    description: "",
     error: false,
   });
 
@@ -52,16 +53,16 @@ function contact() {
     if (success)
       setSubmitQueryResponsePopUp({
         show: true,
-        title: 'Thank You !',
-        description: 'Thanks for your interest. We will contact you shortly.',
+        title: "Thank You !",
+        description: "Thanks for your interest. We will contact you shortly.",
         error: false,
       });
     else
       setSubmitQueryResponsePopUp({
         show: true,
-        title: 'Oops !',
+        title: "Oops !",
         description:
-          'We are unable to register your request at current time. Please send us an email at hello@hcode.tech',
+          "We are unable to register your request at current time. Please send us an email at hello@hcode.tech",
         error: true,
       });
   };
@@ -72,16 +73,16 @@ function contact() {
     if (success)
       setGetQuoteResponsePopup({
         show: true,
-        title: 'Thank You !',
-        description: 'Thanks for your interest. We will contact you shortly.',
+        title: "Thank You !",
+        description: "Thanks for your interest. We will contact you shortly.",
         error: false,
       });
     else
       setGetQuoteResponsePopup({
         show: true,
-        title: 'Oops !',
+        title: "Oops !",
         description:
-          'We are unable to register your request at current time. Please send us an email at hello@hcode.tech',
+          "We are unable to register your request at current time. Please send us an email at hello@hcode.tech",
         error: true,
       });
   };
@@ -102,7 +103,9 @@ function contact() {
       first_name: firstName,
       last_name: lastName,
       email: companyEmail,
-      project_description: projectDesc,
+      referred_by: referredBy,
+
+      project_description: `Referred_by: ${referredBy}` + '\n' + projectDesc ,
       type: 1,
     };
 
@@ -116,8 +119,8 @@ function contact() {
     //   "https://script.google.com/a/hcode.tech/macros/s/AKfycbytrG1hsiIqFlkL4vMMNVRy0WXpEq2E26mU8JGuIA/exec";
     const options = {
       body: formData,
-      method: 'POST',
-      'Content-Type': 'application/x-www-form-urlencoded',
+      method: "POST",
+      "Content-Type": "application/x-www-form-urlencoded",
     };
     try {
       setLoading(true);
@@ -132,11 +135,12 @@ function contact() {
         }
         throw new Error(res);
       }
-      setFirstName('');
-      setLastName('');
-      setCompanyEmail('');
-      setProjectDesc('');
+      setFirstName("");
+      setLastName("");
+      setCompanyEmail("");
+      setProjectDesc("");
       setLeadId(json?.id);
+      setHearAboutUs("");
 
       setShowProjectDetailsPopup(true);
     } catch (e) {
@@ -320,7 +324,32 @@ function contact() {
                 />
                 <br />
 
-                <div className="col-span-12 mt-1">
+                <div className="col-span-12">
+                  <label
+                    htmlFor="no-of-employees"
+                    className="block text-sm font-medium text-gray-700"
+                  >
+                    How did you hear about us ?
+                  </label>
+                  <select
+                    value={referredBy}
+                    onChange={(e) => {
+                      setReferredBy(e.target.value);
+                    }}
+                    required
+                    id="no-of-employees"
+                    name="no-of-employees"
+                    className="input-form mt-1 block w-full py-2 px-3"
+                  >
+                    <option value="Linkedin">Linkedin</option>
+                    <option value="Instagram">Instagram</option>
+                    <option value="Google">Google</option>
+                    <option value="Refer">Refer</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+
+                <div className="col-span-12 mt-6">
                   <label
                     htmlFor="project-briefy"
                     className="block text-sm font-medium text-gray-700"
@@ -335,7 +364,7 @@ function contact() {
                     name="project-briefy"
                     rows={3}
                     className="input-form"
-                    defaultValue={''}
+                    defaultValue={""}
                   />
                 </div>
               </div>
@@ -355,9 +384,9 @@ function contact() {
             onClick={() => setOpenQueryPopup(true)}
             className="mt-5 text-gray-700 italic"
           >
-            For any other queries,{' '}
+            For any other queries,{" "}
             <span className="border-b border-primary text-primary">
-              {' '}
+              {" "}
               Click here.
             </span>
           </button>

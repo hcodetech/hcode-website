@@ -261,6 +261,7 @@ function mvp_development_services() {
             </div>
           </div>
         </div>
+        <MVP_HowToSchema/>
       </div>
 
       {/* mvp built by hcode */}
@@ -397,3 +398,32 @@ const MVP_FAQSchema = () => {
 
   return <script type="application/ld+json" dangerouslySetInnerHTML={script} />;
 };
+
+const MVP_HowToSchema = () => {
+  const script = {__html:`{
+    "@context": "https://schema.org/", 
+    "@type": "HowTo", 
+    "name": "How We Develop MVP",
+    "step": [{
+      "@type": "HowToStep",
+      "text": "Discovery Meeting
+  In the discovery phase, we conduct a thorough analysis of your business to gather key insights. This enables us to strategically prioritize MVP features that align with your vision."
+    },{
+      "@type": "HowToStep",
+      "text": "Designing
+  Our innovative approach ensures that we prioritize your user's experience to design a modern MVP that solves real user problems."
+    },{
+      "@type": "HowToStep",
+      "text": "Development
+  We ensure excellent results by utilizing the latest tech stack and implementing rigorous code review and development processes."
+    },{
+      "@type": "HowToStep",
+      "text": "Release
+  We ensure your product is launch-ready and performs as expected through real device testing and user insights."
+    }]    
+  }
+  `}
+
+  return <script type="application/ld+json" dangerouslySetInnerHTML={script} />;
+};
+
