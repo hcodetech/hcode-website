@@ -180,12 +180,12 @@ function AIService() {
       </div>
 
       {/* blogs section  */}
-      <div className="sm:new-container  ">
+      <div className="sm:new-container sm:py-32 ">
         <Blogs data={aiBlogData} />
       </div>
 
       {/* FAQ */}
-      <section className="bg-gray-100 lg:-mt-56">
+      <section className="bg-gray-100 ">
         <Accordion data={faqAi} />
       </section>
 

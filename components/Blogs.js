@@ -2,14 +2,14 @@
 
 export function Blogs({data}){
     return (
-      <div className="bg-white pt-5 pb-20 sm:py-32">
+      <div className="bg-white pt-5 pb-20  ">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="max-w-2xl">
             <h4 className="font-poppins text-[26px] font-semibold leading-8 sm:text-4xl">
               Blogs
             </h4>
           </div>
-          <div className="mx-auto mt-14 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:h-[700px] ">
+          <div className="mx-auto mt-14 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:h-[450px] ">
             {data.map((post) => (
               <a href={post.href} key={post.href}>
                 <article
