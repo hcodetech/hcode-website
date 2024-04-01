@@ -87,7 +87,7 @@ function mvp_development_services() {
 
       <div className=" new-container -mt-9 mb-12  space-y-12">
         {/* 1st Card */}
-        <div className="  grid grid-cols-12  ease-in-out duration-500 hover:shadow-md md:px-10 hover:p-10 hover:scale-105 hover:border hover:rounded-lg ">
+        <div className="grid grid-cols-12  ease-in-out duration-500 hover:shadow-md md:px-10 hover:p-10 hover:scale-105 hover:border hover:rounded-lg ">
           <div className="col-span-12 lg:col-span-1 h-20 w-20">
             <img
               className=""
@@ -114,7 +114,7 @@ function mvp_development_services() {
               className=" text-lg flex items-center mt-2 w-50 text-gray-500 cursor-pointer hover:underline  "
             >
               Schedule a brief call
-              <ArrowRightIcon className="w-6 md:ml-2  h-full text-gray-500" />
+              <ArrowRightIcon className="w-6 md:ml-2 h-full text-gray-500" />
             </a>
           </div>
         </div>
@@ -152,27 +152,22 @@ function mvp_development_services() {
           </div>
         </div>
       </div>
+ 
 
+  
       <section className="bg-[#F8F9FB] pt-[35px] sm:pt-16 ">
         <div className=" ">
           <MvpBenefits additionalClassName="lg:w-1/2" data={mvp_services} />
           {/*  */}
         </div>
       </section>
-
-      {/* transform idea */}
-
-      <div className="my-24  ">
-        <CTA
-          heading="Transform your ideas into reality with an MVP"
-          paragraph="We can help you turn your ideas into successful MVPs that attract early adopters."
-          buttonText="Tell us about your project"
-          widthClass="lg:w-[70%]"
-        />
+      {/* testimonial */}
+  <div className="py-20 mt-24 bg-gray-100">
+        <Testimonial data={data} />
       </div>
 
-      {/* transform v2 */}
-      <div className="  w-[100%] md:h-[850px] mt-10   bg-mvp_transform_idea bg-no-repeat  bg-left bg-cover">
+       {/* transform v2 */}
+      <div className="  w-[100%] md:h-[850px] mt-28   bg-mvp_transform_idea bg-no-repeat  bg-left bg-cover">
         <div className="py-7">
           <div className="new-container  mt-4 ">
             <h3 className=" font-poppins text-[29.6px] sm:text-4xl font-semibold leading-10 text-left text-white mb-6 ">
@@ -210,7 +205,7 @@ function mvp_development_services() {
                   </div>
                   <div className=" col-start-2 col-end-12 p-4 rounded-xl my-4 mr-auto -ml-12 md:ml-[-33px] w-full">
                     <h4 className="font-poppins text-[20px] sm:text-2xl font-semibold leading-10 mb-1">
-                      Designing{' '}
+                      Designing
                     </h4>
 
                     <p className="font-poppins text-base font-light sm:font-normal leading-6 max-w-md">
@@ -277,20 +272,34 @@ function mvp_development_services() {
         </div>
       </div>
 
-      {/* testimonial */}
-      <div className="py-20 mt-24 bg-gray-100">
-        <Testimonial data={data} />
+       {/* FAQ */}
+       <section className="bg-gray-100 mt-28">
+        <Accordion data={faq_mvp}/>
+      </section>
+
+      {/* transform idea */}
+
+      <div className="my-24  ">
+        <CTA
+          heading="Transform your ideas into reality with an MVP"
+          paragraph="We can help you turn your ideas into successful MVPs that attract early adopters."
+          buttonText="Tell us about your project"
+          widthClass="lg:w-[70%]"
+        />
       </div>
+
+     
+
+      
+
+     
 
       {/* blogs section  */}
       <div className="sm:new-container  ">
         <Blogs data={posts} />
       </div>
 
-      {/* FAQ */}
-      <section className="bg-gray-100 lg:-mt-56">
-        <Accordion data={faq_mvp} />
-      </section>
+     
 
       {/* CTA */}
       <div className="py-10 sm:py-0 sm:m-20">
