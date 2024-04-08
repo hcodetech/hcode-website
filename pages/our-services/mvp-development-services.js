@@ -69,7 +69,7 @@ function mvp_development_services() {
         />
       </div>
       {/* our services */}
-      {/* <section className="bg-[#F8F9FB] mt-24">
+      <section className="bg-[#F8F9FB] mt-24">
         <SectionHeader
           heading="  Success of your product starts with a great MVP"
           paragraph=" An MVP is a cost-effective way to test your idea. It has essential
@@ -78,7 +78,7 @@ function mvp_development_services() {
         launching at scale."
           cta
         />
-      </section> */}
+      </section>
 
       <SectionHeader
         heading=" MVP Development Solutions at HCode"

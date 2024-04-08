@@ -2,7 +2,7 @@ function Benefits(props) {
   return (
     <div className={props.background ? '' : ''}>
       <div className="text-center">
-        <h2 className="text-2xl md:text-4xl font-semibold  pt-16">
+        <h2 className={`text-2xl md:text-4xl font-semibold  mx-auto pt-16 ${props.additionalClass}`}>
           {props.data.heading}
         </h2>
         <p

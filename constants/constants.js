@@ -691,7 +691,7 @@ export const dass_benefits = {
 };
 
 export const blockchain_benefits = {
-  heading: "Benefits Of Hiring from us",
+  heading: "Why Choose HCode as Your Blockchain App Development Company",
   paragraph:
     "Our developers have experience working with Global Clients on the latest tech stacks and challenges that come up with scale. We can help you with efficient and lean solutions for your products to maximize RoI for you.",
   points: [
@@ -1701,27 +1701,28 @@ export const blockchain_services = {
   points: [
     {
       image: "/assets/img/mobile-illu.svg",
-      heading: "DApps",
+      heading: "Smart Contract",
       description:
-        "A decentralized application(dapp) is an application built on a decentralized network that combines a smart contract and a UI. We can develop these dapps for our clients with all necessary integrations.",
+        "We are a leading-edge smart contact development company, catering to a diverse clientele ranging from startups to large-scale enterprises. Our collaborative approach ensures that we work closely with you to conceptualize and implement self-executing contract management platforms, and eWallet apps tailored to optimize operational automation and efficiency.",
     },
     {
       image: "/assets/img/smartContract_svg.svg",
-      heading: "Smart Contract",
-      description:
-        " Our blockchain developers understand your needs and accordingly can come up with smart contract management platforms and eWallet apps.",
-    },
-    {
-      image: "/assets/img/nftMarketplace_svg.svg",
       heading: "NFT Marketplace",
       description:
-        "We can help build you an NFT marketplace with all the necessary features of the same similar to the popular ones, based on any popular blockchain network.",
+        "We are an NFT Marketplace development company empowering businesses to establish decentralized trading platforms. Our expertise enables us to create robust NFT marketplaces with essential features akin to popular platforms. Leveraging renowned blockchain networks such as Ethereum, Polygon, and more, we ensure seamless integration and optimal functionality for your marketplace. ",
     },
+ 
     {
       image: "/assets/img/audit_svg.svg",
       heading: "Blockchain Security Audit",
       description:
-        "We will help you with making sure that your Blockchain application is secure so that no one can hack your contracts and cause you financial & credibility loss.",
+        "As a top-notch blockchain development services provider we offer comprehensive support to ensure the security of your blockchain application, safeguarding your contracts from potential hacks that could lead to financial loss and damage to your credibility.",
+    },
+    {
+      image: "/assets/img/audit_svg.svg",
+      heading: "Blockchain Application Development",
+      description:
+        "A decentralized application (dApp) integrates a smart contract and a user interface within a decentralized network. Our blockchain application development services specialize in crafting custom dApps tailored to our client's needs, ensuring scalable and profitable blockchain applications. This strategic approach empowers our clients to gain a competitive edge in the dynamic blockchain landscape.",
     },
   ],
 };
@@ -2069,6 +2070,35 @@ export const aiBlogData = [
     description:
       "How to Seamlessly Integrate ChatGPT API into Your Website? Have […]",
     imageUrl: "/assets/img/Ai_blog_3.png",
+  },
+];
+export const blockchainBlogData = [
+
+  {
+    id: 1,
+    title: "Polygon vs. Ethereum: Why Choose Polygon for Scalable, Low-Cost DApps",
+   
+    href: "https://hcode.tech/blog/polygon-vs-ethereum-why-choose-polygon-for-scalable-low-cost-dapps/",
+    description:
+      "Polygon vs. Ethereum: Why Choose Polygon for Scalable, Low-Cost DApps […]",
+    imageUrl: "/assets/img/blockchain/blockchain_blog_2.jpeg",
+  },
+  {
+    id: 2,
+    title: "How AI and Blockchain “Together” Can Transform Business ",
+   
+    href: "https://hcode.tech/blog/how-ai-and-blockchain-together-can-transform-business/",
+    description: "How AI and Blockchain “Together” Can Transform Business […]",
+    imageUrl: "/assets/img/blockchain/blockchain_blog_1.png",
+  },
+
+  {
+    id: 3,
+    title:'Web 3.0 vs Web 2.0: A Guide for Businesses in the Future of the Web',
+    href: "https://hcode.tech/blog/web-3-0-vs-web-2-0-a-guide-for-businesses-in-the-future-of-the-web/",
+    description:
+      "How to Seamlessly Integrate ChatGPT API into Your Website? Have […]",
+    imageUrl: "/assets/img/blockchain/blockchain_blog_3.jpeg",
   },
 ];
 
