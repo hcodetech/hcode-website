@@ -1,17 +1,17 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 
-import { getTestimonialData } from '../../utils/config';
+import { getTestimonialData } from "../../utils/config";
 
-import Client from '../../components/Client';
-import Testimonial from '../../components/Testimonial';
-import Accordion from '../../components/Accordion';
-import CTA from '../../components/CTA';
-import MvpBenefits from '../../components/MvpBenefits';
-import { Blogs } from '../../components/Blogs';
-import { ArrowRightIcon } from '@heroicons/react/solid';
+import Client from "../../components/Client";
+import Testimonial from "../../components/Testimonial";
+import Accordion from "../../components/Accordion";
+import CTA from "../../components/CTA";
+import MvpBenefits from "../../components/MvpBenefits";
+import { Blogs } from "../../components/Blogs";
+import { ArrowRightIcon } from "@heroicons/react/solid";
 
-import Head from 'next/head';
-import MetaTags from '../../components/MetaTags';
+import Head from "next/head";
+import MetaTags from "../../components/MetaTags";
 
 import {
   mvp_services,
@@ -19,13 +19,13 @@ import {
   metaData,
   posts,
   client,
-} from '../../constants/constants';
-import CaseStudiesCard from '../../components/CaseStudiesCard';
-import SectionHeader from '../../components/SectionHeader';
+} from "../../constants/constants";
+import CaseStudiesCard from "../../components/CaseStudiesCard";
+import SectionHeader from "../../components/SectionHeader";
 
 function mvp_development_services() {
-  const data = getTestimonialData('mvp');
-  const [isDesktop, setIsDesktop] = useState('');
+  const data = getTestimonialData("mvp");
+  const [isDesktop, setIsDesktop] = useState("");
 
   useEffect(() => {
     window.innerWidth <= 750 ? setIsDesktop(false) : setIsDesktop(true);
@@ -153,9 +153,7 @@ function mvp_development_services() {
           </div>
         </div>
       </div>
- 
 
-  
       <section className="bg-[#F8F9FB] pt-[35px] sm:pt-16 ">
         <div className=" ">
           <MvpBenefits additionalClassName="lg:w-1/2" data={mvp_services} />
@@ -163,11 +161,11 @@ function mvp_development_services() {
         </div>
       </section>
       {/* testimonial */}
-  <div className="py-20 mt-24 bg-gray-100">
+      <div className="py-20 mt-24 bg-gray-100">
         <Testimonial data={data} />
       </div>
 
-       {/* transform v2 */}
+      {/* transform v2 */}
       <div className="  w-[100%] md:h-[850px] mt-28   bg-mvp_transform_idea bg-no-repeat  bg-left bg-cover">
         <div className="py-7">
           <div className="new-container  mt-4 ">
@@ -185,7 +183,7 @@ function mvp_development_services() {
                   </div>
                   <div className=" col-start-2 col-end-12 p-4 rounded-xl my-4 mr-auto -ml-12  md:ml-[-33px]  w-full">
                     <h4 className="font-poppins text-[20px] sm:text-2xl font-semibold leading-10 mb-1">
-                      {' '}
+                      {" "}
                       Discovery Meeting
                     </h4>
                     <p className="font-poppins text-base font-light sm:font-normal leading-6 max-w-lg">
@@ -257,15 +255,15 @@ function mvp_development_services() {
             </div>
           </div>
         </div>
-        <MVP_HowToSchema/>
+        <MVP_HowToSchema />
       </div>
 
       {/* mvp built by hcode */}
       <div className=" mt-8 mb-10">
         <SectionHeader
-          heading={' MVPs built by HCode'}
+          heading={" MVPs built by HCode"}
           paragraph={
-            'We have delivered these high quality complete MVP products in very competitive timelines for our clients'
+            "We have delivered these high quality complete MVP products in very competitive timelines for our clients"
           }
         />
         <div className="-mt-14">
@@ -273,9 +271,9 @@ function mvp_development_services() {
         </div>
       </div>
 
-       {/* FAQ */}
-       <section className="bg-gray-100 mt-28">
-        <Accordion data={faq_mvp}/>
+      {/* FAQ */}
+      <section className="bg-gray-100 mt-28">
+        <Accordion data={faq_mvp} />
       </section>
 
       {/* transform idea */}
@@ -289,18 +287,10 @@ function mvp_development_services() {
         />
       </div>
 
-     
-
-      
-
-     
-
       {/* blogs section  */}
       <div className="sm:new-container  ">
         <Blogs data={posts} />
       </div>
-
-     
 
       {/* CTA */}
       <div className="py-10 sm:py-0 sm:m-20">
@@ -315,8 +305,6 @@ function mvp_development_services() {
   );
 }
 export default mvp_development_services;
-
-
 
 const MVP_FAQSchema = () => {
   const script = {
@@ -388,7 +376,8 @@ const MVP_FAQSchema = () => {
 };
 
 const MVP_HowToSchema = () => {
-  const script = {__html:`{
+  const script = {
+    __html: `{
     "@context": "https://schema.org/", 
     "@type": "HowTo", 
     "name": "How We Develop MVP",
@@ -410,8 +399,8 @@ const MVP_HowToSchema = () => {
   We ensure your product is launch-ready and performs as expected through real device testing and user insights."
     }]    
   }
-  `}
+  `,
+  };
 
   return <script type="application/ld+json" dangerouslySetInnerHTML={script} />;
 };
-

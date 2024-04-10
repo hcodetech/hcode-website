@@ -242,6 +242,10 @@ export const work_with_us_recuriter_image =
 export const pre_vetted_hero = "/assets/img/our_services_hero1.jpg";
 export const our_services_hero = "/assets/img/our_services_hero.jpg";
 ("/assets/img/work_with_us_recruiter.jpg");
+export const requirement = "/assets/img/requirements.jpeg";
+// export const office_v3 = "/assets/img/office_v3.jpg";
+
+
 
 export const work_with_us_image_carousel = [
   { image: "/assets/img/thailand_trip.jpg" },
@@ -1694,22 +1698,25 @@ export const portfolioData = [
   },
 ];
 
+
 export const blockchain_services = {
   heading: " Our Blockchain Services",
   paragraph:
     "Whether you are looking for a Blockchain Wallet, Smart Contract, NFT, or Custom Blockchain Solution, we can help you with our Blockchain expertise",
   points: [
     {
-      image: "/assets/img/mobile-illu.svg",
+      // image: "/assets/img/mobile-illu.svg",
+      image: "/assets/img/smartContract_svg.svg",
+
       heading: "Smart Contract",
       description:
-        "We are a leading-edge smart contact development company, catering to a diverse clientele ranging from startups to large-scale enterprises. Our collaborative approach ensures that we work closely with you to conceptualize and implement self-executing contract management platforms, and eWallet apps tailored to optimize operational automation and efficiency.",
+        "We are a leading-edge smart contact development company, catering to a diverse clientele ranging from startups to large-scale enterprises. Our collaborative approach ensures that we work closely with you to conceptualize and implement self-executing.",
     },
     {
-      image: "/assets/img/smartContract_svg.svg",
+      image: "/assets/img/nftMarketplace_svg.svg",
       heading: "NFT Marketplace",
       description:
-        "We are an NFT Marketplace development company empowering businesses to establish decentralized trading platforms. Our expertise enables us to create robust NFT marketplaces with essential features akin to popular platforms. Leveraging renowned blockchain networks such as Ethereum, Polygon, and more, we ensure seamless integration and optimal functionality for your marketplace. ",
+        "We are an NFT Marketplace development company empowering businesses to establish decentralized trading platforms. Our expertise enables us to create robust NFT marketplaces with essential features akin to popular platforms. . ",
     },
  
     {
@@ -1719,13 +1726,46 @@ export const blockchain_services = {
         "As a top-notch blockchain development services provider we offer comprehensive support to ensure the security of your blockchain application, safeguarding your contracts from potential hacks that could lead to financial loss and damage to your credibility.",
     },
     {
-      image: "/assets/img/audit_svg.svg",
+      image: "/assets/img/blockchain_app_development.svg",
       heading: "Blockchain Application Development",
       description:
-        "A decentralized application (dApp) integrates a smart contract and a user interface within a decentralized network. Our blockchain application development services specialize in crafting custom dApps tailored to our client's needs, ensuring scalable and profitable blockchain applications. This strategic approach empowers our clients to gain a competitive edge in the dynamic blockchain landscape.",
+        "A decentralized application (dApp) integrates a smart contract and a user interface within a decentralized network. Our blockchain application development services specialize in crafting custom dApps tailored to our client's needs, ensuring scalable and profitable blockchain applications..",
     },
   ],
 };
+
+// export const blockchain_services = {
+//   heading: " Our Blockchain Services",
+//   paragraph:
+//     "Whether you are looking for a Blockchain Wallet, Smart Contract, NFT, or Custom Blockchain Solution, we can help you with our Blockchain expertise",
+//   points: [
+//     {
+//       image: "/assets/img/mobile-illu.svg",
+//       heading: "Smart Contract",
+//       description:
+//         "We are a leading-edge smart contact development company, catering to a diverse clientele ranging from startups to large-scale enterprises. Our collaborative approach ensures that we work closely with you to conceptualize and implement self-executing contract management platforms, and eWallet apps tailored to optimize operational automation and efficiency.",
+//     },
+//     {
+//       image: "/assets/img/smartContract_svg.svg",
+//       heading: "NFT Marketplace",
+//       description:
+//         "We are an NFT Marketplace development company empowering businesses to establish decentralized trading platforms. Our expertise enables us to create robust NFT marketplaces with essential features akin to popular platforms. Leveraging renowned blockchain networks such as Ethereum, Polygon, and more, we ensure seamless integration and optimal functionality for your marketplace. ",
+//     },
+ 
+//     {
+//       image: "/assets/img/audit_svg.svg",
+//       heading: "Blockchain Security Audit",
+//       description:
+//         "As a top-notch blockchain development services provider we offer comprehensive support to ensure the security of your blockchain application, safeguarding your contracts from potential hacks that could lead to financial loss and damage to your credibility.",
+//     },
+//     {
+//       image: "/assets/img/audit_svg.svg",
+//       heading: "Blockchain Application Development",
+//       description:
+//         "A decentralized application (dApp) integrates a smart contract and a user interface within a decentralized network. Our blockchain application development services specialize in crafting custom dApps tailored to our client's needs, ensuring scalable and profitable blockchain applications. This strategic approach empowers our clients to gain a competitive edge in the dynamic blockchain landscape.",
+//     },
+//   ],
+// };
 
 export const ai_services = {
   heading: "Our AI Integration Services",

@@ -30,6 +30,8 @@ function technologies(props) {
     'CI/CD',
   ];
 
+  
+
   useEffect(() => {
     window.addEventListener('hashchange', function () {
       // setHashOnUrlChange(window.location.hash)

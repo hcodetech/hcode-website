@@ -7,6 +7,7 @@ import Client from "../../components/Client";
 import MetaTags from "../../components/MetaTags";
 import Testimonial from "../../components/Testimonial";
 import Tab from "../../components/atoms/Tab";
+// import requirement from
 import {
   blockchainBlogData,
   blockchain_benefits,
@@ -15,6 +16,7 @@ import {
   blockchain_techStack_icon,
   client,
   metaData,
+  requirement,
 } from "../../constants/constants";
 import { getTestimonialData } from "../../utils/config";
 import { getAPIUrl } from "../api/APIHelpers";
@@ -94,7 +96,7 @@ const Blockchain = () => {
       </section>
 
       {/* our services */}
-      <section className="bg-[#F8F9FB] mt-24">
+      <section className="bg-[#F8F9FB] mt-16">
         <SectionHeader
           heading="Create a Secure Network with Blockchain"
           paragraph="Immerse in Robust Security Through Our Cutting-Edge Blockchain App Development Services"
@@ -127,7 +129,7 @@ const Blockchain = () => {
         {/* 1st Card */}
         {blockchain_services?.points?.map((blockchain) => (
           <div key={blockchain.heading}>
-            <div className="grid grid-cols-12  ease-in-out duration-500 hover:shadow-md md:px-10 hover:p-10 hover:scale-105 hover:border hover:rounded-lg ">
+            <div className="grid grid-cols-12 ease-in-out duration-500 hover:shadow-md md:px-10 hover:p-10 hover:scale-105 hover:border hover:rounded-lg">
               <div className="col-span-12 lg:col-span-1 h-20 w-20">
                 <img
                   className="w-16"
@@ -156,41 +158,84 @@ const Blockchain = () => {
 
       {/* process */}
 
-      <div className="mb-20 new-container">
+       <div className="mb-32 new-container">
         <SectionHeader heading="Blockchain development Process at HCode" />
-        <div className="max-w-4xl mx-auto ">
-          <div className="col-span-12 lg:col-span-11  space-y-3 md:space-y-2 bg-blue-50 hover:scale-105  ease-in-out duration-500  hover:p-10 group px-7 ">
-            <h3 className="font-poppins text-xl   text-black font-semibold">
-              Requirements
-            </h3>
-            <p className="font-poppins font-light hidden group-hover:block hover:ease-in-out hover:duration-500 text-black sm:font-normal leading-7">
-              As a top blockchain software developer, your vision guides us. We
-              analyze risks, propose solutions, and suggest optimizations using
-              Web 3 + Web 2 architecture to enhance performance while
-              maintaining decentralization. We migrate non-blockchain features
-              to Web 2 strategically, boosting chain performance and speed to
-              match your goals.
-            </p>
-          </div>
 
-          <div className="col-span-12 lg:col-span-11 mt-8  space-y-3 md:space-y-2  bg-blue-50  hover:scale-105  ease-in-out duration-500   group hover:p-10 px-7 ">
-            <h3 className="font-poppins text-xl  text-black font-semibold">
+        <div className=" grid grid-cols-6 gap-8">
+          <div className='col-span-5 md:col-span-2'>
+            <h3 className='text-3xl font-semibold leading-normal mt-12'>Blockchain development Process at HCode</h3>
+          </div>
+          <div className='col-span-6 md:col-span-4'>
+          <div className="col-span-12 lg:col-span-11  space-y-3 md:space-y-2 hover:scale-105  ease-in-out duration-500   group  ">
+            <div className=" border shadow-sm rounded p-5">
+              <h3 className="font-poppins text-xl text-black font-semibold ">
+                Requirements
+              </h3>
+              <p className="font-poppins font-light pt-2 hover:ease-in-out hover:duration-500 text-black text-sm leading-6">
+                As a top blockchain software developer, your vision guides us.
+                We analyze risks, propose solutions, and suggest optimizations
+                using Web 3 + Web 2 architecture to enhance performance while
+                maintaining decentralization. We migrate non-blockchain features
+                to Web 2 strategically, boosting chain performance and speed to
+                match your goals.
+              </p>
+            </div>
+          </div>
+          </div>
+          <div className='col-span-6 mt-3'>
+          <div className="   p-5 space-y-3 md:space-y-2 shadow-sm border rounded  hover:scale-105 translate-y-0 ease-in-out duration-500 hover:ease-in-out hover:duration-500 group px-7 ">
+            <h3 className="font-poppins text-xl  text-black font-semibold py-2">
               Solution Designing
             </h3>
-            <p className="font-poppins font-light hidden group-hover:block hover:ease-in-out hover:duration-500  text-black sm:font-normal leading-7">
-              As a top blockchain software developer, your vision guides us. We
-              analyze risks, propose solutions, and suggest optimizations using
-              Web 3 + Web 2 architecture to enhance performance while
-              maintaining decentralization. We migrate non-blockchain features
-              to Web 2 strategically, boosting chain performance and speed to
-              match your goals.
-            </p>
+            <div className="font-poppins font-light  transition delay-150     ease-in-out duration-500  text-black leading-7 ">
+              <h4 className="font-semibold mt-3">-  System Architecture</h4>
+
+              <p className="pl-4 text-sm leading-6 max-w-4xl pt-1">
+                We meticulously define how various components within your
+                blockchain system will interact seamlessly, optimizing
+                communication and data flow for a smooth user experience.
+              </p>
+
+              <h4 className="font-semibold mt-3"> - Smart Contracts</h4>
+
+              <p className="pl-4 text-sm leading-6 max-w-4xl pt-1">
+                Our experts code self-executing contracts that govern
+                transactions and automate processes, ensuring trust and
+                transparency through their immutable and publicly verifiable
+                nature.
+              </p>
+
+              <h4 className="font-semibold mt-3"> - Middleware Architecture</h4>
+
+              <p className="pl-4 text-sm leading-6 max-w-4xl pt-1">
+                We design a robust bridge connecting your blockchain network to
+                external systems and applications, enabling data exchange and
+                broader functionality for enhanced scalability and
+                interoperability.
+              </p>
+              <h4 className=" font-semibold mt-3">
+                {" "}
+                - Technical Documentation
+              </h4>
+
+              <p className="pl-4 text-sm leading-6 max-w-4xl pt-1">
+                Detailed guides explaining the system's functionalities,
+                components, and usage procedures, empowering developers,
+                administrators, and end-users for smooth operation and
+                maintenance.
+              </p>
+            </div>
           </div>
-          <div className="col-span-12 lg:col-span-11 mt-8  space-y-3 md:space-y-2 hover:scale-105  ease-in-out duration-500 hover:p-10 px-7  bg-blue-50  group ">
+          </div>
+          <div className='col-span-6  md:col-span-3 '>
+         
+
+         
+          <div className="  space-y-3 md:space-y-2 hover:scale-105 mt-3  ease-in-out duration-500 shadow-sm border rounded p-5 ">
             <h3 className="font-poppins text-xl  text-black font-semibold">
               Development
             </h3>
-            <p className="font-poppins font-light hidden group-hover:block  text-black sm:font-normal leading-7">
+            <p className="font-poppins font-light  text-black text-sm  leading-6">
               Smart contracts are coded based on the architecture. Components
               are integrated iteratively between smart contracts and UI/admin
               including frontend actions like transaction creation, web wallet
@@ -198,22 +243,30 @@ const Blockchain = () => {
               transaction analytics and user management.
             </p>
           </div>
-          <div className="col-span-12 lg:col-span-11 mt-8  space-y-3 md:space-y-2  hover:scale-105  ease-in-out duration-500  group px-7 hover:p-10  bg-blue-50 ">
-            <h3 className="font-poppins text-xl text-black font-semibold">
+          
+
+          </div>
+          <div className='col-span-6 md:col-span-3'>
+          <div className=" space-y-3 md:space-y-2 mt-3  hover:scale-105  ease-in-out duration-500  p-5 shadow-sm border rounded ">
+            <h3 className="font-poppins text-xl text-black font-semibold ">
               Testnet and Deployment
             </h3>
-            <p className="font-poppins font-light hidden group-hover:block hover:ease-in-out hover:duration-500  text-black sm:font-normal leading-7">
+            <p className="font-poppins font-light  text-black  text-sm leading-6 lg:pr-28">
               As a leading blockchain solutions company, we meticulously test
               our blockchain products to guarantee client satisfaction and a
               seamless user experience. We strictly follow development protocols
               and ensure cross-platform accessibility for maximum reach.
             </p>
           </div>
+          </div>
+         
+
         </div>
+       
       </div>
 
       {/* Testimonial */}
-      <div className="pt-10 pb-0 bg-gray-100">
+      <div className="pt-10 pb-0 bg-gray-100 ">
         <Testimonial data={data} />
       </div>
 
@@ -289,7 +342,7 @@ const Blockchain = () => {
         </div>
       </section>
       {/* blogs section  */}
-      <div className="sm:new-container sm:py-32 ">
+      <div className="sm:new-container sm:py-6 ">
         <Blogs data={blockchainBlogData} />
       </div>
 
