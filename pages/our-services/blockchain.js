@@ -11,6 +11,7 @@ import Tab from "../../components/atoms/Tab";
 import {
   blockchainBlogData,
   blockchain_benefits,
+  blockchain_development_process,
   blockchain_services,
   blockchain_techStack,
   blockchain_techStack_icon,
@@ -30,6 +31,11 @@ const Blockchain = () => {
   const [id, setId] = useState(1);
   const [activeTab, setActiveTab] = useState(0);
   const [isDesktop, setIsDesktop] = useState("");
+  const [selectedProcessIndex, setSelectedProcessIndex] = useState(0);
+  const toggleExpanded = (index) => {
+    setSelectedProcessIndex(index);
+  };
+
   useEffect(() => {
     window.innerWidth <= 750 ? setIsDesktop(false) : setIsDesktop(true);
   });
@@ -96,7 +102,7 @@ const Blockchain = () => {
       </section>
 
       {/* our services */}
-      <section className="bg-[#F8F9FB] mt-16">
+      <section className="bg-[#F8F9FB] mt-16 ">
         <SectionHeader
           heading="Create a Secure Network with Blockchain"
           paragraph="Immerse in Robust Security Through Our Cutting-Edge Blockchain App Development Services"
@@ -132,16 +138,16 @@ const Blockchain = () => {
             <div className="grid grid-cols-12 ease-in-out duration-500 hover:shadow-md md:px-10 hover:p-10 hover:scale-105 hover:border hover:rounded-lg">
               <div className="col-span-12 lg:col-span-1 h-20 w-20">
                 <img
-                  className="w-16"
+                  className="w-12"
                   src={blockchain.image}
                   alt="MVP Design Services"
                 />
               </div>
-              <div className="col-span-12 lg:col-span-11 mt-4 md:mt-0 space-y-3 md:space-y-5">
+              <div className="col-span-12 lg:col-span-11 mt-4 md:mt-0 space-y-3">
                 <h3 className=" font-poppins text-2xl md:text-3xl  text-black font-semibold   ">
                   {blockchain.heading}
                 </h3>
-                <p className="font-poppins font-light  sm:text-lg text-black sm:font-normal leading-7">
+                <p className="font-poppins font-light sm:text-lg text-black sm:font-normal leading-7">
                   {blockchain.description}
                 </p>
               </div>
@@ -156,113 +162,90 @@ const Blockchain = () => {
         </div>
       </section>
 
-      {/* process */}
+      {/* process 1 */}
 
-       <div className="mb-32 new-container">
-        <SectionHeader heading="Blockchain development Process at HCode" />
+      <div className="my-28 new-container">
+        {/* <SectionHeader heading="Blockchain development Process at HCode" /> */}
+        <h4 className="font-semibold text-3xl md:text-4xl  my-16">
+          Blockchain development Process at HCode
+        </h4>
 
-        <div className=" grid grid-cols-6 gap-8">
-          <div className='col-span-5 md:col-span-2'>
-            <h3 className='text-3xl font-semibold leading-normal mt-12'>Blockchain development Process at HCode</h3>
+        <div className="grid grid-cols-12 gap-8 ">
+          <div className="col-span-12 md:col-span-5  rounded">
+            {blockchain_development_process[selectedProcessIndex]?.img && (
+              <img
+                className="h-[500px] w-full object-cover mb-3 rounded-md"
+                alt="process"
+                src={blockchain_development_process[selectedProcessIndex]?.img}
+              />
+            )}
+
+            {/* <h4 className="text-lg font-semibold ">
+              {blockchain_development_process[selectedProcessIndex]?.heading}
+            </h4>
+
+            <p
+              dangerouslySetInnerHTML={{
+                __html:
+                  blockchain_development_process[selectedProcessIndex]
+                    ?.paragraph,
+              }}
+              className="font-light pt-2 flex gap-1 flex-col leading-7"
+            /> */}
           </div>
-          <div className='col-span-6 md:col-span-4'>
-          <div className="col-span-12 lg:col-span-11  space-y-3 md:space-y-2 hover:scale-105  ease-in-out duration-500   group  ">
-            <div className=" border shadow-sm rounded p-5">
-              <h3 className="font-poppins text-xl text-black font-semibold ">
-                Requirements
-              </h3>
-              <p className="font-poppins font-light pt-2 hover:ease-in-out hover:duration-500 text-black text-sm leading-6">
-                As a top blockchain software developer, your vision guides us.
-                We analyze risks, propose solutions, and suggest optimizations
-                using Web 3 + Web 2 architecture to enhance performance while
-                maintaining decentralization. We migrate non-blockchain features
-                to Web 2 strategically, boosting chain performance and speed to
-                match your goals.
-              </p>
-            </div>
+          <div className="col-span-12 space-y-4 md:col-span-7  bg-white">
+            {blockchain_development_process?.map((process, index) => (
+              <div
+                key={index}
+                className={` cursor-pointer  pb-4 border-b ${
+                  selectedProcessIndex === index ? "" : "last:border-none"
+                }`}
+                onClick={() => setSelectedProcessIndex(index)}
+              >
+                <div
+                  className={`text-left items-center  select-none transition-all px-4  flex justify-between flex-row ${
+                    selectedProcessIndex === index
+                      ? "text-primary bg-blue-50 p-4 duration-200 ease-linear"
+                      : "text-black"
+                  }`}
+                >
+                  <h5 className={` flex-1 font-poppins text-xl   font-medium `}>
+                    {process.heading}
+                  </h5>
+                  <div className="flex-none pl-2">
+                    {selectedProcessIndex === index ? "-" : "+"}
+                  </div>
+                </div>
+                <div
+                  className={` overflow-hidden overflow-y-scroll transition-[max-height]  duration-500 ease-in ${
+                    selectedProcessIndex === index
+                      ? "max-h-60 border  mt-4"
+                      : "max-h-0"
+                  }`}
+                >
+                  <p
+                    dangerouslySetInnerHTML={{
+                      __html:
+                        blockchain_development_process[selectedProcessIndex]
+                          ?.paragraph,
+                    }}
+                    className="font-light flex gap-1 flex-col p-4 rounded-sm  leading-7"
+                  />
+                  {/* <p className="pb-4 text-left">{process.paragraph}</p> */}
+                </div>
+              </div>
+              // <div
+              //   key={index}
+              //   onClick={() => setSelectedProcessIndex(index)}
+              //   className={`rounded shadow-sm px-7 mb-6 cursor-pointer border-l-4   ${selectedProcessIndex===index&&'border-blue-600 '}`}
+              // >
+              //   <h3 className="font-poppins text-xl text-black py-3 font-medium">
+              //     {process.heading}
+              //   </h3>
+              // </div>
+            ))}
           </div>
-          </div>
-          <div className='col-span-6 mt-3'>
-          <div className="   p-5 space-y-3 md:space-y-2 shadow-sm border rounded  hover:scale-105 translate-y-0 ease-in-out duration-500 hover:ease-in-out hover:duration-500 group px-7 ">
-            <h3 className="font-poppins text-xl  text-black font-semibold py-2">
-              Solution Designing
-            </h3>
-            <div className="font-poppins font-light  transition delay-150     ease-in-out duration-500  text-black leading-7 ">
-              <h4 className="font-semibold mt-3">-  System Architecture</h4>
-
-              <p className="pl-4 text-sm leading-6 max-w-4xl pt-1">
-                We meticulously define how various components within your
-                blockchain system will interact seamlessly, optimizing
-                communication and data flow for a smooth user experience.
-              </p>
-
-              <h4 className="font-semibold mt-3"> - Smart Contracts</h4>
-
-              <p className="pl-4 text-sm leading-6 max-w-4xl pt-1">
-                Our experts code self-executing contracts that govern
-                transactions and automate processes, ensuring trust and
-                transparency through their immutable and publicly verifiable
-                nature.
-              </p>
-
-              <h4 className="font-semibold mt-3"> - Middleware Architecture</h4>
-
-              <p className="pl-4 text-sm leading-6 max-w-4xl pt-1">
-                We design a robust bridge connecting your blockchain network to
-                external systems and applications, enabling data exchange and
-                broader functionality for enhanced scalability and
-                interoperability.
-              </p>
-              <h4 className=" font-semibold mt-3">
-                {" "}
-                - Technical Documentation
-              </h4>
-
-              <p className="pl-4 text-sm leading-6 max-w-4xl pt-1">
-                Detailed guides explaining the system's functionalities,
-                components, and usage procedures, empowering developers,
-                administrators, and end-users for smooth operation and
-                maintenance.
-              </p>
-            </div>
-          </div>
-          </div>
-          <div className='col-span-6  md:col-span-3 '>
-         
-
-         
-          <div className="  space-y-3 md:space-y-2 hover:scale-105 mt-3  ease-in-out duration-500 shadow-sm border rounded p-5 ">
-            <h3 className="font-poppins text-xl  text-black font-semibold">
-              Development
-            </h3>
-            <p className="font-poppins font-light  text-black text-sm  leading-6">
-              Smart contracts are coded based on the architecture. Components
-              are integrated iteratively between smart contracts and UI/admin
-              including frontend actions like transaction creation, web wallet
-              connection, chain messaging, and admin features such as
-              transaction analytics and user management.
-            </p>
-          </div>
-          
-
-          </div>
-          <div className='col-span-6 md:col-span-3'>
-          <div className=" space-y-3 md:space-y-2 mt-3  hover:scale-105  ease-in-out duration-500  p-5 shadow-sm border rounded ">
-            <h3 className="font-poppins text-xl text-black font-semibold ">
-              Testnet and Deployment
-            </h3>
-            <p className="font-poppins font-light  text-black  text-sm leading-6 lg:pr-28">
-              As a leading blockchain solutions company, we meticulously test
-              our blockchain products to guarantee client satisfaction and a
-              seamless user experience. We strictly follow development protocols
-              and ensure cross-platform accessibility for maximum reach.
-            </p>
-          </div>
-          </div>
-         
-
         </div>
-       
       </div>
 
       {/* Testimonial */}

@@ -1,6 +1,6 @@
 const SectionHeader = ({ heading, paragraph, cta, ctaText }) => (
     <div>
-      <div className="new-container text-center mx-auto  py-16 ">
+      <div className="new-container text-center mx-auto  py-16">
         <div className="max-w-lg mx-auto ">
           <h2 className="font-semibold text-3xl md:text-4xl my-4">{heading}</h2>
           <div className="px-3 py-[2px] max-w-[120px] my-4 bg-blue-500 mx-auto"></div>

@@ -1698,6 +1698,27 @@ export const portfolioData = [
   },
 ];
 
+export const blockchain_development_process =[
+  {id: 1, 
+img: '../assets/img/blockchain/requirements.jpg',
+heading: 'Requirements',
+paragraph: 'As a top blockchain software developer, your vision guides us. We analyze risks, propose solutions, and suggest optimizations using Web 3 + Web 2 architecture to enhance performance while maintaining decentralization. We migrate non-blockchain features to Web 2 strategically, boosting chain performance and speed to match your goals.'},
+{id: 2, 
+  heading: 'Solution Designing',
+  img: '../assets/img/blockchain/solution_designing.jpg',
+
+  paragraph: '<h4><b><b>System Architecture:</b></b><h4><p>We meticulously define how various components within your blockchain system will interact seamlessly, optimizing communication and data flow for a smooth user experience. </p><h4><b><b>Smart Contracts:</b></b> </h4><p>Our experts code self-executing contracts that govern transactions and automate processes, ensuring trust and transparency through their immutable and publicly verifiable nature.</p><h4><b><b>Middleware Architecture:</b></b> </h4><p>We design a robust bridge connecting your blockchain network to external systems and applications, enabling data exchange and broader functionality for enhanced scalability and interoperability.</p><h4><b><b>Technical Documentation:</b></b></h4><p>Detailed guides explaining the system functionalities, components, and usage procedures, empowering developers, administrators, and end-users for smooth operation and maintenance.</p> '},
+  {id: 1, 
+    img: '../assets/img/blockchain/development.jpg',
+    heading: 'Development',
+    paragraph: 'Smart contracts are coded based on the architecture. Components are integrated iteratively between smart contracts and UI/admin including frontend actions like transaction creation, web wallet connection, chain messaging, and admin features such as transaction analytics and user management.'},
+    {id: 1, 
+      img: '../assets/img/blockchain/deployment.jpg',
+      heading: 'Testnet and Deployment',
+      paragraph: 'As a leading blockchain solutions company, we meticulously test our blockchain products to guarantee client satisfaction and a seamless user experience. We strictly follow development protocols and ensure cross-platform accessibility for maximum reach.'},
+
+]
+
 
 export const blockchain_services = {
   heading: " Our Blockchain Services",
@@ -1710,26 +1731,44 @@ export const blockchain_services = {
 
       heading: "Smart Contract",
       description:
-        "We are a leading-edge smart contact development company, catering to a diverse clientele ranging from startups to large-scale enterprises. Our collaborative approach ensures that we work closely with you to conceptualize and implement self-executing.",
+        "We craft self-executing contracts and eWallet apps for streamlined operations, ideal for startups and large enterprises.",
     },
     {
       image: "/assets/img/nftMarketplace_svg.svg",
-      heading: "NFT Marketplace",
+      heading: "NFT Marketplace Development",
       description:
-        "We are an NFT Marketplace development company empowering businesses to establish decentralized trading platforms. Our expertise enables us to create robust NFT marketplaces with essential features akin to popular platforms. . ",
+        "Build a robust NFT marketplace with familiar features on leading networks for seamless trading. ",
     },
  
     {
       image: "/assets/img/audit_svg.svg",
       heading: "Blockchain Security Audit",
       description:
-        "As a top-notch blockchain development services provider we offer comprehensive support to ensure the security of your blockchain application, safeguarding your contracts from potential hacks that could lead to financial loss and damage to your credibility.",
+        "Protect your contracts and applications with comprehensive security audits, safeguarding your credibility.",
     },
+    // {
+    //   image: "/assets/img/blockchain_app_development.svg",
+    //   heading: "Blockchain Application Development",
+    //   description:
+    //     "A decentralized application (dApp) integrates a smart contract and a user interface within a decentralized network. Our blockchain application development services specialize in crafting custom dApps tailored to our client's needs, ensuring scalable and profitable blockchain applications.",
+    // },
     {
       image: "/assets/img/blockchain_app_development.svg",
-      heading: "Blockchain Application Development",
+      heading: "DApp Development",
       description:
-        "A decentralized application (dApp) integrates a smart contract and a user interface within a decentralized network. Our blockchain application development services specialize in crafting custom dApps tailored to our client's needs, ensuring scalable and profitable blockchain applications..",
+        "Create custom, scalable dApps to gain a competitive edge in the ever-evolving blockchain landscape.",
+    },
+    {
+      image: "/assets/img/defi_development.svg",
+      heading: "DeFi Development",
+      description:
+        "Unlock new financial possibilities with feature-rich tokenization platforms for secure asset trading.",
+    },
+    {
+      image: "/assets/img/tokenization.svg",
+      heading: "Tokenization Platform Development",
+      description:
+        "Digitize assets and unlock trading opportunities across various platforms with our secure solutions.",
     },
   ],
 };

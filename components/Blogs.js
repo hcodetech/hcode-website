@@ -7,6 +7,7 @@ export function Blogs({data}){
           <div className="max-w-2xl">
             <h4 className="font-poppins text-[26px] font-semibold leading-8 sm:text-4xl">
               Blogs
+
             </h4>
           </div>
           <div className="mx-auto mt-14 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:h-[450px] ">
@@ -20,7 +21,7 @@ export function Blogs({data}){
                     <img
                       src={post.imageUrl}
                       alt={post.title}
-                      className="aspect-[16/9] w-full  bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2] lg:h-[300px]"
+                      className="aspect-[16/9] w-full  rounded-md bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2] lg:h-[300px]"
                     />
                   </div>
                   <div className="max-w-xl">
