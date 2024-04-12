@@ -10,6 +10,10 @@ const NewsletterPopUp = ({ setShowNewsLetterPopup }) => {
     locale: "en",
   });
   const [responseMessage, setResponseMessage] = useState("");
+  let url;
+  if (typeof window !== "undefined") {
+    url = window.location.pathname;
+  }
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -33,6 +37,7 @@ const NewsletterPopUp = ({ setShowNewsLetterPopup }) => {
       setResponseMessage("This email is not valid. Please try again.");
     }
   };
+  if (url.includes('Thankyou')) return null
   return (
     <div className=" fixed max-w-xs sm:max-w-md lg:max-w-lg  z-10 top-20 sm:top-28 left-7 lg:left-1/3  sm:left-1/4">
       <div className="relative bg-black h-6 rounded-full ml-auto top-11 left-1.5 w-6">

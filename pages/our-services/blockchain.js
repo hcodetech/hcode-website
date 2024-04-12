@@ -17,7 +17,6 @@ import {
   blockchain_techStack_icon,
   client,
   metaData,
-  requirement,
 } from "../../constants/constants";
 import { getTestimonialData } from "../../utils/config";
 import { getAPIUrl } from "../api/APIHelpers";
@@ -165,7 +164,6 @@ const Blockchain = () => {
       {/* process 1 */}
 
       <div className="my-28 new-container">
-        {/* <SectionHeader heading="Blockchain development Process at HCode" /> */}
         <h4 className="font-semibold text-3xl md:text-4xl  my-16">
           Blockchain development Process at HCode
         </h4>
@@ -179,19 +177,6 @@ const Blockchain = () => {
                 src={blockchain_development_process[selectedProcessIndex]?.img}
               />
             )}
-
-            {/* <h4 className="text-lg font-semibold ">
-              {blockchain_development_process[selectedProcessIndex]?.heading}
-            </h4>
-
-            <p
-              dangerouslySetInnerHTML={{
-                __html:
-                  blockchain_development_process[selectedProcessIndex]
-                    ?.paragraph,
-              }}
-              className="font-light pt-2 flex gap-1 flex-col leading-7"
-            /> */}
           </div>
           <div className="col-span-12 space-y-4 md:col-span-7  bg-white">
             {blockchain_development_process?.map((process, index) => (
@@ -231,18 +216,8 @@ const Blockchain = () => {
                     }}
                     className="font-light flex gap-1 flex-col p-4 rounded-sm  leading-7"
                   />
-                  {/* <p className="pb-4 text-left">{process.paragraph}</p> */}
                 </div>
               </div>
-              // <div
-              //   key={index}
-              //   onClick={() => setSelectedProcessIndex(index)}
-              //   className={`rounded shadow-sm px-7 mb-6 cursor-pointer border-l-4   ${selectedProcessIndex===index&&'border-blue-600 '}`}
-              // >
-              //   <h3 className="font-poppins text-xl text-black py-3 font-medium">
-              //     {process.heading}
-              //   </h3>
-              // </div>
             ))}
           </div>
         </div>

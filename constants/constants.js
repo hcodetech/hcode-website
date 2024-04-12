@@ -242,8 +242,6 @@ export const work_with_us_recuriter_image =
 export const pre_vetted_hero = "/assets/img/our_services_hero1.jpg";
 export const our_services_hero = "/assets/img/our_services_hero.jpg";
 ("/assets/img/work_with_us_recruiter.jpg");
-export const requirement = "/assets/img/requirements.jpeg";
-// export const office_v3 = "/assets/img/office_v3.jpg";
 
 
 
