@@ -22,6 +22,7 @@ import {
   client,
 } from '../../constants/constants';
 import CaseStudiesCard from '../../components/CaseStudiesCard';
+import useGetFetch from '../hooks/useGetFetch';
 
 function mvp_development_services() {
   const data = getTestimonialData('mvp');
@@ -35,6 +36,10 @@ function mvp_development_services() {
     const redirectPage = '/our-services/mvp-development-services';
     window.location.href = redirectPage;
   }, []);
+
+  const [portfolioData, isLoading] = useGetFetch(
+    getAPIUrl(apiRoutes.SHOW_HOMEPAGE_PROJECT)
+  );
 
   return (
     <>
@@ -278,7 +283,7 @@ function mvp_development_services() {
           }
         />
         <div className="-mt-14">
-          <CaseStudiesCard />
+          <CaseStudiesCard data={portfolioData} isLoading={isLoading} />
         </div>
       </div>
 
@@ -288,7 +293,7 @@ function mvp_development_services() {
       </div>
 
       {/* blogs section  */}
-      <div className="sm:new-container  ">
+      <div className="sm:new-container">
         <Blogs data={posts} />
       </div>
 

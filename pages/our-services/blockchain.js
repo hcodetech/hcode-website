@@ -24,6 +24,7 @@ import { apiRoutes } from "../api/APIRoutes";
 import useGetFetch from "../hooks/useGetFetch";
 import SectionHeader from "../../components/SectionHeader";
 import { Blogs } from "../../components/Blogs";
+import CaseStudiesCard from "../../components/CaseStudiesCard";
 
 const Blockchain = () => {
   const [selectedCategory, setSelectedCategory] = useState(["Blockchain"]);
@@ -288,7 +289,8 @@ const Blockchain = () => {
               We’ve built the following Blockchain products for our clients
             </p>
           </div>
-          <div className="col-span-12 py-10">
+         
+          {/* <div className="col-span-12 py-10">
             {portfolioData.map((data) => (
               <CardPortfolio
                 key={data.id}
@@ -296,9 +298,13 @@ const Blockchain = () => {
                 selectedCategory={selectedCategory}
               />
             ))}
-          </div>
+          </div> */}
         </div>
       </section>
+
+      <div className="-mt-14">
+          <CaseStudiesCard data={portfolioData} loading={isLoading} />
+        </div>
       {/* blogs section  */}
       <div className="sm:new-container sm:py-6 ">
         <Blogs data={blockchainBlogData} />
