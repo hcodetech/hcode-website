@@ -243,8 +243,6 @@ export const pre_vetted_hero = "/assets/img/our_services_hero1.jpg";
 export const our_services_hero = "/assets/img/our_services_hero.jpg";
 ("/assets/img/work_with_us_recruiter.jpg");
 
-
-
 export const work_with_us_image_carousel = [
   { image: "/assets/img/thailand_trip.jpg" },
   { image: "/assets/img/office_v3.jpg" },
@@ -1696,27 +1694,37 @@ export const portfolioData = [
   },
 ];
 
-export const blockchain_development_process =[
-  {id: 1, 
-img: '../assets/img/blockchain/requirements.jpg',
-heading: 'Requirements',
-paragraph: 'As a top blockchain software developer, your vision guides us. We analyze risks, propose solutions, and suggest optimizations using Web 3 + Web 2 architecture to enhance performance while maintaining decentralization. We migrate non-blockchain features to Web 2 strategically, boosting chain performance and speed to match your goals.'},
-{id: 2, 
-  heading: 'Solution Designing',
-  img: '../assets/img/blockchain/solution_designing.jpg',
+export const blockchain_development_process = [
+  {
+    id: 1,
+    img: "../assets/img/blockchain/requirements.jpg",
+    heading: "Requirements",
+    paragraph:
+      "As a top blockchain software developer, your vision guides us. We analyze risks, propose solutions, and suggest optimizations using Web 3 + Web 2 architecture to enhance performance while maintaining decentralization. We migrate non-blockchain features to Web 2 strategically, boosting chain performance and speed to match your goals.",
+  },
+  {
+    id: 2,
+    heading: "Solution Designing",
+    img: "../assets/img/blockchain/solution_designing.jpg",
 
-  paragraph: '<h4><b><b>System Architecture:</b></b><h4><p>We meticulously define how various components within your blockchain system will interact seamlessly, optimizing communication and data flow for a smooth user experience. </p><h4><b><b>Smart Contracts:</b></b> </h4><p>Our experts code self-executing contracts that govern transactions and automate processes, ensuring trust and transparency through their immutable and publicly verifiable nature.</p><h4><b><b>Middleware Architecture:</b></b> </h4><p>We design a robust bridge connecting your blockchain network to external systems and applications, enabling data exchange and broader functionality for enhanced scalability and interoperability.</p><h4><b><b>Technical Documentation:</b></b></h4><p>Detailed guides explaining the system functionalities, components, and usage procedures, empowering developers, administrators, and end-users for smooth operation and maintenance.</p> '},
-  {id: 1, 
-    img: '../assets/img/blockchain/development.jpg',
-    heading: 'Development',
-    paragraph: 'Smart contracts are coded based on the architecture. Components are integrated iteratively between smart contracts and UI/admin including frontend actions like transaction creation, web wallet connection, chain messaging, and admin features such as transaction analytics and user management.'},
-    {id: 1, 
-      img: '../assets/img/blockchain/deployment.jpg',
-      heading: 'Testnet and Deployment',
-      paragraph: 'As a leading blockchain solutions company, we meticulously test our blockchain products to guarantee client satisfaction and a seamless user experience. We strictly follow development protocols and ensure cross-platform accessibility for maximum reach.'},
-
-]
-
+    paragraph:
+      "<h4><b><b>System Architecture:</b></b><h4><p>We meticulously define how various components within your blockchain system will interact seamlessly, optimizing communication and data flow for a smooth user experience. </p><h4><b><b>Smart Contracts:</b></b> </h4><p>Our experts code self-executing contracts that govern transactions and automate processes, ensuring trust and transparency through their immutable and publicly verifiable nature.</p><h4><b><b>Middleware Architecture:</b></b> </h4><p>We design a robust bridge connecting your blockchain network to external systems and applications, enabling data exchange and broader functionality for enhanced scalability and interoperability.</p><h4><b><b>Technical Documentation:</b></b></h4><p>Detailed guides explaining the system functionalities, components, and usage procedures, empowering developers, administrators, and end-users for smooth operation and maintenance.</p> ",
+  },
+  {
+    id: 1,
+    img: "../assets/img/blockchain/development.jpg",
+    heading: "Development",
+    paragraph:
+      "Smart contracts are coded based on the architecture. Components are integrated iteratively between smart contracts and UI/admin including frontend actions like transaction creation, web wallet connection, chain messaging, and admin features such as transaction analytics and user management.",
+  },
+  {
+    id: 1,
+    img: "../assets/img/blockchain/deployment.jpg",
+    heading: "Testnet and Deployment",
+    paragraph:
+      "As a leading blockchain solutions company, we meticulously test our blockchain products to guarantee client satisfaction and a seamless user experience. We strictly follow development protocols and ensure cross-platform accessibility for maximum reach.",
+  },
+];
 
 export const blockchain_services = {
   heading: " Our Blockchain Services",
@@ -1724,32 +1732,11 @@ export const blockchain_services = {
     "Whether you are looking for a Blockchain Wallet, Smart Contract, NFT, or Custom Blockchain Solution, we can help you with our Blockchain expertise",
   points: [
     {
-      // image: "/assets/img/mobile-illu.svg",
       image: "/assets/img/smartContract_svg.svg",
-
       heading: "Smart Contract",
       description:
         "We craft self-executing contracts and eWallet apps for streamlined operations, ideal for startups and large enterprises.",
     },
-    {
-      image: "/assets/img/nftMarketplace_svg.svg",
-      heading: "NFT Marketplace Development",
-      description:
-        "Build a robust NFT marketplace with familiar features on leading networks for seamless trading. ",
-    },
- 
-    {
-      image: "/assets/img/audit_svg.svg",
-      heading: "Blockchain Security Audit",
-      description:
-        "Protect your contracts and applications with comprehensive security audits, safeguarding your credibility.",
-    },
-    // {
-    //   image: "/assets/img/blockchain_app_development.svg",
-    //   heading: "Blockchain Application Development",
-    //   description:
-    //     "A decentralized application (dApp) integrates a smart contract and a user interface within a decentralized network. Our blockchain application development services specialize in crafting custom dApps tailored to our client's needs, ensuring scalable and profitable blockchain applications.",
-    // },
     {
       image: "/assets/img/blockchain_app_development.svg",
       heading: "DApp Development",
@@ -1761,6 +1748,18 @@ export const blockchain_services = {
       heading: "DeFi Development",
       description:
         "Unlock new financial possibilities with feature-rich tokenization platforms for secure asset trading.",
+    },
+    {
+      image: "/assets/img/audit_svg.svg",
+      heading: "Blockchain Security Audit",
+      description:
+        "Protect your contracts and applications with comprehensive security audits, safeguarding your credibility.",
+    },
+    {
+      image: "/assets/img/nftMarketplace_svg.svg",
+      heading: "NFT Marketplace Development",
+      description:
+        "Build a robust NFT marketplace with familiar features on leading networks for seamless trading. ",
     },
     {
       image: "/assets/img/tokenization.svg",
@@ -1788,7 +1787,7 @@ export const blockchain_services = {
 //       description:
 //         "We are an NFT Marketplace development company empowering businesses to establish decentralized trading platforms. Our expertise enables us to create robust NFT marketplaces with essential features akin to popular platforms. Leveraging renowned blockchain networks such as Ethereum, Polygon, and more, we ensure seamless integration and optimal functionality for your marketplace. ",
 //     },
- 
+
 //     {
 //       image: "/assets/img/audit_svg.svg",
 //       heading: "Blockchain Security Audit",
@@ -1896,7 +1895,7 @@ export const mvp_services = {
 
   points: [
     {
-      image: "/assets/img/prioritize.svg",      
+      image: "/assets/img/prioritize.svg",
       heading: "We prioritize timely delivery and client transparency",
       description:
         "We promise realistic delivery timelines, prioritize startup challenges in our development process, and communicate openly about any unexpected issues, providing prompt updates and swift resolution",
@@ -2129,7 +2128,8 @@ export const aiBlogData = [
     id: 1,
     title: "How AI Integration Services Can Fuel Your Business Growth",
     href: "https://hcode.tech/blog/how-ai-integration-services-can-fuel-your-business-growth/",
-    description: "How AI Integration Services Can Fuel Your Business Growth […]",
+    description:
+      "How AI Integration Services Can Fuel Your Business Growth […]",
     imageUrl: "/assets/img/Ai_blog_1.jpg",
   },
   {
@@ -2142,7 +2142,7 @@ export const aiBlogData = [
   },
   {
     id: 3,
-    title:"How to Seamlessly Integrate ChatGPT API into Your Website?",
+    title: "How to Seamlessly Integrate ChatGPT API into Your Website?",
     href: "https://hcode.tech/blog/how-to-seamlessly-integrate-chatgpt-api-into-your-website/",
     description:
       "How to Seamlessly Integrate ChatGPT API into Your Website? Have […]",
@@ -2150,11 +2150,11 @@ export const aiBlogData = [
   },
 ];
 export const blockchainBlogData = [
-
   {
     id: 1,
-    title: "Polygon vs. Ethereum: Why Choose Polygon for Scalable, Low-Cost DApps",
-   
+    title:
+      "Polygon vs. Ethereum: Why Choose Polygon for Scalable, Low-Cost DApps",
+
     href: "https://hcode.tech/blog/polygon-vs-ethereum-why-choose-polygon-for-scalable-low-cost-dapps/",
     description:
       "Polygon vs. Ethereum: Why Choose Polygon for Scalable, Low-Cost DApps […]",
@@ -2163,7 +2163,7 @@ export const blockchainBlogData = [
   {
     id: 2,
     title: "How AI and Blockchain “Together” Can Transform Business ",
-   
+
     href: "https://hcode.tech/blog/how-ai-and-blockchain-together-can-transform-business/",
     description: "How AI and Blockchain “Together” Can Transform Business […]",
     imageUrl: "/assets/img/blockchain/blockchain_blog_1.png",
@@ -2171,7 +2171,8 @@ export const blockchainBlogData = [
 
   {
     id: 3,
-    title:'Web 3.0 vs Web 2.0: A Guide for Businesses in the Future of the Web',
+    title:
+      "Web 3.0 vs Web 2.0: A Guide for Businesses in the Future of the Web",
     href: "https://hcode.tech/blog/web-3-0-vs-web-2-0-a-guide-for-businesses-in-the-future-of-the-web/",
     description:
       "How to Seamlessly Integrate ChatGPT API into Your Website? Have […]",
