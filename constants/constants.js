@@ -2039,6 +2039,40 @@ export const faq_mvp = [
   },
 ];
 
+export const faq_blockchain = [
+  {
+    question: "How much experience do you have in blockchain development?",
+    answer:
+      "Over the past 3 years, we've actively engaged in blockchain development, tackling various projects including decentralized applications (dApps) and custom blockchain protocols. We continually update our expertise to deliver innovative solutions, staying abreast of the latest advancements in the field.",
+  },
+  {
+    question: "What specific technologies and programming languages are integral to your workflow?",
+    answer:
+      `Our team is well-versed in a comprehensive set of technologies that cater to all aspects of blockchain development. Here's a breakdown of the tools we leverage:<br/><br/>
+
+     Languages: Solidity, Cadence, Python, Javascript.<br/>
+      Frontend: ReactJS, NextJS.<br/>
+      Backend: NodeJS, Django.<br/>
+      Databases: Polybase, Postgres.<br/>
+      <br/>
+      Hardhat for comprehensive development needs.
+      This diverse tech stack ensures efficient blockchain project development.
+      `,
+  },
+  {
+    question:
+      "What are the decision points I have to make before getting started?",
+    answer:
+      "If the product is client-facing, you need to decide which devices the product should be built for. Is it a Mobile application, or a Web Application for Desktop and/or Mobile. The more the devices, the more time it will take for development and optimization. Second, you need to tell us what all external integrations, if anything, in particular, are needed for the project, are important as any external dependency need to be evaluated. Third, you need to plan for the phase-wise development plan with respect to features which would help us plan the development.",
+  },
+  {
+    question:
+      "How do you effectively manage and address change requests from your clientele?",
+    answer:
+      "We manage change requests effectively by maintaining open communication channels, understanding scope and impact, providing regular updates, prioritizing based on impact, and offering ongoing support. This ensures smooth project progress while accommodating your evolving needs.",
+  },
+];
+
 export const faqAi = [
   {
     question: "What is AI integration, and how can it benefit my business?",

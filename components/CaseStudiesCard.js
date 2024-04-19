@@ -14,7 +14,7 @@ import { getAPIUrl } from "../pages/api/APIHelpers";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/solid";
 
 function CaseStudiesCard({ data, isLoading }) {
-  
+
   // const [portfolioData, isPortfolioDataLoading] = useGetFetch(
   //   getAPIUrl(apiRoutes.SHOW_HOMEPAGE_PROJECT)
   // );
@@ -57,7 +57,7 @@ function CaseStudiesCard({ data, isLoading }) {
       <div className="hidden md:block">
         <CarouselProvider
           visibleSlides={3}
-          totalSlides={data.length}
+          totalSlides={data?.length}
           step={1}
           // naturalSlideWidth={400}
           // naturalSlideHeight={500}
@@ -122,7 +122,7 @@ function CaseStudiesCard({ data, isLoading }) {
       <div className="md:hidden">
         <CarouselProvider
           visibleSlides={1}
-          totalSlides={data.length}
+          totalSlides={data?.length}
           step={1}
           // naturalSlideWidth={400}
           // naturalSlideHeight={500}

@@ -16,6 +16,7 @@ import {
   blockchain_techStack,
   blockchain_techStack_icon,
   client,
+  faq_blockchain,
   metaData,
 } from "../../constants/constants";
 import { getTestimonialData } from "../../utils/config";
@@ -25,6 +26,7 @@ import useGetFetch from "../hooks/useGetFetch";
 import SectionHeader from "../../components/SectionHeader";
 import { Blogs } from "../../components/Blogs";
 import CaseStudiesCard from "../../components/CaseStudiesCard";
+import Accordion from "../../components/Accordion";
 
 const Blockchain = () => {
   const [selectedCategory, setSelectedCategory] = useState(["Blockchain"]);
@@ -125,7 +127,6 @@ const Blockchain = () => {
           </div>
         </div>
       </section> */}
-
       <SectionHeader
         heading=" Our Blockchain Services"
         paragraph="Whether you are looking for a Blockchain Wallet, Smart Contract, NFT, or Custom Blockchain Solution, we can help you with our Blockchain expertise"
@@ -156,7 +157,7 @@ const Blockchain = () => {
         ))}
       </div>
       {/* Benefits */}
-      <section className=" pt-12 ">
+      <section className=" mt-24 pt-12 bg-[#F8F9FB]">
         <div className="new-container ">
           <Benefits data={blockchain_benefits} additionalClass="max-w-2xl" />
         </div>
@@ -169,11 +170,11 @@ const Blockchain = () => {
           Blockchain development Process at HCode
         </h4>
 
-        <div className="grid grid-cols-12 gap-8 ">
+        <div className="grid grid-cols-12 gap-5 md:gap-8 ">
           <div className="col-span-12 md:col-span-5  rounded">
             {blockchain_development_process[selectedProcessIndex]?.img && (
               <img
-                className="h-[500px] w-full object-cover mb-3 rounded-md"
+                className=" h-[350px] md:h-[500px] max-w-full object-cover mb-3 rounded-md"
                 alt="process"
                 src={blockchain_development_process[selectedProcessIndex]?.img}
               />
@@ -183,17 +184,15 @@ const Blockchain = () => {
             {blockchain_development_process?.map((process, index) => (
               <div
                 key={index}
-                className={` cursor-pointer  pb-4 border-b ${
-                  selectedProcessIndex === index ? "" : "last:border-none"
-                }`}
+                className={` cursor-pointer  pb-4 border-b ${selectedProcessIndex === index ? "" : "last:border-none"
+                  }`}
                 onClick={() => setSelectedProcessIndex(index)}
               >
                 <div
-                  className={`text-left items-center  select-none transition-all px-4  flex justify-between flex-row ${
-                    selectedProcessIndex === index
-                      ? "text-primary bg-blue-50 p-4 duration-200 ease-linear"
-                      : "text-black"
-                  }`}
+                  className={`text-left items-center  select-none transition-all px-4  flex justify-between flex-row ${selectedProcessIndex === index
+                    ? "text-primary bg-blue-50 p-4 duration-200 ease-linear"
+                    : "text-black"
+                    }`}
                 >
                   <h5 className={` flex-1 font-poppins text-xl   font-medium `}>
                     {process.heading}
@@ -203,11 +202,10 @@ const Blockchain = () => {
                   </div>
                 </div>
                 <div
-                  className={` overflow-hidden overflow-y-scroll transition-[max-height]  duration-500 ease-in ${
-                    selectedProcessIndex === index
-                      ? "max-h-60 border  mt-4"
-                      : "max-h-0"
-                  }`}
+                  className={` overflow-hidden overflow-y-scroll transition-[max-height]  duration-500 ease-in ${selectedProcessIndex === index
+                    ? "max-h-60 border  mt-4"
+                    : "max-h-0"
+                    }`}
                 >
                   <p
                     dangerouslySetInnerHTML={{
@@ -274,6 +272,15 @@ const Blockchain = () => {
                 </div>
               ))}
             </div>
+
+            <div className=" mt-10 sm:mt-10">
+              <a
+                href="/contact"
+                className="bg-primary text-white font-light rounded px-16 py-4 text-center"
+              >
+                Start your Project!
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -289,7 +296,7 @@ const Blockchain = () => {
               We’ve built the following Blockchain products for our clients
             </p>
           </div>
-         
+
           {/* <div className="col-span-12 py-10">
             {portfolioData.map((data) => (
               <CardPortfolio
@@ -303,8 +310,12 @@ const Blockchain = () => {
       </section>
 
       <div className="-mt-14">
-          <CaseStudiesCard data={portfolioData} loading={isLoading} />
-        </div>
+        <CaseStudiesCard data={portfolioData} loading={isLoading} />
+      </div>
+
+      <section className="bg-gray-100 lg:mt-20">
+        <Accordion data={faq_blockchain} />
+      </section>
       {/* blogs section  */}
       <div className="sm:new-container sm:py-6 ">
         <Blogs data={blockchainBlogData} />
