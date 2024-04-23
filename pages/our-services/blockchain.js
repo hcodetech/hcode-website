@@ -76,7 +76,7 @@ const Blockchain = () => {
         <MetaTags page={metaData.blockchain} />
       </Head>
       {/* Hero Section */}
-      <section className="h-[550px] md:h-screen bg-gray-50  bg-blockchain_bg_img bg-no-repeat bg-cover bg-center ">
+      <section className="h-[550px] md:h-screen  bg-blockchain_bg_img bg-no-repeat bg-cover bg-center ">
         <div className="max-w-4xl px-4 pt-28 md:pt-52 mx-auto flex  flex-col items-center	text-center">
           <h1 className="font-bold text-3xl sm:text-7xl text-primary py-4">
             Blockchain <br /> Development Services
@@ -129,7 +129,7 @@ const Blockchain = () => {
       </section> */}
       <SectionHeader
         heading=" Our Blockchain Services"
-        paragraph="Whether you are looking for a Blockchain Wallet, Smart Contract, NFT, or Custom Blockchain Solution, we can help you with our Blockchain expertise"
+        paragraph="From wallets and smart contracts to NFTs and custom projects, our expertise empowers your business."
       />
 
       <div className=" new-container -mt-9 mb-12  space-y-12">
@@ -174,7 +174,7 @@ const Blockchain = () => {
           <div className="col-span-12 md:col-span-5  rounded">
             {blockchain_development_process[selectedProcessIndex]?.img && (
               <img
-                className=" h-[350px] md:h-[500px] max-w-full object-cover mb-3 rounded-md"
+                className=" h-[350px] md:h-[420px] max-h-[500px] w-full object-cover mb-3 rounded-md"
                 alt="process"
                 src={blockchain_development_process[selectedProcessIndex]?.img}
               />
@@ -316,19 +316,20 @@ const Blockchain = () => {
       <section className="bg-gray-100 lg:mt-20">
         <Accordion data={faq_blockchain} />
       </section>
-      {/* blogs section  */}
-      <div className="sm:new-container sm:py-6 ">
-        <Blogs data={blockchainBlogData} />
-      </div>
-
       {/* CTA */}
-      <div className="my-10 ">
+      <div className="my-16 ">
         <CTA
           heading="Hire Blockchain Developers"
           paragraph="Get our top talent working for you right away"
           widthClass="w-full"
         />
       </div>
+      {/* blogs section  */}
+      <div className="sm:new-container sm:py-6 ">
+        <Blogs data={blockchainBlogData} />
+      </div>
+
+
     </>
   );
 };

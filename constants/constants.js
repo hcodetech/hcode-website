@@ -1697,7 +1697,7 @@ export const portfolioData = [
 export const blockchain_development_process = [
   {
     id: 1,
-    img: "../assets/img/blockchain/requirements.jpg",
+    img: "../assets/img/blockchain/requirements.png",
     heading: "Requirements",
     paragraph:
       "As a top blockchain software developer, your vision guides us. We analyze risks, propose solutions, and suggest optimizations using Web 3 + Web 2 architecture to enhance performance while maintaining decentralization. We migrate non-blockchain features to Web 2 strategically, boosting chain performance and speed to match your goals.",
