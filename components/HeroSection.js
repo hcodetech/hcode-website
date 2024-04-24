@@ -11,9 +11,6 @@ import {
   image_slider_1,
   image_slider_2,
   image_slider_3,
-  image_slider_1_webp,
-  image_slider_2_webp,
-  image_slider_3_webp,
 } from "../constants/constants";
 import {
   ArrowRightIcon,
@@ -66,7 +63,16 @@ function HeroSection() {
                 </div>
               </div>
 
-              <picture>
+
+              <img
+                src={image_slider_1}
+                className="h-screen w-screen object-cover"
+                alt="Engineering Services"
+                height="750px"
+                width="1800px"
+                loading="lazy"
+              />
+              {/* <picture>
                 <source
                   className="h-screen w-screen object-cover"
                   srcSet={image_slider_1_webp}
@@ -82,7 +88,7 @@ function HeroSection() {
                   width="1800px"
                   loading="lazy"
                 />
-              </picture>
+              </picture> */}
             </div>
           </Slide>
           <Slide index={1}>
@@ -110,7 +116,7 @@ function HeroSection() {
                 </div>
               </div>
 
-              <picture>
+              {/* <picture>
                 <source
                   srcSet={image_slider_2_webp}
                   className="h-screen w-screen object-cover"
@@ -127,7 +133,17 @@ function HeroSection() {
                   width="1800px"
                   loading="lazy"
                 />
-              </picture>
+              </picture> */}
+
+              <img
+                src={image_slider_2}
+                className="h-screen w-screen object-cover"
+                type="image/webp"
+                alt="Team of young and passionate developers"
+                height="750px"
+                width="1800px"
+                loading="lazy"
+              />
             </div>
           </Slide>
           <Slide index={2}>
@@ -153,7 +169,7 @@ function HeroSection() {
                 </div>
               </div>
 
-              <picture>
+              {/* <picture>
                 <source
                   srcSet={image_slider_3_webp}
                   className="h-screen w-screen object-cover"
@@ -170,7 +186,16 @@ function HeroSection() {
                   width="1800px"
                   loading="lazy"
                 />
-              </picture>
+              </picture> */}
+              <img
+                src={image_slider_3}
+                className="h-screen w-screen object-cover"
+                type="image/webp"
+                alt="Our business services"
+                height="750px"
+                width="1800px"
+                loading="lazy"
+              />
             </div>
           </Slide>
         </Slider>

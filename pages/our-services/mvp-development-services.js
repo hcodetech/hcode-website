@@ -22,6 +22,9 @@ import {
 } from "../../constants/constants";
 import CaseStudiesCard from "../../components/CaseStudiesCard";
 import SectionHeader from "../../components/SectionHeader";
+import useGetFetch from "../hooks/useGetFetch";
+import { getAPIUrl } from "../api/APIHelpers";
+import { apiRoutes } from "../api/APIRoutes";
 
 function mvp_development_services() {
   const data = getTestimonialData("mvp");
@@ -30,6 +33,9 @@ function mvp_development_services() {
   useEffect(() => {
     window.innerWidth <= 750 ? setIsDesktop(false) : setIsDesktop(true);
   }, []);
+  const [portfolioData, isLoading] = useGetFetch(
+    getAPIUrl(apiRoutes.SHOW_HOMEPAGE_PROJECT)
+  );
 
   return (
     <>
@@ -267,7 +273,8 @@ function mvp_development_services() {
           }
         />
         <div className="-mt-14">
-          <CaseStudiesCard />
+          <CaseStudiesCard data={portfolioData} isLoading={isLoading} />
+
         </div>
       </div>
 
