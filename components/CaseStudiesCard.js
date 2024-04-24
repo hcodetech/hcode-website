@@ -24,9 +24,9 @@ function CaseStudiesCard({ data, isLoading }) {
         <div className=" animate-pulse flex-row h-full justify-between">
           <div className="h-1/2 bg-gray-300 w-full mb-4"></div>
           <div className="p-4">
-            <div className="w-52 bg-gray-300 h-10 rounded-md mb-2 "></div>
-            <div className="w-full bg-gray-300 h-20 rounded-md mb-2 "></div>
-            <div className="w-24 bg-gray-300 h-4 rounded-md mb-2 "></div>
+            <div className="w-52 bg-gray-300 h-10 rounded-md mb-2"></div>
+            <div className="w-full bg-gray-300 h-20 rounded-md mb-2"></div>
+            <div className="w-24 bg-gray-300 h-4 rounded-md mb-2"></div>
           </div>
         </div>
       </div>
@@ -110,10 +110,10 @@ function CaseStudiesCard({ data, isLoading }) {
             </div>
 
             <ButtonBack>
-              <ChevronLeftIcon className="  text-primary bg-white shadow-md absolute left-0 md:left-4 bottom-2/3 rounded-full w-8 h-8 hover:shadow-lg " />
+              <ChevronLeftIcon className="text-primary bg-white shadow-md absolute left-0 md:left-4 bottom-2/3 rounded-full w-8 h-8 hover:shadow-lg " />
             </ButtonBack>
             <ButtonNext>
-              <ChevronRightIcon className="  text-primary bg-white shadow-md absolute right-0 md:right-4 bottom-2/3 rounded-full w-8 h-8   hover:shadow-lg " />
+              <ChevronRightIcon className="text-primary bg-white shadow-md absolute right-0 md:right-4 bottom-2/3 rounded-full w-8 h-8   hover:shadow-lg " />
             </ButtonNext>
           </div>
         </CarouselProvider>

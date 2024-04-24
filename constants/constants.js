@@ -236,11 +236,13 @@ export const work_with_us_2 = "/assets/img/work_with_us_2.jpg";
 export const work_with_us_3 = "/assets/img/work_with_us_3.jpg";
 // export const thailand_trip = "/assets/img/thailand_trip.jpg";
 export const thailand_trip = "/assets/img/thailand_trip.png";
+export const thailand_trip_webp = "/assets/img/thailand_trip_webp";
 export const office_v3 = "/assets/img/office_v3.jpg";
 export const work_with_us_recuriter_image =
   "/assets/img/work_with_us_recruiter.jpg";
 export const pre_vetted_hero = "/assets/img/our_services_hero1.jpg";
 export const our_services_hero = "/assets/img/our_services_hero.jpg";
+export const our_services_hero_webp = "/assets/img/our_services_hero.webp";
 ("/assets/img/work_with_us_recruiter.jpg");
 
 export const work_with_us_image_carousel = [
