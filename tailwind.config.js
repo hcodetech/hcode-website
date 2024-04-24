@@ -6,15 +6,7 @@ module.exports = {
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    // container:{
-    //   margin:{
-    //     DEFAULT: 'auto',
-    //     sm: '2rem',
-    //     lg: '4rem',
-    //     xl: '5rem',
-    //     '2xl': '6rem',
-    //   }
-    // },
+
     colors: {
       primary: '#276EF1',
       secondary: '#FFC043',
@@ -46,11 +38,12 @@ module.exports = {
         daas: "url('/assets/img/developer_as_service.jpg')",
         mvp: "url('/assets/img/mvp_service.jpg')",
         blockchain: "url('/assets/img/blockchain_service.jpg')",
-        blockchain_small: "url('/assets/img/blockchain_service_small.jpg')",        
-        mvp_bg_img:"url('/assets/img/mvp_bg.png')",
-        mvp_transform_idea:"url('/assets/img/transform_idea_section.png')",
-        ai_bg_img:"url('/assets/img/ai_bg_img_.png')",
-        AI_Integration_Process_bg:"url('/assets/img/ai_integration_process_.png')",
+        blockchain_small: "url('/assets/img/blockchain_service_small.jpg')",
+        mvp_bg_img: "url('/assets/img/mvp_bg.png')",
+        blockchain_bg_img: "url('/assets/img/blockchain/blockChain.png')",
+        mvp_transform_idea: "url('/assets/img/transform_idea_section.png')",
+        ai_bg_img: "url('/assets/img/ai_bg_img_.png')",
+        AI_Integration_Process_bg: "url('/assets/img/ai_integration_process_.png')",
       }),
     },
   },

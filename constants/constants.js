@@ -691,7 +691,7 @@ export const dass_benefits = {
 };
 
 export const blockchain_benefits = {
-  heading: "Benefits Of Hiring from us",
+  heading: "Why Choose HCode as Your Blockchain App Development Company",
   paragraph:
     "Our developers have experience working with Global Clients on the latest tech stacks and challenges that come up with scale. We can help you with efficient and lean solutions for your products to maximize RoI for you.",
   points: [
@@ -1694,37 +1694,114 @@ export const portfolioData = [
   },
 ];
 
+export const blockchain_development_process = [
+  {
+    id: 1,
+    img: "../assets/img/blockchain/requirements.png",
+    heading: "Requirements",
+    paragraph:
+      "As a top blockchain software developer, your vision guides us. We analyze risks, propose solutions, and suggest optimizations using Web 3 + Web 2 architecture to enhance performance while maintaining decentralization. We migrate non-blockchain features to Web 2 strategically, boosting chain performance and speed to match your goals.",
+  },
+  {
+    id: 2,
+    heading: "Solution Designing",
+    img: "../assets/img/blockchain/solution_designing.jpg",
+
+    paragraph:
+      "<h4><b><b>System Architecture:</b></b><h4><p>We meticulously define how various components within your blockchain system will interact seamlessly, optimizing communication and data flow for a smooth user experience. </p><h4><b><b>Smart Contracts:</b></b> </h4><p>Our experts code self-executing contracts that govern transactions and automate processes, ensuring trust and transparency through their immutable and publicly verifiable nature.</p><h4><b><b>Middleware Architecture:</b></b> </h4><p>We design a robust bridge connecting your blockchain network to external systems and applications, enabling data exchange and broader functionality for enhanced scalability and interoperability.</p><h4><b><b>Technical Documentation:</b></b></h4><p>Detailed guides explaining the system functionalities, components, and usage procedures, empowering developers, administrators, and end-users for smooth operation and maintenance.</p> ",
+  },
+  {
+    id: 1,
+    img: "../assets/img/blockchain/development.jpg",
+    heading: "Development",
+    paragraph:
+      "Smart contracts are coded based on the architecture. Components are integrated iteratively between smart contracts and UI/admin including frontend actions like transaction creation, web wallet connection, chain messaging, and admin features such as transaction analytics and user management.",
+  },
+  {
+    id: 1,
+    img: "../assets/img/blockchain/deployment.jpg",
+    heading: "Testnet and Deployment",
+    paragraph:
+      "As a leading blockchain solutions company, we meticulously test our blockchain products to guarantee client satisfaction and a seamless user experience. We strictly follow development protocols and ensure cross-platform accessibility for maximum reach.",
+  },
+];
+
 export const blockchain_services = {
   heading: " Our Blockchain Services",
   paragraph:
     "Whether you are looking for a Blockchain Wallet, Smart Contract, NFT, or Custom Blockchain Solution, we can help you with our Blockchain expertise",
   points: [
     {
-      image: "/assets/img/mobile-illu.svg",
-      heading: "DApps",
-      description:
-        "A decentralized application(dapp) is an application built on a decentralized network that combines a smart contract and a UI. We can develop these dapps for our clients with all necessary integrations.",
-    },
-    {
       image: "/assets/img/smartContract_svg.svg",
       heading: "Smart Contract",
       description:
-        " Our blockchain developers understand your needs and accordingly can come up with smart contract management platforms and eWallet apps.",
+        "We craft self-executing contracts and eWallet apps for streamlined operations, ideal for startups and large enterprises.",
     },
     {
-      image: "/assets/img/nftMarketplace_svg.svg",
-      heading: "NFT Marketplace",
+      image: "/assets/img/blockchain_app_development.svg",
+      heading: "DApp Development",
       description:
-        "We can help build you an NFT marketplace with all the necessary features of the same similar to the popular ones, based on any popular blockchain network.",
+        "Create custom, scalable dApps to gain a competitive edge in the ever-evolving blockchain landscape.",
+    },
+    {
+      image: "/assets/img/defi_development.svg",
+      heading: "DeFi Development",
+      description:
+        "Unlock new financial possibilities with feature-rich tokenization platforms for secure asset trading.",
     },
     {
       image: "/assets/img/audit_svg.svg",
       heading: "Blockchain Security Audit",
       description:
-        "We will help you with making sure that your Blockchain application is secure so that no one can hack your contracts and cause you financial & credibility loss.",
+        "Protect your contracts and applications with comprehensive security audits, safeguarding your credibility.",
+    },
+    {
+      image: "/assets/img/nftMarketplace_svg.svg",
+      heading: "NFT Marketplace Development",
+      description:
+        "Build a robust NFT marketplace with familiar features on leading networks for seamless trading. ",
+    },
+    {
+      image: "/assets/img/tokenization.svg",
+      heading: "Tokenization Platform Development",
+      description:
+        "Digitize assets and unlock trading opportunities across various platforms with our secure solutions.",
     },
   ],
 };
+
+// export const blockchain_services = {
+//   heading: " Our Blockchain Services",
+//   paragraph:
+//     "Whether you are looking for a Blockchain Wallet, Smart Contract, NFT, or Custom Blockchain Solution, we can help you with our Blockchain expertise",
+//   points: [
+//     {
+//       image: "/assets/img/mobile-illu.svg",
+//       heading: "Smart Contract",
+//       description:
+//         "We are a leading-edge smart contact development company, catering to a diverse clientele ranging from startups to large-scale enterprises. Our collaborative approach ensures that we work closely with you to conceptualize and implement self-executing contract management platforms, and eWallet apps tailored to optimize operational automation and efficiency.",
+//     },
+//     {
+//       image: "/assets/img/smartContract_svg.svg",
+//       heading: "NFT Marketplace",
+//       description:
+//         "We are an NFT Marketplace development company empowering businesses to establish decentralized trading platforms. Our expertise enables us to create robust NFT marketplaces with essential features akin to popular platforms. Leveraging renowned blockchain networks such as Ethereum, Polygon, and more, we ensure seamless integration and optimal functionality for your marketplace. ",
+//     },
+
+//     {
+//       image: "/assets/img/audit_svg.svg",
+//       heading: "Blockchain Security Audit",
+//       description:
+//         "As a top-notch blockchain development services provider we offer comprehensive support to ensure the security of your blockchain application, safeguarding your contracts from potential hacks that could lead to financial loss and damage to your credibility.",
+//     },
+//     {
+//       image: "/assets/img/audit_svg.svg",
+//       heading: "Blockchain Application Development",
+//       description:
+//         "A decentralized application (dApp) integrates a smart contract and a user interface within a decentralized network. Our blockchain application development services specialize in crafting custom dApps tailored to our client's needs, ensuring scalable and profitable blockchain applications. This strategic approach empowers our clients to gain a competitive edge in the dynamic blockchain landscape.",
+//     },
+//   ],
+// };
 
 export const ai_services = {
   heading: "Our AI Integration Services",
@@ -1818,7 +1895,7 @@ export const mvp_services = {
 
   points: [
     {
-      image: "/assets/img/prioritize.svg",      
+      image: "/assets/img/prioritize.svg",
       heading: "We prioritize timely delivery and client transparency",
       description:
         "We promise realistic delivery timelines, prioritize startup challenges in our development process, and communicate openly about any unexpected issues, providing prompt updates and swift resolution",
@@ -1962,6 +2039,40 @@ export const faq_mvp = [
   },
 ];
 
+export const faq_blockchain = [
+  {
+    question: "How much experience do you have in blockchain development?",
+    answer:
+      "Over the past 3 years, we've actively engaged in blockchain development, tackling various projects including decentralized applications (dApps) and custom blockchain protocols. We continually update our expertise to deliver innovative solutions, staying abreast of the latest advancements in the field.",
+  },
+  {
+    question: "What specific technologies and programming languages are integral to your workflow?",
+    answer:
+      `Our team is well-versed in a comprehensive set of technologies that cater to all aspects of blockchain development. Here's a breakdown of the tools we leverage:<br/><br/>
+
+     Languages: Solidity, Cadence, Python, Javascript.<br/>
+      Frontend: ReactJS, NextJS.<br/>
+      Backend: NodeJS, Django.<br/>
+      Databases: Polybase, Postgres.<br/>
+      <br/>
+      Hardhat for comprehensive development needs.
+      This diverse tech stack ensures efficient blockchain project development.
+      `,
+  },
+  {
+    question:
+      "What are the decision points I have to make before getting started?",
+    answer:
+      "If the product is client-facing, you need to decide which devices the product should be built for. Is it a Mobile application, or a Web Application for Desktop and/or Mobile. The more the devices, the more time it will take for development and optimization. Second, you need to tell us what all external integrations, if anything, in particular, are needed for the project, are important as any external dependency need to be evaluated. Third, you need to plan for the phase-wise development plan with respect to features which would help us plan the development.",
+  },
+  {
+    question:
+      "How do you effectively manage and address change requests from your clientele?",
+    answer:
+      "We manage change requests effectively by maintaining open communication channels, understanding scope and impact, providing regular updates, prioritizing based on impact, and offering ongoing support. This ensures smooth project progress while accommodating your evolving needs.",
+  },
+];
+
 export const faqAi = [
   {
     question: "What is AI integration, and how can it benefit my business?",
@@ -2051,7 +2162,8 @@ export const aiBlogData = [
     id: 1,
     title: "How AI Integration Services Can Fuel Your Business Growth",
     href: "https://hcode.tech/blog/how-ai-integration-services-can-fuel-your-business-growth/",
-    description: "How AI Integration Services Can Fuel Your Business Growth […]",
+    description:
+      "How AI Integration Services Can Fuel Your Business Growth […]",
     imageUrl: "/assets/img/Ai_blog_1.jpg",
   },
   {
@@ -2064,11 +2176,41 @@ export const aiBlogData = [
   },
   {
     id: 3,
-    title:"How to Seamlessly Integrate ChatGPT API into Your Website?",
+    title: "How to Seamlessly Integrate ChatGPT API into Your Website?",
     href: "https://hcode.tech/blog/how-to-seamlessly-integrate-chatgpt-api-into-your-website/",
     description:
       "How to Seamlessly Integrate ChatGPT API into Your Website? Have […]",
     imageUrl: "/assets/img/Ai_blog_3.png",
+  },
+];
+export const blockchainBlogData = [
+  {
+    id: 1,
+    title:
+      "Polygon vs. Ethereum: Why Choose Polygon for Scalable, Low-Cost DApps",
+
+    href: "https://hcode.tech/blog/polygon-vs-ethereum-why-choose-polygon-for-scalable-low-cost-dapps/",
+    description:
+      "Polygon vs. Ethereum: Why Choose Polygon for Scalable, Low-Cost DApps […]",
+    imageUrl: "/assets/img/blockchain/blockchain_blog_2.jpeg",
+  },
+  {
+    id: 2,
+    title: "How AI and Blockchain “Together” Can Transform Business ",
+
+    href: "https://hcode.tech/blog/how-ai-and-blockchain-together-can-transform-business/",
+    description: "How AI and Blockchain “Together” Can Transform Business […]",
+    imageUrl: "/assets/img/blockchain/blockchain_blog_1.png",
+  },
+
+  {
+    id: 3,
+    title:
+      "Web 3.0 vs Web 2.0: A Guide for Businesses in the Future of the Web",
+    href: "https://hcode.tech/blog/web-3-0-vs-web-2-0-a-guide-for-businesses-in-the-future-of-the-web/",
+    description:
+      "How to Seamlessly Integrate ChatGPT API into Your Website? Have […]",
+    imageUrl: "/assets/img/blockchain/blockchain_blog_3.jpeg",
   },
 ];
 

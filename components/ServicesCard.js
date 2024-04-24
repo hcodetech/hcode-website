@@ -47,7 +47,7 @@ function ServicesCard({ heading }) {
                 <h1 className=" text-3xl md:text-4xl font-semibold md:font-bold lg:w-1/3">
                   {our_service.team_as_service_heading}
                 </h1>
-                <p className="mt-3 font-light md:text-xl ">
+                <p className="mt-3 font-light md:text-xl">
                   {our_service.team_as_service_paragraph}
                 </p>
                 <div className=" mt-10">

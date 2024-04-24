@@ -13,12 +13,12 @@ import { apiRoutes } from "../pages/api/APIRoutes";
 import { getAPIUrl } from "../pages/api/APIHelpers";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/solid";
 
-function CaseStudiesCard({ data }) {
-  
-  const [portfolioData, isPortfolioDataLoading] = useGetFetch(
-    getAPIUrl(apiRoutes.SHOW_HOMEPAGE_PROJECT)
-  );
-  return isPortfolioDataLoading ? (
+function CaseStudiesCard({ data, isLoading }) {
+
+  // const [portfolioData, isPortfolioDataLoading] = useGetFetch(
+  //   getAPIUrl(apiRoutes.SHOW_HOMEPAGE_PROJECT)
+  // );
+  return isLoading ? (
     <div className="new-container grid grid-cols-1 md:grid-cols-3 gap-4">
       <div className="w-full h-[400px] border  rounded-md mx-auto mt-10">
         <div className=" animate-pulse flex-row h-full justify-between">
@@ -57,7 +57,7 @@ function CaseStudiesCard({ data }) {
       <div className="hidden md:block">
         <CarouselProvider
           visibleSlides={3}
-          totalSlides={portfolioData.length}
+          totalSlides={data?.length}
           step={1}
           // naturalSlideWidth={400}
           // naturalSlideHeight={500}
@@ -72,7 +72,7 @@ function CaseStudiesCard({ data }) {
             <div className="new-container">
               <Slider>
                 {/* <div className="grid grid-cols-12 "> */}
-                {portfolioData?.map((project) => (
+                {data?.map((project) => (
                   <Slide>
                     <div
                       className="mx-2 bg-[#fbfbfb] rounded-lg border h-full hover:transition hover:duration-200 hover:ease-out hover:shadow-2xl hover:scale-100"
@@ -110,7 +110,7 @@ function CaseStudiesCard({ data }) {
             </div>
 
             <ButtonBack>
-              <ChevronLeftIcon className="  text-primary bg-white shadow-md absolute left-0 md:left-4 bottom-2/3 rounded-full w-8 h-8   hover:shadow-lg " />
+              <ChevronLeftIcon className="  text-primary bg-white shadow-md absolute left-0 md:left-4 bottom-2/3 rounded-full w-8 h-8 hover:shadow-lg " />
             </ButtonBack>
             <ButtonNext>
               <ChevronRightIcon className="  text-primary bg-white shadow-md absolute right-0 md:right-4 bottom-2/3 rounded-full w-8 h-8   hover:shadow-lg " />
@@ -122,7 +122,7 @@ function CaseStudiesCard({ data }) {
       <div className="md:hidden">
         <CarouselProvider
           visibleSlides={1}
-          totalSlides={portfolioData.length}
+          totalSlides={data?.length}
           step={1}
           // naturalSlideWidth={400}
           // naturalSlideHeight={500}
@@ -137,7 +137,7 @@ function CaseStudiesCard({ data }) {
             <div className="new-container">
               <Slider>
                 {/* <div className="grid grid-cols-12 "> */}
-                {portfolioData?.map((project) => (
+                {data?.map((project) => (
                   <Slide>
                     <div
                       className="mx-2 bg-[#fbfbfb] rounded-lg border h-full hover:transition hover:duration-200 hover:ease-out hover:shadow-2xl hover:scale-100"
@@ -175,7 +175,7 @@ function CaseStudiesCard({ data }) {
             </div>
 
             <ButtonBack>
-              <ChevronLeftIcon className="  text-primary bg-white shadow-md absolute left-0 md:left-4 bottom-2/3 rounded-full w-8 h-8   hover:shadow-lg " />
+              <ChevronLeftIcon className="  text-primary bg-white shadow-md absolute left-0 md:left-4 bottom-2/3 rounded-full w-8 h-8 hover:shadow-lg " />
             </ButtonBack>
             <ButtonNext>
               <ChevronRightIcon className="  text-primary bg-white shadow-md absolute right-0 md:right-4 bottom-2/3 rounded-full w-8 h-8   hover:shadow-lg " />
