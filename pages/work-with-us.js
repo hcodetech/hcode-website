@@ -91,7 +91,7 @@ function work_with_us() {
             <div className="col-span-6 w-full -mt-24 hidden md:block">
               <picture>
                 <source
-                  srcSet={thailand_trip_webp}
+                  srcSet={thailand_trip_webp.src}
                   media="(min-width:250px)"
                   type="image/webp"
                 />
@@ -104,7 +104,11 @@ function work_with_us() {
                   alt="Hcode team in Thailand"
                   className="rounded-lg object-cover shadow-md md:hover:scale-105 transition-all duration-100 ease-out max-h-[200px] w-full object-bottom"
                 />
+
               </picture>
+
+
+
             </div>
           </div>
         </div>
