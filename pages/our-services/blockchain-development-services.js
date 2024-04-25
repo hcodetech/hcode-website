@@ -67,10 +67,6 @@ const Blockchain = () => {
       });
     }
   };
-  useEffect(() => {
-    const redirectPage = '/our-services/blockchain-development-services';
-    window.location.href = redirectPage;
-  }, []);
   const data = getTestimonialData("blockchain");
 
   return (
