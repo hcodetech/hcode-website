@@ -49,7 +49,7 @@ function Our_services() {
           </div>
           <div className='relative  md:mt-8 '>
             <picture>
-              <source type='image/webp' srcSet={our_services_hero_webp} />
+              {/* <source type='image/webp' srcSet={our_services_hero_webp} /> */}
               <img
                 className='object-cover w-screen md:h-[580px] h-[300px]'
                 src={our_services_hero}

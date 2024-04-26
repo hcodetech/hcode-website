@@ -42,14 +42,13 @@ export default function Navbar() {
                   <a
                     href="/our-services"
                     className={` text-gray-900 group  inline-flex items-center  pt-1 border-b-2 text-sm font-medium  border-transparent relative 
-                      ${
-                        pathname === '/our-services' ||
-                        pathname === '/our-services/team-as-a-service' ||
-                        pathname === '/our-services/blockchain' ||
-                        pathname === '/our-services/mvp-development-services' ||
-                        pathname === '/our-services/ai-integration-services' ||
-                        (pathname === '/our-services/developer-as-a-service' &&
-                          'border-blue-500 border-b-4')
+                      ${pathname === '/our-services' ||
+                      pathname === '/our-services/team-as-a-service' ||
+                      pathname === '/our-services/blockchain-development-services' ||
+                      pathname === '/our-services/mvp-development-services' ||
+                      pathname === '/our-services/ai-integration-services' ||
+                      (pathname === '/our-services/developer-as-a-service' &&
+                        'border-blue-500 border-b-4')
                       }   `}
                   >
                     Our Services
@@ -73,7 +72,7 @@ export default function Navbar() {
                         </li>
                         <li>
                           <a
-                            href="/our-services/blockchain"
+                            href="/our-services/blockchain-development-services"
                             className="block py-3 pl-4  text-sm text-gray-700 hover:bg-gray-100 border-b"
                           >
                             Blockchain Services
@@ -102,8 +101,7 @@ export default function Navbar() {
                   <a
                     href="/about"
                     className={` text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium  border-transparent
-                      ${
-                        pathname === '/about' && 'border-blue-500 border-b-4'
+                      ${pathname === '/about' && 'border-blue-500 border-b-4'
                       }   `}
                   >
                     About Us
@@ -111,9 +109,8 @@ export default function Navbar() {
                   <a
                     href="/work-with-us"
                     className={` text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium  border-transparent
-                      ${
-                        pathname === '/work-with-us' &&
-                        'border-blue-500 border-b-4'
+                      ${pathname === '/work-with-us' &&
+                      'border-blue-500 border-b-4'
                       }   `}
                   >
                     Work With Us
@@ -121,8 +118,7 @@ export default function Navbar() {
                   <a
                     href="/our-work"
                     className={` text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium  border-transparent
-                      ${
-                        pathname === '/our-work' && 'border-blue-500 border-b-4'
+                      ${pathname === '/our-work' && 'border-blue-500 border-b-4'
                       }   `}
                   >
                     Our Work
@@ -131,9 +127,8 @@ export default function Navbar() {
                   <a
                     href="/case-studies"
                     className={` text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium  border-transparent
-                      ${
-                        pathname === '/case-studies' &&
-                        'border-blue-500 border-b-4'
+                      ${pathname === '/case-studies' &&
+                      'border-blue-500 border-b-4'
                       }   `}
                   >
                     Case Studies
@@ -143,8 +138,7 @@ export default function Navbar() {
                     href="https://hcode.tech/blog/"
                     target="_blank"
                     className={` text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium  border-transparent
-                      ${
-                        pathname === '/blog' && 'border-blue-500 border-b-4'
+                      ${pathname === '/blog' && 'border-blue-500 border-b-4'
                       }   `}
                   >
                     Blog
@@ -175,10 +169,9 @@ export default function Navbar() {
               <a
                 href="/"
                 className={` border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium
-                      ${
-                        pathname === '/' &&
-                        'bg-blue-50 border-blue-500 text-blue-700'
-                      }   `}
+                      ${pathname === '/' &&
+                  'bg-blue-50 border-blue-500 text-blue-700'
+                  }   `}
               >
                 Home
               </a>
@@ -186,10 +179,9 @@ export default function Navbar() {
               <a
                 href="/our-services"
                 className={` border-transparent  text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium
-                    ${
-                      pathname === '/our-services' &&
-                      'bg-blue-50 border-blue-500 text-blue-700'
-                    }   `}
+                    ${pathname === '/our-services' &&
+                  'bg-blue-50 border-blue-500 text-blue-700'
+                  }   `}
               >
                 Our Services
               </a>
@@ -197,9 +189,8 @@ export default function Navbar() {
                 <a
                   href="/our-services/team-as-a-service"
                   className={` border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block  px-6 py-2  border-l-4 text-sm font-medium
-                    ${
-                      pathname === '/our-services/team-as-a-service' &&
-                      'bg-blue-50 border-blue-500 text-blue-700'
+                    ${pathname === '/our-services/team-as-a-service' &&
+                    'bg-blue-50 border-blue-500 text-blue-700'
                     }   `}
                 >
                   Team as a Service
@@ -207,32 +198,29 @@ export default function Navbar() {
                 <a
                   href="/our-services/developer-as-a-service"
                   className={` border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block px-6 py-2  border-l-4 text-sm font-medium
-                    ${
-                      pathname === '/our-services/developer-as-a-service' &&
-                      'bg-blue-50 border-blue-500 text-blue-700'
+                    ${pathname === '/our-services/developer-as-a-service' &&
+                    'bg-blue-50 border-blue-500 text-blue-700'
                     }   `}
                 >
                   Developer as a Service
                 </a>
 
                 <a
-                  href="/our-services/blockchain"
+                  href="/our-services/blockchain-development-services"
                   className={` border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block px-6 py-2  border-l-4 text-sm font-medium
-                            ${
-                              pathname === '/our-services/blockchain' &&
-                              'bg-blue-50 border-blue-500 text-blue-700'
-                            }   `}
+                            ${pathname === '/our-services/blockchain-development-services' &&
+                    'bg-blue-50 border-blue-500 text-blue-700'
+                    }   `}
                 >
                   Blockchain Services
                 </a>
                 <a
                   href="/our-services/mvp-development-services"
                   className={` border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block px-6 py-2  border-l-4 text-sm font-medium
-                            ${
-                              pathname ===
-                                '/our-services/mvp-development-services' &&
-                              'bg-blue-50 border-blue-500 text-blue-700'
-                            }   `}
+                            ${pathname ===
+                    '/our-services/mvp-development-services' &&
+                    'bg-blue-50 border-blue-500 text-blue-700'
+                    }   `}
                 >
                   MVP Development Services
                 </a>
@@ -240,10 +228,9 @@ export default function Navbar() {
                 <a
                   href="/our-services/ai-integration-services"
                   className={` border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block px-6 py-2  border-l-4 text-sm font-medium
-                            ${
-                              pathname === '/our-services/ai-integration-services' &&
-                              'bg-blue-50 border-blue-500 text-blue-700'
-                            }   `}
+                            ${pathname === '/our-services/ai-integration-services' &&
+                    'bg-blue-50 border-blue-500 text-blue-700'
+                    }   `}
                 >
                   AI Integration Services
                 </a>
@@ -252,30 +239,27 @@ export default function Navbar() {
               <a
                 href="/about"
                 className={` border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium
-                    ${
-                      pathname === '/about' &&
-                      'bg-blue-50 border-blue-500 text-blue-700'
-                    }   `}
+                    ${pathname === '/about' &&
+                  'bg-blue-50 border-blue-500 text-blue-700'
+                  }   `}
               >
                 About Us
               </a>
               <a
                 href="/work-with-us"
                 className={` border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium
-                    ${
-                      pathname === '/work-with-us' &&
-                      'bg-blue-50 border-blue-500 text-blue-700'
-                    }   `}
+                    ${pathname === '/work-with-us' &&
+                  'bg-blue-50 border-blue-500 text-blue-700'
+                  }   `}
               >
                 Work With Us
               </a>
               <a
                 href="/our-work"
                 className={` border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium
-                    ${
-                      pathname === '/our-work' &&
-                      'bg-blue-50 border-blue-500 text-blue-700'
-                    }   `}
+                    ${pathname === '/our-work' &&
+                  'bg-blue-50 border-blue-500 text-blue-700'
+                  }   `}
               >
                 Our Work
               </a>
@@ -283,10 +267,9 @@ export default function Navbar() {
               <a
                 href="/case-studies"
                 className={` border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium
-                    ${
-                      pathname === '/case-studies' &&
-                      'bg-blue-50 border-blue-500 text-blue-700'
-                    }   `}
+                    ${pathname === '/case-studies' &&
+                  'bg-blue-50 border-blue-500 text-blue-700'
+                  }   `}
               >
                 Case Studies
               </a>
@@ -294,10 +277,9 @@ export default function Navbar() {
                 href="https://hcode.tech/blog/"
                 target="_blank"
                 className={` border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium
-                    ${
-                      pathname === '/blog' &&
-                      'bg-blue-50 border-blue-500 text-blue-700'
-                    }   `}
+                    ${pathname === '/blog' &&
+                  'bg-blue-50 border-blue-500 text-blue-700'
+                  }   `}
               >
                 Blog
               </a>
