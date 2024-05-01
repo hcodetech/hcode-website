@@ -8,16 +8,11 @@ import {
 } from "pure-react-carousel";
 
 import "pure-react-carousel/dist/react-carousel.es.css";
-import useGetFetch from "../pages/hooks/useGetFetch";
-import { apiRoutes } from "../pages/api/APIRoutes";
-import { getAPIUrl } from "../pages/api/APIHelpers";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/solid";
 
 function CaseStudiesCard({ data, isLoading }) {
 
-  // const [portfolioData, isPortfolioDataLoading] = useGetFetch(
-  //   getAPIUrl(apiRoutes.SHOW_HOMEPAGE_PROJECT)
-  // );
+
   return isLoading ? (
     <div className="new-container grid grid-cols-1 md:grid-cols-3 gap-4">
       <div className="w-full h-[400px] border  rounded-md mx-auto mt-10">

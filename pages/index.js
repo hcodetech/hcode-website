@@ -28,9 +28,15 @@ import NewsletterCTA from "../components/NewsletterCTA";
 import BackendSVG from "../public/assets/img/backend-illu.svg";
 import BlockchainSVG from "../public/assets/img/blockchain-illu.svg";
 import MobileSVG from "../public/assets/img/mobile-illu.svg";
+import useGetFetch from "./hooks/useGetFetch";
+import { getAPIUrl } from "./api/APIHelpers";
+import { apiRoutes } from "./api/APIRoutes";
 
 export default function Home() {
   const [isDesktop, setIsDesktop] = useState("");
+  const [portfolioData, isPortfolioDataLoading] = useGetFetch(
+    getAPIUrl(apiRoutes.SHOW_HOMEPAGE_PROJECT)
+  );
 
   useEffect(() => {
     window.innerWidth <= 750 ? setIsDesktop(false) : setIsDesktop(true);
@@ -229,7 +235,7 @@ export default function Home() {
         <h2 className="text-4xl font-semibold text-center py-5 mb-4">
           Our Work
         </h2>
-        <CaseStudiesCard />
+        <CaseStudiesCard data={portfolioData} loading={isPortfolioDataLoading} />
         <div className="text-center mt-10 mb-14">
           <a href="/our-work" className="outline-button px-10  text-center">
             See Our Portfolio
