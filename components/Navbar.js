@@ -53,7 +53,7 @@ export default function Navbar() {
                   >
                     Our Services
                     <div className="group-hover:block dropdown-menu absolute hidden top-16 -left-2">
-                      <ul className="top-0 w-52 bg-white shadow text-left    rounded">
+                      <ul className="top-0 w-64 bg-white shadow text-left    rounded">
                         <li>
                           <a
                             href="/our-services/team-as-a-service"
@@ -75,7 +75,7 @@ export default function Navbar() {
                             href="/our-services/blockchain-development-services"
                             className="block py-3 pl-4  text-sm text-gray-700 hover:bg-gray-100 border-b"
                           >
-                            Blockchain Services
+                            Blockchain Development Services
                           </a>
                         </li>
                         <li>
@@ -212,7 +212,7 @@ export default function Navbar() {
                     'bg-blue-50 border-blue-500 text-blue-700'
                     }   `}
                 >
-                  Blockchain Services
+                  Blockchain Development Services
                 </a>
                 <a
                   href="/our-services/mvp-development-services"

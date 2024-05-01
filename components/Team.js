@@ -10,7 +10,7 @@ function Team({ name, image, image_webp, bio, link, designation }) {
             media="(min-width:250px)"
           />
           <img
-            className="object-cover h-[360px] md:h-[250px] w-full min-w-full  lg:px-0 "
+            className="object-cover h-[360px] md:h-[270px] w-full min-w-full  lg:px-0 "
             src={image}
             layout="fill"
             loading="lazy"
