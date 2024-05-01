@@ -244,7 +244,7 @@ export default function Home() {
           <h3 className="font-poppins text-center font-semibold text-3xl  md:text-4xl md:leading-tight">
             Leadership Team
           </h3>
-          <div className="grid grid-cols-1 lg:grid-cols-5 gap-4 mt-7">
+          <div className="grid grid-cols-1 lg:grid-cols-4 gap-5 mt-7">
             {TEAM.map(({ name, image, bio, link, designation }, index) => (
               <Team
                 key={name}

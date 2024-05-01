@@ -131,17 +131,6 @@ export const TEAM = [
 
     link: "https://www.linkedin.com/in/rishabh-garg-77023ab6/",
   },
-
-  {
-    image: "/assets/img/hcode_about_us_anuj.png",
-    name: "Anuj Arora",
-    designation: "ENGINEERING MANAGER",
-
-    bio: "   MVP, cloud, & scaling expert <br/> BYju's; Amazon <br/> IIT Delhi",
-
-    link: "https://www.linkedin.com/in/anuj-arora-95091621/",
-  },
-
   {
     image: "/assets/img/hcode_about_us_mudit.jpg",
     name: "Mudit Sharma",
