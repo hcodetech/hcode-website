@@ -105,12 +105,25 @@ const Blockchain = () => {
 
       {/* our services */}
       <section className="bg-[#F8F9FB] mt-16 ">
-        <SectionHeader
-          heading="Create a Secure Network with Blockchain"
-          paragraph="Immerse in Robust Security Through Our Cutting-Edge Blockchain App Development Services"
-          cta
-          ctaText="Develop with Security"
-        />
+        <div>
+          <div className="new-container text-center mx-auto  py-16">
+            <div className="max-w-lg mx-auto ">
+              <h2 className="font-semibold text-3xl md:text-4xl my-4">Create a Secure Network with Blockchain</h2>
+              <div className="px-3 py-[2px] max-w-[120px] my-4 bg-blue-500 mx-auto"></div>
+              <p className="sm:text-xl font-light sm:font-normal pt-1 pb-6">
+                Immerse in Robust Security Through Our Cutting-Edge <a className='text-primary' target='_blank' href='https://www.wikidata.org/wiki/Q20514253'>Blockchain</a> App Development Services
+              </p>
+              <div className="mt-6">
+                <a
+                  href="/contact"
+                  className="bg-white text-primary  border-primary border-2 rounded px-5 sm:px-16 py-4 text-center hover:bg-primary hover:text-white hover:border-white"
+                >
+                  Develop with Security
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* Tech Services */}
@@ -330,8 +343,60 @@ const Blockchain = () => {
       </div>
 
 
+
+      <BlockchainFAQSchema />
     </>
   );
 };
 
 export default Blockchain;
+
+
+const BlockchainFAQSchema = () => {
+  const script = {
+    __html: `
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "How much experience do you have in blockchain development?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Over the past 3 years, we've actively engaged in blockchain development, tackling various projects including decentralized applications (dApps) and custom blockchain protocols. We continually update our expertise to deliver innovative solutions, staying abreast of the latest advancements in the field."
+        }
+      },{
+        "@type": "Question",
+        "name": "What specific technologies and programming languages are integral to your workflow?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Our team is well-versed in a comprehensive set of technologies that cater to all aspects of blockchain development. Here's a breakdown of the tools we leverage:
+    Languages: Solidity, Cadence, Python, Javascript. 
+    Frontend: ReactJS, NextJS. 
+    Backend: NodeJS, Django. 
+    Databases: Polybase, Postgres. 
+    Hardhat for comprehensive development needs.  
+    This diverse tech stack ensures efficient blockchain project development."
+        }
+      },{
+        "@type": "Question",
+        "name": "What are the decision points I have to make before getting started?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "If the product is client-facing, you need to decide which devices the product should be built for. Is it a Mobile application, or a Web Application for Desktop and/or Mobile. The more the devices, the more time it will take for development and optimization. Second, you need to tell us what all external integrations, if anything, in particular, are needed for the project, are important as any external dependency need to be evaluated. Third, you need to plan for the phase-wise development plan with respect to features which would help us plan the development."
+        }
+      },{
+        "@type": "Question",
+        "name": "How do you effectively manage and address change requests from your clientele?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We manage change requests effectively by maintaining open communication channels, understanding scope and impact, providing regular updates, prioritizing based on impact, and offering ongoing support. This ensures smooth project progress while accommodating your evolving needs."
+        }
+      }]
+    }
+   
+    `,
+  };
+
+  return <script type="application/ld+json" dangerouslySetInnerHTML={script} />;
+};
