@@ -2,21 +2,21 @@ import { ArrowRightIcon } from "@heroicons/react/solid";
 import { useState, useEffect } from "react";
 import { Loader } from "./Loader";
 
-const NewsletterComponent = () => {
+const NewsletterMobileComponent = () => {
   const [isLoading, setIsLoading] = useState(false);
 
   const handleSubscriptionFormSubmit = (e) => {
     // e.preventDefault();
     setIsLoading(true);
     if (typeof document !== "undefined") {
-      const form = document.getElementById("sib-form");
+      const form = document.getElementById("sib-form-4");
       form.submit();
     }
   };
 
   return (
     <form
-      id="sib-form"
+      id="sib-form-4"
       action="https://03f10e9f.sibforms.com/serve/MUIFAByIhfN10ItDZjHKGbm9oZZx3DB2fCxWvpaXYnQq4ndeK2SHSMLUlERLNAr9JG9x6NLEcyIitu6TmW0G5OZ8pV8pD6YxsDtBw3Ur3QDWVTAmDMoP_DI_TlEYoKUZxSZwJIuOCeAngRBRgMFpyc2uDOGrcd0GJ7r0vfeqgJrMlXVoBBdhMN-NnIGZuX7vTk-G6sPRcHPPVquv"
       className="mt-10"
       onSubmit={handleSubscriptionFormSubmit}
@@ -43,7 +43,7 @@ const NewsletterComponent = () => {
           <button
             className="cursor-pointer	text-white h-full"
             type="submit"
-            form="sib-form"
+            form="sib-form-4"
           >
             {isLoading ? <Loader /> : <ArrowRightIcon className="w-4" />}
           </button>
@@ -53,7 +53,7 @@ const NewsletterComponent = () => {
   );
 };
 
-export default NewsletterComponent;
+export default NewsletterMobileComponent;
 
 
 

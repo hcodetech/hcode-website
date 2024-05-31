@@ -5,16 +5,9 @@ import {
   linkedin_icon,
   twitter_icon,
   startupindia,
-} from '../constants/constants';
-import dynamic from 'next/dynamic';
-import NewsletterComponent from './NewsletterComponent';
-// const NewsletterComponent = dynamic(() => import('./NewsletterComponent'), {
-
-//   ssr: false
-
-// });
-
-
+} from "../constants/constants";
+import NewsletterComponent from "./NewsletterComponent";
+import NewsletterMobileComponent from "./NewsletterMobileComponent";
 
 function Footer() {
   const year = new Date().getFullYear();
@@ -64,7 +57,7 @@ function Footer() {
               </a>
             </div>
             <div className="md:hidden w-full sm:w-[auto] md:w-[auto] xl:w-[auto] mt-8 md:mt-[-28px]">
-              <NewsletterComponent />
+              <NewsletterMobileComponent />
             </div>
           </div>
           <div className="px-4  my-4 md:mt-0 col-span-12 md:col-span-8">
@@ -186,6 +179,7 @@ function Footer() {
               </li>
             </ul>
           </div>
+
           <div className="hidden md:block px-4 sm:max-w-[250px] sm:min-w-[250px] md:min-w-[400px] xl:min-w-[250px]  md:max-w-[400px] xl:max-w-[250px] mt-8 md:mt-[-28px]">
             <NewsletterComponent />
           </div>
@@ -195,9 +189,10 @@ function Footer() {
             Copyright @{year}
             <a href="/" className="text-primary font-semibold underline ml-1">
               Hcode.tech
-            </a>{' '}
+            </a>{" "}
             | All rights reserved by Hcode Technologies
           </div>
+
           <img
             src={startupindia}
             className="h-10 mt-10 md:mt-0 object-contain"
