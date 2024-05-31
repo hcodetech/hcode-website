@@ -6,7 +6,15 @@ import {
   twitter_icon,
   startupindia,
 } from '../constants/constants';
+import dynamic from 'next/dynamic';
 import NewsletterComponent from './NewsletterComponent';
+// const NewsletterComponent = dynamic(() => import('./NewsletterComponent'), {
+
+//   ssr: false
+
+// });
+
+
 
 function Footer() {
   const year = new Date().getFullYear();

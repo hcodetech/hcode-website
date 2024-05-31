@@ -5,7 +5,6 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
 import { fav_icon } from "../constants/constants";
 // import NewsletterComponent from "../components/NewsletterComponent";
-import NewsletterPopUp from "../components/NewsletterPopUp";
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
     const initialProps = await Document.getInitialProps(ctx);

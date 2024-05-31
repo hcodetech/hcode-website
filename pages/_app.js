@@ -4,8 +4,8 @@ import "tailwindcss/tailwind.css";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import "../styles/global.scss";
-import NewsletterPopUp from "../components/NewsletterPopUp";
 import { useEffect, useState } from "react";
+import NewsletterPopUp from "../components/NewsletterPopUp";
 
 function MyApp({ Component, pageProps }) {
   const [showNewsLetterPopup, setShowNewsLetterPopup] = useState(false);
@@ -16,11 +16,12 @@ function MyApp({ Component, pageProps }) {
 
   useEffect(() => {
     const stroredData = sessionStorage.getItem("isSubscriptionPopupVisible");
+    console.log(stroredData, 'stroredData')
 
     if (stroredData === null) {
       setTimeout(() => {
         setShowNewsLetterPopup(true);
-      }, [15000]);
+      }, [10000]);
     }
     sessionStorage.setItem("isSubscriptionPopupVisible", showNewsLetterPopup);
   }, []);
@@ -28,8 +29,12 @@ function MyApp({ Component, pageProps }) {
   return (
     <div>
       {showNewsLetterPopup && (
-        <NewsletterPopUp setShowNewsLetterPopup={setShowNewsLetterPopup} />
+        <NewsletterPopUp
+          showNewsLetterPopup={showNewsLetterPopup}
+          setShowNewsLetterPopup={setShowNewsLetterPopup}
+        />
       )}
+
       <div className="bg-white">
         {<Navbar />}
 
