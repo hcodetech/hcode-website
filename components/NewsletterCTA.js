@@ -11,6 +11,7 @@ const NewsletterCTA = () => {
     if (typeof document !== "undefined") {
       const form = document.getElementById("sib-form-1");
       form.submit();
+      form.reset();
     }
   };
   return (

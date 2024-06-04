@@ -20,7 +20,7 @@ function MyApp({ Component, pageProps }) {
     if (stroredData === null) {
       setTimeout(() => {
         setShowNewsLetterPopup(true);
-      }, [6000]);
+      }, [15000]);
     }
     sessionStorage.setItem("isSubscriptionPopupVisible", showNewsLetterPopup);
   }, []);

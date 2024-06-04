@@ -6,12 +6,14 @@ const NewsletterComponent = () => {
   const [isLoading, setIsLoading] = useState(false);
 
   const handleSubscriptionFormSubmit = (e) => {
-    // e.preventDefault();
+    e.preventDefault();
     setIsLoading(true);
     if (typeof document !== "undefined") {
       const form = document.getElementById("sib-form");
       form.submit();
+      form.reset();
     }
+
   };
 
   return (
