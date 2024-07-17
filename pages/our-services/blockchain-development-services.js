@@ -78,8 +78,8 @@ const Blockchain = () => {
       {/* Hero Section */}
       <section className="h-[550px] md:h-screen  bg-blockchain_bg_img bg-no-repeat bg-cover bg-center ">
         <div className="max-w-4xl px-4 pt-28 md:pt-52 mx-auto flex  flex-col items-center	text-center">
-          <h1 className="font-bold text-3xl sm:text-7xl text-primary py-4">
-            Blockchain <br /> Development Services
+          <h1 className="font-bold text-3xl max-w-3xl sm:text-7xl text-primary py-4">
+            Blockchain Development Services
           </h1>
           <p className="font-poppins text-black  px-5 sm:text-2xl font-light sm:py-3 leading-7 md:leading-10 ">
             Secure your spot early in the decentralized world with Smart
