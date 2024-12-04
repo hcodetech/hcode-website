@@ -5,48 +5,48 @@ import {
   PhoneIcon,
   ChatAltIcon,
   VideoCameraIcon,
-} from '@heroicons/react/solid';
-import Head from 'next/head';
+} from "@heroicons/react/solid";
+import Head from "next/head";
 
-import { useState } from 'react';
-import { contact_us_circle, metaData } from '../constants/constants';
-import DotLoader from 'react-spinners/DotLoader';
-import { apiRoutes } from './api/APIRoutes';
-import { getAPIUrl } from './api/APIHelpers';
-import 'react-phone-input-2/lib/plain.css';
-import MetaTags from '../components/MetaTags';
-import UpdateUserLeadPopup from '../components/updateUserLeadPopup';
-import QueryPopup from '../components/QueryPopup';
-import QueryResponsePopUp from '../components/QueryResponsePopUp';
-import GetQuoteResponsePopUp from '../components/GetQuoteResponsePopup';
+import { useState } from "react";
+import { contact_us_circle, metaData } from "../constants/constants";
+import DotLoader from "react-spinners/DotLoader";
+import { apiRoutes } from "./api/APIRoutes";
+import { getAPIUrl } from "./api/APIHelpers";
+import "react-phone-input-2/lib/plain.css";
+import MetaTags from "../components/MetaTags";
+import UpdateUserLeadPopup from "../components/updateUserLeadPopup";
+import QueryPopup from "../components/QueryPopup";
+import QueryResponsePopUp from "../components/QueryResponsePopUp";
+import GetQuoteResponsePopUp from "../components/GetQuoteResponsePopup";
 
-import { useGoogleReCaptcha } from 'react-google-recaptcha-v3';
+import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 
-const defaultColor = '#373536';
+const defaultColor = "#373536";
 function contact() {
   const [showProjectDetailsPopup, setShowProjectDetailsPopup] = useState(false);
   const [failure, setFailure] = useState(false);
-  const [responseMessage, setResponseMessage] = useState('');
-  const [firstName, setFirstName] = useState('');
-  const [leadId, setLeadId] = useState('');
-  const [lastName, setLastName] = useState('');
+  const [responseMessage, setResponseMessage] = useState("");
+  const [firstName, setFirstName] = useState("");
+  const [leadId, setLeadId] = useState("");
+  const [lastName, setLastName] = useState("");
   const [loading, setLoading] = useState(false);
-  const [companyEmail, setCompanyEmail] = useState('');
-  const [referredBy, setReferredBy] = useState('Linkedin');
+  const [companyEmail, setCompanyEmail] = useState("");
+  const [referredBy, setReferredBy] = useState("Linkedin");
 
-  const [projectDesc, setProjectDesc] = useState('');
+  const [projectDesc, setProjectDesc] = useState("");
   const [openQueryPopup, setOpenQueryPopup] = useState(false);
   const [submitQueryResponsePopUp, setSubmitQueryResponsePopUp] = useState({
     show: false,
-    title: '',
-    description: '',
+    title: "",
+    description: "",
     error: false,
   });
 
   const [getQuoteResponsePopup, setGetQuoteResponsePopup] = useState({
     show: false,
-    title: '',
-    description: '',
+    title: "",
+    description: "",
     error: false,
   });
 
@@ -58,16 +58,16 @@ function contact() {
     if (success)
       setSubmitQueryResponsePopUp({
         show: true,
-        title: 'Thank You !',
-        description: 'Thanks for your interest. We will contact you shortly.',
+        title: "Thank You !",
+        description: "Thanks for your interest. We will contact you shortly.",
         error: false,
       });
     else
       setSubmitQueryResponsePopUp({
         show: true,
-        title: 'Oops !',
+        title: "Oops !",
         description:
-          'We are unable to register your request at current time. Please send us an email at hello@hcode.tech',
+          "We are unable to register your request at current time. Please send us an email at hello@hcode.tech",
         error: true,
       });
   };
@@ -78,16 +78,16 @@ function contact() {
     if (success)
       setGetQuoteResponsePopup({
         show: true,
-        title: 'Thank You !',
-        description: 'Thanks for your interest. We will contact you shortly.',
+        title: "Thank You !",
+        description: "Thanks for your interest. We will contact you shortly.",
         error: false,
       });
     else
       setGetQuoteResponsePopup({
         show: true,
-        title: 'Oops !',
+        title: "Oops !",
         description:
-          'We are unable to register your request at current time. Please send us an email at hello@hcode.tech',
+          "We are unable to register your request at current time. Please send us an email at hello@hcode.tech",
         error: true,
       });
   };
@@ -108,14 +108,14 @@ function contact() {
     // Execute reCAPTCHA and get token
     try {
       if (!executeRecaptcha) {
-        console.log('Execute recaptcha not yet available');
+        console.log("Execute recaptcha not yet available");
         return;
       }
 
-      const token = await executeRecaptcha('contact_form_submission');
+      const token = await executeRecaptcha("contact_form_submission");
       if (!token) {
         setFailure(true);
-        setResponseMessage('ReCAPTCHA verification failed. Please try again.');
+        setResponseMessage("ReCAPTCHA verification failed. Please try again.");
         return;
       }
 
@@ -124,7 +124,7 @@ function contact() {
         last_name: lastName,
         email: companyEmail,
         referred_by: referredBy,
-        project_description: `Referred_by: ${referredBy}` + '\n' + projectDesc,
+        project_description: `Referred_by: ${referredBy}` + "\n" + projectDesc,
         type: 1,
         recaptcha: token,
       };
@@ -137,8 +137,8 @@ function contact() {
       const url = getAPIUrl(apiRoutes.CONTACT);
       const options = {
         body: formData,
-        method: 'POST',
-        'Content-Type': 'application/x-www-form-urlencoded',
+        method: "POST",
+        "Content-Type": "application/x-www-form-urlencoded",
       };
 
       setLoading(true);
@@ -156,18 +156,18 @@ function contact() {
       }
 
       // Reset form fields on success
-      setFirstName('');
-      setLastName('');
-      setCompanyEmail('');
-      setProjectDesc('');
+      setFirstName("");
+      setLastName("");
+      setCompanyEmail("");
+      setProjectDesc("");
       setLeadId(json?.id);
-      setHearAboutUs('');
+      setHearAboutUs("");
 
       setShowProjectDetailsPopup(true);
     } catch (e) {
-      console.error('ReCAPTCHA or form submission error:', e);
+      console.error("ReCAPTCHA or form submission error:", e);
       setFailure(true);
-      setResponseMessage('An error occurred. Please try again later.');
+      setResponseMessage("An error occurred. Please try again later.");
     } finally {
       setLoading(false);
       window.scrollTo(0, 0);
@@ -181,7 +181,7 @@ function contact() {
         <MetaTags page={metaData.contact} />
       </Head>
       {loading && (
-        <div className='fixed top-1/2 inset-x-2/4'>
+        <div className="fixed top-1/2 inset-x-2/4">
           <DotLoader color={defaultColor} size={60} />
         </div>
       )}
@@ -223,80 +223,80 @@ function contact() {
           querySubmitCallback={querySubmitCallback}
         />
       )}
-      <section className='md:new-container grid grid-cols-12 pt-14 '>
-        <div className='bg-primary md:max-w-[450px] max-h-screen text-white p-10 col-span-12 md:col-span-4 md:sticky top-14 overflow-hidden'>
-          <div className='z-50 sticky'>
-            <h1 className='text-4xl font-semibold'>
+      <section className="md:new-container grid grid-cols-12 pt-14 ">
+        <div className="bg-primary md:max-w-[450px] max-h-screen text-white p-10 col-span-12 md:col-span-4 md:sticky top-14 overflow-hidden">
+          <div className="z-50 sticky">
+            <h1 className="text-4xl font-semibold">
               Let’s scale your team together !
             </h1>
-            <p className='text-normal opacity-80 mt-3'>
+            <p className="text-normal opacity-80 mt-3">
               Fill out the form, including details about your next project (or
               business goals), and we'll be in touch shortly.
             </p>
-            <div className='flex mt-4 border-t pt-4'>
-              <LocationMarkerIcon className='w-6 h-6 mr-2' />
+            <div className="flex mt-4 border-t pt-4">
+              <LocationMarkerIcon className="w-6 h-6 mr-2" />
               120/7th Milestone, NH-1, Karnal, Haryana #132001
             </div>
-            <div className='flex mt-4 '>
-              <LocationMarkerIcon className='w-6 h-6 mr-1 pr-1 min-w-[24px] min-h-[24px]' />
+            <div className="flex mt-4 ">
+              <LocationMarkerIcon className="w-6 h-6 mr-1 pr-1 min-w-[24px] min-h-[24px]" />
               India Accelerator, 3rd Floor, The Iconic Corenthum, Sector 62,
               Noida
               <br />
               Uttar Pradesh ,201301
             </div>
-            <div className='flex mt-4 '>
-              <LocationMarkerIcon className='w-6 h-6 mr-1 pr-1' />
+            <div className="flex mt-4 ">
+              <LocationMarkerIcon className="w-6 h-6 mr-1 pr-1" />
               675 Hudson St Suite 3S, New York, <br />
               NY #10014
             </div>
 
-            <div className='flex mt-4 '>
-              <PhoneIcon className='w-6 h-6 mr-2' />
-              <a href='tel:+919350674450'>+91-9350674450</a>
+            <div className="flex mt-4 ">
+              <PhoneIcon className="w-6 h-6 mr-2" />
+              <a href="tel:+919350674450">+91-9350674450</a>
             </div>
-            <div className='flex mt-4 '>
-              <ChatAltIcon className='w-6 h-6 mr-2' />
-              <a href='mailto:hello@hcode.tech'>hello@hcode.tech</a>
+            <div className="flex mt-4 ">
+              <ChatAltIcon className="w-6 h-6 mr-2" />
+              <a href="mailto:hello@hcode.tech">hello@hcode.tech</a>
             </div>
           </div>
-          <div className=' left-0 -bottom-28 hidden md:block md:absolute '>
-            <img src={contact_us_circle} alt='' />
+          <div className=" left-0 -bottom-28 hidden md:block md:absolute ">
+            <img src={contact_us_circle} alt="" />
           </div>
         </div>
         {/* Form Start Here */}
-        <div className='px-4 py-8 md:p-10 col-span-12 md:col-span-8'>
-          <h1 className='text-4xl font-semibold pb-5'>
+        <div className="px-4 py-8 md:p-10 col-span-12 md:col-span-8">
+          <h1 className="text-4xl font-semibold pb-5">
             Please enter the details
           </h1>
 
           {/* Schedule a call with Gourav Tomar */}
-          <div className='flex gap-3 items-center border rounded-lg py-2 px-2.5 mb-10 bg-blue-50'>
-            <div className='bg-white p-3 rounded-full'>
-              <VideoCameraIcon className='h-6 w-6 text-primary' />
+          <div className="flex gap-3 items-center border rounded-lg py-2 px-2.5 mb-10 bg-blue-50">
+            <div className="bg-white p-3 rounded-full">
+              <VideoCameraIcon className="h-6 w-6 text-primary" />
             </div>
             <div>
-              <h5 className='text-base sm:text-lg font-semibold'>
+              <h5 className="text-base sm:text-lg font-semibold">
                 Schedule a brief call
               </h5>
             </div>
             <a
-              target='_blank'
+              target="_blank"
               // https://calendly.com/rakesh-sehgal/15min
-              href='https://calendly.com/gaurav-tomar/30min'
-              className='primary-outline ml-auto'
+              href="https://calendly.com/gaurav-tomar/30min"
+              className="primary-outline ml-auto"
             >
               Schedule
             </a>
           </div>
-          <div className='border-b mb-8'></div>
+          <div className="border-b mb-8"></div>
 
-          <form autoComplete='off' onSubmit={contactUser}>
-            <div className='grid grid-cols-12 gap-6'>
+          <form autoComplete="off" onSubmit={contactUser}>
+            <div className="grid grid-cols-12 gap-6">
               {/* Full Name */}
-              <div className='col-span-6'>
+              <div className="col-span-6">
                 <label
-                  htmlFor='first-name'
-                  className='block text-sm font-medium text-gray-700'
+                  htmlFor="first-name"
+                  className="block text-sm font-medium text-gray-700"
                 >
                   First Name<sup>*</sup>
                 </label>
@@ -304,17 +304,17 @@ function contact() {
                   required
                   value={firstName}
                   onChange={(e) => setFirstName(e.target.value)}
-                  type='text'
-                  name='first-name'
-                  id='first-name'
-                  className='input-form'
+                  type="text"
+                  name="first-name"
+                  id="first-name"
+                  className="input-form"
                 />
               </div>
               {/* Last Name */}
-              <div className='col-span-6'>
+              <div className="col-span-6">
                 <label
-                  htmlFor='last-name'
-                  className='block text-sm font-medium text-gray-700'
+                  htmlFor="last-name"
+                  className="block text-sm font-medium text-gray-700"
                 >
                   Last Name<sup>*</sup>
                 </label>
@@ -322,16 +322,16 @@ function contact() {
                   required
                   value={lastName}
                   onChange={(e) => setLastName(e.target.value)}
-                  type='text'
-                  name='last-name'
-                  id='last-name'
-                  className='input-form'
+                  type="text"
+                  name="last-name"
+                  id="last-name"
+                  className="input-form"
                 />
               </div>
-              <div className='col-span-12 mt-1'>
+              <div className="col-span-12 mt-1">
                 <label
-                  htmlFor='company-email'
-                  className='block text-sm font-medium text-gray-700'
+                  htmlFor="company-email"
+                  className="block text-sm font-medium text-gray-700"
                 >
                   Company Email<sup>*</sup>
                 </label>
@@ -339,17 +339,17 @@ function contact() {
                   required
                   value={companyEmail}
                   onChange={(e) => setCompanyEmail(e.target.value)}
-                  type='email'
-                  name='company-email'
-                  id='company-email'
-                  className='input-form'
+                  type="email"
+                  name="company-email"
+                  id="company-email"
+                  className="input-form"
                 />
                 <br />
 
-                <div className='col-span-12'>
+                <div className="col-span-12">
                   <label
-                    htmlFor='no-of-employees'
-                    className='block text-sm font-medium text-gray-700'
+                    htmlFor="no-of-employees"
+                    className="block text-sm font-medium text-gray-700"
                   >
                     How did you hear about us ?
                   </label>
@@ -359,22 +359,22 @@ function contact() {
                       setReferredBy(e.target.value);
                     }}
                     required
-                    id='no-of-employees'
-                    name='no-of-employees'
-                    className='input-form mt-1 block w-full py-2 px-3'
+                    id="no-of-employees"
+                    name="no-of-employees"
+                    className="input-form mt-1 block w-full py-2 px-3"
                   >
-                    <option value='Linkedin'>Linkedin</option>
-                    <option value='Instagram'>Instagram</option>
-                    <option value='Google'>Google</option>
-                    <option value='Refer'>Refer</option>
-                    <option value='Other'>Other</option>
+                    <option value="Linkedin">Linkedin</option>
+                    <option value="Instagram">Instagram</option>
+                    <option value="Google">Google</option>
+                    <option value="Refer">Refer</option>
+                    <option value="Other">Other</option>
                   </select>
                 </div>
 
-                <div className='col-span-12 mt-6'>
+                <div className="col-span-12 mt-6">
                   <label
-                    htmlFor='project-briefy'
-                    className='block text-sm font-medium text-gray-700'
+                    htmlFor="project-briefy"
+                    className="block text-sm font-medium text-gray-700"
                   >
                     Describe your project briefly<sup>*</sup>
                   </label>
@@ -382,19 +382,19 @@ function contact() {
                     required
                     value={projectDesc}
                     onChange={(e) => setProjectDesc(e.target.value)}
-                    id='project-briefy'
-                    name='project-briefy'
+                    id="project-briefy"
+                    name="project-briefy"
                     rows={3}
-                    className='input-form'
-                    defaultValue={''}
+                    className="input-form"
+                    defaultValue={""}
                   />
                 </div>
               </div>
 
-              <div className='col-span-12 lg:col-span-4'>
+              <div className="col-span-12 lg:col-span-4">
                 <button
                   disabled={loading}
-                  className='bg-primary hover:bg-blue-600 text-white rounded-md px-7 py-3 disabled:opacity-50'
+                  className="bg-primary hover:bg-blue-600 text-white rounded-md px-7 py-3 disabled:opacity-50"
                 >
                   Get Quote
                 </button>
@@ -404,11 +404,11 @@ function contact() {
 
           <button
             onClick={() => setOpenQueryPopup(true)}
-            className='mt-5 text-gray-700 italic'
+            className="mt-5 text-gray-700 italic"
           >
-            For any other queries,{' '}
-            <span className='border-b border-primary text-primary'>
-              {' '}
+            For any other queries,{" "}
+            <span className="border-b border-primary text-primary">
+              {" "}
               Click here.
             </span>
           </button>
