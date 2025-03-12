@@ -5,48 +5,48 @@ import {
   PhoneIcon,
   ChatAltIcon,
   VideoCameraIcon,
-} from "@heroicons/react/solid";
-import Head from "next/head";
+} from '@heroicons/react/solid';
+import Head from 'next/head';
 
-import { useState } from "react";
-import { contact_us_circle, metaData } from "../constants/constants";
-import DotLoader from "react-spinners/DotLoader";
-import { apiRoutes } from "./api/APIRoutes";
-import { getAPIUrl } from "./api/APIHelpers";
-import "react-phone-input-2/lib/plain.css";
-import MetaTags from "../components/MetaTags";
-import UpdateUserLeadPopup from "../components/updateUserLeadPopup";
-import QueryPopup from "../components/QueryPopup";
-import QueryResponsePopUp from "../components/QueryResponsePopUp";
-import GetQuoteResponsePopUp from "../components/GetQuoteResponsePopup";
+import { useState } from 'react';
+import { contact_us_circle, metaData } from '../constants/constants';
+import DotLoader from 'react-spinners/DotLoader';
+import { apiRoutes } from './api/APIRoutes';
+import { getAPIUrl } from './api/APIHelpers';
+import 'react-phone-input-2/lib/plain.css';
+import MetaTags from '../components/MetaTags';
+import UpdateUserLeadPopup from '../components/updateUserLeadPopup';
+import QueryPopup from '../components/QueryPopup';
+import QueryResponsePopUp from '../components/QueryResponsePopUp';
+import GetQuoteResponsePopUp from '../components/GetQuoteResponsePopup';
 
-import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
+import { useGoogleReCaptcha } from 'react-google-recaptcha-v3';
 
-const defaultColor = "#373536";
+const defaultColor = '#373536';
 function contact() {
   const [showProjectDetailsPopup, setShowProjectDetailsPopup] = useState(false);
   const [failure, setFailure] = useState(false);
-  const [responseMessage, setResponseMessage] = useState("");
-  const [firstName, setFirstName] = useState("");
-  const [leadId, setLeadId] = useState("");
-  const [lastName, setLastName] = useState("");
+  const [responseMessage, setResponseMessage] = useState('');
+  const [firstName, setFirstName] = useState('');
+  const [leadId, setLeadId] = useState('');
+  const [lastName, setLastName] = useState('');
   const [loading, setLoading] = useState(false);
-  const [companyEmail, setCompanyEmail] = useState("");
-  const [referredBy, setReferredBy] = useState("Linkedin");
+  const [companyEmail, setCompanyEmail] = useState('');
+  const [referredBy, setReferredBy] = useState('Linkedin');
 
-  const [projectDesc, setProjectDesc] = useState("");
+  const [projectDesc, setProjectDesc] = useState('');
   const [openQueryPopup, setOpenQueryPopup] = useState(false);
   const [submitQueryResponsePopUp, setSubmitQueryResponsePopUp] = useState({
     show: false,
-    title: "",
-    description: "",
+    title: '',
+    description: '',
     error: false,
   });
 
   const [getQuoteResponsePopup, setGetQuoteResponsePopup] = useState({
     show: false,
-    title: "",
-    description: "",
+    title: '',
+    description: '',
     error: false,
   });
 
@@ -58,16 +58,16 @@ function contact() {
     if (success)
       setSubmitQueryResponsePopUp({
         show: true,
-        title: "Thank You !",
-        description: "Thanks for your interest. We will contact you shortly.",
+        title: 'Thank You !',
+        description: 'Thanks for your interest. We will contact you shortly.',
         error: false,
       });
     else
       setSubmitQueryResponsePopUp({
         show: true,
-        title: "Oops !",
+        title: 'Oops !',
         description:
-          "We are unable to register your request at current time. Please send us an email at hello@hcode.tech",
+          'We are unable to register your request at current time. Please send us an email at hello@hcode.tech',
         error: true,
       });
   };
@@ -78,16 +78,16 @@ function contact() {
     if (success)
       setGetQuoteResponsePopup({
         show: true,
-        title: "Thank You !",
-        description: "Thanks for your interest. We will contact you shortly.",
+        title: 'Thank You !',
+        description: 'Thanks for your interest. We will contact you shortly.',
         error: false,
       });
     else
       setGetQuoteResponsePopup({
         show: true,
-        title: "Oops !",
+        title: 'Oops !',
         description:
-          "We are unable to register your request at current time. Please send us an email at hello@hcode.tech",
+          'We are unable to register your request at current time. Please send us an email at hello@hcode.tech',
         error: true,
       });
   };
@@ -108,14 +108,14 @@ function contact() {
     // Execute reCAPTCHA and get token
     try {
       if (!executeRecaptcha) {
-        console.log("Execute recaptcha not yet available");
+        console.log('Execute recaptcha not yet available');
         return;
       }
 
-      const token = await executeRecaptcha("contact_form_submission");
+      const token = await executeRecaptcha('contact_form_submission');
       if (!token) {
         setFailure(true);
-        setResponseMessage("ReCAPTCHA verification failed. Please try again.");
+        setResponseMessage('ReCAPTCHA verification failed. Please try again.');
         return;
       }
 
@@ -124,7 +124,7 @@ function contact() {
         last_name: lastName,
         email: companyEmail,
         referred_by: referredBy,
-        project_description: `Referred_by: ${referredBy}` + "\n" + projectDesc,
+        project_description: `Referred_by: ${referredBy}` + '\n' + projectDesc,
         type: 1,
         recaptcha: token,
       };
@@ -137,8 +137,8 @@ function contact() {
       const url = getAPIUrl(apiRoutes.CONTACT);
       const options = {
         body: formData,
-        method: "POST",
-        "Content-Type": "application/x-www-form-urlencoded",
+        method: 'POST',
+        'Content-Type': 'application/x-www-form-urlencoded',
       };
 
       setLoading(true);
@@ -156,18 +156,18 @@ function contact() {
       }
 
       // Reset form fields on success
-      setFirstName("");
-      setLastName("");
-      setCompanyEmail("");
-      setProjectDesc("");
+      setFirstName('');
+      setLastName('');
+      setCompanyEmail('');
+      setProjectDesc('');
       setLeadId(json?.id);
-      setHearAboutUs("");
+      setHearAboutUs('');
 
       setShowProjectDetailsPopup(true);
     } catch (e) {
-      console.error("ReCAPTCHA or form submission error:", e);
+      console.error('ReCAPTCHA or form submission error:', e);
       setFailure(true);
-      setResponseMessage("An error occurred. Please try again later.");
+      setResponseMessage('An error occurred. Please try again later.');
     } finally {
       setLoading(false);
       window.scrollTo(0, 0);
@@ -238,13 +238,6 @@ function contact() {
               120/7th Milestone, NH-1, Karnal, Haryana #132001
             </div>
             <div className="flex mt-4 ">
-              <LocationMarkerIcon className="w-6 h-6 mr-1 pr-1 min-w-[24px] min-h-[24px]" />
-              India Accelerator, 3rd Floor, The Iconic Corenthum, Sector 62,
-              Noida
-              <br />
-              Uttar Pradesh ,201301
-            </div>
-            <div className="flex mt-4 ">
               <LocationMarkerIcon className="w-6 h-6 mr-1 pr-1" />
               675 Hudson St Suite 3S, New York, <br />
               NY #10014
@@ -252,7 +245,7 @@ function contact() {
 
             <div className="flex mt-4 ">
               <PhoneIcon className="w-6 h-6 mr-2" />
-              <a href="tel:+919350674450">+91-9350674450</a>
+              <a href="tel:+919876543210">+91-9876543210</a>
             </div>
             <div className="flex mt-4 ">
               <ChatAltIcon className="w-6 h-6 mr-2" />
@@ -386,7 +379,7 @@ function contact() {
                     name="project-briefy"
                     rows={3}
                     className="input-form"
-                    defaultValue={""}
+                    defaultValue={''}
                   />
                 </div>
               </div>
@@ -406,9 +399,9 @@ function contact() {
             onClick={() => setOpenQueryPopup(true)}
             className="mt-5 text-gray-700 italic"
           >
-            For any other queries,{" "}
+            For any other queries,{' '}
             <span className="border-b border-primary text-primary">
-              {" "}
+              {' '}
               Click here.
             </span>
           </button>
