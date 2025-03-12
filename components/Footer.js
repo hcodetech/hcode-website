@@ -5,9 +5,9 @@ import {
   linkedin_icon,
   twitter_icon,
   startupindia,
-} from "../constants/constants";
-import NewsletterComponent from "./NewsletterComponent";
-import NewsletterMobileComponent from "./NewsletterMobileComponent";
+} from '../constants/constants';
+import NewsletterComponent from './NewsletterComponent';
+import NewsletterMobileComponent from './NewsletterMobileComponent';
 
 function Footer() {
   const year = new Date().getFullYear();
@@ -30,15 +30,22 @@ function Footer() {
                 <br />
                 Oriented App Development
               </p>
+
+              <a
+                href="mailto:hello@hcode.tech"
+                className="font-semibold underline my-3"
+              >
+                hello@hcode.tech
+              </a>
             </div>
-            <div className="flex mt-2">
+            <div className="flex w-20 md:hidden mt-5">
               <a
                 href="https://www.linkedin.com/company/hcodetech/"
                 target="_blank"
               >
                 <img
                   src={linkedin_icon}
-                  className="rounded-full w-10 h-10 p-2 hover:bg-blue-200  bg-gray-200 "
+                  className="rounded-full w-14  h-10 p-2 hover:bg-blue-200  bg-gray-200 "
                   alt="https://www.linkedin.com/company/hcodetech/"
                   width="15px"
                   height="15px"
@@ -56,30 +63,53 @@ function Footer() {
                 />
               </a>
             </div>
-            <div className="md:hidden w-full sm:w-[auto] md:w-[auto] xl:w-[auto] mt-8 md:mt-[-28px]">
+            <div className="md:hidden w-full sm:w-[auto] md:w-[auto] xl:w-[auto] mt-2 md:mt-[-28px]">
               <NewsletterMobileComponent />
             </div>
           </div>
-          <div className="px-4  my-4 md:mt-0 col-span-12 md:col-span-8">
+          <div className="px-4  my-4 md:mt-0 col-span-12 md:col-span-7">
             <ul className="grid grid-cols-12 gap-6">
-              <li className="col-span-12 md:col-span-4">
+              <li className="col-span-12 md:col-span-6">
                 <h5 className="font-bold  text-md mb-1">HQ Karnal</h5>
-                <p>120/7 Milestone, Main GT Road, Karnal HR #132001</p>
+                <p>120/7th Milestone, NH-1, Karnal, Haryana, #132001</p>
+                <a
+                  href="tel:+919876543210"
+                  className="font-semibold underline my-3"
+                >
+                  +91-9876543210
+                </a>
               </li>
-              <li className="col-span-12  md:col-span-5">
-                <h5 className="font-bold  text-md mb-1">Noida</h5>
-                <p>
-                  India Accelerator, 3rd Floor, <br />
-                  The Iconic Corenthum, Sector 62,
-                  <br />
-                  Noida Uttar Pradesh, 201301
-                </p>
-              </li>
-              <li className="col-span-12  md:col-span-3 ">
+
+              <li className="col-span-12  md:col-span-6 ">
                 <h5 className="font-bold  text-md mb-1">New York</h5>
                 <p>675 Hudson St Suite 3S, New York, NY #10014</p>
               </li>
             </ul>
+          </div>
+          <div className="md:flex w-20 hidden ">
+            <a
+              href="https://www.linkedin.com/company/hcodetech/"
+              target="_blank"
+            >
+              <img
+                src={linkedin_icon}
+                className="rounded-full w-14  h-10 p-2 hover:bg-blue-200  bg-gray-200 "
+                alt="https://www.linkedin.com/company/hcodetech/"
+                width="15px"
+                height="15px"
+                loading="lazy"
+              />
+            </a>
+            <a href="https://twitter.com/HcodeTech" target="_blank">
+              <img
+                src={twitter_icon}
+                className="rounded-full w-10 h-10 p-2 hover:bg-blue-200  ml-4 bg-gray-200 "
+                alt="https://twitter.com/HcodeTech"
+                width="15px"
+                height="15px"
+                loading="lazy"
+              />
+            </a>
           </div>
         </div>
         <div className="py-4 md:flex  md:justify-around border-t md:ml-[25%] xl:ml-[23%]">
@@ -189,8 +219,8 @@ function Footer() {
             Copyright @{year}
             <a href="/" className="text-primary font-semibold underline ml-1">
               Hcode.tech
-            </a>{" "}
-            | All rights reserved by Hcode Technologies
+            </a>{' '}
+            | All rights reserved by HCode Technologies Pvt. Ltd.
           </div>
 
           <img
