@@ -31,6 +31,8 @@ function contact() {
   const [leadId, setLeadId] = useState('');
   const [lastName, setLastName] = useState('');
   const [loading, setLoading] = useState(false);
+
+  const [hearAboutUs, setHearAboutUs] = useState('');
   const [companyEmail, setCompanyEmail] = useState('');
   const [referredBy, setReferredBy] = useState('Linkedin');
 

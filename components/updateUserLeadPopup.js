@@ -1,10 +1,12 @@
 /** @format */
 
-import React, { useState } from "react";
-import { getAPIUrl } from "../pages/api/APIHelpers";
-import Modal from "./Modal";
-import { apiRoutes } from "../pages/api/APIRoutes";
-import { CheckIcon } from "@heroicons/react/outline";
+import React, { useState } from 'react';
+import { getAPIUrl } from '../pages/api/APIHelpers';
+import Modal from './Modal';
+import { apiRoutes } from '../pages/api/APIRoutes';
+import { CheckIcon } from '@heroicons/react/outline';
+
+import { useGoogleReCaptcha } from 'react-google-recaptcha-v3';
 
 const UpdateUserLeadPopup = ({
   leadId,
@@ -17,21 +19,28 @@ const UpdateUserLeadPopup = ({
   setFailure,
   close,
   getQuoteCallback,
+  token,
 }) => {
   const [loading, setLoading] = useState(false);
   const [projectLeadRequired, setProjectLeadRequired] = useState();
-  const [numberOfDev, setNumberOfDevs] = useState("0");
-  const [expectedTimeCommitment, setExpectedTimeCommitment] = useState("0");
+  const [numberOfDev, setNumberOfDevs] = useState('0');
+  const [expectedTimeCommitment, setExpectedTimeCommitment] = useState('0');
   const [isDetailSubmitted, setIsDetailSubmitted] = useState(false);
+  const { executeRecaptcha } = useGoogleReCaptcha();
 
   const updateUserLead = async (event) => {
-    // setSuccess(false);
-    // setFailure(false);
     event.preventDefault();
+    const token = await executeRecaptcha('contact_form_2_submission');
+    if (!token) {
+      setFailure(true);
+      setResponseMessage('ReCAPTCHA verification failed. Please try again.');
+      return;
+    }
     const contactUsFormData = {
       is_proj_run_by_tech_person: projectLeadRequired,
       number_of_dev: numberOfDev,
       time_commitment: expectedTimeCommitment,
+      recaptcha: token,
     };
 
     const formData = new FormData();
@@ -40,15 +49,15 @@ const UpdateUserLeadPopup = ({
     });
 
     const url = getAPIUrl(apiRoutes.CONTACT + leadId);
-    // const url2 =
-    //   "https://script.google.com/a/hcode.tech/macros/s/AKfycbytrG1hsiIqFlkL4vMMNVRy0WXpEq2E26mU8JGuIA/exec";
+
     const options = {
       body: formData,
-      method: "PATCH",
-      "Content-Type": "application/x-www-form-urlencoded",
+      method: 'PATCH',
+      'Content-Type': 'application/x-www-form-urlencoded',
     };
     try {
       setLoading(true);
+
       const res = await fetch(url, options);
       const json = await res.json();
       if (!res.ok) {
@@ -62,17 +71,6 @@ const UpdateUserLeadPopup = ({
       } else {
         getQuoteCallback(true);
       }
-      // setFailure(false);
-      // setSuccess(true);
-      // setIsDetailSubmitted(true);
-      // const res2 = await fetch(url2, options);
-      // setProjectLeadRequired();
-      // setNumberOfDevs("0");
-      // Show the Success Message
-      // setLeadId("");
-      // getQuoteCallback(true);
-
-      // setShowProjectDetailsPopup(false);
     } catch (e) {
       // Show the failure Message
       // setFailure(true);
@@ -88,7 +86,7 @@ const UpdateUserLeadPopup = ({
     <>
       <Modal
         success
-        color={"bg-green-100"}
+        color={'bg-green-100'}
         titleIcon={<CheckIcon className="h-6 w-6 text-gray-600" />}
         iconColor="text-green-600"
         heading="Project details"
