@@ -116,9 +116,18 @@ export const work_with_us_benefits = {
 };
 export const TEAM = [
   {
+    image: '/assets/img/hcode_about_us_shashank.jpg',
+    name: 'Shashank Singla',
+    designation: 'CO-FOUNDER',
+    bioSlug: 'shashank-singla',
+    bio: 'Product builder, 2 AI exits <br/> Serial Entrepreneur  <br/> IIT Delhi ',
+    link: 'https://www.linkedin.com/in/shashanksingla/',
+  },
+  {
     image: '/assets/img/hcode_about_us_shweta.jpg',
     name: 'Shweta Singla',
     designation: 'CO-FOUNDER',
+    bioSlug: 'shweta-singla',
     bio: 'Led high-performing teams <br/> Goldman Sachs <br/> IIT Delhi ',
     link: 'https://www.linkedin.com/in/shweta-singla/',
   },
@@ -126,7 +135,7 @@ export const TEAM = [
     image: '/assets/img/hcode_about_us_rishabh.jpg',
     name: 'Rishabh Garg',
     designation: 'ENGINEERING MANAGER',
-
+    bioSlug: 'rishabh-garg',
     bio: '​​Enterprise app dev expert<br/> Siemens; Samsung <br/> NIT Durgapur ',
 
     link: 'https://www.linkedin.com/in/rishabh-garg-77023ab6/',
@@ -135,17 +144,9 @@ export const TEAM = [
     image: '/assets/img/hcode_about_us_mudit.jpg',
     name: 'Mudit Sharma',
     designation: 'ENGINEERING MANAGER',
-
+    bioSlug: 'mudit-sharma',
     bio: 'Ran multiple SAAS teams <br/> Brevo <br/> Kurukshetra University',
     link: 'https://www.linkedin.com/in/sharma-mudit/',
-  },
-  {
-    image: '/assets/img/hcode_about_us_shashank.jpg',
-    name: 'Shashank Singla',
-    designation: 'CO-FOUNDER',
-
-    bio: 'Product builder, 2 AI exits <br/> Serial Entrepreneur  <br/> IIT Delhi ',
-    link: 'https://www.linkedin.com/in/shashanksingla/',
   },
 ];
 

@@ -99,7 +99,7 @@ function About() {
           Leadership Team
         </h2>
         <div className='grid grid-cols-1 lg:grid-cols-4 gap-5  mt-7'>
-          {TEAM.map(({ name, image, bio, link, title }, index) => (
+          {TEAM.map(({ name, image, bio, link, title, bioSlug }, index) => (
             <Team
               key={name}
               name={name}
@@ -107,6 +107,7 @@ function About() {
               bio={bio}
               link={link}
               title={title}
+              bioLink={bioSlug ? `/about/${bioSlug}` : null}
             />
           ))}
         </div>

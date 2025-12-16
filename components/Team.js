@@ -1,5 +1,7 @@
 import { linkedin_icon } from "../constants/constants";
-function Team({ name, image, image_webp, bio, link, designation }) {
+import Link from "next/link";
+
+function Team({ name, image, image_webp, bio, link, designation, bioLink }) {
   return (
     <div className="mb-5 w-full  px-4 sm:px-0 mx-auto">
       <div className="relative text-center mx-auto  mb-2">
@@ -34,7 +36,15 @@ function Team({ name, image, image_webp, bio, link, designation }) {
         </div>
       </div>
       <div className="w-full px-2 text-center mx-auto">
-        <h4 className="text-lg md:text-xl font-semibold  ">{name}</h4>
+        {bioLink ? (
+          <Link href={bioLink}>
+            <a className="text-lg md:text-xl font-semibold hover:text-primary transition-colors cursor-pointer">
+              <h4>{name}</h4>
+            </a>
+          </Link>
+        ) : (
+          <h4 className="text-lg md:text-xl font-semibold  ">{name}</h4>
+        )}
         <h6 className="text-md font-medium text-gray-400">{designation}</h6>
         <p
           dangerouslySetInnerHTML={{ __html: bio }}
