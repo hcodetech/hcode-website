@@ -1,0 +1,58 @@
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "Organization",
+            "@id": "https://www.hcode.tech/#organization",
+            "name": "Hcode Technologies",
+            "url": "https://www.hcode.tech",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://www.hcode.tech/assets/img/hcode-logo.png"
+            },
+            "description": "We provide on-time delivery along with transparent communication. World-class software development teams for startups and enterprises.",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Karnal",
+                "addressRegion": "Haryana",
+                "addressCountry": "IN"
+            },
+            "sameAs": [
+                "https://www.linkedin.com/company/hcode-technologies"
+            ],
+            "founder": [
+                {
+                    "@type": "Person",
+                    "@id": "https://www.hcode.tech/about/shashank-singla#person",
+                    "name": "Shashank Singla",
+                    "jobTitle": "Co-Founder",
+                    "url": "https://www.hcode.tech/about/shashank-singla",
+                    "sameAs": [
+                        "https://www.linkedin.com/in/shashanksingla/",
+                        "https://x.com/shashanksingla",
+                        "http://medium.com/@shashank.singla"
+                    ]
+                },
+                {
+                    "@type": "Person",
+                    "@id": "https://www.hcode.tech/about/shweta-singla#person",
+                    "name": "Shweta Singla",
+                    "jobTitle": "Co-Founder",
+                    "url": "https://www.hcode.tech/about/shweta-singla",
+                    "sameAs": [
+                        "https://www.linkedin.com/in/shweta-singla/"
+                    ]
+                }
+            ]
+        },
+        {
+            "@type": "WebSite",
+            "@id": "https://www.hcode.tech/#website",
+            "url": "https://www.hcode.tech",
+            "name": "Hcode Technologies",
+            "publisher": {
+                "@id": "https://www.hcode.tech/#organization"
+            }
+        }
+    ]
+}

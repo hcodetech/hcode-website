@@ -8,6 +8,29 @@ import Team from '../../components/Team';
 import { linkedin_icon, TEAM } from '../../constants/constants';
 
 function RishabhGarg() {
+    const personSchema = {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Rishabh Garg",
+        "jobTitle": "Engineering Manager",
+        "worksFor": {
+            "@type": "Organization",
+            "name": "Hcode Technologies Pvt Ltd",
+            "url": "https://hcode.tech"
+        },
+        "url": "https://hcode.tech/about/rishabh-garg",
+        "email": "rishabh.garg@hcode.tech",
+        "alumniOf": {
+            "@type": "EducationalOrganization",
+            "name": "National Institute of Technology Durgapur"
+        },
+        "sameAs": [
+            "https://www.linkedin.com/in/rishabh-garg-77023ab6/"
+        ],
+        "description": "Engineering Manager at Hcode Technologies with 14+ years of experience. Expert in Spring Framework, Java, Python, Node.js, and React.js. Previously at Siemens, Samsung, and Infosys.",
+        "knowsAbout": ["Spring Framework", "Java", "Python", "Node.js", "React.js", "Enterprise Applications", "Software Architecture"]
+    };
+
     return (
         <>
             <Head>
@@ -15,6 +38,10 @@ function RishabhGarg() {
                 <meta
                     name="description"
                     content="Learn more about Rishabh Garg, Engineering Manager at Hcode Technologies. Enterprise app development expert with experience at Siemens and Samsung."
+                />
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
                 />
             </Head>
 

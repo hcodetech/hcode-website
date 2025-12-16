@@ -8,6 +8,30 @@ import Team from '../../components/Team';
 import { linkedin_icon, TEAM } from '../../constants/constants';
 
 function ShwetaSingla() {
+    const personSchema = {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Shweta Singla",
+        "jobTitle": "Co-Founder",
+        "worksFor": {
+            "@type": "Organization",
+            "name": "Hcode Technologies Pvt Ltd",
+            "url": "https://hcode.tech"
+        },
+        "url": "https://hcode.tech/about/shweta-singla",
+        "email": "shweta@hcode.tech",
+        "alumniOf": {
+            "@type": "EducationalOrganization",
+            "name": "Indian Institute of Technology Delhi",
+            "sameAs": "https://www.iitd.ac.in/"
+        },
+        "sameAs": [
+            "https://www.linkedin.com/in/shweta-singla/"
+        ],
+        "description": "Co-Founder of Hcode Technologies. Ex-Vice President at Goldman Sachs with 9+ years as Quantitative Strategist. Expert in Machine Learning, Big Data, and Optimizations.",
+        "knowsAbout": ["Machine Learning", "Big Data", "Quantitative Analysis", "Optimization", "NP-hard Problems", "Software Development"]
+    };
+
     return (
         <>
             <Head>
@@ -15,6 +39,10 @@ function ShwetaSingla() {
                 <meta
                     name="description"
                     content="Learn more about Shweta Singla, Co-Founder of Hcode Technologies. Led high-performing teams at Goldman Sachs, IIT Delhi graduate."
+                />
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
                 />
             </Head>
 

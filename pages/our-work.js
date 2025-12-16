@@ -1,19 +1,20 @@
 /** @format */
 
 import Head from "next/head";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import CardPortfolio from "../components/CardPortfolio";
 import MetaTags from "../components/MetaTags";
 import { metaData, portfolioIndustry } from "../constants/constants";
 import { getAPIUrl } from "./api/APIHelpers";
 import { apiRoutes } from "./api/APIRoutes";
-import useGetFetch from "./hooks/useGetFetch";
 import { useRouter } from "next/router";
 import Portfolio_skelton from "../components/Portfolio-skelton";
 
-const our_work = (props) => {
+const our_work = ({ initialData }) => {
   const [selectedCategory, setSelectedCategory] = useState([]);
-  const [portfolioData, isLoading] = useGetFetch(getAPIUrl(apiRoutes.OUR_WORK));
+  // Use initial data from SSG, fallback to empty array if undefined
+  const portfolioData = initialData || [];
+  const isLoading = !initialData;
   const router = useRouter();
 
   // useEffect(() => {
@@ -109,6 +110,31 @@ const our_work = (props) => {
   );
 };
 
+// SSG with ISR - Pre-render at build time, revalidate every hour
+export async function getStaticProps() {
+  try {
+    const res = await fetch(getAPIUrl(apiRoutes.OUR_WORK));
+    const data = await res.json();
+
+    return {
+      props: {
+        initialData: data || [],
+      },
+      // Revalidate every 1 hour (3600 seconds)
+      // This means the page will be regenerated in the background when accessed after 1 hour
+      revalidate: 3600,
+    };
+  } catch (error) {
+    console.error('Error fetching our work:', error);
+    return {
+      props: {
+        initialData: [],
+      },
+      revalidate: 3600,
+    };
+  }
+}
+
 // export async function getServerSideProps(router) {
 //   return {
 //     props: {query: router?.query}, // will be passed to the page component as props
@@ -116,3 +142,4 @@ const our_work = (props) => {
 // }
 
 export default our_work;
+

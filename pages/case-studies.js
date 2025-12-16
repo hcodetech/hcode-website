@@ -1,18 +1,19 @@
 /** @format */
 
 import Head from "next/head";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import CardPortfolio from "../components/CardPortfolio";
 import MetaTags from "../components/MetaTags";
-import { metaData, portfolioIndustry } from "../constants/constants";
+import { metaData } from "../constants/constants";
 import { getAPIUrl } from "./api/APIHelpers";
 import { apiRoutes } from "./api/APIRoutes";
-import useGetFetch from "./hooks/useGetFetch";
 import Portfolio_skelton from "../components/Portfolio-skelton";
 
-const CaseStudies = (props) => {
+const CaseStudies = ({ initialData }) => {
   const [selectedCategory, setSelectedCategory] = useState([]);
-  const [portfolioData, isLoading] = useGetFetch(getAPIUrl(apiRoutes.OUR_WORK));
+  // Use initial data from SSG, fallback to empty array if undefined
+  const portfolioData = initialData || [];
+  const isLoading = !initialData;
 
   return (
     <>
@@ -23,12 +24,12 @@ const CaseStudies = (props) => {
       {/* Hero Section */}
       <section className="new-container mx-auto text-center lg:w-1/2 ">
         <h1 className="pt-40 text-4xl font-semibold pb-3 xl:px-20">
-          HCode's Tech Solutions:       
-           <br />
-            Real-Life Success in Action
+          HCode's Tech Solutions:
+          <br />
+          Real-Life Success in Action
         </h1>
         <h6 className="text-sm sm:text-base xl:px-20 2xl:px-48">
- 
+
           Discover how our services drive business success by achieving goals
           and overcoming challenges
         </h6>
@@ -67,20 +68,20 @@ const CaseStudies = (props) => {
 
       {/* Card Section */}
       {isLoading ? (
- <Portfolio_skelton />
+        <Portfolio_skelton />
       ) : (
         <div>
           <section className="new-container mx-auto mt-10 ">
             {portfolioData.map((data) => (
-              <div>
+              <div key={data.id}>
                 {data.media.filter((media) => media.type === "case_study")
                   .length > 0 && (
-                  <CardPortfolio
-                    key={data.id}
-                    cardData={data}
-                    selectedCategory={selectedCategory}
-                  />
-                )}
+                    <CardPortfolio
+                      key={data.id}
+                      cardData={data}
+                      selectedCategory={selectedCategory}
+                    />
+                  )}
               </div>
             ))}
           </section>
@@ -90,4 +91,30 @@ const CaseStudies = (props) => {
   );
 };
 
+// SSG with ISR - Pre-render at build time, revalidate every hour
+export async function getStaticProps() {
+  try {
+    const res = await fetch(getAPIUrl(apiRoutes.OUR_WORK));
+    const data = await res.json();
+
+    return {
+      props: {
+        initialData: data || [],
+      },
+      // Revalidate every 1 hour (3600 seconds)
+      // This means the page will be regenerated in the background when accessed after 1 hour
+      revalidate: 3600,
+    };
+  } catch (error) {
+    console.error('Error fetching case studies:', error);
+    return {
+      props: {
+        initialData: [],
+      },
+      revalidate: 3600,
+    };
+  }
+}
+
 export default CaseStudies;
+

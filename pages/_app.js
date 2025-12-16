@@ -7,6 +7,7 @@ import "../styles/global.scss";
 import { useEffect, useState } from "react";
 import NewsletterPopUp from "../components/NewsletterPopUp";
 import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
+import Head from "next/head";
 
 const googleRecaptchaSiteKey = "6LftNJEqAAAAAOY_6Lt0mG1g1UimgCqGIPP4pA0j"
 
@@ -28,16 +29,58 @@ function MyApp({ Component, pageProps }) {
     sessionStorage.setItem("isSubscriptionPopupVisible", showNewsLetterPopup);
   }, []);
 
+  // Organization Schema for all pages
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Hcode Technologies Pvt Ltd",
+    "alternateName": "Hcode Technologies",
+    "url": "https://hcode.tech",
+    "email": "hello@hcode.tech",
+    "logo": "https://hcode.tech/assets/img/hcode-logo.png",
+    "description": "World-class software development teams for startups and enterprises. Specializing in AI integration, blockchain, MVP development, and team augmentation.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Karnal",
+      "addressRegion": "Haryana",
+      "addressCountry": "IN"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/company/hcodetech/",
+      "https://x.com/shashanksingla"
+    ],
+    "founder": [
+      {
+        "@type": "Person",
+        "name": "Shashank Singla",
+        "jobTitle": "Co-Founder",
+        "url": "https://hcode.tech/about/shashank-singla"
+      },
+      {
+        "@type": "Person",
+        "name": "Shweta Singla",
+        "jobTitle": "Co-Founder",
+        "url": "https://hcode.tech/about/shweta-singla"
+      }
+    ]
+  };
+
   return (
     <GoogleReCaptchaProvider
       reCaptchaKey={googleRecaptchaSiteKey}
-      // scriptProps={{
-      //   async: false,
-      //   defer: false,
-      //   appendTo: "head",
-      //   nonce: undefined,
-      // }}
+    // scriptProps={{
+    //   async: false,
+    //   defer: false,
+    //   appendTo: "head",
+    //   nonce: undefined,
+    // }}
     >
+      <Head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+      </Head>
       <div>
         {showNewsLetterPopup && (
           <NewsletterPopUp

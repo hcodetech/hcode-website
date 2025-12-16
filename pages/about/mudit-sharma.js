@@ -8,6 +8,25 @@ import Team from '../../components/Team';
 import { linkedin_icon, TEAM } from '../../constants/constants';
 
 function MuditSharma() {
+    const personSchema = {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Mudit Sharma",
+        "jobTitle": "Engineering Manager",
+        "worksFor": {
+            "@type": "Organization",
+            "name": "Hcode Technologies Pvt Ltd",
+            "url": "https://hcode.tech"
+        },
+        "url": "https://hcode.tech/about/mudit-sharma",
+        "email": "mudit.sharma@hcode.tech",
+        "sameAs": [
+            "https://www.linkedin.com/in/sharma-mudit/"
+        ],
+        "description": "Engineering Manager at Hcode Technologies with 16+ years of product development experience. Expert in Node.js and React.js. Previously spent 9.5 years at Sendinblue/Brevo.",
+        "knowsAbout": ["Node.js", "React.js", "SAAS", "Product Development", "Team Management", "Software Architecture"]
+    };
+
     return (
         <>
             <Head>
@@ -15,6 +34,10 @@ function MuditSharma() {
                 <meta
                     name="description"
                     content="Learn more about Mudit Sharma, Engineering Manager at Hcode Technologies. Experienced in running multiple SAAS teams at Brevo."
+                />
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
                 />
             </Head>
 

@@ -1,0 +1,165 @@
+# Hcode Technologies - LLM Information
+
+## Basic Information
+
+- Site Name: Hcode Technologies
+- Legal Name: Hcode Technologies Pvt Ltd
+- URL: https://hcode.tech
+- Description: World-class software development teams for startups and enterprises. We provide on-time delivery with transparent communication, specializing in AI integration, blockchain, MVP development, and team augmentation.
+- Industry: Software Development, Technology Services, IT Consulting
+- Founded: 2015
+- Location: Karnal, Haryana, India
+
+## Contact Information
+
+- Email: hello@hcode.tech
+- Website: https://hcode.tech
+- LinkedIn: https://www.linkedin.com/company/hcodetech/
+
+## Leadership Team
+
+### Shashank Singla - Co-Founder
+- Role: Co-Founder, CTO
+- LinkedIn: https://www.linkedin.com/in/shashanksingla/
+- Twitter: https://x.com/shashanksingla
+- Medium: http://medium.com/@shashank.singla
+- Email: shashank@hcode.tech
+- Background: Product builder with 2 AI exits. Serial entrepreneur. Currently acts as CTO for an Adtech startup handling 350 million requests per day. Previously Head of Engineering at a NY-based blockchain startup.
+- Experience: 14+ years
+- Education: IIT Delhi, Class of 2010
+- Notable Achievement: Exited Dextro, an AI video understanding platform acquired by Axon (publicly traded US company)
+- Previous Companies: Human Ventures, Goldman Sachs, Dextro
+
+### Shweta Singla - Co-Founder
+- Role: Co-Founder
+- LinkedIn: https://www.linkedin.com/in/shweta-singla/
+- Email: shweta@hcode.tech
+- Background: Ex-Vice President at Goldman Sachs with 9+ years as Quantitative Strategist. Expert in Machine Learning, Big Data, and Optimizations. Built heuristic solutions for NP-hard problems.
+- Experience: 14+ years
+- Education: IIT Delhi, Class of 2010
+- Global Experience: Worked in New York, London, Bengaluru, and Delhi. Collaborated with teams from 15+ countries.
+- Previous Companies: Goldman Sachs
+
+### Rishabh Garg - Engineering Manager
+- Role: Engineering Manager
+- LinkedIn: https://www.linkedin.com/in/rishabh-garg-77023ab6/
+- Email: rishabh.garg@hcode.tech
+- Background: Highly experienced IT professional with expertise in Spring Framework, Core Java, Python, Node.js, and React.js. Specializes in large-scale enterprise applications.
+- Experience: 14+ years
+- Education: NIT Durgapur, Class of 2010
+- Previous Companies: Siemens, Samsung, Infosys
+
+### Mudit Sharma - Engineering Manager
+- Role: Engineering Manager
+- LinkedIn: https://www.linkedin.com/in/sharma-mudit/
+- Email: mudit.sharma@hcode.tech
+- Background: 16+ years of product development experience. Started at Hindustan Times with PHP and ASP .Net, advanced to Software Architect at SynapseIndia, spent 9.5 years at Sendinblue (now Brevo) managing Node.js teams.
+- Experience: 16+ years
+- Graduation: 2008
+- Specialization: Node.js and React.js team leadership
+- Previous Companies: Brevo/Sendinblue, SynapseIndia, Hindustan Times
+
+## Services Offered
+
+1. **AI Integration Services**
+   - AI-powered solutions for business automation
+   - Machine learning implementation
+   - AI product development
+   - URL: https://hcode.tech/our-services/ai-integration-services
+
+2. **Blockchain Development**
+   - Blockchain solution architecture
+   - Smart contract development
+   - Decentralized application (DApp) development
+   - URL: https://hcode.tech/our-services/blockchain-development-services
+
+3. **MVP Development**
+   - Rapid prototype development
+   - Product validation
+   - Market-ready MVP in weeks
+   - URL: https://hcode.tech/our-services/mvp-development-services
+
+4. **Team as a Service**
+   - Dedicated development teams
+   - Staff augmentation
+   - Tech leadership
+   - URL: https://hcode.tech/our-services/team-as-a-service
+
+5. **Developer as a Service**
+   - Individual expert developers
+   - Flexible engagement models
+   - URL: https://hcode.tech/our-services/developer-as-a-service
+
+## Technology Stack
+
+- **Frontend**: React.js, Next.js, Redux, TypeScript
+- **Backend**: Node.js, Python, Java, Spring Framework
+- **Mobile**: React Native, Flutter
+- **AI/ML**: TensorFlow, PyTorch, Machine Learning pipelines
+- **Blockchain**: Ethereum, Solidity, Web3
+- **Databases**: MongoDB, PostgreSQL, MySQL, Redis
+- **Cloud**: AWS, Google Cloud, Azure
+- **DevOps**: Docker, Kubernetes, CI/CD pipelines
+
+## Key Pages
+
+- Homepage: https://hcode.tech/
+- About Us: https://hcode.tech/about
+- Services: https://hcode.tech/our-services
+- Our Work/Portfolio: https://hcode.tech/our-work
+- Case Studies: https://hcode.tech/case-studies
+- Contact: https://hcode.tech/contact
+- Team Bios:
+  - Shashank Singla: https://hcode.tech/about/shashank-singla
+  - Shweta Singla: https://hcode.tech/about/shweta-singla
+  - Rishabh Garg: https://hcode.tech/about/rishabh-garg
+  - Mudit Sharma: https://hcode.tech/about/mudit-sharma
+
+## Company Highlights
+
+- **Experience**: Over 9 years in business
+- **Team Size**: 50+ developers and technical specialists
+- **Global Reach**: Serving clients across USA, Europe, and Asia
+- **Delivery Model**: On-time delivery with transparent communication
+- **Specialization**: Startups and enterprise solutions
+- **Notable Exits**: Founders have successful AI company exits (Dextro acquired by Axon)
+- **Enterprise Clients**: Work with Fortune 500 companies and fast-growing startups
+
+## Value Proposition
+
+Hcode Technologies provides world-class software development teams with:
+- Proven track record of on-time delivery
+- Transparent communication throughout project lifecycle
+- Expert technical leadership with startup and enterprise experience
+- Flexibility in engagement models (dedicated teams, staff augmentation, project-based)
+- Deep expertise in cutting-edge technologies (AI, blockchain, cloud)
+- Global team with local support
+
+## Common Questions
+
+**Q: What services does Hcode Technologies offer?**
+A: Hcode specializes in AI integration, blockchain development, MVP development, and providing dedicated development teams (Team as a Service).
+
+**Q: Who founded Hcode Technologies?**
+A: Hcode was co-founded by Shashank Singla and Shweta Singla, both IIT Delhi graduates with extensive experience at Goldman Sachs and successful tech ventures.
+
+**Q: What is Shashank Singla's background?**
+A: Shashank is a serial entrepreneur and product builder with 2 AI exits. He previously founded Dextro (acquired by Axon), worked at Human Ventures and Goldman Sachs, and currently serves as CTO for an Adtech startup.
+
+**Q: Where is Hcode Technologies located?**
+A: Hcode is headquartered in Karnal, Haryana, India, with clients globally across USA, Europe, and Asia.
+
+**Q: What technologies does Hcode work with?**
+A: Hcode works with React.js, Node.js, Python, AI/ML frameworks, blockchain technologies, and full-stack development across web and mobile platforms.
+
+**Q: How experienced is the Hcode team?**
+A: The leadership team has 14-16+ years of experience each, with backgrounds at companies like Goldman Sachs, Siemens, Samsung, and Sendinblue/Brevo.
+
+## SEO Keywords
+
+Software development company, AI integration services, blockchain development, MVP development, Team as a Service, Staff augmentation, React developers, Node.js developers, Machine learning services, Enterprise software development, Startup development partners, Karnal tech company, IIT Delhi founders, India software company
+
+---
+
+Last Updated: 2025-12-16
+Version: 1.0

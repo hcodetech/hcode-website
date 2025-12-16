@@ -8,6 +8,32 @@ import Team from '../../components/Team';
 import { linkedin_icon, TEAM } from '../../constants/constants';
 
 function ShashankSingla() {
+    const personSchema = {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Shashank Singla",
+        "jobTitle": "Co-Founder",
+        "worksFor": {
+            "@type": "Organization",
+            "name": "Hcode Technologies Pvt Ltd",
+            "url": "https://hcode.tech"
+        },
+        "url": "https://hcode.tech/about/shashank-singla",
+        "email": "shashank@hcode.tech",
+        "alumniOf": {
+            "@type": "EducationalOrganization",
+            "name": "Indian Institute of Technology Delhi",
+            "sameAs": "https://www.iitd.ac.in/"
+        },
+        "sameAs": [
+            "https://www.linkedin.com/in/shashanksingla/",
+            "https://x.com/shashanksingla",
+            "http://medium.com/@shashank.singla"
+        ],
+        "description": "Co-Founder of Hcode Technologies. Product builder with 2 AI exits. Serial entrepreneur with 14+ years of experience. Previously at Goldman Sachs and Human Ventures.",
+        "knowsAbout": ["AI", "Machine Learning", "Software Development", "Entrepreneurship", "Blockchain", "Product Development"]
+    };
+
     return (
         <>
             <Head>
@@ -15,6 +41,10 @@ function ShashankSingla() {
                 <meta
                     name="description"
                     content="Learn more about Shashank Singla, Co-Founder of Hcode Technologies. Product builder with 2 AI exits and serial entrepreneur."
+                />
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
                 />
             </Head>
 
