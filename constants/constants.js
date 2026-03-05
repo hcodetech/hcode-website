@@ -116,7 +116,7 @@ export const work_with_us_benefits = {
 };
 export const TEAM = [
   {
-    image: '/assets/img/hcode_about_us_shashank.jpg',
+    image: '/assets/img/hcode-shashank-singla.jpg',
     name: 'Shashank Singla',
     designation: 'CO-FOUNDER',
     bioSlug: 'shashank-singla',
@@ -124,7 +124,7 @@ export const TEAM = [
     link: 'https://www.linkedin.com/in/shashanksingla/',
   },
   {
-    image: '/assets/img/hcode_about_us_shweta.jpg',
+    image: '/assets/img/hcode-shweta-singla.jpg',
     name: 'Shweta Singla',
     designation: 'CO-FOUNDER',
     bioSlug: 'shweta-singla',
@@ -132,7 +132,7 @@ export const TEAM = [
     link: 'https://www.linkedin.com/in/shweta-singla/',
   },
   {
-    image: '/assets/img/hcode_about_us_rishabh.jpg',
+    image: '/assets/img/hcode-rishabh-garg.jpg',
     name: 'Rishabh Garg',
     designation: 'ENGINEERING MANAGER',
     bioSlug: 'rishabh-garg',
@@ -141,7 +141,7 @@ export const TEAM = [
     link: 'https://www.linkedin.com/in/rishabh-garg-77023ab6/',
   },
   {
-    image: '/assets/img/hcode_about_us_mudit.jpg',
+    image: '/assets/img/hcode-mudit-sharma.jpg',
     name: 'Mudit Sharma',
     designation: 'ENGINEERING MANAGER',
     bioSlug: 'mudit-sharma',
@@ -152,14 +152,14 @@ export const TEAM = [
 
 export const OUR_MENTORS = [
   {
-    image: '/assets/img/hcode_about_us_arpit.jpg',
+    image: '/assets/img/hcode-arpit-maheshwari.jpg',
     name: 'Arpit Maheshwari',
     title: 'Leadership Coach',
     bio: 'PM with exp. of building products with multiple startups. Ex Goldman Sachs, HackerRank, IIT Bombay',
     link: 'https://www.linkedin.com/in/maheshwariarpit/',
   },
   {
-    image: '/assets/img/hcode_about_us_sakshi.jpg',
+    image: '/assets/img/hcode-sakshi-bhatia.jpg',
     name: 'Sakshi Bhatia',
     title: 'Wellness Coach',
     bio: 'Head of Data Science (Kristal.AI), Yoga Teacher, Ex-American Express, IIT Delhi',
@@ -1473,7 +1473,7 @@ export const technologies_page = {
 export const testimonial = [
   {
     id: '1',
-    profile_image: '../assets/img/client_image/tyler.png',
+    profile_image: '../assets/img/client_image/tyler-stambaugh.png',
     person_name: 'Tyler Stambaugh',
     company_name: 'COO, Magnetiq',
     preview_on: ['blockchain'],
@@ -1481,7 +1481,7 @@ export const testimonial = [
   },
   {
     id: '2',
-    profile_image: '../assets/img/client_image/Gregory_Correll.png',
+    profile_image: '../assets/img/client_image/gregory-correll.png',
     person_name: 'Gregory Correll',
     company_name: 'Technical Project Manager, Parmount Capital Group',
     preview_on: ['AI'],
@@ -1490,7 +1490,7 @@ export const testimonial = [
   },
   {
     id: '3',
-    profile_image: '../assets/img/client_image/alex_chumbley.jpg',
+    profile_image: '../assets/img/client_image/alex-chumbley.jpg',
     person_name: 'Alex Chumbley',
     company_name: ' Co-founder at Fable (YC W21)',
     preview_on: ['mvp', 'daas'],
@@ -1499,7 +1499,7 @@ export const testimonial = [
   },
   {
     id: '4',
-    profile_image: '../assets/img/client_image/naam_lee.png',
+    profile_image: '../assets/img/client_image/nam-le.png',
     person_name: 'Nam Le',
     company_name: 'CEO, Pollinate Inc.',
     preview_on: ['mvp', 'blockchain', 'AI'],
@@ -1508,7 +1508,7 @@ export const testimonial = [
   },
   {
     id: '5',
-    profile_image: '../assets/img/client_image/tatina.jpg',
+    profile_image: '../assets/img/client_image/tatiana-tian.jpg',
     person_name: 'Tatiana Tian',
     company_name: ' Co-founder & CEO at RE(SOURCE) ',
     preview_on: ['mvp'],
@@ -1517,7 +1517,7 @@ export const testimonial = [
   },
   {
     id: '6',
-    profile_image: '../assets/img/client_image/Suyash_Kothari.png',
+    profile_image: '../assets/img/client_image/suyash-kothari.png',
     person_name: 'Suyash Kothari',
     company_name: 'Co-Founder, Ohana',
     preview_on: ['mvp', 'taas'],
@@ -1527,7 +1527,7 @@ export const testimonial = [
 
   {
     id: '7',
-    profile_image: '../assets/img/client_image/mohit_metha.png',
+    profile_image: '../assets/img/client_image/mohit-mehta.png',
     person_name: 'Mohit Mehta',
     company_name: 'Co-Founder, Indira New York',
     preview_on: [],

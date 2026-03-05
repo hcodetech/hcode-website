@@ -159,7 +159,15 @@ A: The leadership team has 14-16+ years of experience each, with backgrounds at 
 
 Software development company, AI integration services, blockchain development, MVP development, Team as a Service, Staff augmentation, React developers, Node.js developers, Machine learning services, Enterprise software development, Startup development partners, Karnal tech company, IIT Delhi founders, India software company
 
+## Machine-Readable Files
+
+- Structured Identity (Schema.org JSON): https://www.hcode.tech/.well-known/identity.json
+- WebFinger Discovery: https://www.hcode.tech/.well-known/webfinger
+- Security Contact: https://www.hcode.tech/.well-known/security.txt
+- Structured Data (JSON-LD): https://www.hcode.tech/structured-data.json
+- Sitemap: https://www.hcode.tech/sitemap-0.xml
+
 ---
 
-Last Updated: 2025-12-16
-Version: 1.0
+Last Updated: 2026-03-05
+Version: 2.0

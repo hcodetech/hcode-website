@@ -1,0 +1,56 @@
+{
+  "subject": "acct:hello@hcode.tech",
+  "aliases": [
+    "https://www.hcode.tech",
+    "https://hcode.tech"
+  ],
+  "properties": {
+    "http://schema.org/name": "Hcode Technologies",
+    "http://schema.org/url": "https://www.hcode.tech"
+  },
+  "links": [
+    {
+      "rel": "http://webfinger.net/rel/profile-page",
+      "type": "text/html",
+      "href": "https://www.hcode.tech/about"
+    },
+    {
+      "rel": "http://webfinger.net/rel/avatar",
+      "type": "image/png",
+      "href": "https://www.hcode.tech/assets/img/hcode-logo.png"
+    },
+    {
+      "rel": "describedby",
+      "type": "application/json",
+      "href": "https://www.hcode.tech/.well-known/identity.json"
+    },
+    {
+      "rel": "http://webfinger.net/rel/profile-page",
+      "type": "text/plain",
+      "href": "https://www.hcode.tech/llms.txt",
+      "titles": {
+        "en": "LLM-readable profile for Hcode Technologies"
+      }
+    },
+    {
+      "rel": "https://schema.org/founder",
+      "type": "text/html",
+      "href": "https://www.hcode.tech/about/shashank-singla",
+      "titles": {
+        "en": "Shashank Singla - Co-Founder"
+      }
+    },
+    {
+      "rel": "https://schema.org/founder",
+      "type": "text/html",
+      "href": "https://www.hcode.tech/about/shweta-singla",
+      "titles": {
+        "en": "Shweta Singla - Co-Founder"
+      }
+    },
+    {
+      "rel": "me",
+      "href": "https://www.linkedin.com/company/hcodetech/"
+    }
+  ]
+}

@@ -120,7 +120,7 @@ function RishabhGarg() {
                         <div className="col-span-12 lg:col-span-6 flex items-center justify-center lg:justify-end">
                             <div className="relative w-full max-w-md">
                                 <img
-                                    src="/assets/img/hcode_about_us_rishabh.jpg"
+                                    src="/assets/img/hcode-rishabh-garg.jpg"
                                     alt="Rishabh Garg"
                                     className="w-full h-auto object-cover"
                                     loading="lazy"

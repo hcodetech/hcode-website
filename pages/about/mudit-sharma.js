@@ -116,7 +116,7 @@ function MuditSharma() {
                         <div className="col-span-12 lg:col-span-6 flex items-center justify-center lg:justify-end">
                             <div className="relative w-full max-w-md">
                                 <img
-                                    src="/assets/img/hcode_about_us_mudit.jpg"
+                                    src="/assets/img/hcode-mudit-sharma.jpg"
                                     alt="Mudit Sharma"
                                     className="w-full h-auto object-cover"
                                     loading="lazy"

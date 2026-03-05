@@ -1,0 +1,306 @@
+{
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://www.hcode.tech/#organization",
+    "name": "Hcode Technologies",
+    "legalName": "Hcode Technologies Pvt Ltd",
+    "url": "https://www.hcode.tech",
+    "description": "World-class software development teams for startups and enterprises. We provide on-time delivery with transparent communication, specializing in AI integration, blockchain, MVP development, and team augmentation.",
+    "foundingDate": "2018",
+    "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.hcode.tech/assets/img/hcode-logo.png"
+    },
+    "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Karnal",
+        "addressRegion": "Haryana",
+        "addressCountry": "IN"
+    },
+    "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "hello@hcode.tech",
+        "contactType": "General Inquiry",
+        "url": "https://www.hcode.tech/contact"
+    },
+    "numberOfEmployees": {
+        "@type": "QuantitativeValue",
+        "minValue": 40,
+        "maxValue": 60
+    },
+    "industry": [
+        "Software Development",
+        "Technology Services",
+        "IT Consulting"
+    ],
+    "sameAs": [
+        "https://www.linkedin.com/company/hcodetech/"
+    ],
+    "knowsAbout": [
+        "AI Integration",
+        "Blockchain Development",
+        "MVP Development",
+        "Team Augmentation",
+        "React.js",
+        "Node.js",
+        "Python",
+        "Machine Learning",
+        "Full Stack Development"
+    ],
+    "founder": [
+        {
+            "@type": "Person",
+            "@id": "https://www.hcode.tech/about/shashank-singla#person",
+            "name": "Shashank Singla",
+            "givenName": "Shashank",
+            "familyName": "Singla",
+            "jobTitle": "Co-Founder",
+            "url": "https://www.hcode.tech/about/shashank-singla",
+            "email": "shashank@hcode.tech",
+            "description": "Product builder with 2 AI exits. Serial entrepreneur with 14+ years of experience. IIT Delhi, Class of 2010. Previously at Goldman Sachs and Human Ventures. Currently acts as CTO for an Adtech startup handling 350 million requests per day.",
+            "alumniOf": [
+                {
+                    "@type": "EducationalOrganization",
+                    "name": "Indian Institute of Technology Delhi",
+                    "sameAs": "https://www.iitd.ac.in/"
+                }
+            ],
+            "worksFor": {
+                "@type": "Organization",
+                "name": "Hcode Technologies Pvt Ltd",
+                "url": "https://www.hcode.tech"
+            },
+            "knowsAbout": [
+                "AI",
+                "Machine Learning",
+                "Software Development",
+                "Entrepreneurship",
+                "Blockchain",
+                "Product Development",
+                "Adtech",
+                "System Architecture"
+            ],
+            "sameAs": [
+                "https://www.linkedin.com/in/shashanksingla/",
+                "https://x.com/shashanksingla",
+                "http://medium.com/@shashank.singla"
+            ],
+            "image": "https://www.hcode.tech/assets/img/hcode-shashank-singla.jpg",
+            "hasCredential": [
+                {
+                    "@type": "EducationalOccupationalCredential",
+                    "credentialCategory": "degree",
+                    "educationalLevel": "Bachelor's",
+                    "recognizedBy": {
+                        "@type": "EducationalOrganization",
+                        "name": "Indian Institute of Technology Delhi"
+                    }
+                }
+            ],
+            "memberOf": [
+                {
+                    "@type": "Organization",
+                    "name": "Dextro",
+                    "description": "AI video understanding platform, acquired by Axon (NYSE: AXON)",
+                    "url": "https://www.axon.com/",
+                    "status": "Acquired"
+                },
+                {
+                    "@type": "Organization",
+                    "name": "Human Ventures",
+                    "url": "https://www.humanventures.co/"
+                },
+                {
+                    "@type": "Organization",
+                    "name": "Goldman Sachs",
+                    "url": "https://www.goldmansachs.com/"
+                }
+            ]
+        },
+        {
+            "@type": "Person",
+            "@id": "https://www.hcode.tech/about/shweta-singla#person",
+            "name": "Shweta Singla",
+            "givenName": "Shweta",
+            "familyName": "Singla",
+            "jobTitle": "Co-Founder",
+            "url": "https://www.hcode.tech/about/shweta-singla",
+            "email": "shweta@hcode.tech",
+            "description": "Ex-Vice President at Goldman Sachs with 9+ years as Quantitative Strategist. Expert in Machine Learning, Big Data, and Optimizations. IIT Delhi, Class of 2010.",
+            "alumniOf": [
+                {
+                    "@type": "EducationalOrganization",
+                    "name": "Indian Institute of Technology Delhi",
+                    "sameAs": "https://www.iitd.ac.in/"
+                }
+            ],
+            "worksFor": {
+                "@type": "Organization",
+                "name": "Hcode Technologies Pvt Ltd",
+                "url": "https://www.hcode.tech"
+            },
+            "knowsAbout": [
+                "Machine Learning",
+                "Big Data",
+                "Quantitative Strategy",
+                "Optimization",
+                "Team Management"
+            ],
+            "sameAs": [
+                "https://www.linkedin.com/in/shweta-singla/"
+            ],
+            "image": "https://www.hcode.tech/assets/img/hcode-shweta-singla.jpg",
+            "memberOf": [
+                {
+                    "@type": "Organization",
+                    "name": "Goldman Sachs",
+                    "url": "https://www.goldmansachs.com/"
+                }
+            ]
+        }
+    ],
+    "employee": [
+        {
+            "@type": "Person",
+            "@id": "https://www.hcode.tech/about/rishabh-garg#person",
+            "name": "Rishabh Garg",
+            "jobTitle": "Engineering Manager",
+            "url": "https://www.hcode.tech/about/rishabh-garg",
+            "email": "rishabh.garg@hcode.tech",
+            "description": "14+ years of experience. Enterprise app dev expert. Previously at Siemens, Samsung, and Infosys. NIT Durgapur graduate.",
+            "sameAs": [
+                "https://www.linkedin.com/in/rishabh-garg-77023ab6/"
+            ],
+            "image": "https://www.hcode.tech/assets/img/hcode-rishabh-garg.jpg"
+        },
+        {
+            "@type": "Person",
+            "@id": "https://www.hcode.tech/about/mudit-sharma#person",
+            "name": "Mudit Sharma",
+            "jobTitle": "Engineering Manager",
+            "url": "https://www.hcode.tech/about/mudit-sharma",
+            "email": "mudit.sharma@hcode.tech",
+            "description": "16+ years of product development experience. Ran multiple SaaS teams at Brevo/Sendinblue for 9.5 years. Node.js and React.js team leadership specialist.",
+            "sameAs": [
+                "https://www.linkedin.com/in/sharma-mudit/"
+            ],
+            "image": "https://www.hcode.tech/assets/img/hcode-mudit-sharma.jpg"
+        }
+    ],
+    "makesOffer": [
+        {
+            "@type": "Offer",
+            "itemOffered": {
+                "@type": "Service",
+                "name": "AI Integration Services",
+                "description": "AI-powered solutions for business automation, machine learning implementation, and AI product development.",
+                "url": "https://www.hcode.tech/our-services/ai-integration-services"
+            }
+        },
+        {
+            "@type": "Offer",
+            "itemOffered": {
+                "@type": "Service",
+                "name": "Blockchain Development Services",
+                "description": "Smart contract development, decentralized application (DApp) development, NFT marketplace, security audit.",
+                "url": "https://www.hcode.tech/our-services/blockchain-development-services"
+            }
+        },
+        {
+            "@type": "Offer",
+            "itemOffered": {
+                "@type": "Service",
+                "name": "MVP Development Services",
+                "description": "Rapid prototype and MVP development for startups. Market-ready products in weeks.",
+                "url": "https://www.hcode.tech/our-services/mvp-development-services"
+            }
+        },
+        {
+            "@type": "Offer",
+            "itemOffered": {
+                "@type": "Service",
+                "name": "Team as a Service (TaaS)",
+                "description": "Dedicated development teams with tech lead or project manager for your projects.",
+                "url": "https://www.hcode.tech/our-services/team-as-a-service"
+            }
+        },
+        {
+            "@type": "Offer",
+            "itemOffered": {
+                "@type": "Service",
+                "name": "Developer as a Service (DaaS)",
+                "description": "Individual expert developers for flexible engagement models and staff augmentation.",
+                "url": "https://www.hcode.tech/our-services/developer-as-a-service"
+            }
+        }
+    ],
+    "review": [
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Tyler Stambaugh",
+                "jobTitle": "COO, Magnetiq"
+            },
+            "reviewBody": "I recently completed a platform build for my company MAGNETIQ with HCode and I must say, I'm thoroughly impressed with the output. They provided exceptional developer services and exceeded my expectations in every way possible."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Gregory Correll",
+                "jobTitle": "Technical Project Manager, Paramount Capital Group"
+            },
+            "reviewBody": "As a technology manager with over 25 years of experience, I cannot think of a better partnership that I've had over the years. They were ready to work on day 1, and by day 2 had already surpassed my initial expectations."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Alex Chumbley",
+                "jobTitle": "Co-founder at Fable (YC W21)"
+            },
+            "reviewBody": "HCode has been a fantastic partner through the product development journey. The management team is quick and responsive, and always looking for feedback on how to improve."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Tatiana Tian",
+                "jobTitle": "Co-founder & CEO at RE(SOURCE)"
+            },
+            "reviewBody": "What I value the most about HCode is their startup mindset on agile testing. We compared more than 30 teams across India, Europe and South America, and decided to proceed with HCode at the end."
+        },
+        {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Suyash Kothari",
+                "jobTitle": "Co-Founder, Ohana"
+            },
+            "reviewBody": "HCode has not only helped us go live but has helped consistently improve the product with fast iterations. They are not an outsourcing partner, they are truly an extended team for us."
+        }
+    ],
+    "areaServed": [
+        {
+            "@type": "Country",
+            "name": "United States"
+        },
+        {
+            "@type": "Country",
+            "name": "Australia"
+        },
+        {
+            "@type": "Country",
+            "name": "Singapore"
+        },
+        {
+            "@type": "Country",
+            "name": "Germany"
+        },
+        {
+            "@type": "Country",
+            "name": "India"
+        }
+    ]
+}

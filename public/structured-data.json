@@ -5,44 +5,218 @@
             "@type": "Organization",
             "@id": "https://www.hcode.tech/#organization",
             "name": "Hcode Technologies",
+            "legalName": "Hcode Technologies Pvt Ltd",
             "url": "https://www.hcode.tech",
             "logo": {
                 "@type": "ImageObject",
                 "url": "https://www.hcode.tech/assets/img/hcode-logo.png"
             },
-            "description": "We provide on-time delivery along with transparent communication. World-class software development teams for startups and enterprises.",
+            "description": "World-class software development teams for startups and enterprises. We provide on-time delivery with transparent communication, specializing in AI integration, blockchain, MVP development, and team augmentation.",
+            "foundingDate": "2018",
             "address": {
                 "@type": "PostalAddress",
                 "addressLocality": "Karnal",
                 "addressRegion": "Haryana",
                 "addressCountry": "IN"
             },
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "email": "hello@hcode.tech",
+                "contactType": "General Inquiry",
+                "url": "https://www.hcode.tech/contact"
+            },
+            "numberOfEmployees": {
+                "@type": "QuantitativeValue",
+                "minValue": 40,
+                "maxValue": 60
+            },
             "sameAs": [
-                "https://www.linkedin.com/company/hcode-technologies"
+                "https://www.linkedin.com/company/hcodetech/"
+            ],
+            "knowsAbout": [
+                "AI Integration",
+                "Blockchain Development",
+                "MVP Development",
+                "Team Augmentation",
+                "React.js",
+                "Node.js",
+                "Python",
+                "Machine Learning"
             ],
             "founder": [
                 {
-                    "@type": "Person",
-                    "@id": "https://www.hcode.tech/about/shashank-singla#person",
-                    "name": "Shashank Singla",
-                    "jobTitle": "Co-Founder",
-                    "url": "https://www.hcode.tech/about/shashank-singla",
-                    "sameAs": [
-                        "https://www.linkedin.com/in/shashanksingla/",
-                        "https://x.com/shashanksingla",
-                        "http://medium.com/@shashank.singla"
-                    ]
+                    "@id": "https://www.hcode.tech/about/shashank-singla#person"
                 },
                 {
-                    "@type": "Person",
-                    "@id": "https://www.hcode.tech/about/shweta-singla#person",
-                    "name": "Shweta Singla",
-                    "jobTitle": "Co-Founder",
-                    "url": "https://www.hcode.tech/about/shweta-singla",
-                    "sameAs": [
-                        "https://www.linkedin.com/in/shweta-singla/"
-                    ]
+                    "@id": "https://www.hcode.tech/about/shweta-singla#person"
                 }
+            ],
+            "employee": [
+                {
+                    "@id": "https://www.hcode.tech/about/rishabh-garg#person"
+                },
+                {
+                    "@id": "https://www.hcode.tech/about/mudit-sharma#person"
+                }
+            ],
+            "makesOffer": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "AI Integration Services",
+                        "url": "https://www.hcode.tech/our-services/ai-integration-services"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Blockchain Development Services",
+                        "url": "https://www.hcode.tech/our-services/blockchain-development-services"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "MVP Development Services",
+                        "url": "https://www.hcode.tech/our-services/mvp-development-services"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Team as a Service (TaaS)",
+                        "url": "https://www.hcode.tech/our-services/team-as-a-service"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Developer as a Service (DaaS)",
+                        "url": "https://www.hcode.tech/our-services/developer-as-a-service"
+                    }
+                }
+            ],
+            "areaServed": [
+                {
+                    "@type": "Country",
+                    "name": "United States"
+                },
+                {
+                    "@type": "Country",
+                    "name": "Australia"
+                },
+                {
+                    "@type": "Country",
+                    "name": "Singapore"
+                },
+                {
+                    "@type": "Country",
+                    "name": "Germany"
+                },
+                {
+                    "@type": "Country",
+                    "name": "India"
+                }
+            ]
+        },
+        {
+            "@type": "Person",
+            "@id": "https://www.hcode.tech/about/shashank-singla#person",
+            "name": "Shashank Singla",
+            "givenName": "Shashank",
+            "familyName": "Singla",
+            "jobTitle": "Co-Founder",
+            "url": "https://www.hcode.tech/about/shashank-singla",
+            "email": "shashank@hcode.tech",
+            "image": "https://www.hcode.tech/assets/img/hcode-shashank-singla.jpg",
+            "description": "Product builder with 2 AI exits. Serial entrepreneur with 14+ years of experience. IIT Delhi, Class of 2010. Previously at Goldman Sachs and Human Ventures. Currently acts as CTO for an Adtech startup handling 350 million requests per day.",
+            "alumniOf": {
+                "@type": "EducationalOrganization",
+                "name": "Indian Institute of Technology Delhi",
+                "sameAs": "https://www.iitd.ac.in/"
+            },
+            "worksFor": {
+                "@id": "https://www.hcode.tech/#organization"
+            },
+            "knowsAbout": [
+                "AI",
+                "Machine Learning",
+                "Software Development",
+                "Entrepreneurship",
+                "Blockchain",
+                "Product Development",
+                "Adtech",
+                "System Architecture"
+            ],
+            "sameAs": [
+                "https://www.linkedin.com/in/shashanksingla/",
+                "https://x.com/shashanksingla",
+                "http://medium.com/@shashank.singla"
+            ]
+        },
+        {
+            "@type": "Person",
+            "@id": "https://www.hcode.tech/about/shweta-singla#person",
+            "name": "Shweta Singla",
+            "givenName": "Shweta",
+            "familyName": "Singla",
+            "jobTitle": "Co-Founder",
+            "url": "https://www.hcode.tech/about/shweta-singla",
+            "email": "shweta@hcode.tech",
+            "image": "https://www.hcode.tech/assets/img/hcode-shweta-singla.jpg",
+            "description": "Ex-Vice President at Goldman Sachs with 9+ years as Quantitative Strategist. Expert in Machine Learning, Big Data, and Optimizations. IIT Delhi, Class of 2010.",
+            "alumniOf": {
+                "@type": "EducationalOrganization",
+                "name": "Indian Institute of Technology Delhi",
+                "sameAs": "https://www.iitd.ac.in/"
+            },
+            "worksFor": {
+                "@id": "https://www.hcode.tech/#organization"
+            },
+            "knowsAbout": [
+                "Machine Learning",
+                "Big Data",
+                "Quantitative Strategy",
+                "Optimization",
+                "Team Management"
+            ],
+            "sameAs": [
+                "https://www.linkedin.com/in/shweta-singla/"
+            ]
+        },
+        {
+            "@type": "Person",
+            "@id": "https://www.hcode.tech/about/rishabh-garg#person",
+            "name": "Rishabh Garg",
+            "jobTitle": "Engineering Manager",
+            "url": "https://www.hcode.tech/about/rishabh-garg",
+            "image": "https://www.hcode.tech/assets/img/hcode-rishabh-garg.jpg",
+            "description": "14+ years of enterprise application development experience. Previously at Siemens, Samsung, and Infosys. NIT Durgapur graduate.",
+            "worksFor": {
+                "@id": "https://www.hcode.tech/#organization"
+            },
+            "sameAs": [
+                "https://www.linkedin.com/in/rishabh-garg-77023ab6/"
+            ]
+        },
+        {
+            "@type": "Person",
+            "@id": "https://www.hcode.tech/about/mudit-sharma#person",
+            "name": "Mudit Sharma",
+            "jobTitle": "Engineering Manager",
+            "url": "https://www.hcode.tech/about/mudit-sharma",
+            "image": "https://www.hcode.tech/assets/img/hcode-mudit-sharma.jpg",
+            "description": "16+ years of product development experience. Managed Node.js teams at Brevo/Sendinblue for 9.5 years.",
+            "worksFor": {
+                "@id": "https://www.hcode.tech/#organization"
+            },
+            "sameAs": [
+                "https://www.linkedin.com/in/sharma-mudit/"
             ]
         },
         {

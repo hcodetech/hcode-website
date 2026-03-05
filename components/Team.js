@@ -18,7 +18,7 @@ function Team({ name, image, image_webp, bio, link, designation, bioLink }) {
             loading="lazy"
             height="280px"
             width="220"
-            alt="Leadership team and mentors in hcode technologies"
+            alt={`${name} - Hcode Technologies`}
           />
         </picture>
 

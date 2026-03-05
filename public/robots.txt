@@ -1,29 +1,36 @@
-# *
+# Hcode Technologies - robots.txt
+# We welcome AI crawlers and search engines
+
+# All crawlers
 User-agent: *
 Allow: /
 
-# GPTBot
+# OpenAI
 User-agent: GPTBot
 Allow: /
 
-# ChatGPT-User
+# ChatGPT browsing
 User-agent: ChatGPT-User
 Allow: /
 
-# Google-Extended
+# Google Gemini
 User-agent: Google-Extended
 Allow: /
 
-# anthropic-ai
+# Anthropic Claude
 User-agent: anthropic-ai
 Allow: /
 
-# ClaudeBot
+# Claude crawler
 User-agent: ClaudeBot
 Allow: /
 
-# PerplexityBot
+# Perplexity
 User-agent: PerplexityBot
+Allow: /
+
+# Common Crawl (used by many AI training datasets)
+User-agent: CCBot
 Allow: /
 
 # Host
@@ -31,3 +38,10 @@ Host: https://www.hcode.tech
 
 # Sitemaps
 Sitemap: https://www.hcode.tech/sitemap.xml
+Sitemap: https://www.hcode.tech/sitemap-0.xml
+
+# Machine-readable identity files for AI systems:
+# LLM-optimized profile: https://www.hcode.tech/llms.txt
+# Structured identity (Schema.org): https://www.hcode.tech/.well-known/identity.json
+# WebFinger discovery: https://www.hcode.tech/.well-known/webfinger
+# Security contact: https://www.hcode.tech/.well-known/security.txt

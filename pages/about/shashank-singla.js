@@ -94,7 +94,7 @@ function ShashankSingla() {
                                 <a
                                     href="https://www.linkedin.com/in/shashanksingla/"
                                     target="_blank"
-                                    rel="noopener noreferrer"
+                                    rel="me noopener noreferrer"
                                     className="w-10 h-10 flex items-center justify-center border border-gray-300 rounded hover:bg-gray-100 transition-colors"
                                 >
                                     <img
@@ -106,7 +106,7 @@ function ShashankSingla() {
                                 <a
                                     href="https://x.com/shashanksingla"
                                     target="_blank"
-                                    rel="noopener noreferrer"
+                                    rel="me noopener noreferrer"
                                     className="w-10 h-10 flex items-center justify-center border border-gray-300 rounded hover:bg-gray-100 transition-colors"
                                 >
                                     <svg
@@ -120,7 +120,7 @@ function ShashankSingla() {
                                 <a
                                     href="http://medium.com/@shashank.singla"
                                     target="_blank"
-                                    rel="noopener noreferrer"
+                                    rel="me noopener noreferrer"
                                     className="w-10 h-10 flex items-center justify-center border border-gray-300 rounded hover:bg-gray-100 transition-colors"
                                 >
                                     <svg
@@ -151,7 +151,7 @@ function ShashankSingla() {
                         <div className="col-span-12 lg:col-span-6 flex items-center justify-center lg:justify-end">
                             <div className="relative w-full max-w-md">
                                 <img
-                                    src="/assets/img/hcode_about_us_shashank.jpg"
+                                    src="/assets/img/hcode-shashank-singla.jpg"
                                     alt="Shashank Singla"
                                     className="w-full h-auto object-cover"
                                     loading="lazy"

@@ -4,6 +4,7 @@
 
 import Document, { Html, Head, Main, NextScript } from "next/document";
 import { fav_icon } from "../constants/constants";
+import structuredData from "../public/structured-data.json";
 // import NewsletterComponent from "../components/NewsletterComponent";
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -15,6 +16,14 @@ class MyDocument extends Document {
     return (
       <Html lang="en " className="scroll-smooth">
         <Head>
+          {/* JSON-LD Structured Data for Google Knowledge Panels */}
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify(structuredData),
+            }}
+          />
+
           {/* Google Console */}
           <meta
             name="google-site-verification"
@@ -81,6 +90,17 @@ class MyDocument extends Document {
             sizes="16x16"
             href={fav_icon}
           ></link>
+
+          {/* rel="me" identity verification links */}
+          <link rel="me" href="https://www.linkedin.com/company/hcodetech/" />
+          <link rel="me" href="https://www.linkedin.com/in/shashanksingla/" />
+          <link rel="me" href="https://x.com/shashanksingla" />
+          <link rel="me" href="http://medium.com/@shashank.singla" />
+          <link rel="me" href="https://www.linkedin.com/in/shweta-singla/" />
+
+          {/* LLM-readable profile pointer */}
+          <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM-readable profile" />
+
           {/* Microsoft Clarity tracking code */}
           <script
             type="text/javascript"

@@ -11,6 +11,13 @@ module.exports = {
     await config.transform(config, '/about/shweta-singla'),
     await config.transform(config, '/about/rishabh-garg'),
     await config.transform(config, '/about/mudit-sharma'),
+    // Machine-readable files for AI discoverability
+    {
+      loc: '/llms.txt',
+      changefreq: 'monthly',
+      priority: 0.5,
+      lastmod: new Date().toISOString(),
+    },
   ],
 
   // Custom priority and changefreq per page
@@ -82,6 +89,10 @@ module.exports = {
       },
       {
         userAgent: 'PerplexityBot', // Perplexity
+        allow: '/',
+      },
+      {
+        userAgent: 'CCBot', // Common Crawl
         allow: '/',
       },
     ],
