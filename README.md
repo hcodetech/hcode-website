@@ -13,16 +13,7 @@ Deploy : Dev ready code for testing
 
 ```
 yarn build
-cd out
-aws s3 cp . s3://hcode.tech --recursive
-for old in *.html; do aws s3 mv s3://hcode.tech/$old s3://hcode.tech/`basename $old .html`; done
-cd our-services
-aws s3 cp . s3://hcode.tech --recursive
-for old in *.html; do aws s3 mv s3://hcode.tech/our-services/$old s3://hcode.tech/our-services/`basename $old .html`; done
-cd about
-for old in *.html; do aws s3 mv s3://hcode.tech/about/$old s3://hcode.tech/about/`basename $old .html`; done
-
-aws cloudfront create-invalidation --distribution-id E2E03LDNL94VC6 --paths "/*"
+yarn deploy
 ```
 
 ## Steps to configure the AWS cli for Deployment
