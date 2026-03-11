@@ -5,8 +5,8 @@ excerpt: "A Complete Guide to Blockchain Development – HCode Blockchain techno
 featuredImage: "/assets/blog/2024/06/html-css-collage-concept-with-person.jpg"
 ogTitle: "A Complete Guide to Blockchain Development - HCode » Hcode's offical Blog"
 ogDescription: "Blockchain development is the process of harnessing blockchain technology to create tangible solutions for practical industrial problems."
-categories: [21]
-tags: [23, 24]
+categories: ["Blockchain Technology"]
+tags: ["Blockchain Development", "Blockchain Development Services"]
 ---
 
 ## A Complete Guide to Blockchain Development – HCode

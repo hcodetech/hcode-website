@@ -121,13 +121,19 @@ function yamlEscape(str) {
   return str;
 }
 
-function convertPost(post) {
+function convertPost(post, categoryMap, tagMap) {
   const slug = post.slug;
   const title = yamlEscape(post.title?.rendered || '');
   const date = post.date ? post.date.split('T')[0] : '';
   const excerpt = yamlEscape(post.excerpt?.rendered || '');
-  const categories = post.categories || [];
-  const tags = post.tags || [];
+
+  // Resolve category/tag IDs to names
+  const categoryNames = (post.categories || [])
+    .map((id) => categoryMap[id])
+    .filter(Boolean);
+  const tagNames = (post.tags || [])
+    .map((id) => tagMap[id])
+    .filter(Boolean);
 
   // Yoast SEO data
   const yoast = post.yoast_head_json || {};
@@ -147,6 +153,10 @@ function convertPost(post) {
   // Convert to Markdown
   const markdown = turndown.turndown(html);
 
+  // Helper to format YAML string array
+  const yamlArray = (arr) =>
+    arr.length ? `[${arr.map((s) => `"${s.replace(/"/g, '\\"')}"`).join(', ')}]` : '[]';
+
   // Build frontmatter
   const frontmatter = [
     '---',
@@ -156,12 +166,47 @@ function convertPost(post) {
     `featuredImage: "${featuredImage}"`,
     `ogTitle: "${ogTitle.replace(/"/g, '\\"')}"`,
     `ogDescription: "${ogDescription.replace(/"/g, '\\"')}"`,
-    `categories: [${categories.join(', ')}]`,
-    `tags: [${tags.join(', ')}]`,
+    `categories: ${yamlArray(categoryNames)}`,
+    `tags: ${yamlArray(tagNames)}`,
     '---',
   ].join('\n');
 
   return { slug, content: `${frontmatter}\n\n${markdown}\n` };
+}
+
+/**
+ * Build category/tag ID → name maps from Yoast schema data
+ */
+function buildTaxonomyMaps(posts) {
+  const categoryMap = {};
+  const tagMap = {};
+
+  posts.forEach((p) => {
+    const graph = p.yoast_head_json?.schema?.['@graph'] || [];
+
+    // Category name from breadcrumb (position 2 = category)
+    const breadcrumb = graph.find((g) => g['@type'] === 'BreadcrumbList');
+    if (breadcrumb?.itemListElement) {
+      const catItem = breadcrumb.itemListElement.find((i) => i.position === 2);
+      if (catItem?.name && p.categories?.[0]) {
+        categoryMap[p.categories[0]] = catItem.name;
+      }
+    }
+
+    // Tag names from article keywords
+    const article = graph.find(
+      (g) =>
+        g['@type'] === 'Article' ||
+        (Array.isArray(g['@type']) && g['@type'].includes('Article'))
+    );
+    if (article?.keywords && p.tags) {
+      article.keywords.forEach((kw, i) => {
+        if (p.tags[i]) tagMap[p.tags[i]] = kw;
+      });
+    }
+  });
+
+  return { categoryMap, tagMap };
 }
 
 // Main
@@ -172,10 +217,16 @@ function main() {
   // Ensure output directory exists
   fs.mkdirSync(OUTPUT_DIR, { recursive: true });
 
+  // Build taxonomy maps
+  const { categoryMap, tagMap } = buildTaxonomyMaps(posts);
+  console.log(
+    `Found ${Object.keys(categoryMap).length} categories, ${Object.keys(tagMap).length} tags`
+  );
+
   let count = 0;
   for (const post of posts) {
     try {
-      const { slug, content } = convertPost(post);
+      const { slug, content } = convertPost(post, categoryMap, tagMap);
       const outputPath = path.join(OUTPUT_DIR, `${slug}.md`);
       fs.writeFileSync(outputPath, content, 'utf-8');
       count++;
@@ -183,6 +234,15 @@ function main() {
       console.error(`Error converting post "${post.slug}":`, err.message);
     }
   }
+
+  // Write taxonomy maps for use in Next.js
+  const taxonomyPath = path.join(__dirname, '..', 'content', 'taxonomies.json');
+  fs.writeFileSync(
+    taxonomyPath,
+    JSON.stringify({ categories: categoryMap, tags: tagMap }, null, 2),
+    'utf-8'
+  );
+  console.log(`Wrote taxonomy maps to ${taxonomyPath}`);
 
   console.log(`Done! Converted ${count}/${posts.length} posts to ${OUTPUT_DIR}`);
 }

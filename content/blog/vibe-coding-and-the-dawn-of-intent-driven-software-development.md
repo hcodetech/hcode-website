@@ -5,7 +5,7 @@ excerpt: "Vibe Coding and the Dawn of Intent-Driven Software Development   […]
 featuredImage: "/assets/blog/2025/05/Bebas-Neue.png"
 ogTitle: "Vibe Coding and the Dawn of Intent-Driven Software Development » Hcode's offical Blog"
 ogDescription: "Vibe coding flips programming by letting developers describe features in plain language, as AI handles implementation behind the scenes."
-categories: [3]
+categories: ["Artificial Intelligence (AI)"]
 tags: []
 ---
 

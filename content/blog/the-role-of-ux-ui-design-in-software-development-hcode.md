@@ -5,7 +5,7 @@ excerpt: "The Role of UX/UI Design in Software Development- HCode Generation [â€
 featuredImage: "/assets/blog/2024/06/female-web-designer-office-with-notebook.jpg"
 ogTitle: "The Role of UX/UI Design in Software Development- HCode Â» Hcode's offical Blog"
 ogDescription: "A successful UX ensures the site or product is useful, easily usable, and desirable. It guarantees that users can easily find what they need."
-categories: [16]
+categories: ["Web development"]
 tags: []
 ---
 

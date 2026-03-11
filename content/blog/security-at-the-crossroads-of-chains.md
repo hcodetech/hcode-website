@@ -5,7 +5,7 @@ excerpt: "Security Considerations in Cross-Chain Interoperability     As blockch
 featuredImage: "/assets/blog/2025/04/5055401-scaled.jpg"
 ogTitle: "Security at the Crossroads of Chains » Hcode's offical Blog"
 ogDescription: "Key security risks and best practices for building safe and secure cross-chain blockchain interoperability."
-categories: [21]
+categories: ["Blockchain Technology"]
 tags: []
 ---
 

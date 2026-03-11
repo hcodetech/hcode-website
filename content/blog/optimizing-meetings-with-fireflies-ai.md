@@ -5,8 +5,8 @@ excerpt: "Optimizing Meetings with Fireflies.ai Meetings have become time-consum
 featuredImage: "/assets/blog/2023/10/5340737-e1697196278183.jpg"
 ogTitle: "Optimizing Meetings with Fireflies.ai » Hcode's offical Blog"
 ogDescription: "Boost productivity with Fireflies.ai: Optimize your meetings, transcribe conversations, and never miss important details. Try it now!"
-categories: [3]
-tags: [8, 5, 9, 7]
+categories: ["Artificial Intelligence (AI)"]
+tags: ["Fireflies.ai", "Hcode", "Optimizing Meetings", "Optimizing Meetings with Fireflies.ai"]
 ---
 
 # Optimizing Meetings with Fireflies.ai

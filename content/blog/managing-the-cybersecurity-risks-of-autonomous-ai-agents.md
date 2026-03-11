@@ -5,7 +5,7 @@ excerpt: "Managing the Cybersecurity Risks of Autonomous AI Agents     […]"
 featuredImage: "/assets/blog/2025/05/a-futuristic-digital-illustration-showca_mCk1fpBERSCPnhpUwPZF2A_A61kBFM6R0mzyfRo20CbZA.jpeg"
 ogTitle: "Managing the Cybersecurity Risks of Autonomous AI Agents » Hcode's offical Blog"
 ogDescription: "Explore strategies to identify, manage, and mitigate cybersecurity risks posed by autonomous AI agents, ensuring a safer digital future."
-categories: [3]
+categories: ["Artificial Intelligence (AI)"]
 tags: []
 ---
 

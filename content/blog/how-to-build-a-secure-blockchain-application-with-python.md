@@ -5,8 +5,8 @@ excerpt: "How to Build a Secure Blockchain Application With Python   […]"
 featuredImage: "/assets/blog/2024/07/a-vivid-illustration-of-futuristic-blocks-represen-NJguN_yqTh-_IGZQoBPRSQ-0Uh-Ac_oT7iKYKgVdPP5iA.jpeg"
 ogTitle: "How to Build a Secure Blockchain Application With Python » Hcode's offical Blog"
 ogDescription: "Master \"How to Build a Secure Blockchain Application With Python\"! Discover advantages & steps to develop secure DApps using Python."
-categories: [21]
-tags: [5, 34]
+categories: ["Blockchain Technology"]
+tags: ["Hcode", "How to Build a Secure Blockchain Application With Python"]
 ---
 
 # How to Build a Secure Blockchain Application With Python

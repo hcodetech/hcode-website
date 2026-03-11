@@ -5,7 +5,7 @@ excerpt: "DECODING THE MERN TECHNOLOGY STACK Decoding the MERN stack: Front […
 featuredImage: "/assets/blog/2022/11/Pair-programming-pana-1.png"
 ogTitle: "Decoding The Mern Technology Stack » Hcode's offical Blog"
 ogDescription: "DECODING THE MERN TECHNOLOGY STACK Decoding the MERN stack: Front […]"
-categories: [1]
+categories: ["Uncategorized"]
 tags: []
 ---
 

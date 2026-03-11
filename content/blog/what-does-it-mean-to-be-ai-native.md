@@ -5,8 +5,8 @@ excerpt: "What Does It Mean to Be AI Native?     […]"
 featuredImage: "/assets/blog/2025/07/ChatGPT-Image-Jul-11-2025-05_38_18-PM.png"
 ogTitle: "What Does It Mean to Be AI Native? » Hcode's offical Blog"
 ogDescription: "Discover what it means to be AI Native—software built around AI, not just enhanced by it. Explore how these systems work, their benefits, and use cases."
-categories: [3]
-tags: [56]
+categories: ["Artificial Intelligence (AI)"]
+tags: ["AI Native"]
 ---
 
 ## **What Does It Mean to Be AI Native?**

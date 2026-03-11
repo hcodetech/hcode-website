@@ -5,7 +5,7 @@ excerpt: "The Next Opportunity for Cybersecurity: Securing AI     The […]"
 featuredImage: "/assets/blog/2024/11/Add-a-heading-1-e1731916371203.jpg"
 ogTitle: "The Next Opportunity for Cybersecurity: Securing AI » Hcode's offical Blog"
 ogDescription: "With projections estimating a $2 trillion opportunity in the cybersecurity market, providers are at a crossroads."
-categories: [52]
+categories: ["cybersecurity"]
 tags: []
 ---
 

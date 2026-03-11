@@ -5,7 +5,7 @@ excerpt: "Git vs Github: What's the difference? Nomenclatures i.e. syntax, abbre
 featuredImage: "/assets/blog/2024/04/unnamed.jpg"
 ogTitle: "Git vs Github: What's the difference? » Hcode's offical Blog"
 ogDescription: "Git manages code revisions on local machines, GitHub is a cloud-based hosting service for storing and collaborating on Git repositories."
-categories: [16, 10]
+categories: ["Web development", "Web development"]
 tags: []
 ---
 

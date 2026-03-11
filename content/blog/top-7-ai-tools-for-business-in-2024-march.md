@@ -5,7 +5,7 @@ excerpt: "Top 7 AI Tools for Business In 2024 (March) Last […]"
 featuredImage: "/assets/blog/2024/03/person-using-laptop-using-artificial-intelligence-generate-images-2-scaled.jpg"
 ogTitle: "Top 7 AI Tools for Business In 2024 (March) » Hcode's offical Blog"
 ogDescription: "Discover the cutting-edge top 7 AI tools for business productivity in 2024. Explore ChatGPT, Jasper AI, and more. Dive into the future of technology now!"
-categories: [3]
+categories: ["Artificial Intelligence (AI)"]
 tags: []
 ---
 

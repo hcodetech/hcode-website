@@ -5,7 +5,7 @@ excerpt: "UNLEASHING THE POWER OF CHATGPT IN THE APP DEVELOPMENT INDUSTRY […]"
 featuredImage: "/assets/blog/2023/02/Frame-1-5.png"
 ogTitle: "UNLEASHING THE POWER OF CHATGPT IN THE APP DEVELOPMENT INDUSTRY » Hcode's offical Blog"
 ogDescription: "UNLEASHING THE POWER OF CHATGPT IN THE APP DEVELOPMENT INDUSTRY […]"
-categories: [1]
+categories: ["Uncategorized"]
 tags: []
 ---
 

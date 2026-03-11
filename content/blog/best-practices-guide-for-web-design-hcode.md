@@ -5,8 +5,8 @@ excerpt: "Best Practices Guide For Web Design – HCode In terms […]"
 featuredImage: "/assets/blog/2024/06/Add-a-heading-6-1-min.png"
 ogTitle: "Best Practices Guide For Web Design - HCode » Hcode's offical Blog"
 ogDescription: "Discover best practices for web design with HCode. Learn tips for brand alignment, responsiveness, SEO, and more to enhance user experience and website effectiveness."
-categories: [10]
-tags: [5, 25]
+categories: ["Web development"]
+tags: ["Hcode", "Web Design"]
 ---
 
 ## Best Practices Guide For Web Design – HCode

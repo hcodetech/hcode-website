@@ -5,7 +5,7 @@ excerpt: "Why is Python Among the Top choices when it comes […]"
 featuredImage: "/assets/blog/2024/05/a-vibrant-and-animated-bar-graph-displaying-the-mo-MVPMPhcRSY-RTEWn5cyLww-JMmuVucfQVuXb37iSxzOLw-Photoroom.png-Photoroom.png"
 ogTitle: "Why is Python Among the Top choices when it comes to AI » Hcode's offical Blog"
 ogDescription: "Python's clear, concise syntax resembles natural language, making it easy to learn and a key factor in its adoption of python in AI."
-categories: [3]
+categories: ["Artificial Intelligence (AI)"]
 tags: []
 ---
 

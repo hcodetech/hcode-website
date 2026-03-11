@@ -5,7 +5,7 @@ excerpt: "How AI and Blockchain “Together” Can Transform Business Artificial
 featuredImage: "/assets/blog/2024/02/pasted-image-0.png"
 ogTitle: "How AI and Blockchain “Together” Can Transform Business » Hcode's offical Blog"
 ogDescription: "Discover how the fusion of AI and Blockchain redefines business dynamics, enhancing security, and efficiency for transformative success."
-categories: [3]
+categories: ["Artificial Intelligence (AI)"]
 tags: []
 ---
 

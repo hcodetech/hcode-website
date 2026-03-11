@@ -5,8 +5,8 @@ excerpt: "Implementing RPA in Banking: Key Use Cases for 2025 Success […]"
 featuredImage: "/assets/blog/2024/11/a-minimalistic-illustration-of-a-robot-holding-a-b-zDf7OM4XRt2APXY-PA34oA-FVVM69vvRiSU_AgPQyC7wQ.jpeg"
 ogTitle: "Implementing RPA in Banking: Key Use Cases for 2025 Success » Hcode's offical Blog"
 ogDescription: "Legacy banking systems are complex and costly, but #RPA offers a solution! By automating repetitive tasks, banks can boost productivity."
-categories: [49]
-tags: [51, 50]
+categories: ["Finance"]
+tags: ["Easy RPA implementation and usecase for 2025", "RPA in banking"]
 ---
 
 ## Implementing RPA in Banking: Key Use Cases for 2025 Success

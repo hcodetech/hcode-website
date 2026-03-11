@@ -5,7 +5,7 @@ excerpt: "How Blockchain Works: Explained in Simple Terms Blockchain is a […]"
 featuredImage: "/assets/blog/2024/04/unnamed-9.jpg"
 ogTitle: "How Blockchain Works: Explained in Simple Terms » Hcode's offical Blog"
 ogDescription: "A blockchain is a decentralized, distributed ledger that records transactions across multiple computers in a secure and immutable manner."
-categories: [21]
+categories: ["Blockchain Technology"]
 tags: []
 ---
 

@@ -5,7 +5,7 @@ excerpt: "Kubernetes vs Docker: Not Competitors If you are familiar with […]"
 featuredImage: "/assets/blog/2024/05/in-a-glass-container-many-toy-boats-that-looks-lik-zEPJy3hJS6ugnnqYGW-7Sg-exv3TH6fQq6HG2RzHx-yfg.jpeg"
 ogTitle: "Kubernetes vs Docker: Not Competitors » Hcode's offical Blog"
 ogDescription: "Docker creates individual containers for simplified development. On the other hand Kubernetes helps in managing and automating deployments."
-categories: [22]
+categories: ["Tools and Technologies"]
 tags: []
 ---
 

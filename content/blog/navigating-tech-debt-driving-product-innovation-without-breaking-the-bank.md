@@ -5,7 +5,7 @@ excerpt: "Navigating Tech Debt: Driving Product Innovation      In the […]"
 featuredImage: "/assets/blog/2025/01/a-minimalistic-image-of-a-person-in-a-pr_ahBdIqN7QoyIGgG4VAu-Yg_CtiNoKlCTKmp7Tn_W2aakA.jpeg"
 ogTitle: "Navigating Tech Debt Without Breaking the Bank » Hcode's offical Blog"
 ogDescription: "Tech debt is an inevitable part of software development. With the right strategy & partner like HCode businesses can tackle tech debt head-on."
-categories: [10]
+categories: ["Web development"]
 tags: []
 ---
 

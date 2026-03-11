@@ -5,8 +5,8 @@ excerpt: "Can Chatbots Replace Human Therapists?   Chatbots are capable of […]
 featuredImage: "/assets/blog/2024/07/a-cozy-living-room-scene-with-a-modern-desk-and-a-3f5Ahjh6T02eg2gmiuF6UA-TTaZ5axHTcKeJ5gCb4imZg.jpeg"
 ogTitle: "Can Chatbot's AI Therapy Replace Human Therapists? » Hcode's offical Blog"
 ogDescription: "Chatbots are capable of understanding human impulses in AI therapy but they can not provide adequate care and advice as a human therapist."
-categories: [3]
-tags: [39, 37, 38]
+categories: ["Artificial Intelligence (AI)"]
+tags: ["AI in healthcare", "AI Therapy", "Chatbots"]
 ---
 
 # Can Chatbots Replace Human Therapists?

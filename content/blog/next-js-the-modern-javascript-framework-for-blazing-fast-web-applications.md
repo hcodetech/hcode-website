@@ -5,8 +5,8 @@ excerpt: "Next.js: The Modern Javascript Framework for Blazing-Fast Web Applicat
 featuredImage: "/assets/blog/2023/10/6087298.jpg"
 ogTitle: "Next.js: The Modern Javascript Framework for Blazing-Fast Web Applications » Hcode's offical Blog"
 ogDescription: "Unlock blazing-fast web apps with Next.js, the modern JavaScript framework. Discover its powerful features for superior performance."
-categories: [10]
-tags: [5, 11, 12]
+categories: ["Web development"]
+tags: ["Hcode", "Next.js", "Web development"]
 ---
 
 # Next.js: The Modern Javascript Framework for Blazing-Fast Web Applications

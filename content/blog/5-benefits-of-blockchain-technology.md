@@ -5,8 +5,8 @@ excerpt: "5 Benefits of Blockchain Technology     We can categorize […]"
 featuredImage: "/assets/blog/2024/07/5-benifits-of-blockchain-technology-security-priva-0aiVB7iKTuyMRqEy1UGGaA-BoPhH6d6TCGfgEk9EMn_Mw.jpeg"
 ogTitle: "5 Benefits of Blockchain Technology » Hcode's offical Blog"
 ogDescription: "Explore 5 benefits of blockchain technology: trust, decentralization, security, traceability & immutability. Learn how it impacts businesses across industries."
-categories: [21]
-tags: [33, 5]
+categories: ["Blockchain Technology"]
+tags: ["5 Benefits of Blockchain Technology", "Hcode"]
 ---
 
 # 5 Benefits of Blockchain Technology

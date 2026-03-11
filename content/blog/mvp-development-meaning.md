@@ -5,7 +5,7 @@ excerpt: "MVP Development Meaning   For CEOs and CTOs navigating the […]"
 featuredImage: "/assets/blog/2024/02/people-office-analyzing-checking-finance-graphs-scaled.jpg"
 ogTitle: "MVP Development Meaning » Hcode's offical Blog"
 ogDescription: "MVP Development Meaning: Build software efficiently, gather feedback, and iterate for success. Empower your startup journey now."
-categories: [6]
+categories: ["MVP development Services"]
 tags: []
 ---
 

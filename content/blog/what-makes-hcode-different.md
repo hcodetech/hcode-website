@@ -5,8 +5,8 @@ excerpt: "What Makes HCode Different?     Many people and clients […]"
 featuredImage: "/assets/blog/2025/07/visuals-of-react-native-blog-.jpg"
 ogTitle: "What Makes HCode Different? » Hcode's offical Blog"
 ogDescription: "At HCode, we build better teams through a culture of continuous learning — from role shadowing and peer reviews to design discussions that teach as much as they decide."
-categories: [54]
-tags: [5]
+categories: ["HCode"]
+tags: ["Hcode"]
 ---
 
 ## **What Makes HCode Different?**

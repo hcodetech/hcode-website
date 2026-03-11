@@ -5,8 +5,8 @@ excerpt: "7 Ways Businesses are Using Predictive Analytics in Retail Retail […
 featuredImage: "/assets/blog/2024/08/design-a-modern-retail-scene-with-a-customer-holdi-UZZTRVUyTpyUZ-a-ej1e8A-CQDYf0zaTUGsFvMZcRNIqw.jpeg"
 ogTitle: "7 Ways Businesses are Using Predictive Analytics in Retail » Hcode's offical Blog"
 ogDescription: "Retail Predictive Analytics is a technique that uses retail data to forecast future needs and identify current opportunities."
-categories: [3]
-tags: [45, 46]
+categories: ["Artificial Intelligence (AI)"]
+tags: ["Predictive Analytics", "Retail Business"]
 ---
 
 ## 7 Ways Businesses are Using Predictive Analytics in Retail

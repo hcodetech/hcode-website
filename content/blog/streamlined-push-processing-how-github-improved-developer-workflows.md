@@ -5,8 +5,8 @@ excerpt: "Streamlined Push Processing: How GitHub Improved Developer Workflows  
 featuredImage: "/assets/blog/2024/07/GitHub-Status-scaled.jpg"
 ogTitle: "Streamlined Push Processing: How GitHub Improved Developer Workflows » Hcode's offical Blog"
 ogDescription: "Discover GitHub's revamped push processing and status update, enhancing developer workflows with improved reliability and reduced latency. #GitHubStatus"
-categories: [29]
-tags: [31, 30]
+categories: ["Github"]
+tags: ["GitHub features", "GitHub Status"]
 ---
 
 # Streamlined Push Processing: How GitHub Improved Developer Workflows

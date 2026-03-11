@@ -5,7 +5,7 @@ excerpt: "Microservices Architecture: Comprehensive Overview     As digital tran
 featuredImage: "/assets/blog/2024/10/a-photo-of-a-whiteboard-with-the-text-microservice-ykGdeuEOSo6_JsH0nltL3Q-45y4kPVqQ6e0YZFy8-MBHw.jpeg"
 ogTitle: "Microservices Architecture: The Cornerstone of Scalable and Resilient Software Development » Hcode's offical Blog"
 ogDescription: "Microservices architecture structures an application into small, independent services, each handling a specific business function."
-categories: [10]
+categories: ["Web development"]
 tags: []
 ---
 

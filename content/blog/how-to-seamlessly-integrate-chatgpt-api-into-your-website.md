@@ -5,8 +5,8 @@ excerpt: "How to Seamlessly Integrate ChatGPT API into Your Website? The […]"
 featuredImage: "/assets/blog/2023/09/a-futuristic-digital-illustration-of-a-website-con-US66KXxMQOG4SMvgn4vfQg-OzwcvndTTyCPQOb-Yin04w.jpeg"
 ogTitle: "How to Seamlessly Integrate ChatGPT API into Your Website?"
 ogDescription: "Learn how to seamlessly integrate the ChatGPT API into your website for interactive, AI-powered conversations. Elevate user engagement and experience."
-categories: [3]
-tags: [5, 4]
+categories: ["Artificial Intelligence (AI)"]
+tags: ["Hcode", "Integrate ChatGPT API"]
 ---
 
 # How to Seamlessly Integrate ChatGPT API into Your Website?

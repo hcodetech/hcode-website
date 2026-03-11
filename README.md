@@ -46,7 +46,7 @@ The blog lives at `/blog` and is built from Markdown files in `content/blog/`. P
 
 ### Adding a new blog post
 
-Create a markdown file in `content/blog/your-slug.md` with frontmatter:
+1. Create a markdown file in `content/blog/your-slug.md` with frontmatter:
 
 ```yaml
 ---
@@ -56,12 +56,16 @@ excerpt: "Short description"
 featuredImage: "/assets/blog/2025/09/image.png"
 ogTitle: "SEO title"
 ogDescription: "SEO description"
-categories: [10]
-tags: [12, 5]
+categories: ["Web development"]
+tags: ["React", "Next.js"]
 ---
 
 Your markdown content here.
 ```
+
+2. Place any images in `public/assets/blog/` and reference as `/assets/blog/...`.
+3. The sitemap is auto-generated on build — no manual steps needed.
+4. Categories must match existing ones to appear in the filter (see current categories in any existing post). To add a new category, just use it in frontmatter — it will appear automatically.
 
 ## Key Constraints
 

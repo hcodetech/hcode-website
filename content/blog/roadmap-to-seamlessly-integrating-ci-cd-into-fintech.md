@@ -5,8 +5,8 @@ excerpt: "Integrating CI/CD into FinTech: A Roadmap for Innovation and Security 
 featuredImage: "/assets/blog/2025/01/cogwheel-business-productivity-symbol-held-by-hands-scaled.jpg"
 ogTitle: "Roadmap to Seamlessly Integrating CI/CD into FinTech » Hcode's offical Blog"
 ogDescription: "A robust CI/CD pipeline allows the development team to patch the issue, run automated security tests, and deploy the fix within hours."
-categories: [49]
-tags: [53, 15]
+categories: ["Finance"]
+tags: ["CI/CD", "Fintech"]
 ---
 
 ### Integrating CI/CD into FinTech: A Roadmap for Innovation and Security

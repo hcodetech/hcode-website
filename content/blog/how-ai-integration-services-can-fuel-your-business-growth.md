@@ -5,7 +5,7 @@ excerpt: "How AI Integration Services Can Fuel Your Business Growth   […]"
 featuredImage: "/assets/blog/2024/01/pexels-tara-winstead-8386440-scaled.jpg"
 ogTitle: "How AI Integration Services Can Fuel Your Business Growth » Hcode's offical Blog"
 ogDescription: "AI empowers data-driven decisions, automates tasks, & unlocks new possibilities. Discover how HCode's integration services fuel your success."
-categories: [3]
+categories: ["Artificial Intelligence (AI)"]
 tags: []
 ---
 

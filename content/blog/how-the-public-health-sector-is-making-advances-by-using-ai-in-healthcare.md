@@ -5,7 +5,7 @@ excerpt: "How the Public Health Sector is Making Advances by Using […]"
 featuredImage: "/assets/blog/2024/01/Screenshot-2024-01-18-at-1.58.14-PM.png"
 ogTitle: "How the Public Health Sector is Making Advances by Using AI in Healthcare » Hcode's offical Blog"
 ogDescription: "AI transforms public health, revolutionizes healthcare. Discover challenges, benefits. Choose HCode for seamless AI integration services."
-categories: [3]
+categories: ["Artificial Intelligence (AI)"]
 tags: []
 ---
 

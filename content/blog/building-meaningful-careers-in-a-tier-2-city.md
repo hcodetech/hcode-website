@@ -5,8 +5,8 @@ excerpt: "Building Meaningful Careers in a Tier-2 City At HCode, we’ve […]"
 featuredImage: "/assets/blog/2025/08/visuals-of-react-native-blog-1.gif"
 ogTitle: "Building Meaningful Careers in a Tier-2 City » Hcode's offical Blog"
 ogDescription: "Discover how HCode is building meaningful tech careers in Karnal, offering balance, growth, and world-class opportunities in a tier-2 city."
-categories: [54]
-tags: [5]
+categories: ["HCode"]
+tags: ["Hcode"]
 ---
 
 ## **Building Meaningful Careers in a Tier-2 City**

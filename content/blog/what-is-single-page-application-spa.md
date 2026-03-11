@@ -5,8 +5,8 @@ excerpt: "What is SPA? Single Page Application     What if […]"
 featuredImage: "/assets/blog/2025/09/Untitled-design-35.png"
 ogTitle: "What is Single Page Application? » Hcode's offical Blog"
 ogDescription: "Learn what Single Page Applications (SPA s) are, their benefits, real-world uses, and how they differ from Multi-Page Apps (MPAs)."
-categories: [10]
-tags: [62, 12]
+categories: ["Web development"]
+tags: ["Single Page Application", "Web development"]
 ---
 
 ## **What is SPA?**

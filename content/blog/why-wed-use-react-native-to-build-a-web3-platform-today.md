@@ -5,8 +5,8 @@ excerpt: "Why We’d Use React Native to Build a Web3 Platform […]"
 featuredImage: "/assets/blog/2025/07/Untitled-design-7.png"
 ogTitle: "Why We’d Use React Native to Build a Web3 Platform Today » Hcode's offical Blog"
 ogDescription: "Why React Native is perfect for building fast, mobile-first Web3 platforms with seamless blockchain integration."
-categories: [22, 10]
-tags: [55]
+categories: ["Tools and Technologies", "Web development"]
+tags: ["React Native"]
 ---
 
 ### **Why We’d Use React Native to Build a Web3 Platform Today**

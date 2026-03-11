@@ -5,7 +5,7 @@ excerpt: "REENGINEERING THE RECRUITING PROCESS   What are your greatest strength
 featuredImage: "/assets/blog/2022/10/Group-461.jpg"
 ogTitle: "Reengineering The Recruiting Process » Hcode's offical Blog"
 ogDescription: "REENGINEERING THE RECRUITING PROCESS   What are your greatest strengths […]"
-categories: [1]
+categories: ["Uncategorized"]
 tags: []
 ---
 

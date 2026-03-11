@@ -5,8 +5,8 @@ excerpt: "Travel Industry Transformation: The Importance of Customer-Centric Boo
 featuredImage: "/assets/blog/2024/07/view-hands-holding-smartphone-scaled.jpg"
 ogTitle: "Travel Industry Transformation: The Importance of Customer-Centric Booking Platforms » Hcode's offical Blog"
 ogDescription: "Amidst this demographic shift in the travel industry, customer-centric booking platforms hold the key to unlocking future potential."
-categories: [16]
-tags: [44]
+categories: ["Web development"]
+tags: ["Travel"]
 ---
 
 # Travel Industry Transformation: The Importance of Customer-Centric Booking Platforms

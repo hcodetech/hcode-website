@@ -5,7 +5,7 @@ excerpt: "EMERGING INDIA AS A TECH HUB IN MODERN TURBULENT TIMES […]"
 featuredImage: "/assets/blog/2022/12/Group-1-2.png"
 ogTitle: "EMERGING INDIA AS A TECH HUB IN MODERN TURBULENT TIMES » Hcode's offical Blog"
 ogDescription: "EMERGING INDIA AS A TECH HUB IN MODERN TURBULENT TIMES […]"
-categories: [1]
+categories: ["Uncategorized"]
 tags: []
 ---
 

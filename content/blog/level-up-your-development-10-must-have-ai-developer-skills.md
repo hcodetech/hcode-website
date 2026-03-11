@@ -5,8 +5,8 @@ excerpt: "Level Up Your Development: 10 Must-Have AI Developer Skills   […]"
 featuredImage: "/assets/blog/2024/07/trans-person-working-office-with-colleagues-min-scaled.jpg"
 ogTitle: "Level Up Your Development: 10 Must-Have AI Developer Skills"
 ogDescription: "Discover essential AI developer skills with HCode's guide. Learn programming, machine learning, data optimization, and more to excel in this high-demand field."
-categories: [3]
-tags: [32]
+categories: ["Artificial Intelligence (AI)"]
+tags: ["AI developer skills"]
 ---
 
 # **Level Up Your Development: 10 Must-Have AI Developer Skills**

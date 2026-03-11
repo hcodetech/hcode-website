@@ -5,7 +5,7 @@ excerpt: "3-YEAR CELEBRATION IN THAILAND News and Highlights:   3-Year Boom […
 featuredImage: "/assets/blog/2022/08/Mask-group.png"
 ogTitle: "3-Year celebration in Thailand » Hcode's offical Blog"
 ogDescription: "3-YEAR CELEBRATION IN THAILAND News and Highlights:   3-Year Boom […]"
-categories: [1]
+categories: ["Uncategorized"]
 tags: []
 ---
 

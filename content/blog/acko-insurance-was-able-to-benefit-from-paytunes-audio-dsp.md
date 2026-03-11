@@ -5,7 +5,7 @@ excerpt: "Acko Insurance was able to benefit from PayTunes Audio DSP […]"
 featuredImage: "/assets/blog/2023/01/Frame-1-3.png"
 ogTitle: "Acko Insurance was able to benefit from PayTunes Audio DSP » Hcode's offical Blog"
 ogDescription: "Acko Insurance was able to benefit from PayTunes Audio DSP […]"
-categories: [1]
+categories: ["Uncategorized"]
 tags: []
 ---
 

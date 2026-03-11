@@ -5,7 +5,7 @@ excerpt: "How To Integrate AI in A Mobile App? The power […]"
 featuredImage: "/assets/blog/2024/02/people-generating-images-using-artificial-intelligence-laptop.jpg"
 ogTitle: "How To Integrate AI in A Mobile App? » Hcode's offical Blog"
 ogDescription: "To integrate AI , you can access them through an Application Programming Interface (API). Then choose the best fit for your APP integration."
-categories: [3]
+categories: ["Artificial Intelligence (AI)"]
 tags: []
 ---
 

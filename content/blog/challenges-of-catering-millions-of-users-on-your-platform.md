@@ -5,7 +5,7 @@ excerpt: "Challenges of Catering Millions of Users on Your Platform   […]"
 featuredImage: "/assets/blog/2025/02/a-minimalist-3d-rendered-illustration-de_YZlAUEFRSBOsiBQs2jr_MQ_VcP_uzLiTmuU0F0tGdfbYA.jpeg"
 ogTitle: "Challenges of Catering Millions of Users on Your Platform » Hcode's offical Blog"
 ogDescription: "Scaling to millions of users isn’t just about keeping servers online. It’s about ensuring a seamless experience, managing security and more."
-categories: [10]
+categories: ["Web development"]
 tags: []
 ---
 

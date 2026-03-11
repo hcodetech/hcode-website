@@ -5,8 +5,8 @@ excerpt: "Blockchain Solutions in Supply Chain Management   Supply Chain Managem
 featuredImage: "/assets/blog/2024/06/still-life-supply-chain-representation-min-scaled.jpg"
 ogTitle: "Blockchain Solutions in Supply Chain Management » Hcode's offical Blog"
 ogDescription: "Discover how blockchain solutions in supply chain management enhance transparency, efficiency, and security. Learn more about implementing blockchain technology today!"
-categories: [21]
-tags: [27, 26]
+categories: ["Blockchain Technology"]
+tags: ["Blockchain Solutions", "Blockchain Solutions in Supply Chain Management"]
 ---
 
 ## Blockchain Solutions in Supply Chain Management

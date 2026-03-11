@@ -5,7 +5,7 @@ excerpt: "Top 9 Hacks for Managing Remote Development Teams Remote work […]"
 featuredImage: "/assets/blog/2024/06/Untitled-design-2.png"
 ogTitle: "Top 9 Hacks for Managing Remote Development Teams » Hcode's offical Blog"
 ogDescription: "Facetime communication is the most critical part of handling a remote development team. Along with emotional support and flexibility."
-categories: [16]
+categories: ["Web development"]
 tags: []
 ---
 

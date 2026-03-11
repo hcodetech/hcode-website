@@ -5,7 +5,7 @@ excerpt: "What do front-end developers do? Front-end developers program the fron
 featuredImage: "/assets/blog/2024/05/unnamed-10.jpg"
 ogTitle: "What do front-end developers do? » Hcode's offical Blog"
 ogDescription: "Discover the magic of front-end developers: transforming websites into intuitive, visually stunning experiences. Learn why a great website matters and the essential skills every front-end developer possesses. Ready to elevate your digital presence? Contact HCode Technologies today."
-categories: [10]
+categories: ["Web development"]
 tags: []
 ---
 

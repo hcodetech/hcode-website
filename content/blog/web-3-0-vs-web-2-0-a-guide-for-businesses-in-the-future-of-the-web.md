@@ -5,7 +5,7 @@ excerpt: "Web 3.0 vs Web 2.0: A Guide for Businesses in […]"
 featuredImage: "/assets/blog/2024/02/medium-shot-man-wearing-vr-glasses-scaled.jpg"
 ogTitle: "Web 3.0 vs Web 2.0: A Guide for Businesses in the Future of the Web » Hcode's offical Blog"
 ogDescription: "Decoding Web 3.0: A business guide to the shift from Web 2.0. Learn about decentralized ecosystems, AI, and blockchain. See how HCode facilitates seamless adaptation for a user-centric future."
-categories: [1]
+categories: ["Uncategorized"]
 tags: []
 ---
 

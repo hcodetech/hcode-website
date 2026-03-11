@@ -5,7 +5,7 @@ excerpt: "Securing the Future: The Challenge of Safeguarding LLM Systems   […]
 featuredImage: "/assets/blog/2024/12/a-futuristic-digital-landscape-showing-a-complex-n-AukZgrpHR22EZinb5Sw6Sw-xz4WzQ4DSceT9oEZfJ8dCA.jpeg"
 ogTitle: "Securing the Future: The Challenge of Safeguarding LLM Systems » Hcode's offical Blog"
 ogDescription: "One of the most significant risks associated with LLM systems comes from prompt injections. Unlike traditional flaws that can be patched."
-categories: [52]
+categories: ["cybersecurity"]
 tags: []
 ---
 

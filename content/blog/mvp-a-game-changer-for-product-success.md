@@ -5,7 +5,7 @@ excerpt: "MVP: A Game-Changer for Product Success   Why create a […]"
 featuredImage: "/assets/blog/2023/10/5035108.jpg"
 ogTitle: "MVP: A Game-Changer for Product Success"
 ogDescription: "Minimal Viable Product (MVP) is a low-risk strategy designed to optimize the chances of success for a product in agile product development."
-categories: [6]
+categories: ["MVP development Services"]
 tags: []
 ---
 

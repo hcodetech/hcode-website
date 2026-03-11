@@ -5,7 +5,7 @@ excerpt: "Applications of Blockchain Technology in Business Blockchain technolog
 featuredImage: "/assets/blog/2024/03/blockchain-3055701_1280.jpg"
 ogTitle: "7 Mainstream Applications of Blockchain Technology in Business » Hcode's offical Blog"
 ogDescription: "Enterprise blockchain is emerging as a powerful tool for businesses, offering a wide range of applications."
-categories: [21]
+categories: ["Blockchain Technology"]
 tags: []
 ---
 

@@ -5,7 +5,7 @@ excerpt: "2024's AI Playbook: Innovative Techniques to Supercharge Your Business
 featuredImage: "/assets/blog/2024/09/freepik-export-20240905083642Un9B-scaled.jpeg"
 ogTitle: "2024's AI Playbook to Supercharge Your Business » Hcode's offical Blog"
 ogDescription: "AI real potential lie in more practical, everyday applications that can revolutionize how businesses operate."
-categories: [3]
+categories: ["Artificial Intelligence (AI)"]
 tags: []
 ---
 

@@ -5,7 +5,7 @@ excerpt: "What is MCP? (Model Context Protocol)   For years, AI […]"
 featuredImage: "/assets/blog/2025/06/programming-background-with-person-working-with-codes-computer.jpg"
 ogTitle: "Why MCP (Model Context Protocol) Is the Missing Link in AI Application Scalability » Hcode's offical Blog"
 ogDescription: "Discover how the Model Context Protocol (MCP) bridges the gap between AI models and real-world scalability, and smarter orchestration."
-categories: [3]
+categories: ["Artificial Intelligence (AI)"]
 tags: []
 ---
 

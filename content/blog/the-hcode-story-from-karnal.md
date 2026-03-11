@@ -5,7 +5,7 @@ excerpt: "The HCode Story from Karnal   There’s something different about […
 featuredImage: "/assets/blog/2025/06/Untitled-design-6.png"
 ogTitle: "The HCode Story from Karnal » Hcode's offical Blog"
 ogDescription: "The HCode Story from Karnal   There’s something different about […]"
-categories: [54]
+categories: ["HCode"]
 tags: []
 ---
 

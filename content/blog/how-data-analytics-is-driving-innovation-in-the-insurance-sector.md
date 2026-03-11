@@ -5,7 +5,7 @@ excerpt: "How Data Analytics is Driving Innovation in the Insurance Sector […]
 featuredImage: "/assets/blog/2024/08/businessman-holding-tablet-with-statistical-data-scaled.jpg"
 ogTitle: "How Data Analytics is Driving Innovation in the Insurance Sector » Hcode's offical Blog"
 ogDescription: "Data analyticsaddress the challenges of limited customer insight and reliance on historical data in the insurance sector."
-categories: [3]
+categories: ["Artificial Intelligence (AI)"]
 tags: []
 ---
 

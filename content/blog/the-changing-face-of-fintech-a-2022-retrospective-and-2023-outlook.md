@@ -5,8 +5,8 @@ excerpt: "THE CHANGING FACE OF FINTECH: A 2022 RETROSPECTIVE AND 2023 […]"
 featuredImage: "/assets/blog/2023/08/Group-2-1.png"
 ogTitle: "THE CHANGING FACE OF FINTECH: A 2022 RETROSPECTIVE AND 2023 OUTLOOK"
 ogDescription: "Reflect on the fintech evolution in 2022 and gain insights into what lies ahead in 2023 in this comprehensive retrospective and outlook."
-categories: [1]
-tags: [15, 5]
+categories: ["Uncategorized"]
+tags: ["Fintech", "Hcode"]
 ---
 
 # **THE CHANGING FACE OF FINTECH:** **A 2022 RETROSPECTIVE AND 2023 OUTLOOK**

@@ -5,7 +5,7 @@ excerpt: "How Blockchain Enhances Privacy and Security in KYC     […]"
 featuredImage: "/assets/blog/2024/12/a-futuristic-and-minimalist-image-with-a_jBd93ErORxCM3TVscPs3Kw_7_fTPrOsQDGvpeXXKszKlQ.jpeg"
 ogTitle: "How Blockchain Enhances Privacy and Security in KYC » Hcode's offical Blog"
 ogDescription: "With blockchain in KYC, data is no longer stored in silos but distributed across secure nodes, making tampering nearly impossible."
-categories: [21]
+categories: ["Blockchain Technology"]
 tags: []
 ---
 

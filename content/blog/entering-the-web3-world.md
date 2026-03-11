@@ -5,7 +5,7 @@ excerpt: "Welcome to the incredibly fascinating and complex world of Web3. […]
 featuredImage: "/assets/blog/2023/02/Frame-1-2.png"
 ogTitle: "ENTERING THE WEB3 WORLD » Hcode's offical Blog"
 ogDescription: "Welcome to the incredibly fascinating and complex world of Web3. […]"
-categories: [1]
+categories: ["Uncategorized"]
 tags: []
 ---
 

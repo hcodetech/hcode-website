@@ -5,7 +5,7 @@ excerpt: "MVP Development Process – HCode Have you ever poured your […]"
 featuredImage: "/assets/blog/2024/02/unnamed-7.jpg"
 ogTitle: "MVP Development Process - HCode » Hcode's offical Blog"
 ogDescription: "This article aims to clarify the MVP development process and serve as a guide for entrepreneurs to develop a successful MVP."
-categories: [6]
+categories: ["MVP development Services"]
 tags: []
 ---
 

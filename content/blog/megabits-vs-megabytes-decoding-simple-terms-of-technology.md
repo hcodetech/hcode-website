@@ -5,8 +5,8 @@ excerpt: "Megabits vs Megabytes: Decoding Simple Terms of Technology Have you [â
 featuredImage: "/assets/blog/2024/07/megabits-vs-megabytes-text-written-in-a-profession-TsISSB4VSNiaOmnehTFk2A-AkSxJmRbRy658IJfSF5i6w.jpeg"
 ogTitle: "Megabits vs Megabytes: Decoding Simple Terms of Technology Â» Hcode's offical Blog"
 ogDescription: "When comparing Megabits vs Megabytes always remember the conversion factor (1 MB = 8 Mb) to set realistic expectations."
-categories: [40]
-tags: [42, 41, 43]
+categories: ["Database"]
+tags: ["Megabits", "Megabits vs Megabytes", "Megabytes"]
 ---
 
 # Megabits vs Megabytes: Decoding Simple Terms of Technology

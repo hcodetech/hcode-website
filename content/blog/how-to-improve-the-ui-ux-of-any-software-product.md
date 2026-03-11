@@ -5,8 +5,8 @@ excerpt: "How to Improve the UI/UX of Any Software Product This […]"
 featuredImage: "/assets/blog/2024/07/how-to-improve-the-ui-ux-of-any-software-product-i-RdOpH9LnQfaTIkeaLNZsNA-YrDKxkbIQBCT9sSeACFEWw.jpeg"
 ogTitle: "How to Improve the UI/UX of Any Software Product » Hcode's offical Blog"
 ogDescription: "How to Improve the UI/UX of Any Software Product This […]"
-categories: [16, 10]
-tags: [5, 35, 36]
+categories: ["Web development", "Web development"]
+tags: ["Hcode", "improve the ui", "improve the ui/ux"]
 ---
 
 # How to Improve the UI/UX of Any Software Product

@@ -5,8 +5,8 @@ excerpt: "Business Intelligence in Retail: Turning Data into Actionable Insights
 featuredImage: "/assets/blog/2024/10/office-workers-using-finance-graphs.jpg"
 ogTitle: "Business Intelligence in Retail: Turn Data into Actionable Insights"
 ogDescription: "Business Intelligence (BI) refers to the technologies, tools, and practices used to collect, analyze, and present business data."
-categories: [3]
-tags: [48]
+categories: ["Artificial Intelligence (AI)"]
+tags: ["Business Intelligence"]
 ---
 
 ## Business Intelligence in Retail: Turning Data into Actionable Insights

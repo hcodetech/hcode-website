@@ -5,7 +5,7 @@ excerpt: "Blockchain in Cloud Computing: Significance, Benefits, and Application
 featuredImage: "/assets/blog/2024/03/unnamed-1.jpg"
 ogTitle: "Blockchain in Cloud Computing Significance, Benefits & Application"
 ogDescription: "Providing secure data sharing, decentralized storage, and data integrity are some of the application of blockchain in cloud computing."
-categories: [21]
+categories: ["Blockchain Technology"]
 tags: []
 ---
 

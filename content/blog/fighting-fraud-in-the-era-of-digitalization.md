@@ -5,7 +5,7 @@ excerpt: "FIGHTING FRAUD IN THE ERA OF DIGITALIZATION The COVID-19 pandemic […
 featuredImage: "/assets/blog/2023/04/Group-2-2.png"
 ogTitle: "FIGHTING FRAUD IN THE ERA OF DIGITALIZATION » Hcode's offical Blog"
 ogDescription: "FIGHTING FRAUD IN THE ERA OF DIGITALIZATION The COVID-19 pandemic […]"
-categories: [1]
+categories: ["Uncategorized"]
 tags: []
 ---
 

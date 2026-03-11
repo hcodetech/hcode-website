@@ -5,7 +5,7 @@ excerpt: "Minimum Viable Product vs Prototype: Choosing the Right Early Version 
 featuredImage: "/assets/blog/2023/12/What-to-Choose-as-the-Early-Version-for-Your-App-2.png"
 ogTitle: "MVP vs Prototype: Choosing the Right Early Version for Your App » Hcode's offical Blog"
 ogDescription: "MVP (Minimum Viable Product): Basic version to test idea. Prototype: Preliminary model for design validation."
-categories: [6]
+categories: ["MVP development Services"]
 tags: []
 ---
 

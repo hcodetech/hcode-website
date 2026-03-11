@@ -5,7 +5,7 @@ excerpt: "How AI Code Assistants Changing Software Development   The way […]"
 featuredImage: "/assets/blog/2025/03/freepik__a-darkskinned-person-typing-on-a-laptop-with-code-__21297-e1741349635455.jpeg"
 ogTitle: "How AI Code Assistants Changing Software Development » Hcode's offical Blog"
 ogDescription: "The best approach is to treat AI assistants as a powerful aid rather than a shortcut, ensuring that human expertise remains at the core."
-categories: [3]
+categories: ["Artificial Intelligence (AI)"]
 tags: []
 ---
 

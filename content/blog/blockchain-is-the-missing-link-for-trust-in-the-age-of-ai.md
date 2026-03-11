@@ -5,8 +5,8 @@ excerpt: "Blockchain: The Key to Trust in the AI Era   […]"
 featuredImage: "/assets/blog/2024/07/Untitled-design-17.png"
 ogTitle: "Blockchain is the ‘missing link’ for trust in the age of AI"
 ogDescription: "Discover how Blockchain tech secures AI, ensuring trust in digital interactions. Discover its role in data integrity, transparency, and ownership."
-categories: [21]
-tags: [28]
+categories: ["Blockchain Technology"]
+tags: ["blockchain tech"]
 ---
 
 # Blockchain: The Key to Trust in the AI Era

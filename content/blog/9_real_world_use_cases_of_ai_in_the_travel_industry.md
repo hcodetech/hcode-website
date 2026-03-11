@@ -5,7 +5,7 @@ excerpt: "9 Real-World Use Cases of AI in the Travel Industry […]"
 featuredImage: "/assets/blog/2024/05/on-one-side-a-traveler-sits-at-a-desk-surrounded-b-r0rjwgiqRjGZ1aeLicHImw-0PV0Z6oPQhmCZn9gCp7v-w.jpeg"
 ogTitle: "9 Real-World Use Cases of AI in the Travel Industry » Hcode's offical Blog"
 ogDescription: "Today's travel industry is fueled by innovation, responding directly to customers' demands for personalization, and even AI travel planning."
-categories: [3]
+categories: ["Artificial Intelligence (AI)"]
 tags: []
 ---
 

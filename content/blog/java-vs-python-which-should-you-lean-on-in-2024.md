@@ -5,7 +5,7 @@ excerpt: "Java vs Python which should you lean on in 2024? […]"
 featuredImage: "/assets/blog/2024/05/unnamed-12-1.jpg"
 ogTitle: "Java vs Python which should you lean on in 2024? » Hcode's offical Blog"
 ogDescription: "Java, statically typed and compiled, excels in large applications. Python, dynamically typed and interpreted, prioritizes rapid development."
-categories: [16, 10]
+categories: ["Web development", "Web development"]
 tags: []
 ---
 

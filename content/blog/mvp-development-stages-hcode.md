@@ -5,7 +5,7 @@ excerpt: "MVP Development Stages For any aspiring entrepreneur, the journey from
 featuredImage: "/assets/blog/2024/03/curvy-line-jumping-colourful-cubes-scaled.jpg"
 ogTitle: "MVP Development Stages- HCode » Hcode's offical Blog"
 ogDescription: "Learn the 7 essential steps to building a successful Minimum Viable Product (MVP) to validate your product idea, save time and resources, and gain valuable user feedback."
-categories: [6]
+categories: ["MVP development Services"]
 tags: []
 ---
 

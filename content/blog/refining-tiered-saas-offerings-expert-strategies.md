@@ -5,7 +5,7 @@ excerpt: "Refining Tiered SaaS Offerings: Expert Strategies   In an era […]"
 featuredImage: "/assets/blog/2023/11/pexels-mikael-blomkvist-6476258-scaled-e1700825146823.jpg"
 ogTitle: "Refining Tiered SaaS Offerings: Expert Strategies » Hcode's offical Blog"
 ogDescription: "Refining Tiered SaaS Offerings: Expert Strategies   In an era […]"
-categories: [16]
+categories: ["Web development"]
 tags: []
 ---
 

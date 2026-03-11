@@ -5,7 +5,7 @@ excerpt: "Mobile App Development Lifecycle: Demystified The mobile app market is
 featuredImage: "/assets/blog/2024/05/an-image-showing-app-evolution-lifecycle-the-3d-fi-JY2P8t1LR0a_9yVXuLWQqw-8zAl7J8MSyah96gw41bwCA-Photoroom.png-Photoroom-1.png"
 ogTitle: "Mobile App Development Lifecycle: Demystified » Hcode's offical Blog"
 ogDescription: "At HCode, we have developed a proven 8-step mobile app development lifecycle for creating successful applications."
-categories: [16]
+categories: ["Web development"]
 tags: []
 ---
 

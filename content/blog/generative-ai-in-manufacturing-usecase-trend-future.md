@@ -5,7 +5,7 @@ excerpt: "Generative AI in Manufacturing: Usecase, Trend & Future The manufactur
 featuredImage: "/assets/blog/2024/04/unnamed-4.jpg"
 ogTitle: "Generative AI in Manufacturing: Usecase, Trend & Future » Hcode's offical Blog"
 ogDescription: "Product research, decision-making, innovation, and inventory management are basic applications of genAI in manufacturing industry."
-categories: [3]
+categories: ["Artificial Intelligence (AI)"]
 tags: []
 ---
 

@@ -5,7 +5,7 @@ excerpt: "An Introduction to AI Agents   In the evolving landscape […]"
 featuredImage: "/assets/blog/2025/05/Screenshot-from-2025-05-26-17-57-14-e1748262532895.png"
 ogTitle: "An Introduction to AI Agents » Hcode's offical Blog"
 ogDescription: "An Introduction to AI Agents   In the evolving landscape […]"
-categories: [3]
+categories: ["Artificial Intelligence (AI)"]
 tags: []
 ---
 

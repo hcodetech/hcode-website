@@ -5,7 +5,7 @@ excerpt: "When the Cloud Fails: What Smart Tech Leaders Are Doing […]"
 featuredImage: "/assets/blog/2025/06/online-cloud-data-storage-concept-cloudscape-digital-online-server-global-network-business-web-database-backup-computer-private-infrastructure-technology-scaled-e1751024131639.jpg"
 ogTitle: "When the Cloud Fails: What Smart Tech Leaders Are Doing in 2025 » Hcode's offical Blog"
 ogDescription: "If you're leading a product, platform, or infrastructure team today, this (cloud ) isn’t just a technical problem — it’s a boardroom issue."
-categories: [52]
+categories: ["cybersecurity"]
 tags: []
 ---
 

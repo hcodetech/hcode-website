@@ -5,8 +5,8 @@ excerpt: "How AI is Used in Fintech 2024: Revolutionizing Finance with […]"
 featuredImage: "/assets/blog/2024/01/pexels-anna-shvets-5614110-scaled-e1705991162803.jpg"
 ogTitle: "How AI is Used in Fintech 2024 » Hcode's offical Blog"
 ogDescription: "How AI is Used in Fintech - Dive into Fintech's AI revolution in 2024. Learn how AI boosts efficiency, secures transactions, and reshapes finance. Partner with HCode for expert integration."
-categories: [3]
-tags: [20]
+categories: ["Artificial Intelligence (AI)"]
+tags: ["AI in Fintech"]
 ---
 
 ## How AI is Used in Fintech 2024: Revolutionizing Finance with AI

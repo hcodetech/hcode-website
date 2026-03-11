@@ -5,7 +5,7 @@ excerpt: "GETTING IN TUNE WITH PROGRAMMATIC AUDIO ADVERTISING In the digital [�
 featuredImage: "/assets/blog/2023/03/Group-1-4.png"
 ogTitle: "GETTING IN TUNE WITH PROGRAMMATIC AUDIO ADVERTISING » Hcode's offical Blog"
 ogDescription: "GETTING IN TUNE WITH PROGRAMMATIC AUDIO ADVERTISING In the digital […]"
-categories: [1]
+categories: ["Uncategorized"]
 tags: []
 ---
 

@@ -5,8 +5,8 @@ excerpt: "Unlocking the Power of Healthcare Data Warehousing: Benefits and Use [
 featuredImage: "/assets/blog/2024/09/tech-support-prevents-servers-overload-scaled.jpg"
 ogTitle: "Healthcare Data Warehousing: Benefits and Use Cases"
 ogDescription: "A healthcare data warehouse (HDW) is a centralized repository that integrates and stores data from various healthcare systems."
-categories: [40]
-tags: [47]
+categories: ["Database"]
+tags: ["ealthcare Data Warehousing"]
 ---
 
 ## Unlocking the Power of Healthcare Data Warehousing: Benefits and Use Cases

@@ -5,7 +5,7 @@ excerpt: "The Reality of AI in the Software Development Industry AI […]"
 featuredImage: "/assets/blog/2025/03/futuristic-hand-working-laptop.jpg"
 ogTitle: "The Reality of AI in the Software Development Industry » Hcode's offical Blog"
 ogDescription: "The Reality of AI in the Software Development Industry AI […]"
-categories: [3, 16]
+categories: ["Artificial Intelligence (AI)", "Web development"]
 tags: []
 ---
 

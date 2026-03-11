@@ -5,7 +5,7 @@ excerpt: "EVOLVING FRONT-END DEVELOPMENT At the genesis of front-end development
 featuredImage: "/assets/blog/2022/11/Group-3-2.png"
 ogTitle: "Evolving Front-End Development » Hcode's offical Blog"
 ogDescription: "EVOLVING FRONT-END DEVELOPMENT At the genesis of front-end development, the […]"
-categories: [1]
+categories: ["Uncategorized"]
 tags: []
 ---
 

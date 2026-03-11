@@ -5,8 +5,8 @@ excerpt: "AI vs Human: What Big Tech Really Thinks     […]"
 featuredImage: "/assets/blog/2025/09/Untitled-design-24.png"
 ogTitle: "AI vs Human: What Big Tech Really Thinks » Hcode's offical Blog"
 ogDescription: "Big Tech frames AI as a partner, not a replacement, empowering humans with assistance, speed, and smarter collaboration."
-categories: [3]
-tags: [61]
+categories: ["Artificial Intelligence (AI)"]
+tags: ["AI vs Human"]
 ---
 
 ## **AI vs Human:**
