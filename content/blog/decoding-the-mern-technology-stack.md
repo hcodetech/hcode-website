@@ -2,7 +2,7 @@
 title: "Decoding The Mern Technology Stack"
 date: "2022-09-20"
 excerpt: "DECODING THE MERN TECHNOLOGY STACK Decoding the MERN stack: Front […]"
-featuredImage: "/assets/blog/2022/11/Pair-programming-pana-1.png"
+featuredImage: "/assets/blog/2022/11/Pair-programming-pana-1.webp"
 ogTitle: "Decoding The Mern Technology Stack » Hcode's offical Blog"
 ogDescription: "DECODING THE MERN TECHNOLOGY STACK Decoding the MERN stack: Front […]"
 categories: ["Uncategorized"]
@@ -11,11 +11,11 @@ tags: []
 
 DECODING THE MERN TECHNOLOGY STACK
 
-![](/assets/blog/2022/11/Pair-programming-pana-1.png)
+![](/assets/blog/2022/11/Pair-programming-pana-1.webp)
 
 **Decoding the MERN stack: Front to Back**
 
-![](/assets/blog/2022/10/asd.png)
+![](/assets/blog/2022/10/asd.webp)
 
 _[MongoDB](https://www.mongodb.com/atlas/database):_ It is an open-source, document-oriented, NoSQL database program. MongoDB is written in C++ and uses JSON-like documents with optimal schemas.
 

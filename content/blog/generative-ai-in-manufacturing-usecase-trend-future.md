@@ -2,7 +2,7 @@
 title: "Generative AI in Manufacturing: Usecase, Trend & Future"
 date: "2024-04-08"
 excerpt: "Generative AI in Manufacturing: Usecase, Trend & Future The manufacturing […]"
-featuredImage: "/assets/blog/2024/04/unnamed-4.jpg"
+featuredImage: "/assets/blog/2024/04/unnamed-4.webp"
 ogTitle: "Generative AI in Manufacturing: Usecase, Trend & Future » Hcode's offical Blog"
 ogDescription: "Product research, decision-making, innovation, and inventory management are basic applications of genAI in manufacturing industry."
 categories: ["Artificial Intelligence (AI)"]
@@ -11,7 +11,7 @@ tags: []
 
 ## Generative AI in Manufacturing: Usecase, Trend & Future
 
-![](/assets/blog/2024/04/unnamed-4.jpg)
+![](/assets/blog/2024/04/unnamed-4.webp)
 
 The manufacturing industry has seen a significant shift in recent years, driven by advancements in automation, robotics, and artificial intelligence (AI). Among these technologies, generative AI (genAI) stands out as a major driver of innovation.
 
@@ -23,7 +23,7 @@ While AI already plays a role in manufacturing through ERP systems, breakdown id
 
 Tools like chatGPT, Bard, and Bing are now a part of every industry, even manufacturing. Product research, decision-making, product ideation, documentation, and inventory management are basic applications of genAI in the manufacturing industry.
 
-![Usecase of GenAI manufacturing](/assets/blog/2024/04/GenAI.jpg)
+![Usecase of GenAI manufacturing](/assets/blog/2024/04/GenAI.webp)
 
 #### Decision making
 

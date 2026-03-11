@@ -2,7 +2,7 @@
 title: "The Role of UX/UI Design in Software Development- HCode"
 date: "2024-06-07"
 excerpt: "The Role of UX/UI Design in Software Development- HCode Generation […]"
-featuredImage: "/assets/blog/2024/06/female-web-designer-office-with-notebook.jpg"
+featuredImage: "/assets/blog/2024/06/female-web-designer-office-with-notebook.webp"
 ogTitle: "The Role of UX/UI Design in Software Development- HCode » Hcode's offical Blog"
 ogDescription: "A successful UX ensures the site or product is useful, easily usable, and desirable. It guarantees that users can easily find what they need."
 categories: ["Web development"]
@@ -11,7 +11,7 @@ tags: []
 
 ## The Role of UX/UI Design in Software Development- HCode
 
-![](/assets/blog/2024/06/female-web-designer-office-with-notebook.jpg)  
+![](/assets/blog/2024/06/female-web-designer-office-with-notebook.webp)  
 Generation Z expects software—whether an app or a website—to be intuitive, aesthetically pleasing, and easy to navigate. It should not be a maze where users struggle to find their way. To meet these expectations, UX/UI design must be an integral part of the [software development lifecycle](https://hcode.tech/blog/mobile-app-development-lifecycle-demystified/).
 
 ### What is the difference between UI and UX?

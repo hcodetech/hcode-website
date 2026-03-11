@@ -2,7 +2,7 @@
 title: "How Blockchain Enhances Privacy and Security in KYC"
 date: "2024-12-20"
 excerpt: "How Blockchain Enhances Privacy and Security in KYC     […]"
-featuredImage: "/assets/blog/2024/12/a-futuristic-and-minimalist-image-with-a_jBd93ErORxCM3TVscPs3Kw_7_fTPrOsQDGvpeXXKszKlQ.jpeg"
+featuredImage: "/assets/blog/2024/12/a-futuristic-and-minimalist-image-with-a_jBd93ErORxCM3TVscPs3Kw_7_fTPrOsQDGvpeXXKszKlQ.webp"
 ogTitle: "How Blockchain Enhances Privacy and Security in KYC » Hcode's offical Blog"
 ogDescription: "With blockchain in KYC, data is no longer stored in silos but distributed across secure nodes, making tampering nearly impossible."
 categories: ["Blockchain Technology"]
@@ -11,7 +11,7 @@ tags: []
 
 ## How Blockchain Enhances Privacy and Security in KYC
 
-![](/assets/blog/2024/12/a-futuristic-and-minimalist-image-with-a_jBd93ErORxCM3TVscPs3Kw_7_fTPrOsQDGvpeXXKszKlQ.jpeg)
+![](/assets/blog/2024/12/a-futuristic-and-minimalist-image-with-a_jBd93ErORxCM3TVscPs3Kw_7_fTPrOsQDGvpeXXKszKlQ.webp)
 
 Handling KYC (Know Your Customer) processes often feels like balancing two equally critical goals: ensuring regulatory compliance and safeguarding user privacy. The process is essential for financial institutions and businesses, but it’s no secret that traditional KYC systems are plagued with inefficiencies, data breaches, and high costs.
 
@@ -41,7 +41,7 @@ Before diving into how blockchain enhances KYC, it’s important to understand w
 
 ### **How Blockchain Addresses KYC Privacy and Security Concerns**
 
-![](/assets/blog/2024/12/a-minimalist-and-futuristic-image-with-a_jiCVUPRdQ3mJDs1lqAqL0A_-bBB3N0nS4OLJrT1LF36aA.jpeg)
+![](/assets/blog/2024/12/a-minimalist-and-futuristic-image-with-a_jiCVUPRdQ3mJDs1lqAqL0A_-bBB3N0nS4OLJrT1LF36aA.webp)
 
 Blockchain provides several key solutions to the challenges faced by traditional KYC systems, offering a more secure, efficient, and privacy-conscious alternative. Here’s how blockchain improves privacy and security:
 

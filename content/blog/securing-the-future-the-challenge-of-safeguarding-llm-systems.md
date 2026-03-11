@@ -2,7 +2,7 @@
 title: "Securing the Future: The Challenge of Safeguarding LLM Systems"
 date: "2024-12-05"
 excerpt: "Securing the Future: The Challenge of Safeguarding LLM Systems   […]"
-featuredImage: "/assets/blog/2024/12/a-futuristic-digital-landscape-showing-a-complex-n-AukZgrpHR22EZinb5Sw6Sw-xz4WzQ4DSceT9oEZfJ8dCA.jpeg"
+featuredImage: "/assets/blog/2024/12/a-futuristic-digital-landscape-showing-a-complex-n-AukZgrpHR22EZinb5Sw6Sw-xz4WzQ4DSceT9oEZfJ8dCA.webp"
 ogTitle: "Securing the Future: The Challenge of Safeguarding LLM Systems » Hcode's offical Blog"
 ogDescription: "One of the most significant risks associated with LLM systems comes from prompt injections. Unlike traditional flaws that can be patched."
 categories: ["cybersecurity"]
@@ -12,7 +12,7 @@ tags: []
 ## Securing the Future:  
 The Challenge of Safeguarding LLM Systems
 
-![a-futuristic-digital-landscape-showing-a-complex.](/assets/blog/2024/12/a-futuristic-digital-landscape-showing-a-complex-n-AukZgrpHR22EZinb5Sw6Sw-xz4WzQ4DSceT9oEZfJ8dCA.jpeg)
+![a-futuristic-digital-landscape-showing-a-complex.](/assets/blog/2024/12/a-futuristic-digital-landscape-showing-a-complex-n-AukZgrpHR22EZinb5Sw6Sw-xz4WzQ4DSceT9oEZfJ8dCA.webp)
 
 Large Language Models (LLMs) are redefining how we interact with technology, powering applications from customer support to healthcare solutions. But with great power comes great responsibility—and significant security risks. It’s easy to see the immense potential of LLMs, but it’s equally crucial to reflect on their vulnerabilities, and how we can ensure their safe deployment.
 
@@ -36,7 +36,7 @@ Still, the inherent simplicity of the LLM does not mean we can ignore the potent
 
 ### The Challenge of Prompt Injections: Unavoidable Risks
 
-![](/assets/blog/2024/12/a-minimalistic-illustration-of-a-large-language-mo-woJctZR_SAWNXRpm-Lpe5w-xfRJTxovQGum8XXbi390-Q.jpeg)
+![](/assets/blog/2024/12/a-minimalistic-illustration-of-a-large-language-mo-woJctZR_SAWNXRpm-Lpe5w-xfRJTxovQGum8XXbi390-Q.webp)
 
 One of the most significant risks associated with LLM systems comes from prompt injections. Unlike traditional security flaws that can be patched, prompt injections are a fundamental challenge. 
 

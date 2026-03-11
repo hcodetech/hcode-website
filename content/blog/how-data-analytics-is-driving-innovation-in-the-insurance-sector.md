@@ -2,7 +2,7 @@
 title: "How Data Analytics is Driving Innovation in the Insurance Sector"
 date: "2024-08-09"
 excerpt: "How Data Analytics is Driving Innovation in the Insurance Sector […]"
-featuredImage: "/assets/blog/2024/08/businessman-holding-tablet-with-statistical-data-scaled.jpg"
+featuredImage: "/assets/blog/2024/08/businessman-holding-tablet-with-statistical-data-scaled.webp"
 ogTitle: "How Data Analytics is Driving Innovation in the Insurance Sector » Hcode's offical Blog"
 ogDescription: "Data analyticsaddress the challenges of limited customer insight and reliance on historical data in the insurance sector."
 categories: ["Artificial Intelligence (AI)"]
@@ -11,7 +11,7 @@ tags: []
 
 ## How Data Analytics is Driving Innovation in the Insurance Sector
 
-![Business partners discussing documents at meeting](/assets/blog/2024/08/businessman-holding-tablet-with-statistical-data.jpg)
+![Business partners discussing documents at meeting](/assets/blog/2024/08/businessman-holding-tablet-with-statistical-data.webp)
 
 The insurance industry, traditionally viewed as conservative and risk-averse, is undergoing a profound transformation driven by the adoption of data analytics. This shift is not only reshaping how insurance companies operate but also enhancing their ability to offer more personalized, efficient, and proactive services to customers. Here’s an in-depth look at how data analytics is fueling innovation in the insurance sector.
 

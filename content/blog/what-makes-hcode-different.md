@@ -2,7 +2,7 @@
 title: "What Makes HCode Different?"
 date: "2025-07-22"
 excerpt: "What Makes HCode Different?     Many people and clients […]"
-featuredImage: "/assets/blog/2025/07/visuals-of-react-native-blog-.jpg"
+featuredImage: "/assets/blog/2025/07/visuals-of-react-native-blog-.webp"
 ogTitle: "What Makes HCode Different? » Hcode's offical Blog"
 ogDescription: "At HCode, we build better teams through a culture of continuous learning — from role shadowing and peer reviews to design discussions that teach as much as they decide."
 categories: ["HCode"]
@@ -11,7 +11,7 @@ tags: ["Hcode"]
 
 ## **What Makes HCode Different?**
 
-![HCode's picture ](/assets/blog/2025/07/visuals-of-react-native-blog-.jpg)
+![HCode's picture ](/assets/blog/2025/07/visuals-of-react-native-blog-.webp)
 
 Many people and clients often ask: What’s different about working with HCode? And it’s a fair question — because they’re not just looking for the tech stack or capabilities.  
 They want to understand the culture, the working rhythm, and how we treat our teams. They want to know our mindset, how we stay consistent, and how we work together.
@@ -28,7 +28,7 @@ Unlike large outsourcing firms, HCode works with lean, responsive, embedded pods
 
 ### One of the Hardest Things to Build Remotely is Trust. 
 
-![man shaking hands ](/assets/blog/2025/07/a-modern-flat-illustration-depicting-two_2vEkWr6iTvSPlEc-z_lFvQ_ec46CItySTmxzXSPPYse0g.jpeg)
+![man shaking hands ](/assets/blog/2025/07/a-modern-flat-illustration-depicting-two_2vEkWr6iTvSPlEc-z_lFvQ_ec46CItySTmxzXSPPYse0g.webp)
 
 We do it by staying transparent — all the time. The way we work, and the principles we follow, are rooted in honesty and consistency. Clients don’t just work with us — they grow with us.
 

@@ -2,7 +2,7 @@
 title: "Streamlined Push Processing: How GitHub Improved Developer Workflows"
 date: "2024-07-03"
 excerpt: "Streamlined Push Processing: How GitHub Improved Developer Workflows   Introduction: […]"
-featuredImage: "/assets/blog/2024/07/GitHub-Status-scaled.jpg"
+featuredImage: "/assets/blog/2024/07/GitHub-Status-scaled.webp"
 ogTitle: "Streamlined Push Processing: How GitHub Improved Developer Workflows » Hcode's offical Blog"
 ogDescription: "Discover GitHub's revamped push processing and status update, enhancing developer workflows with improved reliability and reduced latency. #GitHubStatus"
 categories: ["Github"]
@@ -11,7 +11,7 @@ tags: ["GitHub features", "GitHub Status"]
 
 # Streamlined Push Processing: How GitHub Improved Developer Workflows
 
-![](/assets/blog/2024/07/GitHub-Status.jpg)
+![](/assets/blog/2024/07/GitHub-Status.webp)
 
 ## Introduction:
 
@@ -33,7 +33,7 @@ Behind the scenes, GitHub manages over 60 processes across 20 services to handle
 
 Previously, GitHub’s push request workflow involved a complex, monolithic process known as RepositoryPushJob. GitHub’s push request architecture resembled a long, sequential series of steps, as shown in the image below.
 
-![](/assets/blog/2024/07/push-processing-original.jpg)
+![](/assets/blog/2024/07/push-processing-original.webp)
 
 _Source: GitHub blog_
 
@@ -49,7 +49,7 @@ This monolithic approach led to several issues:
 
 GitHub tackled these issues by breaking down the monolithic push processing job into smaller, parallel processes.
 
-![push-processing-improved](/assets/blog/2024/07/push-processing-improved.jpg)
+![push-processing-improved](/assets/blog/2024/07/push-processing-improved.webp)
 
 _Source: GitHub blog_
 

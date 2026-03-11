@@ -2,7 +2,7 @@
 title: "MVP Development Process – HCode"
 date: "2024-02-25"
 excerpt: "MVP Development Process – HCode Have you ever poured your […]"
-featuredImage: "/assets/blog/2024/02/unnamed-7.jpg"
+featuredImage: "/assets/blog/2024/02/unnamed-7.webp"
 ogTitle: "MVP Development Process - HCode » Hcode's offical Blog"
 ogDescription: "This article aims to clarify the MVP development process and serve as a guide for entrepreneurs to develop a successful MVP."
 categories: ["MVP development Services"]
@@ -11,7 +11,7 @@ tags: []
 
 ## MVP Development Process – HCode
 
-![Image showing the development process](/assets/blog/2024/02/unnamed-7.jpg)
+![Image showing the development process](/assets/blog/2024/02/unnamed-7.webp)
 
 Have you ever poured your heart and soul into a product, only to see the dream die before reaching a single customer? Many entrepreneurs face this harsh reality due to a fundamental misunderstanding: the Minimum Viable Product (MVP) is not just about launching quickly.
 
@@ -35,7 +35,7 @@ A great saying from the Bhagavad Gita which is also applicable while building an
 
 Once you make peace with that step on to build your MVP. The process starts with:
 
-![seven steps to MVP development process](/assets/blog/2024/02/unnamed.png)
+![seven steps to MVP development process](/assets/blog/2024/02/unnamed.webp)
 
 #### Defining Your Problem
 

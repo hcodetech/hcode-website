@@ -2,7 +2,7 @@
 title: "Kubernetes vs Docker: Not Competitors"
 date: "2024-05-18"
 excerpt: "Kubernetes vs Docker: Not Competitors If you are familiar with […]"
-featuredImage: "/assets/blog/2024/05/in-a-glass-container-many-toy-boats-that-looks-lik-zEPJy3hJS6ugnnqYGW-7Sg-exv3TH6fQq6HG2RzHx-yfg.jpeg"
+featuredImage: "/assets/blog/2024/05/in-a-glass-container-many-toy-boats-that-looks-lik-zEPJy3hJS6ugnnqYGW-7Sg-exv3TH6fQq6HG2RzHx-yfg.webp"
 ogTitle: "Kubernetes vs Docker: Not Competitors » Hcode's offical Blog"
 ogDescription: "Docker creates individual containers for simplified development. On the other hand Kubernetes helps in managing and automating deployments."
 categories: ["Tools and Technologies"]
@@ -19,7 +19,7 @@ Docker, an open-source containerization platform, empowers you to package your a
 
 ~ [Getting Started Guide to Docker](https://docs.docker.com/get-started/)
 
-![](/assets/blog/2024/05/APP-1-1.png)
+![](/assets/blog/2024/05/APP-1-1.webp)
 
 ## Docker Advantages
 
@@ -46,7 +46,7 @@ As your business scales, your applications need to keep pace. Docker’s contain
 Kubernetes, or k8s, is an open-source orchestration platform specifically designed to automate the management of containerized workloads and applications. While Docker excels at building containerized applications, managing them at scale requires a conductor. Kubernetes comes as a solution that simplifies managing and scaling your containerized infrastructure.  
 ~ [Kubernetes Tutorials](https://kubernetes.io/docs/tutorials/)
 
-![](/assets/blog/2024/05/components-of-kubernetes-1.jpg)
+![](/assets/blog/2024/05/components-of-kubernetes-1.webp)
 
 ## Kubernetes Advantages
 
@@ -74,7 +74,7 @@ The idea of “Kubernetes vs Docker” can be misleading. Both Docker and Kubern
 
 Docker excels at creating individual containers, offering a simple and efficient way to develop, test, and run them. On the other hand Kubernetes steps in for managing and automating deployments. It orchestrates containerized applications across clusters, enabling features like scaling, self-healing, and automated rollouts.
 
-![](/assets/blog/2024/05/Screenshot-2024-05-16-151356-1.png)
+![](/assets/blog/2024/05/Screenshot-2024-05-16-151356-1.webp)
 
 Similar to Git and Github, Docker provides the foundation, while Kubernetes offers advanced capabilities like automated deployments. Together, they streamline the containerization process, from development to deployment.
 
@@ -84,7 +84,7 @@ Docker serves as a reliable tool for managing applications until the need arises
 
 The real question should be Docker Swarm vs Kubernetes because it makes much more sense. Container orchestration tools like [Docker Swarm](https://docs.docker.com/engine/swarm/swarm-tutorial/) and Kubernetes help manage and scale containerized applications effectively with each having its own strengths, weaknesses, and specific focus.
 
-![](/assets/blog/2024/05/Screenshot-2024-05-16-151655-1.png)
+![](/assets/blog/2024/05/Screenshot-2024-05-16-151655-1.webp)
 
 For beginners or simpler deployments, Docker Swarm offers a user-friendly way to manage containers at scale. For complex projects or those needing advanced features like self-healing and high availability, Kubernetes provides unmatched power and flexibility. K3s is a lightweight Kubernetes option for those seeking a balance between complexity and functionality.
 

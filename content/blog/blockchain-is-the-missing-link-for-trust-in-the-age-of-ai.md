@@ -2,7 +2,7 @@
 title: "Blockchain is the ‘missing link’ for trust in the age of AI"
 date: "2024-07-01"
 excerpt: "Blockchain: The Key to Trust in the AI Era   […]"
-featuredImage: "/assets/blog/2024/07/Untitled-design-17.png"
+featuredImage: "/assets/blog/2024/07/Untitled-design-17.webp"
 ogTitle: "Blockchain is the ‘missing link’ for trust in the age of AI"
 ogDescription: "Discover how Blockchain tech secures AI, ensuring trust in digital interactions. Discover its role in data integrity, transparency, and ownership."
 categories: ["Blockchain Technology"]
@@ -11,7 +11,7 @@ tags: ["blockchain tech"]
 
 # Blockchain: The Key to Trust in the AI Era
 
-![](/assets/blog/2024/07/Untitled-design-17-1.png)
+![](/assets/blog/2024/07/Untitled-design-17-1.webp)
 
 The rapid evolution of technology constantly surprises even those who create it. From personalized shopping experiences to digital assistants, these advancements are transforming our interactions. However, these powerful tools also come with significant challenges. Today, we’ll explore solutions for a particularly potent technology – Artificial Intelligence (AI) – and how another emerging technology, [blockchain tech](https://hcode.tech/our-services/blockchain-development-services), can bridge the trust gap in the age of AI.
 

@@ -2,7 +2,7 @@
 title: "Optimizing Meetings with Fireflies.ai"
 date: "2023-10-13"
 excerpt: "Optimizing Meetings with Fireflies.ai Meetings have become time-consuming challenges, with […]"
-featuredImage: "/assets/blog/2023/10/5340737-e1697196278183.jpg"
+featuredImage: "/assets/blog/2023/10/5340737-e1697196278183.webp"
 ogTitle: "Optimizing Meetings with Fireflies.ai » Hcode's offical Blog"
 ogDescription: "Boost productivity with Fireflies.ai: Optimize your meetings, transcribe conversations, and never miss important details. Try it now!"
 categories: ["Artificial Intelligence (AI)"]
@@ -11,7 +11,7 @@ tags: ["Fireflies.ai", "Hcode", "Optimizing Meetings", "Optimizing Meetings with
 
 # Optimizing Meetings with Fireflies.ai
 
-![Employees engaged in a meeting](/assets/blog/2023/10/5340737-e1697196278183.jpg)
+![Employees engaged in a meeting](/assets/blog/2023/10/5340737-e1697196278183.webp)
 
 Meetings have become time-consuming challenges, with excessive preparation, unfocused discussions, and a lack of follow-up.
 
@@ -25,7 +25,7 @@ Can AI help? Let’s explore the capabilities of Fireflies, an AI-powered platfo
 
 Sarah is a determined professional, but she struggles with the daily chaos of meetings. She spends hours scheduling meetings, which are often unproductive and lead to missed information, errors, and missed deadlines.
 
-![](/assets/blog/2023/10/Screenshot-2023-10-10-at-5.52.08-PM.png)
+![](/assets/blog/2023/10/Screenshot-2023-10-10-at-5.52.08-PM.webp)
 
 ## How Fireflies Can Help?
 
@@ -35,11 +35,11 @@ Fireflies can help Sarah and other professionals optimize their meetings and imp
 
 Alex is a busy professional who has discovered the power of Fireflies to make his meetings more productive and less time-consuming.
 
-![](/assets/blog/2023/10/Screenshot-2023-10-11-at-12.03.04-PM.png)
+![](/assets/blog/2023/10/Screenshot-2023-10-11-at-12.03.04-PM.webp)
 
 ## Setting Up Fireflies
 
-![](/assets/blog/2023/10/Screenshot-2023-10-11-at-1.04.53-PM.png)
+![](/assets/blog/2023/10/Screenshot-2023-10-11-at-1.04.53-PM.webp)
 
 ## Maximizing Fireflies Potential
 

@@ -2,7 +2,7 @@
 title: "Acko Insurance was able to benefit from PayTunes Audio DSP"
 date: "2023-01-20"
 excerpt: "Acko Insurance was able to benefit from PayTunes Audio DSP […]"
-featuredImage: "/assets/blog/2023/01/Frame-1-3.png"
+featuredImage: "/assets/blog/2023/01/Frame-1-3.webp"
 ogTitle: "Acko Insurance was able to benefit from PayTunes Audio DSP » Hcode's offical Blog"
 ogDescription: "Acko Insurance was able to benefit from PayTunes Audio DSP […]"
 categories: ["Uncategorized"]
@@ -11,7 +11,7 @@ tags: []
 
 ### **Acko Insurance was able to benefit from PayTunes Audio DSP**
 
-![](/assets/blog/2023/01/Frame-1-3.png)
+![](/assets/blog/2023/01/Frame-1-3.webp)
 
 Acko Insurance, a leading insurance company in India, faced difficulties reaching their target  
 audience of 28-45 year old male and female residents of Jaipur. To overcome this obstacle,  

@@ -2,7 +2,7 @@
 title: "3-Year celebration in Thailand"
 date: "2022-08-22"
 excerpt: "3-YEAR CELEBRATION IN THAILAND News and Highlights:   3-Year Boom […]"
-featuredImage: "/assets/blog/2022/08/Mask-group.png"
+featuredImage: "/assets/blog/2022/08/Mask-group.webp"
 ogTitle: "3-Year celebration in Thailand » Hcode's offical Blog"
 ogDescription: "3-YEAR CELEBRATION IN THAILAND News and Highlights:   3-Year Boom […]"
 categories: ["Uncategorized"]
@@ -17,19 +17,19 @@ News and Highlights:
 
 HCode completed 3 years of growth. To celebrate with the people who made it possible, the company took the team to Phuket in Thailand on a fully sponsored 4-day vacation.
 
-![](/assets/blog/2022/10/thailnad.jpeg)
+![](/assets/blog/2022/10/thailnad.webp)
 
 **HCode opens office in NY**
 
 HCode has gone global in its presence by starting an associate company, [Pollen Studios](https://pollens.xyz/), in Manhattan, New York. It is a venture studio building at the intersection of culture and emerging technologies.
 
-![](/assets/blog/2022/10/pollen.png)
+![](/assets/blog/2022/10/pollen.webp)
 
 **New offices opening in Noida and Delhi**
 
 Expanding its presence, HCode’s 2 new development offices are going to come up soon in Sec’62 Noida and Dwarka, Sec-12, Delhi.
 
-![](/assets/blog/2022/10/ccce599a-df0d-102d-43b0-2ef646812a47.png)
+![](/assets/blog/2022/10/ccce599a-df0d-102d-43b0-2ef646812a47.webp)
 
 * * *
 
@@ -41,13 +41,13 @@ Meet the new addition to our senior management team.
 
 **Joins as Chief Business Officer, HCode** 
 
-![](/assets/blog/2022/10/harshit.jpeg)
+![](/assets/blog/2022/10/harshit.webp)
 
 [Ha](https://www.linkedin.com/in/gargharshit/)[rshit](https://www.linkedin.com/in/gargharshit/)is a 2014 gold medalist of NIT-Kurukshetra, and an MBA from NITIE-Mumbai. He has 6+ years of corporate experience, including his last role at the CEO office at Godfrey Phillips.
 
 * * *
 
-![](/assets/blog/2022/10/celeb.png)
+![](/assets/blog/2022/10/celeb.webp)
 
 * * *
 

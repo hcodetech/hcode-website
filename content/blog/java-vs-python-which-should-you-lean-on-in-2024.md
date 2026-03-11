@@ -2,7 +2,7 @@
 title: "Java vs Python which should you lean on in 2024?"
 date: "2024-05-08"
 excerpt: "Java vs Python which should you lean on in 2024? […]"
-featuredImage: "/assets/blog/2024/05/unnamed-12-1.jpg"
+featuredImage: "/assets/blog/2024/05/unnamed-12-1.webp"
 ogTitle: "Java vs Python which should you lean on in 2024? » Hcode's offical Blog"
 ogDescription: "Java, statically typed and compiled, excels in large applications. Python, dynamically typed and interpreted, prioritizes rapid development."
 categories: ["Web development", "Web development"]
@@ -11,7 +11,7 @@ tags: []
 
 ## Java vs Python which should you lean on in 2024?
 
-![](/assets/blog/2024/05/unnamed-12.jpg)
+![](/assets/blog/2024/05/unnamed-12.webp)
 
 Which programming language is more relevant in 2024? Such queries arise when an individual wants to choose the exclusive language for their career. Or when making a crucial business decision, and needs clarification about which language suits them best.
 
@@ -19,7 +19,7 @@ Both these queries are inter-connected. Businesses use language that is aligned 
 
 When we have such a comprehensive comparison between Java and Python, both prominent languages from the early 2000s, it needs a detailed understanding. As [Stastica](https://www.statista.com/statistics/793628/worldwide-developer-survey-most-used-languages/) suggests, Java was the most popular language until 2019, still in the top 5, whereas Python took the world by storm and is being improved most rapidly today.
 
-![](/assets/blog/2024/05/unnamed-4.png)
+![](/assets/blog/2024/05/unnamed-4.webp)
 
 Both languages have their use cases, advantages, and industrial needs but before we conclude which one you should lean on in 2024, let us take a brief look at Python and Java.
 
@@ -143,7 +143,7 @@ Python’s clear syntax makes it easier to learn and write code quickly, while J
 
 Java is a popular language for enterprise and big data applications, web development (backend), and Android development. Python is commonly used for data science, machine learning, automation, scripting, and web development (backend and full-stack).
 
-![](/assets/blog/2024/05/unnamed-11.jpg)
+![](/assets/blog/2024/05/unnamed-11.webp)
 
 ### Java vs Python: Which is a better choice
 

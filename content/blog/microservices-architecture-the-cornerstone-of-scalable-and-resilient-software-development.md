@@ -2,7 +2,7 @@
 title: "Microservices Architecture: The Cornerstone of Scalable and Resilient Software Development"
 date: "2024-10-15"
 excerpt: "Microservices Architecture: Comprehensive Overview     As digital transformation continues […]"
-featuredImage: "/assets/blog/2024/10/a-photo-of-a-whiteboard-with-the-text-microservice-ykGdeuEOSo6_JsH0nltL3Q-45y4kPVqQ6e0YZFy8-MBHw.jpeg"
+featuredImage: "/assets/blog/2024/10/a-photo-of-a-whiteboard-with-the-text-microservice-ykGdeuEOSo6_JsH0nltL3Q-45y4kPVqQ6e0YZFy8-MBHw.webp"
 ogTitle: "Microservices Architecture: The Cornerstone of Scalable and Resilient Software Development » Hcode's offical Blog"
 ogDescription: "Microservices architecture structures an application into small, independent services, each handling a specific business function."
 categories: ["Web development"]
@@ -11,7 +11,7 @@ tags: []
 
 ## Microservices Architecture: Comprehensive Overview
 
-![](/assets/blog/2024/10/a-photo-of-a-whiteboard-with-the-text-microservice-ykGdeuEOSo6_JsH0nltL3Q-45y4kPVqQ6e0YZFy8-MBHw.jpeg)
+![](/assets/blog/2024/10/a-photo-of-a-whiteboard-with-the-text-microservice-ykGdeuEOSo6_JsH0nltL3Q-45y4kPVqQ6e0YZFy8-MBHw.webp)
 
 As digital transformation continues to reshape industries, businesses are finding themselves under increasing pressure to innovate faster and deliver services at scale. **Microservices architecture** has emerged as a vital solution, enabling organizations to build flexible, scalable, and maintainable applications by breaking down monolithic systems into independent services.
 

@@ -2,7 +2,7 @@
 title: "How To Integrate AI in A Mobile App?"
 date: "2024-02-13"
 excerpt: "How To Integrate AI in A Mobile App? The power […]"
-featuredImage: "/assets/blog/2024/02/people-generating-images-using-artificial-intelligence-laptop.jpg"
+featuredImage: "/assets/blog/2024/02/people-generating-images-using-artificial-intelligence-laptop.webp"
 ogTitle: "How To Integrate AI in A Mobile App? » Hcode's offical Blog"
 ogDescription: "To integrate AI , you can access them through an Application Programming Interface (API). Then choose the best fit for your APP integration."
 categories: ["Artificial Intelligence (AI)"]
@@ -11,7 +11,7 @@ tags: []
 
 ## How To Integrate AI in A Mobile App?
 
-![AI in app development](/assets/blog/2024/02/people-generating-images-using-artificial-intelligence-laptop.jpg)
+![AI in app development](/assets/blog/2024/02/people-generating-images-using-artificial-intelligence-laptop.webp)
 
 The power of Artificial Intelligence (AI) is reshaping the digital landscape, creating significant impacts within the online sphere. [As noted by Gartner](https://www.gartner.com/en/articles/demand-grows-for-intelligent-applications-powered-by-ai), by the year 2026, a projected 30% of newly developed applications will integrate personalized interfaces powered by AI, marking a substantial increase from the current 5%.
 
@@ -27,7 +27,7 @@ The undeniable impact of Artificial Intelligence (AI) on customer engagement is 
 
 Industries like healthcare, fintech, and logistics are rapidly adopting AI due to its ability to enhance productivity, streamline operations, and ultimately reduce costs.
 
-[![Industries that Benefit from Artificial Intelligence Mobile App Development](/assets/blog/2024/02/Screenshot-2024-02-13-at-12.19.56-PM.png)](https://www.addevice.io/blog/how-to-build-an-ai-app)
+[![Industries that Benefit from Artificial Intelligence Mobile App Development](/assets/blog/2024/02/Screenshot-2024-02-13-at-12.19.56-PM.webp)](https://www.addevice.io/blog/how-to-build-an-ai-app)
 
 Let us delve into specific domain applications:
 
@@ -169,7 +169,7 @@ Also Read:** [How to Seamlessly Integrate ChatGPT API into Your Website?](https:
 
 Now you know if your business can leap ahead with AI at its back or without it. Here is how you can integrate AI if you decide to use it for your business application.
 
-![Flochart demonstrating how to integrate AI in a mobile app](/assets/blog/2024/02/How-To-Integrate-AI-in-A-Mobile-App-2.png)
+![Flochart demonstrating how to integrate AI in a mobile app](/assets/blog/2024/02/How-To-Integrate-AI-in-A-Mobile-App-2.webp)
 
 #### Understand Your Goals
 

@@ -2,7 +2,7 @@
 title: "How AI is Used in Fintech 2024: Revolutionizing Financial Services with Artificial Intelligence"
 date: "2024-01-23"
 excerpt: "How AI is Used in Fintech 2024: Revolutionizing Finance with […]"
-featuredImage: "/assets/blog/2024/01/pexels-anna-shvets-5614110-scaled-e1705991162803.jpg"
+featuredImage: "/assets/blog/2024/01/pexels-anna-shvets-5614110-scaled-e1705991162803.webp"
 ogTitle: "How AI is Used in Fintech 2024 » Hcode's offical Blog"
 ogDescription: "How AI is Used in Fintech - Dive into Fintech's AI revolution in 2024. Learn how AI boosts efficiency, secures transactions, and reshapes finance. Partner with HCode for expert integration."
 categories: ["Artificial Intelligence (AI)"]
@@ -11,7 +11,7 @@ tags: ["AI in Fintech"]
 
 ## How AI is Used in Fintech 2024: Revolutionizing Finance with AI
 
-![Robot hand holding credit card](/assets/blog/2024/01/pexels-anna-shvets-5614110-scaled-e1705991162803.jpg)
+![Robot hand holding credit card](/assets/blog/2024/01/pexels-anna-shvets-5614110-scaled-e1705991162803.webp)
 
 Welcome to the intersection of finance and technology – the dynamic realm known as Fintech. Fintech encapsulates the transformative synergy that arises when smart software converges with financial processes and encompasses innovations like Internet banking, online payment portals, and advanced data analysis tools. In this rapidly evolving landscape, Artificial Intelligence (AI) takes center stage. Beyond being a technological breakthrough, AI is a catalyst for change in Fintech. It trims operational costs, simplifies capital management, and fortifies transaction security.
 
@@ -73,7 +73,7 @@ Transparency is paramount in building trust with customers. AI models leave a cl
 
 While AI has brought efficiency and innovation to the FinTech sector, it comes with its set of challenges:
 
-![Challenges of Implementing AI in Fintech.](/assets/blog/2024/01/Untitled-design-4.png)
+![Challenges of Implementing AI in Fintech.](/assets/blog/2024/01/Untitled-design-4.webp)
 
 ### Privacy and Data Protection
 

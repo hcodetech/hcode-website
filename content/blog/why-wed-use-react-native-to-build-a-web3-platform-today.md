@@ -2,7 +2,7 @@
 title: "Why We’d Use React Native to Build a Web3 Platform Today"
 date: "2025-07-03"
 excerpt: "Why We’d Use React Native to Build a Web3 Platform […]"
-featuredImage: "/assets/blog/2025/07/Untitled-design-7.png"
+featuredImage: "/assets/blog/2025/07/Untitled-design-7.webp"
 ogTitle: "Why We’d Use React Native to Build a Web3 Platform Today » Hcode's offical Blog"
 ogDescription: "Why React Native is perfect for building fast, mobile-first Web3 platforms with seamless blockchain integration."
 categories: ["Tools and Technologies", "Web development"]
@@ -11,7 +11,7 @@ tags: ["React Native"]
 
 ### **Why We’d Use React Native to Build a Web3 Platform Today**
 
-![Painting react native on floor](/assets/blog/2025/07/Untitled-design-7.png)
+![Painting react native on floor](/assets/blog/2025/07/Untitled-design-7.webp)
 
 In 2023, we collaborated with Magnetiq, a New York-based Web3 startup, to bring an ambitious vision to life. The platform aimed to empower brands with NFT-based memberships, digital collectibles, and token-driven experiences for their communities.
 
@@ -45,7 +45,7 @@ Compared with traditional mobile development, which often requires separate team
 
 #### **Bridging React Native and Web3**
 
-![Web3 stack in a React native app](/assets/blog/2025/07/WalletConnect-Wallet-Login-4.png)
+![Web3 stack in a React native app](/assets/blog/2025/07/WalletConnect-Wallet-Login-4.webp)
 
 React Native is now a legitimate foundation for full-fledged decentralized applications. The toolkit now includes products allowing for direct connections between blockchain and mobile experience.
 

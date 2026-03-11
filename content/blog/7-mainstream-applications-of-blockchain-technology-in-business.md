@@ -2,7 +2,7 @@
 title: "7 Mainstream Applications of Blockchain Technology in Business"
 date: "2024-03-14"
 excerpt: "Applications of Blockchain Technology in Business Blockchain technology has gone […]"
-featuredImage: "/assets/blog/2024/03/blockchain-3055701_1280.jpg"
+featuredImage: "/assets/blog/2024/03/blockchain-3055701_1280.webp"
 ogTitle: "7 Mainstream Applications of Blockchain Technology in Business » Hcode's offical Blog"
 ogDescription: "Enterprise blockchain is emerging as a powerful tool for businesses, offering a wide range of applications."
 categories: ["Blockchain Technology"]
@@ -11,7 +11,7 @@ tags: []
 
 ## Applications of Blockchain Technology in Business
 
-![a professional drawing blockchain network on the screen](/assets/blog/2024/03/blockchain-3055701_1280.jpg)
+![a professional drawing blockchain network on the screen](/assets/blog/2024/03/blockchain-3055701_1280.webp)
 
 Blockchain technology has gone beyond its original association with cryptocurrency and has become a powerful tool for businesses across various sectors. Its inherent security and transparency offer an effective solution for safeguarding data and streamlining transactions.
 
@@ -29,7 +29,7 @@ Moreover, public blockchains operate in a decentralized manner, overseen by a di
 
 ### Mainstream Application of Blockchain Technology in Business
 
-![blockchain network over the city's landscape](/assets/blog/2024/03/blockchain_technology_connecting_enterprise_big_-e1710415342391.jpg)
+![blockchain network over the city's landscape](/assets/blog/2024/03/blockchain_technology_connecting_enterprise_big_-e1710415342391.webp)
 
 While cryptocurrency has dominated the conversation surrounding blockchain technology for the past decade, recent years have witnessed a significant shift. Enterprise blockchain is emerging as a powerful tool for businesses, offering a wide range of applications. Here, we explore seven key areas where enterprise blockchain is transforming the way companies operate.
 

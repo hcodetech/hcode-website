@@ -2,7 +2,7 @@
 title: "How the Public Health Sector is Making Advances by Using AI in Healthcare"
 date: "2024-01-18"
 excerpt: "How the Public Health Sector is Making Advances by Using […]"
-featuredImage: "/assets/blog/2024/01/Screenshot-2024-01-18-at-1.58.14-PM.png"
+featuredImage: "/assets/blog/2024/01/Screenshot-2024-01-18-at-1.58.14-PM.webp"
 ogTitle: "How the Public Health Sector is Making Advances by Using AI in Healthcare » Hcode's offical Blog"
 ogDescription: "AI transforms public health, revolutionizes healthcare. Discover challenges, benefits. Choose HCode for seamless AI integration services."
 categories: ["Artificial Intelligence (AI)"]
@@ -11,13 +11,13 @@ tags: []
 
 ## How the Public Health Sector is Making Advances by Using AI in Healthcare
 
-![Heath care professional using AI tools](/assets/blog/2024/01/Screenshot-2024-01-18-at-1.58.14-PM.png)
+![Heath care professional using AI tools](/assets/blog/2024/01/Screenshot-2024-01-18-at-1.58.14-PM.webp)
 
 Imagine stepping into a hospital where AI instantly analyzes your symptoms, a friendly virtual assistant guides you through registration, and robotic surgeons operate with pinpoint precision. Picture an optimized healthcare facility addressing staff shortages, delays, and diagnostic errors, making significant strides in medical processes. This is not science fiction. It is the near future of healthcare, fueled by artificial intelligence (AI). The public health sector, spurred by the pandemic challenges, has embraced AI like never before, making remarkable strides in patient care, efficiency, and life-saving interventions.
 
 According to the [Statista report](https://www.statista.com/statistics/1334826/ai-in-healthcare-market-size-worldwide/), the AI healthcare market is poised for explosive growth, expected to surge 37% annually until 2030.
 
-![Statista Report](/assets/blog/2024/01/Screenshot-2024-01-18-at-1.58.28-PM.png)
+![Statista Report](/assets/blog/2024/01/Screenshot-2024-01-18-at-1.58.28-PM.webp)
 
 This surge reflects the potential of AI in areas like diagnostics, chronic disease management, and streamlining workflows. Despite this impressive growth, only one-fifth of healthcare organizations worldwide have adopted AI, showcasing vast potential for expansion. This article explores the promising potential of AI in automating healthcare tasks, alongside the hurdles to its swift adoption.
 
@@ -25,7 +25,7 @@ This surge reflects the potential of AI in areas like diagnostics, chronic disea
 
 We are still in the early stages of comprehending the full potential of AI, particularly in healthcare, and how it can impact personalization. Industry experts believe that AI will significantly contribute to the automation of healthcare workflows, diagnostics, care delivery, chronic care management, and support. However, this will begin with [generative AI](https://www.mckinsey.com/industries/healthcare/our-insights/transforming-healthcare-with-ai#:~:text=We%20are%20in,pathology%2C%20and%20ophthalmology.) improving the existing management system.
 
-![](/assets/blog/2024/01/Screenshot-2024-01-18-at-2.07.12-PM.png)
+![](/assets/blog/2024/01/Screenshot-2024-01-18-at-2.07.12-PM.webp)
 
 ### Automating Administrative Tasks
 
@@ -47,7 +47,7 @@ AI-powered wearables continuously monitor vital signs and send alerts, empowerin
 
 Different forms of Artificial Intelligence can aid in resolving multiple issues in the healthcare system. Let’s discuss them one by one.
 
-![Types of AI in healthcare](/assets/blog/2024/01/Screenshot-2024-01-18-at-2.07.24-PM.png)
+![Types of AI in healthcare](/assets/blog/2024/01/Screenshot-2024-01-18-at-2.07.24-PM.webp)
 
 ### Machine Learning in Healthcare
 

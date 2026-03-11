@@ -21,7 +21,7 @@ Rather than compete with the metros on their terms, we chose a different path: c
 
 Our team today reflects that vision. It includes people from IITs, NITs, and leading global companies, people who bring top-tier expertise and exposure into our work. In return, they find a culture built on respect, balance, and the freedom to grow without the churn of big-city job-hopping.
 
-![HCode office](/assets/blog/2025/08/visuals-of-react-native-blog-.jpg)
+![HCode office](/assets/blog/2025/08/visuals-of-react-native-blog-.webp)
 
 For the team at HCode, one of the most rewarding parts of this journey has been seeing professionals thrive who might otherwise have missed out on such opportunities whether because they wanted to stay in a smaller city, or because being close to family mattered more than moving to a metro. Creating space for those choices, without forcing people to compromise on their careers, has become central to what HCode stands for.
 

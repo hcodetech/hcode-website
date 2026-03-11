@@ -2,7 +2,7 @@
 title: "What is Single Page Application?"
 date: "2025-09-12"
 excerpt: "What is SPA? Single Page Application     What if […]"
-featuredImage: "/assets/blog/2025/09/Untitled-design-35.png"
+featuredImage: "/assets/blog/2025/09/Untitled-design-35.webp"
 ogTitle: "What is Single Page Application? » Hcode's offical Blog"
 ogDescription: "Learn what Single Page Applications (SPA s) are, their benefits, real-world uses, and how they differ from Multi-Page Apps (MPAs)."
 categories: ["Web development"]
@@ -13,7 +13,7 @@ tags: ["Single Page Application", "Web development"]
 
 ## **Single Page Application**
 
-![people working on SPA](/assets/blog/2025/09/Untitled-design-35.png)
+![people working on SPA](/assets/blog/2025/09/Untitled-design-35.webp)
 
 What if every click on Gmail meant waiting for the entire page to reload? What if Netflix refreshed every time you opened a new movie? Frustrating, and not the kind of experience users accept today. Modern apps feel instant not because of magic, but because of how they’re built.
 

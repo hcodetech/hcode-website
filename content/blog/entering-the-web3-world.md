@@ -2,14 +2,14 @@
 title: "ENTERING THE WEB3 WORLD"
 date: "2023-02-20"
 excerpt: "Welcome to the incredibly fascinating and complex world of Web3. […]"
-featuredImage: "/assets/blog/2023/02/Frame-1-2.png"
+featuredImage: "/assets/blog/2023/02/Frame-1-2.webp"
 ogTitle: "ENTERING THE WEB3 WORLD » Hcode's offical Blog"
 ogDescription: "Welcome to the incredibly fascinating and complex world of Web3. […]"
 categories: ["Uncategorized"]
 tags: []
 ---
 
-![](/assets/blog/2023/02/Frame-1-2.png)
+![](/assets/blog/2023/02/Frame-1-2.webp)
 
 Welcome to the incredibly fascinating and complex world of Web3. Here be a sphere of unknowns, but hand-in-hand we will try to uncover the layer of Web3. Or not. Only time will tell. Shall we?
 
@@ -57,7 +57,7 @@ Web3 makes the proliferation of cooperative governance structures for once-centr
 
 Predictions of what Web3 might look like at scale are just guesses, but some projects have grown pretty big. The Bored Ape Yacht Club (BAYC), NBA Top Shot, and the crypto gaming giant Dapper Labs have built large NFT communities. Clearinghouses such as Coinbase (for buying, selling, and storing cryptocurrency) and OpenSea (the digital marketplace for crypto collectibles and NFTs) have created Web3 on-ramps for people with little to no technical know-how
 
-[HCode](https://hcode.tech/) has built products in the Ethereum and Flow blockchain and has expertise in building complex projects which give great business value. HCode has worked on NFT projects for the art community, fundraising, and carbon offsetting.One such project is F3rn. HCode has built a Web app [F3rn](https://app.f3rn.xyz/discover?sortBy=Latest) an art-hosting platform for global artists. Artists find it difficult to showcase their art to the audience without losing the copyright while having control over the data. The app is built on lens protocol using Polygon blockchain. The app uses blockchain technology that empowers the creators to showcase their art in a completely different and innovative way and connect with their audience. In the future, creators will be able to leverage the commercial side of the art through the platform.![](/assets/blog/2023/02/fernlogo.png)
+[HCode](https://hcode.tech/) has built products in the Ethereum and Flow blockchain and has expertise in building complex projects which give great business value. HCode has worked on NFT projects for the art community, fundraising, and carbon offsetting.One such project is F3rn. HCode has built a Web app [F3rn](https://app.f3rn.xyz/discover?sortBy=Latest) an art-hosting platform for global artists. Artists find it difficult to showcase their art to the audience without losing the copyright while having control over the data. The app is built on lens protocol using Polygon blockchain. The app uses blockchain technology that empowers the creators to showcase their art in a completely different and innovative way and connect with their audience. In the future, creators will be able to leverage the commercial side of the art through the platform.![](/assets/blog/2023/02/fernlogo.webp)
 
 So many businesses are adopting Web3. We are only at the beginning of creating a better Web with Web3, but as we continue to improve the infrastructure that will support it, the future of the Web looks bright
 

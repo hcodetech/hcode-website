@@ -2,7 +2,7 @@
 title: "Travel Industry Transformation: The Importance of Customer-Centric Booking Platforms"
 date: "2024-07-31"
 excerpt: "Travel Industry Transformation: The Importance of Customer-Centric Booking Platforms Online […]"
-featuredImage: "/assets/blog/2024/07/view-hands-holding-smartphone-scaled.jpg"
+featuredImage: "/assets/blog/2024/07/view-hands-holding-smartphone-scaled.webp"
 ogTitle: "Travel Industry Transformation: The Importance of Customer-Centric Booking Platforms » Hcode's offical Blog"
 ogDescription: "Amidst this demographic shift in the travel industry, customer-centric booking platforms hold the key to unlocking future potential."
 categories: ["Web development"]
@@ -11,7 +11,7 @@ tags: ["Travel"]
 
 # Travel Industry Transformation: The Importance of Customer-Centric Booking Platforms
 
-![Travel booking app in mobile](/assets/blog/2024/07/view-hands-holding-smartphone.jpg)
+![Travel booking app in mobile](/assets/blog/2024/07/view-hands-holding-smartphone.webp)
 
 Online travel platforms have completely changed how people plan, research, and book their travel, with a growing preference for mobile bookings, especially among younger generations. Nearly 40% of travelers look for platforms that provide a connected trip experience that seamlessly integrates various aspects of a journey, including transportation, accommodations, activities, and services.
 

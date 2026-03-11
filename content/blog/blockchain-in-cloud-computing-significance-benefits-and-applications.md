@@ -2,7 +2,7 @@
 title: "Blockchain in Cloud Computing: Significance, Benefits, and Applications"
 date: "2024-03-27"
 excerpt: "Blockchain in Cloud Computing: Significance, Benefits, and Applications   As […]"
-featuredImage: "/assets/blog/2024/03/unnamed-1.jpg"
+featuredImage: "/assets/blog/2024/03/unnamed-1.webp"
 ogTitle: "Blockchain in Cloud Computing Significance, Benefits & Application"
 ogDescription: "Providing secure data sharing, decentralized storage, and data integrity are some of the application of blockchain in cloud computing."
 categories: ["Blockchain Technology"]
@@ -11,7 +11,7 @@ tags: []
 
 ## Blockchain in Cloud Computing: Significance, Benefits, and Applications
 
-![Cloud Download Icon Line Connection of Circuit Board](/assets/blog/2024/03/unnamed-1.jpg)
+![Cloud Download Icon Line Connection of Circuit Board](/assets/blog/2024/03/unnamed-1.webp)
 
 As data-driven industries across the globe continue to expand, the demand for cloud computing services remains prominent. With the evolution of the Internet, such as the Internet of Things (IoT), and the advent of Web 3, the need for secure data storage has never been more important. This requires a robust, scalable, and highly secure data computing system. Enter the computing of things (CoT), which faces persistent challenges in these respects. Fortunately, the introduction of Blockchain in cloud computing (bCoT) provides a solution that enhances the security, robustness, and scalability of CoT.
 

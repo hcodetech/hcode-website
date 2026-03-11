@@ -2,7 +2,7 @@
 title: "How to Seamlessly Integrate ChatGPT API into Your Website?"
 date: "2023-09-29"
 excerpt: "How to Seamlessly Integrate ChatGPT API into Your Website? The […]"
-featuredImage: "/assets/blog/2023/09/a-futuristic-digital-illustration-of-a-website-con-US66KXxMQOG4SMvgn4vfQg-OzwcvndTTyCPQOb-Yin04w.jpeg"
+featuredImage: "/assets/blog/2023/09/a-futuristic-digital-illustration-of-a-website-con-US66KXxMQOG4SMvgn4vfQg-OzwcvndTTyCPQOb-Yin04w.webp"
 ogTitle: "How to Seamlessly Integrate ChatGPT API into Your Website?"
 ogDescription: "Learn how to seamlessly integrate the ChatGPT API into your website for interactive, AI-powered conversations. Elevate user engagement and experience."
 categories: ["Artificial Intelligence (AI)"]
@@ -11,7 +11,7 @@ tags: ["Hcode", "Integrate ChatGPT API"]
 
 # How to Seamlessly Integrate ChatGPT API into Your Website?
 
-![An image showing a small robot being connected with a website in a pc with wires representing integration of chatgpt to website.](/assets/blog/2023/09/a-futuristic-digital-illustration-of-a-website-con-US66KXxMQOG4SMvgn4vfQg-OzwcvndTTyCPQOb-Yin04w.jpeg)
+![An image showing a small robot being connected with a website in a pc with wires representing integration of chatgpt to website.](/assets/blog/2023/09/a-futuristic-digital-illustration-of-a-website-con-US66KXxMQOG4SMvgn4vfQg-OzwcvndTTyCPQOb-Yin04w.webp)
 
   
 The advent of Artificial Intelligence (AI) has ushered in a new era, offering businesses the ability to automate non-repetitive tasks such as round-the-clock chat support, language translation, research, and real-time gaming experiences. The release of ChatGPT API in early 2023, made this a reality for businesses. Reports indicate that companies embracing this integration witnessed their stock prices surge by over 12% compared to those who didn’t. As AI automation gains momentum, integrating OpenAI’s APIs, especially ChatGPT, becomes increasingly appealing to businesses.
@@ -63,7 +63,7 @@ The following table shows the ChatGPT API pricing for the GPT-4o:
 
 #### ChatGPT 4o:
 
-![Chatgpt 4o pricing](/assets/blog/2023/09/Screenshot-2024-07-26-174005.png)
+![Chatgpt 4o pricing](/assets/blog/2023/09/Screenshot-2024-07-26-174005.webp)
 
 [Check here](https://platform.openai.com/docs/deprecations/), for the older model’s pricing.
 
@@ -73,7 +73,7 @@ ChatGPT is just one of the many models provided by OpenAI, adding to the extensi
 
 The Integration Process for ChatGPT API in Six Steps:
 
-![A visual flow chart for six steps to chatgpt api integration](/assets/blog/2023/09/create-an-elegant-flowchart-for-api-integration-wi-2-bauFljTLexOKJh3YhZsA-sJYrxsXbTX6TdKXeF3BBOg.jpeg)
+![A visual flow chart for six steps to chatgpt api integration](/assets/blog/2023/09/create-an-elegant-flowchart-for-api-integration-wi-2-bauFljTLexOKJh3YhZsA-sJYrxsXbTX6TdKXeF3BBOg.webp)
 
 six steps to ChatGPT API integration
 

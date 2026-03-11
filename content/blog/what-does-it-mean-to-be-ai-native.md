@@ -2,7 +2,7 @@
 title: "What Does It Mean to Be AI Native?"
 date: "2025-07-14"
 excerpt: "What Does It Mean to Be AI Native?     […]"
-featuredImage: "/assets/blog/2025/07/ChatGPT-Image-Jul-11-2025-05_38_18-PM.png"
+featuredImage: "/assets/blog/2025/07/ChatGPT-Image-Jul-11-2025-05_38_18-PM.webp"
 ogTitle: "What Does It Mean to Be AI Native? » Hcode's offical Blog"
 ogDescription: "Discover what it means to be AI Native—software built around AI, not just enhanced by it. Explore how these systems work, their benefits, and use cases."
 categories: ["Artificial Intelligence (AI)"]
@@ -11,7 +11,7 @@ tags: ["AI Native"]
 
 ## **What Does It Mean to Be AI Native?**
 
-![man using screen with learning bot ](/assets/blog/2025/07/ChatGPT-Image-Jul-11-2025-05_38_18-PM.png)
+![man using screen with learning bot ](/assets/blog/2025/07/ChatGPT-Image-Jul-11-2025-05_38_18-PM.webp)
 
 Do you ever wonder how TikTok always seems to know what you want to watch—even before you do? Or how your email app drafts a reply that sounds uncannily like something you’d say? It’s easy to assume these are just AI-powered features—clever additions to otherwise traditional software.
 
@@ -37,7 +37,7 @@ From network infrastructure to enterprise software and consumer apps, teams are 
 
 ### **How AI Native Is Being Applied Today**
 
-![Types of strategy ](/assets/blog/2025/07/AI-native-info-4.png)
+![Types of strategy ](/assets/blog/2025/07/AI-native-info-4.webp)
 
 The defining trait of an AI-native system is that intelligence isn’t a feature—it’s the architecture. It’s not about layering a chatbot on top of a static interface. It’s about designing systems that think, adapt, and evolve—from the inside out.
 
@@ -74,7 +74,7 @@ This isn’t about chasing trends—it’s about building systems that learn as 
 
 ### **The Benefits and Challenges of Going AI Native**
 
-![Benefit and challenges of AI Native](/assets/blog/2025/07/AI-native-info-5.png)
+![Benefit and challenges of AI Native](/assets/blog/2025/07/AI-native-info-5.webp)
 
 Like any foundational shift in software architecture, moving toward AI Native unlocks tremendous advantages—but it also introduces a new class of complexity. It’s not a plug-and-play transformation. It’s a commitment to building systems that learn, evolve, and sometimes behave in ways you didn’t explicitly program.
 

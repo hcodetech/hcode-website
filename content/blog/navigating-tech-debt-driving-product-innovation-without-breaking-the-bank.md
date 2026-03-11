@@ -2,7 +2,7 @@
 title: "Navigating Tech Debt: Driving Product Innovation Without Breaking the Bank"
 date: "2025-01-03"
 excerpt: "Navigating Tech Debt: Driving Product Innovation      In the […]"
-featuredImage: "/assets/blog/2025/01/a-minimalistic-image-of-a-person-in-a-pr_ahBdIqN7QoyIGgG4VAu-Yg_CtiNoKlCTKmp7Tn_W2aakA.jpeg"
+featuredImage: "/assets/blog/2025/01/a-minimalistic-image-of-a-person-in-a-pr_ahBdIqN7QoyIGgG4VAu-Yg_CtiNoKlCTKmp7Tn_W2aakA.webp"
 ogTitle: "Navigating Tech Debt Without Breaking the Bank » Hcode's offical Blog"
 ogDescription: "Tech debt is an inevitable part of software development. With the right strategy & partner like HCode businesses can tackle tech debt head-on."
 categories: ["Web development"]
@@ -11,7 +11,7 @@ tags: []
 
 ### **Navigating Tech Debt: Driving Product Innovation** 
 
-![](/assets/blog/2025/01/a-minimalistic-image-of-a-person-in-a-pr_ahBdIqN7QoyIGgG4VAu-Yg_CtiNoKlCTKmp7Tn_W2aakA.jpeg)
+![](/assets/blog/2025/01/a-minimalistic-image-of-a-person-in-a-pr_ahBdIqN7QoyIGgG4VAu-Yg_CtiNoKlCTKmp7Tn_W2aakA.webp)
 
 In the fast-paced world of software development, balancing the need for rapid innovation with long-term product stability often creates a unique challenge: [**technical or tech debt**](https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/breaking-technical-debts-vicious-cycle-to-modernize-your-business#:~:text=CIOs%20estimate%20that%20tech%20debt%20amounts%20to%2020%20to%2040%20percent%20of%20the%20value%20of%20their%20entire%20technology%20estate). While it’s tempting to take shortcuts to meet tight deadlines or launch a minimum viable product (MVP) quickly, these decisions can accumulate hidden costs over time, limiting innovation and inflating operational expenses.
 
@@ -75,7 +75,7 @@ At HCode, our development process emphasizes agile methodologies that enable us 
 
 ### **How to Prevent Tech Debt in Future Projects**
 
-![how to prevent tech debt in future projects](/assets/blog/2025/01/Add-a-subheading-2.png)
+![how to prevent tech debt in future projects](/assets/blog/2025/01/Add-a-subheading-2.webp)
 
 While tech debt is sometimes unavoidable, proactive planning can minimize its impact. Here are some best practices to keep in mind:
 

@@ -2,7 +2,7 @@
 title: "Evolving  Front-End Development"
 date: "2022-11-23"
 excerpt: "EVOLVING FRONT-END DEVELOPMENT At the genesis of front-end development, the […]"
-featuredImage: "/assets/blog/2022/11/Group-3-2.png"
+featuredImage: "/assets/blog/2022/11/Group-3-2.webp"
 ogTitle: "Evolving Front-End Development » Hcode's offical Blog"
 ogDescription: "EVOLVING FRONT-END DEVELOPMENT At the genesis of front-end development, the […]"
 categories: ["Uncategorized"]
@@ -11,7 +11,7 @@ tags: []
 
 EVOLVING FRONT-END DEVELOPMENT
 
-![](/assets/blog/2022/11/Group-3-2.png)
+![](/assets/blog/2022/11/Group-3-2.webp)
 
 At the genesis of front-end development, the internet was also new. The websites were unstandardized and disorderly. The expectations from the web developer were to develop a website with basic functionalities. 
 
@@ -53,7 +53,7 @@ The novelty of home computers and the rapid growth of internet access meant that
 
 Modern users are used to quick, navigable, easier-to-use, and instantly understandable designs. It has been possible due to technologies like [React](https://reactjs.org/), [Angular](https://angularjs.org/), [Vue](https://vuejs.org/), and others. As per [the State of Frontend survey](https://tsh.io/frontend-development-trends-2020/#frameworks:~:text=Which%20of%20these%20frameworks%20would%20you%20like%20to%20keep%20on%20using%20or%20want%20to%20learn%20in%20the%20future%3F), React dominates the JavaScript framework mind share. React enjoys embracing [a big community](https://2021.stateofjs.com/en-US/libraries/front-end-frameworks/).
 
-![](/assets/blog/2022/11/image3.png)
+![](/assets/blog/2022/11/image3.webp)
 
 **Current Expectations:** The human condition to want things faster, more engaging, and flashy has pushed web technology further than we ever thought possible in its humble beginnings.
 
@@ -83,11 +83,11 @@ You may hire [HCode](https://hcode.tech/)‘s front-end developers proficient in
 
 [Pollinate](http://www.pollinate.co/), a New York-based platform for discovering artists and events wanted a modern-looking UI that appealed to the audience of Art-Artists, Art Lovers, and Exhibitors.
 
-![](/assets/blog/2022/11/image1.png)
+![](/assets/blog/2022/11/image1.webp)
 
 HCode’s designers first worked with the Pollinate team to design the product. Then HCode’s development team worked with the designs and the client to bring those designs to life using React for the front end (and Python/Django for the backend). The application had features like searching for events based on cities or event collectives, locating events on the map, following the artists, and such. The product was warmly welcomed by its audience and has since enabled many art exhibitions, mainly around NYC.
 
-![](/assets/blog/2022/11/image4.png)
+![](/assets/blog/2022/11/image4.webp)
 
 * * *
 

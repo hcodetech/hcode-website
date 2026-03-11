@@ -2,7 +2,7 @@
 title: "How AI and Blockchain “Together” Can Transform Business"
 date: "2024-02-07"
 excerpt: "How AI and Blockchain “Together” Can Transform Business Artificial Intelligence […]"
-featuredImage: "/assets/blog/2024/02/pasted-image-0.png"
+featuredImage: "/assets/blog/2024/02/pasted-image-0.webp"
 ogTitle: "How AI and Blockchain “Together” Can Transform Business » Hcode's offical Blog"
 ogDescription: "Discover how the fusion of AI and Blockchain redefines business dynamics, enhancing security, and efficiency for transformative success."
 categories: ["Artificial Intelligence (AI)"]
@@ -11,7 +11,7 @@ tags: []
 
 # How AI and Blockchain “Together” Can Transform Business
 
-![Image of Brain emerging from the combination of AI and blockchain](/assets/blog/2024/02/pasted-image-0.png)
+![Image of Brain emerging from the combination of AI and blockchain](/assets/blog/2024/02/pasted-image-0.webp)
 
 Artificial Intelligence (AI) and blockchain are two significant technological advancements in recent decades that have influenced various industries, including finance and healthcare.
 
@@ -72,7 +72,7 @@ Consider a ledger, maintained by blockchain, that records every step of an AI mo
 -   **Improved user trust:** Exposing the inner workings of AI models allows users to develop informed trust, leading to wider adoption and broader implementation across industries.
 -   **Boosted collaboration:** Developers can use the transparency provided by blockchain to collaborate on AI projects, sharing training data and model structures to refine algorithms and speed up innovation.
 
-![Bitcoin mining out of a machine that is controlled by AI. ](/assets/blog/2024/02/3d-cryptocurrency-rendering-design.jpg)
+![Bitcoin mining out of a machine that is controlled by AI. ](/assets/blog/2024/02/3d-cryptocurrency-rendering-design.webp)
 
 The potential applications are wide-ranging. For example, healthcare AI models could be trained on blockchain-verified medical data, providing transparent diagnoses and treatment recommendations, and benefiting patients and medical professionals. Financial AI algorithms could have their decision-making process recorded on the blockchain, ensuring fair loan evaluations and building trust in the financial system.
 

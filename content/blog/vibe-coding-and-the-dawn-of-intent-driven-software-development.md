@@ -2,7 +2,7 @@
 title: "Vibe Coding and the Dawn of Intent-Driven Software Development"
 date: "2025-05-13"
 excerpt: "Vibe Coding and the Dawn of Intent-Driven Software Development   […]"
-featuredImage: "/assets/blog/2025/05/Bebas-Neue.png"
+featuredImage: "/assets/blog/2025/05/Bebas-Neue.webp"
 ogTitle: "Vibe Coding and the Dawn of Intent-Driven Software Development » Hcode's offical Blog"
 ogDescription: "Vibe coding flips programming by letting developers describe features in plain language, as AI handles implementation behind the scenes."
 categories: ["Artificial Intelligence (AI)"]
@@ -11,7 +11,7 @@ tags: []
 
 ## Vibe Coding and the Dawn of Intent-Driven Software Development
 
-![](/assets/blog/2025/05/Bebas-Neue.png)
+![](/assets/blog/2025/05/Bebas-Neue.webp)
 
 Imagine telling a computer exactly what kind of app you want, in plain English, and it builds the app for you. In early 2025, this scenario leaped from science fiction to reality.
 
@@ -63,7 +63,7 @@ For example, an LLM might mishandle edge cases or silently overlook errors. Deve
 
 Security is another concern. AI models are trained on vast code datasets, and they might inadvertently reproduce copyrighted or vulnerable code patterns. That means a vibe-coded app could inherit licensing issues or exploitable bugs unless someone double-checks the output. In short, don’t let the AI take full control. Treat its output as a draft that needs human review.
 
-![](/assets/blog/2025/05/challenges-of-VC.png)
+![](/assets/blog/2025/05/challenges-of-VC.webp)
 
 There’s also a long-term consideration: skill development. If new developers rely on AI to do all the coding, they may miss learning critical problem-solving abilities. Similar to how using a calculator doesn’t teach arithmetic, always accepting AI’s code can atrophy debugging and algorithmic thinking skills. Industry experts warn that the most effective practitioners will balance automation with understanding—learning to use AI without losing sight of how and why the code works.
 

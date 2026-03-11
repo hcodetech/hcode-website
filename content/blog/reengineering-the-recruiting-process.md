@@ -2,7 +2,7 @@
 title: "Reengineering  The Recruiting Process"
 date: "2022-10-21"
 excerpt: "REENGINEERING THE RECRUITING PROCESS   What are your greatest strengths […]"
-featuredImage: "/assets/blog/2022/10/Group-461.jpg"
+featuredImage: "/assets/blog/2022/10/Group-461.webp"
 ogTitle: "Reengineering The Recruiting Process » Hcode's offical Blog"
 ogDescription: "REENGINEERING THE RECRUITING PROCESS   What are your greatest strengths […]"
 categories: ["Uncategorized"]
@@ -11,7 +11,7 @@ tags: []
 
 REENGINEERING THE RECRUITING PROCESS
 
-![](/assets/blog/2022/10/Group-461.jpg)
+![](/assets/blog/2022/10/Group-461.webp)
 
 **What are your greatest strengths and weaknesses?**
 

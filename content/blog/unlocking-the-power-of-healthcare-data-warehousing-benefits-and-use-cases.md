@@ -2,7 +2,7 @@
 title: "Unlocking the Power of Healthcare Data Warehousing: Benefits and Use Cases"
 date: "2024-09-26"
 excerpt: "Unlocking the Power of Healthcare Data Warehousing: Benefits and Use […]"
-featuredImage: "/assets/blog/2024/09/tech-support-prevents-servers-overload-scaled.jpg"
+featuredImage: "/assets/blog/2024/09/tech-support-prevents-servers-overload-scaled.webp"
 ogTitle: "Healthcare Data Warehousing: Benefits and Use Cases"
 ogDescription: "A healthcare data warehouse (HDW) is a centralized repository that integrates and stores data from various healthcare systems."
 categories: ["Database"]
@@ -11,7 +11,7 @@ tags: ["ealthcare Data Warehousing"]
 
 ## Unlocking the Power of Healthcare Data Warehousing: Benefits and Use Cases
 
-![Tech support in data center uses laptop to prevent system overload during peak traffic periods. Hardworking expert in server farm ensuring enough network bandwidth for smooth operations, close up](/assets/blog/2024/09/tech-support-prevents-servers-overload.jpg)
+![Tech support in data center uses laptop to prevent system overload during peak traffic periods. Hardworking expert in server farm ensuring enough network bandwidth for smooth operations, close up](/assets/blog/2024/09/tech-support-prevents-servers-overload.webp)
 
 With the adoption of electronic systems in healthcare over the years, particularly after the 2009 Health Information Technology for Economic and Clinical Health (HITECH) Act, the collection and use of electronic health records (EHRs) have become increasingly critical. While healthcare organizations collect vast amounts of administrative data, it often presents challenges for research due to inconsistent formats, fragmented sources, and incomplete information. Consolidating this data, such as medical insurance claims, into meaningful episodes of care is particularly difficult. 
 
@@ -21,7 +21,7 @@ This underscores the importance of developing a robust, large-scale data infrast
 
 A **healthcare data warehouse (HDW)** is a centralized repository that integrates and stores data from various healthcare systems such as **electronic health records (EHRs), billing systems, lab results, insurance claims**, and external sources like **surveys** or **census data**. An HDW aims to transform this disparate data into a standardized format that supports advanced analytics, reporting, and decision-making across healthcare organizations. It allows healthcare providers to analyze patient care trends, improve operational efficiency, and support clinical research by consolidating and organizing information from multiple systems.
 
-![Healthcare Data Warehousing Fixture](/assets/blog/2024/09/Screenshot-2024-09-26-134707.png)
+![Healthcare Data Warehousing Fixture](/assets/blog/2024/09/Screenshot-2024-09-26-134707.webp)
 
 Here’s how the data storage process typically works, as illustrated in the image:
 

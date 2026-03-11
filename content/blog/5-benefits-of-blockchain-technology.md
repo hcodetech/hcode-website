@@ -2,7 +2,7 @@
 title: "5 Benefits of Blockchain Technology"
 date: "2024-07-16"
 excerpt: "5 Benefits of Blockchain Technology     We can categorize […]"
-featuredImage: "/assets/blog/2024/07/5-benifits-of-blockchain-technology-security-priva-0aiVB7iKTuyMRqEy1UGGaA-BoPhH6d6TCGfgEk9EMn_Mw.jpeg"
+featuredImage: "/assets/blog/2024/07/5-benifits-of-blockchain-technology-security-priva-0aiVB7iKTuyMRqEy1UGGaA-BoPhH6d6TCGfgEk9EMn_Mw.webp"
 ogTitle: "5 Benefits of Blockchain Technology » Hcode's offical Blog"
 ogDescription: "Explore 5 benefits of blockchain technology: trust, decentralization, security, traceability & immutability. Learn how it impacts businesses across industries."
 categories: ["Blockchain Technology"]
@@ -11,7 +11,7 @@ tags: ["5 Benefits of Blockchain Technology", "Hcode"]
 
 # 5 Benefits of Blockchain Technology
 
-![5 Benefits of Blockchain Technology](/assets/blog/2024/07/5-benifits-of-blockchain-technology-security-priva-0aiVB7iKTuyMRqEy1UGGaA-BoPhH6d6TCGfgEk9EMn_Mw.jpeg)
+![5 Benefits of Blockchain Technology](/assets/blog/2024/07/5-benifits-of-blockchain-technology-security-priva-0aiVB7iKTuyMRqEy1UGGaA-BoPhH6d6TCGfgEk9EMn_Mw.webp)
 
 We can categorize blockchain technology into permissioned and non-permissioned (decentralized) blockchains. They both have their use cases and audiences, permissioned blockchain—hyper ledgers provide value to businesses, with enterprise-grade blockchain solutions and their custom template, whereas non-permissioned blockchains such as Ethereum are widely used as a building block for decentralized solutions. 
 
@@ -21,7 +21,7 @@ Blockchain is a technology that manages an immutable digital ledger on a peer-to
 
 Experts believe [blockchain technology](https://hcode.tech/blog/how-blockchain-works-explained-in-simple-terms/) has various advantages in terms of overall efficiency, audience mindset, and automation, blockchain delivers in all these aspects. The first and foremost is:
 
-![Benefits of Blockchain Technology](/assets/blog/2024/07/5-benifits-of-blockchain-technology-security-priva-VyW_aE2rSLaCytHPidutRw-Th-6ZjMtSNyuZ92BuJ2O7w.jpeg)
+![Benefits of Blockchain Technology](/assets/blog/2024/07/5-benifits-of-blockchain-technology-security-priva-VyW_aE2rSLaCytHPidutRw-Th-6ZjMtSNyuZ92BuJ2O7w.webp)
 
 ### Building Trust
 

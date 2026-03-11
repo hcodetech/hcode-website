@@ -2,7 +2,7 @@
 title: "Security at the Crossroads of Chains"
 date: "2025-04-23"
 excerpt: "Security Considerations in Cross-Chain Interoperability     As blockchain […]"
-featuredImage: "/assets/blog/2025/04/5055401-scaled.jpg"
+featuredImage: "/assets/blog/2025/04/5055401-scaled.webp"
 ogTitle: "Security at the Crossroads of Chains » Hcode's offical Blog"
 ogDescription: "Key security risks and best practices for building safe and secure cross-chain blockchain interoperability."
 categories: ["Blockchain Technology"]
@@ -13,7 +13,7 @@ tags: []
 
 ## **Cross-Chain Interoperability**
 
-![](/assets/blog/2025/04/Best-Practices-to-Improve-Cross-Chain-Security-5.png)
+![](/assets/blog/2025/04/Best-Practices-to-Improve-Cross-Chain-Security-5.webp)
 
 As [blockchain](https://hcode.tech/blog/how-blockchain-enhances-privacy-and-security-in-kyc/) technology continues to evolve, we’re seeing an explosion of new platforms, each with its own protocols, tokens, and ecosystems. While this diversity fosters innovation, it also creates a pressing challenge: how do we enable seamless communication and asset transfer between these siloed networks?
 
@@ -75,7 +75,7 @@ Managing private keys across multiple chains increases the chances of human erro
 
 Over the past few years, we’ve seen some massive hacks that expose just how vulnerable even the most popular blockchain systems can be. Take the [Ronin Network hack](https://www.wired.com/story/blockchain-network-bridge-hacks/?utm_source) in March 2022, for example. Hackers got hold of five out of nine validator keys and drained $540 million in ETH and USDC. Then, in October 2022, the [Binance Smart Chain Bridge](https://www.investopedia.com/binance-got-hacked-6748215?utm_source) fell victim to a similar attack when attackers exploited a flaw in the proof verification mechanism, making off with $570 million in BNB tokens.
 
-![](/assets/blog/2025/04/Screenshot-from-2025-04-23-11-35-56.png)
+![](/assets/blog/2025/04/Screenshot-from-2025-04-23-11-35-56.webp)
 
 (Source: [Defilama)](https://defillama.com/hacks)
 

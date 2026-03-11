@@ -2,7 +2,7 @@
 title: "Best Practices Guide For Web Design – HCode"
 date: "2024-06-19"
 excerpt: "Best Practices Guide For Web Design – HCode In terms […]"
-featuredImage: "/assets/blog/2024/06/Add-a-heading-6-1-min.png"
+featuredImage: "/assets/blog/2024/06/Add-a-heading-6-1-min.webp"
 ogTitle: "Best Practices Guide For Web Design - HCode » Hcode's offical Blog"
 ogDescription: "Discover best practices for web design with HCode. Learn tips for brand alignment, responsiveness, SEO, and more to enhance user experience and website effectiveness."
 categories: ["Web development"]
@@ -11,7 +11,7 @@ tags: ["Hcode", "Web Design"]
 
 ## Best Practices Guide For Web Design – HCode
 
-![Best Practices Guide For Web Design - HCode](/assets/blog/2024/06/Add-a-heading-6-1-min.png)
+![Best Practices Guide For Web Design - HCode](/assets/blog/2024/06/Add-a-heading-6-1-min.webp)
 
 In terms of platform marketing, [website design](https://www.wikidata.org/w/index.php?go=Go&search=website+design&search=website+design&title=Special%3ASearch&ns0=1&ns120=1) plays an important role in the platform’s success. Thus, the web design process has become one of the most crucial aspects of software development. 
 

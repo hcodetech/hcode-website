@@ -2,7 +2,7 @@
 title: "Business Intelligence in Retail: Turning Data into Actionable Insights"
 date: "2024-10-01"
 excerpt: "Business Intelligence in Retail: Turning Data into Actionable Insights   […]"
-featuredImage: "/assets/blog/2024/10/office-workers-using-finance-graphs.jpg"
+featuredImage: "/assets/blog/2024/10/office-workers-using-finance-graphs.webp"
 ogTitle: "Business Intelligence in Retail: Turn Data into Actionable Insights"
 ogDescription: "Business Intelligence (BI) refers to the technologies, tools, and practices used to collect, analyze, and present business data."
 categories: ["Artificial Intelligence (AI)"]
@@ -11,7 +11,7 @@ tags: ["Business Intelligence"]
 
 ## Business Intelligence in Retail: Turning Data into Actionable Insights
 
-![](/assets/blog/2024/10/office-workers-using-finance-graphs.jpg)
+![](/assets/blog/2024/10/office-workers-using-finance-graphs.webp)
 
 In the fast-paced retail industry, data is generated every second from customer transactions, inventory systems, marketing campaigns, and more. Yet, simply collecting this data is not enough. Retailers need to turn this raw data into actionable insights to stay competitive, and that’s where [Business Intelligence](https://www.ibm.com/topics/business-intelligence) (BI) comes in. BI tools allow retailers to harness the power of their data, helping them make informed decisions, optimize operations, and deliver better customer experiences.
 
@@ -51,7 +51,7 @@ Business intelligence in retail provides a variety of tools and features to help
 
 The application of BI in retail brings numerous benefits that can significantly enhance business performance. These include:
 
-![Accurate sales performance reports and forecasts across multiple locations and segments to optimize your sales performance](/assets/blog/2024/10/REFUNDS.png)
+![Accurate sales performance reports and forecasts across multiple locations and segments to optimize your sales performance](/assets/blog/2024/10/REFUNDS.webp)
 
 Fig: Example of BI Insights for Your Business
 
@@ -85,7 +85,7 @@ These examples illustrate the significant impact BI can have on retail operation
 
 As technology continues to evolve, new BI trends are emerging that will further enhance retail operations:
 
-![](/assets/blog/2024/10/REFUNDS-1.png)
+![](/assets/blog/2024/10/REFUNDS-1.webp)
 
 Fig: BI analysis insights
 

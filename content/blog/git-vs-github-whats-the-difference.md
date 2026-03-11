@@ -2,7 +2,7 @@
 title: "Git vs Github: What's the difference?"
 date: "2024-04-16"
 excerpt: "Git vs Github: What's the difference? Nomenclatures i.e. syntax, abbreviations, […]"
-featuredImage: "/assets/blog/2024/04/unnamed.jpg"
+featuredImage: "/assets/blog/2024/04/unnamed.webp"
 ogTitle: "Git vs Github: What's the difference? » Hcode's offical Blog"
 ogDescription: "Git manages code revisions on local machines, GitHub is a cloud-based hosting service for storing and collaborating on Git repositories."
 categories: ["Web development", "Web development"]
@@ -11,7 +11,7 @@ tags: []
 
 ## Git vs Github: What’s the difference?
 
-![two men holding boards discussing Git hub](/assets/blog/2024/04/unnamed.jpg)
+![two men holding boards discussing Git hub](/assets/blog/2024/04/unnamed.webp)
 
 Nomenclatures i.e. syntax, abbreviations, and names hold a special place in the world of coding. While nomenclature holds great importance, it is not as intuitive as it should be. Take Java and JavaScript, for example—two programming languages with similar-sounding names but entirely different. Git vs GitHub also takes origin from such canonical naming conventions; if they are related somehow or if not, what’s the difference?
 
@@ -51,7 +51,7 @@ GitHub addresses this concern with features like two-factor authentication and t
 
 At their core, Git and GitHub serve distinct purposes within the development workflow. Git, an open-source version control system, empowers developers to manage code revisions directly on their machines. In contrast, GitHub functions as a cloud-based hosting service (SaaS) designed for storing and collaborating on Git repositories.
 
-![Git vs GitHub](/assets/blog/2024/04/unnamed.png)
+![Git vs GitHub](/assets/blog/2024/04/unnamed.webp)
 
 Crucially, Git and GitHub aren’t rivals; they work together. Git provides the foundational version control functionality, while GitHub offers a user-friendly platform specifically designed to leverage Git’s capabilities for collaborative development. This complementary approach streamlines the development process.
 

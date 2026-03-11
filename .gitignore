@@ -69,3 +69,6 @@ Thumbs.db
 
 sitemap-0.xml
 .vercel
+
+# Unused blog assets (WordPress imports)
+public/assets/blog-unused/

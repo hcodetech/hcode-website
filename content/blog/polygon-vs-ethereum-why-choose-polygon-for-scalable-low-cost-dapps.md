@@ -2,7 +2,7 @@
 title: "Polygon vs. Ethereum: Why Choose Polygon for Scalable, Low-Cost DApps"
 date: "2024-02-19"
 excerpt: "Polygon vs. Ethereum: Why Choose Polygon for Scalable, Low-Cost DApps […]"
-featuredImage: "/assets/blog/2024/02/colorful-toy-construction-designed-triangle-shaped-blue-colored-light-scaled.jpg"
+featuredImage: "/assets/blog/2024/02/colorful-toy-construction-designed-triangle-shaped-blue-colored-light-scaled.webp"
 ogTitle: "Polygon vs. Ethereum: Why Choose Polygon for Scalable, Low-Cost DApps » Hcode's offical Blog"
 ogDescription: "Discover why Polygon is the preferred choice over Ethereum for scalable, low-cost DApps. Explore solutions to Ethereum's limitations."
 categories: ["Blockchain Technology"]
@@ -11,7 +11,7 @@ tags: []
 
 ## Polygon vs. Ethereum: Why Choose Polygon for Scalable, Low-Cost DApps
 
-![Rubic's cube picturising Polygon](/assets/blog/2024/02/colorful-toy-construction-designed-triangle-shaped-blue-colored-light.jpg)
+![Rubic's cube picturising Polygon](/assets/blog/2024/02/colorful-toy-construction-designed-triangle-shaped-blue-colored-light.webp)
 
 Ethereum has been a widely used blockchain platform for years due to its secure network. However, it still needs to address the issue of scalability. What do we mean by scalability?
 
@@ -31,7 +31,7 @@ This post explores how Polygon overcomes Ethereum’s limitations while maintain
 
 Polygon is a layer 2 solution designed to enable developers to build on Ethereum without encountering its limitations. Layer 2 chains are connected to an independent chain such as Ethereum. While Ethereum operates on its own, Layer 2 depends on it for security and finality. Layer solutions expand the functionality of the parent chain, but they do not replace it.
 
-![Triangle showing Blockchain Trilemma](/assets/blog/2024/02/64ffd3801167f583b9050939_CfNb02GP4VjDrvgCEg5ddbQbdCrnoSEE2yYhkHvm8HlsNdGBBgm0z-NxrsIGsA7MjHN8iF6Wm0B8TnJ7UtUnpcL8iSoXgc5FMhcME1tcqT55INpex7m1th17xG22XEXpOlE9y3Q6i-mGyruPM_wAP2E.png)
+![Triangle showing Blockchain Trilemma](/assets/blog/2024/02/64ffd3801167f583b9050939_CfNb02GP4VjDrvgCEg5ddbQbdCrnoSEE2yYhkHvm8HlsNdGBBgm0z-NxrsIGsA7MjHN8iF6Wm0B8TnJ7UtUnpcL8iSoXgc5FMhcME1tcqT55INpex7m1th17xG22XEXpOlE9y3Q6i-mGyruPM_wAP2E.webp)
 
 **SOURCE: Polygon**
 

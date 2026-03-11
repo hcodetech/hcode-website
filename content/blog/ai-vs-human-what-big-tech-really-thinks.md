@@ -2,7 +2,7 @@
 title: "AI vs Human: What Big Tech Really Thinks"
 date: "2025-09-05"
 excerpt: "AI vs Human: What Big Tech Really Thinks     […]"
-featuredImage: "/assets/blog/2025/09/Untitled-design-24.png"
+featuredImage: "/assets/blog/2025/09/Untitled-design-24.webp"
 ogTitle: "AI vs Human: What Big Tech Really Thinks » Hcode's offical Blog"
 ogDescription: "Big Tech frames AI as a partner, not a replacement, empowering humans with assistance, speed, and smarter collaboration."
 categories: ["Artificial Intelligence (AI)"]
@@ -13,7 +13,7 @@ tags: ["AI vs Human"]
 
 ## **What Big Tech Really Thinks**
 
-![a man walking on robot's hand](/assets/blog/2025/09/Untitled-design-24.png)
+![a man walking on robot's hand](/assets/blog/2025/09/Untitled-design-24.webp)
 
 Everywhere you turn, there’s noise about AI.  
 Is it replacing humans? Is it making us lazy? Is it the end of work as we know it, or just the next productivity tool?

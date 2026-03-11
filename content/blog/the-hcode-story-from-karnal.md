@@ -2,7 +2,7 @@
 title: "The HCode Story from Karnal"
 date: "2025-06-23"
 excerpt: "The HCode Story from Karnal   There’s something different about […]"
-featuredImage: "/assets/blog/2025/06/Untitled-design-6.png"
+featuredImage: "/assets/blog/2025/06/Untitled-design-6.webp"
 ogTitle: "The HCode Story from Karnal » Hcode's offical Blog"
 ogDescription: "The HCode Story from Karnal   There’s something different about […]"
 categories: ["HCode"]
@@ -11,7 +11,7 @@ tags: []
 
 ## The HCode Story from Karnal
 
-![Location icon signifying why we choose karnal as our work place](/assets/blog/2025/06/Untitled-design-6.png)
+![Location icon signifying why we choose karnal as our work place](/assets/blog/2025/06/Untitled-design-6.webp)
 
 There’s something different about starting your workday when the sky is clear, the air is fresh, and the road to office isn’t a race against honking horns. At HCode, this isn’t a rare luxury—it’s just another day at work.
 
@@ -23,13 +23,13 @@ Karnal became home—not because we had to settle for it, but because it gave us
 
 And so, we built. Not just a company, but a space worth coming to. A campus that breathes—literally—with lush green views, natural light, and quiet corners. A workplace designed not to impress outsiders but to support the people who bring it to life every day. Where meetings happen over chai in the courtyard, ideas grow under skylights, and you can still hear the birds outside your window.
 
-![Hcode Lobby](/assets/blog/2025/06/1000079980.jpg)  ![](/assets/blog/2025/06/1000079978.jpg)
+![Hcode Lobby](/assets/blog/2025/06/1000079980.webp)  ![](/assets/blog/2025/06/1000079978.webp)
 
 It’s not just about avoiding traffic or skipping elevators—it’s about showing up to work without already being exhausted. It’s about creating an environment where people can do deep work, not just busy work. Where developers are not just surviving sprints but enjoying the process of building something meaningful.
 
 What Karnal gave us is a team that stays. Engineers who don’t just clock in, but contribute. People who aren’t just employees, but culture carriers. With no distractions and fewer exits, we’ve been able to build products faster, collaborate better, and retain the kind of knowledge that leads to long-term success—for us and for our clients.  
 
-![](/assets/blog/2025/06/image6.jpeg)  ![HCode Infra](/assets/blog/2025/06/image1-7.jpeg)
+![](/assets/blog/2025/06/image6.webp)  ![HCode Infra](/assets/blog/2025/06/image1-7.webp)
 
 Being here has allowed us to offer more than just jobs. We offer careers that don’t require compromise. Young professionals here don’t have to choose between ambition and family, or growth and quality of life. They get both. They get mentorship from leaders who’ve worked across global tech hubs, and they get to go home to their families by 6 PM. That’s not just a perk—it’s a way of working that’s designed to last.
 
@@ -37,7 +37,7 @@ But if you think all that ends at sunset, you haven’t seen the evenings at HCo
 
 There’s a kind of night life here too—not the dramatic kind you find in cities, but something far more real. It’s the laughter that echoes across the basketball court during a late game. The energy of impromptu cricket matches where teams are drawn, boundaries are debated, and every cheer feels like a victory. It’s music spilling out of a room where someone starts dancing and others join without a second thought. It’s the way we celebrate ordinary days as if they mattered—because they do. At HCode, fun isn’t scheduled. It flows through us. It’s a part of how we work, how we connect, and how we build something that lasts.
 
-![](/assets/blog/2025/06/IMG_9622-1.jpg)   ![](/assets/blog/2025/06/image8.jpeg)
+![](/assets/blog/2025/06/IMG_9622-1.webp)   ![](/assets/blog/2025/06/image8.webp)
 
 At HCode, the culture doesn’t come from Friday games or cafeteria slogans. It comes from the way people feel when they walk into work. The quiet confidence that this is a place that sees them, values them, and invests in them.
 

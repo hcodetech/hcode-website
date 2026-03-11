@@ -2,7 +2,7 @@
 title: "Challenges of Catering Millions of Users on Your Platform"
 date: "2025-02-07"
 excerpt: "Challenges of Catering Millions of Users on Your Platform   […]"
-featuredImage: "/assets/blog/2025/02/a-minimalist-3d-rendered-illustration-de_YZlAUEFRSBOsiBQs2jr_MQ_VcP_uzLiTmuU0F0tGdfbYA.jpeg"
+featuredImage: "/assets/blog/2025/02/a-minimalist-3d-rendered-illustration-de_YZlAUEFRSBOsiBQs2jr_MQ_VcP_uzLiTmuU0F0tGdfbYA.webp"
 ogTitle: "Challenges of Catering Millions of Users on Your Platform » Hcode's offical Blog"
 ogDescription: "Scaling to millions of users isn’t just about keeping servers online. It’s about ensuring a seamless experience, managing security and more."
 categories: ["Web development"]
@@ -11,7 +11,7 @@ tags: []
 
 ## Challenges of Catering Millions of Users on Your Platform
 
-![](/assets/blog/2025/02/a-minimalist-3d-rendered-illustration-de_YZlAUEFRSBOsiBQs2jr_MQ_VcP_uzLiTmuU0F0tGdfbYA.jpeg)
+![](/assets/blog/2025/02/a-minimalist-3d-rendered-illustration-de_YZlAUEFRSBOsiBQs2jr_MQ_VcP_uzLiTmuU0F0tGdfbYA.webp)
 
 Caption: Healthy database architecture connecting millions
 
@@ -41,7 +41,7 @@ When users from different parts of the world access your platform, they expect f
 
 ### **Data Management: The Hidden Challenge Behind User Experience**
 
-![](/assets/blog/2025/02/image.png)
+![](/assets/blog/2025/02/image.webp)
 
 Caption: Edtech app showing a progress bar
 
@@ -71,7 +71,7 @@ Data loss is a nightmare scenario. To prevent this, platforms implement automate
 
 ### **Security Challenges When Scaling Millions of Users**
 
-#### ![](/assets/blog/2025/02/ddos-attack-definition-types-and-how-to-prevent-it-829956.png)
+#### ![](/assets/blog/2025/02/ddos-attack-definition-types-and-how-to-prevent-it-829956.webp)
 
 Caption: DDoS attack on application
 

@@ -2,7 +2,7 @@
 title: "Next.js: The Modern Javascript Framework for Blazing-Fast Web Applications"
 date: "2023-10-23"
 excerpt: "Next.js: The Modern Javascript Framework for Blazing-Fast Web Applications […]"
-featuredImage: "/assets/blog/2023/10/6087298.jpg"
+featuredImage: "/assets/blog/2023/10/6087298.webp"
 ogTitle: "Next.js: The Modern Javascript Framework for Blazing-Fast Web Applications » Hcode's offical Blog"
 ogDescription: "Unlock blazing-fast web apps with Next.js, the modern JavaScript framework. Discover its powerful features for superior performance."
 categories: ["Web development"]
@@ -11,7 +11,7 @@ tags: ["Hcode", "Next.js", "Web development"]
 
 # Next.js: The Modern Javascript Framework for Blazing-Fast Web Applications
 
-![Two developers discussing the web development project](/assets/blog/2023/10/6087298.jpg)
+![Two developers discussing the web development project](/assets/blog/2023/10/6087298.webp)
 
   
 In today’s digital landscape, a fast and responsive website is essential for success. The pursuit of improving website performance and speed has transformed the development landscape. Meet Next – the solution to building faster, more responsive, and highly visible websites, including the Next.js blog.
@@ -117,7 +117,7 @@ Next is used by companies in a wide range of industries, namely:
 
 **Netflix, Trip.com, Nike, Travelopod, Western Union,** **Today**, and _others_
 
-![Companies using Next.js](/assets/blog/2023/10/Add-a-little-bit-of-body-text-2.png)
+![Companies using Next.js](/assets/blog/2023/10/Add-a-little-bit-of-body-text-2.webp)
 
 ## Getting Started with Next
 
@@ -129,7 +129,7 @@ The fastest way to start your Next project is to use create-next-app. This tool 
 
 To use create-next-app, simply run the following command:
 
-![](/assets/blog/2023/10/Screenshot-2023-10-20-at-2.04.03-PM.png)
+![](/assets/blog/2023/10/Screenshot-2023-10-20-at-2.04.03-PM.webp)
 
 On installation, you’ll see a few prompts. After you have replied to the prompts, create-next-app will generate a folder with your chosen project name and install the necessary dependencies.
 

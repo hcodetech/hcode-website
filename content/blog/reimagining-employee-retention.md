@@ -2,7 +2,7 @@
 title: "Reimagining Employee Retention"
 date: "2022-10-18"
 excerpt: "REIMAGINING EMPLOYEE RETENTION   It's time to reimagine employee retention […]"
-featuredImage: "/assets/blog/2022/10/Business-merger-rafiki-1.jpg"
+featuredImage: "/assets/blog/2022/10/Business-merger-rafiki-1.webp"
 ogTitle: "Reimagining Employee Retention » Hcode's offical Blog"
 ogDescription: "REIMAGINING EMPLOYEE RETENTION   It's time to reimagine employee retention […]"
 categories: ["Uncategorized"]
@@ -11,7 +11,7 @@ tags: []
 
 REIMAGINING EMPLOYEE RETENTION
 
-![](/assets/blog/2022/10/Business-merger-rafiki-1.jpg)
+![](/assets/blog/2022/10/Business-merger-rafiki-1.webp)
 
 **It’s time to reimagine employee retention**
 

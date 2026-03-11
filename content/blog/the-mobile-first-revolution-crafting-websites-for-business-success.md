@@ -2,7 +2,7 @@
 title: "THE MOBILE-FIRST REVOLUTION:  CRAFTING WEBSITES FOR BUSINESS SUCCESS"
 date: "2023-06-23"
 excerpt: "THE MOBILE-FIRST REVOLUTION: CRAFTING WEBSITES FOR BUSINESS SUCCESS   Introduction […]"
-featuredImage: "/assets/blog/2023/06/Group-1-2.png"
+featuredImage: "/assets/blog/2023/06/Group-1-2.webp"
 ogTitle: "THE MOBILE-FIRST REVOLUTION: CRAFTING WEBSITES FOR BUSINESS SUCCESS » Hcode's offical Blog"
 ogDescription: "THE MOBILE-FIRST REVOLUTION: CRAFTING WEBSITES FOR BUSINESS SUCCESS   Introduction […]"
 categories: ["Uncategorized"]
@@ -11,7 +11,7 @@ tags: []
 
 ### **THE MOBILE-FIRST REVOLUTION: CRAFTING WEBSITES FOR BUSINESS SUCCESS**
 
-![](/assets/blog/2023/06/Group-1-2.png)
+![](/assets/blog/2023/06/Group-1-2.webp)
 
 ##### **Introduction**
 

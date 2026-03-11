@@ -2,7 +2,7 @@
 title: "How Blockchain Works: Explained in Simple Terms"
 date: "2024-04-22"
 excerpt: "How Blockchain Works: Explained in Simple Terms Blockchain is a […]"
-featuredImage: "/assets/blog/2024/04/unnamed-9.jpg"
+featuredImage: "/assets/blog/2024/04/unnamed-9.webp"
 ogTitle: "How Blockchain Works: Explained in Simple Terms » Hcode's offical Blog"
 ogDescription: "A blockchain is a decentralized, distributed ledger that records transactions across multiple computers in a secure and immutable manner."
 categories: ["Blockchain Technology"]
@@ -11,7 +11,7 @@ tags: []
 
 ## How Blockchain Works: Explained in Simple Terms
 
-![](/assets/blog/2024/04/unnamed-8.jpg)
+![](/assets/blog/2024/04/unnamed-8.webp)
 
 Blockchain is a fascinating technology that has piqued the interest of many people, but its inner workings can be quite hard to understand. When searching online for information, the explanations available are often repetitive and generic, failing to satisfy the curiosity of those seeking to truly understand what blockchain is and how it functions.
 
@@ -25,11 +25,11 @@ Blockchain doesn’t look like blocks connected with chains; it is just a collec
 
 **Data:**
 
-![ Example of data that can be converted into hash.](/assets/blog/2024/04/unnamed-1.png)
+![ Example of data that can be converted into hash.](/assets/blog/2024/04/unnamed-1.webp)
 
 **Hash:**
 
-![Hash number, a 256-bit number with 64 characters](/assets/blog/2024/04/unnamed-2.png)
+![Hash number, a 256-bit number with 64 characters](/assets/blog/2024/04/unnamed-2.webp)
 
 You can try it for yourself here: [SHA 256 DEMO](https://emn178.github.io/online-tools/sha256.html).
 
@@ -45,7 +45,7 @@ But that’s just one way to tamper with data. Blockchain is one of the safest p
 
 ### Blockchain Mining Process
 
-![An image demonstrating the blockchain mining process. Robots are creating blocks and data encryption is under process.](/assets/blog/2024/04/unnamed-9.jpg)
+![An image demonstrating the blockchain mining process. Robots are creating blocks and data encryption is under process.](/assets/blog/2024/04/unnamed-9.webp)
 
 To understand blockchain we need to define some terms that we are not familiar with:
 
@@ -66,7 +66,7 @@ Examples include **Proof of Work (PoW)** and Proof of Stake (PoS).
 
 Let us assume that Sohan wants to buy a car from Mohan via Ethereum. So what he does is, add Mohan’s account details and send him the ETHs.
 
-![A flow chart demonstrating the working of blockchain, step by step. From data request, verification, encryption, and block formation to Proof of Work and the addition of a block into a blockchain.](/assets/blog/2024/04/unnamed-3.png)
+![A flow chart demonstrating the working of blockchain, step by step. From data request, verification, encryption, and block formation to Proof of Work and the addition of a block into a blockchain.](/assets/blog/2024/04/unnamed-3.webp)
 
 #### Step 1 – Transaction Check
 

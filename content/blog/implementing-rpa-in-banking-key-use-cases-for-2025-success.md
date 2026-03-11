@@ -2,7 +2,7 @@
 title: "Implementing RPA in Banking: Key Use Cases for 2025 Success"
 date: "2024-11-05"
 excerpt: "Implementing RPA in Banking: Key Use Cases for 2025 Success […]"
-featuredImage: "/assets/blog/2024/11/a-minimalistic-illustration-of-a-robot-holding-a-b-zDf7OM4XRt2APXY-PA34oA-FVVM69vvRiSU_AgPQyC7wQ.jpeg"
+featuredImage: "/assets/blog/2024/11/a-minimalistic-illustration-of-a-robot-holding-a-b-zDf7OM4XRt2APXY-PA34oA-FVVM69vvRiSU_AgPQyC7wQ.webp"
 ogTitle: "Implementing RPA in Banking: Key Use Cases for 2025 Success » Hcode's offical Blog"
 ogDescription: "Legacy banking systems are complex and costly, but #RPA offers a solution! By automating repetitive tasks, banks can boost productivity."
 categories: ["Finance"]
@@ -11,7 +11,7 @@ tags: ["Easy RPA implementation and usecase for 2025", "RPA in banking"]
 
 ## Implementing RPA in Banking: Key Use Cases for 2025 Success
 
-![A robot going to work in a bank with a briefcase in his hand.](/assets/blog/2024/11/a-minimalistic-illustration-of-a-robot-holding-a-b-zDf7OM4XRt2APXY-PA34oA-FVVM69vvRiSU_AgPQyC7wQ.jpeg)
+![A robot going to work in a bank with a briefcase in his hand.](/assets/blog/2024/11/a-minimalistic-illustration-of-a-robot-holding-a-b-zDf7OM4XRt2APXY-PA34oA-FVVM69vvRiSU_AgPQyC7wQ.webp)
 
 The banking industry, known for its traditional values and long-established processes, is at a crossroads as technology reshapes every aspect of how financial services are delivered. For decades, banks have operated on legacy systems—complex, monolithic architectures built on outdated code and maintained with layers of workarounds and patches. While these systems were initially developed to handle the high transaction volumes and stringent security requirements of banking, they are increasingly becoming cumbersome and costly to maintain. Manual processes, data silos, and the limited interoperability of these systems often create operational bottlenecks that slow down service delivery, hinder customer experience, and inflate operational costs.
 
@@ -31,7 +31,7 @@ Chatbots, on the other hand, are interfaces that facilitate automated communicat
 
 ### **How RPA Benefits Businesses**
 
-![4 visual benefits of using RPA in banking ](/assets/blog/2024/11/a-minimalistic-illustration-of-a-robot-hand-holdin-klBgQra0QRyocxZB9FFwww-Wk1r-bfQSJyg4x-91jO3Mg.jpeg)
+![4 visual benefits of using RPA in banking ](/assets/blog/2024/11/a-minimalistic-illustration-of-a-robot-hand-holdin-klBgQra0QRyocxZB9FFwww-Wk1r-bfQSJyg4x-91jO3Mg.webp)
 
 RPA can revolutionize business operations by reducing the time and costs associated with repetitive tasks. Here are some of the primary benefits RPA brings to businesses:
 

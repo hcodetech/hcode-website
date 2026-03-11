@@ -2,7 +2,7 @@
 title: "Level Up Your Development: 10 Must-Have AI Developer Skills"
 date: "2024-07-08"
 excerpt: "Level Up Your Development: 10 Must-Have AI Developer Skills   […]"
-featuredImage: "/assets/blog/2024/07/trans-person-working-office-with-colleagues-min-scaled.jpg"
+featuredImage: "/assets/blog/2024/07/trans-person-working-office-with-colleagues-min-scaled.webp"
 ogTitle: "Level Up Your Development: 10 Must-Have AI Developer Skills"
 ogDescription: "Discover essential AI developer skills with HCode's guide. Learn programming, machine learning, data optimization, and more to excel in this high-demand field."
 categories: ["Artificial Intelligence (AI)"]
@@ -11,7 +11,7 @@ tags: ["AI developer skills"]
 
 # **Level Up Your Development: 10 Must-Have AI Developer Skills**
 
-![AI developer skills](/assets/blog/2024/07/trans-person-working-office-with-colleagues-min.jpg)
+![AI developer skills](/assets/blog/2024/07/trans-person-working-office-with-colleagues-min.webp)
 
 The demand for skilled AI developers is skyrocketing, with a projected growth that’s outpacing many other fields. These developers are the architects of the future, building intelligent systems that are transforming industries. But what exactly does it take to become a successful AI developer?
 

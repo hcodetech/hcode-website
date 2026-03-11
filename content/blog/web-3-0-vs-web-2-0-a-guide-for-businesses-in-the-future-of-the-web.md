@@ -2,7 +2,7 @@
 title: "Web 3.0 vs Web 2.0: A Guide for Businesses in the Future of the Web"
 date: "2024-02-04"
 excerpt: "Web 3.0 vs Web 2.0: A Guide for Businesses in […]"
-featuredImage: "/assets/blog/2024/02/medium-shot-man-wearing-vr-glasses-scaled.jpg"
+featuredImage: "/assets/blog/2024/02/medium-shot-man-wearing-vr-glasses-scaled.webp"
 ogTitle: "Web 3.0 vs Web 2.0: A Guide for Businesses in the Future of the Web » Hcode's offical Blog"
 ogDescription: "Decoding Web 3.0: A business guide to the shift from Web 2.0. Learn about decentralized ecosystems, AI, and blockchain. See how HCode facilitates seamless adaptation for a user-centric future."
 categories: ["Uncategorized"]
@@ -11,7 +11,7 @@ tags: []
 
 # Web 3.0 vs Web 2.0: A Guide for Businesses in the Future of the Web
 
-![A developer working on Web3](/assets/blog/2024/02/medium-shot-man-wearing-vr-glasses.jpg)
+![A developer working on Web3](/assets/blog/2024/02/medium-shot-man-wearing-vr-glasses.webp)
 
 **Brief:**
 
@@ -29,7 +29,7 @@ Businesses can leverage Web 3.0’s latest technologies to enhance their online 
 
 There are major updates in Web 3.0 that encompass technology, features, intent, user interaction, authority, and types of applications. It’s a new experience altogether, a business needs to understand how it operates to manage marketing in a Web 3.0 environment successfully. Let’s take a closer look at these updates.
 
-### ![Infographics differentiationg between Web3 and Web2](/assets/blog/2024/02/Illustration-Leader-VS-Boss-Comparison-Table-Infographic.png)Technology
+### ![Infographics differentiationg between Web3 and Web2](/assets/blog/2024/02/Illustration-Leader-VS-Boss-Comparison-Table-Infographic.webp)Technology
 
 Web 2.0 is built around the idea of the web as a platform, where users can interact with content and create their own. Web 2.0 websites are dynamic and have a lot of interactive elements such as
 

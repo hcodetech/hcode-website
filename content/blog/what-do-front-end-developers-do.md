@@ -2,7 +2,7 @@
 title: "What do front-end developers do?"
 date: "2024-05-02"
 excerpt: "What do front-end developers do? Front-end developers program the front […]"
-featuredImage: "/assets/blog/2024/05/unnamed-10.jpg"
+featuredImage: "/assets/blog/2024/05/unnamed-10.webp"
 ogTitle: "What do front-end developers do? » Hcode's offical Blog"
 ogDescription: "Discover the magic of front-end developers: transforming websites into intuitive, visually stunning experiences. Learn why a great website matters and the essential skills every front-end developer possesses. Ready to elevate your digital presence? Contact HCode Technologies today."
 categories: ["Web development"]
@@ -11,7 +11,7 @@ tags: []
 
 ## What do front-end developers do?
 
-![](/assets/blog/2024/05/unnamed-10.jpg)
+![](/assets/blog/2024/05/unnamed-10.webp)
 
 **_Front-end developers program the front end of a platform, i.e. the interactive part of a Web & App._**
 

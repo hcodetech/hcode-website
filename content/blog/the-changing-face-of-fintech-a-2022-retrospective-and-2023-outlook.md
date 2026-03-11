@@ -2,7 +2,7 @@
 title: "THE CHANGING FACE OF FINTECH: A 2022 RETROSPECTIVE AND 2023 OUTLOOK"
 date: "2023-08-04"
 excerpt: "THE CHANGING FACE OF FINTECH: A 2022 RETROSPECTIVE AND 2023 […]"
-featuredImage: "/assets/blog/2023/08/Group-2-1.png"
+featuredImage: "/assets/blog/2023/08/Group-2-1.webp"
 ogTitle: "THE CHANGING FACE OF FINTECH: A 2022 RETROSPECTIVE AND 2023 OUTLOOK"
 ogDescription: "Reflect on the fintech evolution in 2022 and gain insights into what lies ahead in 2023 in this comprehensive retrospective and outlook."
 categories: ["Uncategorized"]
@@ -11,7 +11,7 @@ tags: ["Fintech", "Hcode"]
 
 # **THE CHANGING FACE OF FINTECH:** **A 2022 RETROSPECTIVE AND 2023 OUTLOOK**
 
-![](/assets/blog/2023/08/Group-2-1.png)
+![](/assets/blog/2023/08/Group-2-1.webp)
 
 ##### **Introduction:**
 
@@ -21,11 +21,11 @@ The world of finance and technology collided to give birth to the disruptive for
 
 Fintechs, the fusion of finance and technology, saw their market value [plummet by over half in 2022](https://www.bcg.com/publications/2023/future-of-fintech-and-banking#:~:text=The%20rapid%20rise%20of%20the%20sector%20notwithstanding%2C%20fintechs%20on%20average%20lost%20more%20than%20half%20their%20market%20value%20in%202022). The aftermath of the [cryptocurrency market crash](https://www.thetimes.co.uk/money-mentor/article/is-bitcoin-crash-coming/) left blockchain initiatives gasping for breath, and inflation-hit currency exchange projects. Nevertheless, the spirit of innovation persevered, and fintech startups worldwide managed to secure a commendable [$79 billion in funding during 2022, but the numbers were down by a disheartening 38% compared to the previous year](https://dealroom.co/uploaded/2023/01/Fintech-2022-recap.pdf?x35994). 
 
-![](/assets/blog/2023/08/image2.png)
+![](/assets/blog/2023/08/image2.webp)
 
 If we look closer, the latter half of 2022 witnessed a significant slowdown in funding, leaving us with a rather bleak picture of less than $5 billion per month.
 
-![](/assets/blog/2023/08/image1.png)
+![](/assets/blog/2023/08/image1.webp)
 
 Even the tech giants, like Google and Meta, weren’t spared from the tempest. [Plex got canceled](https://www.forbes.com/sites/ronshevlin/2021/10/01/google-kills-the-google-plex-it-could-have-been-a-digital-checking-account-killer-app/?sh=7ccd6c0d20d5), and after three grueling years of struggle, [the Diem crypto project was abandoned](https://www.theverge.com/2022/1/31/22911426/meta-diem-cryptocurrency-confirms-sale).  With giants reducing their fintech initiatives, the pace of unique fintech investments dropped to a crawl, with a mere [ten unique fintech investments](https://www.cbinsights.com/reports/CB-Insights_Big-Tech-In-Fintech.pdf?) in 2022 Q1-3, the slowest pace in recent years. [Megarounds dwindled to just 21 in Q4](https://dealroom.co/uploaded/2023/01/Fintech-2022-recap.pdf?x35994).  
   

@@ -2,7 +2,7 @@
 title: "EMERGING INDIA AS A TECH HUB IN MODERN TURBULENT TIMES"
 date: "2022-12-21"
 excerpt: "EMERGING INDIA AS A TECH HUB IN MODERN TURBULENT TIMES […]"
-featuredImage: "/assets/blog/2022/12/Group-1-2.png"
+featuredImage: "/assets/blog/2022/12/Group-1-2.webp"
 ogTitle: "EMERGING INDIA AS A TECH HUB IN MODERN TURBULENT TIMES » Hcode's offical Blog"
 ogDescription: "EMERGING INDIA AS A TECH HUB IN MODERN TURBULENT TIMES […]"
 categories: ["Uncategorized"]
@@ -11,7 +11,7 @@ tags: []
 
 ###### EMERGING INDIA AS A TECH HUB IN MODERN TURBULENT TIMES
 
-![](/assets/blog/2022/12/Group-1-2.png)
+![](/assets/blog/2022/12/Group-1-2.webp)
 
 The post-Covid era has been full of ups and downs, and projections clouding us to see a clear future. Amid the difficult situation as offshoring increased in the IT sector, India has become a rising tech star. How?
 

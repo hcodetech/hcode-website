@@ -2,7 +2,7 @@
 title: "How to Build a Secure Blockchain Application With Python"
 date: "2024-07-16"
 excerpt: "How to Build a Secure Blockchain Application With Python   […]"
-featuredImage: "/assets/blog/2024/07/a-vivid-illustration-of-futuristic-blocks-represen-NJguN_yqTh-_IGZQoBPRSQ-0Uh-Ac_oT7iKYKgVdPP5iA.jpeg"
+featuredImage: "/assets/blog/2024/07/a-vivid-illustration-of-futuristic-blocks-represen-NJguN_yqTh-_IGZQoBPRSQ-0Uh-Ac_oT7iKYKgVdPP5iA.webp"
 ogTitle: "How to Build a Secure Blockchain Application With Python » Hcode's offical Blog"
 ogDescription: "Master \"How to Build a Secure Blockchain Application With Python\"! Discover advantages & steps to develop secure DApps using Python."
 categories: ["Blockchain Technology"]
@@ -11,7 +11,7 @@ tags: ["Hcode", "How to Build a Secure Blockchain Application With Python"]
 
 # How to Build a Secure Blockchain Application With Python
 
-![How to Build a Secure Blockchain Application With Python](/assets/blog/2024/07/a-vivid-illustration-of-futuristic-blocks-represen-NJguN_yqTh-_IGZQoBPRSQ-0Uh-Ac_oT7iKYKgVdPP5iA.jpeg)
+![How to Build a Secure Blockchain Application With Python](/assets/blog/2024/07/a-vivid-illustration-of-futuristic-blocks-represen-NJguN_yqTh-_IGZQoBPRSQ-0Uh-Ac_oT7iKYKgVdPP5iA.webp)
 
 While you can create a blockchain using Python, the real question is: can you build a fully functional application around it? Absolutely. Such applications are called decentralized applications, or DApps. In this blog, let us demystify the nature of blockchain applications and understand why and how to build a secure blockchain application with Python.
 
@@ -35,7 +35,7 @@ The main advantage of Python is its syntax simplicity, which makes it easier for
 
 To build up a blockchain application in Python, first of all, configure your coding environment. Download Python on your machine. Version 3.7 or any above version will work right as it is pretty flexible for blockchain applications. Make sure that your virtual environment is suitable according to the needs of the project. Next, install all of the important modules in which Flask is to be used to create web applications, hashlib is used for encrypting methods, Flask-CORS, and JSON for managing data exchange.
 
-![Set Up Your Development Environment](/assets/blog/2024/07/Screenshot-2024-07-16-151455.png)
+![Set Up Your Development Environment](/assets/blog/2024/07/Screenshot-2024-07-16-151455.webp)
 
 ### Step 2: Build the Main Blockchain Framework
 
@@ -45,7 +45,7 @@ Starting with blockchain, you can either choose a third-party blockchain host or
 
 To work with your blockchain, put together a Flask web app. Set up endpoints to mine new blocks, add transactions, and get the full blockchain. The /mine endpoint takes care of the mining process making a new block and rewarding the miner. The /transactions/new endpoint lets users send in transactions, which then go into the next block. The /chain endpoint shows the whole blockchain, which makes things clear and helps users check transactions.
 
-![Build a Web App to Work with Your Blockchain](/assets/blog/2024/07/HTMLCSSPYTHON.png)
+![Build a Web App to Work with Your Blockchain](/assets/blog/2024/07/HTMLCSSPYTHON.webp)
 
 ### Step 4: Lock Down Your Blockchain
 

@@ -2,7 +2,7 @@
 title: "How Edge Computing Is Rewriting the Rules of Web Architecture"
 date: "2025-08-04"
 excerpt: "How Edge Computing Is Rewriting The Rules of Web Architecture […]"
-featuredImage: "/assets/blog/2025/08/visuals-of-react-native-blog-5.png"
+featuredImage: "/assets/blog/2025/08/visuals-of-react-native-blog-5.webp"
 ogTitle: "How Edge Computing Is Rewriting the Rules of Web Architecture » Hcode's offical Blog"
 ogDescription: "A simple visual guide to edge computing: see how edge nodes reduce latency and boost speed for users, with clean design and minimal text."
 categories: ["Edge Computing"]
@@ -11,7 +11,7 @@ tags: ["Edge Computing"]
 
 ## **How Edge Computing Is Rewriting The Rules of Web Architecture**
 
-![visuals of edge computing](/assets/blog/2025/08/visuals-of-react-native-blog-5.png)
+![visuals of edge computing](/assets/blog/2025/08/visuals-of-react-native-blog-5.webp)
 
 Something’s changed in the way we build for the web — and chances are, you’ve noticed it.
 

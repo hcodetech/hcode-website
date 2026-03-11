@@ -2,7 +2,7 @@
 title: "FIGHTING FRAUD  IN THE ERA OF DIGITALIZATION"
 date: "2023-04-21"
 excerpt: "FIGHTING FRAUD IN THE ERA OF DIGITALIZATION The COVID-19 pandemic […]"
-featuredImage: "/assets/blog/2023/04/Group-2-2.png"
+featuredImage: "/assets/blog/2023/04/Group-2-2.webp"
 ogTitle: "FIGHTING FRAUD IN THE ERA OF DIGITALIZATION » Hcode's offical Blog"
 ogDescription: "FIGHTING FRAUD IN THE ERA OF DIGITALIZATION The COVID-19 pandemic […]"
 categories: ["Uncategorized"]
@@ -11,7 +11,7 @@ tags: []
 
 ### **FIGHTING FRAUD IN THE ERA OF DIGITALIZATION**
 
-![](/assets/blog/2023/04/Group-2-2.png)
+![](/assets/blog/2023/04/Group-2-2.webp)
 
 The COVID-19 pandemic has triggered a significant shift towards digitalization, leading to an unprecedented surge in e-commerce. However, this digital transformation has also resulted in a sharp increase in fraudulent activity, with the United States alone experiencing a 57% rise in fraud losses in 2021 compared to the previous year. Fraud has become a critical concern for businesses, as it not only impacts their bottom line but also undermines customer trust and brand reputation. In this article, we will explore the challenges of combating fraud in the digital era and introduce a new approach proposed by McKinsey. We will delve into the four key capabilities companies must develop to enhance their fraud resilience and explain why protecting data should be at the forefront of any anti-fraud strategy. Finally, we will introduce Hcode Technologies, a team of experienced professionals who are dedicated to helping businesses build secure tech products and stay ahead of potential threats and vulnerabilities.
 

@@ -2,7 +2,7 @@
 title: "The Cost of Chasing Modern Frontend Tools"
 date: "2025-08-13"
 excerpt: "The Cost of Chasing Modern Frontend Tools How teams fall […]"
-featuredImage: "/assets/blog/2025/08/How-Edge-Nodes-Improve-Speed-for-Indian-Users-3.png"
+featuredImage: "/assets/blog/2025/08/How-Edge-Nodes-Improve-Speed-for-Indian-Users-3.webp"
 ogTitle: "The Cost of Chasing Modern Frontend Tools » Hcode's offical Blog"
 ogDescription: "A cautionary look at modern frontend trends—why chasing the latest tools isn’t always progress, and when sticking with what works is smarter."
 categories: ["Frontend"]
@@ -15,7 +15,7 @@ tags: ["Frontend"]
 
 ###### **How teams fall for hype — and what it really means to stay modern.**
 
-![Fronted keyboard ](/assets/blog/2025/08/How-Edge-Nodes-Improve-Speed-for-Indian-Users-3.png)
+![Fronted keyboard ](/assets/blog/2025/08/How-Edge-Nodes-Improve-Speed-for-Indian-Users-3.webp)
 
 There’s a familiar pattern in frontend engineering right now: the belief that new is better, that modern equals smarter, and that whatever just launched on Twitter must be the thing we should build with next.
 
@@ -56,7 +56,7 @@ AI accelerated the boilerplate, but designer–developer collaboration remained 
 
 ### **When to Stick With What Works**
 
-![Hype vs Reality](/assets/blog/2025/08/1.png)
+![Hype vs Reality](/assets/blog/2025/08/1.webp)
 
 Sometimes the smartest move is not switching.  
 Familiar systems allow engineers to move faster in code they know deeply. That stability compounds over time, often outpacing the thrill of a fresh stack. 

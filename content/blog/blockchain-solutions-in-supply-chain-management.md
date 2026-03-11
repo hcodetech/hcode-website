@@ -2,7 +2,7 @@
 title: "Blockchain Solutions in Supply Chain Management"
 date: "2024-06-27"
 excerpt: "Blockchain Solutions in Supply Chain Management   Supply Chain Management […]"
-featuredImage: "/assets/blog/2024/06/still-life-supply-chain-representation-min-scaled.jpg"
+featuredImage: "/assets/blog/2024/06/still-life-supply-chain-representation-min-scaled.webp"
 ogTitle: "Blockchain Solutions in Supply Chain Management » Hcode's offical Blog"
 ogDescription: "Discover how blockchain solutions in supply chain management enhance transparency, efficiency, and security. Learn more about implementing blockchain technology today!"
 categories: ["Blockchain Technology"]
@@ -11,7 +11,7 @@ tags: ["Blockchain Solutions", "Blockchain Solutions in Supply Chain Management"
 
 ## Blockchain Solutions in Supply Chain Management
 
-![Blockchain Solutions in Supply Chain Management](/assets/blog/2024/06/still-life-supply-chain-representation-min.jpg)
+![Blockchain Solutions in Supply Chain Management](/assets/blog/2024/06/still-life-supply-chain-representation-min.webp)
 
 Supply Chain Management handles the flow of goods and services from their origin to the final destination (consumers essentially). It involves production, packaging, transportation, storage and distribution. Ever wonder how a seemingly small issue can cause a major product recall or delivery delay? Today’s complex supply chains, responsible for getting everything from groceries to medicine to your doorstep, face constant challenges. From natural disasters to inefficiencies like counterfeiting, these disruptions cost businesses billions and can impact consumer safety.
 
