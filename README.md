@@ -1,31 +1,79 @@
 # Hcode Website
 
-This website is created in **Next Js** but it is hosted in AWS S3 and cloudfront i.e. without server. So while doing the developing please avoid server function that next js provide, if you try to include the server function then you won't be able to deploy on S3 bucket.
+Company website for [hcode.tech](https://www.hcode.tech). Built with Next.js 11, React 17, and Tailwind CSS 2 (JIT mode). Statically exported — no server-side rendering.
 
-### Git Branch Structure:
+## Getting Started
 
-```
-Main : Production Ready code for deployment
-Deploy : Dev ready code for testing
-```
-
-## Final Steps for Production Deployment Steps for AWS S3 Buckets
-
-```
-yarn build
-yarn deploy
+```bash
+yarn install
+yarn dev        # Start dev server on http://localhost:3000
 ```
 
-## Steps to configure the AWS cli for Deployment
+**Note:** Requires `NODE_OPTIONS=--openssl-legacy-provider` (already set in package.json scripts).
+
+## Commands
+
+| Command       | Description                                                    |
+| ------------- | -------------------------------------------------------------- |
+| `yarn dev`    | Start dev server on port 3000                                  |
+| `yarn build`  | Production build (runs `next build` then `next-sitemap`)       |
+
+## Project Structure
 
 ```
-Install awscli first and run aws configure command with the correct key and secret params
+pages/              # Next.js pages router (file-based routing)
+  blog/             # Blog listing and individual post pages
+  our-services/     # Service pages
+  technologies/     # Technology pages
+  api/              # Client-side API helpers (not server-side routes)
+components/         # Shared React components (Navbar, Footer, MetaTags, etc.)
+constants/          # Static data (testimonials, services, team, SVG icons)
+content/blog/       # Markdown blog posts (89 posts, converted from WordPress)
+utils/blog.js       # Blog utilities (getAllPosts, getPostBySlug)
+scripts/            # One-time scripts (e.g., WordPress post conversion)
+styles/global.scss  # Global styles and Tailwind component layer
+public/assets/      # Static assets (images, icons, blog images)
 ```
 
-**Reference Docs AWS:** https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
+## Blog
 
-## S3 bucket link
+The blog lives at `/blog` and is built from Markdown files in `content/blog/`. Posts were migrated from the WordPress installation at `blog.hcode.tech`.
 
+- **Blog listing:** `pages/blog/index.js` — grid of all posts sorted by date
+- **Blog post:** `pages/blog/[slug].js` — individual post with SEO meta tags
+- **Data utilities:** `utils/blog.js` — reads and parses markdown with `gray-matter` + `marked`
+- **Blog images:** `public/assets/blog/` — images from WordPress `wp-content/uploads/`
+
+### Adding a new blog post
+
+Create a markdown file in `content/blog/your-slug.md` with frontmatter:
+
+```yaml
+---
+title: "Post Title"
+date: "2025-09-12"
+excerpt: "Short description"
+featuredImage: "/assets/blog/2025/09/image.png"
+ogTitle: "SEO title"
+ogDescription: "SEO description"
+categories: [10]
+tags: [12, 5]
+---
+
+Your markdown content here.
 ```
-http://hcode.tech.s3-website-us-east-1.amazonaws.com/
-```
+
+## Key Constraints
+
+- **Static export only** — do not use `getServerSideProps` or any feature requiring a Node.js server. Use `getStaticProps`/`getStaticPaths` only.
+- **Tailwind custom colors:** `primary` (#276EF1), `secondary` (#FFC043), `cyan` (#61DAFB). Font: Poppins.
+- **Google reCAPTCHA v3** wraps the app in `_app.js`.
+
+## Git Branches
+
+- `master` — Production-ready code
+- `Deploy` — Dev/testing branch
+
+## Deployment
+
+Hosted on Vercel. Pushes to `master` trigger automatic production deployments.

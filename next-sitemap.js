@@ -52,6 +52,16 @@ module.exports = {
       }
     }
 
+    // Blog pages
+    if (path.startsWith('/blog')) {
+      return {
+        loc: path,
+        changefreq: 'monthly',
+        priority: 0.7,
+        lastmod: config.autoLastmod ? new Date().toISOString() : undefined,
+      }
+    }
+
     // Default config
     return {
       loc: path,
