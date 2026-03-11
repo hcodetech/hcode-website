@@ -1,9 +1,6 @@
 const withPlugins = require("next-compose-plugins");
 const optimizedImages = require("next-optimized-images");
 
-module.exports = {
-  trailingSlash: true,
-};
 module.exports = withPlugins([
   [
     optimizedImages,
@@ -13,4 +10,6 @@ module.exports = withPlugins([
   ],
 
   // your other plugins here
-]);
+], {
+  trailingSlash: true,
+});
