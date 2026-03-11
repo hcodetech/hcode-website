@@ -1,0 +1,39 @@
+$ORIGIN hcode.tech.
+; Zone file for hcode.tech
+; Exported from AWS Route53 hosted zone Z0922202DJWYL48CIMLI
+
+; Mail (Google Workspace)
+hcode.tech.  300  IN  MX  1 ASPMX.L.GOOGLE.COM.
+hcode.tech.  300  IN  MX  5 ALT1.ASPMX.L.GOOGLE.COM.
+hcode.tech.  300  IN  MX  5 ALT2.ASPMX.L.GOOGLE.COM.
+hcode.tech.  300  IN  MX  10 ALT3.ASPMX.L.GOOGLE.COM.
+hcode.tech.  300  IN  MX  10 ALT4.ASPMX.L.GOOGLE.COM.
+
+; TXT records
+hcode.tech.  300  IN  TXT  "brevo-code:da14014fcc294c92c5b4a9f72e04b6ad"
+hcode.tech.  300  IN  TXT  "facebook-domain-verification=zt07pz96akt0wrgnf1snsv5q7ple2q"
+
+; DMARC
+_dmarc.hcode.tech.  300  IN  TXT  "v=DMARC1; p=none;"
+
+; DKIM (Amazon SES)
+3sqffg6yv6bsi4xmogjxjfqkbui52boq._domainkey.hcode.tech.  1800  IN  CNAME  3sqffg6yv6bsi4xmogjxjfqkbui52boq.dkim.amazonses.com.
+6hguu4cmv4z6474d5wyhx6fdkwpe45mh._domainkey.hcode.tech.  1800  IN  CNAME  6hguu4cmv4z6474d5wyhx6fdkwpe45mh.dkim.amazonses.com.
+i4nfuti4tajluhhjzwkdykn4vrttmf3r._domainkey.hcode.tech.  1800  IN  CNAME  i4nfuti4tajluhhjzwkdykn4vrttmf3r.dkim.amazonses.com.
+
+; DKIM (Brevo/Sendinblue)
+mail._domainkey.hcode.tech.  300  IN  TXT  "k=rsa;p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDeMVIzrCa3T14JsNY0IRv5/2V1/v2itlviLQBwXsa7shBD6TrBkswsFUToPyMRWC9tbR/5ey0nRBH0ZVxp+lsmTxid2Y2z+FApQ6ra2VsXfbJP3HE6wAO0YTVEJt1TmeczhEd2Jiz/fcabIISgXEdSpTYJhb0ct0VJRxcg4c8c7wIDAQAB"
+
+; Mail subdomain (Amazon SES)
+mail.hcode.tech.  300  IN  MX  10 feedback-smtp.us-east-1.amazonses.com.
+mail.hcode.tech.  300  IN  TXT  "v=spf1 include:amazonses.com ~all"
+
+; Subdomains
+blog.hcode.tech.  300  IN  CNAME  ec2-34-202-163-43.compute-1.amazonaws.com.
+client.hcode.tech.  60  IN  CNAME  ec2-44-201-9-102.compute-1.amazonaws.com.
+portal.hcode.tech.  60  IN  CNAME  ec2-44-201-9-102.compute-1.amazonaws.com.
+dev-portal.hcode.tech.  300  IN  A  18.233.197.165
+dev-portal.hcode.tech.  300  IN  AAAA  2600:1f18:780f:b9c2:ee13:8702:d999:92bf
+hercode.hcode.tech.  300  IN  A  3.209.249.226
+sonarqube.hcode.tech.  300  IN  A  122.176.83.85
+www.hcode.tech.  300  IN  CNAME  hcode.tech.
