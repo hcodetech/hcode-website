@@ -7,7 +7,7 @@ import CTA from '../components/CTA';
 import ServicesCard from '../components/ServicesCard';
 import Team from '../components/Team';
 import { about_page, client, metaData, TEAM } from '../constants/constants';
-import { ArrowRightIcon } from '@heroicons/react/solid';
+import { ArrowRightIcon } from '@heroicons/react/24/solid';
 import React, { useState, useEffect } from 'react';
 import MetaTags from '../components/MetaTags';
 function About() {

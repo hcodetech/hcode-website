@@ -1,6 +1,5 @@
 import "../node_modules/slick-carousel/slick/slick.css";
 import "../node_modules/slick-carousel/slick/slick-theme.css";
-import "tailwindcss/tailwind.css";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import "../styles/global.scss";

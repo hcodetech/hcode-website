@@ -2,19 +2,14 @@ const defaultTheme = require('tailwindcss/defaultTheme');
 const plugin = require('tailwindcss/plugin');
 
 module.exports = {
-  mode: 'jit',
-  purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
-  darkMode: false, // or 'media' or 'class'
+  content: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   theme: {
-
-    colors: {
-      primary: '#276EF1',
-      secondary: '#FFC043',
-      cyan: '#61DAFB',
-      transparent: 'transparent',
-      ...defaultTheme.colors,
-    },
     extend: {
+      colors: {
+        primary: '#276EF1',
+        secondary: '#FFC043',
+        cyan: '#61DAFB',
+      },
       fontFamily: {
         poppins: ['Poppins', ...defaultTheme.fontFamily.sans],
       },
@@ -24,7 +19,6 @@ module.exports = {
         tech_stack: "url('/assets/img/tech_stack.png')",
         homepage_hero: "url('/assets/img/hcode_hero.jpg')",
         cta_circle: "url('/assets/img/cta-circle.png')",
-        linkedin: "url('/assets/icons/linkedin.svg')",
         linkedin: "url('/assets/icons/linkedin.svg')",
         enterprise_image: "url('/assets/img/consumer.png')",
         consumer_image: "url('/assets/img/enterprise.png')",
@@ -46,9 +40,6 @@ module.exports = {
         AI_Integration_Process_bg: "url('/assets/img/ai_integration_process_.png')",
       }),
     },
-  },
-  variants: {
-    extend: {},
   },
 
   plugins: [

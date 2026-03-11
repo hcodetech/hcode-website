@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Hcode Technologies company website (hcode.tech). Built with Next.js 11, React 17, and Tailwind CSS 2 (JIT mode). Hosted on Vercel — **no server-side rendering**. All pages must work as static exports.
+Hcode Technologies company website (hcode.tech). Built with Next.js 16, React 19, and Tailwind CSS 3. Hosted on Vercel — **no server-side rendering**. All pages must work as static exports.
 
 ## Commands
 
@@ -12,8 +12,6 @@ Hcode Technologies company website (hcode.tech). Built with Next.js 11, React 17
 - `yarn build` — Production build (runs `next build`, then `next-sitemap`)
 
 No test suite or linter is configured.
-
-**Note:** Requires `NODE_OPTIONS=--openssl-legacy-provider` (already set in scripts).
 
 ## Architecture
 

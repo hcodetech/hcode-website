@@ -1,6 +1,6 @@
-import { Disclosure } from '@headlessui/react';
-import { MenuIcon, XIcon } from '@heroicons/react/outline';
-import { useRouter } from 'next/dist/client/router';
+import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react';
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import { useRouter } from 'next/router';
 import { hcode_footer } from '../constants/constants';
 
 export default function Navbar() {
@@ -32,32 +32,35 @@ export default function Navbar() {
                 <div className="hidden sm:ml-6 md:flex sm:space-x-8">
                   <a
                     href="/"
-                    className={` text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium  border-transparent
-                      ${pathname === '/' && 'border-blue-500 border-b-4'}   `}
+                    className={`text-gray-900 inline-flex items-center px-1 pt-1 border-b-4 text-sm font-medium ${
+                      pathname === '/' ? 'border-blue-500' : 'border-transparent'
+                    }`}
                   >
                     Home
                   </a>
                   {/* Our Services dropdown */}
-
-                  <a
-                    href="/our-services"
-                    className={` text-gray-900 group  inline-flex items-center  pt-1 border-b-2 text-sm font-medium  border-transparent relative 
-                      ${pathname === '/our-services' ||
-                      pathname === '/our-services/team-as-a-service' ||
-                      pathname === '/our-services/blockchain-development-services' ||
-                      pathname === '/our-services/mvp-development-services' ||
-                      pathname === '/our-services/ai-integration-services' ||
-                      (pathname === '/our-services/developer-as-a-service' &&
-                        'border-blue-500 border-b-4')
-                      }   `}
-                  >
-                    Our Services
-                    <div className="group-hover:block dropdown-menu absolute hidden top-16 -left-2">
-                      <ul className="top-0 w-64 bg-white shadow text-left    rounded">
+                  <div className={`group relative inline-flex items-center pt-1 border-b-4 ${
+                    pathname === '/our-services' ||
+                    pathname === '/our-services/team-as-a-service' ||
+                    pathname === '/our-services/blockchain-development-services' ||
+                    pathname === '/our-services/mvp-development-services' ||
+                    pathname === '/our-services/ai-integration-services' ||
+                    pathname === '/our-services/developer-as-a-service'
+                      ? 'border-blue-500'
+                      : 'border-transparent'
+                  }`}>
+                    <a
+                      href="/our-services"
+                      className="text-gray-900 text-sm font-medium"
+                    >
+                      Our Services
+                    </a>
+                    <div className="group-hover:block dropdown-menu absolute hidden top-12 -left-2 pt-4">
+                      <ul className="w-64 bg-white shadow text-left rounded">
                         <li>
                           <a
                             href="/our-services/team-as-a-service"
-                            className="block py-3 pl-4  text-sm text-gray-700 hover:bg-gray-100 border-b"
+                            className="block py-3 pl-4 text-sm text-gray-700 hover:bg-gray-100 border-b"
                           >
                             Team as a Service
                           </a>
@@ -65,7 +68,7 @@ export default function Navbar() {
                         <li>
                           <a
                             href="/our-services/developer-as-a-service"
-                            className="block py-3 pl-4  text-sm text-gray-700 hover:bg-gray-100 border-b"
+                            className="block py-3 pl-4 text-sm text-gray-700 hover:bg-gray-100 border-b"
                           >
                             Developer as a Service
                           </a>
@@ -73,7 +76,7 @@ export default function Navbar() {
                         <li>
                           <a
                             href="/our-services/blockchain-development-services"
-                            className="block py-3 pl-4  text-sm text-gray-700 hover:bg-gray-100 border-b"
+                            className="block py-3 pl-4 text-sm text-gray-700 hover:bg-gray-100 border-b"
                           >
                             Blockchain Development Services
                           </a>
@@ -81,7 +84,7 @@ export default function Navbar() {
                         <li>
                           <a
                             href="/our-services/mvp-development-services"
-                            className="block py-3 pl-4  text-sm text-gray-700 hover:bg-gray-100 border-b"
+                            className="block py-3 pl-4 text-sm text-gray-700 hover:bg-gray-100 border-b"
                           >
                             MVP Development Services
                           </a>
@@ -89,56 +92,54 @@ export default function Navbar() {
                         <li>
                           <a
                             href="/our-services/ai-integration-services"
-                            className="block py-3 pl-4  text-sm text-gray-700 hover:bg-gray-100"
+                            className="block py-3 pl-4 text-sm text-gray-700 hover:bg-gray-100"
                           >
                             AI Integration Services
                           </a>
                         </li>
                       </ul>
                     </div>
-                  </a>
+                  </div>
 
                   <a
                     href="/about"
-                    className={` text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium  border-transparent
-                      ${pathname === '/about' && 'border-blue-500 border-b-4'
-                      }   `}
+                    className={`text-gray-900 inline-flex items-center px-1 pt-1 border-b-4 text-sm font-medium ${
+                      pathname === '/about' ? 'border-blue-500' : 'border-transparent'
+                    }`}
                   >
                     About Us
                   </a>
                   <a
                     href="/work-with-us"
-                    className={` text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium  border-transparent
-                      ${pathname === '/work-with-us' &&
-                      'border-blue-500 border-b-4'
-                      }   `}
+                    className={`text-gray-900 inline-flex items-center px-1 pt-1 border-b-4 text-sm font-medium ${
+                      pathname === '/work-with-us' ? 'border-blue-500' : 'border-transparent'
+                    }`}
                   >
                     Work With Us
                   </a>
                   <a
                     href="/our-work"
-                    className={` text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium  border-transparent
-                      ${pathname === '/our-work' && 'border-blue-500 border-b-4'
-                      }   `}
+                    className={`text-gray-900 inline-flex items-center px-1 pt-1 border-b-4 text-sm font-medium ${
+                      pathname === '/our-work' ? 'border-blue-500' : 'border-transparent'
+                    }`}
                   >
                     Our Work
                   </a>
 
                   <a
                     href="/case-studies"
-                    className={` text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium  border-transparent
-                      ${pathname === '/case-studies' &&
-                      'border-blue-500 border-b-4'
-                      }   `}
+                    className={`text-gray-900 inline-flex items-center px-1 pt-1 border-b-4 text-sm font-medium ${
+                      pathname === '/case-studies' ? 'border-blue-500' : 'border-transparent'
+                    }`}
                   >
                     Case Studies
                   </a>
 
                   <a
                     href="/blog"
-                    className={` text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium  border-transparent
-                      ${pathname.startsWith('/blog') && 'border-blue-500 border-b-4'
-                      }   `}
+                    className={`text-gray-900 inline-flex items-center px-1 pt-1 border-b-4 text-sm font-medium ${
+                      pathname.startsWith('/blog') ? 'border-blue-500' : 'border-transparent'
+                    }`}
                   >
                     Blog
                   </a>
@@ -151,19 +152,19 @@ export default function Navbar() {
               </div>
               <div className="-mr-2 flex items-center md:hidden">
                 {/* Mobile menu button */}
-                <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500">
+                <DisclosureButton className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
-                    <XIcon className="block h-6 w-6" aria-hidden="true" />
+                    <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
                   ) : (
-                    <MenuIcon className="block h-6 w-6" aria-hidden="true" />
+                    <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
                   )}
-                </Disclosure.Button>
+                </DisclosureButton>
               </div>
             </div>
           </div>
           {/* Mobile View List */}
-          <Disclosure.Panel className="lg:hidden">
+          <DisclosurePanel className="lg:hidden">
             <div className="pt-2 pb-3 space-y-1">
               <a
                 href="/"
@@ -307,7 +308,7 @@ export default function Navbar() {
                 </div>
               </div>
             </div>
-          </Disclosure.Panel>
+          </DisclosurePanel>
         </>
       )}
     </Disclosure>

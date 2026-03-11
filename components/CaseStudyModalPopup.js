@@ -1,6 +1,6 @@
 /** @format */
 
-import { DocumentDownloadIcon } from '@heroicons/react/outline';
+import { DocumentArrowDownIcon } from '@heroicons/react/24/outline';
 import { useState } from 'react';
 import { getAPIUrl } from '../pages/api/APIHelpers';
 import { apiRoutes } from '../pages/api/APIRoutes';
@@ -82,7 +82,7 @@ const CaseStudyModalPopup = ({ mediaId, downloadCallback, close }) => {
       {/* TODO: Check this is open, at the same time below modal is not closed */}
       <Modal
         success
-        titleIcon={<DocumentDownloadIcon className="h-6 w-6 text-primary" />}
+        titleIcon={<DocumentArrowDownIcon className="h-6 w-6 text-primary" />}
         openModal={true}
         close={close}
         color="bg-blue-100"

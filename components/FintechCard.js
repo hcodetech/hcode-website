@@ -1,4 +1,4 @@
-import { ArrowRightIcon } from "@heroicons/react/solid";
+import { ArrowRightIcon } from "@heroicons/react/24/solid";
 function FintechCard({ data }) {
   return (
     <div className={`bg-gray-100 grid md:grid-cols-2 lg:bg-fintech bg-no-repeat bg-right px-4 py-8 md:p-16 md:h-[550px]  mb-20`}>

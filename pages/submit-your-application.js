@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { ArrowRightIcon } from "@heroicons/react/solid";
+import { ArrowRightIcon } from "@heroicons/react/24/solid";
 import { useState } from "react";
 import DotLoader from "react-spinners/DotLoader";
 import Modal from "../components/Modal";

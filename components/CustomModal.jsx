@@ -1,7 +1,7 @@
-import { Fragment, useEffect, useState } from "react";
-import { Dialog, Transition } from "@headlessui/react";
-import { CheckIcon } from "@heroicons/react/outline";
-import { XIcon } from "@heroicons/react/solid";
+import { useEffect, useState } from "react";
+import { Dialog, DialogTitle, Transition, TransitionChild } from "@headlessui/react";
+import { CheckIcon } from "@heroicons/react/24/outline";
+import { XMarkIcon } from "@heroicons/react/24/solid";
 import { mern_page_selected_technologies } from "../constants/constants";
 import { apiRoutes } from "../pages/api/APIRoutes";
 import { getAPIUrl } from "../pages/api/APIHelpers";
@@ -107,7 +107,7 @@ function CustomModal({ open, setOpen }) {
 
   return (
     <div>
-      <Transition.Root show={open} as={Fragment}>
+      <Transition show={open}>
         <Dialog
           as="div"
           className="fixed z-50 inset-0 overflow-y-auto "
@@ -118,8 +118,7 @@ function CustomModal({ open, setOpen }) {
               formSubmitted ? "items-center h-screen justify-center " : ""
             }`}
           >
-            <Transition.Child
-              as={Fragment}
+            <TransitionChild
               enter="ease-out duration-300"
               enterFrom="opacity-0"
               enterTo="opacity-100"
@@ -127,8 +126,8 @@ function CustomModal({ open, setOpen }) {
               leaveFrom="opacity-100"
               leaveTo="opacity-0"
             >
-              <Dialog.Overlay className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" />
-            </Transition.Child>
+              <div className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" />
+            </TransitionChild>
 
             {/* This element is to trick the browser into centering the modal contents. */}
             <span
@@ -137,8 +136,7 @@ function CustomModal({ open, setOpen }) {
             >
               &#8203;
             </span>
-            <Transition.Child
-              as={Fragment}
+            <TransitionChild
               enter="ease-out duration-300"
               enterFrom="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
               enterTo="opacity-100 translate-y-0 sm:scale-100"
@@ -190,7 +188,7 @@ function CustomModal({ open, setOpen }) {
                           Find developers to hire
                         </h2>
                       </div>
-                      <XIcon
+                      <XMarkIcon
                         className="w-6 h-6 cursor-pointer"
                         onClick={() => setOpen(false)}
                       />
@@ -361,10 +359,10 @@ function CustomModal({ open, setOpen }) {
                   </div>
                 )}
               </div>
-            </Transition.Child>
+            </TransitionChild>
           </div>
         </Dialog>
-      </Transition.Root>
+      </Transition>
     </div>
   );
 }
@@ -383,16 +381,16 @@ export const SuccessModal = (props) => (
             aria-hidden="true"
           />
         ) : (
-          <XIcon className={`h-6 w-6 ${props.iconColor}`} aria-hidden="true" />
+          <XMarkIcon className={`h-6 w-6 ${props.iconColor}`} aria-hidden="true" />
         )}
       </div>
       <div className="mt-3 text-center sm:mt-5">
-        <Dialog.Title
+        <DialogTitle
           as="h3"
           className="text-lg leading-6 font-medium text-gray-900"
         >
           {props.heading}
-        </Dialog.Title>
+        </DialogTitle>
         <div className="mt-2">
           <p className="text-sm text-gray-500">{props.paragraph}</p>
         </div>

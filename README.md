@@ -1,6 +1,6 @@
 # Hcode Website
 
-Company website for [hcode.tech](https://www.hcode.tech). Built with Next.js 11, React 17, and Tailwind CSS 2 (JIT mode). Statically exported — no server-side rendering.
+Company website for [hcode.tech](https://www.hcode.tech). Built with Next.js 16, React 19, and Tailwind CSS 3. Hosted on Vercel.
 
 ## Getting Started
 
@@ -9,7 +9,6 @@ yarn install
 yarn dev        # Start dev server on http://localhost:3000
 ```
 
-**Note:** Requires `NODE_OPTIONS=--openssl-legacy-provider` (already set in package.json scripts).
 
 ## Commands
 

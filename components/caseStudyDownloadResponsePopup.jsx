@@ -1,6 +1,6 @@
 /** @format */
 
-import { CheckIcon, XIcon } from "@heroicons/react/outline";
+import { CheckIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import Modal from "./Modal";
 
 const DownloadResponsePopup = ({ error, title, description, close }) => {
@@ -10,7 +10,7 @@ const DownloadResponsePopup = ({ error, title, description, close }) => {
         success
         titleIcon={
           error ? (
-            <XIcon className="text-red-700 w-6 h-6" />
+            <XMarkIcon className="text-red-700 w-6 h-6" />
           ) : (
             <CheckIcon className="w-6 h-6 text-green-700" />
           )

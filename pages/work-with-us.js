@@ -1,10 +1,64 @@
 /** @format */
 
-import { ArrowRightIcon } from '@heroicons/react/solid';
+import { ArrowRightIcon } from '@heroicons/react/24/solid';
 import Head from 'next/head';
-import { CarouselProvider, Slide, Slider } from 'pure-react-carousel';
-import 'pure-react-carousel/dist/react-carousel.es.css';
+import useEmblaCarousel from 'embla-carousel-react';
+import Autoplay from 'embla-carousel-autoplay';
 import Accordion from '../components/Accordion';
+
+function KarnalCarousel({ karnalImages, blog_page }) {
+  const [emblaRef] = useEmblaCarousel({ loop: true }, [
+    Autoplay({ delay: 10000, stopOnInteraction: false }),
+  ]);
+
+  return (
+    <div className="relative mb-10 pt-10 md:pt-20 shadow-lg">
+      <div className="overflow-hidden" ref={emblaRef}>
+        <div className="flex">
+          {karnalImages.map((item, idx) => (
+            <div key={item.img + idx} className="flex-[0_0_100%] min-w-0">
+              <div className="relative">
+                <picture>
+                  <source
+                    srcSet={item.img_webp}
+                    type="image/webp"
+                    media="(min-width:250px)"
+                  />
+                  <img
+                    src={item.img}
+                    alt="Karnal city"
+                    className="md:h-[700px] w-screen object-cover"
+                    width="100%"
+                    height="100%"
+                    loading="lazy"
+                  />
+                </picture>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="md:max-w-[480px] bg-white md:absolute md:top-[20%] md:left-[8%] md:p-10 p-5 md:shadow-xl md:rounded-sm">
+        <h2 className="font-semibold text-3xl">{blog_page.blog_heading}</h2>
+        <div className="space-y-4 font-light tracking-normal">
+          <p className="mt-4">{blog_page.blog_para}</p>
+          <p>{blog_page.blog_para2}</p>
+          <p>{blog_page.blog_para3}</p>
+        </div>
+        <div className="md:mt-14 hidden">
+          <a
+            href="https://hcode.tech/blog/"
+            target="_blank"
+            className="pt-5 pb-1 mt-2 w-50 whitespace-nowrap flex-nowrap border-b border-[#8F929F] inline-flex text-[#8F929F] hover:scale-100 cursor-pointer hover:opacity-100"
+          >
+            Read More About Life Karnal
+            <ArrowRightIcon className="w-6 md:ml-2 h-full" />
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+}
 import Benefits from '../components/Benefits';
 import ImageCarousel from '../components/ImageCarousel';
 import MetaTags from '../components/MetaTags';
@@ -132,10 +186,8 @@ function work_with_us() {
       {/* Campus Overview */}
       <section className="new-container mt-10">
         <div className="sm:mt-10">
-          <h3 className="text-4xl  font-semibold font-poppins">
-            <h3 className="text-4xl  font-semibold font-poppins">
-              {work_with_us_content.campus_heading}
-            </h3>
+          <h3 className="text-4xl font-semibold font-poppins">
+            {work_with_us_content.campus_heading}
           </h3>
         </div>
         <p
@@ -246,66 +298,11 @@ function work_with_us() {
         </div>
       </section>
       {/* Core Team  */}
-      <CarouselProvider
-        visibleSlides={1}
-        totalSlides={karnalImages.length}
-        step={1}
-        isIntrinsicHeight
-        interval={10000}
-        isPlaying
-        playDirection="forward"
-        infinite
-      >
-        <div className="relative mb-10 pt-10 md:pt-20 shadow-lg">
-          <Slider>
-            {karnalImages.map((item, idx) => (
-              <Slide index={idx} key={item.img + idx}>
-                <div className="relative">
-                  <picture>
-                    <source
-                      srcSet={item.img_webp}
-                      type="image/webp"
-                      media="(min-width:250px)"
-                    />
-                    <img
-                      src={item.img}
-                      alt="Karnal city"
-                      className="md:h-[700px] w-screen object-cover "
-                      width="100%"
-                      height="100%"
-                      loading="lazy"
-                    />
-                  </picture>
-                </div>
-              </Slide>
-            ))}
-          </Slider>
-          <div className="md:max-w-[480px]  bg-white md:absolute md:top-[20%] md:left-[8%] md:p-10 p-5 md:shadow-xl md:rounded-sm">
-            <h2 className="font-semibold text-3xl">{blog_page.blog_heading}</h2>
-            <div className="space-y-4 font-light tracking-normal">
-              <p className="mt-4">{blog_page.blog_para}</p>
-              <p>{blog_page.blog_para2}</p>
-              <p>{blog_page.blog_para3}</p>
-            </div>
-            <div className="md:mt-14 hidden">
-              <a
-                href="https://hcode.tech/blog/"
-                target="_blank"
-                className="pt-5 pb-1  mt-2 w-50 whitespace-nowrap flex-nowrap border-b border-[#8F929F] inline-flex text-[#8F929F] hover:scale-100  cursor-pointer hover:opacity-100 "
-              >
-                Read More About Life Karnal
-                <ArrowRightIcon className="w-6 md:ml-2  h-full" />
-              </a>
-            </div>
-          </div>
-        </div>
-      </CarouselProvider>
+      <KarnalCarousel karnalImages={karnalImages} blog_page={blog_page} />
       <section className="pt-10 md:pt-20  text-center">
         <div className="lg:new-container">
-          <h3 className="font-poppins text-center font-semibold text-3xl  md:text-4xl md:leading-tight">
-            <h3 className="font-poppins text-center font-semibold text-3xl  md:text-4xl md:leading-tight">
-              Our Mentors
-            </h3>
+          <h3 className="font-poppins text-center font-semibold text-3xl md:text-4xl md:leading-tight">
+            Our Mentors
           </h3>
           <p className="px-10 md:px-0 md:w-3/4 mx-auto mt-2">
             Learning & Development is an important part of the culture at HCode.
@@ -347,9 +344,7 @@ function work_with_us() {
           />
           <div className="my-4 md:my-auto md:w-4/5 ml-3">
             <h2 className="text-3xl md:text-4xl font-semibold">
-              <h2 className="text-3xl md:text-4xl font-semibold">
-                Connect with the HR
-              </h2>
+              Connect with the HR
             </h2>
             <p className="text-base md:text-lg mt-2 mb-8">
               Are you a Candidate exploring working options with us or a

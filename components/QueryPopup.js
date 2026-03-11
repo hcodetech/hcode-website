@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Modal from './Modal';
 import { getAPIUrl } from '../pages/api/APIHelpers';
 import { apiRoutes } from '../pages/api/APIRoutes';
-import { QuestionMarkCircleIcon } from '@heroicons/react/outline';
+import { QuestionMarkCircleIcon } from '@heroicons/react/24/outline';
 import { DotLoader } from 'react-spinners/DotLoader';
 import { hcode_footer } from '../constants/constants';
 

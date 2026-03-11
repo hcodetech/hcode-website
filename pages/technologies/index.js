@@ -112,23 +112,20 @@ function technologies(props) {
             <div className="flex flex-col cursor-pointer">
               <h2 className="font-bold">Technologies</h2>
               {technologies.map((stack) => (
-                <Link href={`#${stack}`} key={stack}>
-                  <a
-                    href={`#${stack}`}
-                    key={stack}
-                    className={
-                      hashOnScroll === stack || hashOnClick === stack
-                        ? 'text-blue-600 font-semibold underline'
-                        : ''
-                    }
-                    onClick={(e) => {
-                      setHashOnClick(e.target.text);
-                      setHashOnScroll('');
-                      // setHashOnUrlChange("")
-                    }}
-                  >
-                    {stack}
-                  </a>
+                <Link
+                  href={`#${stack}`}
+                  key={stack}
+                  className={
+                    hashOnScroll === stack || hashOnClick === stack
+                      ? 'text-blue-600 font-semibold underline'
+                      : ''
+                  }
+                  onClick={(e) => {
+                    setHashOnClick(stack);
+                    setHashOnScroll('');
+                  }}
+                >
+                  {stack}
                 </Link>
               ))}
             </div>

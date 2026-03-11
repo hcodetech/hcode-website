@@ -37,10 +37,8 @@ function Team({ name, image, image_webp, bio, link, designation, bioLink }) {
       </div>
       <div className="w-full px-2 text-center mx-auto">
         {bioLink ? (
-          <Link href={bioLink}>
-            <a className="text-lg md:text-xl font-semibold hover:text-primary transition-colors cursor-pointer">
-              <h4>{name}</h4>
-            </a>
+          <Link href={bioLink} className="text-lg md:text-xl font-semibold hover:text-primary transition-colors cursor-pointer">
+            <h4>{name}</h4>
           </Link>
         ) : (
           <h4 className="text-lg md:text-xl font-semibold  ">{name}</h4>

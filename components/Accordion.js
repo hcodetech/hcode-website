@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { PlusIcon, MinusIcon } from "@heroicons/react/solid";
+import { PlusIcon, MinusIcon } from "@heroicons/react/24/solid";
 
 const Accordion = ({ data }) => {
   const [clicked, setClicked] = useState(false);

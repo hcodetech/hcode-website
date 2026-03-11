@@ -7,8 +7,8 @@ import { apiRoutes } from '../pages/api/APIRoutes';
 import {
   CheckIcon,
   QuestionMarkCircleIcon,
-  XIcon,
-} from '@heroicons/react/outline';
+  XMarkIcon,
+} from '@heroicons/react/24/outline';
 import { DotLoader } from 'react-spinners/DotLoader';
 
 const QueryResponsePopUp = ({ error, title, description, close }) => {
@@ -18,7 +18,7 @@ const QueryResponsePopUp = ({ error, title, description, close }) => {
         success
         titleIcon={
           error ? (
-            <XIcon className='text-red-700 h-6 w-6' />
+            <XMarkIcon className='text-red-700 h-6 w-6' />
           ) : (
             <CheckIcon className='text-green-700 w-6 h-6' />
           )

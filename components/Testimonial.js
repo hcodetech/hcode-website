@@ -1,39 +1,34 @@
-import {
-  ButtonBack,
-  ButtonNext,
-  CarouselProvider,
-  Slide,
-  Slider,
-} from "pure-react-carousel";
-import "pure-react-carousel/dist/react-carousel.es.css";
-import React from "react";
-
-import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/outline";
+import React, { useCallback } from "react";
+import useEmblaCarousel from "embla-carousel-react";
+import Autoplay from "embla-carousel-autoplay";
+import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 
 function Testimonial({ data }) {
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
+    Autoplay({ delay: 10000, stopOnInteraction: false }),
+  ]);
+
+  const scrollPrev = useCallback(() => {
+    if (emblaApi) emblaApi.scrollPrev();
+  }, [emblaApi]);
+
+  const scrollNext = useCallback(() => {
+    if (emblaApi) emblaApi.scrollNext();
+  }, [emblaApi]);
+
+  if (!data || data.length === 0) return null;
+
   return (
     <>
       <h3 className="text-2xl md:text-4xl font-semibold text-center pb-2 capitalize">
         What Clients say about us
       </h3>
-      <CarouselProvider
-        visibleSlides={1}
-        totalSlides={data?.length}
-        step={1}
-        naturalSlideWidth={400}
-        naturalSlideHeight={500}
-        isIntrinsicHeight
-        infinite
-        interval={10000}
-        isPlaying
-        lockOnWindowScroll
-        playDirection="forward"
-      >
-        <div className="relative">
-          <div className="new-container  pt-6 pb-2">
-            <Slider>
-              {data?.map((message, index) => (
-                <Slide index={message.id} key={index}>
+      <div className="relative">
+        <div className="new-container pt-6 pb-2">
+          <div className="overflow-hidden" ref={emblaRef}>
+            <div className="flex">
+              {data.map((message, index) => (
+                <div key={message.id || index} className="flex-[0_0_100%] min-w-0">
                   <div className="p-1 sm:p-10">
                     <div className="md:flex">
                       <picture>
@@ -61,7 +56,7 @@ function Testimonial({ data }) {
                             {message.company_name}
                           </p>
                           <p
-                            className=" text-lg mt-4 border-t border-black pt-3 lg:leading-loose tracking-tight"
+                            className="text-lg mt-4 border-t border-black pt-3 lg:leading-loose tracking-tight"
                             dangerouslySetInnerHTML={{
                               __html: message.testimonial_paragraph,
                             }}
@@ -70,28 +65,26 @@ function Testimonial({ data }) {
                       </div>
                     </div>
                   </div>
-                </Slide>
+                </div>
               ))}
-            </Slider>
+            </div>
           </div>
-          <ButtonBack>
-            <ChevronLeftIcon className="bg-white   text-primary  shadow-md absolute left-0 md:left-4 bottom-1/2 rounded-full w-8 h-8   hover:shadow-lg " />
-          </ButtonBack>
-          <ButtonNext>
-            <ChevronRightIcon className="  text-primary bg-white shadow-md absolute right-0 md:right-4 bottom-1/2 rounded-full w-8 h-8   hover:shadow-lg " />
-          </ButtonNext>
-          {/* <ButtonBack>
-            <div className='bg-black absolute left-0 bottom-1/2 opacity-20 hover:opacity-80 px-2 md:px-5'>
-              <ArrowNarrowLeftIcon className='w-8 h-10  text-white' />
-            </div>
-          </ButtonBack>
-          <ButtonNext>
-            <div className='bg-black absolute right-0 bottom-1/2 opacity-20 hover:opacity-80 px-2 md:px-5 '>
-              <ArrowNarrowRightIcon className='w-8 h-10 text-white ' />
-            </div>
-          </ButtonNext> */}
         </div>
-      </CarouselProvider>
+        <button
+          onClick={scrollPrev}
+          className="absolute left-0 md:left-4 top-1/2 -translate-y-1/2 z-10"
+          aria-label="Previous testimonial"
+        >
+          <ChevronLeftIcon className="bg-white text-primary shadow-md rounded-full w-8 h-8 hover:shadow-lg" />
+        </button>
+        <button
+          onClick={scrollNext}
+          className="absolute right-0 md:right-4 top-1/2 -translate-y-1/2 z-10"
+          aria-label="Next testimonial"
+        >
+          <ChevronRightIcon className="text-primary bg-white shadow-md rounded-full w-8 h-8 hover:shadow-lg" />
+        </button>
+      </div>
     </>
   );
 }

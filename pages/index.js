@@ -1,6 +1,6 @@
 /** @format */
 
-import { ArrowRightIcon } from "@heroicons/react/solid";
+import { ArrowRightIcon } from "@heroicons/react/24/solid";
 import Head from "next/head";
 import Benefits from "../components/Benefits";
 import CTA from "../components/CTA";
@@ -67,10 +67,9 @@ export default function Home() {
         <MetaTags page={metaData.homepage} />
       </Head>
 
-      {/* Crasoual  */}
       <section>
         <HeroSection />
-        {/* Client Section */}
+
 
         <div className=" new-container pt-10">
           <Client

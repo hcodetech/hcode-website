@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import DotLoader from 'react-spinners/DotLoader';
-import { ArrowRightIcon } from '@heroicons/react/solid';
+import { ArrowRightIcon } from '@heroicons/react/24/solid';
 const NewsletterForm = ({ status, message, onValidated }) => {
   const defaultColor = '#373536';
 

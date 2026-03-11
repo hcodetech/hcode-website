@@ -7,7 +7,7 @@ import {
   metaData,
 } from '../../constants/constants';
 import Client from '../../components/Client';
-import { ArrowRightIcon } from '@heroicons/react/solid';
+import { ArrowRightIcon } from '@heroicons/react/24/solid';
 import Head from 'next/head';
 import Benefits from '../../components/Benefits';
 import Accordion from '../../components/Accordion';
@@ -76,10 +76,8 @@ function developer_as_a_service() {
             <button className="px-4 py-2 rounded-full bg-purple-800 text-white cursor-default mb-5 ">
               {dass.startup.tag}
             </button>
-            <h3 className="text-2xl font-semibold ">
-            <h3 className="text-2xl font-semibold ">
+            <h3 className="text-2xl font-semibold">
               {dass.startup.secondary_heading}
-            </h3>
             </h3>
             <ul className="list-outside list-disc text-sm px-4 py-2">
               {dass.startup.points.map((point, index) => (

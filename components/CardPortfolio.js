@@ -1,7 +1,7 @@
 /** @format */
 
 import React, { useState } from "react";
-import { ArrowRightIcon } from "@heroicons/react/solid";
+import { ArrowRightIcon } from "@heroicons/react/24/solid";
 import YoutubeIcon from "../public/assets/icons/youtube_icon.svg";
 import { useRouter } from "next/router";
 import CaseStudyModalPopup from "./CaseStudyModalPopup";

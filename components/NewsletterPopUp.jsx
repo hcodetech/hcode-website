@@ -1,6 +1,6 @@
 import { Newsletter_popup_img } from "../constants/constants";
 import React, {  useState } from "react";
-import { XCircleIcon } from "@heroicons/react/solid";
+import { XCircleIcon } from "@heroicons/react/24/solid";
 import { Loader } from "./Loader";
 import NewsletterModal from "./NewsletterModal";
 

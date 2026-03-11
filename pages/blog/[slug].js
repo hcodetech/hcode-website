@@ -39,16 +39,6 @@ export default function BlogPost({ post }) {
             <p className="mt-4 text-gray-500">{formatDate(post.date)}</p>
           </div>
 
-          {post.featuredImage && (
-            <div className="mb-10">
-              <img
-                src={post.featuredImage}
-                alt={post.title}
-                className="w-full rounded-lg object-cover"
-              />
-            </div>
-          )}
-
           <div
             className="blog-content"
             dangerouslySetInnerHTML={{ __html: post.content }}

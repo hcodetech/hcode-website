@@ -1,28 +1,24 @@
 {
   "private": true,
   "scripts": {
-    "dev": "NODE_OPTIONS=--openssl-legacy-provider next dev -p 3000",
-    "build": "NODE_OPTIONS=--openssl-legacy-provider next build",
+    "dev": "next dev -p 3000",
+    "build": "next build",
     "start": "next start",
     "postbuild": "next-sitemap"
   },
   "dependencies": {
-    "@headlessui/react": "^1.4.1",
-    "@heroicons/react": "^1.0.4",
-    "@tailwindcss/forms": "^0.3.3",
+    "@headlessui/react": "^2.2.9",
+    "@heroicons/react": "2",
+    "@tailwindcss/forms": "^0.5.11",
+    "embla-carousel-autoplay": "^8.6.0",
+    "embla-carousel-react": "^8.6.0",
     "gray-matter": "^4.0.3",
-    "imagemin-mozjpeg": "^9.0.0",
-    "imagemin-optipng": "^8.0.0",
-    "lodash-next": "^2.0.1",
     "marked": "4.3.0",
-    "next": "^11.1.2",
-    "next-compose-plugins": "^2.2.1",
-    "next-optimized-images": "^2.6.2",
-    "next-sitemap": "^2.1.8",
+    "next": "^16.1.6",
+    "next-sitemap": "^4.2.3",
     "popmotion": "^11.0.5",
-    "pure-react-carousel": "^1.35.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
     "react-drag-drop-files": "^2.3.4",
     "react-google-recaptcha-v3": "^1.11.0",
     "react-hook-form": "^7.71.2",
@@ -33,12 +29,11 @@
     "sass": "^1.98.0",
     "slick-carousel": "^1.8.1",
     "tailwind-scrollbar-hide": "^1.1.7",
-    "turndown": "^7.2.2",
-    "webp-loader": "^0.6.0"
+    "turndown": "^7.2.2"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.27",
     "postcss": "^8.5.8",
-    "tailwindcss": "^2.2.4"
+    "tailwindcss": "3"
   }
 }

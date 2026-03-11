@@ -7,11 +7,6 @@ import { fav_icon } from "../constants/constants";
 import structuredData from "../public/structured-data.json";
 // import NewsletterComponent from "../components/NewsletterComponent";
 class MyDocument extends Document {
-  static async getInitialProps(ctx) {
-    const initialProps = await Document.getInitialProps(ctx);
-    return { ...initialProps };
-  }
-
   render() {
     return (
       <Html lang="en " className="scroll-smooth">

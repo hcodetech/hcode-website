@@ -1,11 +1,11 @@
 /** @format */
 
 import {
-  LocationMarkerIcon,
+  MapPinIcon,
   PhoneIcon,
-  ChatAltIcon,
+  ChatBubbleLeftIcon,
   VideoCameraIcon,
-} from '@heroicons/react/solid';
+} from '@heroicons/react/24/solid';
 import Head from 'next/head';
 
 import { useState } from 'react';
@@ -236,11 +236,11 @@ function contact() {
               business goals), and we'll be in touch shortly.
             </p>
             <div className="flex mt-4 border-t pt-4">
-              <LocationMarkerIcon className="w-6 h-6 mr-2" />
+              <MapPinIcon className="w-6 h-6 mr-2" />
               120/7th Milestone, NH-1, Karnal, Haryana #132001
             </div>
             <div className="flex mt-4 ">
-              <LocationMarkerIcon className="w-6 h-6 mr-1 pr-1" />
+              <MapPinIcon className="w-6 h-6 mr-1 pr-1" />
               675 Hudson St Suite 3S, New York, <br />
               NY #10014
             </div>
@@ -250,7 +250,7 @@ function contact() {
               <a href="tel:+919876543210">+91-9876543210</a>
             </div>
             <div className="flex mt-4 ">
-              <ChatAltIcon className="w-6 h-6 mr-2" />
+              <ChatBubbleLeftIcon className="w-6 h-6 mr-2" />
               <a href="mailto:hello@hcode.tech">hello@hcode.tech</a>
             </div>
           </div>

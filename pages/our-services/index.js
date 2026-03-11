@@ -22,7 +22,7 @@ import Accordion from "../../components/Accordion";
 import Process from "../../components/Process";
 import EnterpriseCard from "../../components/EnterpriseCard";
 import FintechCard from "../../components/FintechCard";
-import { ArrowRightIcon } from "@heroicons/react/solid";
+import { ArrowRightIcon } from "@heroicons/react/24/solid";
 import MetaTags from "../../components/MetaTags";
 function Our_services() {
   const [isDesktop, setIsDesktop] = useState("");

@@ -8,7 +8,7 @@ import Accordion from "../../components/Accordion";
 import CTA from "../../components/CTA";
 import MvpBenefits from "../../components/MvpBenefits";
 import { Blogs } from "../../components/Blogs";
-import { ArrowRightIcon } from "@heroicons/react/solid";
+import { ArrowRightIcon } from "@heroicons/react/24/solid";
 
 import Head from "next/head";
 import MetaTags from "../../components/MetaTags";

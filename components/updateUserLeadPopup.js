@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { getAPIUrl } from '../pages/api/APIHelpers';
 import Modal from './Modal';
 import { apiRoutes } from '../pages/api/APIRoutes';
-import { CheckIcon } from '@heroicons/react/outline';
+import { CheckIcon } from '@heroicons/react/24/outline';
 
 import { useGoogleReCaptcha } from 'react-google-recaptcha-v3';
 

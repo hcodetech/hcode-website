@@ -1,4 +1,4 @@
-import { ArrowRightIcon } from "@heroicons/react/solid";
+import { ArrowRightIcon } from "@heroicons/react/24/solid";
 function EnterpriseCard({ data }) {
   return (
     <div className={`bg-[#87A9A6] grid md:grid-cols-2 lg:bg-enterprise_image bg-no-repeat bg-right px-4 py-8 md:p-16 md:h-[550px]  mb-20`}>

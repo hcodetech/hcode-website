@@ -2,7 +2,7 @@
 
 import Head from 'next/head';
 import Link from 'next/link';
-import { ArrowLeftIcon } from '@heroicons/react/solid';
+import { ArrowLeftIcon } from '@heroicons/react/24/solid';
 import CTA from '../../components/CTA';
 import Team from '../../components/Team';
 import { linkedin_icon, TEAM } from '../../constants/constants';
@@ -48,11 +48,9 @@ function ShwetaSingla() {
 
             {/* Back Link */}
             <section className="new-container pt-8 pb-4">
-                <Link href="/about">
-                    <a className="inline-flex items-center text-gray-600 hover:text-primary transition-opacity text-sm">
-                        <ArrowLeftIcon className="w-4 h-4 mr-2" />
-                        Back to About
-                    </a>
+                <Link href="/about" className="inline-flex items-center text-gray-600 hover:text-primary transition-opacity text-sm">
+                    <ArrowLeftIcon className="w-4 h-4 mr-2" />
+                    Back to About
                 </Link>
             </section>
 
