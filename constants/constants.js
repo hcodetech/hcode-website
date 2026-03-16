@@ -329,7 +329,6 @@ export const client = [
   { img: '/assets/img/clients/blue-elephant.jpg', alt: 'Blue Elephant' },
   { img: '/assets/img/clients/bluebook.jpg', alt: 'Blue Book' },
   { img: '/assets/img/clients/bts.jpg', alt: 'Biltmore' },
-  { img: '/assets/img/clients/techa.jpeg', alt: 'Techa' },
   { img: '/assets/img/clients/carDekho.jpg', alt: 'CarDekho Loans' },
   { img: '/assets/img/clients/chart-biopsy.jpg', alt: 'Chart Biopsy' },
   { img: '/assets/img/clients/debie.jpg', alt: 'Debie' },
