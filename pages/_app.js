@@ -3,30 +3,16 @@ import "../node_modules/slick-carousel/slick/slick-theme.css";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import "../styles/global.scss";
-import { useEffect, useState } from "react";
-import NewsletterPopUp from "../components/NewsletterPopUp";
 import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
 import Head from "next/head";
 
 const googleRecaptchaSiteKey = "6LftNJEqAAAAAOY_6Lt0mG1g1UimgCqGIPP4pA0j"
 
 function MyApp({ Component, pageProps }) {
-  const [showNewsLetterPopup, setShowNewsLetterPopup] = useState(false);
   let url;
   if (typeof window !== "undefined") {
     url = window.location.pathname;
   }
-
-  useEffect(() => {
-    const stroredData = sessionStorage.getItem("isSubscriptionPopupVisible");
-
-    if (stroredData === null) {
-      setTimeout(() => {
-        setShowNewsLetterPopup(true);
-      }, [15000]);
-    }
-    sessionStorage.setItem("isSubscriptionPopupVisible", showNewsLetterPopup);
-  }, []);
 
   // Organization Schema for all pages
   const organizationSchema = {
@@ -81,13 +67,6 @@ function MyApp({ Component, pageProps }) {
         />
       </Head>
       <div>
-        {showNewsLetterPopup && (
-          <NewsletterPopUp
-            showNewsLetterPopup={showNewsLetterPopup}
-            setShowNewsLetterPopup={setShowNewsLetterPopup}
-          />
-        )}
-
         <div className="bg-white">
           {<Navbar />}
 

@@ -207,6 +207,22 @@ function Footer() {
                   Privacy Policy
                 </a>
               </li>
+              <li className="mb-2">
+                <a
+                  href="/refund-policy"
+                  className="border-b border-solid border-transparent hover:border-primary hover:text-primary"
+                >
+                  Refund Policy
+                </a>
+              </li>
+              <li className="mb-2">
+                <a
+                  href="/cancellation-policy"
+                  className="border-b border-solid border-transparent hover:border-primary hover:text-primary"
+                >
+                  Cancellation Policy
+                </a>
+              </li>
             </ul>
           </div>
 
