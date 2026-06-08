@@ -1,4 +1,5 @@
 ---
+noindex: true
 title: "Why is Python Among the Top choices when it comes to AI"
 date: "2024-05-31"
 excerpt: "Why is Python Among the Top choices when it comes […]"

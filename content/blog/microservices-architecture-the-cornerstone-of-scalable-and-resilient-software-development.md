@@ -1,4 +1,5 @@
 ---
+noindex: true
 title: "Microservices Architecture: The Cornerstone of Scalable and Resilient Software Development"
 date: "2024-10-15"
 excerpt: "Microservices Architecture: Comprehensive Overview     As digital transformation continues […]"

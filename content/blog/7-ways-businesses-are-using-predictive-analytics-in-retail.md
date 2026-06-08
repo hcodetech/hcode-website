@@ -1,4 +1,5 @@
 ---
+noindex: true
 title: "7 Ways Businesses are Using Predictive Analytics in Retail"
 date: "2024-08-20"
 excerpt: "7 Ways Businesses are Using Predictive Analytics in Retail Retail […]"

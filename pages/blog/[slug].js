@@ -28,6 +28,7 @@ export default function BlogPost({ post }) {
     <>
       <Head>
         <title>{pageMeta.title}</title>
+        {post.noindex && <meta name="robots" content="noindex, follow" />}
         <MetaTags page={pageMeta} />
       </Head>
       <article className="pt-24 pb-20 bg-white">

@@ -1,4 +1,5 @@
 ---
+noindex: true
 title: "What is Single Page Application?"
 date: "2025-09-12"
 excerpt: "What is SPA? Single Page Application     What if […]"

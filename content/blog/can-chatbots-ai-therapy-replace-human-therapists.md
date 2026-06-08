@@ -1,4 +1,5 @@
 ---
+noindex: true
 title: "Can Chatbot's AI Therapy Replace Human Therapists?"
 date: "2024-07-24"
 excerpt: "Can Chatbots Replace Human Therapists?   Chatbots are capable of […]"

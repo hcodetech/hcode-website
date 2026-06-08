@@ -1,4 +1,5 @@
 ---
+noindex: true
 title: "What do front-end developers do?"
 date: "2024-05-02"
 excerpt: "What do front-end developers do? Front-end developers program the front […]"

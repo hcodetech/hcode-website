@@ -1,3 +1,23 @@
+const fs = require('fs');
+const path = require('path');
+const matter = require('gray-matter');
+
+// Blog posts marked `noindex: true` in frontmatter must not appear in the
+// sitemap (a sitemap should only list indexable URLs). Computed at build time
+// so future noindex flags are excluded automatically.
+function noindexBlogPaths() {
+  const dir = path.join(process.cwd(), 'content', 'blog');
+  try {
+    return fs
+      .readdirSync(dir)
+      .filter((f) => f.endsWith('.md'))
+      .filter((f) => matter(fs.readFileSync(path.join(dir, f), 'utf-8')).data.noindex === true)
+      .map((f) => `/blog/${f.replace(/\.md$/, '')}`);
+  } catch (e) {
+    return [];
+  }
+}
+
 module.exports = {
   siteUrl: 'https://www.hcode.tech',
   generateRobotsTxt: true,
@@ -8,7 +28,7 @@ module.exports = {
   // Keep non-content routes out of the sitemap: a React hook accidentally placed
   // under pages/ (exposed as /hooks/useGetFetch) and an internal color-swatch
   // reference page (/stylesheet). Neither is indexable content.
-  exclude: ['/hooks/useGetFetch', '/hooks/*', '/stylesheet'],
+  exclude: ['/hooks/useGetFetch', '/hooks/*', '/stylesheet', ...noindexBlogPaths()],
 
   // Additional paths that might not be auto-discovered
   additionalPaths: async (config) => [

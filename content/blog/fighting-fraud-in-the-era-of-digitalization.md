@@ -1,4 +1,5 @@
 ---
+noindex: true
 title: "FIGHTING FRAUD  IN THE ERA OF DIGITALIZATION"
 date: "2023-04-21"
 excerpt: "FIGHTING FRAUD IN THE ERA OF DIGITALIZATION The COVID-19 pandemic […]"

@@ -1,4 +1,5 @@
 ---
+noindex: true
 title: "How AI is Used in Fintech 2024: Revolutionizing Financial Services with Artificial Intelligence"
 date: "2024-01-23"
 excerpt: "How AI is Used in Fintech 2024: Revolutionizing Finance with […]"

@@ -1,4 +1,5 @@
 ---
+noindex: true
 title: "How Edge Computing Is Rewriting the Rules of Web Architecture"
 date: "2025-08-04"
 excerpt: "How Edge Computing Is Rewriting The Rules of Web Architecture […]"

@@ -1,4 +1,5 @@
 ---
+noindex: true
 title: "ENTERING THE WEB3 WORLD"
 date: "2023-02-20"
 excerpt: "Welcome to the incredibly fascinating and complex world of Web3. […]"

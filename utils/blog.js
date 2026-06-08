@@ -62,6 +62,7 @@ function getPostBySlug(slug) {
     ogDescription: data.ogDescription || '',
     categories: data.categories || [],
     tags: data.tags || [],
+    noindex: data.noindex || false,
     content: htmlContent,
   };
 }

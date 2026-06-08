@@ -1,4 +1,5 @@
 ---
+noindex: true
 title: "Streamlined Push Processing: How GitHub Improved Developer Workflows"
 date: "2024-07-03"
 excerpt: "Streamlined Push Processing: How GitHub Improved Developer Workflows   Introduction: […]"

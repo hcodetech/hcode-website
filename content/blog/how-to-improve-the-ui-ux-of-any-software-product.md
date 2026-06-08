@@ -1,4 +1,5 @@
 ---
+noindex: true
 title: "How to Improve the UI/UX of Any Software Product"
 date: "2024-07-22"
 excerpt: "How to Improve the UI/UX of Any Software Product This […]"

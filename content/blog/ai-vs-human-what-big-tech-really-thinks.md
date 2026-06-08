@@ -1,4 +1,5 @@
 ---
+noindex: true
 title: "AI vs Human: What Big Tech Really Thinks"
 date: "2025-09-05"
 excerpt: "AI vs Human: What Big Tech Really Thinks     […]"
