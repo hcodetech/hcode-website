@@ -25,9 +25,6 @@ import {
 import { useEffect, useState } from "react";
 import MetaTags from "../components/MetaTags";
 import NewsletterCTA from "../components/NewsletterCTA";
-import BackendSVG from "../public/assets/img/backend-illu.svg";
-import BlockchainSVG from "../public/assets/img/blockchain-illu.svg";
-import MobileSVG from "../public/assets/img/mobile-illu.svg";
 import useGetFetch from "./hooks/useGetFetch";
 import { getAPIUrl } from "./api/APIHelpers";
 import { apiRoutes } from "./api/APIRoutes";
@@ -105,14 +102,19 @@ export default function Home() {
                   <div className="col-span-12 md:col-span-6 lg:col-span-4">
                     <div className="bg-blue-50 px-8 py-6 shadow hover:shadow-2xl hover:bg-white hover:cursor-pointer text-black font-medium text-xl text-left">
                       <h4 className="text-2xl">Mobile / Webapp</h4>
-                      <img src={MobileSVG} className="mx-auto my-10 max-h-32" />
+                      <img
+                        src="/assets/img/mobile-illu.svg"
+                        alt="Mobile and web app development"
+                        className="mx-auto my-10 max-h-32"
+                      />
                     </div>
                   </div>
                   <div className="col-span-12 md:col-span-6 lg:col-span-4">
                     <div className="bg-blue-50 px-8 py-6 shadow hover:shadow-2xl hover:bg-white hover:cursor-pointer text-black font-medium text-xl text-left">
                       <h5 className="text-2xl">Backend</h5>
                       <img
-                        src={BackendSVG}
+                        src="/assets/img/backend-illu.svg"
+                        alt="Backend development"
                         className="mx-auto my-10 max-h-32"
                       />
                     </div>
@@ -121,7 +123,8 @@ export default function Home() {
                     <div className="bg-blue-50 px-8 py-6 shadow hover:shadow-2xl hover:bg-white hover:cursor-pointer text-black font-medium text-xl text-left">
                       <h3 className="text-2xl">Blockchain</h3>
                       <img
-                        src={BlockchainSVG}
+                        src="/assets/img/blockchain-illu.svg"
+                        alt="Blockchain development"
                         className="mx-auto my-10 max-h-32"
                       />
                     </div>
