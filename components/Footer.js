@@ -186,6 +186,15 @@ function Footer() {
                   Blog
                 </a>
               </li>
+              <li className="mb-2">
+                <a
+                  href="https://niptao.com"
+                  target="_blank"
+                  className="border-b border-solid border-transparent hover:border-primary hover:text-primary"
+                >
+                  Niptao
+                </a>
+              </li>
             </ul>
           </div>
           <div className="px-4 sm:w-1/2 md:w-[22%] xl:w-1/6 mt-8 md:mt-3">

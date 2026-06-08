@@ -224,6 +224,32 @@ export default function Home() {
         <TechStack />
       </section>
 
+      {/* What We're Building */}
+      <section id="what_we_are_building" className="new-container py-16">
+        <div className="text-center md:w-3/4 mx-auto">
+          <h2 className="text-4xl font-semibold mb-5">What We&apos;re Building</h2>
+          <p className="lg:text-lg text-gray-700">
+            Alongside our client engineering work, HCode now develops{" "}
+            <a
+              href="https://niptao.com"
+              className="text-primary border-b border-primary hover:opacity-80"
+            >
+              Niptao
+            </a>
+            ™ — our own suite of AI tools for building, auditing, and migrating
+            websites. It&apos;s where we turn the same engineering we do for
+            clients on our own products, including a service that can{" "}
+            <a
+              href="https://niptao.com/migrate/"
+              className="text-primary border-b border-primary hover:opacity-80"
+            >
+              move an existing site over in about a day
+            </a>
+            .
+          </p>
+        </div>
+      </section>
+
       {/* Process */}
       <section id="process" className="  py-16">
         <Process data={how_to_get_started} />
