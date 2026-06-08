@@ -39,7 +39,7 @@ When creating quickly evolving token-based platforms, rapid iteration and feedba
 
 With out-of-the-box UI building blocks, the user gets a high-performance experience. And with CodePush-like capabilities, we can push app logic and features at runtime—without app store curation.
 
-React Native also gets along well with our existing [backend stacks](https://www.hcode.tech/blog/3859-2/): TypeScript, GraphQL, headless CMSs, and Web3 tooling. Velocity is added with no added complexity.
+React Native also gets along well with our existing [backend stacks](https://www.hcode.tech/blog/how-hcode-is-embracing-serverless-computing/): TypeScript, GraphQL, headless CMSs, and Web3 tooling. Velocity is added with no added complexity.
 
 Compared with traditional mobile development, which often requires separate teams for iOS and Android, or with hybrid approaches that compromise performance, React Native strikes a reasonable middle ground—common development with the natural feel of the native world.
 

@@ -61,7 +61,7 @@ Whether you’re launching in one region or ten, users now expect consistent spe
 
 #### **3\. Platform support has matured**
 
-You don’t need custom DevOps setups to [deploy edge logic](https://www.hcode.tech/blog/3859-2/). Services like Vercel Edge Functions, Cloudflare Workers, and Netlify make it straightforward to deploy globally distributed code — without a new infrastructure team or a massive learning curve.
+You don’t need custom DevOps setups to [deploy edge logic](https://www.hcode.tech/blog/how-hcode-is-embracing-serverless-computing/). Services like Vercel Edge Functions, Cloudflare Workers, and Netlify make it straightforward to deploy globally distributed code — without a new infrastructure team or a massive learning curve.
 
 These aren’t just enablers — they’re signals. Edge-native thinking isn’t a niche anymore. It’s quietly becoming the new baseline.
 
