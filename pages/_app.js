@@ -20,9 +20,9 @@ function MyApp({ Component, pageProps }) {
     "@type": "Organization",
     "name": "Hcode Technologies Pvt Ltd",
     "alternateName": "Hcode Technologies",
-    "url": "https://hcode.tech",
+    "url": "https://www.hcode.tech",
     "email": "hello@hcode.tech",
-    "logo": "https://hcode.tech/assets/img/hcode-logo.png",
+    "logo": "https://www.hcode.tech/assets/img/hcode-logo.png",
     "description": "World-class software development teams for startups and enterprises. Specializing in AI integration, blockchain, MVP development, and team augmentation.",
     "address": {
       "@type": "PostalAddress",
@@ -39,13 +39,13 @@ function MyApp({ Component, pageProps }) {
         "@type": "Person",
         "name": "Shashank Singla",
         "jobTitle": "Co-Founder",
-        "url": "https://hcode.tech/about/shashank-singla"
+        "url": "https://www.hcode.tech/about/shashank-singla"
       },
       {
         "@type": "Person",
         "name": "Shweta Singla",
         "jobTitle": "Co-Founder",
-        "url": "https://hcode.tech/about/shweta-singla"
+        "url": "https://www.hcode.tech/about/shweta-singla"
       }
     ]
   };

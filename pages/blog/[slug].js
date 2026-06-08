@@ -18,7 +18,7 @@ export default function BlogPost({ post }) {
   const pageMeta = {
     title: post.ogTitle || `${post.title} | Hcode Technologies`,
     description: post.ogDescription || post.excerpt,
-    url: `https://www.hcode.tech/blog/${post.slug}`,
+    url: `https://www.hcode.tech/blog/${post.slug}/`,
     share_image: post.featuredImage
       ? `https://www.hcode.tech${post.featuredImage}`
       : 'https://www.hcode.tech/assets/hcode_og.png',

@@ -5,6 +5,11 @@ module.exports = {
   priority: 0.7,
   sitemapSize: 7000,
 
+  // Keep non-content routes out of the sitemap: a React hook accidentally placed
+  // under pages/ (exposed as /hooks/useGetFetch) and an internal color-swatch
+  // reference page (/stylesheet). Neither is indexable content.
+  exclude: ['/hooks/useGetFetch', '/hooks/*', '/stylesheet'],
+
   // Additional paths that might not be auto-discovered
   additionalPaths: async (config) => [
     await config.transform(config, '/about/shashank-singla'),

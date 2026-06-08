@@ -16,9 +16,9 @@ function MuditSharma() {
         "worksFor": {
             "@type": "Organization",
             "name": "Hcode Technologies Pvt Ltd",
-            "url": "https://hcode.tech"
+            "url": "https://www.hcode.tech"
         },
-        "url": "https://hcode.tech/about/mudit-sharma",
+        "url": "https://www.hcode.tech/about/mudit-sharma",
         "email": "mudit.sharma@hcode.tech",
         "sameAs": [
             "https://www.linkedin.com/in/sharma-mudit/"

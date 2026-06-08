@@ -16,9 +16,9 @@ function RishabhGarg() {
         "worksFor": {
             "@type": "Organization",
             "name": "Hcode Technologies Pvt Ltd",
-            "url": "https://hcode.tech"
+            "url": "https://www.hcode.tech"
         },
-        "url": "https://hcode.tech/about/rishabh-garg",
+        "url": "https://www.hcode.tech/about/rishabh-garg",
         "email": "rishabh.garg@hcode.tech",
         "alumniOf": {
             "@type": "EducationalOrganization",

@@ -807,136 +807,136 @@ export const metaData = {
     description:
       'We’re in the business of writing great code. We provide on-time delivery along with transparent communication. But we also make sure that our people have great work-life balance, meritocracy, and a healthy work environment',
     title: 'Servicing End-To-End Engineering Needs | Hcode ',
-    share_image: 'https://hcode.tech/assets/img/Meta-Image.jpg',
-    url: 'https://hcode.tech',
+    share_image: 'https://www.hcode.tech/assets/img/Meta-Image.jpg',
+    url: 'https://www.hcode.tech/',
   },
   our_services: {
     title: 'Hire Top Tech talent for your Remote Team',
     description:
       'We help assemble and manage a team of world-class software developers dedicated to bringing your vision to life',
-    share_image: 'https://hcode.tech/assets/img/Meta-Image.jpg',
-    url: 'https://hcode.tech/our-services',
+    share_image: 'https://www.hcode.tech/assets/img/Meta-Image.jpg',
+    url: 'https://www.hcode.tech/our-services/',
   },
   developer_as_a_service: {
     title: 'Developer as a Service (DaaS) ',
     description:
       'You get developer(s) experienced in the required skills that you can directly manage. They can work standalone on a project or work with your existing team. You should ideally have someone technical in your team who can manage these developers.',
-    share_image: 'https://hcode.tech/assets/img/Meta-Image.jpg',
-    url: 'https://hcode.tech/our-services/developer-as-a-service',
+    share_image: 'https://www.hcode.tech/assets/img/Meta-Image.jpg',
+    url: 'https://www.hcode.tech/our-services/developer-as-a-service/',
   },
 
   mern_developer: {
     title: 'Mern Developer | Hcode',
     description:
       'Hire experienced remote developers trained to write good quality of code and comfortable working with international tech-clients',
-    share_image: 'https://hcode.tech/assets/img/Meta-Image.jpg',
-    url: 'https://hcode.tech/our-services/mern-developer',
+    share_image: 'https://www.hcode.tech/assets/img/Meta-Image.jpg',
+    url: 'https://www.hcode.tech/our-services/mern-developer/',
   },
   hire_developer: {
     title: 'Hire Developer | Hcode',
     description:
       'Hire experienced remote developers trained to write good quality of code and comfortable working with international tech-clients',
-    share_image: 'https://hcode.tech/assets/img/Meta-Image.jpg',
-    url: 'https://hcode.tech/our-services/hire-developer',
+    share_image: 'https://www.hcode.tech/assets/img/Meta-Image.jpg',
+    url: 'https://www.hcode.tech/our-services/hire-developer/',
   },
 
   team_as_a_service: {
     title: 'Team as a Service (TaaS)',
     description:
       'You get a team of software developers headed by a Tech-Lead or a Project Manager. This team can either function as your standalone technology team or this could be augmenting your existing team. With a Tech Lead or Project Manager in the mix, you don’t have to directly manage all your resources and can provide a high-level plan of what you want to achieve.',
-    share_image: 'https://hcode.tech/assets/img/Meta-Image.jpg',
-    url: 'https://hcode.tech/our-services/team-as-a-service',
+    share_image: 'https://www.hcode.tech/assets/img/Meta-Image.jpg',
+    url: 'https://www.hcode.tech/our-services/team-as-a-service/',
   },
 
   blockchain: {
     title: 'Blockchain Development Services',
     description:
       'We’re proficient in various Blockchain services including, but not limited to, Dapps, Smart Contracts, NFT marketplace and Blockchain Security Audit.',
-    share_image: 'https://hcode.tech/assets/img/Meta-Image.jpg',
-    url: 'https://hcode.tech/our-services/blockchain',
+    share_image: 'https://www.hcode.tech/assets/img/Meta-Image.jpg',
+    url: 'https://www.hcode.tech/our-services/blockchain/',
   },
 
   AI: {
     title: 'AI Development Services',
     description:
       'Transform your business with our Hcode AI integration services. Enhance efficiency, customer engagement, and decision-making, with personalized, scalable AI solutions.',
-    share_image: 'https://hcode.tech/assets/img/Meta-Image.jpg',
-    url: 'https://hcode.tech/our-services/ai-integration-services',
+    share_image: 'https://www.hcode.tech/assets/img/Meta-Image.jpg',
+    url: 'https://www.hcode.tech/our-services/ai-integration-services/',
   },
 
   mvp: {
     title: 'MVP Development Services|Hcode',
     description:
       "Launch smarter with Hcode's MVP Development Services-validate, optimize, and succeed. Your trusted path to impactful digital products.",
-    share_image: 'https://hcode.tech/assets/img/Meta-Image.jpg',
-    url: 'https://hcode.tech/our-services/mvp',
+    share_image: 'https://www.hcode.tech/assets/img/Meta-Image.jpg',
+    url: 'https://www.hcode.tech/our-services/mvp/',
   },
 
   about: {
     title: 'We’re in the business of Writing Great Code',
     description:
       'We provide on-time delivery along with transparent communication. But we also make sure that our people have great work-life balance, meritocracy, and a healthy work environment',
-    share_image: 'https://hcode.tech/assets/img/Meta-Image.jpg',
-    url: 'https://hcode.tech/about',
+    share_image: 'https://www.hcode.tech/assets/img/Meta-Image.jpg',
+    url: 'https://www.hcode.tech/about/',
   },
 
   work_with_us: {
     title: 'Let’s Work Together at HCode',
     description:
       'We abide by our core value, ‘Our people are our biggest asset’, in letter and spirit. We do everything to make sure that our people are personally happy, professionally satisfied, and continue growing.',
-    share_image: 'https://hcode.tech/assets/img/Meta-Image.jpg',
-    url: 'https://hcode.tech/work-with-us',
+    share_image: 'https://www.hcode.tech/assets/img/Meta-Image.jpg',
+    url: 'https://www.hcode.tech/work-with-us/',
   },
 
   our_work: {
     title: "Products we've made for our client partners",
     description:
       'We have worked on a broad range of projects, from algorithm-heavy backend projects to beautiful and interactive responsive web products. Listed below are some of our creations.',
-    share_image: 'https://hcode.tech/assets/img/Meta-Image.jpg',
-    url: 'https://hcode.tech/our-work',
+    share_image: 'https://www.hcode.tech/assets/img/Meta-Image.jpg',
+    url: 'https://www.hcode.tech/our-work/',
   },
   case_studies: {
     title: "Case studies we've made for our client partners",
     description:
       'We have worked on a broad range of projects, from algorithm-heavy backend projects to beautiful and interactive responsive web products. Listed below are some of our creations.',
-    share_image: 'https://hcode.tech/assets/img/Meta-Image.jpg',
-    url: 'https://hcode.tech/case-studies',
+    share_image: 'https://www.hcode.tech/assets/img/Meta-Image.jpg',
+    url: 'https://www.hcode.tech/case-studies/',
   },
 
   technologies: {
     title: 'We work with the latest and most popular tech stacks',
     description:
       'Extend your tech team with top talent from us. We oversee the execution and management of your software projects with our proven processes and tech mentorship',
-    share_image: 'https://hcode.tech/assets/img/Meta-Image.jpg',
-    url: 'https://hcode.tech/technologies',
+    share_image: 'https://www.hcode.tech/assets/img/Meta-Image.jpg',
+    url: 'https://www.hcode.tech/technologies/',
   },
 
   terms_and_conditions: {
     title: 'Terms and Conditions | Hcode',
     description: `This Privacy Policy governs how HCODE collects, uses, maintains, and discloses information collected from users (each, a "User") of the www.hcode.tech website ("Site"). This privacy policy applies to the Site and all products and services offered by HCODE.`,
-    share_image: 'https://hcode.tech/assets/img/Meta-Image.jpg',
-    url: 'https://hcode.tech/terms-and-conditions',
+    share_image: 'https://www.hcode.tech/assets/img/Meta-Image.jpg',
+    url: 'https://www.hcode.tech/terms-and-conditions/',
   },
 
   privacy_policy: {
     title: 'PRIVACY POLICY | Hcode',
     description: `This Privacy Policy governs how HCODE collects, uses, maintains, and discloses information collected from users (each, a "User") of the www.hcode.tech website ("Site"). This privacy policy applies to the Site and all products and services offered by HCODE.`,
-    share_image: 'https://hcode.tech/assets/img/Meta-Image.jpg',
-    url: 'https://hcode.tech/privacy-policy',
+    share_image: 'https://www.hcode.tech/assets/img/Meta-Image.jpg',
+    url: 'https://www.hcode.tech/privacy-policy/',
   },
 
   contact: {
     title: 'Contact Us | Hcode',
     description: 'Let’s scale your team together',
-    share_image: 'https://hcode.tech/assets/img/Meta-Image.jpg',
-    url: 'https://hcode.tech/contact',
+    share_image: 'https://www.hcode.tech/assets/img/Meta-Image.jpg',
+    url: 'https://www.hcode.tech/contact/',
   },
 
   newsletter: {
     title: 'HCode | Monthly Newsletter by HCode Technologies',
     description: 'Hear about the cool tech the world is building',
-    share_image: 'https://hcode.tech/assets/img/Meta-Image.jpg',
-    url: 'https://hcode.tech/newsletter',
+    share_image: 'https://www.hcode.tech/assets/img/Meta-Image.jpg',
+    url: 'https://www.hcode.tech/newsletter/',
   },
 };
 
@@ -944,7 +944,7 @@ export const homepage = {
   description:
     'We’re in the business of writing great code. We provide on-time delivery along with transparent communication. But we also make sure that our people have great work-life balance, meritocracy, and a healthy work environment',
   title: 'Servicing End-To-End Engineering Needs | Hcode ',
-  share_image: 'https://hcode.tech/assets/img/Meta-Image.jpg',
+  share_image: 'https://www.hcode.tech/assets/img/Meta-Image.jpg',
   who_are_we: {
     image: '/assets/img/homepage_who_we_are.jpg',
     heading: 'Who We Are?',
@@ -2146,7 +2146,7 @@ export const aiBlogData = [
   {
     id: 1,
     title: 'How AI Integration Services Can Fuel Your Business Growth',
-    href: 'https://hcode.tech/blog/how-ai-integration-services-can-fuel-your-business-growth/',
+    href: 'https://www.hcode.tech/blog/how-ai-integration-services-can-fuel-your-business-growth/',
     description:
       'How AI Integration Services Can Fuel Your Business Growth […]',
     imageUrl: '/assets/img/Ai_blog_1.jpg',
@@ -2154,7 +2154,7 @@ export const aiBlogData = [
   {
     id: 2,
     title: 'AI-Powered Development: Top 10 Tools Every Developer Needs in 2023',
-    href: 'https://hcode.tech/blog/ai-tools-for-developers-in-2023/',
+    href: 'https://www.hcode.tech/blog/ai-tools-for-developers-in-2023/',
     description:
       'AI-Powered Development: Top 10 Tools Every Developer Needs in 2023 […]',
     imageUrl: '/assets/img/Ai_blog_2.jpg',
@@ -2162,7 +2162,7 @@ export const aiBlogData = [
   {
     id: 3,
     title: 'How to Seamlessly Integrate ChatGPT API into Your Website?',
-    href: 'https://hcode.tech/blog/how-to-seamlessly-integrate-chatgpt-api-into-your-website/',
+    href: 'https://www.hcode.tech/blog/how-to-seamlessly-integrate-chatgpt-api-into-your-website/',
     description:
       'How to Seamlessly Integrate ChatGPT API into Your Website? Have […]',
     imageUrl: '/assets/img/Ai_blog_3.png',
@@ -2174,7 +2174,7 @@ export const blockchainBlogData = [
     title:
       'Polygon vs. Ethereum: Why Choose Polygon for Scalable, Low-Cost DApps',
 
-    href: 'https://hcode.tech/blog/polygon-vs-ethereum-why-choose-polygon-for-scalable-low-cost-dapps/',
+    href: 'https://www.hcode.tech/blog/polygon-vs-ethereum-why-choose-polygon-for-scalable-low-cost-dapps/',
     description:
       'Polygon vs. Ethereum: Why Choose Polygon for Scalable, Low-Cost DApps […]',
     imageUrl: '/assets/img/blockchain/blockchain_blog_2.jpeg',
@@ -2183,7 +2183,7 @@ export const blockchainBlogData = [
     id: 2,
     title: 'How AI and Blockchain “Together” Can Transform Business ',
 
-    href: 'https://hcode.tech/blog/how-ai-and-blockchain-together-can-transform-business/',
+    href: 'https://www.hcode.tech/blog/how-ai-and-blockchain-together-can-transform-business/',
     description: 'How AI and Blockchain “Together” Can Transform Business […]',
     imageUrl: '/assets/img/blockchain/blockchain_blog_1.png',
   },
@@ -2192,7 +2192,7 @@ export const blockchainBlogData = [
     id: 3,
     title:
       'Web 3.0 vs Web 2.0: A Guide for Businesses in the Future of the Web',
-    href: 'https://hcode.tech/blog/web-3-0-vs-web-2-0-a-guide-for-businesses-in-the-future-of-the-web/',
+    href: 'https://www.hcode.tech/blog/web-3-0-vs-web-2-0-a-guide-for-businesses-in-the-future-of-the-web/',
     description:
       'How to Seamlessly Integrate ChatGPT API into Your Website? Have […]',
     imageUrl: '/assets/img/blockchain/blockchain_blog_3.jpeg',
@@ -2203,14 +2203,14 @@ export const posts = [
   {
     id: 1,
     title: 'MVP: A Game-Changer for Product Success',
-    href: 'https://hcode.tech/blog/mvp-a-game-changer-for-product-success/',
+    href: 'https://www.hcode.tech/blog/mvp-a-game-changer-for-product-success/',
     description: 'MVP: A Game-Changer for Product Success   Why create a […].',
     imageUrl: '/assets/img/blog_1.png',
   },
   {
     id: 2,
     title: 'MVP Development Services: The Smart Way to Develop Products',
-    href: 'https://hcode.tech/blog/mvp-development-services-the-smart-way-to-develop-products/',
+    href: 'https://www.hcode.tech/blog/mvp-development-services-the-smart-way-to-develop-products/',
     description:
       'MVP Development Services: The Smart Way to Develop Products […]',
     imageUrl: '/assets/img/blog_2.png',
@@ -2219,7 +2219,7 @@ export const posts = [
     id: 3,
     title:
       'Minimum Viable Product vs Prototype: Choosing the Right Early Version for Your App',
-    href: 'https://hcode.tech/blog/minimum-viable-product-vs-prototype-choosing-the-right-early-version-for-your-app/',
+    href: 'https://www.hcode.tech/blog/minimum-viable-product-vs-prototype-choosing-the-right-early-version-for-your-app/',
     description:
       'Minimum Viable Product vs Prototype: Choosing the Right Early Version […]',
     imageUrl: '/assets/img/blog_3.png',

@@ -47,7 +47,7 @@ function KarnalCarousel({ karnalImages, blog_page }) {
         </div>
         <div className="md:mt-14 hidden">
           <a
-            href="https://hcode.tech/blog/"
+            href="https://www.hcode.tech/blog/"
             target="_blank"
             className="pt-5 pb-1 mt-2 w-50 whitespace-nowrap flex-nowrap border-b border-[#8F929F] inline-flex text-[#8F929F] hover:scale-100 cursor-pointer hover:opacity-100"
           >

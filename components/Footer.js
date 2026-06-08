@@ -179,7 +179,7 @@ function Footer() {
               </li>
               <li className="mb-2">
                 <a
-                  href="https://hcode.tech/blog/"
+                  href="https://www.hcode.tech/blog/"
                   target="_blank"
                   className="border-b border-solid border-transparent hover:border-primary hover:text-primary"
                 >

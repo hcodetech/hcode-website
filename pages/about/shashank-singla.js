@@ -16,9 +16,9 @@ function ShashankSingla() {
         "worksFor": {
             "@type": "Organization",
             "name": "Hcode Technologies Pvt Ltd",
-            "url": "https://hcode.tech"
+            "url": "https://www.hcode.tech"
         },
-        "url": "https://hcode.tech/about/shashank-singla",
+        "url": "https://www.hcode.tech/about/shashank-singla",
         "email": "shashank@hcode.tech",
         "alumniOf": {
             "@type": "EducationalOrganization",

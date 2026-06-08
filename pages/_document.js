@@ -19,11 +19,6 @@ class MyDocument extends Document {
             }}
           />
 
-          {/* Google Console */}
-          <meta
-            name="google-site-verification"
-            content="p7p1JCWqzYMbOUuHZl6n__1vqE9IJksl6EMduIHHrao"
-          />
           {/* MailChimp */}
           {/* <script
             id="mcjs"

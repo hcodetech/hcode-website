@@ -7,7 +7,7 @@ const PAGE_META = {
   title: 'Blog | Hcode Technologies',
   description:
     'Insights on software development, AI, blockchain, and technology trends from the Hcode Technologies team.',
-  url: 'https://www.hcode.tech/blog',
+  url: 'https://www.hcode.tech/blog/',
   share_image: 'https://www.hcode.tech/assets/hcode_og.png',
 };
 
