@@ -87,7 +87,7 @@ Knowing the difference between megabits and megabytes can help one understand ma
 
 For more insights into understanding network speeds and decoding technical jargon, stay tuned to our blog!
 
-**Also read:** [Git vs Github: What’s the difference?](https://hcode.tech/blog/git-vs-github-whats-the-difference/)
+**Also read:** [Git vs Github: What’s the difference?](https://www.hcode.tech/blog/git-vs-github-whats-the-difference/)
 
 **Share it on Twitter**
 

@@ -101,7 +101,7 @@ Business intelligence is transforming the retail industry by providing retailers
 
 If you’re in retail and haven’t yet explored the potential of BI, now is the time to dive in. The future of retail is data-driven, and business intelligence is the key to unlocking its full potential.
 
-**Also Read:** [7 Ways Businesses are Using Predictive Analytics in Retail](https://hcode.tech/blog/7-ways-businesses-are-using-predictive-analytics-in-retail/)
+**Also Read:** [7 Ways Businesses are Using Predictive Analytics in Retail](https://www.hcode.tech/blog/7-ways-businesses-are-using-predictive-analytics-in-retail/)
 
 **Share on Twitter:**
 

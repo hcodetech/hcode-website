@@ -69,7 +69,7 @@ While Git and GitHub are often mentioned in the same breath, they serve distinct
 
 However, for collaborative development, GitHub is the right choice. This cloud-based platform acts as a central hub for your Git repositories and fosters seamless teamwork through features like user management, code review tools, and issue tracking.
 
-In essence, for solo work or offline scenarios, Git might suffice. But for collaborative development, the powerful combination of Git and GitHub is the way to go. If you have product needs, consulting with cloud experts like [HCode Technologies](https://hcode.tech/) is ideal, contact us to make your project robust.
+In essence, for solo work or offline scenarios, Git might suffice. But for collaborative development, the powerful combination of Git and GitHub is the way to go. If you have product needs, consulting with cloud experts like [HCode Technologies](https://www.hcode.tech/) is ideal, contact us to make your project robust.
 
 ### FAQs
 

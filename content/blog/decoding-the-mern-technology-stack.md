@@ -45,7 +45,7 @@ That is a lot to look for. \[_Ugh!_\]
 
 Hiring a proficient MERN developer is an enormous task. Nobody has the perfect recipe for the secret sauce. It is time-consuming, the cost of committing a mistake is huge, and the time to replace is long in this high attrition rate market.
 
-Looking for a stress-free fix? You can choose to pass the hiring tag to [HCode](https://hcode.tech/). Developer(s) at HCode work like your remote tech team. HCode has vetted developers and trained them to work in a remote setting and start delivering from Day 1. [Worth a try!](https://hcode.tech/our_services/mern-developer#best-offers)
+Looking for a stress-free fix? You can choose to pass the hiring tag to [HCode](https://www.hcode.tech/). Developer(s) at HCode work like your remote tech team. HCode has vetted developers and trained them to work in a remote setting and start delivering from Day 1. [Worth a try!](https://www.hcode.tech/our-services/mern-developer#best-offers)
 
 Let us check out a project, where an HCode’s full-stack developer worked closely with the engineering team of a YC-backed startup.
 
@@ -73,4 +73,4 @@ You invested your precious time in me.
 
 If you are considering hiring a remote full-stack MERN developer with accountability and cost-efficiency, you can check out HCode services.
 
-[Hire MERN Developer Now!](https://hcode.tech/our_services/mern-developer# "Hire MERN Developer Now!")
+[Hire MERN Developer Now!](https://www.hcode.tech/our-services/mern-developer# "Hire MERN Developer Now!")

@@ -49,10 +49,10 @@ If looking for a programmatic audio ad platform that delivers effective results?
 
 ![](/assets/blog/2023/03/image2.webp)
 
-[HCode](https://hcode.tech/) provides technical support to Paytunes by handling around 350 million requests that Paytunes receives each day, ensuring a quick response time of 100ms or less. They also manage the entire process, from data entry to bidding on the exchange, which allows for the delivery of audio ads on platforms like Spotify, Wynk, Saavn, and others.
+[HCode](https://www.hcode.tech/) provides technical support to Paytunes by handling around 350 million requests that Paytunes receives each day, ensuring a quick response time of 100ms or less. They also manage the entire process, from data entry to bidding on the exchange, which allows for the delivery of audio ads on platforms like Spotify, Wynk, Saavn, and others.
 
 By partnering with HCode, Paytunes can focus on what it does best – uninterrupted audio advertising services to the clients, while HCode handles the technical aspects.
 
-Level up your tech game with [HCode Technologies](https://hcode.tech)! Need technical expertise for your next big project? Look no further! 
+Level up your tech game with [HCode Technologies](https://www.hcode.tech)! Need technical expertise for your next big project? Look no further! 
 
-[Contact](https://hcode.tech/contact) HCode Technologies today and let us be your technical partner.
+[Contact](https://www.hcode.tech/contact) HCode Technologies today and let us be your technical partner.

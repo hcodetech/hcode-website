@@ -22,7 +22,7 @@ import {
 } from "../../constants/constants";
 import CaseStudiesCard from "../../components/CaseStudiesCard";
 import SectionHeader from "../../components/SectionHeader";
-import useGetFetch from "../hooks/useGetFetch";
+import useGetFetch from "../../hooks/useGetFetch";
 import { getAPIUrl } from "../api/APIHelpers";
 import { apiRoutes } from "../api/APIRoutes";
 

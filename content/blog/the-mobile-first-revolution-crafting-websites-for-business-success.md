@@ -61,8 +61,8 @@ Remember, in this mobile-centric world, a responsive website is not just a bonus
 
 ###### Looking to supercharge your website’s responsiveness?
 
-###### Let [HCode](https://hcode.tech/#)‘s designers assist you.
+###### Let [HCode](https://www.hcode.tech/#)‘s designers assist you.
 
-[Let’s Connect](https://hcode.tech/contact)[!](https://hcode.tech/contact "CONTACT HCode!")
+[Let’s Connect](https://www.hcode.tech/contact)[!](https://www.hcode.tech/contact "CONTACT HCode!")
 
 * * *

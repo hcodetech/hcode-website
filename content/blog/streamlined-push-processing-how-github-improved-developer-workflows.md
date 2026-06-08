@@ -73,9 +73,9 @@ This innovative approach resulted in several improvements:
 
 The GitHub status “push” update is a significant step forward for GitHub, boosting developer experience through better code visibility, faster sync times, and a more robust platform.
 
-Also Read – [Blockchain Development Services](https://hcode.tech/our-services/blockchain-development-services)
+Also Read – [Blockchain Development Services](https://www.hcode.tech/our-services/blockchain-development-services)
 
-[MVP Development Services](https://hcode.tech/our-services/mvp-development-services)
+[MVP Development Services](https://www.hcode.tech/our-services/mvp-development-services)
 
 > GitHub just smashed their push processing & it’s GLORIOUS! Faster pull request updates, reduced delays, & way more reliable. Say goodbye to the monolithic push & hello to a smoother dev workflow.[#github](https://twitter.com/hashtag/github?src=hash&ref_src=twsrc%5Etfw) [#developer](https://twitter.com/hashtag/developer?src=hash&ref_src=twsrc%5Etfw) [#devops](https://twitter.com/hashtag/devops?src=hash&ref_src=twsrc%5Etfw) [#HCode](https://twitter.com/hashtag/HCode?src=hash&ref_src=twsrc%5Etfw) [pic.twitter.com/xnm1sopcV9](https://t.co/xnm1sopcV9)
 > 

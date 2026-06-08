@@ -53,7 +53,7 @@ These products use real-time behavior to shape what users see or experience. Ins
 
 ##### **3\. Infrastructure That Thinks for Itself**
 
-AI-native systems extend [intelligence to the backend](https://hcode.tech/blog/an-introduction-to-ai-agents/). They can detect issues before they impact users, reconfigure routes, and retrain models without manual input. This goes beyond automation—it’s resilience by design. Operations teams shift from managing errors to overseeing autonomous adjustments.
+AI-native systems extend [intelligence to the backend](https://www.hcode.tech/blog/an-introduction-to-ai-agents/). They can detect issues before they impact users, reconfigure routes, and retrain models without manual input. This goes beyond automation—it’s resilience by design. Operations teams shift from managing errors to overseeing autonomous adjustments.
 
 ##### **4\. AI as a First-Class Design Principle**
 
@@ -128,7 +128,7 @@ Observability tools must evolve to match the system’s learning nature, not jus
 
 ##### **4\. Team Capability Gaps**
 
-Building AI-native products requires a deeply interdisciplinary approach. Product managers must understand how feedback loops influence UX. Engineers need fluency in ML infrastructure. Data scientists must collaborate tightly with design and ops. These aren’t just technical shifts—they’re [cultural ones](https://hcode.tech/blog/vibe-coding-and-the-dawn-of-intent-driven-software-development/).
+Building AI-native products requires a deeply interdisciplinary approach. Product managers must understand how feedback loops influence UX. Engineers need fluency in ML infrastructure. Data scientists must collaborate tightly with design and ops. These aren’t just technical shifts—they’re [cultural ones](https://www.hcode.tech/blog/vibe-coding-and-the-dawn-of-intent-driven-software-development/).
 
 The gap isn’t just skill—it’s organizational readiness.
 

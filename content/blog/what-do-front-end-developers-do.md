@@ -41,7 +41,7 @@ To create a seamless user interface (UI), front-end developers need a solid foun
 
 #### Frameworks and Libraries
 
-These pre-written code libraries extend the functionalities of core languages and streamline development. Popular options include React, Angular, [Next.js,](https://hcode.tech/blog/next-js-the-modern-javascript-framework-for-blazing-fast-web-applications/) and Vue.js for building complex UIs and Single-Page Applications (SPAs). Libraries like jQuery simplify common JavaScript tasks.
+These pre-written code libraries extend the functionalities of core languages and streamline development. Popular options include React, Angular, [Next.js,](https://www.hcode.tech/blog/next-js-the-modern-javascript-framework-for-blazing-fast-web-applications/) and Vue.js for building complex UIs and Single-Page Applications (SPAs). Libraries like jQuery simplify common JavaScript tasks.
 
 #### Design Tools
 
@@ -49,7 +49,7 @@ While not strictly coding, an understanding of design tools like Figma or Adobe 
 
 #### Version Control Systems
 
-Git is an industry-standard [version control system](https://hcode.tech/blog/git-vs-github-whats-the-difference/#:~:text=Version%20Control%20System,versions%20if%20necessary.) that allows developers to track changes in code, collaborate effectively, and revert to previous versions if needed.
+Git is an industry-standard [version control system](https://www.hcode.tech/blog/git-vs-github-whats-the-difference/#:~:text=Version%20Control%20System,versions%20if%20necessary.) that allows developers to track changes in code, collaborate effectively, and revert to previous versions if needed.
 
 ### A Front-End Developer must also have an eye for…
 
@@ -71,4 +71,4 @@ By investing in a strong front-end developer, you’re investing in the success 
 
 ### Ready to build the future of web interfaces?
 
-If you’re looking for a team of highly skilled and experienced front-end developers to bring your project to life, consider HCode Technologies. Our team of experts possesses the technical prowess and user-centric approach necessary to deliver exceptional results. Contact [HCode Technologies](https://hcode.tech/work-with-us) today to discuss your project and see how we can help you turn your vision into reality.
+If you’re looking for a team of highly skilled and experienced front-end developers to bring your project to life, consider HCode Technologies. Our team of experts possesses the technical prowess and user-centric approach necessary to deliver exceptional results. Contact [HCode Technologies](https://www.hcode.tech/work-with-us) today to discuss your project and see how we can help you turn your vision into reality.

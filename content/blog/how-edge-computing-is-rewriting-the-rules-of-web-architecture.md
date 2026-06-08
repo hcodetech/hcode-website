@@ -61,7 +61,7 @@ Whether you’re launching in one region or ten, users now expect consistent spe
 
 #### **3\. Platform support has matured**
 
-You don’t need custom DevOps setups to [deploy edge logic](https://hcode.tech/blog/3859-2/). Services like Vercel Edge Functions, Cloudflare Workers, and Netlify make it straightforward to deploy globally distributed code — without a new infrastructure team or a massive learning curve.
+You don’t need custom DevOps setups to [deploy edge logic](https://www.hcode.tech/blog/3859-2/). Services like Vercel Edge Functions, Cloudflare Workers, and Netlify make it straightforward to deploy globally distributed code — without a new infrastructure team or a massive learning curve.
 
 These aren’t just enablers — they’re signals. Edge-native thinking isn’t a niche anymore. It’s quietly becoming the new baseline.
 
@@ -96,7 +96,7 @@ Previously, determining a user’s location for routing or content personalizati
 
 As a result, questions like “Should this logic run at the edge or the origin?” or “Can this be cached regionally?” are no longer backend-only considerations — they’re now showing up in frontend code reviews.
 
-This mindset forces developers to account for [failure isolation](https://hcode.tech/blog/when-the-cloud-fails-what-smart-tech-leaders-are-doing-in-2025/), geo-specific behavior, and graceful fallbacks — concerns that used to live deeper in the stack. And it stretches what we mean by “full stack” development. Today, it’s not just about moving vertically from database to frontend. It’s also about distributing logic horizontally — across the client, the edge, and the origin.
+This mindset forces developers to account for [failure isolation](https://www.hcode.tech/blog/when-the-cloud-fails-what-smart-tech-leaders-are-doing-in-2025/), geo-specific behavior, and graceful fallbacks — concerns that used to live deeper in the stack. And it stretches what we mean by “full stack” development. Today, it’s not just about moving vertically from database to frontend. It’s also about distributing logic horizontally — across the client, the edge, and the origin.
 
 ### **Final Thought**
 

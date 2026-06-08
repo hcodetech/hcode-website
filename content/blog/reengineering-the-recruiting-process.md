@@ -60,11 +60,11 @@ To adjust to the recruiting trends and build the workforce companies need, the c
 
 **HCode: A trusted partner**
 
-[HCode’s goal](https://hcode.tech/about) is to make it possible for companies to easily find and recruit the best tech talent to augment their engineering team. The team at HCode makes sure that businesses do not struggle with the cumbersome steps of the recruitment process- onboarding, off-loading, logistics, work culture maintenance, and others. The HCode team acts as an in-house talent team and takes care of the complexities on their behalf.
+[HCode’s goal](https://www.hcode.tech/about) is to make it possible for companies to easily find and recruit the best tech talent to augment their engineering team. The team at HCode makes sure that businesses do not struggle with the cumbersome steps of the recruitment process- onboarding, off-loading, logistics, work culture maintenance, and others. The HCode team acts as an in-house talent team and takes care of the complexities on their behalf.
 
-US-based companies like [Maloka](https://www.mindfulmetaverse.co/), [Fable](https://www.tryfable.com/), and [others](https://hcode.tech/our_work) trusted HCode’s engagement models. Maybe you can try it too!
+US-based companies like [Maloka](https://www.mindfulmetaverse.co/), [Fable](https://www.tryfable.com/), and [others](https://www.hcode.tech/our-work) trusted HCode’s engagement models. Maybe you can try it too!
 
-It has never been a more exciting time in the working world, but change has never come this fast. Let [HCode](https://hcode.tech/) be your chauffeur in tech talent recruitment.
+It has never been a more exciting time in the working world, but change has never come this fast. Let [HCode](https://www.hcode.tech/) be your chauffeur in tech talent recruitment.
 
 * * *
 
@@ -74,4 +74,4 @@ Always in motion is the future.
 
 Don’t look back.
 
-[Subscribe Now](https://hcode.tech/newsletter?subject=Applying%20for%20a%20position%20at%20HCode&body=Hello%2C%0A%0APFA%20my%20CV%20for%20the%20above-mentioned%20role.%20%0A%0AFollowing%20are%20details%20of%20my%20current%20employment%3A%0A%0A1\)%20Fresher%2FExperienced%3A%0A%0A2\)%20Notice%20Period%3A%0A%0A3\)%20Current%20CTC%3A%0A%0A4\)%20Expected%20CTC%3A%0A%0AThanks! "Subscribe Now!")
+[Subscribe Now](https://www.hcode.tech/newsletter?subject=Applying%20for%20a%20position%20at%20HCode&body=Hello%2C%0A%0APFA%20my%20CV%20for%20the%20above-mentioned%20role.%20%0A%0AFollowing%20are%20details%20of%20my%20current%20employment%3A%0A%0A1\)%20Fresher%2FExperienced%3A%0A%0A2\)%20Notice%20Period%3A%0A%0A3\)%20Current%20CTC%3A%0A%0A4\)%20Expected%20CTC%3A%0A%0AThanks! "Subscribe Now!")

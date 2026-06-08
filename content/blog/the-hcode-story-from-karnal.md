@@ -17,7 +17,7 @@ There’s something different about starting your workday when the sky is clear,
 
 In a time when India’s tech map is crowded with metros and mega offices, HCode chose a quieter dot: Karnal. A decision that many thought would be limiting turned out to be our biggest strength.
 
-When [HCode](https://hcode.tech/) began in 2018, it wasn’t about proving a point. It was about proving a possibility. That serious tech work didn’t need a city skyline to back it. That engineers didn’t need to move away from their roots to grow. That professionalism, innovation, and culture could thrive in a city that offered something metros couldn’t: balance.
+When [HCode](https://www.hcode.tech/) began in 2018, it wasn’t about proving a point. It was about proving a possibility. That serious tech work didn’t need a city skyline to back it. That engineers didn’t need to move away from their roots to grow. That professionalism, innovation, and culture could thrive in a city that offered something metros couldn’t: balance.
 
 Karnal became home—not because we had to settle for it, but because it gave us what we were really looking for. Space to think. Time to focus. A chance to build something from the ground up, with intention.
 
@@ -49,4 +49,4 @@ We don’t just operate out of Karnal. We thrive here and We grow here. And with
 
 Want to see what a regular day at HCode looks like—from morning chai to evening cricket? Follow our journey on [LinkedIn](https://www.linkedin.com/company/hcodetech/posts/?feedView=all) and [Instagram](https://www.instagram.com/hcodetechnologies/). 
 
-And if this story resonates with you, explore more reflections on work and tech from Karnal on our [blog](https://hcode.tech/blog/).
+And if this story resonates with you, explore more reflections on work and tech from Karnal on our [blog](https://www.hcode.tech/blog/).

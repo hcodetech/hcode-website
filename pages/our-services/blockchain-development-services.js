@@ -22,7 +22,7 @@ import {
 import { getTestimonialData } from "../../utils/config";
 import { getAPIUrl } from "../api/APIHelpers";
 import { apiRoutes } from "../api/APIRoutes";
-import useGetFetch from "../hooks/useGetFetch";
+import useGetFetch from "../../hooks/useGetFetch";
 import SectionHeader from "../../components/SectionHeader";
 import { Blogs } from "../../components/Blogs";
 import CaseStudiesCard from "../../components/CaseStudiesCard";

@@ -93,7 +93,7 @@ Despite these challenges, the potential benefits of AI in healthcare are undenia
 
 The advancements in AI hold immense promise for revolutionizing healthcare and creating a future where everyone has access to personalized, efficient, and effective medical care. AI tools are already assisting in interpreting medical images, diagnoses, and treatment plans with remarkable accuracy, often exceeding human capabilities. This not only reduces human error but also frees up valuable time for healthcare professionals to focus on providing individualized care and building meaningful patient relationships.
 
-If you find yourself in need of guidance regarding the optimal AI tool for your work and require assistance with its seamless integration, consider leveraging [HCode’s AI integration services](https://hcode.tech/our-services/ai-integration-services). Partnering with HCode enables you to unlock the complete potential of AI, envisioning a future where everyone enjoys deserving access to healthcare.
+If you find yourself in need of guidance regarding the optimal AI tool for your work and require assistance with its seamless integration, consider leveraging [HCode’s AI integration services](https://www.hcode.tech/our-services/ai-integration-services). Partnering with HCode enables you to unlock the complete potential of AI, envisioning a future where everyone enjoys deserving access to healthcare.
 
 ## FAQs
 
@@ -113,4 +113,4 @@ AI in healthcare accelerates disease diagnoses, predicts health issues early, ta
 
 ### What is the future of AI in healthcare?
 
-The future of AI in healthcare looks pretty bright! It’s changing the game in medicine, helping out the pros with diagnoses, treatments, and overall patient care. As we dive deeper into [AI integration](https://hcode.tech/our-services/ai-integration-services), it will help analyze medical images, detect diseases, and predict patient outcomes.
+The future of AI in healthcare looks pretty bright! It’s changing the game in medicine, helping out the pros with diagnoses, treatments, and overall patient care. As we dive deeper into [AI integration](https://www.hcode.tech/our-services/ai-integration-services), it will help analyze medical images, detect diseases, and predict patient outcomes.

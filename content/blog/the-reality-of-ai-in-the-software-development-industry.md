@@ -13,7 +13,7 @@ tags: []
 
 ![](/assets/blog/2025/03/futuristic-hand-working-laptop-1.webp)
 
-AI tools like Cursor, GitHub Copilot, and ChatGPT have become deeply embedded in the developer workflow. Writing code is now as simple as typing a prompt, making it appear as though [software development](https://hcode.tech/blog/how-ai-code-assistants-changing-software-development/) has been democratized. The idea of AI in software development replacing engineers is spreading fast—but is that really what’s happening?
+AI tools like Cursor, GitHub Copilot, and ChatGPT have become deeply embedded in the developer workflow. Writing code is now as simple as typing a prompt, making it appear as though [software development](https://www.hcode.tech/blog/how-ai-code-assistants-changing-software-development/) has been democratized. The idea of AI in software development replacing engineers is spreading fast—but is that really what’s happening?
 
 Let’s break it down and answer the real question: Is AI making developers obsolete, or is something entirely different unfolding?
 

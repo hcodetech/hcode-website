@@ -32,7 +32,7 @@ Even IBM, years before this hype cycle, pushed the phrase “[augmented intellig
 
 And once you notice it, you see it everywhere.
 
-Apple’s launch of “[Apple Intelligence](https://www.apple.com/newsroom/2024/06/introducing-apple-intelligence-for-iphone-ipad-and-mac/#:~:text=%E2%80%9CWe%E2%80%99re%20thrilled%20to%20introduce%20a,%E2%80%9D)” came with the tagline “AI for the rest of us,” pitching it as a tool to summarize, rewrite, and organize your daily life. Amazon’s [Andy Jassy](https://www.aboutamazon.com/news/company-news/amazon-ceo-andy-jassy-on-generative-ai) talks about [AI agents](https://hcode.tech/blog/an-introduction-to-ai-agents/) as “teammates” that take care of repetitive work while employees focus on bigger problems. Meta, meanwhile, promises “personal superintelligence,” a creative sidekick to boost your imagination.
+Apple’s launch of “[Apple Intelligence](https://www.apple.com/newsroom/2024/06/introducing-apple-intelligence-for-iphone-ipad-and-mac/#:~:text=%E2%80%9CWe%E2%80%99re%20thrilled%20to%20introduce%20a,%E2%80%9D)” came with the tagline “AI for the rest of us,” pitching it as a tool to summarize, rewrite, and organize your daily life. Amazon’s [Andy Jassy](https://www.aboutamazon.com/news/company-news/amazon-ceo-andy-jassy-on-generative-ai) talks about [AI agents](https://www.hcode.tech/blog/an-introduction-to-ai-agents/) as “teammates” that take care of repetitive work while employees focus on bigger problems. Meta, meanwhile, promises “personal superintelligence,” a creative sidekick to boost your imagination.
 
 The details differ: Apple emphasizes privacy, Amazon efficiency, Meta creativity, but the tune is the same: AI is here to assist, not replace.
 

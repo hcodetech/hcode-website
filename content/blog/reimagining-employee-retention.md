@@ -78,4 +78,4 @@ Catch your employees before they run away.
 If you want to get the next issue in your inbox,  
 please subscribe to the newsletter.
 
-[Subscribe Now!](https://hcode.tech/newsletter? subject=Applying%20for%20a%20position%20at%20HCode&body=Hello%2C%0A%0APFA%20my%20CV%20for%20the%20above-mentioned%20role.%20%0A%0AFollowing%20are%20details%20of%20my%20current%20employment%3A%0A%0A1\)%20Fresher%2FExperienced%3A%0A%0A2\)%20Notice%20Period%3A%0A%0A3\)%20Current%20CTC%3A%0A%0A4\)%20Expected%20CTC%3A%0A%0AThanks! "Apply Now!")
+[Subscribe Now!](https://www.hcode.tech/newsletter? subject=Applying%20for%20a%20position%20at%20HCode&body=Hello%2C%0A%0APFA%20my%20CV%20for%20the%20above-mentioned%20role.%20%0A%0AFollowing%20are%20details%20of%20my%20current%20employment%3A%0A%0A1\)%20Fresher%2FExperienced%3A%0A%0A2\)%20Notice%20Period%3A%0A%0A3\)%20Current%20CTC%3A%0A%0A4\)%20Expected%20CTC%3A%0A%0AThanks! "Apply Now!")

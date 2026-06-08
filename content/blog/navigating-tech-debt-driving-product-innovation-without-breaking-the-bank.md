@@ -106,7 +106,7 @@ At HCode, we specialize in delivering cutting-edge software solutions while mana
 -   **Future-Proof Architecture:** Scalable designs that evolve with your business.
 -   **Faster Time-to-Market:** Agile development processes that balance speed and quality.
 
-Whether you’re dealing with an existing product burdened by tech debt or starting a new project from scratch, [HCode](https://hcode.tech/contact) is your trusted partner for innovation without compromise.
+Whether you’re dealing with an existing product burdened by tech debt or starting a new project from scratch, [HCode](https://www.hcode.tech/contact) is your trusted partner for innovation without compromise.
 
 Let’s build smarter, scalable products together. 
 

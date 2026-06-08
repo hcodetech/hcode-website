@@ -163,7 +163,7 @@ This advanced analysis assists radiologists and other healthcare professionals i
 
 **Integration points:** Manufacturing production lines, medical imaging systems, retail self-checkout systems.  
 **  
-Also Read:** [How to Seamlessly Integrate ChatGPT API into Your Website?](https://hcode.tech/blog/how-to-seamlessly-integrate-chatgpt-api-into-your-website/)
+Also Read:** [How to Seamlessly Integrate ChatGPT API into Your Website?](https://www.hcode.tech/blog/how-to-seamlessly-integrate-chatgpt-api-into-your-website/)
 
 ### AI in Your App: A Step-by-Step Guide
 
@@ -185,7 +185,7 @@ To use these AI capabilities, you can access them through an Application Program
 
 #### Develop the AI Model
 
-To build your AI model, you will need technical expertise, but fortunately, many [AI integration services](https://hcode.tech/our-services/ai-integration-services) can provide this. It is advisable to leave this job to the experts who will develop and train your AI model.
+To build your AI model, you will need technical expertise, but fortunately, many [AI integration services](https://www.hcode.tech/our-services/ai-integration-services) can provide this. It is advisable to leave this job to the experts who will develop and train your AI model.
 
 They will train it on your data, fine-tune hyperparameters, and optimize performance to ensure that your application runs smoothly afterward. During this phase, it is recommended to collaborate with data scientists or AI experts to guarantee the best possible outcome.
 
@@ -211,6 +211,6 @@ Integrating AI into your app can be a transformative journey, opening doors to e
 
 However, navigating this path requires careful planning, consideration, and expertise. By understanding your goals, identifying suitable AI solutions, and ensuring responsible implementation, you can unlock the vast potential of AI for your app and gain a competitive edge.
 
-But remember, you don’t have to go it alone. [Hcode](https://hcode.tech/), your trusted AI integration service provider, is here to guide you every step of the way.
+But remember, you don’t have to go it alone. [Hcode](https://www.hcode.tech/), your trusted AI integration service provider, is here to guide you every step of the way.
 
 Our team of experts possesses the knowledge, experience, and dedication to seamlessly integrate AI into your app, ensuring it delivers measurable results and aligns with your unique business objectives.

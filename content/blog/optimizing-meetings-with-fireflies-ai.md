@@ -62,4 +62,4 @@ HCode Technologies helps businesses improve their workflows with smart AI tool s
 
 Need Help?
 
-[Get in Touch with HCode](https://hcode.tech/contact)
+[Get in Touch with HCode](https://www.hcode.tech/contact)

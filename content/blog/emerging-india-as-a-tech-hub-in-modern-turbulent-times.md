@@ -60,10 +60,10 @@ India has all the [right ingredients](https://www.persolkelly.com/news/india-ha
 
 **Capacitive corporate environment:** Indian government’s push towards digitalization and favorable policies and tax structures has helped overseas companies to take advantage of Indian talent and infrastructure.
 
-[HCode](https://hcode.tech/) is one such company based in India that understands the flexibility to build a present and future-ready tech workforce. HCode has a team of talented and skilled developers to cater to your niche skill requirement. In [several ways](https://hcode.tech/our_services), HCode helps companies with their tech team requirements, managing and retaining the matched talent to gain a competitive edge in this dynamic market.
+[HCode](https://www.hcode.tech/) is one such company based in India that understands the flexibility to build a present and future-ready tech workforce. HCode has a team of talented and skilled developers to cater to your niche skill requirement. In [several ways](https://www.hcode.tech/our-services), HCode helps companies with their tech team requirements, managing and retaining the matched talent to gain a competitive edge in this dynamic market.
 
 * * *
 
 ###### **If you want to know more about HCode and the services they offer,**
 
-[Contact Hcode](https://hcode.tech/contact "CONTACT HCode!")
+[Contact Hcode](https://www.hcode.tech/contact "CONTACT HCode!")

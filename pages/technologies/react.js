@@ -4,7 +4,7 @@ import Client from "../../components/Client";
 import { client, portfolioData, TechSideImage, ReactIcon } from "../../constants/constants";
 import { getAPIUrl } from "../api/APIHelpers";
 import { apiRoutes } from "../api/APIRoutes";
-import useGetFetch from "../hooks/useGetFetch";
+import useGetFetch from "../../hooks/useGetFetch";
 
 const react = () => {
   const [isDesktop, setIsDesktop] = useState("")

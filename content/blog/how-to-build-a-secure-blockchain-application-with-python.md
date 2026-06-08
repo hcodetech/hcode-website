@@ -63,9 +63,9 @@ Put digital signatures to ensure that the transaction is genuine and that it was
 
 Development of a safe blockchain application in Python requires a good understanding of blockchain principles and attention to setting up the development environment, designing the blockchain structure, and building security measures. Be informed about recent threats and best practices so that integrity and safety in blockchain applications can be guaranteed. You will articulate steps leading to the birth of a reliable and trustworthy blockchain application developed according to the modern standard of security.
 
-Also Read – [Blockchain Development Services](https://hcode.tech/our-services/blockchain-development-services)
+Also Read – [Blockchain Development Services](https://www.hcode.tech/our-services/blockchain-development-services)
 
-[Streamlined Push Processing: How GitHub Improved Developer Workflows](https://hcode.tech/blog/streamlined-push-processing-how-github-improved-developer-workflows/)
+[Streamlined Push Processing: How GitHub Improved Developer Workflows](https://www.hcode.tech/blog/streamlined-push-processing-how-github-improved-developer-workflows/)
 
 > Build secure blockchain apps with Python!
 > 

@@ -57,7 +57,7 @@ Various countries have successfully implemented and practiced digitalization wit
 
 #### Web 3 Applications
 
-The [future of the internet is shifting towards Web 3](https://hcode.tech/blog/web-3-0-vs-web-2-0-a-guide-for-businesses-in-the-future-of-the-web/), a decentralized web where users have more control over their data and online interactions. Traditionally, big tech companies controlled vast amounts of user data, often without complete transparency.
+The [future of the internet is shifting towards Web 3](https://www.hcode.tech/blog/web-3-0-vs-web-2-0-a-guide-for-businesses-in-the-future-of-the-web/), a decentralized web where users have more control over their data and online interactions. Traditionally, big tech companies controlled vast amounts of user data, often without complete transparency.
 
 Web 3 disrupts this model by placing users in control. Data becomes more secure and users can choose what information they share and with whom.
 
@@ -79,7 +79,7 @@ Blockchain technology presents a promising solution in this domain. Its inherent
 
 Attempts to manipulate or influence outcomes become significantly more challenging with blockchain-based voting systems compared to traditional paper-based methods. Each block in the blockchain contains comprehensive information, including timestamps and user data, which not only simplifies the auditing process but also reinforces the security and trustworthiness of the system.
 
-Also Read: [Polygon vs. Ethereum: Why Choose Polygon for Scalable, Low-Cost DApps](https://hcode.tech/blog/polygon-vs-ethereum-why-choose-polygon-for-scalable-low-cost-dapps/)
+Also Read: [Polygon vs. Ethereum: Why Choose Polygon for Scalable, Low-Cost DApps](https://www.hcode.tech/blog/polygon-vs-ethereum-why-choose-polygon-for-scalable-low-cost-dapps/)
 
 #### Smart Contracts
 
@@ -113,4 +113,4 @@ This technology emerged to address the needs of enterprises seeking to leverage 
 
 ### Summing Up Our Learnings
 
-[Blockchain technology](https://hcode.tech/our-services/blockchain) offers vast and expanding potential for business applications. As adoption grows, it drives innovation and the development of more sophisticated solutions. While the list provided is not exhaustive, ongoing advancements suggest that blockchain’s capabilities will continue to evolve and surpass current limitations, shaping the future of various industries.
+[Blockchain technology](https://www.hcode.tech/our-services/blockchain) offers vast and expanding potential for business applications. As adoption grows, it drives innovation and the development of more sophisticated solutions. While the list provided is not exhaustive, ongoing advancements suggest that blockchain’s capabilities will continue to evolve and surpass current limitations, shaping the future of various industries.

@@ -72,7 +72,7 @@ Every transaction or update on the blockchain is recorded in an immutable ledger
 
 For businesses, this means they can easily track customer interactions, verify document authenticity, and ensure that KYC requirements are met at all stages. Customers benefit from knowing that their data is secure and that all actions involving their information are recorded and transparent.
 
-**Must Read: [How to Build a Secure Blockchain Application With Python](https://hcode.tech/blog/how-to-build-a-secure-blockchain-application-with-python/)**
+**Must Read: [How to Build a Secure Blockchain Application With Python](https://www.hcode.tech/blog/how-to-build-a-secure-blockchain-application-with-python/)**
 
 ### **Building a Blockchain-Based KYC System**
 

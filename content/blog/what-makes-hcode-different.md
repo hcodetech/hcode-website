@@ -16,7 +16,7 @@ tags: ["Hcode"]
 Many people and clients often ask: What’s different about working with HCode? And it’s a fair question — because they’re not just looking for the tech stack or capabilities.  
 They want to understand the culture, the working rhythm, and how we treat our teams. They want to know our mindset, how we stay consistent, and how we work together.
 
-And honestly, they should ask these questions. Why would they choose us if we walk the same path as everyone else? So — what makes [HCode](https://hcode.tech/) different?
+And honestly, they should ask these questions. Why would they choose us if we walk the same path as everyone else? So — what makes [HCode](https://www.hcode.tech/) different?
 
 ### It Starts with Ownership
 
@@ -43,7 +43,7 @@ We focus on repeatable, sustainable productivity — with time for deep work, st
 
 ### What Culture Really Means to Us 
 
-Everyone says they have a great culture. But for us, culture shows up in what people tolerate, how they talk in meetings, who gets promoted — and how people feel on Monday mornings. And if we’re talking about mornings at HCode… Well, you might want to read [The HCode Story from Karnal](https://hcode.tech/blog/the-hcode-story-from-karnal/). 
+Everyone says they have a great culture. But for us, culture shows up in what people tolerate, how they talk in meetings, who gets promoted — and how people feel on Monday mornings. And if we’re talking about mornings at HCode… Well, you might want to read [The HCode Story from Karnal](https://www.hcode.tech/blog/the-hcode-story-from-karnal/). 
 
 People here speak up — whether it’s to propose a better architecture or flag a risk early.  
 We’ve created a space where feedback is welcomed, not feared.  
@@ -65,4 +65,4 @@ Here at HCode, we’re intentional about how we work, how we grow, and how we tr
 
 **Let’s Keep the Conversation Going**
 
-We share more about how we work, what we’re building, and the ideas shaping our culture — on [LinkedIn](https://www.linkedin.com/company/hcodetech/posts/?feedView=all), [Instagram](https://www.instagram.com/hcodetechnologies/), and right here on our [blog](https://hcode.tech/blog/).
+We share more about how we work, what we’re building, and the ideas shaping our culture — on [LinkedIn](https://www.linkedin.com/company/hcodetech/posts/?feedView=all), [Instagram](https://www.instagram.com/hcodetechnologies/), and right here on our [blog](https://www.hcode.tech/blog/).

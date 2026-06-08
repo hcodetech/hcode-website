@@ -1,10 +1,17 @@
 /** @format */
 
 import React from 'react';
+import Head from 'next/head';
 
+// Internal Tailwind safelist page: lists arbitrary bg-[#hex] classes that are
+// applied dynamically elsewhere so the JIT compiler keeps them in the build.
+// Not user-facing content — keep it out of the search index.
 const stylesheet = () => {
   return (
     <div>
+      <Head>
+        <meta name="robots" content="noindex, follow" />
+      </Head>
       <div className='bg-[#F0E9FF] text-[#FFF]'></div>
       <div className='bg-[#FFE8CF] text-[#FFFFFF]'></div>
       <div className='bg-[#000000] text-[#000]'></div>

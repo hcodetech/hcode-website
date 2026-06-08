@@ -93,7 +93,7 @@ There is a growing push for “AI assurance” — frameworks that emphasize tra
 
 ### **How HCode Comes Into the Picture**
 
-We’ve been thinking a lot about what it means to build secure systems in an age where agents are autonomous, always-on, and capable of making decisions in production environments. At [HCode](https://hcode.tech/), this isn’t a hypothetical — it’s the backdrop for much of the work we do.
+We’ve been thinking a lot about what it means to build secure systems in an age where agents are autonomous, always-on, and capable of making decisions in production environments. At [HCode](https://www.hcode.tech/), this isn’t a hypothetical — it’s the backdrop for much of the work we do.
 
 When we design AI-driven systems, security isn’t something we tack on at the end. It’s baked in from the first line of code. That means things like identity enforcement, permissioning, behavioral logging — all integrated into the architecture itself. You can’t just trust that agents will behave. You have to give them boundaries. And just as importantly, you have to know when they’ve crossed them.
 

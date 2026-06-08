@@ -73,13 +73,13 @@ Creating a great product involves a great understanding of the users. It’s ent
 
 But, in between the fast-paced chaos and pressure, what’s important is to consider how you can improve your existing front-end projects. 
 
-You may hire [HCode](https://hcode.tech/)‘s front-end developers proficient in React.js, Next.js, Typescript, and Angular to work on your front-end requirements.
+You may hire [HCode](https://www.hcode.tech/)‘s front-end developers proficient in React.js, Next.js, Typescript, and Angular to work on your front-end requirements.
 
 * * *
 
 **HCode- Your trusted offshore development partner**
 
-[HCode](https://hcode.tech/our_work)‘s Front-end engineers have experience developing rich User Interfaces for many US clients.
+[HCode](https://www.hcode.tech/our-work)‘s Front-end engineers have experience developing rich User Interfaces for many US clients.
 
 [Pollinate](http://www.pollinate.co/), a New York-based platform for discovering artists and events wanted a modern-looking UI that appealed to the audience of Art-Artists, Art Lovers, and Exhibitors.
 
@@ -99,4 +99,4 @@ Thinking of a makeover for your front-end problems?
 
 Consider hiring front-end developers from HCode.
 
-[HIRE FRONT-END DEVELOPER](https://hcode.tech/contact "HIRE FRONT-END DEVELOPER !")
+[HIRE FRONT-END DEVELOPER](https://www.hcode.tech/contact "HIRE FRONT-END DEVELOPER !")

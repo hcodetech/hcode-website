@@ -71,9 +71,9 @@ It is also a key player in:
 
 -   Game Development
 -   Cloud Computing
--   [Artificial Intelligence](https://hcode.tech/our-services/ai-integration-services)
+-   [Artificial Intelligence](https://www.hcode.tech/our-services/ai-integration-services)
 -   IoT Applications
--   [Chatbots and Marketing Tools](https://hcode.tech/blog/how-to-seamlessly-integrate-chatgpt-api-into-your-website/)
+-   [Chatbots and Marketing Tools](https://www.hcode.tech/blog/how-to-seamlessly-integrate-chatgpt-api-into-your-website/)
 
 And other newfound technologies.
 
@@ -81,7 +81,7 @@ And other newfound technologies.
 
 Python (first released in 1991) is a high-level, interpreted, object-oriented language known for its clear and concise code. This makes it a favorite for beginners, allowing them to grasp programming concepts without complex syntax.
 
-But Python’s strength goes beyond ease of learning. It’s versatile, supporting various programming styles (object-oriented, structured, functional), and popular for [rapid application development](https://hcode.tech/) due to its built-in features and extensive libraries.
+But Python’s strength goes beyond ease of learning. It’s versatile, supporting various programming styles (object-oriented, structured, functional), and popular for [rapid application development](https://www.hcode.tech/) due to its built-in features and extensive libraries.
 
 It also simplifies things for beginners with dynamic typing (no need to declare variable data types) and automatic memory management (garbage collection) which makes it a popular choice for developers and businesses alike.
 

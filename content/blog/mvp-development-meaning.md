@@ -55,4 +55,4 @@ Armed with actionable user insights, prioritize improvement areas and iterate on
 
 By embracing the philosophy of MVP development, you empower your startup to navigate the challenging yet rewarding journey of product development. So, unleash the power of MVP, gather valuable insights, and pave the way for sustainable software success.
 
-While building an MVP yourself is certainly possible, leveraging expert [MVP development services](https://hcode.tech/our-services/mvp-development-services) can streamline your process, ensure technical excellence, and accelerate feedback cycles for maximum impact. Let their expertise guide you to a winning formula.
+While building an MVP yourself is certainly possible, leveraging expert [MVP development services](https://www.hcode.tech/our-services/mvp-development-services) can streamline your process, ensure technical excellence, and accelerate feedback cycles for maximum impact. Let their expertise guide you to a winning formula.

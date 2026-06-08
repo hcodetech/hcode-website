@@ -25,7 +25,7 @@ Let’s break down what SPAs are, why they matter, and how both developers and p
 
 A Single Page Application (SPA) is a web app that loads a single HTML page once and then dynamically updates its content as users interact. Rather than reloading an entire page from the server, SPAs fetch only the data needed. JavaScript in the browser then updates the view instantly.
 
-The result is an uninterrupted flow that feels closer to a native mobile app than a traditional website. Frameworks like  [React](https://hcode.tech/blog/why-wed-use-react-native-to-build-a-web3-platform-today/), Angular, and Vue popularized SPAs by enabling reusable components, efficient state management, and highly interactive experiences at scale.
+The result is an uninterrupted flow that feels closer to a native mobile app than a traditional website. Frameworks like  [React](https://www.hcode.tech/blog/why-wed-use-react-native-to-build-a-web3-platform-today/), Angular, and Vue popularized SPAs by enabling reusable components, efficient state management, and highly interactive experiences at scale.
 
 ##### **How it Differs from Traditional Web Apps** 
 

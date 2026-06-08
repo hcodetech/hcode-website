@@ -17,7 +17,7 @@ The manufacturing industry has seen a significant shift in recent years, driven 
 
 One exciting use case of genAI in manufacturing is in the development of humanoid robots. GenAI empowers these robots to learn from various inputs, enabling them to take intelligent actions and integrate seamlessly into workflows. Ambitious projects like GR00T showcase this potential, with the humanoid robot market projected to reach [$38 billion by 2035 (Goldman Sachs)](https://www.goldmansachs.com/intelligence/pages/the-global-market-for-robots-could-reach-38-billion-by-2035.html). But genAI’s impact goes beyond robots.
 
-While AI already plays a role in manufacturing through ERP systems, breakdown identification, machine process optimization, and defect detection [(with the help of IoT and cloud computing)](https://hcode.tech/blog/blockchain-in-cloud-computing-significance-benefits-and-applications/), this article focuses specifically on the versatile applications of genAI in the manufacturing sector.
+While AI already plays a role in manufacturing through ERP systems, breakdown identification, machine process optimization, and defect detection [(with the help of IoT and cloud computing)](https://www.hcode.tech/blog/blockchain-in-cloud-computing-significance-benefits-and-applications/), this article focuses specifically on the versatile applications of genAI in the manufacturing sector.
 
 ### Use case of GenAI in Manufacturing
 
@@ -29,7 +29,7 @@ Tools like chatGPT, Bard, and Bing are now a part of every industry, even manufa
 
 Optimizing the manufacturing process is always a priority among decision-makers–but how to do so? GenAI has its applications here, by analyzing the data from sensors, detectors, and machinery AI can assimilate and provide better ways to optimize the manufacturing process.
 
-Several manufacturing units have reported significant improvements in MAS action with informed decision-making using AI. For instance, a leather manufacturing company reported a [30% reduction in lead time](https://www.linkedin.com/pulse/artificial-intelligence-leather-goods-manufacturing-bhattacharya-houqc/#:~:text=30%25%20reduction%20in%20lead%20time) and a significant drop in scrap waste. The [healthcare sector](https://hcode.tech/blog/how-the-public-health-sector-is-making-advances-by-using-ai-in-healthcare/) reported a drop in instrument malfunction and breakdown, as the AI preemptively suggested replacements and maintenance. Thanks to GenAI, along with computer vision data, defective products in the assembly line can be detected much more precisely, resulting in a 65% reduction in quality control staff while maintaining productivity.
+Several manufacturing units have reported significant improvements in MAS action with informed decision-making using AI. For instance, a leather manufacturing company reported a [30% reduction in lead time](https://www.linkedin.com/pulse/artificial-intelligence-leather-goods-manufacturing-bhattacharya-houqc/#:~:text=30%25%20reduction%20in%20lead%20time) and a significant drop in scrap waste. The [healthcare sector](https://www.hcode.tech/blog/how-the-public-health-sector-is-making-advances-by-using-ai-in-healthcare/) reported a drop in instrument malfunction and breakdown, as the AI preemptively suggested replacements and maintenance. Thanks to GenAI, along with computer vision data, defective products in the assembly line can be detected much more precisely, resulting in a 65% reduction in quality control staff while maintaining productivity.
 
 GenAI has also been successful in market data analysis, providing intelligent suggestions for better decision-making based on the data analyzed.
 
@@ -43,7 +43,7 @@ Overall, AI-powered technology has proven to be a valuable tool for manufacturin
 
 #### Inventory Management
 
-Inventory management is a significant challenge faced by the manufacturing industry, which affects around 62% of [business finances](https://hcode.tech/blog/how-ai-is-used-in-fintech-2024-revolutionizing-financial-services-with-artificial-intelligence/) due to poor tracking. However, improving inventory management can help save up to 10% of inventory costs.
+Inventory management is a significant challenge faced by the manufacturing industry, which affects around 62% of [business finances](https://www.hcode.tech/blog/how-ai-is-used-in-fintech-2024-revolutionizing-financial-services-with-artificial-intelligence/) due to poor tracking. However, improving inventory management can help save up to 10% of inventory costs.
 
 To tackle this challenge, AI-powered neural networks can analyze inventory storage data, upcoming cargo deliveries, production rates, and other available information to create an effective inventory management system. This system can help address overcommitting, overstocking, understocking, and improve warehouse space management and logistics, ultimately resulting in significant cost savings for businesses.
 
@@ -81,7 +81,7 @@ As the manufacturing landscape evolves, GenAI (Generative Artificial Intelligenc
 
 **3.** It is crucial to avoid attempting to transform your entire operation in one go. Identify specific areas where you can implement AI efficiently, like predictive maintenance or improving a particular production stage. Once you have achieved success in that smaller setting, you can then expand to include your entire facility.
 
-**4.** Seeking guidance from experienced AI specialists can significantly enhance your success. [HCode Technologies](https://hcode.tech/our-services/ai-integration-services), for instance, boasts a team of seasoned AI specialists with extensive experience in the manufacturing domain.
+**4.** Seeking guidance from experienced AI specialists can significantly enhance your success. [HCode Technologies](https://www.hcode.tech/our-services/ai-integration-services), for instance, boasts a team of seasoned AI specialists with extensive experience in the manufacturing domain.
 
 ### Hurdles
 

@@ -85,9 +85,9 @@ Ensuring your site’s content looks good on any device involves using adaptive,
 
 As you continue to refine and enhance your UX/UI design, remember that having a dedicated partner can make all the difference. HCode Technologies can be your partner in refining and enhancing your UI/UX design. We specialize in providing top-notch development services to bring your design visions to life. Contact us today to discuss revamping your existing platform, creating a brand-new user experience, or achieving any other digital goals.
 
-Also Read – [Blockchain Development Services](https://hcode.tech/our-services/blockchain-development-services)
+Also Read – [Blockchain Development Services](https://www.hcode.tech/our-services/blockchain-development-services)
 
-[MVP Development Services](https://hcode.tech/our-services/mvp-development-services)
+[MVP Development Services](https://www.hcode.tech/our-services/mvp-development-services)
 
 > Want a website that doesn’t confuse users? Our blog reveals 7 UI/UX secrets to make your software feel as easy as using your phone! (and it’s not just about fancy graphics ). [#UI](https://twitter.com/hashtag/UI?src=hash&ref_src=twsrc%5Etfw) [#UX](https://twitter.com/hashtag/UX?src=hash&ref_src=twsrc%5Etfw) [#userexperience](https://twitter.com/hashtag/userexperience?src=hash&ref_src=twsrc%5Etfw) [pic.twitter.com/i76IbXLqPF](https://t.co/i76IbXLqPF)
 > 

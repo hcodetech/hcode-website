@@ -27,7 +27,7 @@ import {
 } from "../../constants/constants";
 import { getAPIUrl } from "../api/APIHelpers";
 import { apiRoutes } from "../api/APIRoutes";
-import useGetFetch from "../hooks/useGetFetch";
+import useGetFetch from "../../hooks/useGetFetch";
 
 import { useCallback } from "react";
 import useEmblaCarousel from "embla-carousel-react";

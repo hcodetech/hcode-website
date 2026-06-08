@@ -32,7 +32,7 @@ Sometimes, that’s partially true — AI can reduce repetitive work, and new fr
 
 Frameworks like React, Vue, and Svelte; bundlers like Vite or Turbopack; CSS-in-JS approaches; atomic CSS; component libraries; AI-assisted UI generators — there’s always something new.
 
-Every few months, a “[must-adopt](https://hcode.tech/blog/vibe-coding-and-the-dawn-of-intent-driven-software-development/)” emerges — and the pressure builds to adopt before you “fall behind.”
+Every few months, a “[must-adopt](https://www.hcode.tech/blog/vibe-coding-and-the-dawn-of-intent-driven-software-development/)” emerges — and the pressure builds to adopt before you “fall behind.”
 
 But here’s the truth: Shipping quickly doesn’t help if you’re shipping the wrong thing.
 

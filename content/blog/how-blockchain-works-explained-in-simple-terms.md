@@ -15,7 +15,7 @@ tags: []
 
 Blockchain is a fascinating technology that has piqued the interest of many people, but its inner workings can be quite hard to understand. When searching online for information, the explanations available are often repetitive and generic, failing to satisfy the curiosity of those seeking to truly understand what blockchain is and how it functions.
 
-Thus, [HCode Technologies](https://hcode.tech/), as a leading blockchain service provider, felt the need to explain the concept in easy terms. So, let us get started.
+Thus, [HCode Technologies](https://www.hcode.tech/), as a leading blockchain service provider, felt the need to explain the concept in easy terms. So, let us get started.
 
 _**“Blockchain technology enables transparent, secure, and decentralized record-keeping, revolutionizing industries through its immutable ledger and trust-building capabilities.”**_
 
@@ -122,8 +122,8 @@ Well, we know it still doesn’t cover nodes and how the PoW works, but that’s
 
 ### Conclusion
 
-Blockchain technology has become widely known through cryptocurrencies, but its potential lies beyond that. It can be [applied in healthcare](https://hcode.tech/blog/7-mainstream-applications-of-blockchain-technology-in-business/), finance, [cloud computing](https://hcode.tech/blog/blockchain-in-cloud-computing-significance-benefits-and-applications/), and many other fields.
+Blockchain technology has become widely known through cryptocurrencies, but its potential lies beyond that. It can be [applied in healthcare](https://www.hcode.tech/blog/7-mainstream-applications-of-blockchain-technology-in-business/), finance, [cloud computing](https://www.hcode.tech/blog/blockchain-in-cloud-computing-significance-benefits-and-applications/), and many other fields.
 
-Blockchain technology offers a lot more than just smart contracts. It provides a secure and tamper-proof solution for applications where trust is essential during the development, scaling, and implementation stages. This is where [Hcode](https://hcode.tech/our-services/blockchain) comes in.
+Blockchain technology offers a lot more than just smart contracts. It provides a secure and tamper-proof solution for applications where trust is essential during the development, scaling, and implementation stages. This is where [Hcode](https://www.hcode.tech/our-services/blockchain) comes in.
 
 We work with you to determine the challenges you are facing and develop blockchain-powered solutions that enable you to take advantage of this technology’s potential without being overwhelmed by technical complexities.

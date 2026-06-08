@@ -17,7 +17,7 @@ In 2023, we collaborated with Magnetiq, a New York-based Web3 startup, to bring 
 
 But it wasn’t just about rewards. It was about fostering new types of relationships between brands and users—built on transparency, participation, and ownership.
 
-We created the entire system from the ground up: a custom web platform, a secure backend, [smart contract integrations](https://hcode.tech/blog/security-at-the-crossroads-of-chains/) for minting NFTs, and adaptable features like reward drops and polls. All of this was delivered within a tight six-month MVP timeline.
+We created the entire system from the ground up: a custom web platform, a secure backend, [smart contract integrations](https://www.hcode.tech/blog/security-at-the-crossroads-of-chains/) for minting NFTs, and adaptable features like reward drops and polls. All of this was delivered within a tight six-month MVP timeline.
 
 That project showed us what’s achievable when the vision is clear and deadlines are pressing. But if we were to build a mobile-first version of that platform today?
 
@@ -39,7 +39,7 @@ When creating quickly evolving token-based platforms, rapid iteration and feedba
 
 With out-of-the-box UI building blocks, the user gets a high-performance experience. And with CodePush-like capabilities, we can push app logic and features at runtime—without app store curation.
 
-React Native also gets along well with our existing [backend stacks](https://hcode.tech/blog/3859-2/): TypeScript, GraphQL, headless CMSs, and Web3 tooling. Velocity is added with no added complexity.
+React Native also gets along well with our existing [backend stacks](https://www.hcode.tech/blog/3859-2/): TypeScript, GraphQL, headless CMSs, and Web3 tooling. Velocity is added with no added complexity.
 
 Compared with traditional mobile development, which often requires separate teams for iOS and Android, or with hybrid approaches that compromise performance, React Native strikes a reasonable middle ground—common development with the natural feel of the native world.
 
@@ -105,7 +105,7 @@ Here’s what React Native would unlock now:
 
 Together, these capabilities would help us deliver a loyalty experience that’s fast, deeply integrated, and built for the way users interact with brands today—on mobile, in real time.
 
-And with offline support and a [modular architecture](https://hcode.tech/blog/why-mcp-model-context-protocol-is-the-missing-link-in-ai-application-scalability/), we’d be ready to scale—across geographies, campaigns, and devices.
+And with offline support and a [modular architecture](https://www.hcode.tech/blog/why-mcp-model-context-protocol-is-the-missing-link-in-ai-application-scalability/), we’d be ready to scale—across geographies, campaigns, and devices.
 
 The result? A faster, more fluid, and fully mobile-native user experience.
 

@@ -25,7 +25,7 @@ Imagine a digital record book, shared across a secure network, where every entry
 
 Innovations made using blockchain are known as blockchain-based solutions with prominent examples being smart contracts. 
 
-[Blockchain solutions](https://hcode.tech/our-services/blockchain-development-services) have many use cases, especially in supply chain management. Being an industry with lots of dependencies, the supply chain suffers from extended processing time and equivalent costs. Blockchain comes out as a unique solution that not only lifts dependencies from individuals but also boosts the time to deliver. 
+[Blockchain solutions](https://www.hcode.tech/our-services/blockchain-development-services) have many use cases, especially in supply chain management. Being an industry with lots of dependencies, the supply chain suffers from extended processing time and equivalent costs. Blockchain comes out as a unique solution that not only lifts dependencies from individuals but also boosts the time to deliver. 
 
 ### Benefits of Blockchain in Supply Chain Management:
 
@@ -64,7 +64,7 @@ Thus in the pharmaceutical industry, blockchain is used to track medications fro
 
 Blockchain is not a magic bullet, but it holds immense promise for revolutionizing supply chain management. By increasing transparency, streamlining processes, and enhancing security, blockchain paves the way for a more efficient,reliable, and trustworthy global supply network. As businesses embrace this technology, we can expect a future where disruptions are minimized and consumer confidence thrives.
 
-**Also Read –** [**Blockchain Development Services**](https://hcode.tech/our-services/blockchain-development-services)
+**Also Read –** [**Blockchain Development Services**](https://www.hcode.tech/our-services/blockchain-development-services)
 
 > Blockchain is revolutionizing supply chain management by enabling real-time tracking, reducing counterfeiting, and eliminating intermediaries. Imagine scanning a product to see its entire journey from farm to fork![#Blockchain](https://twitter.com/hashtag/Blockchain?src=hash&ref_src=twsrc%5Etfw) [pic.twitter.com/CnEZ0jIgdC](https://t.co/CnEZ0jIgdC)
 > 

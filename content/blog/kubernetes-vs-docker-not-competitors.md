@@ -94,4 +94,4 @@ We’ve explored the key differences between Docker and Kubernetes. Docker simpl
 
 The best choice depends on your needs. Docker is great for beginners or smaller projects. Kubernetes offers more power for intricate applications but has a steeper learning curve. But why not use both? Docker and Kubernetes can work together seamlessly. Docker builds your containerized apps, and Kubernetes orchestrates them for a powerful and efficient development and deployment process.
 
-At [HCode Technologies](https://hcode.tech/), we leverage the power of both Docker and Kubernetes to create a winning situation without compromise. If you want scalable, well-organized projects developed quickly at a low cost, [contact us](https://hcode.tech/contact).
+At [HCode Technologies](https://www.hcode.tech/), we leverage the power of both Docker and Kubernetes to create a winning situation without compromise. If you want scalable, well-organized projects developed quickly at a low cost, [contact us](https://www.hcode.tech/contact).

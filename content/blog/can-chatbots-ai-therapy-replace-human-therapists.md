@@ -55,7 +55,7 @@ AI chatbots excel at understanding and collecting patients’ vital symptoms but
 
 While AI therapy can aid in primary care by gathering patient data and monitoring vital signs, it should complement, not replace, human therapists. Effective healthcare requires the collaboration of AI and human professionals. AI’s role extends beyond mental health, enhancing healthcare through tools like telemedicine, telehealth, and patient engagement software, thereby improving connectivity and primary care delivery.
 
-Read more – [How the Public Health Sector is Making Advances by Using AI in Healthcare](https://hcode.tech/blog/how-the-public-health-sector-is-making-advances-by-using-ai-in-healthcare/)
+Read more – [How the Public Health Sector is Making Advances by Using AI in Healthcare](https://www.hcode.tech/blog/how-the-public-health-sector-is-making-advances-by-using-ai-in-healthcare/)
 
 **Share it on Twitter** 
 

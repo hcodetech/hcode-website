@@ -57,4 +57,4 @@ As the FinTech industry continues to evolve, the ability to innovate rapidly whi
 
 For FinTech companies looking to thrive in a competitive market, adopting CI/CD is not just a technical decision—it’s a strategic imperative. By integrating robust pipelines tailored to the unique challenges of the industry, businesses can unlock new levels of efficiency, agility, and trust, ensuring a future where innovation and compliance go hand in hand.
 
-**Also Read:** [How Blockchain Enhances Privacy and Security in KYC](https://hcode.tech/blog/how-blockchain-enhances-privacy-and-security-in-kyc/)
+**Also Read:** [How Blockchain Enhances Privacy and Security in KYC](https://www.hcode.tech/blog/how-blockchain-enhances-privacy-and-security-in-kyc/)

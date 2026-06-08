@@ -44,9 +44,9 @@ Remember Hick’s Law – The time it takes for a person to make a decision incr
 
 At HCode Technologies, we are a driving force in the digital revolution, transforming industries and boosting economies. We partner with businesses like yours to accelerate growth, providing strategic digital solutions designed to strengthen your brand presence and cultivate an engaged online community.
 
-Also Read – [Blockchain Development Services](https://hcode.tech/our-services/blockchain-development-services)
+Also Read – [Blockchain Development Services](https://www.hcode.tech/our-services/blockchain-development-services)
 
-[A Complete Guide to Blockchain Development – HCode](https://hcode.tech/blog/a-complete-guide-to-blockchain-development-hcode/)
+[A Complete Guide to Blockchain Development – HCode](https://www.hcode.tech/blog/a-complete-guide-to-blockchain-development-hcode/)
 
 > “A clean and optimized web design is crucial in capturing user attention within just 54 seconds. Incorporate standardized elements and prioritize responsiveness to enhance user experience effectively.” -Shashank Singla, Founder of HCode Technologies [#WebDesign](https://twitter.com/hashtag/WebDesign?src=hash&ref_src=twsrc%5Etfw) [#UX](https://twitter.com/hashtag/UX?src=hash&ref_src=twsrc%5Etfw) [#HCode](https://twitter.com/hashtag/HCode?src=hash&ref_src=twsrc%5Etfw) [pic.twitter.com/4MYG5TyWs1](https://t.co/4MYG5TyWs1)
 > 

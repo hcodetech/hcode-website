@@ -13,7 +13,7 @@ tags: []
 
 ![](/assets/blog/2024/05/on-one-side-a-traveler-sits-at-a-desk-surrounded-b-r0rjwgiqRjGZ1aeLicHImw-0PV0Z6oPQhmCZn9gCp7v-w.webp)
 
-Reading travel brochures and relying on travel agents for the best deals feels like a relic of the past. Today’s travel industry is fueled by innovation, responding directly to customers’ demands for personalization, easy-to-access information, and even AI-powered travel planning. [AI, in particular, has been a game-changer](https://hcode.tech/blog/how-ai-integration-services-can-fuel-your-business-growth/), playing a significant role in the industry’s rebound from the COVID-19 pandemic.   
+Reading travel brochures and relying on travel agents for the best deals feels like a relic of the past. Today’s travel industry is fueled by innovation, responding directly to customers’ demands for personalization, easy-to-access information, and even AI-powered travel planning. [AI, in particular, has been a game-changer](https://www.hcode.tech/blog/how-ai-integration-services-can-fuel-your-business-growth/), playing a significant role in the industry’s rebound from the COVID-19 pandemic.   
 
 This digital revolution has seen a surge in the use of cutting-edge technologies like large language models (LLMs), robotics, and AI. Leading travel platforms like Expedia and Booking.com have been at the forefront of this shift,  seamlessly integrating machine learning into their user experience.  Take the “recommended for you” section – which is powered by AI,  personalizing your travel discovery journey.
 
@@ -52,7 +52,7 @@ Today, there are innovative startups and AI-driven applications that specialize 
 
 ##### Travel with Jeeves
 
-Our expertise in [AI integration](https://hcode.tech/our-services/ai-integration-services) helped power Jeeves, an innovative online travel planner.
+Our expertise in [AI integration](https://www.hcode.tech/our-services/ai-integration-services) helped power Jeeves, an innovative online travel planner.
 
 ![](/assets/blog/2024/05/Screenshot-2024-05-23-155019.webp)Through their user-friendly app, [Jeeves](https://www.travelwithjeeves.com/) personalizes your trip planning. If you want to plan a weekend getaway: Jeeves asks about your budget, travel dates, and interests, then crafts a custom itinerary. Hotels, restaurants, and attractions – all tailored to you, saving you time and effort.
 
@@ -80,7 +80,7 @@ A prime example is [Expedia](https://www.expedia.co.in/) Assistant with its suit
 
 ![](/assets/blog/2024/05/Screenshot_2024-05-23-11-05-07-60_1ba494d2a02f35a7626fb9241a24a2ae.webp)
 
-It recently announced its collaboration with ChatGPT to [integrate AI into its mobile application](https://hcode.tech/blog/how-to-integrate-ai-in-a-mobile-app/). This handy chatbot understands your preferences and helps craft your dream vacation. Simply chat with the assistant about your desired destinations, interests, and budget. It’ll recommend hotels, activities, and flights, all tailored to you. \[4\]
+It recently announced its collaboration with ChatGPT to [integrate AI into its mobile application](https://www.hcode.tech/blog/how-to-integrate-ai-in-a-mobile-app/). This handy chatbot understands your preferences and helps craft your dream vacation. Simply chat with the assistant about your desired destinations, interests, and budget. It’ll recommend hotels, activities, and flights, all tailored to you. \[4\]
 
 #### Imagery Optimization
 

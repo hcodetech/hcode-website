@@ -97,7 +97,7 @@ In conclusion, healthcare data warehouses play a pivotal role in making clinical
 
 Continual improvements will provide healthcare organizations with even more precise insights, fostering innovations in patient care, disease prevention, and operational efficiency. Data warehouses, therefore, are indispensable in the evolving landscape of healthcare analytics.
 
-**Also Read:** [How the Public Health Sector is Making Advances by Using AI in Healthcare](https://hcode.tech/blog/how-the-public-health-sector-is-making-advances-by-using-ai-in-healthcare/)
+**Also Read:** [How the Public Health Sector is Making Advances by Using AI in Healthcare](https://www.hcode.tech/blog/how-the-public-health-sector-is-making-advances-by-using-ai-in-healthcare/)
 
 **  
 Twitter Post:**

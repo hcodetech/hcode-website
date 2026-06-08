@@ -71,7 +71,7 @@ Blockchain’s distributed ledger technology provides better tracking and manage
 
 ### Application of Blockchain in Cloud Computing
 
-In the online landscape, [applications of blockchain technology](https://hcode.tech/blog/7-mainstream-applications-of-blockchain-technology-in-business/) are many. In cloud computing, blockchain technology provides secure data sharing, decentralized storage, enhanced network control, and data integrity. It enables task scheduling, data management, seamless connectivity, and a tamper-proof-transparent ecosystem.
+In the online landscape, [applications of blockchain technology](https://www.hcode.tech/blog/7-mainstream-applications-of-blockchain-technology-in-business/) are many. In cloud computing, blockchain technology provides secure data sharing, decentralized storage, enhanced network control, and data integrity. It enables task scheduling, data management, seamless connectivity, and a tamper-proof-transparent ecosystem.
 
 #### Secure Data Sharing
 

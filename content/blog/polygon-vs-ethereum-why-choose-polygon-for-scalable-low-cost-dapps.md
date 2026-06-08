@@ -81,4 +81,4 @@ Looking ahead, Polygon 2.0 represents a visionary approach to scalable dApp deve
 
 If you’re looking to build a dApp on Ethereum, Polygon offers a compelling solution. It combines the security and decentralization of Ethereum with the scalability and affordability needed for real-world adoption. Remember, there’s no one-size-fits-all answer, but with its diverse toolbox and future-oriented vision, Polygon is definitely worth considering for your next dApp project.
 
-Interested in delving into the technology for your next dApp project? Connect with HCode’s team of [blockchain experts](https://hcode.tech/our-services/blockchain).
+Interested in delving into the technology for your next dApp project? Connect with HCode’s team of [blockchain experts](https://www.hcode.tech/our-services/blockchain).

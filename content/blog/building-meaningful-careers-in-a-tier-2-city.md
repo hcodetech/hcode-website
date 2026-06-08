@@ -13,9 +13,9 @@ tags: ["Hcode"]
 
 ![People building good environment ](/assets/blog/2025/08/visuals-of-react-native-blog-1.gif)
 
-At [HCode](https://hcode.tech/blog/what-makes-hcode-different/), we’ve seen that many professionals today want more than just a paycheck. They want meaningful work, a healthy work-life balance, and the ability to stay close to family without sacrificing career growth. That’s the space we’ve been building in Karnal for the last six years. 
+At [HCode](https://www.hcode.tech/blog/what-makes-hcode-different/), we’ve seen that many professionals today want more than just a paycheck. They want meaningful work, a healthy work-life balance, and the ability to stay close to family without sacrificing career growth. That’s the space we’ve been building in Karnal for the last six years. 
 
-[Karnal](https://hcode.tech/blog/the-hcode-story-from-karnal/), like many tier-2 cities, doesn’t offer the sheer volume of options that metros do. Relocating here can feel like a big decision, especially when spouses’ careers, children’s schooling, or family responsibilities are part of the equation. Yet for those who make the move, it’s often about choosing balance whether that’s raising kids in a quieter city, being closer to parents, or simply wanting more time for life outside work.
+[Karnal](https://www.hcode.tech/blog/the-hcode-story-from-karnal/), like many tier-2 cities, doesn’t offer the sheer volume of options that metros do. Relocating here can feel like a big decision, especially when spouses’ careers, children’s schooling, or family responsibilities are part of the equation. Yet for those who make the move, it’s often about choosing balance whether that’s raising kids in a quieter city, being closer to parents, or simply wanting more time for life outside work.
 
 Rather than compete with the metros on their terms, we chose a different path: creating opportunities that feel just as rewarding, right here in Karnal. That has meant building large-scale projects, winning clients who trust us with critical work, and offering engineers the kind of challenges they’d otherwise move to a big city for.
 

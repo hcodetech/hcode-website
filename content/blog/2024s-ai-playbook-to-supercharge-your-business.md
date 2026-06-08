@@ -38,7 +38,7 @@ Artificial Intelligence can analyze customer preferences, behaviors, and demogra
   
 Say goodbye to the creative block that comes from staring at a blank screen. AI tools like custom document generators can consistently supply fresh ideas and perspectives during brainstorming sessions. By analyzing vast amounts of data from sources such as customer feedback and market trends, Artificial Intelligence provides invaluable insights that can drive data-informed product development decisions.
 
-**Business need to know –** [7 Ways Businesses are Using Predictive Analytics in Retail](https://hcode.tech/blog/7-ways-businesses-are-using-predictive-analytics-in-retail/)
+**Business need to know –** [7 Ways Businesses are Using Predictive Analytics in Retail](https://www.hcode.tech/blog/7-ways-businesses-are-using-predictive-analytics-in-retail/)
 
 ### 5\. Transforming Decision-Making with AI Analytics
 
